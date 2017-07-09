@@ -1,0 +1,49 @@
+body {
+  background-color: lightblue;
+  text-align: center;
+}
+
+header {
+  border: 1px solid black;
+  /*height: 3em;*/
+}
+
+#bio, #temporaryID {
+  margin: 1em;
+  /*border: 1px solid black;*/
+}
+
+
+#links {
+  margin: auto;
+  /*border: 1px solid black;*/
+}
+
+.Social {
+  margin: .5em;
+  height: 3em;
+  widht: auto;
+}
+
+#resume {
+  height: auto;
+  width: 70%;
+}
+
+footer {
+  border: 1px solid black;
+}
+
+
+/*for tablets*/
+
+@@media query {}
+
+/*limit size of resume image*/
+
+
+/*for desktop*/
+
+@@media query {}
+
+/*limit size of resume image*/
