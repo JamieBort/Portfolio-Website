@@ -1,2 +1,2 @@
-# JamieBort.gitub.io
+# JamieBort.github.io
 My Portfolio Website
