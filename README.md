@@ -19,3 +19,6 @@ What am I involved in and when? (show calendar or neat list)
 
             b.
 -[ ] 7. Make is correct semantically.
+-[ ] 8. First build it for mobile users.
+-[ ] 9. Then build it for tablet users.
+-[ ] 10. Lastly build it for desktop users.
