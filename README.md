@@ -1,9 +1,8 @@
-# JamieBort.github.io
 My Portfolio Website
 
 ToDo:
 
--[ ] 1. Add portfolio url to linkedin profile
+-[ ] 1. Add portfolio url to LinikedIn profile
 
 -[ ] 2. What am I involved in and when? (show calendar or neat list)
 
@@ -13,9 +12,9 @@ ToDo:
 
 -[ ] 5. Sample coding (same as the resume - large enough to see but clicking on it brings you to the github page)
 
--[ ] 6. Include ways to contact me in the summary portion of linkedin.(?)
+-[ ] 6. Include ways to contact me in the summary portion of LinikedIn.(?)
 
--[ ] 7. Update 'headline' of liniked in account to be more conprehensive - more detail about me
+-[ ] 7. Update 'headline' of LinikedIn account to be more comprehensive - more detail about me
 
 -[ ] 8. Add portfolio url to twitter profile
 
@@ -31,6 +30,6 @@ ToDo:
 
 -[ ] 14. Consult the following for web sites that inspire me:
 
-            *a. google docs
+            a. google docs
 
-            *b.
+            b.
