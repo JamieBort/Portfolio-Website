@@ -30,5 +30,7 @@ ToDo:
 -[ ] 13. Design idea: simple static landing page linking to more complex, dynamic websites I've created
 
 -[ ] 14. Consult the following for web sites that inspire me:
-            a. google docs
-            b.
+
+            *a. google docs
+
+            *b.
