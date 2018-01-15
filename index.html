@@ -8,82 +8,191 @@
 </head>
 
 <body>
-  <section id="sectionOne">
 
+  <header>
     <!-- <header>Pattern or image here maybe</header> -->
     <h1>Jamie Bort</h1>
+    <!-- <h2>Software engineer, philomath, traveler, and bibliophile.</h2> -->
+    <h2>Software Engineer</h2>
 
-    <!-- Phone numer and email. Keep? Remove? -->
-    <!-- <p>Other ways to reach Jamie:</p> -->
-    <div id="contact">
+  </header>
+
+
+  <!-- Phone numer and email. Keep? Remove? -->
+  <!-- <p>Other ways to reach Jamie:</p> -->
+  <!-- <div id="contact">
       <p>919 619 0199 (v/t)</p>
       <p> JamieBort (at) gmail (dot) com</p>
-    </div>
+    </div> -->
 
-    <!-- my bio -->
-    <div id="bio">
-      <p>Jamie is a full stack developer. His interests and strengths lie on the back end. His skillsets include HTML, CSS, JavaScript, Node.js, and Java. He would love to here from you.</p>
-    </div>
+  <!-- my bio -->
+  <div id="bio">
+    <p><b>Jamie Bort</b> is a full stack developer. His interests and strengths lie on the back end. His skillsets include HTML, CSS, JavaScript, Node.js, and Java. He would love to here from you.</p>
+  </div>
 
-    <section id="sectionTwo">
+  <!-- Icon buttons and links to my social media sites -->
+  <section id="contact">
+    <button class="SocialLinks" type="button" name="button">
+        <a href="https://www.linkedin.com/in/jamie-bort-84b9b89/" target="_blank">
+          <img class="Social" src="attachments/LinkedInButtons/linkedin.png"/>
+        </a>
+      </button>
+    <button class="SocialLinks" type="button" name="button">
+        <a href="https://github.com/JamieBort/" target="_blank">
+          <img class="Social" src="attachments/GitHubButtons/github_by_ovilia1024-d5teqdd.png"/>
+        </a>
+      </button>
+    <button class="SocialLinks" type="button" name="button">
+        <a href="https://medium.com/@jamiebort" target="_blank">
+          <img class="Social" src="attachments/MediumButtons/medium.png"/>
+        </a>
+    </button>
+    <button class="SocialLinks" type="button" name="button">
+        <a href="https://twitter.com/JamieBort" target="_blank">
+          <img class="Social" src="attachments/TwitterButtons/twitter-icon--icons-for-twitter--twitter-vector-icons-6.png"/>
+        </a>
+    </button>
+    <button class="SocialLinks" type="button" name="button">
+        <a href="https://codepen.io/JamieBort/" target="_blank">
+          <img class="Social" src="attachments/CodePenButtons/codepen-logo.svg"/>
+        </a>
+    </button>
+    <button class="SocialLinks" type="button" name="button">
+        <a href="https://stackoverflow.com/users/8210460/jamie-bort?tab=profile" target="_blank">
+          <img class="Social" src="attachments/StackOverflowButtons/so-icon.svg"/>
+        </a>
+    </button>
 
+<!-- <span>Give me a call.</span> -->
+<!-- style this like a button -->
+    <button type="button" name="button">
+      <a href="tel:919-619-0199">919 619 0199 (v/t)</a>
+    </button>
 
-      <!-- Icon buttons and links to my social media sites -->
-      <div class="SocialLinks">
-        <a href="https://www.linkedin.com/in/jamie-bort-84b9b89/" target="_blank"><img class="Social" src="attachments/LinkedInButtons/linkedin.png"/></a>
-      </div>
+<!-- <span>Shoot me an email.</span> -->
+<!-- style this like a button -->
+    <button type="button" name="button">
+      <a href="mailto:JamieBort@gmail.com">JamieBort(at)gmail(dot)com</a>
+    </button>
+  </section>
 
-      <div class="SocialLinks">
-        <a href="https://github.com/JamieBort/" target="_blank"><img class="Social" src="attachments/GitHubButtons/github_by_ovilia1024-d5teqdd.png"/></a>
-      </div>
-
-      <div class="SocialLinks">
-        <a href="https://medium.com/@jamiebort" target="_blank"><img class="Social" src="attachments/MediumButtons/medium.png"/></a>
-      </div>
-
-      <!-- keep twitter here on this website? -->
-      <div class="SocialLinks">
-        <a href="https://twitter.com/JamieBort" target="_blank"><img class="Social" src="attachments/TwitterButtons/twitter-icon--icons-for-twitter--twitter-vector-icons-6.png"/></a>
-      </div>
-
-      <!-- I don't have anything in codepen yet. Keep it here on this website? -->
-      <div class="SocialLinks">
-        <a href="https://codepen.io/JamieBort/" target="_blank"><img class="Social" src="attachments/CodePenButtons/codepen-logo.svg"/></a>
-      </div>
-    </section>
-
-    <!-- <section id="sectionThree">
-      Future Calandar
+  <!-- <section id="Calendar">
+      Future Calendar
       <span>Speaking Engagements.</span>
       <span>Where you can find me.</span>
     </section> -->
 
-    <section id="sectionFour">
+  <section id="showcase">
+    <span>My work.</span>
 
 
-      <!-- <section id="linkExamples">
-    <div id="calculatorDiv" class="linkDiv">
+<!-- HTML for the modal box. -->
+<!-- HTML for the modal box. -->
+<h2>Modal Example</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+    <a href="https://www.google.com">Link to live site</a>
+    <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal">Link to github repo</a>
+  </div>
+
+</div>
+
+
+<!-- <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script> -->
+<!-- HTML for the modal box. -->
+<!-- HTML for the modal box. -->
+
+
+
+
+
+
+
+
+
+
+
+    <button class="SocialLinks" type="button" name="button">
+        <a href="https://jamiebort.github.io/PuppyLove/" target="_blank">
+          <img class="Social" src="attachments/PuppyLoveButtons/thumbnail.png"/>
+        </a>
+    </button>
+
+    <button class="SocialLinks" type="button" name="button">
+        <a href="https://jamiebort.github.io/iPhysicist-CSSLayoutFlexbox" target="_blank">
+          <img class="Social" src="attachments/iPhysicist-CSSLayoutFlexbox/ThumbNail.png"/>
+        </a>
+    </button>
+
+    <button class="SocialLinks" type="button" name="button">
+        <a href="https://jamiebort.github.io/FormBuilder/" target="_blank">
+          <img class="Social" src="attachments/FormBuilder/ThumbNail.png"/>
+        </a>
+    </button>
+
+
+
+    <section id="linkExamples">
+    <!-- <div id="calculatorDiv" class="linkDiv">
       <a id="calculatorAnchor" class="linkAnchor" href="https://github.com/JamieBort/week3Calculator/blob/master/main.js">
       <img id="calculatorImg" class="linkImg" src="attachments/png/calculator.png"/>
-    </a></div>
+    </a></div> -->
 
-    <div id="iBeerDiv" class="linkDiv">
+    <!-- <div id="iBeerDiv" class="linkDiv">
       <a id="iBeerAnchor" class="linkAnchor" href="https://github.com/JamieBort/iBeer_Layout-Flexbox">
         <img id="iBeerImg" class="linkImg" src="attachments/png/iBeer.png"/>
       </a></div> -->
 
-      <!-- Image and link to me resume -->
-      <!-- <span>More about me.</span>
+    <!-- Image and link to me resume -->
+    <!-- <span>More about me.</span>
       <div id="resumeDiv" class="linkDiv">
         <a id="resumeAnchor" class="linkAnchor" href="attachments/JamieBortProfile.pdf" target="_blank">
       <img id="resume" class="linkImg" src="attachments/png/Resume.png"/>
       </a>
       </div> -->
-    </section>
-
-    <!-- <footer>Pattern or image here maybe
-  </footer> -->
   </section>
+  </section>
+
+  <!-- <footer>Pattern or image here maybe. Same as header.
+  </footer> -->
+
+
+<script src="main.js"></script>
 </body>
 
 </html>
