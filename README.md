@@ -10,9 +10,10 @@ What am I involved in and when? (show calendar or neat list)
 - [ ] 5. Design idea: simple static landing page linking to more complex, dynamic websites I've created
 - [ ] 6. Consult the following for web sites that inspire me:
 
-            a. google docs
+  a. google docs
 
-            b.
+  b.
+  
 - [ ] 7. Make is correct semantically.
 - [ ] 8. First build it for mobile users.
 
