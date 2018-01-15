@@ -8,6 +8,12 @@ body {
   border: 1px solid black;
 }
 
+header, footer {
+  background-image: url("https://img.tutpad.com/tut/0/280/tutorial10.jpg?size=%3C700");
+  /* background-image: attachments/pattern/tutorial10.jpg; */
+  /* background-color: #cccccc; */
+}
+
 h1 {
   font-size: 3em;
 }
@@ -100,6 +106,7 @@ border: 1px solid blue;
 
 footer {
   border: 1px solid black;
+  /* height: 100px; */
 }
 
 
