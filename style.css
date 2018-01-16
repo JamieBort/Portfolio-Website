@@ -51,7 +51,7 @@ button {
   border: none;
   border: 1px solid green;
   height: 10em;
-  margin: 4em;
+  margin: 8em;
   /* padding: 0; */
 }
 
@@ -68,7 +68,7 @@ button a img {
   /* height: auto; */
   /* padding: 10em; */
   /* margin: 10em; */
-  transform: scale(4, 4);
+  transform: scale(6, 6);
   border: 1px solid blue;
 }
 
