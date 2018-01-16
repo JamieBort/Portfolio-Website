@@ -160,6 +160,10 @@ footer {
   background-image: url("attachments/PuppyLoveButtons/thumbnail.png");
 }
 
+#myBtn2 {
+  background-image: url("attachments/iPhysicist-CSSLayoutFlexbox/thumbnail.png");
+}
+
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0}
@@ -195,8 +199,17 @@ footer {
 .modal-body {
   padding: 2px 16px;
   height: 4em;
+  /* background-image: url("attachments/PuppyLoveButtons/thumbnail.png"); */
+}
+
+#PuppyLoveDiv {
   background-image: url("attachments/PuppyLoveButtons/thumbnail.png");
 }
+
+#iPhysicistDiv {
+  background-image: url("attachments/iPhysicist-CSSLayoutFlexbox/thumbnail.png");
+}
+
 
 .modal-footer {
     padding: 2px 16px;
