@@ -10,9 +10,18 @@ body {
 
 header, footer {
   background-image: url(" attachments/pattern/5957908fe6d9740.jpg");
-  /* height: 600px; */
+  /* min-height: 100px; */
   /* background-image: url("https://img.tutpad.com/tut/0/280/tutorial10.jpg?size=%3C700"); */
   /* background-color: #cccccc; */
+}
+
+header {
+  padding: .2em 0 1em 0;
+  height: 10em;
+}
+
+footer {
+  height: 3em;
 }
 
 h1 {
@@ -23,41 +32,17 @@ h2 {
   font-size: 2em;
 }
 
-#top {
+#bio, #contact, #showcase {
+  width: 80%;
   border: 1px solid black;
 }
 
 #contact, #showcase {
-  width: 80%;
   margin: auto;
   display: flex;
-  /* justify-content: space-around; */
-  /* align-items: center; */
-  /* flex-direction:column; */
   justify-content: space-around;
   flex-wrap: wrap;
-  border: 1px solid black;
 }
-
-/* #showcase {
-  width: 80%;
-  margin: auto;
-  display: flex;
-    justify-content: space-around;
-} */
-
-/* .button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-} */
 
 button {
   background: transparent;
@@ -65,14 +50,9 @@ button {
   border: 1px solid green;
   height: 10em;
   margin: 8em;
-  /* padding: 0; */
 }
 
 button a {
-  /* width: 100%; */
-  /* width: 50px; */
-  /* height: 100px; */
-  /* margin: 10em; */
   border: 1px solid black;
 }
 
