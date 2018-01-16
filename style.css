@@ -33,12 +33,25 @@ h2 {
   border: 1px solid black;
 }
 
+/* .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+} */
+
 button {
   background: transparent;
   border: none;
   border: 1px solid green;
   height: 10em;
-  margin: 1em;
+  margin: 4em;
   /* padding: 0; */
 }
 
@@ -46,16 +59,16 @@ button a {
   /* width: 100%; */
   /* width: 50px; */
   /* height: 100px; */
-  /* margin: 2em; */
+  /* margin: 10em; */
   border: 1px solid black;
 }
 
 button a img {
   /* width: 110px; */
   /* height: auto; */
-  /* padding: 10px; */
-  /* margin: 2em; */
-  transform: scale(2, 2);
+  /* padding: 10em; */
+  /* margin: 10em; */
+  transform: scale(4, 4);
   border: 1px solid blue;
 }
 
