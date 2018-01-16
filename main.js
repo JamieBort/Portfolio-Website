@@ -1,3 +1,5 @@
+// From: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
+
 // Get the modal
 var modal = document.getElementById('myModal');
 var modal2 = document.getElementById('myModal2');
@@ -8,6 +10,7 @@ var btn = document.getElementById("myBtn");
 var btn2 = document.getElementById("myBtn2");
 var btn3 = document.getElementById("myBtn3");
 
+// The [0] below effects the implementation of the dissabled onclick function below. //
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
@@ -25,7 +28,7 @@ btn3.onclick = function() {
 }
 
 
-// Dissabling this because I cannot get it to work (yet).
+// Dissabling this because I cannot get it to work (yet). //
 // When the user clicks on <span> (x), close the modal
 // span.onclick = function() {
 //     modal.style.display = "none";
@@ -46,3 +49,6 @@ window.onclick = function(event) {
     modal3.style.display = "none";
   }
 }
+
+// Implement this for devices with a keyboard. //
+// When the user presses a key, close it.
