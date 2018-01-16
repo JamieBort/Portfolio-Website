@@ -164,6 +164,10 @@ footer {
   background-image: url("attachments/iPhysicist-CSSLayoutFlexbox/thumbnail.png");
 }
 
+#myBtn3 {
+  background-image: url("attachments/FormBuilder/thumbnail.png");
+}
+
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0}
@@ -208,6 +212,10 @@ footer {
 
 #iPhysicistDiv {
   background-image: url("attachments/iPhysicist-CSSLayoutFlexbox/thumbnail.png");
+}
+
+#FormBuilder {
+  background-image: url("attachments/FormBuilder/thumbnail.png");
 }
 
 
