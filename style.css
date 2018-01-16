@@ -29,9 +29,18 @@ h2 {
   display: flex;
   /* justify-content: space-around; */
   /* align-items: center; */
-  flex-direction: column;
+  /* flex-direction:column; */
+  justify-content: space-around;
+  flex-wrap: wrap;
   border: 1px solid black;
 }
+
+/* #showcase {
+  width: 80%;
+  margin: auto;
+  display: flex;
+    justify-content: space-around;
+} */
 
 /* .button {
     background-color: #4CAF50;
@@ -68,6 +77,7 @@ button a img {
   /* height: auto; */
   /* padding: 10em; */
   /* margin: 10em; */
+  /* transform: scale(2, 2); */
   transform: scale(6, 6);
   border: 1px solid blue;
 }
