@@ -60,10 +60,16 @@ h2 {
  /* border: 1px solid black; */
 }
 
-#bio p, #contact p, #showcase p {
+/* #bio p, #contact p, #showcase p {
+  width:90%;
+  margin: 1em auto;
+} */
+
+.text {
   width:90%;
   margin: 1em auto;
 }
+
 
 p, #phone, #email {
   font-size: 2em;
@@ -89,14 +95,26 @@ p, #phone, #email {
   /* border: 1px solid green; */
 /* } */
 
-.SocialMediaButton {
+.SocialMediaButton, .ShowcaseButton {
   background: transparent;
   border: none;
   height: 10em;
   margin: 8em;
 }
 
+.ShowcaseButton {
+  border: 1px solid green;
+  width: 40em;
+  height: 40em;
+  /* background: transparent; */
+  /* border: none; */
+  /* height: 10em; */
+  /* margin: 8em; */
+}
+
 .ContactButton {
+  background: transparent;
+  border: none;
   height: 10em;
   /* margin: 2em; */
 }
