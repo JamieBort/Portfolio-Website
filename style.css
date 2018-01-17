@@ -5,7 +5,7 @@ body {
   text-align: center;
   width: 80%;
   margin: auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 header, footer {
@@ -34,7 +34,7 @@ h2 {
 
 #bio, #contact, #showcase {
   width: 80%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 #contact, #showcase {
@@ -51,13 +51,13 @@ p, #phone, #email {
 button {
   background: transparent;
   border: none;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   height: 10em;
   margin: 8em;
 }
 
 button a {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 button a img {
@@ -67,7 +67,7 @@ button a img {
   /* margin: 10em; */
   /* transform: scale(2, 2); */
   transform: scale(6, 6);
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 /* #sectionTwo not used  */
@@ -116,7 +116,7 @@ button a img {
 }
 
 footer {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /* height: 10px; */
   min-height: 10px;
 }
