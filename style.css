@@ -48,6 +48,13 @@ p, #phone, #email {
   font-size: 2em;
 }
 
+#phone, #email {
+  text-decoration: none;
+  padding: 1em;
+  border-radius: 1em;
+  border: 1px solid black;
+}
+
 button {
   background: transparent;
   border: none;
