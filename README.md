@@ -21,7 +21,9 @@ What am I involved in and when? (show calendar or neat list)
 
   - [ ] b. Update the thumbnail images for the showcased work.
 
-  - [ ] b. Update my bio.
+  - [ ] c. Update my bio.
+
+  - [ ] d. Add .DS_Store and other files to the .gitignore file
 
 - [ ] 9. Then build it for tablet users.
 - [ ] 10. Lastly build it for desktop users.
