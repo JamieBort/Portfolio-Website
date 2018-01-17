@@ -23,7 +23,9 @@ What am I involved in and when? (show calendar or neat list)
 
   - [ ] c. Update my bio.
 
-  - [ ] d. Add .DS_Store and other files to the .gitignore file
+  - [ ] d. Add .DS_Store and other files to the .gitignore file.
+
+  - [ ] e. Make sure the header background is tall enough for my phone.
 
 - [ ] 9. Then build it for tablet users.
 - [ ] 10. Lastly build it for desktop users.
