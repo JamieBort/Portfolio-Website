@@ -27,5 +27,9 @@ What am I involved in and when? (show calendar or neat list)
 
   - [ ] e. Make sure the header background is tall enough for my phone.
 
+  - [ ] f. Make 'Jamie Bort' fill the width of the header.
+
+  - [ ] g. Make 'Jamie Bort' and 'Software Engineer' larger.
+
 - [ ] 9. Then build it for tablet users.
 - [ ] 10. Lastly build it for desktop users.

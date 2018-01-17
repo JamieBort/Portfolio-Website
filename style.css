@@ -106,6 +106,8 @@ p, #phone, #email {
   border: 1px solid green;
   width: 40em;
   height: 40em;
+  /* object-fit:cover; */
+  /* object-fit:none; */
   /* background: transparent; */
   /* border: none; */
   /* height: 10em; */
@@ -236,6 +238,10 @@ footer {
 }
 
 #myBtn {
+  /* object-fit:contain; */
+  /* background-size:cover; */
+  background-size: contain;
+background-repeat: no-repeat;
   background-image: url("attachments/PuppyLoveButtons/thumbnail.png");
 }
 
