@@ -237,13 +237,31 @@ footer {
   animation-duration: 0.4s
 }
 
-#myBtn {
+#myBtn1 {
   /* object-fit:contain; */
   /* background-size:cover; */
   background-size: contain;
 background-repeat: no-repeat;
   background-image: url("attachments/PuppyLoveButtons/thumbnail.png");
 }
+
+/* ============================== */
+/* duplicate */
+/* ============================== */
+
+#myBtnTwo {
+  /* object-fit:contain; */
+  /* background-size:cover; */
+  background-size: contain;
+background-repeat: no-repeat;
+  background-image: url("attachments/PuppyLoveButtons/thumbnail.png");
+}
+
+/* ============================== */
+/* duplicate */
+/* ============================== */
+
+
 
 #myBtn2 {
   background-image: url("attachments/iPhysicist-CSSLayoutFlexbox/thumbnail.png");
