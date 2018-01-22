@@ -136,13 +136,18 @@ button a img {
 }
 
 /* Renamed to button */
-.Social {
+/* .Social {
+  margin: .5em;
+  height: 3em;
+  widht: auto;
+} */
+
+.SocialMediaImg {
   margin: .5em;
   height: 3em;
   widht: auto;
 }
-
-.button {
+.Current {
   margin: .5em;
   height: 3em;
   widht: auto;
