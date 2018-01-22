@@ -31,5 +31,7 @@ What am I involved in and when? (show calendar or neat list)
 
   - [ ] g. Make 'Jamie Bort' and 'Software Engineer' larger.
 
+  - [ ] h. Update modal styling. Header? Footer? No header? No footer?
+
 - [ ] 9. Then build it for tablet users.
 - [ ] 10. Lastly build it for desktop users.
