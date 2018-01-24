@@ -33,5 +33,7 @@ What am I involved in and when? (show calendar or neat list)
 
   - [ ] h. Update modal styling. Header? Footer? No header? No footer?
 
+  - [ ] i. Remove all .DS_Store files from the repository.
+
 - [ ] 9. Then build it for tablet users.
 - [ ] 10. Lastly build it for desktop users.
