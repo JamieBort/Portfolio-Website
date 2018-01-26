@@ -82,6 +82,15 @@ p, #phone, #email {
   padding: 1em;
 }
 
+#testid {
+  background: transparent;
+  margin: 8em;
+  border: 1px solid green;
+  width: 40em;
+  height: 40em;
+  display: flex;
+}
+
 .SocialMediaButton, .ShowcaseButton {
   background: transparent;
   margin: 8em;
@@ -94,15 +103,14 @@ p, #phone, #email {
 }
 
 .ShowcaseButton {
-  border: 1px solid green;
   width: 40em;
   height: 40em;
   display: flex;
-  border: 1px solid black;
+  border: none;
+  /* border: 1px solid green; */
   /* object-fit:cover; */
   /* object-fit:none; */
   /* background: transparent; */
-  /* border: none; */
   /* height: 10em; */
   /* margin: 8em; */
   /* padding: 1em; */
@@ -135,7 +143,7 @@ button a img {
   height: 60px;
 }
 
-/* Renamed to button */
+/* Renamed to SocialMediaImg */
 /* .Social {
   margin: .5em;
   height: 3em;
@@ -260,12 +268,28 @@ footer {
 
 
 #myBtn2 {
-  background-image: url("attachments/iPhysicist-CSSLayoutFlexbox/thumbnail.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("attachments/iPhysicist-CSSLayoutFlexbox/thumbnail2.png");
 }
 
 #myBtn3 {
-  background-image: url("attachments/FormBuilder/thumbnail.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("attachments/FormBuilder/thumbnail2.png");
 }
+
+/* #myBtn4 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("attachments/FormBuilder/thumbnail2.png");
+}
+
+#myBtn5 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("attachments/FormBuilder/thumbnail2.png");
+} */
 
 /* Add Animation */
 
