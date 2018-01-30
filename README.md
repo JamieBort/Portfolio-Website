@@ -35,5 +35,7 @@ What am I involved in and when? (show calendar or neat list)
 
   - [ ] i. Remove all .DS_Store files from the repository.
 
+  - [ ] j. Minimize space around buttons.
+
 - [ ] 9. Then build it for tablet users.
 - [ ] 10. Lastly build it for desktop users.
