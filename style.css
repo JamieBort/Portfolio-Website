@@ -61,7 +61,17 @@ p, #phone, #email {
   padding: 1em;
 }
 
-.SocialMediaButton, .ShowcaseButton {
+.SocialMediaButton {
+  background: transparent;
+  margin: 8em;
+}
+
+/* #one.resize {
+    width:540px;
+    height: auto;
+} */
+
+.ShowcaseButton {
   background: transparent;
   margin: 0em 8em;
 }
