@@ -23,7 +23,7 @@ What am I involved in and when? (show calendar or neat list)
 
   - [ ] c. Update my bio.
 
-  - [ ] d. Add .DS_Store and other files to the .gitignore file.
+  - [X] d. Add .DS_Store and other files to the .gitignore file.
 
   - [ ] e. Make sure the header background is tall enough for my phone.
 
@@ -33,9 +33,19 @@ What am I involved in and when? (show calendar or neat list)
 
   - [ ] h. Update modal styling. Header? Footer? No header? No footer?
 
-  - [ ] i. Remove all .DS_Store files from the repository.
+  - [X] i. Remove all .DS_Store files from the repository.
 
   - [ ] j. Minimize space around buttons.
 
+  - [ ] k. Update text in Contact section.
+
+  - [ ] l. Update text in Showcase section.
+
+  - [ ] m. Improve the look of the phone number and email buttons.
+
+  - [ ] n. Do I need a copyright in the footer? What do I need down there?.
+
+
 - [ ] 9. Then build it for tablet users.
+
 - [ ] 10. Lastly build it for desktop users.
