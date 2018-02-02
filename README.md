@@ -35,7 +35,7 @@ What am I involved in and when? (show calendar or neat list)
 
   - [X] i. Remove all .DS_Store files from the repository.
 
-  - [ ] j. Minimize space around buttons.
+  - [X] j. Minimize space around buttons.
 
   - [ ] k. Update text in Contact section.
 
@@ -44,6 +44,8 @@ What am I involved in and when? (show calendar or neat list)
   - [ ] m. Improve the look of the phone number and email buttons.
 
   - [ ] n. Do I need a copyright in the footer? What do I need down there?.
+
+  - [ ] o. Address the spacing around the Medium and Currently Reading buttons relative to the three above it. Diminish it.
 
 
 - [ ] 9. Then build it for tablet users.
