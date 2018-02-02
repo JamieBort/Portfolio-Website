@@ -126,6 +126,11 @@ button a img {
   width: auto;
 } */
 
+.ShowcaseText {
+  margin-bottom: 15em;
+  /* padding-bottom: 30em; */
+}
+
 footer {
 
   min-height: 10px;
