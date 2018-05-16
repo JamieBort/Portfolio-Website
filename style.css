@@ -112,15 +112,32 @@ footer {
   min-height: 10px;
 }
 
-/*for tablets*/
+/************           for tablets               ************/
 
 @@media query {}
 
 /*limit size of resume image*/
 
-/*for desktop*/
+/************           for desktop               ************/
 
-@@media query {}
+/* @@media query {} */
+
+@media (min-width: 60em) {
+  body {
+    background-color: greenyellow;
+  }
+
+  .SocialMediaImg {
+    margin: .5em;
+    height: 1.5em;
+    widht: auto;
+  }
+
+  .SocialMediaButton {
+    background: blue;
+    margin: 1em;
+  }
+
 
 /*limit size of resume image*/
 
@@ -129,6 +146,7 @@ footer {
 /* Styling the modal box. */
 
 /* The Modal (background) */
+}
 
 .modal {
   display: none;
