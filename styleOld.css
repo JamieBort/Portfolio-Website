@@ -52,7 +52,6 @@ h2 {
 }
 
 .text {
-  font-size: 90%;
   width:90%;
   margin: 1em auto;
 }
@@ -117,7 +116,45 @@ footer {
   min-height: 10px;
 }
 
+/************************************************************************************/
+/************           for tablets               ************/
+/************************************************************************************/
 
+@@media query {}
+
+/*limit size of resume image*/
+
+/************************************************************************************/
+/************           for desktop               ************/
+/************************************************************************************/
+
+/* @@media query {} */
+
+@media (min-width: 60em) {
+  body {
+    background-color: greenyellow;
+  }
+
+  .SocialMediaImg {
+    margin: .5em;
+    height: 1.5em;
+    widht: auto;
+  }
+
+  .SocialMediaButton {
+    background: blue;
+    margin: 1em;
+  }
+
+
+/*limit size of resume image*/
+
+/* Styling the modal box. */
+
+/* Styling the modal box. */
+
+/* The Modal (background) */
+}
 
 .modal {
   display: none;
@@ -270,34 +307,3 @@ footer {
 /* Styling the modal box. */
 
 /* Styling the modal box. */
-
-/************************************************************************************/
-/************           for tablets               ************/
-/************************************************************************************/
-
-@@media query {}
-
-
-
-/************************************************************************************/
-/************           for desktop               ************/
-/************************************************************************************/
-
-/* @@media query {} */
-
-@media (min-width: 60em) {
-  body {
-    background-color: greenyellow;
-  }
-
-  .SocialMediaImg {
-    margin: .5em;
-    height: 1.5em;
-    widht: auto;
-  }
-
-  .SocialMediaButton {
-    background: blue;
-    margin: 1em;
-  }
-}
