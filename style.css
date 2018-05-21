@@ -41,6 +41,23 @@ h2 {
   margin: 3% auto;
 }
 
+#paragraphBreak {
+  /* Make this a line about 80% wide. */
+  border-radius: 1em;
+  border: 0.5px solid black;
+  
+}
+
+hr {
+  display: block;
+  height: 1px;
+  width: 80%;
+  border: 0;
+  border-top: 0.5px solid black;
+  margin: 1em auto;
+  padding: 0;
+}
+
 #socialmedia, #showcase {
   display: flex;
   justify-content: space-around;
@@ -78,7 +95,7 @@ p, #phone, #email {
 
 .ShowcaseButton {
   width: 40em;
-  height: 40em;
+  height: 20em;
   border: none;
 }
 
@@ -86,6 +103,7 @@ p, #phone, #email {
   background: transparent;
   border: none;
   height: 10em;
+  font-size: 60%; /* Used here because the email addresss button was spilling over the section border. */
 }
 
 button a img {
@@ -285,7 +303,7 @@ footer {
 
 /* @@media query {} */
 
-@media (min-width: 60em) {
+/* @media (min-width: 60em) {
   body {
     background-color: greenyellow;
   }
@@ -300,4 +318,4 @@ footer {
     background: blue;
     margin: 1em;
   }
-}
+} */
