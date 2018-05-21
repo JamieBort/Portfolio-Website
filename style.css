@@ -199,6 +199,7 @@ footer {
   max-width: 100%;
 }
 
+/* Remove myBtn1, myBtn2, and myBtn3 if they're not used. */
 /* #myBtn1 {
   background-size: contain;
   background-repeat: no-repeat;
@@ -256,15 +257,16 @@ footer {
   cursor: pointer;
 }
 
-.modal-header {
+/* Unused */
+/* .modal-header {
   padding: 2px 16px;
   background-color: #5cb85c;
   color: white;
-}
+} */
 
 .modal-body {
-  padding: 2px 16px;
-  height: 4em;
+  /* padding: 2px 16px; */
+  height: 18em;
 }
 
 #PuppyLoveDiv {
@@ -279,11 +281,12 @@ footer {
   background-image: url("attachments/FormBuilder/thumbnail.png");
 }
 
-.modal-footer {
+/* Unused */
+/* .modal-footer {
   padding: 2px 16px;
   background-color: #5cb85c;
   color: white;
-}
+} */
 
 /* Styling the modal box. */
 
