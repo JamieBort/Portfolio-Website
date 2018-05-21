@@ -277,16 +277,16 @@ footer {
 
 #iPhysicistDiv {
   background-image: url("attachments/iPhysicist-CSSLayoutFlexbox/thumbnail2.png");
-  background-size:cover;
+  background-size:contain;
     background-repeat:no-repeat;
-    /* background-position: center center;  */
+    background-position: center center; 
 }
 
 #FormBuilder {
   background-image: url("attachments/FormBuilder/thumbnail2.png");
-  background-size:cover;
+  background-size:contain;
     background-repeat:no-repeat;
-    /* background-position: center center;  */
+    background-position: center center; 
 }
 
 /* Unused */

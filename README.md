@@ -27,9 +27,9 @@ What am I involved in and when? (show calendar or neat list)
 
   - [X] e. Make sure the header background is tall enough for my phone.
 
-  - [ ] f. Make 'Jamie Bort' fill the width of the header.
+  - [X] f. Make 'Jamie Bort' fill the width of the header.
 
-  - [ ] g. Make 'Jamie Bort' and 'Software Engineer' larger.
+  - [X] g. Make 'Jamie Bort' and 'Software Engineer' larger.
 
   - [ ] h. Update modal styling. Header? Footer? No header? No footer?
 
@@ -41,17 +41,25 @@ What am I involved in and when? (show calendar or neat list)
 
   - [ ] l. Update text in Showcase section.
 
-  - [ ] m. Improve the look of the phone number and email buttons.
+  - [X] m. Improve the look of the phone number and email buttons.
 
   - [ ] n. Do I need a copyright in the footer? What do I need down there?.
 
-  - [ ] o. Address the spacing around the Medium and Currently Reading buttons relative to the three above it. Diminish it.
+  - [X] o. Address the spacing around the Medium and Currently Reading buttons relative to the three above it. Diminish it.
 
-  - [ ] o. The text "Let's connect. He would love to here from you.", "What's currently preoccupying him." and "What he is currently reading." is too small.
+  - [ ] p. The text "Let's connect. He would love to here from you.", "What's currently preoccupying him." and "What he is currently reading." is too small.
+
+  - [ ] q. Update the image in the modal so that it fills the dev.
+
+  - [ ] r. Style the two links in the modal so they're not at the top of the dev and so that they look better.
 
 
 - [ ] 9. Then build it for tablet users.
 
+  - [ ] [next letter]. [What needs to be addressed here?]
+
 - [ ] 10. Lastly build it for desktop users.
+
+  - [ ] [next letter]. [What needs to be addressed here?]
 
 - [ ] 11. Bug test.
