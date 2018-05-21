@@ -17,7 +17,7 @@ What am I involved in and when? (show calendar or neat list)
 - [ ] 7. Make it correct semantically. So that it is inclusive/web accessable.
 - [ ] 8. First build it for mobile users.
 
-  - [ ] a. For the showcase buttons give the option to load the site or go to the github repo. Use a modal box.
+  - [X] a. For the showcase buttons give the option to load the site or go to the github repo. Use a modal box.
 
   - [ ] b. Update the thumbnail images for the showcased work.
 
@@ -25,7 +25,7 @@ What am I involved in and when? (show calendar or neat list)
 
   - [X] d. Add .DS_Store and other files to the .gitignore file.
 
-  - [ ] e. Make sure the header background is tall enough for my phone.
+  - [X] e. Make sure the header background is tall enough for my phone.
 
   - [ ] f. Make 'Jamie Bort' fill the width of the header.
 
@@ -46,6 +46,8 @@ What am I involved in and when? (show calendar or neat list)
   - [ ] n. Do I need a copyright in the footer? What do I need down there?.
 
   - [ ] o. Address the spacing around the Medium and Currently Reading buttons relative to the three above it. Diminish it.
+
+  - [ ] o. The text "Let's connect. He would love to here from you.", "What's currently preoccupying him." and "What he is currently reading." is too small.
 
 
 - [ ] 9. Then build it for tablet users.
