@@ -14,7 +14,7 @@ What am I involved in and when? (show calendar or neat list)
 
   b.
 
-- [ ] 7. Make it correct semantically.
+- [ ] 7. Make it correct semantically. So that it is inclusive/web accessable.
 - [ ] 8. First build it for mobile users.
 
   - [ ] a. For the showcase buttons give the option to load the site or go to the github repo. Use a modal box.
