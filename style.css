@@ -22,6 +22,16 @@ footer {
   height: 3em;
 }
 
+hr {
+  display: block;
+  height: 1px;
+  width: 80%;
+  border: 0;
+  border-top: 0.5px solid black;
+  margin: 1em auto;
+  padding: 0;
+}
+
 h1 {
   font-size: 3em;
 }
@@ -30,7 +40,7 @@ h2 {
   font-size: 2em;
 }
 
-#bio, #socialmedia, #showcase, #phone, #email {
+#bio, #socialmedia, #showcase, #phone, #email, #leisure {
   border-radius: 1em;
   margin: 3% auto;
   border: 1px solid black;
@@ -42,7 +52,7 @@ h2 {
   border: 1px solid black;
 }  */
 
-#bio, #socialmedia, #showcase {
+#bio, #socialmedia, #showcase, #leisure {
   width: 80%;
   margin: 3% auto;
 }
@@ -52,16 +62,6 @@ h2 {
   border-radius: 1em;
   border: 0.5px solid black;
   
-}
-
-hr {
-  display: block;
-  height: 1px;
-  width: 80%;
-  border: 0;
-  border-top: 0.5px solid black;
-  margin: 1em auto;
-  padding: 0;
 }
 
 #socialmedia, #showcase {
@@ -89,6 +89,12 @@ p, #phone, #email {
   padding: 1em;
 }
 
+/* #filler {
+  border-radius: 1em;
+  margin: 3% auto;
+  border: 1px solid black;
+} */
+
 .SocialMediaButton {
   background: transparent;
   margin: 8em 10em;
@@ -103,6 +109,7 @@ p, #phone, #email {
   width: 40em;
   height: 20em;
   border: none;
+  width: auto;
 }
 
 .ContactButton {
