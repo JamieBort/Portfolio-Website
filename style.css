@@ -36,6 +36,12 @@ h2 {
   border: 1px solid black;
 }
 
+/* #meetup {
+  border-radius: 1em;
+  margin: 3% auto;
+  border: 1px solid black;
+}  */
+
 #bio, #socialmedia, #showcase {
   width: 80%;
   margin: 3% auto;
