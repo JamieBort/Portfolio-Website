@@ -67,7 +67,7 @@ h2 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  text-size-adjust: 200%;
+  text-size-adjust: 250%;
 }
 
 .bar {
@@ -87,6 +87,7 @@ p, #phone, #email {
 #phone, #email {
   text-decoration: none;
   padding: 1em;
+  text-size-adjust: none;
 }
 
 /* #filler {
