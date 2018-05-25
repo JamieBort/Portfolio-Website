@@ -17,49 +17,53 @@ What am I involved in and when? (show calendar or neat list)
 - [ ] 7. Make it correct semantically. So that it is inclusive/web accessable.
 - [ ] 8. First build it for mobile users.
 
-  - [X] a. For the showcase buttons give the option to load the site or go to the github repo. Use a modal box.
+  - [X] 8a. For the showcase buttons give the option to load the site or go to the github repo. Use a modal box.
 
-  - [ ] b. Update the thumbnail images for the showcased work.
+  - [ ] 8b. Update the thumbnail images for the showcased work.
 
-  - [ ] c. Update my bio.
+  - [ ] 8c. Update my bio.
 
-  - [X] d. Add .DS_Store and other files to the .gitignore file.
+  - [X] 8d. Add .DS_Store and other files to the .gitignore file.
 
-  - [X] e. Make sure the header background is tall enough for my phone.
+  - [X] 8e. Make sure the header background is tall enough for my phone.
 
-  - [X] f. Make 'Jamie Bort' fill the width of the header.
+  - [X] 8f. Make 'Jamie Bort' fill the width of the header.
 
-  - [X] g. Make 'Jamie Bort' and 'Software Engineer' larger.
+  - [X] 8g. Make 'Jamie Bort' and 'Software Engineer' larger.
 
-  - [ ] h. Update modal styling. Header? Footer? No header? No footer?
+  - [ ] 8h. Update modal styling. Header? Footer? No header? No footer?
 
-  - [X] i. Remove all .DS_Store files from the repository.
+  - [X] 8i. Remove all .DS_Store files from the repository.
 
-  - [X] j. Minimize space around buttons.
+  - [X] 8j. Minimize space around buttons.
 
-  - [ ] k. Update text in Contact section.
+  - [ ] 8k. Update text in Contact section.
 
-  - [ ] l. Update text in Showcase section.
+  - [ ] 8l. Update text in Showcase section.
 
-  - [X] m. Improve the look of the phone number and email buttons.
+  - [X] 8m. Improve the look of the phone number and email buttons.
 
-  - [ ] n. Do I need a copyright in the footer? What do I need down there?.
+  - [ ] 8n. Do I need a copyright in the footer? What do I need down there?.
 
-  - [X] o. Address the spacing around the Medium and Currently Reading buttons relative to the three above it. Diminish it.
+  - [X] 8o. Address the spacing around the Medium and Currently Reading buttons relative to the three above it. Diminish it.
 
-  - [ ] p. The text "Let's connect. He would love to here from you.", "What's currently preoccupying him." and "What he is currently reading." is too small.
+  - [ ] 8p. The text "Let's connect. He would love to here from you.", "What's currently preoccupying him." and "What he is currently reading." is too small.
 
-  - [ ] q. Update the image in the modal so that it fills the dev.
+  - [ ] 8q. Update the image in the modal so that it fills the dev.
 
-  - [ ] r. Style the two links in the modal so they're not at the top of the dev and so that they look better.
+  - [ ] 8r. Style the two links in the modal so they're not at the top of the dev and so that they look better.
+
+  - [ ] 8s. The Meetup button and the phrase 'Triangle Adult Junior Developers' needs to be addressed.
 
 
 - [ ] 9. Then build it for tablet users.
 
-  - [ ] [next letter]. [What needs to be addressed here?]
+  - [ ] 9a. [What needs to be addressed here?]
 
 - [ ] 10. Lastly build it for desktop users.
 
-  - [ ] [next letter]. [What needs to be addressed here?]
+  - [ ] 10a. Center phone number and email buttons under the social media icons.
+
+  - [ ] 10b. 
 
 - [ ] 11. Bug test.
