@@ -54,7 +54,6 @@ h2 {
 
 #bio, #socialmedia, #showcase, #leisure {
   width: 80%;
-  margin: 3% auto;
 }
 
 #paragraphBreak {
@@ -64,10 +63,11 @@ h2 {
   
 }
 
-#socialmedia, #showcase {
+#socialmedia, #showcase, #leisure {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  text-size-adjust: 200%;
 }
 
 .bar {
