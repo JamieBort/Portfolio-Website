@@ -5,19 +5,31 @@ section {
   /* margin: auto; */
 }
 
+h1, h2 {
+  text-align: center;
+}
+
 p {
+  font-size: 1.5em; /* the text in one paragraph is not the same sizse as in another paragraph */
   text-align: center;
   background-color: antiquewhite;
   /* display: block; */
   /* margin: auto; */
+
+
+
+  /* display: block; */
+  /* margin: auto; */
+  /* margin: 4em auto; */
+  /* padding: 3em; */
 }
 
 button {
   background-color: brown;
   display: block;
-  /* margin: auto; */
-  margin: 4em auto;
-  padding: 3em;
+  margin: 0 auto;
+  /* margin: 4em auto; */
+  /* padding: 3em; */
 
 }
 
@@ -31,8 +43,14 @@ a {
 
 img {
   background-color: aqua;
-  max-width: 20em;
+  width: 20em;
+  /* max-width: 20em; */
+  /* min-width: 15em; */
   /* margin: 2em 0; */
+}
+
+div {
+  border: green .1em solid;
 }
 
 /************************************************************************************/
