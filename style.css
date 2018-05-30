@@ -1,6 +1,27 @@
 /************************************************************************************/
 /************           defaut styling which is for mobile               ************/
 /************************************************************************************/
+body{
+  /* padding: 0em; */
+  margin: 0em;
+}
+
+header, footer {
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  background-image: url(attachments/pattern/5957908fe6d9740.jpg);
+  /* transform: scale(2); */
+}
+
+header {
+  height: 10em;
+  padding-top: 2em;
+}
+
+footer {
+  height: 3em;
+}
+
 section {
   /* margin: auto; */
 }
@@ -10,7 +31,7 @@ h1, h2 {
 }
 
 p {
-  font-size: 1.5em; /* the text in one paragraph is not the same sizse as in another paragraph */
+  font-size: 1.5em; /* the text in one paragraph is not the same sizse as in another paragraph. This is because there is a button tag, and/or anchor tag, and/or image tag in the section tag with the paragraph tags. */
   text-align: center;
   background-color: antiquewhite;
   /* display: block; */
@@ -66,3 +87,52 @@ div {
 /************************************************************************************/
 
 /* @@media query {} */
+
+
+
+
+/************************************************************************************/
+/************           for Modal               ************/
+/************************************************************************************/
+
+/* from: https://codepen.io/JamieBort/pen/PaoyQj */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/************************************************************************************/
+/************************************************************************************/
+/************************************************************************************/
