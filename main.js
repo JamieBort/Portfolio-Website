@@ -41,3 +41,8 @@ window.onclick = function(event) {
       modal2.style.display = "none";
   }
 }
+
+// For the copyright
+
+// var d = new Date()
+// document.write(d.getFullYear())
