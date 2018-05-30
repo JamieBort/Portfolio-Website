@@ -44,5 +44,8 @@ window.onclick = function(event) {
 
 // For the copyright
 
-// var d = new Date()
+var copyright = document.getElementById('copyright');
+var d = new Date()
 // document.write(d.getFullYear())
+var a = d.getFullYear()
+copyright.innerHTML=`&copy` + a
