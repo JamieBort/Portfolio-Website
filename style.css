@@ -22,10 +22,16 @@ footer {
 }
 
 section {
+  padding: 1em 0;
   /* border: aqua 0.1em solid; */
 }
 
-#bio, #projects {
+#bio {
+  width: 70%;
+  margin: auto;
+}
+
+#bio_section, #projects {
   background-color: brown;
 }
 
@@ -65,7 +71,7 @@ button {
    width: 30em;
    height: 4em;
    background-color: burlywood;
-   /* margin-bottom: 2em; */
+   margin-top: 1em;
  }
 
  #book, #meetup, #blog {
