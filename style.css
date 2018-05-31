@@ -13,7 +13,7 @@ header, footer {
 }
 
 header {
-  height: 10em;
+  height: 10%;
   padding-top: 2em;
 }
 
@@ -74,6 +74,14 @@ button {
   background-color: burlywood;
  }
 
+ .continuing_education_img {
+
+  width: 75%;
+  height: auto;
+/* margin: auto; */
+/* display: block; */
+ }
+
  .phone_email {
    border: .1em black solid;
    border-radius: .3em;
@@ -83,10 +91,10 @@ button {
    margin-top: 1em;
  }
 
- #book, #meetup, #blog {
+ .continuing_education_div {
    border: .1em lightseagreen solid;
    border-radius: .5em;
-   width: 15em;
+   width: 20em;
    margin: 1em auto;
    background-color: burlywood;
    /* margin-bottom: 2em; */
@@ -104,7 +112,7 @@ button {
   background-color: burlywood;
  }
 
-#a {
+#meetup_p {
   position: relative;
   z-index: 1;
   top: 2em;
@@ -116,14 +124,14 @@ button {
   height: auto; */
 }
 
-#e {
+#blog_p {
   position: relative;
   z-index: 1;
   top: 2em;
   font-size: 0.9em;
 }
 
-#f {
+#book_p {
   /* position: relative; */
   /* z-index: 1; */
   /* top: 2em; */
