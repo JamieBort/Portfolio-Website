@@ -59,6 +59,24 @@ button {
   background-color: burlywood;
  }
 
+ .phone_email {
+   border: .1em black solid;
+   border-radius: .3em;
+   width: 30em;
+   height: 4em;
+   background-color: burlywood;
+   /* margin-bottom: 2em; */
+ }
+
+ #book, #meetup, #blog {
+   border: .1em black solid;
+   border-radius: .3em;
+   width: 15em;
+   margin: auto;
+   background-color: burlywood;
+   /* margin-bottom: 2em; */
+ }
+
 a {
   /* background-color: blue; */
 }
