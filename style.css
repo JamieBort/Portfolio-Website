@@ -2,8 +2,7 @@
 /************           defaut styling which is for mobile               ************/
 /************************************************************************************/
 body{
-  /* padding: 0em; */
-  margin: 0em;
+    margin: 0em;
 }
 
 header, footer {
@@ -23,7 +22,15 @@ footer {
 }
 
 section {
-  /* margin: auto; */
+  /* border: aqua 0.1em solid; */
+}
+
+#bio, #projects {
+  background-color: brown;
+}
+
+#contact_info, #continuing_education {
+  background-color: burlywood;
 }
 
 h1, h2 {
@@ -33,45 +40,36 @@ h1, h2 {
 p {
   font-size: 1.5em; /* the text in one paragraph is not the same sizse as in another paragraph. This is because there is a button tag, and/or anchor tag, and/or image tag in the section tag with the paragraph tags. */
   text-align: center;
-  background-color: antiquewhite;
-  /* display: block; */
-  /* margin: auto; */
-
-
-
-  /* display: block; */
-  /* margin: auto; */
-  /* margin: 4em auto; */
-  /* padding: 3em; */
+  margin: 0em;
+  /* background-color: antiquewhite; */
 }
 
 button {
-  background-color: brown;
+  /* background-color: brown; */
   display: block;
   margin: 0 auto;
-  /* margin: 4em auto; */
-  /* padding: 3em; */
+  border: none;
+ }
 
-}
+ .projects_btn {
+  background-color: brown;
+ }
+
+ .continuing_education_btn, .contact_info_btn {
+  background-color: burlywood;
+ }
 
 a {
-  background-color: blue;
-  /* margin: 2em 0; */
-  /* display: block; */
-  /* max-width: 30em; */
-  /* max-height: 30em; */
+  /* background-color: blue; */
 }
 
 img {
-  background-color: aqua;
+  /* background-color: yellow; */
   width: 20em;
-  /* max-width: 20em; */
-  /* min-width: 15em; */
-  /* margin: 2em 0; */
 }
 
 div {
-  border: green .1em solid;
+  /* border: green .1em solid; */
 }
 
 span {
@@ -81,11 +79,6 @@ span {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-/* #myBtn2, #myBtn {
-  height: 10em;
-  margin: 10em;
-} */
 
 /************************************************************************************/
 /************           for tablets               ************/
