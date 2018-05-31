@@ -87,13 +87,32 @@ button {
    border: .1em black solid;
    border-radius: .3em;
    width: 15em;
-   margin: auto;
+   margin: 1em auto;
    background-color: burlywood;
    /* margin-bottom: 2em; */
  }
 
-a {
-  /* background-color: blue; */
+#a {
+  position: relative;
+  z-index: 1;
+  top: 2em;
+  font-size: 0.9em;
+}
+
+#d{
+  width: 100%;
+  height: auto;
+/* margin: auto; */
+/* display: block; */
+}
+
+
+/*                                                 resize images */
+.container img {
+  width: 25%;
+  height: auto;
+margin: auto;
+display: block;
 }
 
 img {
