@@ -29,13 +29,22 @@ section {
 #bio {
   width: 70%;
   margin: auto;
+  /* padding-bottom: 1em; */
+  /* background-color: #aaa; */
 }
 
-#bio_section, #projects {
+#contact_info, #projects, #continuing_education {
+  width: 70%;
+  margin: auto;
+  padding-bottom: 1em;
+  /* background-color: #aaa; */
+}
+
+#bio_section, #projects_section {
   background-color: brown;
 }
 
-#contact_info, #continuing_education {
+#contact_info_section, #continuing_education_section {
   background-color: burlywood;
 }
 
