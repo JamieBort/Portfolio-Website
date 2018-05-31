@@ -84,12 +84,24 @@ button {
  }
 
  #book, #meetup, #blog {
-   border: .1em black solid;
-   border-radius: .3em;
+   border: .1em lightseagreen solid;
+   border-radius: .5em;
    width: 15em;
    margin: 1em auto;
    background-color: burlywood;
    /* margin-bottom: 2em; */
+ }
+
+ #blog_btn {
+  /* background-color: black; */
+ }
+
+ #blog_anchor {
+  /* background-color: black; */
+ }
+
+ #blog_img {
+  background-color: burlywood;
  }
 
 #a {
@@ -100,10 +112,22 @@ button {
 }
 
 #d{
-  width: 100%;
-  height: auto;
-/* margin: auto; */
-/* display: block; */
+  /* width: 100%;
+  height: auto; */
+}
+
+#e {
+  position: relative;
+  z-index: 1;
+  top: 2em;
+  font-size: 0.9em;
+}
+
+#f {
+  /* position: relative; */
+  /* z-index: 1; */
+  /* top: 2em; */
+  font-size: 0.9em;
 }
 
 
