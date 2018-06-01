@@ -72,6 +72,17 @@ button {
   border: none;
  }
 
+ .social_div {
+  border: .1em chartreuse solid;
+  width: 50%;
+  margin: 2em auto;
+
+/* 
+ display: flex;
+ align-items: center;
+ justify-content: center */
+ }
+
  .continuing_education_btn, .contact_info_btn, .book_btn {
   background-color: burlywood;
  }
@@ -155,7 +166,12 @@ button {
  .text_div {
   background-color: green;
   width: 50%;
-  margin: 0 auto;
+  margin: auto;
+
+
+ display: flex;
+ /* align-items: center; */
+ justify-content: center
  }
 
 #meetup_p {
