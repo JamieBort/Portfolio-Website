@@ -26,6 +26,39 @@ section {
   /* border: aqua 0.1em solid; */
 }
 
+h1, h2 {
+  text-align: center;
+}
+
+p {
+  font-size: 1.5em; /* the text in one paragraph is not the same sizse as in another paragraph. This is because there is a button tag, and/or anchor tag, and/or image tag in the section tag with the paragraph tags. */
+  text-align: center;
+  margin: 0em;
+  /* background-color: antiquewhite; */
+}
+
+button {
+  /* background-color: brown; */
+  display: block;
+  margin: 0 auto;
+  border: none;
+ }
+
+ .contact_info_div {
+  border: .1em chartreuse solid;
+  border-radius: .5em;
+  width: 50%;
+  height: 30em;
+    margin: 2em auto;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+ /* background-color: brown; */
+  /* padding: 2em 0; */
+
+ }
+
 #bio {
   width: 70%;
   margin: auto;
@@ -50,38 +83,42 @@ section {
 
 }
 
+.projects_div {
+ border: .1em yellow solid;
+ border-radius: .5em;
+ width: 50%;
+ height: 40em;
+ margin: 2em auto;
+ background-color: brown;
+
+
+display: flex;
+align-items: center;
+justify-content: center
+ /* padding: 2em 0; */
+}
+
+.projects_btn {
+background-color: brown;
+/* display: flex;
+align-items: center;
+justify-content: center */
+
+/* height: auto; */
+/* width: 100%; */
+/* height: 20em; */
+}
+
+.projects_img {
+ height: auto;
+ width: 100%;
+ 
+ /* background-size: contain; */
+}
+
 #contact_info_section, #continuing_education_section {
   background-color: burlywood;
 }
-
-h1, h2 {
-  text-align: center;
-}
-
-p {
-  font-size: 1.5em; /* the text in one paragraph is not the same sizse as in another paragraph. This is because there is a button tag, and/or anchor tag, and/or image tag in the section tag with the paragraph tags. */
-  text-align: center;
-  margin: 0em;
-  /* background-color: antiquewhite; */
-}
-
-button {
-  /* background-color: brown; */
-  display: block;
-  margin: 0 auto;
-  border: none;
- }
-
- .social_div {
-  border: .1em chartreuse solid;
-  width: 50%;
-  margin: 2em auto;
-
-/* 
- display: flex;
- align-items: center;
- justify-content: center */
- }
 
  .continuing_education_btn, .contact_info_btn, .book_btn {
   background-color: burlywood;
@@ -102,39 +139,6 @@ button {
    background-color: burlywood;
    margin-top: 1em;
  }
-
- .projects_section_div {
-  border: .1em yellow solid;
-  border-radius: .5em;
-  width: 50%;
-  height: 40em;
-  margin: 2em auto;
-  background-color: brown;
-
-
- display: flex;
- align-items: center;
- justify-content: center
-  /* padding: 2em 0; */
-}
-
-.projects_btn {
- background-color: brown;
- /* display: flex;
- align-items: center;
- justify-content: center */
- 
- /* height: auto; */
- /* width: 100%; */
- /* height: 20em; */
-}
-
-.projects_img {
-  height: auto;
-  width: 100%;
-  
-  /* background-size: contain; */
-}
 
  .continuing_education_div {
    border: .1em lightseagreen solid;
