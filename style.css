@@ -175,7 +175,7 @@ justify-content: center */
  }
 
  .text_div {
-  background-color: green;
+  border: .1em green solid;
   width: 50%;
   margin: auto;
 
