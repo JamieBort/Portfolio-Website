@@ -45,7 +45,7 @@ button {
  }
 
  .contact_info_div {
-  border: .1em chartreuse solid;
+  border: .1em blueviolet solid;
   border-radius: .5em;
   width: 50%;
   height: 30em;
@@ -56,8 +56,14 @@ button {
 
  /* background-color: bisque; */
   /* padding: 2em 0; */
+}
 
- }
+.contact_info_img {
+  
+ height: auto;
+ width: 100%;
+
+}
 
 #bio {
   width: 70%;
@@ -85,7 +91,7 @@ button {
 }
 
 .projects_div {
- border: .1em yellow solid;
+ border: .1em blue solid;
  border-radius: .5em;
  width: 50%;
  height: 40em;
