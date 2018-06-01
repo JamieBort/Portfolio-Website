@@ -152,17 +152,23 @@ button {
   background-color: burlywood;
  }
 
+ .text_div {
+  background-color: green;
+ }
+
 #meetup_p {
-  position: relative;
+  /* position: relative;
   z-index: 1;
-  top: 2em;
+  top: 2em; */
+
   /* font-size: 0.9em; */
 }
 
 #blog_p {
-  position: relative;
+  /* position: relative;
   z-index: 1;
-  top: 2em;
+  top: 2em; */
+  
   /* font-size: 0.9em; */
 }
 
