@@ -30,8 +30,9 @@ h1, h2 {
   text-align: center;
 }
 
+/* the text in one paragraph is not the same sizse as in another paragraph. This is because there is a button tag, and/or anchor tag, and/or image tag in the section tag with the paragraph tags. */
 p {
-  font-size: 1.5em; /* the text in one paragraph is not the same sizse as in another paragraph. This is because there is a button tag, and/or anchor tag, and/or image tag in the section tag with the paragraph tags. */
+  /* font-size: 1.5em;  */
   text-align: center;
   margin: 0em;
   /* background-color: antiquewhite; */
@@ -103,6 +104,10 @@ button {
   margin: auto;
   /* padding-bottom: 1em; */
   /* background-color: #aaa; */
+}
+
+.bio_p {
+  font-size: 5em;
 }
 
 #contact_info, #projects, #continuing_education {
