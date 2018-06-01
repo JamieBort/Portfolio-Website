@@ -154,6 +154,8 @@ button {
 
  .text_div {
   background-color: green;
+  width: 50%;
+  margin: 0 auto;
  }
 
 #meetup_p {
