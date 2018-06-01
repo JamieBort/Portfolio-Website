@@ -278,6 +278,7 @@ div {
 }
 
 span {
+  font-size: 3em;
   position: relative;
   float: left;
   top: 50%;
