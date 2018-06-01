@@ -62,20 +62,6 @@ button {
   /* padding: 2em 0; */
 }
 
-.contact_info_div2 {
- border: .1em yellow solid;
- border-radius: .5em;
- width: 90%;
- height: 70em;
-   margin: 2em auto;
-display: flex;
-align-items: center;
-justify-content: center;
-
-/* background-color: bisque; */
- /* padding: 2em 0; */
-}
-
 /* This is here because the height/width of '.contact_info_img' didn't effect these two. */
 #linkedin_btn, #stackoverflow_btn {
   width: 100%;
@@ -193,28 +179,14 @@ justify-content: center */
  .phone_email {
    border: .1em black solid;
    border-radius: .3em;
-   width: 50em;
-   height: 4em;
-   /* background-color: salmon; */
-   background-color: burlywood;
-   margin-top: 1em;
- }
-
- .phone_email2 {
-   border: .1em yellow solid;
-   border-radius: .3em;
-   width: 50em;
-   height: 4em;
+   width: 100%;
+   height: auto;
    /* background-color: salmon; */
    background-color: burlywood;
    margin-top: 1em;
  }
 
  #email_anchor, #phone_anchor {
-   font-size: 4em;
- }
-
- #email_anchor2, #phone_anchor2 {
    font-size: 4em;
  }
 
