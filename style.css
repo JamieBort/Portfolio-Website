@@ -48,7 +48,7 @@ button {
   border: .1em blueviolet solid;
   border-radius: .5em;
   width: 50%;
-  height: 50em;
+  height: 40em;
     margin: 2em auto;
  display: flex;
  align-items: center;
@@ -180,6 +180,10 @@ justify-content: center */
    /* background-color: salmon; */
    background-color: burlywood;
    margin-top: 1em;
+ }
+
+ #email_anchor, #phone_anchor {
+   font-size: 4em;
  }
 
  .continuing_education_div {
