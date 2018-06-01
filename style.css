@@ -37,6 +37,10 @@ p {
   /* background-color: antiquewhite; */
 }
 
+.section_title {
+  font-size: 4em;
+}
+
 button {
   /* background-color: bisque; */
   display: block;
