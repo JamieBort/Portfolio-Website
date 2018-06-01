@@ -152,11 +152,13 @@ justify-content: center */
 }
 
 #contact_info_section, #continuing_education_section {
-  background-color: salmon;
+  /* background-color: salmon; */
+  background-color: burlywood;
 }
 
  .continuing_education_btn, .contact_info_btn, .book_btn {
-  background-color: salmon;
+  /* background-color: salmon; */
+  background-color: burlywood;
  }
 
  .continuing_education_img {
@@ -174,7 +176,8 @@ justify-content: center */
    border-radius: .3em;
    width: 30em;
    height: 4em;
-   background-color: salmon;
+   /* background-color: salmon; */
+   background-color: burlywood;
    margin-top: 1em;
  }
 
@@ -184,7 +187,8 @@ justify-content: center */
    width: 75%;
    height: auto;
    margin: 1em auto;
-   background-color: salmon;
+   /* background-color: salmon; */
+   background-color: burlywood;
 
 
 
@@ -202,7 +206,9 @@ justify-content: center */
  }
 
  #blog_img {
-  background-color: salmon;
+  /* background-color: salmon; */
+  background-color: burlywood;
+
  }
 
  .text_div {
