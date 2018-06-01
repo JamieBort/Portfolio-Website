@@ -48,7 +48,7 @@ button {
   border: .1em blueviolet solid;
   border-radius: .5em;
   width: 50%;
-  height: 30em;
+  height: 50em;
     margin: 2em auto;
  display: flex;
  align-items: center;
@@ -58,7 +58,35 @@ button {
   /* padding: 2em 0; */
 }
 
+#linkedin_btn, #stackoverflow_btn {
+  background-color: aqua;
+  width: 100%;
+  height: auto;
+}
+
+#linkedin_anchor {
+  /* background-color: aqua;
+  width: 100%;
+  height: auto; */
+}
+
+#linkedin_img {
+  /* background-color: aqua;
+  width: 100%;
+  height: auto; */
+}
+
+.contact_info_btn {
+  /* height: 100%; */
+  /* width: auto; */
+ /* width: 100%; */
+ /* height: auto; */
+}
+
 .contact_info_img {
+
+  /* height: 100%; */
+  /* width: auto; */
   
  height: auto;
  width: 100%;
@@ -132,8 +160,11 @@ justify-content: center */
  }
 
  .continuing_education_img {
+  /* height: 100%; */
+   /* width: auto; */
   width: 100%;
   height: auto;
+ 
 /* margin: auto; */
 /* display: block; */
  }
