@@ -58,10 +58,11 @@ button {
   /* padding: 2em 0; */
 }
 
+/* This is here because the height/width of '.contact_info_img' didn't effect these two. */
 #linkedin_btn, #stackoverflow_btn {
-  background-color: aqua;
   width: 100%;
   height: auto;
+  /* background-color: aqua; */
 }
 
 #linkedin_anchor {
