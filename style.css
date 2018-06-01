@@ -38,7 +38,7 @@ p {
 }
 
 button {
-  /* background-color: brown; */
+  /* background-color: bisque; */
   display: block;
   margin: 0 auto;
   border: none;
@@ -54,7 +54,7 @@ button {
  align-items: center;
  justify-content: center;
 
- /* background-color: brown; */
+ /* background-color: bisque; */
   /* padding: 2em 0; */
 
  }
@@ -74,7 +74,8 @@ button {
 }
 
 #bio_section, #projects_section {
-  background-color: brown;
+  background-color: bisque;
+  
 }
 
 #projects_section {
@@ -89,7 +90,7 @@ button {
  width: 50%;
  height: 40em;
  margin: 2em auto;
- background-color: brown;
+ background-color: bisque;
 
 
 display: flex;
@@ -99,7 +100,7 @@ justify-content: center
 }
 
 .projects_btn {
-background-color: brown;
+background-color: bisque;
 /* display: flex;
 align-items: center;
 justify-content: center */
