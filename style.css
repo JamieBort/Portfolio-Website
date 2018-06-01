@@ -139,6 +139,10 @@ button {
    /* margin-bottom: 2em; */
  }
 
+ .continuing_education_p{
+   font-size: 2em;
+ }
+
  #book_img {
   height: 20em;
   width: auto;
@@ -152,21 +156,21 @@ button {
   position: relative;
   z-index: 1;
   top: 2em;
-  font-size: 0.9em;
+  /* font-size: 0.9em; */
 }
 
 #blog_p {
   position: relative;
   z-index: 1;
   top: 2em;
-  font-size: 0.9em;
+  /* font-size: 0.9em; */
 }
 
 #book_p {
   /* position: relative; */
   /* z-index: 1; */
   /* top: 2em; */
-  font-size: 0.9em;
+  /* font-size: 0.9em; */
 }
 
 
