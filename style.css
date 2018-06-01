@@ -198,7 +198,7 @@ justify-content: center */
  .continuing_education_div {
    border: .1em lightseagreen solid;
    border-radius: .5em;
-   width: 75%;
+   width: 90%;
    height: auto;
    margin: 1em auto;
    /* background-color: salmon; */
@@ -215,8 +215,10 @@ justify-content: center */
  }
 
  #book_img {
-  height: 20em;
-  width: auto;
+  /* height: 30em; */
+  /* width: auto; */
+  width: 60em;
+  height: auto;
  }
 
  #blog_img {
