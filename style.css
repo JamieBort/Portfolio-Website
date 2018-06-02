@@ -214,10 +214,17 @@ justify-content: center */
    font-size: 4em;
  }
 
+ #book_btn {
+   background-color: aqua;
+   width:100%;
+ }
+
  #book_img {
   /* height: 30em; */
   /* width: auto; */
-  width: 90%;
+  
+  /* width: 60em; */
+  width: 75%;
   height: auto;
  }
 
