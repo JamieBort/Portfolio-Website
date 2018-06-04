@@ -28,12 +28,14 @@ section {
 
 h1 {
   text-align: center;
-  font-size: 32em;
+  /* font-size: 32em; */
+  font-size: 24em;
 }
 
 h2 {
   text-align: center;
-  font-size: 24em;
+  /* font-size: 24em; */
+  font-size: 18em;
 }
 
 /* the text in one paragraph is not the same sizse as in another paragraph. This is because there is a button tag, and/or anchor tag, and/or image tag in the section tag with the paragraph tags. */
