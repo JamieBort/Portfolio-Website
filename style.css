@@ -6,10 +6,7 @@ body{
 }
 
 header, footer {
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
   background-image: url(attachments/pattern/5957908fe6d9740.jpg);
-  /* transform: scale(2); */
 }
 
 header {
@@ -68,7 +65,6 @@ h2 {
 
 /* the text in one paragraph is not the same sizse as in another paragraph. This is because there is a button tag, and/or anchor tag, and/or image tag in the section tag with the paragraph tags. */
 p {
-  /* font-size: 1.5em;  */
   text-align: center;
   margin: 0em;
   /* background-color: antiquewhite; */
@@ -95,9 +91,7 @@ button {
  display: flex;
  align-items: center;
  justify-content: center;
-
  /* background-color: bisque; */
-  /* padding: 2em 0; */
 }
 
 a {
@@ -135,33 +129,9 @@ a:active {
   /* background-color: aqua; */
 }
 
-#linkedin_anchor {
-  /* background-color: aqua;
-  width: 100%;
-  height: auto; */
-}
-
-#linkedin_img {
-  /* background-color: aqua;
-  width: 100%;
-  height: auto; */
-}
-
-.contact_info_btn {
-  /* height: 100%; */
-  /* width: auto; */
- /* width: 100%; */
- /* height: auto; */
-}
-
-.contact_info_img {
-
-  /* height: 100%; */
-  /* width: auto; */
-  
+.contact_info_img { 
  height: auto;
  width: 100%;
-
 }
 
 .phone_email {
@@ -189,7 +159,6 @@ a:active {
 #bio {
   width: 95%;
   margin: auto;
-  /* padding-bottom: 1em; */
   /* background-color: #aaa; */
 }
 
@@ -209,12 +178,6 @@ a:active {
   
 }
 
-#projects_section {
-  /* margin-bottom: 3em; */
-  /* padding-bottom: 15em; */
-
-}
-
 .projects_div {
  border: .1em blue solid;
  border-radius: .5em;
@@ -232,20 +195,13 @@ justify-content: center
 
 .projects_btn {
 background-color: bisque;
-/* display: flex;
-align-items: center;
-justify-content: center */
-
 height: auto;
 width: 100%;
-/* height: 20em; */
 }
 
 .projects_img {
  height: auto;
  width: 100%;
- 
- /* background-size: contain; */
 }
 
 #contact_info_section, #continuing_education_section {
@@ -259,13 +215,8 @@ width: 100%;
  }
 
  .continuing_education_img {
-  /* height: 100%; */
-   /* width: auto; */
   width: 100%;
   height: auto;
- 
-/* margin: auto; */
-/* display: block; */
  }
 
  .continuing_education_div {
@@ -276,20 +227,11 @@ width: 100%;
    margin: 1em auto;
    /* background-color: salmon; */
    background-color: burlywood;
-
-
-
-   
-   /* margin-bottom: 2em; */
  }
 
  .continuing_education_p{
    font-size: 2.5em;
  }
-
- /* .continuing_education_btn_div {
-  border: 1px darkblue dashed;
-} */
 
  #book_btn {
    /* background-color: aqua; */
@@ -297,10 +239,6 @@ width: 100%;
  }
 
  #book_img {
-  /* height: 30em; */
-  /* width: auto; */
-  
-  /* width: 60em; */
   width: 75%;
   height: auto;
  }
@@ -311,10 +249,6 @@ width: 100%;
  }
 
  #blog_img {
-  /* height: 30em; */
-  /* width: auto; */
-  
-  /* width: 60em; */
   width: 100%;
   height: auto;
  }
@@ -325,10 +259,6 @@ width: 100%;
  }
 
  #meetup_img {
-  /* height: 30em; */
-  /* width: auto; */
-  
-  /* width: 60em; */
   width: 100%;
   height: auto;
  }
@@ -349,30 +279,6 @@ width: 100%;
  /* align-items: center; */
  justify-content: center
  }
-
-#meetup_p {
-  /* position: relative;
-  z-index: 1;
-  top: 2em; */
-
-  /* font-size: 0.9em; */
-}
-
-#blog_p {
-  /* position: relative;
-  z-index: 1;
-  top: 2em; */
-  
-  /* font-size: 0.9em; */
-}
-
-#book_p {
-  /* position: relative; */
-  /* z-index: 1; */
-  /* top: 2em; */
-  /* font-size: 0.9em; */
-}
-
 
 /*                                                 resize images */
 .container img {
