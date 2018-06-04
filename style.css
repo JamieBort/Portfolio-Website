@@ -31,19 +31,24 @@ h1, h2 {
 }
 
 h1 {
-  /* font-size: 10em; */
-  /* font-size: 8em; */
-  /* font-size: 6em; */
+  font-size: 10px;
+  
+
+  /* too big */
   /* font-size: 4em; */
-  font-size: 3em;
+  
+  /* too small */
+  /* font-size: 3em; */
 }
 
 h2 {
-  /* font-size: 8em; */
-  /* font-size: 6em; */
-  /* font-size: 4em; */
+  font-size: 5px;
+
+  /* too big */
   /* font-size: 3em; */
-  font-size: 2em;
+  
+  /* too small */
+  /* font-size: 2em; */
 }
 
 /* the text in one paragraph is not the same sizse as in another paragraph. This is because there is a button tag, and/or anchor tag, and/or image tag in the section tag with the paragraph tags. */
