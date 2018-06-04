@@ -63,6 +63,34 @@ button {
   /* padding: 2em 0; */
 }
 
+a {
+  /* pointer-events: none; */
+  /* cursor: text; */
+  text-decoration: none;
+} 
+
+/* ===== ===== ===== */
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+/* ===== ===== ===== */
+
 /* This is here because the height/width of '.contact_info_img' didn't effect these two. */
 #linkedin_btn, #stackoverflow_btn {
   width: 100%;
@@ -98,6 +126,14 @@ button {
  width: 100%;
 
 }
+
+/* alternative to hr */
+/* Should I use this in order for the html to be semantic in terms of accessability? */
+/* #dummy:before {
+ content: " ";
+ display: block;
+ border-bottom: 1px solid black;
+} */
 
 #bio {
   width: 70%;
