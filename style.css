@@ -31,16 +31,16 @@ h1, h2 {
 }
 
 h1 {
-/* font-size: 150% */
+  font-size: 600%
+
+/* The font sizes percentage below didn't change the font size. */
 /* font-size: 300% */
-font-size: 600%
 
   /* The following three did not effect the size */
   /* font-size: 30px; */
   /* font-size: 60px; */
   /* font-size: 120px; */
   
-
   /* too big */
   /* font-size: 4em; */
   
@@ -49,10 +49,11 @@ font-size: 600%
 }
 
 h2 {
-  /* font-size: 80% */
-  /* font-size: 160% */
   font-size: 400%
 
+  /* The font sizes percentage below didn't change the font size. */
+  /* font-size: 160% */
+  
   /* The following three did not effect the size */
   /* font-size: 15px; */
   /* font-size: 30px; */
@@ -74,7 +75,7 @@ p {
 }
 
 .section_title {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 button {
@@ -173,7 +174,7 @@ a:active {
 }
 
 #email_anchor, #phone_anchor {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 /* alternative to hr */
@@ -192,7 +193,7 @@ a:active {
 }
 
 .bio_p {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 #contact_info, #projects, #continuing_education {
@@ -282,7 +283,7 @@ width: 100%;
  }
 
  .continuing_education_p{
-   font-size: 3em;
+   font-size: 2.5em;
  }
 
  /* .continuing_education_btn_div {
