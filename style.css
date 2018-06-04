@@ -127,6 +127,20 @@ a:active {
 
 }
 
+.phone_email {
+  border: .1em black solid;
+  border-radius: .3em;
+  width: 100%;
+  height: auto;
+  /* background-color: salmon; */
+  background-color: burlywood;
+  margin-top: 1em;
+}
+
+#email_anchor, #phone_anchor {
+  font-size: 4em;
+}
+
 /* alternative to hr */
 /* Should I use this in order for the html to be semantic in terms of accessability? */
 /* #dummy:before {
@@ -217,20 +231,6 @@ justify-content: center */
 /* display: block; */
  }
 
- .phone_email {
-   border: .1em black solid;
-   border-radius: .3em;
-   width: 100%;
-   height: auto;
-   /* background-color: salmon; */
-   background-color: burlywood;
-   margin-top: 1em;
- }
-
- #email_anchor, #phone_anchor {
-   font-size: 4em;
- }
-
  .continuing_education_div {
    border: .1em lightseagreen solid;
    border-radius: .5em;
@@ -250,8 +250,12 @@ justify-content: center */
    font-size: 4em;
  }
 
+ /* .continuing_education_btn_div {
+  border: 1px darkblue dashed;
+} */
+
  #book_btn {
-   background-color: aqua;
+   /* background-color: aqua; */
    width:100%;
  }
 
@@ -261,6 +265,34 @@ justify-content: center */
   
   /* width: 60em; */
   width: 75%;
+  height: auto;
+ }
+
+ #blog_btn {
+   /* background-color: aqua; */
+   width:100%;
+ }
+
+ #blog_img {
+  /* height: 30em; */
+  /* width: auto; */
+  
+  /* width: 60em; */
+  width: 100%;
+  height: auto;
+ }
+
+ #meetup_btn {
+   /* background-color: aqua; */
+   width:100%;
+ }
+
+ #meetup_img {
+  /* height: 30em; */
+  /* width: auto; */
+  
+  /* width: 60em; */
+  width: 100%;
   height: auto;
  }
 
@@ -393,3 +425,4 @@ span {
 /************************************************************************************/
 /************************************************************************************/
 /************************************************************************************/
+
