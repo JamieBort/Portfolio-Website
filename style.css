@@ -219,7 +219,7 @@ a:active {
  border: .1em blue solid;
  border-radius: .5em;
  width: 90%;
- height: 50em;
+ /* height: 50em; */
  margin: 2em auto;
  background-color: bisque;
 
