@@ -32,7 +32,8 @@ h1, h2 {
 
 h1 {
   /* font-size: 30px; */
-  font-size: 60px;
+  /* font-size: 60px; */
+  font-size: 120px;
   
 
   /* too big */
@@ -44,7 +45,8 @@ h1 {
 
 h2 {
   /* font-size: 15px; */
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 60px;
 
   /* too big */
   /* font-size: 3em; */
