@@ -354,18 +354,13 @@ span {
     /* text-decoration: underline; */
   }
 
-  #ten {
+  .eleven {
     display:flex;
 justify-content:space-around;
    flex-flow: row wrap;
 /* 		justify-content:center; */
   
 }
-
-  #contact_info_section {
-	/* display:flex; */
-  /* justify-content:center; */
-  }
 
   .contact_info_div {
     border: .1em green solid;
