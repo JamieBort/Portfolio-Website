@@ -344,6 +344,11 @@ span {
     /* text-decoration: underline; */
   }
 
+  #contact_info_section {
+	display:flex;
+  justify-content:center;
+  }
+
   .contact_info_div {
     border: .1em green solid;
     width: 40%;
