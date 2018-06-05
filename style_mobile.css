@@ -2,11 +2,11 @@
 /************           defaut styling which is for mobile               ************/
 /************************************************************************************/
 body{
-    /* margin: 0em; */
+    margin: 0em;
 }
 
 header, footer {
-  /* background-image: url(attachments/pattern/5957908fe6d9740.jpg); */
+  background-image: url(attachments/pattern/5957908fe6d9740.jpg);
 }
 
 header {
@@ -34,6 +34,35 @@ h1 {
 h2 {
   /* font-size: 400%; */
 }
+
+.section_title {
+  text-align: center;
+  background-color: beige;
+}
+
+.section_div {
+  border: aqua 0.1em solid;
+  display: flex;
+  /* width: 10%; */
+}
+
+.contact_info_div {
+  border: blue 0.3em solid;
+  /* width: 10%; */
+}
+
+.contact_info_btn, .continuing_education_btn, .projects_btn {
+  height: 10em;
+}
+
+.contact_info_img, .projects_img, .continuing_education_img {
+  max-width: 10%;
+}
+
+
+
+
+
 
 /* the text in one paragraph is not the same sizse as in another paragraph. This is because there is a button tag, and/or anchor tag, and/or image tag in the section tag with the paragraph tags. */
 p {
