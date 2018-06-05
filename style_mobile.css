@@ -50,17 +50,22 @@ h2 {
 
 .contact_info_div, .projects_div, .continuing_education_div {
   border: blue 0.3em solid;
-  max-width: 30%;
+  max-width: 35%;
+  /* min-width: 20%; */
+  height: 15em;
+  margin: 1em;
 }
 
 .contact_info_btn, .continuing_education_btn, .projects_btn {
-  height: 20em;
+  height: 100%;
+  width: auto;
 }
 
 .contact_info_img, .projects_img, .continuing_education_img {
   /* max-width: 30em; */
   /* width: 100% */
-  width:10%;
+  height: 100%;
+  width:auto;
 }
 
 
