@@ -23,10 +23,6 @@ section {
   /* border: aqua 0.1em solid; */
 }
 
-h1, h2 {
-  /* text-align: center; */
-}
-
 h1 {
   /* font-size: 600%; */
 }
@@ -36,8 +32,11 @@ h2 {
 }
 
 .section_title {
-  text-align: center;
   background-color: beige;
+}
+
+.bio_p, .section_title, .continuing_education_p, h1, h2, footer {
+  text-align: center;
 }
 
 .section_div {
@@ -52,8 +51,14 @@ h2 {
   border: blue 0.3em solid;
   max-width: 35%;
   /* min-width: 20%; */
-  height: 15em;
+  height: 13em;
   margin: 1em;
+}
+
+.continuing_education_p {
+  background-color: aqua;
+  padding: 0 .4em;
+  margin: 0;
 }
 
 .contact_info_btn, .continuing_education_btn, .projects_btn {
