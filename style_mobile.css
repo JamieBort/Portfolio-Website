@@ -19,8 +19,13 @@ footer {
 }
 
 section {
-  /* padding: 1em 0; */
-  /* border: aqua 0.1em solid; */
+  /* margin: 0; */
+  
+}
+
+#bio, #contact_info, .section_div {
+  width: 90%;
+  margin: auto;
 }
 
 h1 {
@@ -32,7 +37,7 @@ h2 {
 }
 
 .section_title {
-  background-color: beige;
+  background-color: yellow;
 }
 
 .bio_p, .section_title, .continuing_education_p, h1, h2, footer {
@@ -59,12 +64,6 @@ h2 {
   justify-content: center
 }
 
-.contact_info_div, .projects_div, .continuing_education_btn_div {
-  /* display: flex;
-  align-items: center;
-  justify-content: center */
-}
-
 .continuing_education_p {
   background-color: aqua;
   padding: 0 .4em;
@@ -87,7 +86,20 @@ h2 {
   /* width: 100%; */
 }
 
+#bio_section, #projects_section,.projects_btn {
+  /* background-color: salmon; */
+  background-color: burlywood;
+}
 
+#contact_info_section, #continuing_education_section, .contact_info_btn, .continuing_education_btn {
+  background-color: bisque;
+}
+
+button {
+  border: none;
+}
+
+/* =============================================== */
 
 
 
