@@ -18,8 +18,8 @@ footer {
   /* height: 3em; */
 }
 
-section {
-  /* margin: 0; */
+section, header {
+  padding: .001em;
   
 }
 
@@ -37,7 +37,11 @@ h2 {
 }
 
 .section_title {
-  background-color: yellow;
+  /* background-color: yellow; */
+}
+
+.section_title {
+  text-decoration: underline;
 }
 
 .bio_p, .section_title, .continuing_education_p, h1, h2, footer {
@@ -45,7 +49,7 @@ h2 {
 }
 
 .section_div {
-  border: aqua 0.1em solid;
+  /* border: aqua 0.1em solid; */
   display: flex;
  flex-flow: row wrap;
  justify-content: space-around
@@ -53,19 +57,19 @@ h2 {
 }
 
 .contact_info_div, .projects_div, .continuing_education_btn_div {
-  border: blue 0.3em solid;
+  /* border: blue 0.3em solid; */
   /* max-width: 25%; */
   /* min-width: 20%; */
   height: 15em;
   /* width: auto; */
-  margin: 1em;
+  /* margin: 1em; */
   display: flex;
   align-items: center;
   justify-content: center
 }
 
 .continuing_education_p {
-  background-color: aqua;
+  /* background-color: aqua; */
   padding: 0 .4em;
   margin: 0;
 }
