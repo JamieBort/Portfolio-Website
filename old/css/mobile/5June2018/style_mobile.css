@@ -2,77 +2,102 @@
 /************           defaut styling which is for mobile               ************/
 /************************************************************************************/
 body{
-    /* margin: 0em; */
+    margin: 0em;
 }
 
 header, footer {
-  /* background-image: url(attachments/pattern/5957908fe6d9740.jpg); */
+  background-image: url(attachments/pattern/5957908fe6d9740.jpg);
 }
 
 header {
-  /* height: 10%; */
-  /* padding-top: 2em; */
+  height: 10%;
+  padding-top: 2em;
 }
 
 footer {
-  /* height: 3em; */
+  height: 3em;
 }
 
 section {
-  /* padding: 1em 0; */
+  padding: 1em 0;
   /* border: aqua 0.1em solid; */
 }
 
 h1, h2 {
-  /* text-align: center; */
+  text-align: center;
 }
 
 h1 {
-  /* font-size: 600%; */
+  font-size: 600%;
+
+/* The font sizes percentage below didn't change the font size. */
+/* font-size: 300% */
+
+  /* The following three did not effect the size */
+  /* font-size: 30px; */
+  /* font-size: 60px; */
+  /* font-size: 120px; */
+  
+  /* too big */
+  /* font-size: 4em; */
+  
+  /* too small */
+  /* font-size: 3em; */
 }
 
 h2 {
-  /* font-size: 400%; */
+  font-size: 400%;
+
+  /* The font sizes percentage below didn't change the font size. */
+  /* font-size: 160% */
+  
+  /* The following three did not effect the size */
+  /* font-size: 15px; */
+  /* font-size: 30px; */
+  /* font-size: 60px; */
+
+  /* too big */
+  /* font-size: 3em; */
+  
+  /* too small */
+  /* font-size: 2em; */
 }
 
 /* the text in one paragraph is not the same sizse as in another paragraph. This is because there is a button tag, and/or anchor tag, and/or image tag in the section tag with the paragraph tags. */
 p {
-  /* text-align: center; */
-  /* margin: 0em; */
+  text-align: center;
+  margin: 0em;
   /* background-color: antiquewhite; */
+}
+
+.section_title {
+  font-size: 2.5em;
+  text-decoration: underline;
 }
 
 button {
   /* background-color: bisque; */
-  /* display: block; */
-  /* margin: 0 auto; */
-  /* border: none; */
+  display: block;
+  margin: 0 auto;
+  border: none;
  }
 
-
-img {
-  /* background-color: yellow; */
-  /* width: 20em; */
+ .contact_info_div {
+  border: .1em blueviolet solid;
+  width: 90%;
+  /* height: 70em; */
+  margin: 2em auto;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ /* background-color: bisque; */
 }
 
-div {
-  /* border: green .1em solid; */
-}
-
-span {
-  /* font-size: 2.5em; */
-  /* position: relative; */
-  /* float: left; */
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
-}
-
- a {
-   /* pointer-events: none; */
-   /* cursor: text; */
-   /* text-decoration: none; */
- } 
+a {
+  /* pointer-events: none; */
+  /* cursor: text; */
+  text-decoration: none;
+} 
 
 /* ===== ===== ===== */
 /* unvisited link */
@@ -96,45 +121,29 @@ a:active {
 }
 /* ===== ===== ===== */
 
-
-.section_title {
-  /* font-size: 2.5em; */
-  /* text-decoration: underline; */
-}
-
- .contact_info_div {
-  /* border: .1em blueviolet solid; */
-  /* width: 90%; */
-  /* margin: 2em auto; */
- /* display: flex; */
- /* align-items: center; */
- /* justify-content: center; */
- /* background-color: bisque; */
-}
-
 /* This is here because the height/width of '.contact_info_img' didn't effect these two. */
 #linkedin_btn, #stackoverflow_btn {
-  /* width: 100%; */
-  /* height: auto; */
+  width: 100%;
+  height: auto;
   /* background-color: aqua; */
 }
 
 .contact_info_img { 
- /* height: auto; */
- /* width: 100%; */
+ height: auto;
+ width: 100%;
 }
 
 .phone_email {
-  /* border: .1em black solid; */
-  /* width: 100%; */
-  /* height: auto; */
+  border: .1em black solid;
+  width: 100%;
+  height: auto;
   /* background-color: salmon; */
-  /* background-color: burlywood; */
-  /* margin-top: 1em; */
+  background-color: burlywood;
+  margin-top: 1em;
 }
 
 #email_anchor, #phone_anchor {
-  /* font-size: 2.5em; */
+  font-size: 2.5em;
 }
 
 /* alternative to hr */
@@ -146,131 +155,152 @@ a:active {
 } */
 
 #bio {
-  /* width: 95%; */
-  /* margin: auto; */
+  width: 95%;
+  margin: auto;
   /* background-color: #aaa; */
 }
 
 .bio_p {
-  /* font-size: 3em; */
+  font-size: 3em;
 }
 
 #contact_info, #projects, #continuing_education {
-  /* width: 70%; */
-  /* margin: auto; */
-  /* padding-bottom: 1em; */
+  width: 70%;
+  margin: auto;
+  padding-bottom: 1em;
   /* background-color: #aaa; */
 }
 
 #bio_section, #projects_section {
-  /* background-color: bisque; */
+  background-color: bisque;
+  
 }
 
 .projects_div {
- /* border: .1em blue solid; */
- /* width: 90%; */
- /* margin: 2em auto; */
- /* background-color: bisque; */
+ border: .1em blue solid;
+ width: 90%;
+ /* height: 50em; */
+ margin: 2em auto;
+ background-color: bisque;
 
 
-/* display: flex; */
-/* align-items: center; */
-/* justify-content: center */
+display: flex;
+align-items: center;
+justify-content: center
+ /* padding: 2em 0; */
 }
 
 .projects_btn {
-/* background-color: bisque; */
-/* height: auto; */
-/* width: 100%; */
+background-color: bisque;
+height: auto;
+width: 100%;
 }
 
 .projects_img {
- /* height: auto; */
- /* width: 100%; */
+ height: auto;
+ width: 100%;
 }
 
 #contact_info_section, #continuing_education_section {
   /* background-color: salmon; */
-  /* background-color: burlywood; */
+  background-color: burlywood;
 }
 
  .continuing_education_btn, .contact_info_btn, .book_btn {
   /* background-color: salmon; */
-  /* background-color: burlywood; */
+  background-color: burlywood;
  }
 
  .continuing_education_img {
-  /* width: 100%; */
-  /* height: auto; */
+  width: 100%;
+  height: auto;
  }
 
  .continuing_education_div {
-   /* border: .1em lightseagreen solid; */
-   /* width: 90%; */
-   /* height: auto; */
-   /* margin: 1em auto; */
+   border: .1em lightseagreen solid;
+   width: 90%;
+   height: auto;
+   margin: 1em auto;
    /* background-color: salmon; */
-   /* background-color: burlywood; */
+   background-color: burlywood;
  }
 
  .continuing_education_p{
-   /* font-size: 2.5em; */
+   font-size: 2.5em;
  }
 
  #book_btn {
    /* background-color: aqua; */
-   /* width:100%; */
+   width:100%;
  }
 
  #book_img {
-  /* width: 75%; */
-  /* height: auto; */
+  width: 75%;
+  height: auto;
  }
 
  #blog_btn {
    /* background-color: aqua; */
-   /* width:100%; */
+   width:100%;
  }
 
  #blog_img {
-  /* width: 100%; */
-  /* height: auto; */
+  width: 100%;
+  height: auto;
  }
 
  #meetup_btn {
    /* background-color: aqua; */
-   /* width:100%; */
+   width:100%;
  }
 
  #meetup_img {
-  /* width: 100%; */
-  /* height: auto; */
+  width: 100%;
+  height: auto;
  }
 
  #blog_img {
   /* background-color: salmon; */
-  /* background-color: burlywood; */
+  background-color: burlywood;
+
  }
 
  .text_div {
-  /* border: .1em green solid; */
-  /* width: 50%; */
-  /* margin: auto; */
+  border: .1em green solid;
+  width: 50%;
+  margin: auto;
 
 
- /* display: flex; */
- /* justify-content: center */
+ display: flex;
+ /* align-items: center; */
+ justify-content: center
  }
 
-
- /* This is not used. */
 /*                                                 resize images */
-/* .container img {
+.container img {
   width: 25%;
   height: auto;
 margin: auto;
-display: block; 
-} */
+display: block; /* ***** Test to see if this display:block is needed. ***** */
+}
+
+img {
+  /* background-color: yellow; */
+  width: 20em;
+}
+
+div {
+  /* border: green .1em solid; */
+}
+
+span {
+  font-size: 2.5em;
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /************************************************************************************/
 /************           for Modal               ************/
