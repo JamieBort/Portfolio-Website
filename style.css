@@ -28,7 +28,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 600%
+  font-size: 600%;
 
 /* The font sizes percentage below didn't change the font size. */
 /* font-size: 300% */
@@ -46,7 +46,7 @@ h1 {
 }
 
 h2 {
-  font-size: 400%
+  font-size: 400%;
 
   /* The font sizes percentage below didn't change the font size. */
   /* font-size: 160% */
@@ -84,10 +84,9 @@ button {
 
  .contact_info_div {
   border: .1em blueviolet solid;
-  border-radius: .5em;
   width: 90%;
   /* height: 70em; */
-    margin: 2em auto;
+  margin: 2em auto;
  display: flex;
  align-items: center;
  justify-content: center;
@@ -136,7 +135,6 @@ a:active {
 
 .phone_email {
   border: .1em black solid;
-  border-radius: .3em;
   width: 100%;
   height: auto;
   /* background-color: salmon; */
@@ -180,7 +178,6 @@ a:active {
 
 .projects_div {
  border: .1em blue solid;
- border-radius: .5em;
  width: 90%;
  /* height: 50em; */
  margin: 2em auto;
@@ -221,7 +218,6 @@ width: 100%;
 
  .continuing_education_div {
    border: .1em lightseagreen solid;
-   border-radius: .5em;
    width: 90%;
    height: auto;
    margin: 1em auto;
@@ -285,7 +281,7 @@ width: 100%;
   width: 25%;
   height: auto;
 margin: auto;
-display: block;
+display: block; /* ***** Test to see if this display:block is needed. ***** */
 }
 
 img {
@@ -310,7 +306,7 @@ span {
 /************           for tablets               ************/
 /************************************************************************************/
 
-@@media query {}
+@media query {}
 
 
 
@@ -318,10 +314,58 @@ span {
 /************           for desktop               ************/
 /************************************************************************************/
 
-/* @@media query {} */
+@media  (min-width: 30em) {
+
+  body {
+    margin: 0em;
+    background-color: aliceblue;
+    
+}
+
+  h1 {
+    font-size: 3em;
+  }
+  
+  h2 {
+    font-size: 2em;
+  }
 
 
 
+  .bio_p {
+    font-size: 1em;
+  }
+
+
+
+
+  .section_title {
+    font-size: 1em;
+    /* text-decoration: underline; */
+  }
+
+  .contact_info_div {
+    border: .1em green solid;
+    width: 40%;
+    /* height: 70em; */
+    margin: 0 auto;
+    
+   display: inline-block;
+   /* align-items: center; */
+   /* justify-content: center; */
+   /* background-color: bisque; */
+  }
+
+
+  .contact_info_img { 
+    height: auto;
+    width: 25%;
+   }
+
+
+
+
+}
 
 /************************************************************************************/
 /************           for Modal               ************/
