@@ -416,7 +416,7 @@ display: block;
 /************************************************************/
 
 /* @media (max-width: 414px) { */
-  @media (max-width: 200em) {
+  @media (max-width: 100em) {
 
 .projects_div, .continuing_education_btn_div {
   /* border: blue 0.3em solid; */
