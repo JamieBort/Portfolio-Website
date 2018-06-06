@@ -178,12 +178,66 @@ display: block;
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: lightblue;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 40%; /* Could be more or less, depending on screen size */
+  width: 60%; /* Could be more or less, depending on screen size */
+
+
 }
+
+.modal_div {
+  /* margin: auto; */
+  /* height: auto; */
+  /* width: 30em; */
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+.twotwo {
+  display: flex;
+  justify-content: center;
+  /* width: 10em; */
+  /* width: 10%; */
+}
+
+.modal_p {
+  text-align: center;
+  /* margin: auto; */
+}
+
+.project_btn {
+/* margin: 2em; */
+/* padding: 2em; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* margin: auto; */
+  /* height: auto; */
+  /* width: 50%; */
+  /* width:10em; */
+}
+
+.project_anchor {
+  height: auto;
+  width: 50%;
+  /* margin: auto; */
+}
+
+.project_p {
+  margin: auto;
+  width: 30em;
+  /* border: 1em blue solid; */
+  /* background-color: black; */
+  /* text-align: center; */
+}
+
+#first_project_btn2 {
+  /* background-color: blue; */
+  /* width: 10%; */
+  /* height: auto; */
+}
+
 
 /* The Close Button */
 .close {
