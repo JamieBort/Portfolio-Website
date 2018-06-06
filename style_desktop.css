@@ -415,7 +415,7 @@ display: block;
 /************           for tablets               ************/
 /************************************************************************************/
 
-@media query (max-width: 30em) {}
+@media query (max-width: 30em) {
 
 
 
@@ -438,4 +438,12 @@ display: block;
   /* margin: 4em 1em; */
   /* padding: 100%; */
   padding:1.5em;
+}
+
+
+
+.continuing_education_p{
+  font-size: 2.5em;
+}
+
 }
