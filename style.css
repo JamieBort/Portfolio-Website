@@ -224,7 +224,7 @@ display: block;
     }
 
 .contact_info_btn, .continuing_education_btn, .projects_btn {
-  height: 75%;
+  height: 65%;
   width: auto;
   /* height: auto; */
   /* width: 100%; */
@@ -241,7 +241,7 @@ display: block;
     
     .continuing_education_p {
       font-size: 3em;
-      background-color: yellow;
+      /* background-color: yellow; */
     }
  }
 
