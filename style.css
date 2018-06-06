@@ -100,7 +100,7 @@ button {
 }
 
 .phone_email_btn {
-  background-color: rgb(173, 6, 6);
+  background-color: lightcoral;
   border: black .1em solid;
   border-radius: .6em;
   /* margin: 0 3em; */
@@ -125,7 +125,7 @@ a {
 /* ===== ===== ===== */
 /* unvisited link */
 a:link {
- color: blue;
+ color: black;
 }
 
 /* visited link */
