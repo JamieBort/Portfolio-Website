@@ -2,6 +2,13 @@
 /************          defaut styling for desktop               ************/
 /***************************************************************************/
 
+#maintenance {
+  text-align: center;
+  background-color: white;
+  width: 30%;
+  margin: 1em auto;
+}
+
 body{
     margin: 0em;
 }
