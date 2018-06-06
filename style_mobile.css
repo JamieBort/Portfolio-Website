@@ -119,6 +119,36 @@ button {
   padding:1.5em;
 }
 
+
+
+a {
+  /* pointer-events: none; */
+  /* cursor: text; */
+  /* text-decoration: none; */
+} 
+
+/* ===== ===== ===== */
+/* unvisited link */
+a:link {
+ color: red;
+}
+
+/* visited link */
+a:visited {
+ color: green;
+}
+
+/* mouse over link */
+a:hover {
+ color: hotpink;
+}
+
+/* selected link */
+a:active {
+ color: blue;
+}
+/* ===== ===== ===== */
+
 /* =============================================== */
 
 
@@ -156,34 +186,6 @@ span {
   /* left: 50%; */
   /* transform: translate(-50%, -50%); */
 }
-
- a {
-   /* pointer-events: none; */
-   /* cursor: text; */
-   /* text-decoration: none; */
- } 
-
-/* ===== ===== ===== */
-/* unvisited link */
-a:link {
-  color: red;
-}
-
-/* visited link */
-a:visited {
-  color: green;
-}
-
-/* mouse over link */
-a:hover {
-  color: hotpink;
-}
-
-/* selected link */
-a:active {
-  color: blue;
-}
-/* ===== ===== ===== */
 
 
 .section_title {

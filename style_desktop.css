@@ -1,6 +1,7 @@
-/************************************************************************************/
-/************           defaut styling which is for mobile               ************/
-/************************************************************************************/
+/***************************************************************************/
+/************          defaut styling for desktop               ************/
+/***************************************************************************/
+
 body{
     margin: 0em;
 }
@@ -104,7 +105,7 @@ button {
 }
 
 .phone_email_btn {
-  background-color: maroon;
+  background-color: rgb(173, 6, 6);
   border: black .1em solid;
   border-radius: .6em;
   /* margin: 0 3em; */
@@ -118,6 +119,34 @@ button {
   /* padding: 100%; */
   padding:1.5em;
 }
+
+a {
+  /* pointer-events: none; */
+  /* cursor: text; */
+  /* text-decoration: none; */
+} 
+
+/* ===== ===== ===== */
+/* unvisited link */
+a:link {
+ color: white;
+}
+
+/* visited link */
+a:visited {
+ color: green;
+}
+
+/* mouse over link */
+a:hover {
+ color: hotpink;
+}
+
+/* selected link */
+a:active {
+ color: blue;
+}
+/* ===== ===== ===== */
 
 /* =============================================== */
 
@@ -156,34 +185,6 @@ span {
   /* left: 50%; */
   /* transform: translate(-50%, -50%); */
 }
-
- a {
-   /* pointer-events: none; */
-   /* cursor: text; */
-   /* text-decoration: none; */
- } 
-
-/* ===== ===== ===== */
-/* unvisited link */
-a:link {
-  color: red;
-}
-
-/* visited link */
-a:visited {
-  color: green;
-}
-
-/* mouse over link */
-a:hover {
-  color: hotpink;
-}
-
-/* selected link */
-a:active {
-  color: blue;
-}
-/* ===== ===== ===== */
 
 
 .section_title {
@@ -407,3 +408,24 @@ display: block;
 /************************************************************************************/
 /************************************************************************************/
 
+
+
+/************************************************************************************/
+/************           for tablets               ************/
+/************************************************************************************/
+
+@media query (max-width: 30em) {}
+
+
+
+.projects_div, .continuing_education_btn_div {
+  /* border: blue 0.3em solid; */
+  /* max-width: 25%; */
+  /* min-width: 20%; */
+  height: 20em;
+  /* width: auto; */
+  /* margin: 1em; */
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
