@@ -222,6 +222,13 @@ display: block;
       align-items: center;
       justify-content: center;
     }
+
+.contact_info_btn, .continuing_education_btn, .projects_btn {
+  height: 75%;
+  width: auto;
+  /* height: auto; */
+  /* width: 100%; */
+}
     
     .phone_email_anchor {
       font-size: 3em;
@@ -236,16 +243,12 @@ display: block;
       font-size: 3em;
       background-color: yellow;
     }
-    
+ }
+
+ 
 
 
 
-
-
-
-  
-  }
-  
   /* Smartphones (landscape) ----------- */
   @media only screen and (min-width : 321px) {
   /* Styles */
