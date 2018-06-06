@@ -415,15 +415,20 @@ display: block;
 /************           for tablets               ************/
 /************************************************************************************/
 
-@media query (max-width: 30em) {
+@media (max-width: 30em) {
 
-
+  
+  .continuing_education_p {
+    background-color: yellow;
+    font-size: 2.5em;
+    text-decoration: underline;
+  }
 
 .projects_div, .continuing_education_btn_div {
   /* border: blue 0.3em solid; */
   /* max-width: 25%; */
   /* min-width: 20%; */
-  height: 30em;
+  height: 40em;
   /* width: auto; */
   /* margin: 1em; */
   display: flex;
@@ -442,8 +447,6 @@ display: block;
 
 
 
-.continuing_education_p{
-  font-size: 2.5em;
-}
+
 
 }
