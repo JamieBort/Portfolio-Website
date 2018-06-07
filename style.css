@@ -310,7 +310,7 @@ display: block;
 .continuing_education_div {
   margin: 1em 0;
   min-width: 20em;
-  border: 0.05em solid black;
+  border: 0.1em solid black;
   /* border-radius: 2em; */
   /* padding: .75em .5em 0 .5em; */
 }
