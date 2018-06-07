@@ -64,6 +64,12 @@ section, header {
   justify-content: center;
 }
 
+.continuing_education_div {
+  border: .05em solid black;
+  border-radius: 2em;
+  padding: .75em .5em 0 .5em;
+}
+
 .continuing_education_p {
   /* background-color: aqua; */
   padding: 0 .4em;
@@ -93,6 +99,10 @@ section, header {
 
 #contact_info_section, #continuing_education_section, .contact_info_btn, .continuing_education_btn {
   background-color: bisque;
+}
+
+#continuing_education_section {
+  padding-bottom: 1em;
 }
 
 button {
