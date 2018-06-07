@@ -41,7 +41,7 @@ section, header {
 }
 
 .section_title {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .bio_p, .section_title, .continuing_education_p, h1, h2, footer {
