@@ -307,7 +307,7 @@ display: block;
       justify-content: center;
     }
 
-.continuing_education_div {
+.projects_div, .continuing_education_div {
   margin: 1em 0;
   min-width: 90%;
   border: 0.1em solid black;
