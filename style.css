@@ -302,6 +302,13 @@ display: block;
       justify-content: center;
     }
 
+.continuing_education_div {
+  margin: 1em 0;
+  /* border: .0314em solid black; */
+  /* border-radius: 2em; */
+  /* padding: .75em .5em 0 .5em; */
+}
+
 .contact_info_btn, .continuing_education_btn, .projects_btn {
   height: 65%;
   width: auto;
