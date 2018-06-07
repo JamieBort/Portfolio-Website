@@ -309,7 +309,7 @@ display: block;
 .continuing_education_div {
   margin: 1em 0;
   min-width: 15em;
-  border: .0314em solid yellow;
+  border: 1em solid yellow;
   /* border-radius: 2em; */
   /* padding: .75em .5em 0 .5em; */
 }
