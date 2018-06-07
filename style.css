@@ -73,7 +73,7 @@ section, header {
 }
 
 .continuing_education_div {
-  border: .0314em solid black;
+  border: .03em solid black;
   border-radius: 2em;
   padding: .75em .5em 0 .5em;
 }
@@ -309,9 +309,13 @@ display: block;
 .continuing_education_div {
   margin: 1em 0;
   min-width: 15em;
-  border: 0.5em solid black;
+  border: 0.03em solid black;
   /* border-radius: 2em; */
   /* padding: .75em .5em 0 .5em; */
+}
+
+.display_none2 {
+  display: unset;
 }
 
 #display_none {
