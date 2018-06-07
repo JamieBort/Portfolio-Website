@@ -73,7 +73,8 @@ section, header {
 }
 
 .continuing_education_div {
-  border: .03em solid black;
+  border: .05em solid black;
+  min-width: 15em;
   border-radius: 2em;
   padding: .75em .5em 0 .5em;
 }
