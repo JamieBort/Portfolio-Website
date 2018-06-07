@@ -44,6 +44,10 @@ section, header {
   text-align: center;
 }
 
+.section_title, .bio_p {
+  font-size: 1.5em;
+}
+
 .section_div {
   /* border: aqua 0.1em solid; */
   display: flex;
@@ -65,7 +69,7 @@ section, header {
 }
 
 .continuing_education_div {
-  border: .05em solid black;
+  border: .0314em solid black;
   border-radius: 2em;
   padding: .75em .5em 0 .5em;
 }
@@ -210,6 +214,10 @@ display: block;
   justify-content: center;
   /* width: 10em; */
   /* width: 10%; */
+}
+
+.section_title, .bio_p {
+  font-size: 1em;
 }
 
 .modal_p {
