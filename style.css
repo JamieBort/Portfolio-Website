@@ -373,6 +373,10 @@ display: block;
       font-size: 3em;
       /* background-color: yellow; */
     }
+
+    .modal_p {
+      font-size: 3em;
+    }
  }
 
  
