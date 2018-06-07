@@ -9,7 +9,7 @@
   margin: 1em auto;
 }
 
-#display_none2 {
+.display_none2 {
   display:none;
 }
 
@@ -229,10 +229,6 @@ display: block;
   /* margin: auto; */
 }
 
-#display_none {
-  display:none;
-}
-
 .project_btn {
 /* margin: 2em; */
 /* padding: 2em; */
@@ -316,6 +312,10 @@ display: block;
   border: .0314em solid yellow;
   /* border-radius: 2em; */
   /* padding: .75em .5em 0 .5em; */
+}
+
+#display_none {
+  display:none;
 }
 
 .contact_info_btn, .continuing_education_btn, .projects_btn {
