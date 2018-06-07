@@ -343,6 +343,8 @@ display: block;
 .display_none2 {
   display: unset;
   display: block;
+
+  border: 0.1em solid black;
   
   /* width: 50%; */
 }
