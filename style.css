@@ -9,6 +9,10 @@
   margin: 1em auto;
 }
 
+#display_none2 {
+  display:none;
+}
+
 body{
     margin: 0em;
 }
@@ -223,6 +227,10 @@ display: block;
 .modal_p {
   text-align: center;
   /* margin: auto; */
+}
+
+#display_none {
+  display:none;
 }
 
 .project_btn {
