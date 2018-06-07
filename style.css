@@ -311,6 +311,7 @@ display: block;
   margin: 1em 0;
   min-width: 90%;
   border: 0.1em solid black;
+  border-radius: 2em
 }
 
 #contact_info {
