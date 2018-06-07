@@ -337,11 +337,13 @@ display: block;
 }
 
 #contact_info {
-  display: block;
+  /* display: block; */
 }
 
 .display_none2 {
   display: unset;
+  display: block;
+  
   /* width: 50%; */
 }
 
