@@ -317,6 +317,7 @@ display: block;
 
 .display_none2 {
   display: unset;
+  width: 50%;
 }
 
 #display_none {
