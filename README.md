@@ -67,3 +67,7 @@ What am I involved in and when? (show calendar or neat list)
   - [ ] 10b. 
 
 - [ ] 11. Bug test.
+
+- [ ] 12. Add a picture of myself.
+
+- [ ] 13. Include the fact that I am involved with Code for Durham.
