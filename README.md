@@ -71,3 +71,5 @@ What am I involved in and when? (show calendar or neat list)
 - [ ] 12. Add a picture of myself.
 
 - [ ] 13. Include the fact that I am involved with Code for Durham.
+
+The URL to the google drive for this repo can be found here: https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo
