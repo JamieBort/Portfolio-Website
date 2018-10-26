@@ -74,8 +74,6 @@ What am I involved in and when? (show calendar or neat list)
 
 - [ ] 13. Include the fact that I am involved with Code for Durham.
 
-<<<<<<< HEAD
 - [ ] 14. Add this [github calendar](https://github.com/IonicaBizau/github-calendar) to my portfolio site. [Or somewhere else?]
-=======
+
 The URL to the google drive for this repo can be found here: https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo
->>>>>>> becad76e7db48e62b29d8f85ccac4fec524de7a4
