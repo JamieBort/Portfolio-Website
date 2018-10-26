@@ -71,3 +71,5 @@ What am I involved in and when? (show calendar or neat list)
 - [ ] 12. Add a picture of myself.
 
 - [ ] 13. Include the fact that I am involved with Code for Durham.
+
+- [ ] 14. Add this [github calendar](https://github.com/IonicaBizau/github-calendar) to my portfolio site. [Or somewhere else?]
