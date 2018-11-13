@@ -40,5 +40,8 @@ In it are links to website I should explore for this revamp.
     i. a brief bio
 
     j. my github commit history calendar
-    
+
     k. the percentage of days I've commited to the number of days in the github commit history calendar
+
+TODO:
+See the trello board for todo items:
