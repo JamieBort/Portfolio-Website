@@ -1,0 +1,24 @@
+body {
+    background-color: antiquewhite;
+}
+header {
+    border: .1em solid burlywood;
+}
+
+#one {
+    border: .1em solid green;
+    
+}
+
+#two {
+    border: .1em solid aquamarine;
+}
+
+#three {
+    border: .1em solid coral;
+    
+}
+
+#four {
+    border: .1em solid crimson;
+}
