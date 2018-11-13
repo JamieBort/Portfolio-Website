@@ -2,30 +2,78 @@ body {
     background-color: antiquewhite;
 }
 header {
-    border: .1em solid burlywood;
+    border: .2em solid burlywood;
 }
 
-#one {
-    border: .1em solid green;
+#section_one {
+    border: .2em solid green;
     
 }
 
-#two {
-    border: .1em solid aquamarine;
+#section_two {
+    border: .2em solid aquamarine;
 }
 
-#three {
-    border: .1em solid coral;
+#section_three {
+    border: .2em solid coral;
     
 }
 
-#four {
-    border: .1em solid crimson;
+#section_four {
+    border: .2em solid crimson;
 }
 
-#five {
-    border: .1em solid lightpink;
+#section_five {
+    border: .2em solid lightpink;
 }
 footer {
-    border: .1em solid powderblue;
+    border: .2em solid powderblue;
+}
+
+/* Playing with the header layout using block and inline */
+/* #section_one {
+    border: .2em solid green;
+}
+
+section div p {
+    display: inline;
+}
+
+#section_one div {
+    display: inline;
+    border: .2em solid tomato;
+}
+
+#links {
+    float: right;
+} */
+
+/* Playing with the header layout using flexbox */
+#section_one {
+    display: flex;
+    border: .2em solid green;
+    justify-content: space-between;
+}
+
+#section_one div {
+    border: .2em solid tomato;
+}
+
+#name {
+    width: 200px;
+}
+
+#links {
+    width: 750px;
+    display: flex; 
+    justify-content: flex-end;
+    /* justify-content: space-between; */
+}
+
+#links p {
+    width: 150px;
+}
+
+#section_one div p {
+    border: .2em solid olive;
 }
