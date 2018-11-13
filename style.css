@@ -19,10 +19,12 @@ h1 {
 
 p {
     border: .2em solid olive;
+    margin: .2em;
 }
 
 img {
     border: .2em solid blue;
+    margin: .2em;
 }
 
 ul {
@@ -63,8 +65,28 @@ footer {
 
 #section_two div {
     display: flex;
+    /* flex-wrap: wrap; */
+}
+
+#section_two p {
+    /* display: block; */
+    /* display: flex; */
+    flex-wrap: wrap;
 }
 
 #section_two img {
     max-height: 320px; /* Without this the picture distorts when the wondow width is diminished. */
+}
+
+#test {
+    /* height: 600px; */
+    display: flex;
+    flex-direction: column;
+    border: .2em solid gold;
+    
+}
+
+#test p {
+    /* flex-direction: column; */
+    /* display: inline; */
 }
