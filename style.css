@@ -1,57 +1,43 @@
 body {
-    background-color: antiquewhite;
-}
-header {
-    border: .2em solid burlywood;
+    background-color: antiquewhite
 }
 
-#section_one {
+header, #body_section, footer {
+    border: .2em solid blueviolet;
+    margin: .2em 0;
+}
+
+#section_two, #section_three, #section_four, #section_five {
     border: .2em solid green;
-    
+    margin: .2em;
 }
 
-#section_two {
-    border: .2em solid aquamarine;
+h1 {
+    border: .2em solid brown;
+    text-align: center;
 }
 
-#section_three {
-    border: .2em solid coral;
-    
+p {
+    border: .2em solid olive;
 }
 
-#section_four {
-    border: .2em solid crimson;
+img {
+    border: .2em solid blue;
 }
 
-#section_five {
-    border: .2em solid lightpink;
+ul {
+    border: .2em solid violet
 }
+
+
 footer {
-    border: .2em solid powderblue;
+    text-align: center;
 }
-
-/* Playing with the header layout using block and inline */
-/* #section_one {
-    border: .2em solid green;
-}
-
-section div p {
-    display: inline;
-}
-
-#section_one div {
-    display: inline;
-    border: .2em solid tomato;
-}
-
-#links {
-    float: right;
-} */
 
 /* Playing with the header layout using flexbox */
 #section_one {
     display: flex;
-    border: .2em solid green;
+    /* border: .2em solid green; */
     justify-content: space-between;
 }
 
@@ -59,21 +45,26 @@ section div p {
     border: .2em solid tomato;
 }
 
-#name {
-    width: 200px;
-}
-
 #links {
-    width: 750px;
+    /* width: 750px; */
     display: flex; 
     justify-content: flex-end;
     /* justify-content: space-between; */
 }
 
-#links p {
-    width: 150px;
+/* Playing with the second section layout using flexbox */
+#body_section {
+    /* border: .2em solid orangered; */
 }
 
-#section_one div p {
-    border: .2em solid olive;
+#body_section section {
+    /* border: .2em solid orchid; */
+}
+
+#section_two div {
+    display: flex;
+}
+
+#section_two img {
+    max-height: 320px; /* Without this the picture distorts when the wondow width is diminished. */
 }
