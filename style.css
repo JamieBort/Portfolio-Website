@@ -1,5 +1,5 @@
 body {
-    background-color: antiquewhite
+    background-color: antiquewhite;
 }
 
 header, #body_section, footer {
@@ -92,39 +92,44 @@ footer {
 /*************** new css ***************/
 
 
-  #section_div {
+#section_div {
     display: flex;
    flex-flow: row wrap;
    justify-content: space-around;
   }
 
-  /* this broke it */
-  .contact_info_div, .projects_div {
-    height: 15em;
-    /* display: flex; */
-    align-items: center;
-    justify-content: center;
-  }
+.contact_btn {
+	margin: 6px;
+	border: 1px solid blue;
+	height: 200px;
+    width: 250px;
+    background-color: antiquewhite;
+    /* color: buttontext; */
+    /* border: none; */
+}
 
-  .contact_info_btn {
-    height: 92%;
-    /* height: 65%; */
+.phone_email_btn {
+    
+    width: 200px;
+    background-color: antiquewhite;
+}
+
+.contact_anchor  {
+    border: 1px solid green;
+    
+	/* height: 150px; */
+    /* width: 150px; */
+    
+    /* height: 100%; */
+    /* width: auto; */
+}
+
+.contact_img {
+    border: 2px solid yellow;
+    border: 1 solid teal;
+	/* height: 100px; */
+    /* width: 100px; */
+    height: 100%;
     width: auto;
 }
 
-  .contact_info_img {
-    height: 100%;
-    width:auto;
-}
-
-  .phone_email_btn {
-    background-color: lightcoral;
-    border: black .1em solid;
-    border-radius: .6em;
-    padding: 2em;
-  }
-
-  .phone_email_anchor {
-    font-size: 1.5em;
-    padding:1.5em;
-  }
