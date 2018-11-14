@@ -17,6 +17,11 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    border: .2em solid hotpink;
+    text-align: center;
+}
+
 p {
     border: .2em solid olive;
     margin: .2em;
@@ -25,6 +30,21 @@ p {
 img {
     border: .2em solid blue;
     margin: .2em;
+    max-height: 320px; /* Without this the picture distorts when the wondow width is diminished. */
+    margin-right: 1em;
+}
+
+#my_picture {
+    float: left;
+}
+
+/* a {
+    height: 100px;
+    width: 100px;
+} */
+
+#my_blog {
+    /* center this - until I have writing from other sites to share */
 }
 
 ul {
@@ -39,7 +59,6 @@ footer {
 /* Playing with the header layout using flexbox */
 #section_one {
     display: flex;
-    /* border: .2em solid green; */
     justify-content: space-between;
 }
 
@@ -48,45 +67,22 @@ footer {
 }
 
 #links {
-    /* width: 750px; */
     display: flex; 
     justify-content: flex-end;
-    /* justify-content: space-between; */
 }
 
 /* Playing with the second section layout using flexbox */
-#body_section {
-    /* border: .2em solid orangered; */
+#section_two {
+    min-height: 400px; /* The height of the image in this section plus the height of the space above the image. */
 }
 
-#body_section section {
-    /* border: .2em solid orchid; */
-}
-
-#section_two div {
-    display: flex;
-    /* flex-wrap: wrap; */
-}
-
-#section_two p {
-    /* display: block; */
-    /* display: flex; */
-    flex-wrap: wrap;
-}
-
-#section_two img {
-    max-height: 320px; /* Without this the picture distorts when the wondow width is diminished. */
+#section_four {
+    min-height: 450px; /* The height of the image in this section plus the height of the space above the image. */
 }
 
 #test {
     /* height: 600px; */
     display: flex;
-    flex-direction: column;
     border: .2em solid gold;
     
-}
-
-#test p {
-    /* flex-direction: column; */
-    /* display: inline; */
 }
