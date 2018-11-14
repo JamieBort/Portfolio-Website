@@ -29,7 +29,7 @@ p {
 }
 
 img {
-    border: .2em solid blue;
+    /* border: .2em solid blue; */
     margin: .2em;
     max-height: 320px; /* Without this the picture distorts when the wondow width is diminished. */
     margin-right: 1em;
@@ -100,36 +100,33 @@ footer {
 
 .contact_btn {
 	margin: 6px;
-	border: 1px solid blue;
-	height: 200px;
-    width: 250px;
+	height: 200px; /* Wide enough to fit the email address. */
+    width: 260px; /* Arbitrary height. */
     background-color: antiquewhite;
-    /* color: buttontext; */
-    /* border: none; */
-}
-
-.phone_email_btn {
-    
-    width: 200px;
-    background-color: antiquewhite;
+    border: none;
+    /* border: 1px solid orange; */
 }
 
 .contact_anchor  {
-    border: 1px solid green;
-    
+    /* border: 1px solid green; */
 	/* height: 150px; */
     /* width: 150px; */
-    
-    /* height: 100%; */
-    /* width: auto; */
 }
 
 .contact_img {
-    border: 2px solid yellow;
-    border: 1 solid teal;
-	/* height: 100px; */
-    /* width: 100px; */
+    /* border: 2px solid yellow; */
     height: 100%;
     width: auto;
 }
 
+.phone_email_btn {
+    /* background-color: black; */
+    font-size: 20px;
+}
+
+.phone_email_anchor {
+    text-decoration: none;
+    padding: .5em;
+    border: .1em solid black;
+    border-radius: .5em;
+}
