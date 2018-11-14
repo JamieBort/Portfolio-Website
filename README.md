@@ -45,5 +45,7 @@ In it are links to website I should explore for this revamp.
 
     l. a photo of me.
 
+    m. "what I learned today" section.
+
 TODO:
 See the trello board for [todo items](https://trello.com/c/dJHqhhfU/90-update-clean-up-portfolio-website-https-jamiebortgithubio).
