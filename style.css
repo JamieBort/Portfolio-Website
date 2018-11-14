@@ -18,6 +18,7 @@ h1 {
 }
 
 h3 {
+    /* make this font size smaller than the h1 font size. */
     border: .2em solid hotpink;
     text-align: center;
 }
@@ -86,3 +87,48 @@ footer {
     border: .2em solid gold;
     
 }
+
+
+/*************** new css ***************/
+#contact_info, .section_div {
+    width: 90%;
+    margin: auto;
+  }
+
+  .section_div {
+    display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+  }
+
+  /* this broke it */
+  .contact_info_div, .projects_div, .continuing_education_btn_div {
+    height: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact_info_btn {
+    height: 92%;
+    /* height: 65%; */
+    width: auto;
+}
+
+  .contact_info_img {
+    height: 100%;
+    width:auto;
+}
+
+  .phone_email_btn {
+    background-color: lightcoral;
+    border: black .1em solid;
+    border-radius: .6em;
+    padding: 2em;
+  }
+
+  .phone_email_anchor {
+    font-size: 1.5em;
+    /* font-size: 3em; */
+    padding:1.5em;
+  }
