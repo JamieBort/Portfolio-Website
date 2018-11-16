@@ -126,9 +126,12 @@ ul {
     border: .2em solid violet
 }
 
-
 footer {
+	display: flex;
+	align-items: center;
+    justify-content: center;
     text-align: center;
+	height: 2em;
 }
 
 /* Playing with the header layout using flexbox */
