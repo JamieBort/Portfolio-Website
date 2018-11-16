@@ -1,3 +1,77 @@
+/* Below I have similar, if not identical ___ for <h1> tags and <p> tags. I am going to use the <h1> tags but may need to revert to the <p> tags if I want to style <h1> tags elesewhere in the website.  */
+#section_one {
+	height: 8em;
+	border: .1em solid red;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#section_one div {
+/* 	width: 40%; */
+	height: 6em;
+	margin: .1em;
+	border: .1em solid blue;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+div:first-child {
+	width: 40%;
+}
+
+div:nth-child(2) {
+	width: 50%;
+}
+
+.navigation {
+	height: 4em;
+	margin: .1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+
+#name {
+	height: 4em;
+	margin: .1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#section_one div:first-child #name{
+/* 	font-size: 2em; */
+	height: 2.5em;
+	width: 40%;
+		background-color: lightblue;
+}
+
+.navigation {
+	font-size: 1em;
+	background-color: lightgreen;
+	width: 15%;
+/* 	font-size: 1.5em;
+		height: 2.5em; */
+}
+
+#section_one div * {
+		border: .15em solid darkgreen;
+}
+
+
+
+
+
+
+
+
+
+
 body {
     background-color: antiquewhite;
 }
@@ -14,6 +88,11 @@ header, #body_section, footer {
 
 h1 {
     border: .2em solid brown;
+    text-align: center;
+}
+
+h2 {
+    border: .2em solid lightblue;
     text-align: center;
 }
 
@@ -39,11 +118,6 @@ img {
     float: left;
 }
 
-/* a {
-    height: 100px;
-    width: 100px;
-} */
-
 #my_blog {
     /* center this - until I have writing from other sites to share */
 }
@@ -67,6 +141,32 @@ footer {
     border: .2em solid tomato;
 }
 
+#section_one div:first-child {
+    width: 40%;
+}
+
+#section_one div:nth-child(2) {
+    height: 5em;
+    width: 40%;
+    background-color: yellowgreen;
+    display: flex;
+}
+
+#section_one div:nth-child(2) p{
+    background-color: red;
+    
+}
+
+#section_one p {
+    text-align: center;
+    justify-content: center;
+}
+
+#section_one div:first-child p {
+    font-size: 2em;
+    background-color: aqua;
+}
+
 #links {
     display: flex; 
     justify-content: flex-end;
@@ -79,13 +179,6 @@ footer {
 
 #section_four {
     min-height: 450px; /* The height of the image in this section plus the height of the space above the image. */
-}
-
-#test {
-    /* height: 600px; */
-    display: flex;
-    border: .2em solid gold;
-    
 }
 
 
