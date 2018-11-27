@@ -1,17 +1,28 @@
 /* Below I have similar, if not identical ___ for <h1> tags and <p> tags. I am going to use the <h1> tags but may need to revert to the <p> tags if I want to style <h1> tags elesewhere in the website.  */
-#section_one {
+#section_header {
+	margin: .1em;
 	height: 8em;
 	border: .1em solid red;
 	display: flex;
-	align-items: center;
+	/* align-items: center; */
 	justify-content: space-around;
 }
 
-#section_one div {
+#one {
+	margin: .1em;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	border: .1em solid gold;
+}
+
+/* #section_header div { */
+	.two {
 /* 	width: 40%; */
 	height: 6em;
 	margin: .1em;
-	border: .1em solid blue;
+	border: .1em solid purple;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -44,7 +55,7 @@ div:nth-child(2) {
 	text-align: center;
 }
 
-#section_one div:first-child #name{
+#section_header div:first-child #name{
 /* 	font-size: 2em; */
 	height: 2.5em;
 	width: 40%;
@@ -59,9 +70,9 @@ div:nth-child(2) {
 		height: 2.5em; */
 }
 
-#section_one div * {
+/* #section_header div * {
 		border: .15em solid darkgreen;
-}
+} */
 
 /* =============================== */
 /* =============================== */
@@ -69,7 +80,7 @@ div:nth-child(2) {
 
 #section_About_Me, #section_Projects, #section_Writing, #section_Connect {
 	margin: .1em;
-	border: .1em solid red;
+	border: .1em solid darkgreen;
 }
 
 #section_About_Me h1, #section_Projects h1, #section_Writing h1, #section_Connect h1, #section_Connect h3 {
@@ -86,7 +97,7 @@ div:nth-child(2) {
 	display: flex;
 	width: 90%;
 	margin: .1em auto;
-	border: .1em solid green;
+	border: .1em solid thistle;
 }
 
 #section_About_Me img {
@@ -98,7 +109,7 @@ div:nth-child(2) {
 }
 
 #section_About_Me p, #section_Projects p, #section_Writing p, #section_Connect p {
-	border: .1em solid lightblue;
+	border: .1em solid lightcoral;
 }
 
 #section_About_Me p {
@@ -110,10 +121,35 @@ div:nth-child(2) {
 	margin: .1em auto;
 }
 
+#section_Writing div  {
+	margin: auto;
+	width: 90%;
+	padding:0;
+	/* background-color: white; */
+	border: .1em solid maroon;
+}
+
+#section_Writing button {
+	margin: .2em;
+	border: .1em solid gray;
+}
+
+#section_Writing img {
+	/* margin: 0 auto; */
+	/* height: 25%; */
+	/* background-color: aqua; */
+	margin: .1em;
+	width: 50%;
+	border: .1em solid gold;
+}
+
 #section_Connect div {
+	width: 90%;
+	margin: .1em auto;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
+	border: .1em solid black;
 }
 
 #section_Connect button {
@@ -148,10 +184,11 @@ div:nth-child(2) {
 
 
 footer {
+	margin: .1em;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  text-align: center;
+  	text-align: center;
 	height: 2em;
 	border: .1em solid goldenrod;
 }

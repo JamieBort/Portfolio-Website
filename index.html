@@ -1,21 +1,36 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Jamie Bort Portfolio Website</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
 
-    <section id="section_one">
-        <div>
-            <h1 id="name">Jamie Bort</h1>
-        </div>
-        <div>
-        <p id="about_me" class="navigation">About Me</p>
-        <p id="projects"  class="navigation">Projects</p>
-        <p id="my_writing" class="navigation">My Writing</p>
-        <p id="connect_with_me" class= "navigation">Connect With Me</p>
-        </div>
-    </section>
+<head>
+	<meta charset="utf-8">
+	<title>Jamie Bort Portfolio Website</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<!-- <header>
+	<div>
+		<h1 id="name">Jamie Bort</h1>
+	</div>
+	<div>
+		<p id="about_me" class="navigation">About Me</p>
+		<p id="projects" class="navigation">Projects</p>
+		<p id="my_writing" class="navigation">My Writing</p>
+		<p id="connect_with_me" class="navigation">Connect With Me</p>
+	</div>
+</header> -->
+
+<section id="section_header">
+	<div id="one">
+		<div class="two">
+			<h1 id="name">Jamie Bort</h1>
+		</div>
+		<div class="two">
+			<p id="about_me" class="navigation">About Me</p>
+			<p id="projects" class="navigation">Projects</p>
+			<p id="my_writing" class="navigation">My Writing</p>
+			<p id="connect_with_me" class="navigation">Connect With Me</p>
+		</div>
+	</div>
+</section>
 
 
 <!--  -->
@@ -28,30 +43,39 @@
 		<div>
 			<img id="bills_picture" src="https://www.fillmurray.com/200/300" alt="A Picture of Bill Murray.">
 			<p>I am a full stack software engineer. My skills include Java, Node.js, JavaScript, HTML, CSS, [list others].</p>
-			<p>I help organize Triangle Adult Junior Developers, a coding meetup geared towards adults new to software development. I contribute to Code for Durham, a community based ... Lastly, I am colaborating with a colleague on a new project.</p>
-			<p>When I am not working you can find me in a bar or hammock reading, playing a snare with Batala Durham, preparing a software presentation or hosting a civics based meetup.</p>
+			<p>I help organize Triangle Adult Junior Developers, a coding meetup geared towards adults new to software
+				development. I contribute to Code for Durham, a community based ... Lastly, I am colaborating with a colleague on a
+				new project.</p>
+			<p>When I am not working you can find me in a bar or hammock reading, playing a snare with Batala Durham, preparing
+				a software presentation or hosting a civics based meetup.</p>
 		</div>
 	</div>
 </section>
-	<section id="section_Projects">
-		<h1>Projects</h1>
-		<p>I am going to list my projects here.</p>
-	</section>
-	<section id="section_Writing">
-		<h1>My Writing</h1>
-		<p>The first 20 lines of my most recent blog posting.</p>
-		<a href="https://medium.com/@jamiebort/latest" target="_blank">
-			<img id="my_blog" src="images/Screen Shot 2018-11-14 at 11.34.36.png"></a>
+<section id="section_Projects">
+	<h1>Projects</h1>
+	<p>I am going to list my projects here.</p>
+</section>
+<section id="section_Writing">
+	<h1>My Writing</h1>
+	<p>The first 20 lines of my most recent blog posting.</p>
+	<!-- <a id="test" href="https://medium.com/@jamiebort/latest" target="_blank">
+		<img id="my_blog" src="images/Screen Shot 2018-11-14 at 11.34.36.png"></a> -->
+	<div id="writing_div">
+		<button class="writing_btn" type="button" name="button">
+			<a class="writing_anchor" id="test" href="https://medium.com/@jamiebort/latest" target="_blank">
+				<img id="my_blog" class="writing_img" src="images/Screen Shot 2018-11-14 at 11.34.36.png"></a>
+		</button>
+	</div>
 
-            <!-- Share this when I share from opensource.com or youtube.com -->
-            <!-- <p>The first 20 lines of my most recent open source posting.</p> -->
-            <!-- Also, share here what I am currenlty reading. -->
-	</section>
+	<!-- Share this when I share from opensource.com or youtube.com -->
+	<!-- <p>The first 20 lines of my most recent open source posting.</p> -->
+	<!-- Also, share here what I am currenlty reading. -->
+</section>
 
 <section id="section_Connect">
 	<h1>Connect With Me</h1>
 	<h3>I would love to hear from you.</h3>
-	<div id="section_div">
+	<div id="connect_div">
 		<button class="contact_btn" type="button" name="button">
 			<a class="contact_anchor" href="https://www.linkedin.com/in/jamie-bort-84b9b89/" target="_blank">
 				<img class="contact_img" class="" src="images/linkedin.png" />
@@ -64,7 +88,7 @@
 		</button>
 		<button class="contact_btn" type="button" name="button">
 			<a class="contact_anchor" href="https://medium.com/@jamiebort" target="_blank">
-				<img class="contact_img" src="images/medium.png"/>
+				<img class="contact_img" src="images/medium.png" />
 			</a>
 		</button>
 		<button class="contact_btn" type="button" name="button">
@@ -86,16 +110,17 @@
 	</div>
 </section>
 
-</section>
+<!-- </section> -->
 
 
 <!--  -->
 <!--  -->
 <!--  -->
 
-    
-    <footer>
-        <span id="copyright">This should give the copyright date.</span>
-    </footer>
-    <script src="main.js"></script>
+
+<footer>
+	<span id="copyright">This should give the copyright date.</span>
+</footer>
+<script src="main.js"></script>
+
 </html>
