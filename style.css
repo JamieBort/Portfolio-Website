@@ -63,161 +63,75 @@ div:nth-child(2) {
 		border: .15em solid darkgreen;
 }
 
+/* =============================== */
+/* =============================== */
+/* =============================== */
 
-
-
-
-
-
-
-
-
-body {
-    background-color: antiquewhite;
+#section_About_Me, #section_Projects, #section_Writing, #section_Connect {
+	margin: .1em;
+	border: .1em solid red;
 }
 
-header, #body_section, footer {
-    border: .2em solid blueviolet;
-    margin: .2em 0;
-}
-
-#section_two, #section_three, #section_four, #section_five {
-    border: .2em solid green;
-    margin: .2em;
-}
-
-h1 {
-    border: .2em solid brown;
-    text-align: center;
-}
-
-h2 {
-    border: .2em solid lightblue;
-    text-align: center;
-}
-
-h3 {
-    /* make this font size smaller than the h1 font size. */
-    border: .2em solid hotpink;
-    text-align: center;
-}
-
-p {
-    border: .2em solid olive;
-    margin: .2em;
-}
-
-img {
-    /* border: .2em solid blue; */
-    margin: .2em;
-    max-height: 320px; /* Without this the picture distorts when the wondow width is diminished. */
-    margin-right: 1em;
-}
-
-#my_picture {
-    float: left;
-}
-
-#my_blog {
-    /* center this - until I have writing from other sites to share */
-}
-
-ul {
-    border: .2em solid violet
-}
-
-footer {
+#section_About_Me h1, #section_Projects h1, #section_Writing h1, #section_Connect h1, #section_Connect h3 {
 	display: flex;
 	align-items: center;
-    justify-content: center;
-    text-align: center;
+	justify-content: center;
+	width: 90%;
 	height: 2em;
+	margin: .1em auto;
+	border: .1em solid blue;
 }
 
-/* Playing with the header layout using flexbox */
-#section_one {
-    display: flex;
-    justify-content: space-between;
+#section_About_Me > div {
+	display: flex;
+	width: 90%;
+	margin: .1em auto;
+	border: .1em solid green;
 }
 
-#section_one div {
-    border: .2em solid tomato;
+#section_About_Me img {
+  float: left;
+  margin-right: 1em;
+	margin: .1em 1em;
+	padding: .1em;
+	border: .1em solid black;
 }
 
-#section_one div:first-child {
-    width: 40%;
+#section_About_Me p, #section_Projects p, #section_Writing p, #section_Connect p {
+	border: .1em solid lightblue;
 }
 
-#section_one div:nth-child(2) {
-    height: 5em;
-    width: 40%;
-    background-color: yellowgreen;
-    display: flex;
+#section_About_Me p {
+	margin: .1em;
 }
 
-#section_one div:nth-child(2) p{
-    background-color: red;
-    
+#section_Projects p, #section_Writing p, #section_Connect p {
+	width: 90%;
+	margin: .1em auto;
 }
 
-#section_one p {
-    text-align: center;
-    justify-content: center;
+#section_Connect div {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
 }
 
-#section_one div:first-child p {
-    font-size: 2em;
-    background-color: aqua;
-}
-
-#links {
-    display: flex; 
-    justify-content: flex-end;
-}
-
-/* Playing with the second section layout using flexbox */
-#section_two {
-    min-height: 400px; /* The height of the image in this section plus the height of the space above the image. */
-}
-
-#section_four {
-    min-height: 450px; /* The height of the image in this section plus the height of the space above the image. */
-}
-
-
-/*************** new css ***************/
-
-
-#section_div {
-    display: flex;
-   flex-flow: row wrap;
-   justify-content: space-around;
-  }
-
-.contact_btn {
+#section_Connect button {
 	margin: 6px;
 	height: 200px; /* Wide enough to fit the email address. */
-    width: 260px; /* Arbitrary height. */
-    background-color: antiquewhite;
-    border: none;
-    /* border: 1px solid orange; */
+  width: 260px; /* Arbitrary height. */
+	background-color: antiquewhite;
+	border: none;
 }
 
-.contact_anchor  {
-    /* border: 1px solid green; */
-	/* height: 150px; */
-    /* width: 150px; */
-}
-
-.contact_img {
-    /* border: 2px solid yellow; */
+#section_Connect img {
+    border: 2px solid black;
     height: 100%;
     width: auto;
 }
 
 .phone_email_btn {
-    /* background-color: black; */
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .phone_email_anchor {
@@ -225,4 +139,19 @@ footer {
     padding: .5em;
     border: .1em solid black;
     border-radius: .5em;
+}
+
+
+/* =============================== */
+/* =============================== */
+/* =============================== */
+
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  text-align: center;
+	height: 2em;
+	border: .1em solid goldenrod;
 }
