@@ -79,7 +79,7 @@
 	border: .1em solid darkgreen;
 }
 
-#section_About_Me h1, #section_Projects h1, #section_Writing h1, #section_Connect h1, #section_Connect h3 {
+#section_About_Me h1, #section_Projects h1, #section_Writing h1, #section_Connect h1, #section_Projects h3, #section_Writing h3, #section_Connect h3 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -118,8 +118,8 @@
 	margin: .1em auto;
 }
 
-#section_Writing div  {
-	margin: auto;
+#section_Writing div {
+	margin: .1em auto;
 	width: 90%;
 	padding:0;
 	/* background-color: white; */
@@ -149,20 +149,40 @@
 	border: .1em solid black;
 }
 
+#section_Projects div {
+	width: 90%;
+	margin: .1em auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	border: .1em solid hotpink;
+}
+
 #section_Connect button {
 	margin: 6px;
 	height: 200px; /* Wide enough to fit the email address. */
   	width: 260px; /* Arbitrary height. */
+	border: none;
+	background-color: antiquewhite;
+}
+
+#section_Projects button {
+	margin: 3px auto;
+	width: 30%;
+	/* max-height: 200px; */
   	border: none;
-  	background-color: antiquewhite;
-	/* border: .1em solid gray; */
-	/* padding: 2em; */
-	/* border: .1em solid antiquewhite; */
+	background-color: lawngreen;
 }
 
 #section_Connect img {
     height: 100%;
     width: auto;
+    border: 2px solid black;
+}
+
+#section_Projects img {
+    /* height: 50%; */
+    width: 90%;
     border: 2px solid black;
 }
 
