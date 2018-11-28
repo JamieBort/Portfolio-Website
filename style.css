@@ -8,7 +8,7 @@
 	justify-content: space-around;
 }
 
-#one {
+#section_header>div {
 	margin: .1em;
 	width: 90%;
 	display: flex;
@@ -17,8 +17,7 @@
 	border: .1em solid gold;
 }
 
-/* #section_header div { */
-	.two {
+.section_header_div {
 /* 	width: 40%; */
 	height: 6em;
 	margin: .1em;
@@ -28,11 +27,11 @@
 	justify-content: space-around;
 }
 
-div:first-child {
+#left_div {
 	width: 40%;
 }
 
-div:nth-child(2) {
+#right_div {
 	width: 50%;
 }
 
@@ -94,15 +93,16 @@ div:nth-child(2) {
 }
 
 #section_About_Me > div {
-	display: flex;
+	/* display: flex; */
 	width: 90%;
+	min-height: 21em; /* Figure out how to adjust the height in a more slick manner. In other words, so that this container autofits to the image that I post. Without this current line of code the image is so tall for the container that it overflows into the next container.  */
 	margin: .1em auto;
 	border: .1em solid thistle;
 }
 
 #section_About_Me img {
-  float: left;
-  margin-right: 1em;
+	float: left;
+	margin-right: 1em;
 	margin: .1em 1em;
 	padding: .1em;
 	border: .1em solid black;
@@ -155,9 +155,12 @@ div:nth-child(2) {
 #section_Connect button {
 	margin: 6px;
 	height: 200px; /* Wide enough to fit the email address. */
-  width: 260px; /* Arbitrary height. */
-	background-color: antiquewhite;
-	border: none;
+  	width: 260px; /* Arbitrary height. */
+  	border: none;
+  	background-color: antiquewhite;
+	/* border: .1em solid gray; */
+	/* padding: 2em; */
+	/* border: .1em solid antiquewhite; */
 }
 
 #section_Connect img {
