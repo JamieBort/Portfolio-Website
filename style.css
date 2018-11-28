@@ -1,11 +1,15 @@
-/* Below I have similar, if not identical ___ for <h1> tags and <p> tags. I am going to use the <h1> tags but may need to revert to the <p> tags if I want to style <h1> tags elesewhere in the website.  */
+/* ======================  For Full Sized Screens ====================== */
+
+/* ====================== */
+/* Styling for the Header */
+/* ====================== */
+
 #section_header {
 	margin: .1em;
-	height: 8em;
-	border: .1em solid red;
+	min-height: 8em;
 	display: flex;
-	/* align-items: center; */
 	justify-content: space-around;
+	border: .1em solid red;
 }
 
 #section_header>div {
@@ -18,21 +22,22 @@
 }
 
 .section_header_div {
-/* 	width: 40%; */
 	height: 6em;
 	margin: .1em;
-	border: .1em solid purple;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	border: .1em solid purple;
 }
 
 #left_div {
 	width: 40%;
+	/* min-width: 30%; */
 }
 
 #right_div {
 	width: 50%;
+	/* min-width: 30%; */
 }
 
 .navigation {
@@ -43,7 +48,6 @@
 	justify-content: center;
 	text-align: center;
 }
-
 
 #name {
 	height: 4em;
@@ -55,27 +59,20 @@
 }
 
 #section_header div:first-child #name{
-/* 	font-size: 2em; */
 	height: 2.5em;
 	width: 40%;
-		background-color: lightblue;
+	background-color: lightblue;
 }
 
 .navigation {
 	font-size: 1em;
-	background-color: lightgreen;
 	width: 15%;
-/* 	font-size: 1.5em;
-		height: 2.5em; */
+	background-color: lightgreen;
 }
 
-/* #section_header div * {
-		border: .15em solid darkgreen;
-} */
-
-/* =============================== */
-/* =============================== */
-/* =============================== */
+/* ==================== */
+/* Styling for the Body */
+/* ==================== */
 
 #section_About_Me, #section_Projects, #section_Writing, #section_Connect {
 	margin: .1em;
@@ -164,9 +161,9 @@
 }
 
 #section_Connect img {
-    border: 2px solid black;
     height: 100%;
     width: auto;
+    border: 2px solid black;
 }
 
 .phone_email_btn {
@@ -176,14 +173,14 @@
 .phone_email_anchor {
     text-decoration: none;
     padding: .5em;
-    border: .1em solid black;
     border-radius: .5em;
+    border: .1em solid black;
 }
 
 
-/* =============================== */
-/* =============================== */
-/* =============================== */
+/* ====================== */
+/* Styling for the Footer */
+/* ====================== */
 
 
 footer {
@@ -194,4 +191,49 @@ footer {
   	text-align: center;
 	height: 2em;
 	border: .1em solid goldenrod;
+}
+
+/* ======================  For Screens Less Than 45 em Wide====================== */
+
+@media (max-width: 45em) {
+
+	/* ====================== */
+	/* Styling for the Header */
+	/* ====================== */
+
+	#section_header>div {
+		display: block;
+		border: .1em solid black;
+	}
+
+	.section_header_div {
+				margin: .1em auto;
+	/* 	width: 50%; 
+		height: 6em;
+		margin: .1em;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		border: .1em solid purple;*/
+	} 
+
+	#left_div {
+		margin: .1em auto;
+		width: 60%;
+	}
+	
+	#right_div {
+		margin: .1em auto;
+		width: 60%;
+	}
+
+
+	/* ==================== */
+	/* Styling for the Body */
+	/* ==================== */
+
+
+	/* ====================== */
+	/* Styling for the Footer */
+	/* ====================== */
 }
