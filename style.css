@@ -16,14 +16,24 @@
 	margin: .1em;
 	min-height: 8em;
 	display: flex;
-/* 	justify-content: space-around; */ /* 	Commented out when I edited this file to allow the page to scroll up under the header. */
+	/* 	Commented out when I edited this file to allow the page to scroll up under the header. */
+/* 	justify-content: space-around; */ 
 	border: .1em solid red;
 	background-color: lightblue;
 	
-	width: 88.5%; /* 	Added when I edited this file to allow the page to scroll up under the header. */
-	position: fixed; /* 	Added when I edited this file to allow the page to scroll up under the header. */
-	left: 5.45%; /* 	Added when I edited this file to allow the page to scroll up under the header. */
-	margin-top:-.5em; /* 	Added when I edited this file to allow the page to scroll up under the header. */
+	/* 	Added when I edited this file to allow the page to scroll up under the header. */
+	/* 	NOTE: the width is not 90% (to match the width of the other elements) because when it was, it did not line up with other elements. */
+	width: 88.5%; 
+
+	/* Added when I edited this file to allow the page to scroll up under the header. */
+	position: fixed; 
+	
+	/* Added when I edited this file to allow the page to scroll up under the header. */
+	/* NOTE: if the width was 90% (see above NOTE) then this would be 5%.. */
+	left: 5.45%; 
+
+	/* 	Added when I edited this file to allow the page to scroll up under the header. */
+	margin-top:-.5em; 
 }
 
 #section_header>div {
