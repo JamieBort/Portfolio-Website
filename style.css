@@ -4,12 +4,26 @@
 /* Styling for the Header */
 /* ====================== */
 
-#section_header {
+/* #section_header {
 	margin: .1em;
 	min-height: 8em;
 	display: flex;
 	justify-content: space-around;
 	border: .1em solid red;
+} */
+
+#section_header {
+	margin: .1em;
+	min-height: 8em;
+	display: flex;
+/* 	justify-content: space-around; */ /* 	Commented out when I edited this file to allow the page to scroll up under the header. */
+	border: .1em solid red;
+	background-color: lightblue;
+	
+	width: 88.5%; /* 	Added when I edited this file to allow the page to scroll up under the header. */
+	position: fixed; /* 	Added when I edited this file to allow the page to scroll up under the header. */
+	left: 5.45%; /* 	Added when I edited this file to allow the page to scroll up under the header. */
+	margin-top:-.5em; /* 	Added when I edited this file to allow the page to scroll up under the header. */
 }
 
 #section_header>div {
@@ -77,6 +91,9 @@
 #section_About_Me, #section_Projects, #section_Writing, #section_Connect {
 	margin: .1em;
 	border: .1em solid darkgreen;
+
+	/* 	Added when I edited this file to allow the page to scroll up under the header. */
+	padding-top: 8em; 
 }
 
 #section_About_Me h1, #section_Projects h1, #section_Writing h1, #section_Connect h1, #section_Projects h3, #section_Writing h3, #section_Connect h3 {
