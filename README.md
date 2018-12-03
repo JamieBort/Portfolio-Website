@@ -47,5 +47,35 @@ In it are links to website I should explore for this revamp.
 
     m. "what I learned today" section.
 
+
 TODO:
 See the trello board for [todo items](https://trello.com/c/dJHqhhfU/90-update-clean-up-portfolio-website-https-jamiebortgithubio).
+
+  - [ ] 8q. Update the image in the modal so that it fills the dev.
+
+  - [ ] 8r. Style the two links in the modal so they're not at the top of the dev and so that they look better.
+
+  - [ ] 8s. The Meetup button and the phrase 'Triangle Adult Junior Developers' needs to be addressed.
+
+
+- [ ] 9. Then build it for tablet users.
+
+  - [ ] 9a. [What needs to be addressed here?]
+
+- [ ] 10. Lastly build it for desktop users.
+
+  - [ ] 10a. Center phone number and email buttons under the social media icons.
+
+  - [ ] 10b. 
+
+- [ ] 11. Bug test.
+
+- [ ] 12. Add a picture of myself.
+
+- [ ] 13. Include the fact that I am involved with Code for Durham.
+
+- [ ] 14. Add this [github calendar](https://github.com/IonicaBizau/github-calendar) to my portfolio site. [Or somewhere else?] and/or: https://github.com/fullcalendar/fullcalendar
+
+The URL to the google drive for this repo can be found here: https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo
+
+Testing the phrase again.
