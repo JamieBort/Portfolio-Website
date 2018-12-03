@@ -19,7 +19,7 @@
 	/* 	Commented out when I edited this file to allow the page to scroll up under the header. */
 /* 	justify-content: space-around; */ 
 	border: .1em solid red;
-	background-color: lightblue;
+	background-color: green;
 	
 	/* 	Added when I edited this file to allow the page to scroll up under the header. */
 	/* 	NOTE: the width is not 90% (to match the width of the other elements) because when it was, it did not line up with other elements. */
