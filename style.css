@@ -1,494 +1,311 @@
-/***************************************************************************/
-/************          defaut styling for desktop               ************/
-/***************************************************************************/
+/* ======================  For Full Sized Screens ====================== */
 
-/* #maintenance {
-  text-align: center;
-  background-color: white;
-  width: 30%;
-  margin: 1em auto;
+/* ====================== */
+/* Styling for the Header */
+/* ====================== */
+
+/* #section_header {
+	margin: .1em;
+	min-height: 8em;
+	display: flex;
+	justify-content: space-around;
+	border: .1em solid red;
 } */
 
-.display_none2 {
-  display:none;
+#section_header {
+	margin: .1em;
+	min-height: 8em;
+	display: flex;
+	/* 	Commented out when I edited this file to allow the page to scroll up under the header. */
+/* 	justify-content: space-around; */ 
+	border: .1em solid red;
+	background-color: green;
+	
+	/* 	Added when I edited this file to allow the page to scroll up under the header. */
+	/* 	NOTE: the width is not 90% (to match the width of the other elements) because when it was, it did not line up with other elements. */
+	width: 88.5%; 
+
+	/* Added when I edited this file to allow the page to scroll up under the header. */
+	position: fixed; 
+	
+	/* Added when I edited this file to allow the page to scroll up under the header. */
+	/* NOTE: if the width was 90% (see above NOTE) then this would be 5%.. */
+	left: 5.45%; 
+
+	/* 	Added when I edited this file to allow the page to scroll up under the header. */
+	margin-top:-.5em; 
 }
 
-body{
-    margin: 0em;
+#section_header>div {
+	margin: .1em;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	border: .1em solid gold;
 }
 
-header, footer {
-  background-image: url(attachments/pattern/5957908fe6d9740.jpg);
+.section_header_div {
+	height: 6em;
+	margin: .1em;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	border: .1em solid purple;
 }
 
-header {
-  /* height: 10%; */
-  /* padding-top: 2em; */
+#left_div {
+	width: 40%;
+	/* min-width: 30%; */
 }
 
-footer {
-  /* height: 3em; */
+#right_div {
+	width: 50%;
+	/* min-width: 30%; */
 }
 
-section, header {
-  padding: .001em;
-  
+.navigation {
+	height: 4em;
+	margin: .1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
 
-#bio, #contact_info, .section_div {
-  width: 90%;
-  margin: auto;
+#name {
+	height: 4em;
+	margin: .1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
 
-.section_title {
-  /* text-decoration: underline; */
+#section_header div:first-child #name{
+	height: 2.5em;
+	width: 40%;
+	background-color: lightblue;
 }
 
-.bio_p, .section_title, .continuing_education_p, h1, h2, footer {
-  text-align: center;
+.navigation {
+	font-size: 1em;
+	width: 15%;
+	background-color: lightgreen;
 }
 
-.section_title, .bio_p {
-  font-size: 1.5em;
+/* ==================== */
+/* Styling for the Body */
+/* ==================== */
+
+#section_About_Me, #section_Projects, #section_Writing, #section_Connect {
+	margin: .1em;
+	border: .1em solid darkgreen;
+
+	/* 	Added when I edited this file to allow the page to scroll up under the header. */
+	padding-top: 8em; 
 }
 
-.section_div {
-  /* border: aqua 0.1em solid; */
-  display: flex;
- flex-flow: row wrap;
- justify-content: space-around;
-  /* width: 10%; */
+#section_About_Me h1, #section_Projects h1, #section_Writing h1, #section_Connect h1, #section_Projects h3, #section_Writing h3, #section_Connect h3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+	height: 2em;
+	margin: .1em auto;
+	border: .1em solid blue;
 }
 
-.contact_info_div, .projects_div, .continuing_education_btn_div {
-  /* border: blue 0.3em solid; */
-  /* max-width: 25%; */
-  /* min-width: 20%; */
-  height: 15em;
-  /* width: auto; */
-  /* margin: 1em; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#section_About_Me > div {
+	/* display: flex; */
+	width: 90%;
+	min-height: 21em; /* Figure out how to adjust the height in a more slick manner. In other words, so that this container autofits to the image that I post. Without this current line of code the image is so tall for the container that it overflows into the next container.  */
+	margin: .1em auto;
+	border: .1em solid thistle;
 }
 
-.continuing_education_div {
-  border: .05em solid black;
-  min-width: 15em;
-  border-radius: 2em;
-  padding: .75em .5em 0 .5em;
+#section_About_Me img {
+	float: left;
+	margin-right: 1em;
+	margin: .1em 1em;
+	padding: .1em;
+	border: .1em solid black;
 }
 
-.continuing_education_p {
-  /* background-color: aqua; */
-  padding: 0 .4em;
-  margin: 0;
+#section_About_Me p, #section_Projects p, #section_Writing p, #section_Connect p {
+	border: .1em solid lightcoral;
 }
 
-.contact_info_btn, .continuing_education_btn, .projects_btn {
-  height: 92%;
-  width: auto;
-  /* height: auto; */
-  /* width: 100%; */
+#section_About_Me p {
+	margin: .1em;
 }
 
-.contact_info_img, .projects_img, .continuing_education_img {
-  /* max-width: 30em; */
-  
-  height: 100%;
-  width:auto;
-  /* height: auto; */
-  /* width: 100%; */
+#section_Projects p, #section_Writing p, #section_Connect p {
+	width: 90%;
+	margin: .1em auto;
 }
 
-#bio_section, #projects_section,.projects_btn {
-  /* background-color: salmon; */
-  background-color: burlywood;
+#section_Writing div {
+	margin: .1em auto;
+	width: 90%;
+	padding:0;
+	/* background-color: white; */
+	border: .1em solid maroon;
 }
 
-#contact_info_section, #continuing_education_section, .contact_info_btn, .continuing_education_btn {
-  background-color: bisque;
+#section_Writing button {
+	margin: .2em;
+	border: .1em solid gray;
 }
 
-#continuing_education_section {
-  padding-bottom: 1em;
+#section_Writing img {
+	/* margin: 0 auto; */
+	/* height: 25%; */
+	/* background-color: aqua; */
+	margin: .1em;
+	width: 50%;
+	border: .1em solid gold;
 }
 
-button {
-  border: none;
+#section_Connect div {
+	width: 90%;
+	margin: .1em auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	border: .1em solid black;
+}
+
+#section_Projects div {
+	width: 90%;
+	margin: .1em auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	border: .1em solid hotpink;
+}
+
+#section_Connect button {
+	margin: 6px;
+	height: 200px; /* Wide enough to fit the email address. */
+  	width: 260px; /* Arbitrary height. */
+	border: none;
+	background-color: antiquewhite;
+}
+
+#section_Projects button {
+	margin: 3px auto;
+	width: 30%;
+	/* max-height: 200px; */
+  	border: none;
+	background-color: lawngreen;
+}
+
+#section_Connect img {
+	height: 100%;
+    width: auto;
+    border: 2px solid black;
+}
+
+#section_Projects img {
+	/* height: 50%; */
+	/* min-width: 120px; */
+    width: 90%;
+    border: 2px solid black;
 }
 
 .phone_email_btn {
-  background-color: lightcoral;
-  border: black .1em solid;
-  border-radius: .6em;
-  /* margin: 0 3em; */
-  padding: 2em;
+    font-size: 15px;
 }
 
 .phone_email_anchor {
-  font-size: 1.5em;
-  /* width: 100%; */
-  /* height: 100%; */
-  /* margin: 4em 1em; */
-  /* padding: 100%; */
-  padding:1.5em;
-}
-
-a {
-  /* pointer-events: none; */
-  /* cursor: text; */
-  /* text-decoration: none; */
-} 
-
-/* ===== ===== ===== */
-/* unvisited link */
-a:link {
- color: black;
-}
-
-/* visited link */
-a:visited {
- color: green;
-}
-
-/* mouse over link */
-a:hover {
- color: maroon;
-}
-
-/* selected link */
-a:active {
- color: blue;
-}
-/* ===== ===== ===== */
-
-/* =============================================== */
-
-
-
- /* This is not used. */
-/*                                                 resize images */
-/* .container img {
-  width: 25%;
-  height: auto;
-margin: auto;
-display: block; 
-} */
-
-/***********************************************************/
-/************           for Modal               ************/
-/***********************************************************/
-
-/* from: https://codepen.io/JamieBort/pen/PaoyQj */
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-
-  /* border: 1px solid red; */
-	/* margin: 4px; */
-	/* width: 90%; */
-	/* height: 80%; */
-	/* display:flex; */
-	/* align-items:center; */
-	/* flex-direction: column; */
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: lightblue;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 60%; /* Could be more or less, depending on screen size */
-
-
-  display:	flex;
-	align-items:center;
-	flex-direction: column;
-}
-
-.modal_div {
-  /* margin: auto; */
-  /* height: auto; */
-  /* width: 30em; */
-  /* display: flex; */
-  /* justify-content: center; */
-
-
-  /* display:	flex; */
-	/* align-items:center; */
-	/* flex-direction: column; */
-}
-
-.project_div {
-  display: flex;
-  justify-content: center;
-  
-  /* height: 100%; */
-  /* width: auto; */
-  
-  /* width: 10em; */
-  /* width: 10%; */
-}
-
-.section_title, .bio_p {
-  font-size: 1em;
-}
-
-.modal_p {
-  text-align: center;
-  /* margin: auto; */
-}
-
-.project_btn {
-/* margin: 2em; */
-/* padding: 2em; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* margin: auto; */
-  /* height: auto; */
-  /* width: 50%; */
-  /* width:10em; */
-
-  
-}
-
-.project_anchor {
-  height: auto;
-  width: 50%;
-  /* margin: auto; */
-}
-
-.project_p {
-  margin: auto;
-  width: 30em;
-  /* border: 1em blue solid; */
-  /* background-color: black; */
-  /* text-align: center; */
-}
-
-#first_project_btn2 {
-  /* background-color: blue; */
-  /* width: 10%; */
-  /* height: auto; */
+    text-decoration: none;
+    padding: .5em;
+    border-radius: .5em;
+    border: .1em solid black;
 }
 
 
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+/* ====================== */
+/* Styling for the Footer */
+/* ====================== */
+
+
+footer {
+	margin: .1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  	text-align: center;
+	height: 2em;
+	border: .1em solid goldenrod;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-/***********************************************************/
-/***********************************************************/
-/***********************************************************/
+/* ======================  For Screens Less Than 60 em Wide but Wider Than 35 em ====================== */
+
+@media (max-width: 60em) {
+
+	/* ====================== */
+	/* Styling for the Header */
+	/* ====================== */
+
+	#section_header>div {
+		display: block;
+		border: .1em solid black;
+	}
+
+	.section_header_div {
+				margin: .1em auto;
+	/* 	width: 50%; 
+		height: 6em;
+		margin: .1em;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		border: .1em solid purple;*/
+	} 
+
+	#left_div {
+		margin: .1em auto;
+		width: 60%;
+	}
+	
+	#right_div {
+		margin: .1em auto;
+		width: 60%;
+	}
 
 
-
-/************************************************************/
-/* from: https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints/ */
-/************************************************************/
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  /* Styles */
+	/* ==================== */
+	/* Styling for the Body */
+	/* ==================== */
 
 
-
-
-
-
-    .projects_div, .continuing_education_btn_div {
-      /* border: blue 0.3em solid; */
-      /* max-width: 25%; */
-      /* min-width: 20%; */
-      height: 40em;
-      /* width: auto; */
-      /* margin: 1em; */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-.projects_div, .continuing_education_div {
-  margin: 1em 0;
-  min-width: 90%;
-  border: 0.1em solid black;
-  border-radius: 2em
-}
-
-#contact_info {
-  /* display: block; */
+	/* ====================== */
+	/* Styling for the Footer */
+	/* ====================== */
 }
 
-.display_none2 {
-  display: unset;
-  display: block;
+/* ======================  For Screens Less Than 35 em Wide ====================== */
 
-  /* border: 0.1em solid black; */
-  
-  /* width: 50%; */
+@media (max-width: 35em) {
+
+	/* ====================== */
+	/* Styling for the Header */
+	/* ====================== */
+
+
+	.section_header_div {
+		border: .3em solid red;
+	} 
+
+
+	/* ==================== */
+	/* Styling for the Body */
+	/* ==================== */
+
+
+	/* ====================== */
+	/* Styling for the Footer */
+	/* ====================== */
 }
-
-#display_none {
-  display:none;
-}
-
-.contact_info_btn, .continuing_education_btn, .projects_btn {
-  height: 65%;
-  width: auto;
-  /* height: auto; */
-  /* width: 100%; */
-}
-    
-    .phone_email_anchor {
-      font-size: 3em;
-      /* width: 100%; */
-      /* height: 100%; */
-      /* margin: 4em 1em; */
-      /* padding: 100%; */
-      padding:1.5em;
-    }
-    
-    .continuing_education_p {
-      font-size: 3em;
-      /* background-color: yellow; */
-    }
-
-    .modal_p {
-      font-size: 3em;
-      margin:.5em 0;
-      /* padding:1em; */
-    }
- }
-
- 
-
-
-
-  /* Smartphones (landscape) ----------- */
-  @media only screen and (min-width : 321px) {
-  /* Styles */
-  }
-  
-  /* Smartphones (portrait) ----------- */
-  @media only screen and (max-width : 320px) {
-  /* Styles */
-  }
-  
-  /* iPads (portrait and landscape) ----------- */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  /* Styles */
-  }
-  
-  /* iPads (landscape) ----------- */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-  /* Styles */
-  }
-  
-  /* iPads (portrait) ----------- */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-  /* Styles */
-  }
-  /**********
-  iPad 3
-  **********/
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-  /* Styles */
-  }
-  
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-  /* Styles */
-  }
-  /* Desktops and laptops ----------- */
-  @media only screen  and (min-width : 1224px) {
-  /* Styles */
-  }
-  
-  /* Large screens ----------- */
-  @media only screen  and (min-width : 1824px) {
-  /* Styles */
-  }
-  
-  /* iPhone 4 ----------- */
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-  /* Styles */
-  }
-  
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-  /* Styles */
-  }
-  
-  /* iPhone 5 ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-  /* Styles */
-  }
-  
-  @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-  /* Styles */
-  }
-  
-  /* iPhone 6 ----------- */
-  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-  /* Styles */
-  }
-  
-  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-  /* Styles */
-  }
-  
-  /* iPhone 6+ ----------- */
-  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-  /* Styles */
-  }
-  
-  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-  /* Styles */
-  }
-  
-  /* Samsung Galaxy S3 ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-  /* Styles */
-  }
-  
-  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-  /* Styles */
-  }
-  
-  /* Samsung Galaxy S4 ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-  /* Styles */
-  }
-  
-  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-  /* Styles */
-  }
-  
-  /* Samsung Galaxy S5 ----------- */
-  @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-  /* Styles */
-  }
-  
-  @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-  /* Styles */
-  }
-  

@@ -1,55 +1,55 @@
 # My Portfolio Website
 
-Consider scrapping this and starting over.
+The URL to the google drive for this repo can be found here: https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo
+In it are links to website I should explore for this revamp.
 
-ToDo:
+1. Include the following features in my website:
 
-- [X] 1. For each link have it open a new tab rather than leave my site.
-- [X] 2. Hyperlink to phone number for mobile and tablet users.
-What am I involved in and when? (show calendar or neat list)
-- [ ] 3. ~~(Maybe?) Have an image of the resume (large enough to read it as is in case you don't want to download it) to click on to open it in a new tab.~~
-- [ ] 4. Sample coding (same as the resume - large enough to see but clicking on it brings you to the github page)
-- [ ] 5. Design idea: simple static landing page linking to more complex, dynamic websites I've created
-- [ ] 6. Consult the following for web sites that inspire me:
+    a. What I am currently working on.
 
-  a. google docs
+    b. What I am currently reading.
+   
+    c. Where I am speaking/presenting.
 
-  b.
+    d. What I learned recently.
 
-- [ ] 7. Make it correct semantically. So that it is inclusive/web accessable.
-- [ ] 8. First build it for mobile users.
+    e. The first 20 lines to my most recent blog post. Also, have it link to that post.
 
-  - [X] 8a. For the showcase buttons give the option to load the site or go to the github repo. Use a modal box.
+    f. Link to following sites
 
-  - [ ] 8b. Update the thumbnail images for the showcased work.
+        i. github
 
-  - [ ] 8c. Update my bio.
+        ii. medium
 
-  - [X] 8d. Add .DS_Store and other files to the .gitignore file.
+        iii. twitter
 
-  - [X] 8e. Make sure the header background is tall enough for my phone.
+        iv. stack overflow
 
-  - [X] 8f. Make 'Jamie Bort' fill the width of the header.
+        v. linkedin
 
-  - [X] 8g. Make 'Jamie Bort' and 'Software Engineer' larger.
+    g. Highlight and link to my recent porjects; ones I want to showcase. Maybe do this by showing code snippets. 
 
-  - [ ] 8h. Update modal styling. Header? Footer? No header? No footer?
+    h. Highlight and link to my extracurricular activites
 
-  - [X] 8i. Remove all .DS_Store files from the repository.
+        i. code for durham
 
-  - [X] 8j. Minimize space around buttons.
+        ii. code the dream
 
-  - [ ] 8k. Update text in Contact section.
+        iii. triangle adult junior developers
 
-  - [ ] 8l. Update text in Showcase section.
+    i. a brief bio (Who am I? Why am I doing this?)
 
-  - [X] 8m. Improve the look of the phone number and email buttons.
+    j. my github commit history calendar
 
-  - [ ] 8n. Do I need a copyright in the footer? What do I need down there?.
+    k. the percentage of days I've commited to the number of days in the github commit history calendar
 
-  - [X] 8o. Address the spacing around the Medium and Currently Reading buttons relative to the three above it. Diminish it.
+    l. a photo of me.
 
-  - [ ] 8p. The text "Let's connect. He would love to here from you.", "What's currently preoccupying him." and "What he is currently reading." is too small.
+    m. "what I learned today" section.
+
+
+TODO:
+See the trello board for [todo items](https://trello.com/c/dJHqhhfU/90-update-clean-up-portfolio-website-https-jamiebortgithubio).
 
   - [ ] 8q. Update the image in the modal so that it fills the dev.
 
