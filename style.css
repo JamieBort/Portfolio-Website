@@ -4,6 +4,16 @@
 /* Styling for the Header */
 /* ====================== */
 
+body {
+	width: 98%;
+	margin: 0 auto;
+	/* background-color: green; */
+}
+
+#section_body {
+		background-color: lightcyan;
+}
+
 /* #section_header {
 	margin: .1em;
 	min-height: 8em;
@@ -14,26 +24,29 @@
 
 #section_header {
 	margin: .1em;
-	min-height: 8em;
+	/* margin-top: 7em .1em .1em .1em; */
+	/* min-height: 8em; */
 	display: flex;
 	/* 	Commented out when I edited this file to allow the page to scroll up under the header. */
-/* 	justify-content: space-around; */ 
-	border: .1em solid red;
-	background-color: green;
+	justify-content: space-around; 
+	border: .05em solid black;
+	background-color: whitesmoke;
 	
 	/* 	Added when I edited this file to allow the page to scroll up under the header. */
 	/* 	NOTE: the width is not 90% (to match the width of the other elements) because when it was, it did not line up with other elements. */
-	width: 88.5%; 
+	/* width: 88.5%; */
+	width: 97.65%;
+
 
 	/* Added when I edited this file to allow the page to scroll up under the header. */
 	position: fixed; 
 	
 	/* Added when I edited this file to allow the page to scroll up under the header. */
 	/* NOTE: if the width was 90% (see above NOTE) then this would be 5%.. */
-	left: 5.45%; 
+	/* left: 5.45%;  */
 
 	/* 	Added when I edited this file to allow the page to scroll up under the header. */
-	margin-top:-.5em; 
+	margin-top:-.15em; 
 }
 
 #section_header>div {
@@ -42,7 +55,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	border: .1em solid gold;
+	/* border: .1em solid gold; */
 }
 
 .section_header_div {
@@ -51,26 +64,65 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	border: .1em solid purple;
+	/* border-radius: .5em; */
+	/* border: .05em solid purple; */
 }
 
 #left_div {
 	width: 40%;
+	/* font-size: 1.0em; */
 	/* min-width: 30%; */
+}
+
+#left_div h1 {
+	font-size: 2em;
 }
 
 #right_div {
-	width: 50%;
+	width: 55%;
 	/* min-width: 30%; */
 }
 
+#About_Me_div {
+	margin-left: 28%;
+	padding: 1em;
+	border-radius: .5em;
+	border: .05em solid black;
+}
+
+#About_Me_div2 {
+	padding: 1em;
+	/* border-radius: .5em; */
+	/* border: .05em solid black; */
+}
+
+.About_Me_div2 {
+	padding: 1em;
+	/* border-radius: .5em; */
+	/* border: .05em solid black; */
+}
+
+ul {
+	padding: 0;
+	margin: .1em 0;
+}
+
 .navigation {
-	height: 4em;
-	margin: .1em;
+	text-decoration: none;
+	height: 2.5em;
+	/* width: 80%; */
+	/* margin: .1em; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	/* border-radius: 12%; */
+	border-radius: .5em;
+	border: .05em solid black;
+}
+
+.navigation:hover {
+	background-color: lightcyan;
 }
 
 #name {
@@ -85,13 +137,13 @@
 #section_header div:first-child #name{
 	height: 2.5em;
 	width: 40%;
-	background-color: lightblue;
+	/* background-color: lightblue; */
 }
 
 .navigation {
 	font-size: 1em;
 	width: 15%;
-	background-color: lightgreen;
+	/* background-color: lightgreen; */
 }
 
 /* ==================== */
@@ -100,11 +152,16 @@
 
 #section_About_Me, #section_Projects, #section_Writing, #section_Connect {
 	margin: .1em;
-	border: .1em solid darkgreen;
+	border: .05em solid darkgreen;
+	padding-bottom: 2em;
 
 	/* 	Added when I edited this file to allow the page to scroll up under the header. */
 	padding-top: 8em; 
 }
+
+/* .test2 {
+	padding-top: 8em; 
+} */
 
 #section_About_Me h1, #section_Projects h1, #section_Writing h1, #section_Connect h1, #section_Projects h3, #section_Writing h3, #section_Connect h3 {
 	display: flex;
@@ -113,7 +170,7 @@
 	width: 90%;
 	height: 2em;
 	margin: .1em auto;
-	border: .1em solid blue;
+	/* border: .1em solid blue; */
 }
 
 #section_About_Me > div {
@@ -121,7 +178,7 @@
 	width: 90%;
 	min-height: 21em; /* Figure out how to adjust the height in a more slick manner. In other words, so that this container autofits to the image that I post. Without this current line of code the image is so tall for the container that it overflows into the next container.  */
 	margin: .1em auto;
-	border: .1em solid thistle;
+	/* border: .1em solid thistle; */
 }
 
 #section_About_Me img {
@@ -129,11 +186,21 @@
 	margin-right: 1em;
 	margin: .1em 1em;
 	padding: .1em;
-	border: .1em solid black;
+	/* border: .1em solid black; */
+}
+
+.About_Me_p {
+    font-weight: bold;
+	/* padding: 0 25%; */
+	/* width: 4000px; */
+	/* align-items: center; */
+	/* justify-content: center; */
+	/* text-align: center; */
+	/* border: .1em solid black; */
 }
 
 #section_About_Me p, #section_Projects p, #section_Writing p, #section_Connect p {
-	border: .1em solid lightcoral;
+	/* border: .1em solid lightcoral; */
 }
 
 #section_About_Me p {
@@ -150,12 +217,13 @@
 	width: 90%;
 	padding:0;
 	/* background-color: white; */
-	border: .1em solid maroon;
+	/* border: .1em solid maroon; */
 }
 
 #section_Writing button {
 	margin: .2em;
-	border: .1em solid gray;
+	background-color: lightcyan;
+	border: none;
 }
 
 #section_Writing img {
@@ -164,7 +232,7 @@
 	/* background-color: aqua; */
 	margin: .1em;
 	width: 50%;
-	border: .1em solid gold;
+	/* border: .1em solid gold; */
 }
 
 #section_Connect div {
@@ -173,7 +241,7 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
-	border: .1em solid black;
+	/* border: .1em solid black; */
 }
 
 #section_Projects div {
@@ -182,7 +250,7 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
-	border: .1em solid hotpink;
+	/* border: .1em solid hotpink; */
 }
 
 #section_Connect button {
@@ -190,7 +258,7 @@
 	height: 200px; /* Wide enough to fit the email address. */
   	width: 260px; /* Arbitrary height. */
 	border: none;
-	background-color: antiquewhite;
+	background-color: lightcyan;
 }
 
 #section_Projects button {
@@ -198,20 +266,20 @@
 	width: 30%;
 	/* max-height: 200px; */
   	border: none;
-	background-color: lawngreen;
+	/* background-color: lawngreen; */
 }
 
 #section_Connect img {
 	height: 100%;
     width: auto;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 #section_Projects img {
 	/* height: 50%; */
 	/* min-width: 120px; */
     width: 90%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .phone_email_btn {
@@ -238,7 +306,8 @@ footer {
 	justify-content: center;
   	text-align: center;
 	height: 2em;
-	border: .1em solid goldenrod;
+	border: .05em solid darkgreen;
+	/* border: .1em solid goldenrod; */
 }
 
 /* ======================  For Screens Less Than 60 em Wide but Wider Than 35 em ====================== */
@@ -251,7 +320,7 @@ footer {
 
 	#section_header>div {
 		display: block;
-		border: .1em solid black;
+		/* border: .1em solid black; */
 	}
 
 	.section_header_div {
@@ -296,7 +365,7 @@ footer {
 
 
 	.section_header_div {
-		border: .3em solid red;
+		/* border: .3em solid red; */
 	} 
 
 
