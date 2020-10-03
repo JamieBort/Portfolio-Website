@@ -1,12 +1,15 @@
 # My Portfolio Website
 
-###Business Requirements
+### Business Requirements
+
 The site shall:
 
-* provide the user a way to easily find, look at, and download my resume
-* allow the user to message me directly via a form that goes into my email inbox, (and maybe texts me?)
+* provide the user with a way to easily find, look at, and download my resume
+* allow the user to send me amessage via a form that goes into my email inbox, (and maybe texts me?)
 * display to the user all of the projects that I wish them to see.
-* show my interests as they pertain to my career and technical abilities. 
+* show my interests as they pertain to my career and technical abilities.
+* show off my skills to the user without them having to navigate to my projects.
+* display in a graph, chart, or other visual representation my level of skills for each technology. 
 
 ### Functional Requirements
 
@@ -40,9 +43,9 @@ Also, need to figure out logistic of keeping track of where I leave off on this 
 
         v. linkedin
 
-    g. Highlight and link to my recent porjects; ones I want to showcase. Maybe do this by showing code snippets. 
+    g. Highlight and link to my recent projects; ones I want to showcase. Maybe do this by showing code snippets. 
 
-    h. Highlight and link to my extracurricular activites
+    h. Highlight and link to my extracurricular activities
 
         i. code for durham
 
@@ -61,8 +64,8 @@ Also, need to figure out logistic of keeping track of where I leave off on this 
     m. "what I learned today" section.
 
 
-### TODO:
-See the trello board for [todo items](https://trello.com/c/dJHqhhfU/90-update-clean-up-portfolio-website-https-jamiebortgithubio).
+### To Do
+~~See the Trello board for [todo items](https://trello.com/c/dJHqhhfU/90-update-clean-up-portfolio-website-https-jamiebortgithubio).~~
 
   - [ ] 8q. Update the image in the modal so that it fills the dev.
 
@@ -89,7 +92,7 @@ See the trello board for [todo items](https://trello.com/c/dJHqhhfU/90-update-cl
 
 - [ ] 14. Add this [github calendar](https://github.com/IonicaBizau/github-calendar) to my portfolio site. [Or somewhere else?] and/or: https://github.com/fullcalendar/fullcalendar
 
-The URL to the google drive for this repo can be found here: https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo
+~~The URL to the google drive for this repo can be found here: https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo~~
 
 Testing the phrase again.
 
