@@ -5,7 +5,7 @@
 The site shall:
 
 * provide the user with a way to easily find, look at, and download my resume
-* allow the user to send me amessage via a form that goes into my email inbox, (and maybe texts me?)
+* allow the user to send me a message via a form that goes into my email inbox, (and maybe texts me?)
 * display to the user all of the projects that I wish them to see.
 * show my interests as they pertain to my career and technical abilities.
 * show off my skills to the user without them having to navigate to my projects.
@@ -13,6 +13,8 @@ The site shall:
 * follow accessibility standards.
 
 ### Functional Requirements
+
+Use `React.js` and/or `React Native`.
 
 ### Status
 201909
@@ -75,6 +77,10 @@ Also, need to figure out logistic of keeping track of where I leave off on this 
 Maybe [Rebuild very simple static site using HTML and CSS](https://trello.com/c/FDIB9ePE/163-rebuild-very-simple-static-site-using-html-and-css) Trello card.
 
 [Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues?menu=filter&filter=due:incomplete) Trello card.
+
+[Fix branch issue with portfolio site](https://trello.com/c/PxEFMj5s/374-fix-branch-issue-with-portfolio-site) Trello card.
+
+[Update the portfolio website README file](https://trello.com/c/hCRC1EG6/483-update-the-portfolio-website-readme-file) Trello card.
 
 
 ~~See the Trello board for [todo items](https://trello.com/c/dJHqhhfU/90-update-clean-up-portfolio-website-https-jamiebortgithubio).~~
