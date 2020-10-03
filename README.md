@@ -9,7 +9,8 @@ The site shall:
 * display to the user all of the projects that I wish them to see.
 * show my interests as they pertain to my career and technical abilities.
 * show off my skills to the user without them having to navigate to my projects.
-* display in a graph, chart, or other visual representation my level of skills for each technology. 
+* display in a graph, chart, or other visual representation my level of skills for each technology.
+* follow accessibility standards.
 
 ### Functional Requirements
 
@@ -65,6 +66,17 @@ Also, need to figure out logistic of keeping track of where I leave off on this 
 
 
 ### To Do
+[Explore ways to show of my skills on my portfolio website](https://trello.com/c/2oLiIllY/481-explore-ways-to-show-of-my-skills-on-my-portfolio-website) Trello card.
+
+[List to this podcast on hosting a website and make necessary notes](https://trello.com/c/QTWzA4bv/480-list-to-this-podcast-on-hosting-a-website-and-make-necessary-notes) Trello card.
+
+[Decide on a layout and design for my portfolio website](https://trello.com/c/8Xdj7duH/482-decide-on-a-layout-and-design-for-my-portfolio-website) Trello card.
+
+Maybe [Rebuild very simple static site using HTML and CSS](https://trello.com/c/FDIB9ePE/163-rebuild-very-simple-static-site-using-html-and-css) Trello card.
+
+[Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues?menu=filter&filter=due:incomplete) Trello card.
+
+
 ~~See the Trello board for [todo items](https://trello.com/c/dJHqhhfU/90-update-clean-up-portfolio-website-https-jamiebortgithubio).~~
 
   - [ ] 8q. Update the image in the modal so that it fills the dev.
@@ -95,15 +107,6 @@ Also, need to figure out logistic of keeping track of where I leave off on this 
 ~~The URL to the google drive for this repo can be found here: https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo~~
 
 Testing the phrase again.
-
-[Explore ways to show of my skills on my portfolio website](https://trello.com/c/2oLiIllY/481-explore-ways-to-show-of-my-skills-on-my-portfolio-website) Trello card.
-
-[List to this podcast on hosting a website and make necessary notes](https://trello.com/c/QTWzA4bv/480-list-to-this-podcast-on-hosting-a-website-and-make-necessary-notes) Trello card.
-
-[Decide on a layout and design for my portfolio website](https://trello.com/c/8Xdj7duH/482-decide-on-a-layout-and-design-for-my-portfolio-website) Trello card.
-
-
-
 
 ### Associated Links
 [Update Portfolio Website](https://calendar.google.com/calendar/r/search?q=Update%20Portfolio%20Website) recurring calendar event.
