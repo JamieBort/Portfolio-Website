@@ -1,6 +1,9 @@
 # My Portfolio Website
 
 ### Status
+201909
+Need to fix the the branches - somehow lost files when pushed to new branch. Specifically the TechnologyTableIframe branch
+Also, need to figure out logistic of keeping track of where I leave off on this (and other coding tasks/projects)
 
 ### Next Steps
 1. Include the following features in my website:
@@ -82,6 +85,8 @@ Testing the phrase again.
 
 
 ### Associated Links
+[Update Portfolio Website](https://calendar.google.com/calendar/r/search?q=Update%20Portfolio%20Website) recurring calendar event.
+
 [portfolio website](https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo)
 
 ~~The URL to the google drive for this repo can be found  here: https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo
