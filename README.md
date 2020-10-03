@@ -11,11 +11,17 @@ The site shall:
 * show off my skills to the user without them having to navigate to my projects.
 * display in a graph, chart, or other visual representation my level of skills for each technology.
 * follow accessibility standards.
-* add content that I create
-  * on my blog. Such as "what I learned today" section.
+* add content that I create:
+  * on my blog. Such as "what I learned today" section,
   * on my LinkedIn account,
   * on my twitter account,
   * etc.
+* link to social media sites such as:
+  * my LinkedIn profile,
+  * my Hackerrank profile (https://www.hackerrank.com/jamiebort),
+  * my GitHub profile,
+  * etc.
+* display my involvement with Devs@rtp and other similar organizations.
 
 ### Functional Requirements
 
@@ -90,6 +96,8 @@ Also, need to figure out logistic of keeping track of where I leave off on this 
 - [ ] [Update the portfolio website README file](https://trello.com/c/hCRC1EG6/483-update-the-portfolio-website-readme-file) Trello card.
 
 - [ ] [Listen to this podcast on hosting a website and make necessary notes](https://trello.com/c/QTWzA4bv/480-list-to-this-podcast-on-hosting-a-website-and-make-necessary-notes) Trello card.
+
+- [ ] [Decide whether to create my portfolio site using React or React Native](https://trello.com/c/sLJ1fEBe/486-decide-whether-to-create-my-portfolio-site-using-react-or-react-native) Trello card.
 
 - [ ] ~~See the Trello board for [todo items](https://trello.com/c/dJHqhhfU/90-update-clean-up-portfolio-website-https-jamiebortgithubio).~~
 
