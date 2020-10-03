@@ -1,5 +1,15 @@
 # My Portfolio Website
 
+###Business Requirements
+The site shall:
+
+* provide the user a way to easily find, look at, and download my resume
+* allow the user to message me directly via a form that goes into my email inbox, (and maybe texts me?)
+* display to the user all of the projects that I wish them to see.
+* show my interests as they pertain to my career and technical abilities. 
+
+### Functional Requirements
+
 ### Status
 201909
 Need to fix the the branches - somehow lost files when pushed to new branch. Specifically the TechnologyTableIframe branch
@@ -87,7 +97,7 @@ Testing the phrase again.
 ### Associated Links
 [Update Portfolio Website](https://calendar.google.com/calendar/r/search?q=Update%20Portfolio%20Website) recurring calendar event.
 
-[portfolio website](https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo)
+[Portfolio Website](https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo) Google Drive directory.
 
 ~~The URL to the google drive for this repo can be found  here: https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo
 In it are links to website I should explore for this revamp.~~
