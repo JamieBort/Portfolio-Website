@@ -21,7 +21,8 @@ The site shall:
   * my Hackerrank profile (https://www.hackerrank.com/jamiebort),
   * my GitHub profile,
   * etc.
-* display my involvement with Devs@rtp and other similar organizations.
+* display my involvement with Devs@rtp and other similar organizations,
+* be responsive (works on screens of varying sizes.
 
 ### Functional Requirements
 
@@ -81,11 +82,11 @@ Also, need to figure out logistic of keeping track of where I leave off on this 
 ### To Do
 - [ ] Review other portfolio websites to:
 
-	- [ ] [Place this with other examples of portfolio websites to get ideas for my own](https://trello.com/c/1JHiHOMI/485-place-this-with-other-examples-of-portfolio-websites-to-consider) Trello card.
+	- [X] [Place this with other examples of portfolio websites to get ideas for my own](https://trello.com/c/1JHiHOMI/485-place-this-with-other-examples-of-portfolio-websites-to-consider) Trello card.
 
-	- [ ] [Explore ways to show of my skills on my portfolio website](https://trello.com/c/2oLiIllY/481-explore-ways-to-show-of-my-skills-on-my-portfolio-website) Trello card.
+	- [ ] [Explore ways to show off my skills on my portfolio website](https://trello.com/c/2oLiIllY/481-explore-ways-to-show-of-my-skills-on-my-portfolio-website) Trello card.
 
-	- [ ] [Decide on a layout and design for my portfolio website](https://trello.com/c/8Xdj7duH/482-decide-on-a-layout-and-design-for-my-portfolio-website) Trello card.
+	- [X] [Decide on a layout and design for my portfolio website](https://trello.com/c/8Xdj7duH/482-decide-on-a-layout-and-design-for-my-portfolio-website) Trello card.
 
 - [ ] Maybe [Rebuild very simple static site using HTML and CSS](https://trello.com/c/FDIB9ePE/163-rebuild-very-simple-static-site-using-html-and-css) Trello card.
 
@@ -129,6 +130,8 @@ Also, need to figure out logistic of keeping track of where I leave off on this 
 - [ ] ~~The URL to the google drive for this repo can be found here: https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo~~
 
 - [ ] Testing the phrase again.
+
+- [ ] Maybe [Linking to Medium Articles](https://docs.google.com/document/d/19hUkz8l0dI4ds4hsm3xHQKClxqoY39K_SdchQpjutz8/edit#heading=h.qith27jujz6e) Google Drive doc.
 
 ### Associated Links
 * [Update Portfolio Website](https://calendar.google.com/calendar/r/search?q=Update%20Portfolio%20Website) recurring calendar event.
