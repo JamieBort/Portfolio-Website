@@ -12,11 +12,10 @@ The site shall:
 * display in a graph, chart, or other visual representation my level of skills for each technology.
 * follow accessibility standards.
 * add content that I create
-
- * on my blog. Such as "what I learned today" section.
- * on my LinkedIn account,
- * on my twitter account,
- * etc.
+  * on my blog. Such as "what I learned today" section.
+  * on my LinkedIn account,
+  * on my twitter account,
+  * etc.
 
 ### Functional Requirements
 
