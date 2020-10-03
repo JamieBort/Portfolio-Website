@@ -65,7 +65,7 @@ Also, need to figure out logistic of keeping track of where I leave off on this 
 
     j. my github commit history calendar
 
-    k. the percentage of days I've commited to the number of days in the github commit history calendar
+    k. the percentage of days I've committed to the number of days in the github commit history calendar
 
     l. a photo of me.
 
@@ -74,9 +74,9 @@ Also, need to figure out logistic of keeping track of where I leave off on this 
 
 ### To Do
 Review other portfolio websites to:
-    - [ ] [Place this with other examples of portfolio websites to get ideas for my own](https://trello.com/c/1JHiHOMI/485-place-this-with-other-examples-of-portfolio-websites-to-consider) Trello card.
+	- [ ] [Place this with other examples of portfolio websites to get ideas for my own](https://trello.com/c/1JHiHOMI/485-place-this-with-other-examples-of-portfolio-websites-to-consider) Trello card.
 
-  - [ ] [Explore ways to show of my skills on my portfolio website](https://trello.com/c/2oLiIllY/481-explore-ways-to-show-of-my-skills-on-my-portfolio-website) Trello card.
+	- [ ] [Explore ways to show of my skills on my portfolio website](https://trello.com/c/2oLiIllY/481-explore-ways-to-show-of-my-skills-on-my-portfolio-website) Trello card.
 
 	- [ ] [Decide on a layout and design for my portfolio website](https://trello.com/c/8Xdj7duH/482-decide-on-a-layout-and-design-for-my-portfolio-website) Trello card.
 
