@@ -74,7 +74,7 @@ Also, need to figure out logistic of keeping track of where I leave off on this 
 
 ### To Do
 Review other portfolio websites to:
-  - [ ] [Place this with other examples of portfolio websites to get ideas for my own](https://trello.com/c/1JHiHOMI/485-place-this-with-other-examples-of-portfolio-websites-to-consider) Trello card.
+   - [ ] [Place this with other examples of portfolio websites to get ideas for my own](https://trello.com/c/1JHiHOMI/485-place-this-with-other-examples-of-portfolio-websites-to-consider) Trello card.
 
   - [ ] [Explore ways to show of my skills on my portfolio website](https://trello.com/c/2oLiIllY/481-explore-ways-to-show-of-my-skills-on-my-portfolio-website) Trello card.
 
