@@ -1,8 +1,8 @@
 # My Portfolio Website
 
-The URL to the google drive for this repo can be found here: https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo
-In it are links to website I should explore for this revamp.
+### Status
 
+### Next Steps
 1. Include the following features in my website:
 
     a. What I am currently working on.
@@ -48,7 +48,7 @@ In it are links to website I should explore for this revamp.
     m. "what I learned today" section.
 
 
-TODO:
+### TODO:
 See the trello board for [todo items](https://trello.com/c/dJHqhhfU/90-update-clean-up-portfolio-website-https-jamiebortgithubio).
 
   - [ ] 8q. Update the image in the modal so that it fills the dev.
@@ -79,3 +79,10 @@ See the trello board for [todo items](https://trello.com/c/dJHqhhfU/90-update-cl
 The URL to the google drive for this repo can be found here: https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo
 
 Testing the phrase again.
+
+
+### Associated Links
+[portfolio website](https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo)
+
+~~The URL to the google drive for this repo can be found  here: https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo
+In it are links to website I should explore for this revamp.~~
