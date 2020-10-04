@@ -26,7 +26,9 @@ The site shall:
 
 ### Functional Requirements
 
-Use `React.js` and/or `React Native`.
+* Use `React.js` and/or `React Native`.
+* Header with my name and ... (?)
+* Form to contact me.
 
 ### Status
 201909
@@ -80,13 +82,23 @@ Also, need to figure out logistic of keeping track of where I leave off on this 
 
 
 ### To Do
+- [ ] [Wireframe the desktop and mobile layout](https://trello.com/c/3xtKwRIm/491-wireframe-the-desktop-and-mobile-layout-for-portfolio-website) Trello card.
+
+	- [ ] [Obtain wireframe app](https://trello.com/c/ogulw2aZ/492-obtain-wireframe-app?menu=filter&filter=due:incomplete) Trello card.
+
 - [ ] Review other portfolio websites to:
 
-	- [X] [Place this with other examples of portfolio websites to get ideas for my own](https://trello.com/c/1JHiHOMI/485-place-this-with-other-examples-of-portfolio-websites-to-consider) Trello card.
+	- [X] ~~[Place this with other examples of portfolio websites to get ideas for my own](https://trello.com/c/1JHiHOMI/485-place-this-with-other-examples-of-portfolio-websites-to-consider) Trello card.~~
+
+	- [X] ~~[Decide whether to create my portfolio site using React or React Native](https://trello.com/c/sLJ1fEBe/486-decide-whether-to-create-my-portfolio-site-using-react-or-react-native) Trello card.~~
 
 	- [ ] [Explore ways to show off my skills on my portfolio website](https://trello.com/c/2oLiIllY/481-explore-ways-to-show-of-my-skills-on-my-portfolio-website) Trello card.
 
-	- [X] [Decide on a layout and design for my portfolio website](https://trello.com/c/8Xdj7duH/482-decide-on-a-layout-and-design-for-my-portfolio-website) Trello card.
+	- [ ] [Decide on a layout and design for my portfolio website](https://trello.com/c/8Xdj7duH/482-decide-on-a-layout-and-design-for-my-portfolio-website) Trello card.
+
+	- [ ] [See how social media is linked to on the portfolio website](https://trello.com/c/oVKNGjvm/488-see-how-social-media-is-linked-to-on-the-portfolio-website) of other people's portfolio sites.
+
+	- [ ] [See how to display my social media posts on the portfolio website](https://trello.com/c/pj0lfx00/489-see-how-to-display-my-social-media-posts-on-the-portfolio-website)
 
 - [ ] Maybe [Rebuild very simple static site using HTML and CSS](https://trello.com/c/FDIB9ePE/163-rebuild-very-simple-static-site-using-html-and-css) Trello card.
 
@@ -98,9 +110,7 @@ Also, need to figure out logistic of keeping track of where I leave off on this 
 
 - [ ] [Listen to this podcast on hosting a website and make necessary notes](https://trello.com/c/QTWzA4bv/480-list-to-this-podcast-on-hosting-a-website-and-make-necessary-notes) Trello card.
 
-- [ ] [Decide whether to create my portfolio site using React or React Native](https://trello.com/c/sLJ1fEBe/486-decide-whether-to-create-my-portfolio-site-using-react-or-react-native) Trello card.
-
-- [ ] ~~See the Trello board for [todo items](https://trello.com/c/dJHqhhfU/90-update-clean-up-portfolio-website-https-jamiebortgithubio).~~
+- [ ] ~~See the Trello board for [To Do Items](https://trello.com/c/dJHqhhfU/90-update-clean-up-portfolio-website-https-jamiebortgithubio).~~
 
   - [ ] 8q. Update the image in the modal so that it fills the dev.
 
@@ -137,3 +147,5 @@ Also, need to figure out logistic of keeping track of where I leave off on this 
 * [Update Portfolio Website](https://calendar.google.com/calendar/r/search?q=Update%20Portfolio%20Website) recurring calendar event.
 * [Portfolio Website](https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo) Google Drive directory.
 * Chrome bookmark for this project: `chrome://bookmarks/?id=1300`
+
+My New change.
