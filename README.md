@@ -71,10 +71,10 @@ The site shall:
 	- [ ] Bug test.
 	- [ ] Add this [github calendar](https://github.com/IonicaBizau/github-calendar) to my portfolio site. [Or somewhere else?] and/or: https://github.com/fullcalendar/fullcalendar
 
-### Content
-*blog
-*bio
-* social media posts
+### Types fo Content
+To add to the website.
+*First item
+*Second item
   * linkedin
   * twitter
 
