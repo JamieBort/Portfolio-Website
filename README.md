@@ -62,10 +62,12 @@ The site shall:
 
 - [ ] [Wireframe the desktop and mobile layout](https://trello.com/c/3xtKwRIm/491-wireframe-the-desktop-and-mobile-layout-for-portfolio-website) Trello card.
 	- [ ] [Learn how to use Figma](https://trello.com/c/AnQb9Ewl/495-learn-how-to-use-figma) Trello card.
+	- [ ] [Decide on logo](https://trello.com/c/aBiOmqZd/499-decide-on-logo) Trello card.
+	- [ ] [Decide on fonts](https://trello.com/c/WmfzueWk/498-decide-on-fonts) Trello card.
 	- [X] [Obtain wireframe app](https://trello.com/c/ogulw2aZ/492-obtain-wireframe-app?menu=filter&filter=due:incomplete) Trello card.
 
 - [ ] Build the site.
-	- [ ] [Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues?menu=filter&filter=due:incomplete) Trello card.
+	- [ ] [Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card.
 	- [ ] [Fix branch issue with portfolio site](https://trello.com/c/PxEFMj5s/374-fix-branch-issue-with-portfolio-site) Trello card.
 	- [ ] Maybe [Rebuild very simple static site using HTML and CSS](https://trello.com/c/FDIB9ePE/163-rebuild-very-simple-static-site-using-html-and-css) Trello card.
 	- [ ] Bug test.
@@ -73,10 +75,11 @@ The site shall:
 
 ### Types fo Content
 To add to the website.
-*First item
-*Second item
-  * linkedin
-  * twitter
+
+*Blog post(s)
+*Social Media
+  * LinkedIn
+  * Twitter
 
 ### Associated Links
 * [Update Portfolio Website](https://calendar.google.com/calendar/r/search?q=Update%20Portfolio%20Website) recurring calendar event.
