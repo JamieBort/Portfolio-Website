@@ -37,10 +37,16 @@ The site shall:
 * Form to contact me.
 
 ### Next Steps
+1. Figure out my content.
+2. Then figure out the layout using Figma.
+3. Then build the site.
+4. Lastly, add content.
 
 
 ### To Do
 - [ ] [Wireframe the desktop and mobile layout](https://trello.com/c/3xtKwRIm/491-wireframe-the-desktop-and-mobile-layout-for-portfolio-website) Trello card.
+
+	- [ ] [Learn how to use Figma](https://trello.com/c/AnQb9Ewl/495-learn-how-to-use-figma) Trello card.
 
 	- [X] [Obtain wireframe app](https://trello.com/c/ogulw2aZ/492-obtain-wireframe-app?menu=filter&filter=due:incomplete) Trello card.
 
