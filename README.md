@@ -2,7 +2,8 @@
 
 ### The Purpose of this README.md file
 Unlike most README files on GitHub this one is not meant for you, the public. I am using this for my organization.
-To that end, it outlines what I plan on doing with my [portfolio website](https://jamiebort.github.io/) as I revamp it.
+
+To that end, this README file outlines what I plan on doing with my [portfolio website](https://jamiebort.github.io/) as I revamp it.
 
 ### Business Requirements
 
@@ -63,17 +64,15 @@ The site shall:
 
 - [ ] [Fix branch issue with portfolio site](https://trello.com/c/PxEFMj5s/374-fix-branch-issue-with-portfolio-site) Trello card.
 
-- [ ] [Update the portfolio website README file](https://trello.com/c/hCRC1EG6/483-update-the-portfolio-website-readme-file) Trello card.
+- [X] [Update the portfolio website README file](https://trello.com/c/hCRC1EG6/483-update-the-portfolio-website-readme-file) Trello card.
 
 - [ ] [Listen to this podcast on hosting a website and make necessary notes](https://trello.com/c/QTWzA4bv/480-list-to-this-podcast-on-hosting-a-website-and-make-necessary-notes) Trello card.
 
-- [ ] 11. Bug test.
+- [ ] Bug test.
 
-- [ ] 13. Include the fact that I am involved with Code for Durham.
+- [ ] Add this [github calendar](https://github.com/IonicaBizau/github-calendar) to my portfolio site. [Or somewhere else?] and/or: https://github.com/fullcalendar/fullcalendar
 
-- [ ] 14. Add this [github calendar](https://github.com/IonicaBizau/github-calendar) to my portfolio site. [Or somewhere else?] and/or: https://github.com/fullcalendar/fullcalendar
-
-- [ ] Maybe [Linking to Medium Articles](https://docs.google.com/document/d/19hUkz8l0dI4ds4hsm3xHQKClxqoY39K_SdchQpjutz8/edit#heading=h.qith27jujz6e) Google Drive doc.
+- [ ] [Read up on functional versus business requirements](https://trello.com/c/CGFYOG9p/494-read-up-on-functional-versus-business-requirements) Trello card.
 
 ### Associated Links
 * [Update Portfolio Website](https://calendar.google.com/calendar/r/search?q=Update%20Portfolio%20Website) recurring calendar event.
