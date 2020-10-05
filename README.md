@@ -50,7 +50,7 @@ The site shall:
 
 - [ ] [Read up on functional versus business requirements](https://trello.com/c/CGFYOG9p/494-read-up-on-functional-versus-business-requirements) Trello card.
 
-- [ ] [Figure out my content for the portfolio website 202010](https://trello.com/c/adJl19pT/496-figure-out-my-content-for-the-portfolio-website-202010) Trello card.
+- [ ] Figure out my content for the portfolio website.
 	- [ ] Review other portfolio websites to:
 		- [X] ~~[Place this with other examples of portfolio websites to get ideas for my own](https://trello.com/c/1JHiHOMI/485-place-this-with-other-examples-of-portfolio-websites-to-consider) Trello card.~~
 		- [X] ~~[Decide whether to create my portfolio site using React or React Native](https://trello.com/c/sLJ1fEBe/486-decide-whether-to-create-my-portfolio-site-using-react-or-react-native) Trello card.~~
@@ -58,7 +58,7 @@ The site shall:
 		- [ ] [Decide on a layout and design for my portfolio website](https://trello.com/c/8Xdj7duH/482-decide-on-a-layout-and-design-for-my-portfolio-website) Trello card.
 		- [ ] [See how social media is linked to on the portfolio website](https://trello.com/c/oVKNGjvm/488-see-how-social-media-is-linked-to-on-the-portfolio-website) of other people's portfolio sites.
 		- [ ] [See how to display my social media posts on the portfolio website](https://trello.com/c/pj0lfx00/489-see-how-to-display-my-social-media-posts-on-the-portfolio-website)
-	- [ ] 
+	- [ ] [Explicitly list the content of the portfolio website 202010](https://trello.com/c/adJl19pT/496-explicitly-list-the-content-of-the-portfolio-website-202010) Trello card.
 
 - [ ] [Wireframe the desktop and mobile layout](https://trello.com/c/3xtKwRIm/491-wireframe-the-desktop-and-mobile-layout-for-portfolio-website) Trello card.
 	- [ ] [Learn how to use Figma](https://trello.com/c/AnQb9Ewl/495-learn-how-to-use-figma) Trello card.
@@ -69,6 +69,7 @@ The site shall:
 - [ ] Build the site.
 	- [ ] [Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card.
 	- [ ] [Fix branch issue with portfolio site](https://trello.com/c/PxEFMj5s/374-fix-branch-issue-with-portfolio-site) Trello card.
+	- [ ] Remove this [old/20181126](https://github.com/JamieBort/jamiebort.github.io/tree/master/old/20181126) directory.
 	- [ ] Maybe [Rebuild very simple static site using HTML and CSS](https://trello.com/c/FDIB9ePE/163-rebuild-very-simple-static-site-using-html-and-css) Trello card.
 	- [ ] Bug test.
 	- [ ] Add this [github calendar](https://github.com/IonicaBizau/github-calendar) to my portfolio site. [Or somewhere else?] and/or: https://github.com/fullcalendar/fullcalendar
@@ -77,6 +78,7 @@ The site shall:
 To add to the website.
 
 *Blog post(s)
+
 *Social Media
   * LinkedIn
   * Twitter
