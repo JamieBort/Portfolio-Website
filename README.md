@@ -67,21 +67,11 @@ Also, need to figure out logistic of keeping track of where I leave off on this 
 
 - [ ] [Listen to this podcast on hosting a website and make necessary notes](https://trello.com/c/QTWzA4bv/480-list-to-this-podcast-on-hosting-a-website-and-make-necessary-notes) Trello card.
 
-- [ ] ~~See the Trello board for [To Do Items](https://trello.com/c/dJHqhhfU/90-update-clean-up-portfolio-website-https-jamiebortgithubio).~~
-
-- [ ] 9. ~~Then build it for tablet users.~~
-
-- [ ] 10. ~~Lastly build it for desktop users.~~
-
-  - [ ] 10a. ~~Center phone number and email buttons under the social media icons.~~
-
 - [ ] 11. Bug test.
 
 - [ ] 13. Include the fact that I am involved with Code for Durham.
 
 - [ ] 14. Add this [github calendar](https://github.com/IonicaBizau/github-calendar) to my portfolio site. [Or somewhere else?] and/or: https://github.com/fullcalendar/fullcalendar
-
-- [ ] ~~The URL to the google drive for this repo can be found here: https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo~~
 
 - [ ] Maybe [Linking to Medium Articles](https://docs.google.com/document/d/19hUkz8l0dI4ds4hsm3xHQKClxqoY39K_SdchQpjutz8/edit#heading=h.qith27jujz6e) Google Drive doc.
 
