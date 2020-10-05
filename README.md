@@ -1,5 +1,9 @@
 # My Portfolio Website
 
+### The Purpose of this README.md file
+Unlike most README files on GitHub this one is not meant for you, the public. I am using this for my organization.
+To that end, it outlines what I plan on doing with my [portfolio website](https://jamiebort.github.io/).
+
 ### Business Requirements
 
 The site shall:
@@ -41,7 +45,7 @@ Also, need to figure out logistic of keeping track of where I leave off on this 
 ### To Do
 - [ ] [Wireframe the desktop and mobile layout](https://trello.com/c/3xtKwRIm/491-wireframe-the-desktop-and-mobile-layout-for-portfolio-website) Trello card.
 
-	- [ ] [Obtain wireframe app](https://trello.com/c/ogulw2aZ/492-obtain-wireframe-app?menu=filter&filter=due:incomplete) Trello card.
+	- [X] [Obtain wireframe app](https://trello.com/c/ogulw2aZ/492-obtain-wireframe-app?menu=filter&filter=due:incomplete) Trello card.
 
 - [ ] Review other portfolio websites to:
 
