@@ -2,7 +2,7 @@
 
 ### The Purpose of this README.md file
 Unlike most README files on GitHub this one is not meant for you, the public. I am using this for my organization.
-To that end, it outlines what I plan on doing with my [portfolio website](https://jamiebort.github.io/).
+To that end, it outlines what I plan on doing with my [portfolio website](https://jamiebort.github.io/) as I revamp it.
 
 ### Business Requirements
 
@@ -27,17 +27,13 @@ The site shall:
   * etc.
 * display my involvement with Devs@rtp and other similar organizations,
 * be responsive (works on screens of varying sizes.
+* maybe demonstrate my database and backend skills. (alternatively make sure these are demonstrated in my highlighted apps.)
 
 ### Functional Requirements
 
 * Use `React.js` and/or `React Native`.
 * Header with my name and ... (?)
 * Form to contact me.
-
-### Status
-201909
-Need to fix the the branches - somehow lost files when pushed to new branch. Specifically the TechnologyTableIframe branch
-Also, need to figure out logistic of keeping track of where I leave off on this (and other coding tasks/projects)
 
 ### Next Steps
 
