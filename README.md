@@ -69,34 +69,19 @@ Also, need to figure out logistic of keeping track of where I leave off on this 
 
 - [ ] ~~See the Trello board for [To Do Items](https://trello.com/c/dJHqhhfU/90-update-clean-up-portfolio-website-https-jamiebortgithubio).~~
 
-  - [ ] 8q. Update the image in the modal so that it fills the dev.
+- [ ] 9. ~~Then build it for tablet users.~~
 
-  - [ ] 8r. Style the two links in the modal so they're not at the top of the dev and so that they look better.
+- [ ] 10. ~~Lastly build it for desktop users.~~
 
-  - [ ] 8s. The Meetup button and the phrase 'Triangle Adult Junior Developers' needs to be addressed.
-
-
-- [ ] 9. Then build it for tablet users.
-
-  - [ ] 9a. [What needs to be addressed here?]
-
-- [ ] 10. Lastly build it for desktop users.
-
-  - [ ] 10a. Center phone number and email buttons under the social media icons.
-
-  - [ ] 10b. 
+  - [ ] 10a. ~~Center phone number and email buttons under the social media icons.~~
 
 - [ ] 11. Bug test.
-
-- [ ] 12. Add a picture of myself.
 
 - [ ] 13. Include the fact that I am involved with Code for Durham.
 
 - [ ] 14. Add this [github calendar](https://github.com/IonicaBizau/github-calendar) to my portfolio site. [Or somewhere else?] and/or: https://github.com/fullcalendar/fullcalendar
 
 - [ ] ~~The URL to the google drive for this repo can be found here: https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo~~
-
-- [ ] Testing the phrase again.
 
 - [ ] Maybe [Linking to Medium Articles](https://docs.google.com/document/d/19hUkz8l0dI4ds4hsm3xHQKClxqoY39K_SdchQpjutz8/edit#heading=h.qith27jujz6e) Google Drive doc.
 
