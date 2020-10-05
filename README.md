@@ -45,37 +45,27 @@ The site shall:
 
 ### To Do
 - [ ] [Read up on functional versus business requirements](https://trello.com/c/CGFYOG9p/494-read-up-on-functional-versus-business-requirements) Trello card.
+- [ ] Figure out my content.
+	- [ ] 
 - [ ] [Wireframe the desktop and mobile layout](https://trello.com/c/3xtKwRIm/491-wireframe-the-desktop-and-mobile-layout-for-portfolio-website) Trello card.
 	- [ ] [Learn how to use Figma](https://trello.com/c/AnQb9Ewl/495-learn-how-to-use-figma) Trello card.
 	- [X] [Obtain wireframe app](https://trello.com/c/ogulw2aZ/492-obtain-wireframe-app?menu=filter&filter=due:incomplete) Trello card.
-
 - [ ] Review other portfolio websites to:
-
 	- [X] ~~[Place this with other examples of portfolio websites to get ideas for my own](https://trello.com/c/1JHiHOMI/485-place-this-with-other-examples-of-portfolio-websites-to-consider) Trello card.~~
-
 	- [X] ~~[Decide whether to create my portfolio site using React or React Native](https://trello.com/c/sLJ1fEBe/486-decide-whether-to-create-my-portfolio-site-using-react-or-react-native) Trello card.~~
-
 	- [ ] [Explore ways to show off my skills on my portfolio website](https://trello.com/c/2oLiIllY/481-explore-ways-to-show-of-my-skills-on-my-portfolio-website) Trello card.
-
 	- [ ] [Decide on a layout and design for my portfolio website](https://trello.com/c/8Xdj7duH/482-decide-on-a-layout-and-design-for-my-portfolio-website) Trello card.
-
 	- [ ] [See how social media is linked to on the portfolio website](https://trello.com/c/oVKNGjvm/488-see-how-social-media-is-linked-to-on-the-portfolio-website) of other people's portfolio sites.
-
 	- [ ] [See how to display my social media posts on the portfolio website](https://trello.com/c/pj0lfx00/489-see-how-to-display-my-social-media-posts-on-the-portfolio-website)
-
-- [ ] Maybe [Rebuild very simple static site using HTML and CSS](https://trello.com/c/FDIB9ePE/163-rebuild-very-simple-static-site-using-html-and-css) Trello card.
-
 - [ ] [Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues?menu=filter&filter=due:incomplete) Trello card.
 - [X] [Update the portfolio website README file](https://trello.com/c/hCRC1EG6/483-update-the-portfolio-website-readme-file) Trello card.
 
 - [ ] [Listen to this podcast on hosting a website and make necessary notes](https://trello.com/c/QTWzA4bv/480-list-to-this-podcast-on-hosting-a-website-and-make-necessary-notes) Trello card.
-
-- [ ] Bug test.
-
 - [ ] Add this [github calendar](https://github.com/IonicaBizau/github-calendar) to my portfolio site. [Or somewhere else?] and/or: https://github.com/fullcalendar/fullcalendar
-
 - [ ] Build the site.
 	- [ ] [Fix branch issue with portfolio site](https://trello.com/c/PxEFMj5s/374-fix-branch-issue-with-portfolio-site) Trello card.
+	- [ ] Maybe [Rebuild very simple static site using HTML and CSS](https://trello.com/c/FDIB9ePE/163-rebuild-very-simple-static-site-using-html-and-css) Trello card.
+	- [ ] Bug test.
 	- [ ] 
 
 ### Associated Links
