@@ -68,6 +68,7 @@ The site shall:
 	- [X] [Obtain wireframe app](https://trello.com/c/ogulw2aZ/492-obtain-wireframe-app?menu=filter&filter=due:incomplete) Trello card.
 
 - [ ] Build the site.
+	- [ ] [Design the basic architecture](https://trello.com/c/CyUFSwY3/522-design-the-basic-architecture) Trello card.
 	- [ ] [Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card.
 	- [ ] [Fix branch issue with portfolio site](https://trello.com/c/PxEFMj5s/374-fix-branch-issue-with-portfolio-site) Trello card.
 	- [ ] Remove this [old/20181126](https://github.com/JamieBort/jamiebort.github.io/tree/master/old/20181126) directory.
