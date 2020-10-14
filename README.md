@@ -36,7 +36,7 @@ The site shall:
 * Header with my name and ... (?)
 * Form to contact me.
 
-###Status
+### Status
 Created a `preliminaryExploration` branch.
 Last left off working there. Am about to start this [ReusableComponentsTutorial](https://github.com/JamieBort/LearningDirectory/tree/master/WebComponents/ReusableComponentsTutorial) tutorial to use for this site.
 
@@ -99,3 +99,4 @@ To add to the website.
 * [Update Portfolio Website](https://calendar.google.com/calendar/r/search?q=Update%20Portfolio%20Website) recurring calendar event.
 * [Portfolio Website](https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo) Google Drive directory.
 * Chrome bookmark for this project: `chrome://bookmarks/?id=1300`
+* [Update Portfolio Website](https://trello.com/c/dJHqhhfU/90-update-portfolio-website) Trello card.
