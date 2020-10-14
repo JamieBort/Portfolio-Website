@@ -78,6 +78,8 @@ The site shall:
 	- [ ] Add this [github calendar](https://github.com/IonicaBizau/github-calendar) to my portfolio site. [Or somewhere else?] and/or: https://github.com/fullcalendar/fullcalendar
 
 ### Types fo Content
+(see the [Explicitly list the content of the portfolio website 202010](https://trello.com/c/adJl19pT/496-explicitly-list-the-content-of-the-portfolio-website-202010) Trello card for content to list in this section.)
+
 To add to the website.
 
 * Blog post(s)
