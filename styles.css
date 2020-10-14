@@ -1,0 +1,29 @@
+/* body {
+    display: flex;
+    justify-content: ;
+} */
+
+header {
+    background-color: green;
+    display: flex;
+    justify-content: space-around;
+}
+
+#left, #right{
+    background-color: greenyellow;
+}
+
+.section {
+    border: 3px green solid;
+    margin: 3px;
+}
+
+/* #container {
+    border: 3px red solid;
+    margin: 3px;
+} */
+
+header, footer,#container  {
+    border: 3px blue solid;
+    margin: 3px;
+};
