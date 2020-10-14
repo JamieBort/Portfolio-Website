@@ -36,6 +36,10 @@ The site shall:
 * Header with my name and ... (?)
 * Form to contact me.
 
+###Status
+Created a `preliminaryExploration` branch.
+Last left off working there. Am about to start this [ReusableComponentsTutorial](https://github.com/JamieBort/LearningDirectory/tree/master/WebComponents/ReusableComponentsTutorial) tutorial to use for this site.
+
 ### Next Steps
 1. Figure out my content.
 2. Then figure out the layout using Figma.
