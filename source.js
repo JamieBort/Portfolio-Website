@@ -22,12 +22,10 @@ class Header extends HTMLElement{
 class Footer extends HTMLElement{
     connectedCallback() {
         this.innerHTML=`
-
-
-<footer id="footer"><span>Copyright info</span></footer>
-                            `;
-                        }
+                            <footer id="footer"><span>Copyright info</span></footer>
+                        `;
                     }
+                }
 
 // last lines
 customElements.define('header-web-component', Header);
