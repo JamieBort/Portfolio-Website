@@ -48,13 +48,14 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 
 
 ### To Do
+- [ ] [Practice seo search engine optimization for my portfolio website](https://trello.com/c/7h8xq1Qs/529-practice-seo-search-engine-optimization-for-my-portfolio-website) Trello card.
 - [ ] [Redirect my other domains to jamiebort.github.io](https://trello.com/c/Q7faEc6N/527-redirect-my-other-domains-to-jamiebortgithubio) Trello card.
 - [ ] [Change the name of this repo to Portfolio Website](https://trello.com/c/pQzTccx3/514-change-the-name-of-this-repo-to-portfolio-website) Trello card.
 - [ ] [Listen to this podcast on hosting a website and make necessary notes](https://trello.com/c/QTWzA4bv/480-list-to-this-podcast-on-hosting-a-website-and-make-necessary-notes) Trello card.
 
 - [X] [Update the portfolio website README file](https://trello.com/c/hCRC1EG6/483-update-the-portfolio-website-readme-file) Trello card.
 
-- [ ] [Read up on functional versus business requirements](https://trello.com/c/CGFYOG9p/494-read-up-on-functional-versus-business-requirements) Trello card.
+- [X] [Read up on functional versus business requirements](https://trello.com/c/CGFYOG9p/494-read-up-on-functional-versus-business-requirements) Trello card.
 
 - [ ] Figure out my content for the portfolio website.
 	- [ ] Review other portfolio websites to:
