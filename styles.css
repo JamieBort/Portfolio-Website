@@ -16,7 +16,7 @@ html, body {
   }
   
   #right{
-      background:lightgreen;
+      /* background:lightgreen; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@ html, body {
   .content {
     flex: 1;
     overflow: auto;
-    background: pink;
+    /* background: pink; */
   }
   .footer{
     display: flex;
