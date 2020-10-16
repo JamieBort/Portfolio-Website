@@ -7,6 +7,13 @@ html, body {
     display: flex;
     flex-direction: column;
   }
+  #welcome, #blog{
+    background: blueviolet;
+    text-align: center;
+  }
+  section>h2{
+      text-align: center;
+    }
   .header, .footer {
     background: silver;
   }

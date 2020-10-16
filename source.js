@@ -9,11 +9,11 @@ class Header extends HTMLElement{
                 </div>
                 <div id="right">
                     <button><a href="./index.html#bio">Bio</a></button>
-                    <button><a href="./blog.html">Blog</a></button>
+                    <button><a href="./blog.html#blog">Blog</a></button>
                     <button><a href="./index.html#projects">Projects</a></button>
                     <button><a href="./index.html#resources">Resources</a></button>
                     <button><a href="./index.html#fun_stuff">Fun Stuff</a></button>
-                    <button><a href="./index.html#contact_form">Contact Form</a></button>
+                    <button><a href="./index.html#connect_with_me">Connect with me</a></button>
                 </div>
             </div>
         </div>
