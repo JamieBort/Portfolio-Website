@@ -12,6 +12,9 @@ class Header extends HTMLElement{
                     <button><a href="./blog.html#blog">Blog</a></button>
                     <button><a href="./index.html#projects">Projects</a></button>
                     <button><a href="./index.html#resources">Resources</a></button>
+                    `
+                    // <button><a href="./resources.html">Resources</a></button>
+                    +`
                     <button><a href="./index.html#fun_stuff">Fun Stuff</a></button>
                     <button><a href="./index.html#connect_with_me">Connect with me</a></button>
                 </div>

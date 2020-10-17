@@ -7,7 +7,7 @@ html, body {
     display: flex;
     flex-direction: column;
   }
-  #welcome, #blog{
+  #title {
     /* background: blueviolet; */
     text-align: center;
   }
@@ -43,6 +43,13 @@ html, body {
       margin:0 10px;
       background-color: transparent;
       border: none;
+  }
+  img{
+    max-width: 100px;
+    /* max-width: 25px; */
+    width: auto;
+    background-color: pink;
+
   }
   a {
       text-decoration: none;
