@@ -5,18 +5,26 @@ class Header extends HTMLElement{
         <div class="header">
             <div id="header-cont">
                 <div id="left">
-                    <p><a href="./index.html#welcome">Jamie Bort</a></p>
+                    <p><a class="head_a" href="./index.html#welcome">Jamie Bort</a></p>
                 </div>
                 <div id="right">
-                    <button><a href="./index.html#bio">Bio</a></button>
-                    <button><a href="./blog.html#blog">Blog</a></button>
-                    <button><a href="./index.html#projects">Projects</a></button>
-                    <button><a href="./index.html#resources">Resources</a></button>
+                    <button class="head_button"><a class="head_a"  href="./index.html#bio">Bio</a></button>
                     `
-                    // <button><a href="./resources.html">Resources</a></button>
+                    // below is commented out because the Blog is not ready to show to the public.
+                    // <button class="head_button"><a class="head_a"  href="./blog.html#blog">Blog</a></button>
                     +`
-                    <button><a href="./index.html#fun_stuff">Fun Stuff</a></button>
-                    <button><a href="./index.html#connect_with_me">Connect with me</a></button>
+                    
+                    <button class="head_button"><a class="head_a"  href="./index.html#projects">Projects</a></button>
+                    `
+                    // below is commented out because the Resources is not ready to show to the public.
+                    // <button class="head_button"><a class="head_a"  href="./resources.html">Resources</a></button>
+                    +`
+                    
+                    `
+                    // below is commented out because the Fun Stuff is not ready to show to the public.
+                    // <button class="head_button"><a class="head_a"  href="./fun_stuff.html">Fun Stuff</a></button>
+                    +`
+                    <button class="head_button"><a class="head_a"  href="./index.html#connect_with_me">Connect with me</a></button>
                 </div>
             </div>
         </div>
