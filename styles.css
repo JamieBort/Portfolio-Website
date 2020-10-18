@@ -44,6 +44,9 @@ html, body {
     justify-content: center;
     align-items: center;
 }
+#connect_with_me{
+    height: 300px;
+}
 .connect_with_me_button, .head_button{
     margin: 0 10px;
     background-color: transparent;
@@ -54,11 +57,33 @@ html, body {
     background-color: transparent;
     border: none;
 } */
+.connect_with_me_icons{
+    /* background-color: lightsalmon; */
+    display: flex;
+    justify-content: space-around;
+    /* max-width: 100px;
+    width: auto; */
+}
+.connect_with_me_button{
+    /* background-color: lightblue; */
+    width: 200px;
+    height: 200px;
+    /* max-width: 100px;
+    width: auto; */
+}
+
+.connect_with_me_a{
+    /* background-color: lightseagreen; */
+    background: lightseagreen;
+    width: 100px;
+    height: 100px;
+}
 .connect_with_me_img{
-    max-width: 100px;
-    /* max-width: 25px; */
+    max-width: 50px;
     width: auto;
-    background-color: pink;}
+    /* max-width: 25px; */
+    /* background-color: pink; */
+}
 /* img {
     max-width: 100px;
     /* max-width: 25px; */
