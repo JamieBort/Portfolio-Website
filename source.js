@@ -31,6 +31,9 @@ class Header extends HTMLElement{
                     // <button class="head_button"><a class="head_a"  href="./fun_stuff.html">Fun Stuff</a></button>
                     +`
                     <button class="head_button">
+                        <a class="head_a"  href="./index.html#connect_with_me">Resume </a>
+                    </button>
+                    <button class="head_button">
                         <a class="head_a"  href="./index.html#connect_with_me">Connect with me</a>
                     </button>
                 </div>
