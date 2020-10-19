@@ -5,16 +5,22 @@ class Header extends HTMLElement{
         <div class="header">
             <div id="header-cont">
                 <div id="left">
-                    <p><a class="head_a" href="./index.html#welcome">Jamie Bort</a></p>
+                    <button class="head_button">
+                        <a class="head_a" href="./index.html#title">Jamie Bort</a>
+                    </button>
                 </div>
                 <div id="right">
-                    <button class="head_button"><a class="head_a"  href="./index.html#bio">Bio</a></button>
+                    <button class="head_button">
+                        <a class="head_a"  href="./index.html#bio">Bio</a>
+                    </button>
                     `
                     // below is commented out because the Blog is not ready to show to the public.
                     // <button class="head_button"><a class="head_a"  href="./blog.html#blog">Blog</a></button>
                     +`
                     
-                    <button class="head_button"><a class="head_a"  href="./index.html#projects">Projects</a></button>
+                    <button class="head_button">
+                        <a class="head_a"  href="./index.html#projects">Projects</a>
+                    </button>
                     `
                     // below is commented out because the Resources is not ready to show to the public.
                     // <button class="head_button"><a class="head_a"  href="./resources.html">Resources</a></button>
@@ -24,7 +30,9 @@ class Header extends HTMLElement{
                     // below is commented out because the Fun Stuff is not ready to show to the public.
                     // <button class="head_button"><a class="head_a"  href="./fun_stuff.html">Fun Stuff</a></button>
                     +`
-                    <button class="head_button"><a class="head_a"  href="./index.html#connect_with_me">Connect with me</a></button>
+                    <button class="head_button">
+                        <a class="head_a"  href="./index.html#connect_with_me">Connect with me</a>
+                    </button>
                 </div>
             </div>
         </div>

@@ -1,3 +1,10 @@
+html *
+{
+   /* font-size: 1em !important; */
+   /* color: #000 !important; */
+   font-family: Garamond !important;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -8,19 +15,34 @@ html, body {
     display: flex;
     flex-direction: column;
 }
+#abc{
+    background: lightskyblue;
+    height: 80px;
 
+}
 #title {
     /* background: blueviolet; */
+    text-align: center;
+    font-size: 2.5em;
+    /* height: 80px; */
+}
+
+#bio{
     text-align: center;
 }
 
 .section_title {
-    text-align: center;
+    /* text-align: center; */
+}
+#bio_section_div{
+    background: silver;
+    /* text-align: center; */
 }
 
 #copyright {
     /* border-top: 5px solid red; */
     /* background: silver; */
+    font-size: 20px;
 }
 
 .footer {
@@ -30,6 +52,7 @@ html, body {
 
 .header, .footer {
     /* background: silver; */
+    /* font-size: 30px; */
 }
 
 #header-cont {
@@ -37,12 +60,22 @@ html, body {
     display: flex;
     justify-content: space-around;
 }
-
-#right {
-    /* background:lightgreen; */
+#left,#right{
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#left{
+    /* background:lightgreen; */
+    
+}
+
+#right {
+    /* background:lightgreen; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 #connect_with_me{
     height: 300px;
@@ -91,7 +124,9 @@ html, body {
     background-color: pink;
 } */
 .head_a{
-    text-decoration: none;}
+    text-decoration: none;
+    font-size: 30px;
+}
 /* a {
     text-decoration: none;
 } */
