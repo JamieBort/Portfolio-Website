@@ -28,11 +28,11 @@ html, body {
 }
 
 #bio{
-    text-align: center;
+    /* text-align: center; */
 }
 
 .section_title {
-    /* text-align: center; */
+    text-align: center;
 }
 #bio_section_div{
     background: silver;
