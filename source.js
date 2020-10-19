@@ -25,14 +25,17 @@ class Header extends HTMLElement{
                     // below is commented out because the Resources is not ready to show to the public.
                     // <button class="head_button"><a class="head_a"  href="./resources.html">Resources</a></button>
                     +`
-                    
                     `
                     // below is commented out because the Fun Stuff is not ready to show to the public.
                     // <button class="head_button"><a class="head_a"  href="./fun_stuff.html">Fun Stuff</a></button>
                     +`
-                    <button class="head_button">
-                        <a class="head_a"  href="./index.html#connect_with_me">Resume </a>
-                    </button>
+                    `
+                    // below is commented out because the Resume page is not ready to show to the public.
+                    // <button class="head_button">
+                        // <a class="head_a"  href="./resume.html">Resume </a>
+                    // </button>
+                    +`
+                    
                     <button class="head_button">
                         <a class="head_a"  href="./index.html#connect_with_me">Connect with me</a>
                     </button>
