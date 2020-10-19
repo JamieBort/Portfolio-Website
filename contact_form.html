@@ -13,65 +13,21 @@
         <header-web-component></header-web-component>
         <div class="content">
             <h1 id="title">Contact Form</h1>
-            <h1 id="title">Software Engineer</h1>
-            <p>jamiebort[at]gmail[dot]com</p>
-            <p>form:</p>
-            <p>auto redirects back to home page</p>
             <section id="bio">
-                <h2 class="section_title">A little bit about myself.</h2>
-                <p>I am on a journey learning to make things by writing code. Along the way I hope to share a bit of my
-                    knowledge with others.</p>
-                <p>Here are some of my strengths.</p>
-            </section>
-            <section id="projects">
-                <h2 class="section_title">Projects</h2>
-                <h3>My first Project</h3>
-                <p>A little bit about my first project.</p>
-                <h3>My Second Project</h3>
-                <p>A little bit about my second project.</p>
-                <h3>My Third Project</h3>
-                <p>A little bit about my third project.</p>
-            </section>
-            <!-- <section id="resources">
-                <h2 class="section_title">Resources</h2>
-                <p>Note: my priority is to populate this section with content. As time permits I'll make it filterable.
-                    And searchable.</p>
-                <h3>The First Resource</h3>
-                <p>A little bit about the first resource.</p>
-                <h3>The Second Resource</h3>
-                <p>A little bit about the second resource.</p>
-                <h3>The Third Resource</h3>
-                <p>A little bit about the third resource.</p>
-            </section> -->
-            <section id="fun_stuff">
-                <h2 class="section_title">Fun Stuff</h2>
-                <p>Some things I like.</p>
-                <p>Some things that I do.</p>
-            </section>
-            <section id="connect_with_me">
-                <h2 class="section_title">Connect With Me</h2>
-                <!-- <div class="button_div"> -->
-                <button class="connect_with_me_button">
-                    <a>
-                        <img class="connect_with_me_img" src="./assets/LinkedIn/clipart1055005.png">
-                    </a>
-                </button>
-                <!-- </div>
-                <div class="button_div"> -->
-                <button class="connect_with_me_button"><a><img class="connect_with_me_img"
-                            src="./assets/GitHub/kisspng-github-pages-logo-repository-fork-github-logo-1-magentys-5b69de71b51265.8586076615336648817417.png"></a></button>
-                <!-- </div>
-                <div class="button_div"> -->
-                <button class="connect_with_me_button"><a><img class="connect_with_me_img" src="./assets/Twitter/kindpng_1913303.png"></a></button>
-                <!-- </div>
-                <div class="button_div"> -->
-                <button class="connect_with_me_button"><a><img class="connect_with_me_img"
-                            src="./assets/StackOverflow/kisspng-stack-overflow-computer-icons-stack-exchange-logo-economical-5b4fa8c110cb26.1316323015319472010688.png"></a></button>
-                <!-- </div>
-                <div class="button_div"> -->
-                <button class="connect_with_me_button"><a>JamieBort[at]gmail[dot]com</a></button>
-                <!-- </div> -->
-
+                <h2 class="section_title">I'll respond as soon as possible.</h2>
+                <form action="/my-handling-form-page" method="post">
+                    <ul>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="user_email">
+                        <label for="mail">Retype E-mail:</label>
+                        <input type="email" id="mail" name="user_email">
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </ul>
+                </form>
+                <p>You can also reach me via: jamiebort[at]gmail[dot]com</p>
             </section>
         </div>
         <footer-web-component></footer-web-component>
