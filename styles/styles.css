@@ -20,6 +20,7 @@ h2 {
     flex-direction: column;
 }
 
+/* I don't think #abc is being used. */
 #abc {
     background: lightskyblue;
     height: 80px;
@@ -41,7 +42,7 @@ h2 {
 }
 
 #bio_section_div {
-    background: silver;
+    /* background: silver; */
     /* text-align: center; */
 }
 
@@ -170,3 +171,8 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+
+/* The following is for the table */
+table tbody tr td {
+    border: 1px solid black
+  }
