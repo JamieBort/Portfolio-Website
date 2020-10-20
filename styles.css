@@ -1,8 +1,8 @@
-html *
-{
-   /* font-size: 1em !important; */
-   /* color: #000 !important; */
-   font-family: Garamond !important;
+html * {
+    /* font-size: 1em !important; */
+    /* color: #000 !important; */
+    font-family: Garamond !important;
+    scroll-behavior: smooth;
 }
 
 html, body {
@@ -10,7 +10,7 @@ html, body {
     margin: 0;
 }
 
-h2{
+h2 {
     font-size: 1.75em;
 }
 
@@ -19,11 +19,12 @@ h2{
     display: flex;
     flex-direction: column;
 }
-#abc{
+
+#abc {
     background: lightskyblue;
     height: 80px;
-
 }
+
 #title {
     /* background: blueviolet; */
     text-align: center;
@@ -31,14 +32,15 @@ h2{
     /* height: 80px; */
 }
 
-#bio{
+#bio {
     /* text-align: center; */
 }
 
 .section_title {
     text-align: center;
 }
-#bio_section_div{
+
+#bio_section_div {
     background: silver;
     /* text-align: center; */
 }
@@ -64,15 +66,16 @@ h2{
     display: flex;
     justify-content: space-around;
 }
-#left,#right{
+
+#left, #right {
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#left{
+
+#left {
     /* background:lightgreen; */
-    
 }
 
 #right {
@@ -81,32 +84,38 @@ h2{
     justify-content: center;
     align-items: center; */
 }
-#connect_with_me{
+
+#connect_with_me {
     height: 300px;
 }
-.connect_with_me_button, .head_button{
+
+.connect_with_me_button, .head_button {
     margin: 0 10px;
     background-color: transparent;
     border: none;
 }
-.projects_button{
+
+.projects_button {
     /* margin: 0 10px; */
     /* background-color: transparent; */
     /* border: none; */
 }
+
 /* button {
     margin: 0 10px;
     background-color: transparent;
     border: none;
 } */
-.connect_with_me_icons{
+
+.connect_with_me_icons {
     /* background-color: lightsalmon; */
     display: flex;
     justify-content: space-around;
     /* max-width: 100px;
     width: auto; */
 }
-.connect_with_me_button{
+
+.connect_with_me_button {
     /* background-color: lightblue; */
     width: 200px;
     height: 200px;
@@ -114,32 +123,38 @@ h2{
     width: auto; */
 }
 
-.connect_with_me_a{
+.connect_with_me_a {
     /* background-color: lightseagreen; */
     background: lightseagreen;
     width: 100px;
     height: 100px;
 }
-.connect_with_me_img{
+
+.connect_with_me_img {
     max-width: 50px;
     width: auto;
     /* max-width: 25px; */
     /* background-color: pink; */
 }
+
 /* img {
     max-width: 100px;
     /* max-width: 25px; */
-    /*width: auto;
+
+/*width: auto;
     background-color: pink;
 } */
-.head_a{
+
+.head_a {
     text-decoration: none;
     font-size: 30px;
 }
-.projects_a{
+
+.projects_a {
     text-decoration: none;
     /* font-size: 30px; */
 }
+
 /* a {
     text-decoration: none;
 } */
