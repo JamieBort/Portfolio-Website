@@ -1,0 +1,107 @@
+[
+    {
+        "item": "HTML5",
+        "strength": "Expert",
+        "type": "Language",
+    },
+    {
+        "item": "CSS3",
+        "strength": "Expert",
+        "type": "Language",
+    },
+    {
+        "item": "Python",
+        "strength": "Intermediate",
+        "type": "Language",
+    },
+    {
+        "item": "Bash",
+        "strength": "Expert",
+        "type": "Language",
+    },
+    {
+        "item": "Java",
+        "strength": "Intermediate",
+        "type": "Language",
+    },
+    {
+        "item": "Git",
+        "strength": "Expert",
+        "type": "Language",
+    },
+    {
+        "item": "C Sharp",
+        "strength": "Learning/Some Experience",
+        "type": "Language",
+    },
+    {
+        "item": "PHP",
+        "strength": "Want to learn",
+        "type": "Language",
+    },
+    {
+        "item": "R",
+        "strength": "Want to learn",
+        "type": "Language",
+    },
+    {
+        "item": "React.js",
+        "strength": "Intermediate",
+        "type": "Frameworks and Libraries",
+    },
+    {
+        "item": "React Native",
+        "strength": "Intermediate",
+        "type": "Frameworks and Libraries",
+    },
+    {
+        "item": "Angular",
+        "strength": "Learning/Some Experience",
+        "type": "Frameworks and Libraries",
+    },
+    {
+        "item": "Spring Boot",
+        "strength": "Intermediate",
+        "type": "Frameworks and Libraries",
+    },
+    {
+        "item": ".NET",
+        "strength": "Learning/Some Experience",
+        "type": "Frameworks and Libraries",
+    },
+    {
+        "item": "D3.js",
+        "strength": "Learning/Some Experience",
+        "type": "Frameworks and Libraries",
+    },
+    {
+        "item": "Node.js",
+        "strength": "Intermediate",
+        "type": "Frameworks and Libraries",
+    },
+    {
+        "item": "Mustache-Express MVC",
+        "strength": "Intermediate",
+        "type": "Frameworks and Libraries",
+    },
+    {
+        "item": "SQL",
+        "strength": "Intermediate",
+        "type": "Databases",
+    },
+    {
+        "item": "MongoDB",
+        "strength": "Learning/Some Experience",
+        "type": "Databases",
+    },
+    {
+        "item": "PostreSQL",
+        "strength": "Learning/Some Experience",
+        "type": "Databases",
+    },
+    {
+        "item": "Mongoose",
+        "strength": "Learning/Some Experience",
+        "type": "Databases",
+    },
+]
