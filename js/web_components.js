@@ -57,9 +57,23 @@ class Footer extends HTMLElement {
     }
 }
 
+// for blog entries
+class BlogEntry extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+                            <h1 id="name"></h1>
+                            <p id="date"></p>
+                            <div>
+                                <p>this is my blog entry</p>
+                            </div>
+                        `;
+    }
+}
+
 // last lines
 customElements.define('header-web-component', Header);
 customElements.define('footer-web-component', Footer);
+customElements.define('blog-entry-web-component', BlogEntry);
 
 
 // For the copyright
