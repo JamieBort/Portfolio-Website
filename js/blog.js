@@ -26,3 +26,21 @@ console.log(fileName);
 
 const name = document.getElementById("name");
 name.innerHTML = fileName;
+
+// from: https://stackoverflow.com/a/32938450/8210460
+
+
+
+var script = document.currentScript;
+var fullUrl = script.src;
+console.log(script);
+console.log(fullUrl);
+
+var newPath = document.getElementById('myHtml').src = fullUrl;
+var myHtml =  document.getElementById('myHtml');
+myHtml.innerHTML=newPath;
+
+// var script = document.currentScript;
+// var fullUrl = script.src;
+// console.log(script);
+// console.log(fullUrl);
