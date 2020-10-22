@@ -232,14 +232,7 @@ const skillSets = [
 // var skillSets = require('./skill_sets.json');
 // var mydata = JSON.parse(skillSets);
 
-data = {
-    "Q1": [1,2,3,2],
-    "Q2": [5,6,7,6],
-    "Q3": [9,10,11,10]
-};
-console.log(data);
-var tbody = document.getElementById('tbody');
-tbody.innerHTML=`<p>Hello</p>`;
+
 
 // Need to iterate through the skill_sets.json object. If a sub-object has 'Language' as 'type' and 'Expert' as 'strength', then value for 'name' needs to go in the cell occupied by the row 'Expert' and the column 'Language'.
 
@@ -262,6 +255,68 @@ console.log(myArray);
 // (function(){
 //     console.log(skillSets); // {"a" : "b", "c" : "d"}
 //  })();
+
+
+
+// ******************************************************
+//             The below is for table.html
+// ******************************************************
+
+// data = {
+//     "Q1": [1,2,3,2],
+//     "Q2": [5,6,7,6],
+//     "Q3": [9,10,11,10]
+// };
+// console.log(data);
+// var tbody = document.getElementById('tbody');
+// tbody.innerHTML=`<p>Hello</p>`;
+
+data = {
+    "Q1": [1,2,3,2],
+    "Q2": [5,6,7,6],
+    "Q3": [9,10,11,10],
+    'Q4': [], // test case 1: no data
+    'Q5': [1], // test case 2: only answer field
+    'Q6': ['A', 'B', 'C'],// test case 3: for string
+    'Q7': ['TEST'] // test case 4: for answer(string) only
+};
+// For Q4, Q5, you can added some extra codes to uses default values intead, or ignore this row.
+
+// formmat the data first, add some validators if neccessary
+function formatAdapter (data) {
+  return Object.entries(data).map((item) => {
+  let newItem = {}
+  newItem[item[0]] = {'options': item[1].slice(0, item[1].length -1),
+    'answer': item[-1]} // assuming the last element is the answer, [0:last] is the options
+  return [item[0], item[1].slice(0, item[1].length -1), item[1].slice(-1)[0]]
+})
+}
+let formmatedData = formatAdapter(data)
+
+var tbody = document.getElementById('tbody');
+
+// generate the header
+tbody.innerHTML += "<tr>" + 
+                   "<th id='q'>" + "Question" + "</th>" +
+                   "<th id='o'>" + "Options" + "</th>" +
+                   "<th id='ca'>" + "Correct Answer" + "</th>" +
+                   "</tr>"
+// generate the rows(Html) for each questions
+
+let rowHtmls = formmatedData.map((item) => {
+  let row = '<tr><td rowspan="'+(item[1].length || 1) +'">'+item[0]+'</td>'
+            + '<td>'+item[1][0]+'</td>'
+            + '<td rowspan="'+(item[1].length || 1)+'">'+item[2]+'</td></tr>'
+  row += item[1].slice(1).reduce((pre, cur) => {
+    return pre + '<tr><td>'+cur+'</td></tr>'
+  }, '')
+  return row
+})
+
+// combine header(html) and rows(html)
+tbody.innerHTML += rowHtmls.reduce((pre, cur) => {
+  return pre+cur
+}, '')
 
 
 // export table.js;
