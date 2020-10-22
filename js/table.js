@@ -486,7 +486,9 @@ let rowHtmls = formmatedData.map((item) => {
         + '<td rowspan="' + (item[1].length || 1) + '">' + item[2] + '</td></tr>'
     row += item[1].slice(1).reduce((pre, cur) => {
         return pre + '<tr><td>' + cur + '</td></tr>'
-    }, '')
+    }, '');
+    console.log(row);
+    console.log(item[1]);
     return row
 })
 
@@ -504,19 +506,51 @@ tbody.innerHTML += rowHtmls.reduce((pre, cur) => {
 //             My take on the above.
 // ******************************************************
 
-
+// generate the header
 tbody2.innerHTML += `<tr>
                         <th>blank</th>
-                        <th id='q'>Language</th>
-                        <th id='o'>Frameworks & Libraries</th>
-                        <th id='ca'>Databases</th>
+                        <th>Language</th>
+                        <th>Frameworks & Libraries</th>
+                        <th>Databases</th>
                         <th>Software & Cloud Platforms</th>
-                        <th id='q'>Methodologies, Practices, & IDEs</th>
+                        <th>Methodologies, Practices, & IDEs</th>
                     </tr>`;
 
-console.log(skillSets2);
-console.log(skillSets2[".NET"]);
-console.log(skillSets2.HTML5.type);
-if (skillSets2.HTML5.strength=="Expert"){console.log("Expert!!")};
+// I need to count how many expert for each column. Then choose the greatest among them.
+// Then do the same for intermediate.
+// And again for Learning/Some Experience.
+
+objectCountFunction = (object) => {
+    console.log("takes an object and spits out a number.");
+
+    for (var key in object) {
+        if (object[key].strength === "Expert") {
+            console.log(key);
+            console.log(object[key]);
+            // console.log(object[key].strength);
+        };
+    }
+    // for (var key in object) {console.log(key, skillSets2.key);};
+};
+objectCountFunction(skillSets2);
+
+
+
+
+
+
+// generate the rows(Html) for each skill level
+let rowHtmls2 = ['<tr><td rowspan="3">Q1</td><td>1</td><td rowspan="3">2</td></tr><tr><td>2</td></tr><tr><td>3</td></tr>', '<tr><td rowspan="3">Q2</td><td>5</td><td rowspan="3">6</td></tr><tr><td>6</td></tr><tr><td>7</td></tr>'];
+
+// first compile some arrays of each
+// console.log(skillSets2);
+// console.log(skillSets2[".NET"]);
+// console.log(skillSets2.HTML5.type);
+// if (skillSets2.HTML5.strength == "Expert") { console.log("Expert!!") };
+
+// console.log(formmatedData);
+// formmatedData.map((item) => {console.log(item)});
+// console.log(rowHtmls);
+// console.log(row);
 
 // export table.js;
