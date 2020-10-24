@@ -522,20 +522,90 @@ tbody2.innerHTML += `<tr>
 // Then do the same for intermediate.
 // And again for Learning/Some Experience.
 
-objectCountFunction = (object) => {
-    console.log("takes an object and spits out a number.");
+// countFunction= (strength) => {
+//     // console.log("instatiate count function");
+//     if (strength === "Expert") {
+//         switch (object[key].type) {
+//             case "Language":
+//                 languageCount++;
+//                 break;
+//             case "Software & Cloud Platforms":
+//                 Software_Cloud_PlatformsCount++;
+//                 break;
+//             case "Methodologies, Practices, & IDEs":
+//                 Methodologies_Practices_IDECount++;
+//                 break;
+//             default:
+//                 console.log("The default was triggered.");
+//         }
+//     };
+// }
 
-    for (var key in object) {
-        // for expert
-        const count =[];
-        var languageCount, Software_Cloud_PlatformsCount, Methodologies_Practices_IDECount;
-        if (object[key].strength === "Expert") {
-            // console.log(key);
-            // console.log(object[key]);
-            console.log(object[key].type);
+objectCountFunction = (object) => {
+    var languageCount = 0, Software_Cloud_PlatformsCount = 0, Methodologies_Practices_IDECount = 0;
+
+    countFunction = (strength) => {
+        // console.log("instatiate count function");
+        if (strength === "Expert") {
+            switch (object[key].type) {
+                case "Language":
+                    languageCount++;
+                    break;
+                case "Software & Cloud Platforms":
+                    Software_Cloud_PlatformsCount++;
+                    break;
+                case "Methodologies, Practices, & IDEs":
+                    Methodologies_Practices_IDECount++;
+                    break;
+                default:
+                    console.log("The default was triggered.");
+            }
         };
     }
-    // for (var key in object) {console.log(key, skillSets2.key);};
+
+    for (var key in object) {
+
+        countFunction(object[key].strength);
+
+        // if (object[key].strength === "Expert") {
+        //     switch (object[key].type) {
+        //         case "Language":
+        //             languageCount++;
+        //             break;
+        //         case "Software & Cloud Platforms":
+        //             Software_Cloud_PlatformsCount++;
+        //             break;
+        //         case "Methodologies, Practices, & IDEs":
+        //             Methodologies_Practices_IDECount++;
+        //             break;
+        //         default:
+        //             console.log("The default was triggered.");
+        //     }
+        // };
+
+        if (object[key].strength === "Intermediate") {
+            // console.log(object[key].type);
+
+            // switch (object[key].type) {
+            //     case "Language":
+            //         languageCount++;
+            //         break;
+            //     case "Software & Cloud Platforms":
+            //         Software_Cloud_PlatformsCount++;
+            //         break;
+            //     case "Methodologies, Practices, & IDEs":
+            //         Methodologies_Practices_IDECount++;
+            //         break;
+            //     default:
+            //         console.log("The default was triggered.");
+            // }
+        };
+
+    }
+    console.log("languageCount", languageCount);
+    console.log("Software_Cloud_PlatformsCount", Software_Cloud_PlatformsCount);
+    console.log("Methodologies_Practices_IDECount", Methodologies_Practices_IDECount);
+    console.log(Math.max(languageCount, Software_Cloud_PlatformsCount, Methodologies_Practices_IDECount));
 };
 objectCountFunction(skillSets2);
 
