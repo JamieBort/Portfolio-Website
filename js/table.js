@@ -444,6 +444,8 @@ const skillSets2 = {
 // ******************************************************
 //             The below is for table.html
 // from: https://stackoverflow.com/q/50996553/8210460
+//            and this associated codepen:
+//       https://codepen.io/JamieBort/pen/yLJVQdM
 // ******************************************************
 
 data = {
@@ -524,10 +526,13 @@ objectCountFunction = (object) => {
     console.log("takes an object and spits out a number.");
 
     for (var key in object) {
+        // for expert
+        const count =[];
+        var languageCount, Software_Cloud_PlatformsCount, Methodologies_Practices_IDECount;
         if (object[key].strength === "Expert") {
-            console.log(key);
-            console.log(object[key]);
-            // console.log(object[key].strength);
+            // console.log(key);
+            // console.log(object[key]);
+            console.log(object[key].type);
         };
     }
     // for (var key in object) {console.log(key, skillSets2.key);};
