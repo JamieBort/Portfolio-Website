@@ -182,53 +182,88 @@ const skillSets2 = {
     },
 };
 
-var countingVariable = 0;
 objectCountFunction = (object) => {
-    var ExpertLanguage = 0;
-    var IntermediateLanguage = 0;
-    var LearningLanguage = 0;
-    // var countingVariable = 0;
-    test = (test_parameters) => {
-        // var countingVariable = 0;
-        if (object[key].type == test_parameters[0] && object[key].strength == test_parameters[1]) {
-            // var countingVariable = 0;
-            console.log("object[key].type:", object[key].type);
-            console.log("object[key].strength:", object[key].strength);
-            console.log("countingVariable:", countingVariable);
-            countingVariable++;
-        }
-        return countingVariable;
-    };
+    var ExpertLanguage = 0, IntermediateLanguage = 0, LearningLanguage = 0;
+    var ExpertFL = 0, IntermediateFL = 0, LearningFL = 0;
+    var ExpertDatabase = 0, IntermediateDatabase = 0, LearningDatabase = 0;
+    var ExpertSCP = 0, IntermediateSCP = 0, LearningSCP = 0;
+    var ExpertMPI = 0, IntermediateMPI = 0, LearningMPI = 0;
+
+    // var One = 0, Two = 0, Three = 0;
+    // var array = ["Language", "Frameworks and Libraries", "Databases", "Software & Cloud Platforms", "Methodologies, Practices, & IDEs"]
+    // for (var i = 0; i < array.length; i++) {
+    //     if (object[key].type == i) {
+    //         if (object[key].strength == "Expert") { One++; }
+    //         if (object[key].strength == "Intermediate") { Two++; }
+    //         if (object[key].strength == "Learning/Some Experience") { Three++; }
+    //         console.log(Math.max(One, Two, Three));
+    //     }
+    //     console.log(Math.max(One, Two, Three));
+    // }
+    // console.log(Math.max(One, Two, Three));
 
     for (var key in object) {
-        // ExpertLanguage = test(["Language", "Expert"]);
-        // IntermediateLanguage = test(["Language", "Intermediate"]);
-        // LearningLanguage = test(["LanLanguageguge", "Learning/Some Experience"]);
-
-        // if (object[key].type == "Language" && object[key].strength == "Expert") {
-        //     ExpertLanguage++;
-        // }
-
-        // if (object[key].type == "Language" && object[key].strength == "Intermediate") {
-        //     IntermediateLanguage++;
-        // }
-
-        // if (object[key].type == "Language" && object[key].strength == "Learning/Some Experience") {
-        //     LearningLanguage++;
-        // }
 
         if (object[key].type == "Language") {
             if (object[key].strength == "Expert") { ExpertLanguage++; }
             if (object[key].strength == "Intermediate") { IntermediateLanguage++; }
             if (object[key].strength == "Learning/Some Experience") { LearningLanguage++; }
         }
+
+        if (object[key].type == "Frameworks and Libraries") {
+            if (object[key].strength == "Expert") { ExpertFL++; }
+            if (object[key].strength == "Intermediate") { IntermediateFL++; }
+            if (object[key].strength == "Learning/Some Experience") { LearningFL++; }
+        }
+
+        if (object[key].type == "Databases") {
+            if (object[key].strength == "Expert") { ExpertDatabase++; }
+            if (object[key].strength == "Intermediate") { IntermediateDatabase++; }
+            if (object[key].strength == "Learning/Some Experience") { LearningDatabase++; }
+        }
+
+        if (object[key].type == "Software & Cloud Platforms") {
+            if (object[key].strength == "Expert") { ExpertSCP++; }
+            if (object[key].strength == "Intermediate") { IntermediateSCP++; }
+            if (object[key].strength == "Learning/Some Experience") { LearningSCP++; }
+        }
+
+        if (object[key].type == "Methodologies, Practices, & IDEs") {
+            if (object[key].strength == "Expert") { ExpertMPI++; }
+            if (object[key].strength == "Intermediate") { IntermediateMPI++; }
+            if (object[key].strength == "Learning/Some Experience") { LearningMPI++; }
+        }
+
     }
 
-    console.log("===============================");
-    console.log(Math.max(ExpertLanguage, IntermediateLanguage, LearningLanguage));
-    console.log("ExpertLanguage:", ExpertLanguage);
-    console.log("IntermediateLanguage:", IntermediateLanguage);
-    console.log("LearningLanguage: ", LearningLanguage);
-    // console.log("countingVariable:", countingVariable);
+    // console.log("===============================");
+    console.log("Language: ", Math.max(ExpertLanguage, IntermediateLanguage, LearningLanguage));
+    // console.log("ExpertLanguage:", ExpertLanguage);
+    // console.log("IntermediateLanguage:", IntermediateLanguage);
+    // console.log("LearningLanguage: ", LearningLanguage);
+
+    // console.log("===============================");
+    console.log("Frameworks and Libraries", Math.max(ExpertFL, IntermediateFL, LearningFL));
+    // console.log("ExpertLanguage:", ExpertFL);
+    // console.log("IntermediateLanguage:", IntermediateFL);
+    // console.log("LearningLanguage: ", LearningFL);
+
+    // console.log("===============================");
+    console.log("Databases",Math.max(ExpertDatabase, IntermediateDatabase, LearningDatabase));
+    // console.log("ExpertLanguage:", ExpertDatabase);
+    // console.log("IntermediateLanguage:", IntermediateDatabase);
+    // console.log("LearningLanguage: ", LearningDatabase);
+
+    // console.log("===============================");
+    console.log("Software & Cloud Platforms",Math.max(ExpertSCP, IntermediateSCP, LearningSCP));
+    // console.log("ExpertLanguage:", ExpertSCP);
+    // console.log("IntermediateLanguage:", IntermediateSCP);
+    // console.log("LearningLanguage: ", LearningSCP);
+
+    // console.log("===============================");
+    console.log("Methodologies, Practices, & IDEs",Math.max(ExpertMPI, IntermediateMPI, LearningMPI));
+    // console.log("ExpertLanguage:", ExpertMPI);
+    // console.log("IntermediateLanguage:", IntermediateMPI);
+    // console.log("LearningLanguage: ", LearningMPI);
 };
 objectCountFunction(skillSets2);
