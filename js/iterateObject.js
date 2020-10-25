@@ -182,11 +182,12 @@ const skillSets2 = {
     },
 };
 
+var countingVariable = 0;
 objectCountFunction = (object) => {
     var ExpertLanguage = 0;
     var IntermediateLanguage = 0;
     var LearningLanguage = 0;
-    var countingVariable = 0;
+    // var countingVariable = 0;
     test = (test_parameters) => {
         // var countingVariable = 0;
         if (object[key].type == test_parameters[0] && object[key].strength == test_parameters[1]) {
@@ -199,15 +200,32 @@ objectCountFunction = (object) => {
         return countingVariable;
     };
 
-    // for (var key in object) {
-    //     ExpertLanguage = test(["Language", "Expert"]);
-    //     IntermediateLanguage = test(["Language", "Intermediate"]);
-    //     // LearningLanguage = test(["LanLanguageguge", "Learning/Some Experience"]);
-    // }
+    for (var key in object) {
+        // ExpertLanguage = test(["Language", "Expert"]);
+        // IntermediateLanguage = test(["Language", "Intermediate"]);
+        // LearningLanguage = test(["LanLanguageguge", "Learning/Some Experience"]);
 
-    for (var i = 0; i<object.length; i++){console.log(object[key])};
+        // if (object[key].type == "Language" && object[key].strength == "Expert") {
+        //     ExpertLanguage++;
+        // }
+
+        // if (object[key].type == "Language" && object[key].strength == "Intermediate") {
+        //     IntermediateLanguage++;
+        // }
+
+        // if (object[key].type == "Language" && object[key].strength == "Learning/Some Experience") {
+        //     LearningLanguage++;
+        // }
+
+        if (object[key].type == "Language") {
+            if (object[key].strength == "Expert") { ExpertLanguage++; }
+            if (object[key].strength == "Intermediate") { IntermediateLanguage++; }
+            if (object[key].strength == "Learning/Some Experience") { LearningLanguage++; }
+        }
+    }
 
     console.log("===============================");
+    console.log(Math.max(ExpertLanguage, IntermediateLanguage, LearningLanguage));
     console.log("ExpertLanguage:", ExpertLanguage);
     console.log("IntermediateLanguage:", IntermediateLanguage);
     console.log("LearningLanguage: ", LearningLanguage);
