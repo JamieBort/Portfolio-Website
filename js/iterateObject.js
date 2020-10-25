@@ -189,20 +189,29 @@ objectCountFunction = (object) => {
     var ExpertSCP = 0, IntermediateSCP = 0, LearningSCP = 0;
     var ExpertMPI = 0, IntermediateMPI = 0, LearningMPI = 0;
 
-    // var One = 0, Two = 0, Three = 0;
-    // var array = ["Language", "Frameworks and Libraries", "Databases", "Software & Cloud Platforms", "Methodologies, Practices, & IDEs"]
-    // for (var i = 0; i < array.length; i++) {
-    //     if (object[key].type == i) {
-    //         if (object[key].strength == "Expert") { One++; }
-    //         if (object[key].strength == "Intermediate") { Two++; }
-    //         if (object[key].strength == "Learning/Some Experience") { Three++; }
-    //         console.log(Math.max(One, Two, Three));
-    //     }
-    //     console.log(Math.max(One, Two, Three));
-    // }
-    // console.log(Math.max(One, Two, Three));
+    var One = 0, Two = 0, Three = 0;
 
     for (var key in object) {
+
+        // // var One = 0, Two = 0, Three = 0;
+        // var array = ["Language", "Frameworks and Libraries", "Databases", "Software & Cloud Platforms", "Methodologies, Practices, & IDEs"];
+        // for (var i = 0; i < 2; i++) {
+        //     //     // var One = 0, Two = 0, Three = 0;
+        //     if (object[key].type == array[i]) {
+        //         //         console.log("i: ", i, "array[i]: ", array[i], "One: ", One, "Two: ", Two, "Three: ", Three);
+        //         //         // var One = 0, Two = 0, Three = 0;
+        //         //         // console.log(array[i]);
+        //         if (object[key].strength == "Expert") { One++; }
+        //         if (object[key].strength == "Intermediate") { Two++; }
+        //         if (object[key].strength == "Learning/Some Experience") { Three++; }
+
+        //         // console.log(One, Two, Three);
+        //     }
+        //     console.log(One, Two, Three);
+        //     One = 0, Two = 0, Three = 0;
+        // }
+        // // One = 0, Two = 0, Three = 0;
+        // // console.log(One,Two,Three);
 
         if (object[key].type == "Language") {
             if (object[key].strength == "Expert") { ExpertLanguage++; }
@@ -233,35 +242,43 @@ objectCountFunction = (object) => {
             if (object[key].strength == "Intermediate") { IntermediateMPI++; }
             if (object[key].strength == "Learning/Some Experience") { LearningMPI++; }
         }
-
+        // console.log(One,Two,Three);
+        // One = 0, Two = 0, Three = 0;
     }
 
+    console.log(One, Two, Three);
+    // One = 0, Two = 0, Three = 0;
     // console.log("===============================");
-    console.log("Language: ", Math.max(ExpertLanguage, IntermediateLanguage, LearningLanguage));
+    var Language = Math.max(ExpertLanguage, IntermediateLanguage, LearningLanguage);    
+    console.log("Language: ", Language);
     // console.log("ExpertLanguage:", ExpertLanguage);
     // console.log("IntermediateLanguage:", IntermediateLanguage);
     // console.log("LearningLanguage: ", LearningLanguage);
 
     // console.log("===============================");
-    console.log("Frameworks and Libraries", Math.max(ExpertFL, IntermediateFL, LearningFL));
+    var FL = Math.max(ExpertFL, IntermediateFL, LearningFL);
+    console.log("Frameworks and Libraries", FL);
     // console.log("ExpertLanguage:", ExpertFL);
     // console.log("IntermediateLanguage:", IntermediateFL);
     // console.log("LearningLanguage: ", LearningFL);
 
     // console.log("===============================");
-    console.log("Databases",Math.max(ExpertDatabase, IntermediateDatabase, LearningDatabase));
+    var Databases = Math.max(ExpertDatabase, IntermediateDatabase, LearningDatabase);
+    console.log("Databases", Databases);
     // console.log("ExpertLanguage:", ExpertDatabase);
     // console.log("IntermediateLanguage:", IntermediateDatabase);
     // console.log("LearningLanguage: ", LearningDatabase);
 
     // console.log("===============================");
-    console.log("Software & Cloud Platforms",Math.max(ExpertSCP, IntermediateSCP, LearningSCP));
+    var SCP = Math.max(ExpertSCP, IntermediateSCP, LearningSCP);
+    console.log("Software & Cloud Platforms", SCP);
     // console.log("ExpertLanguage:", ExpertSCP);
     // console.log("IntermediateLanguage:", IntermediateSCP);
     // console.log("LearningLanguage: ", LearningSCP);
 
     // console.log("===============================");
-    console.log("Methodologies, Practices, & IDEs",Math.max(ExpertMPI, IntermediateMPI, LearningMPI));
+    var MPI = Math.max(ExpertMPI, IntermediateMPI, LearningMPI);
+    console.log("Methodologies, Practices, & IDEs", MPI);
     // console.log("ExpertLanguage:", ExpertMPI);
     // console.log("IntermediateLanguage:", IntermediateMPI);
     // console.log("LearningLanguage: ", LearningMPI);
