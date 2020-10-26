@@ -1,8 +1,8 @@
 const resources = {
-    "name": {
-        "name": "name",
-        "URL": "Expert",
-        "section": "www.awebsite.com",
+    "random_website": {
+        "name": "random website name",
+        "URL": "https://www.random.com/",
+        "section": "games",
         "attributes": {
             "first": "first",
             "second": "second",
@@ -14,22 +14,96 @@ const resources = {
         "URL": "https://flexboxfroggy.com/",
         "section": "UI",
         "attributes": {
-            "first": "first",
-            "second": "second",
-            "third": "third",
-        },
-    },
-    "google": {
-        "name": "Google",
-        "URL": "www.google.com",
-        "section": "UI",
-        "attributes": {
             "first": "fourth",
             "second": "fifth",
             "third": "sixth",
         },
     },
+    "google": {
+        "name": "Google",
+        "URL": "www.google.com",
+        "section": "back end",
+        "attributes": {
+            "first": "seventh",
+            "second": "eight",
+            "third": "nineth",
+        },
+    },
+    "google2": {
+        "name": "Google",
+        "URL": "www.google.com",
+        "section": "User Experience stuff",
+        "attributes": {
+            "first": "seventh",
+            "second": "eight",
+            "third": "nineth",
+        },
+    },
+    "google3": {
+        "name": "Google",
+        "URL": "www.google.com",
+        "section": "Interview stuff",
+        "attributes": {
+            "first": "seventh",
+            "second": "eight",
+            "third": "nineth",
+        },
+    },
+    "g4oogle": {
+        "name": "Google",
+        "URL": "www.google.com",
+        "section": "Java stuff",
+        "attributes": {
+            "first": "seventh",
+            "second": "eight",
+            "third": "nineth",
+        },
+    },
+    "goog5le": {
+        "name": "Google",
+        "URL": "www.google.com",
+        "section": "Best Practices stuff",
+        "attributes": {
+            "first": "seventh",
+            "second": "eight",
+            "third": "nineth",
+        },
+    },
+    "go2ogle": {
+        "name": "Google",
+        "URL": "www.google.com",
+        "section": "Writing a readme file",
+        "attributes": {
+            "first": "seventh",
+            "second": "eight",
+            "third": "nineth",
+        },
+    },
+    "goo3gle": {
+        "name": "Google",
+        "URL": "www.google.com",
+        "section": "CSS stuff",
+        "attributes": {
+            "first": "seventh",
+            "second": "eight",
+            "third": "nineth",
+        },
+    },
+    "goo1gle": {
+        "name": "Google",
+        "URL": "www.google.com",
+        "section": "Interview prep stuff",
+        "attributes": {
+            "first": "seventh",
+            "second": "eight",
+            "third": "nineth",
+        },
+    },
+
 };
+
+
+
 
 // Using this:
 // https://zellwk.com/blog/looping-through-js-objects/
@@ -38,50 +112,32 @@ const resources = {
 // https://stackoverflow.com/questions/684672/how-do-i-loop-through-or-enumerate-a-javascript-object
 
 var list = document.getElementById("list");
-for (var key in resources) {
+for (var first_key in resources) {
+    var div = document.createElement("div");
+    // give the div the resource_div attribute
+    div.className="resource_div";
+    list.appendChild(div);
+
     var h2 = document.createElement("h2");
-    h2.innerHTML = key;
-    list.appendChild(h2);
-    for (var key2 in resources[key]) {
-        if (resources[key].hasOwnProperty("URL")) {
-            var h3 = document.createElement("h3");
-            // h3.innerHTML = resources[key][key2];
-            h3.innerHTML = resources[key]["URL"];
-            list.appendChild(h3);
-            // for (var key3 in resources[key]) {
-            //     var p = document.createElement("p");
-            //     p.innerHTML = resources[key][key2][key3];
-            //     list.appendChild(p);
-            // }
-        }
+    h2.className="resource_title";
+    h2.innerHTML = first_key;
+    div.appendChild(h2);
+
+    var p = document.createElement("p");
+    p.innerHTML = resources[first_key]["name"];
+    div.appendChild(p);
+
+    var p = document.createElement("p");
+    p.innerHTML = resources[first_key]["URL"];
+    div.appendChild(p);
+
+    var p = document.createElement("p");
+    p.innerHTML = resources[first_key]["section"];
+    div.appendChild(p);
+
+    for (var abc in resources[first_key]["attributes"]) {
+        var li = document.createElement("li");
+        li.innerHTML = resources[first_key]["attributes"][abc];
+        div.appendChild(li);
     }
 }
-
-var json = {
-    "items": {
-        "title1": "sample 1",
-        "author1": "author 1"
-    },
-    "items2": {
-        "title2": "sample 2",
-        "author2": "author 2"
-    },
-    "items3": {
-        "title3": "sample 3",
-        "author3": "author 3"
-    },
-};
-
-// var temp = document.getElementById("temp");
-// for (var key1 in json) {
-//     // console.log(key1);
-//     var h3 = document.createElement("h3");
-//     h3.innerHTML = key1;
-//     temp.appendChild(h3);
-//     for (var key2 in json[key1]) {
-//         console.log(key2);
-//         var h5 = document.createElement("h5");
-//         h5.innerHTML = key2;
-//         temp.appendChild(h5);
-//     }
-// }
