@@ -21,8 +21,9 @@ h2 {
 }
 
 /* I don't think #abc is being used. */
-#abc {
-    background: lightskyblue;
+
+#temp {
+    /* background: lightskyblue; */
     height: 80px;
 }
 
@@ -37,6 +38,11 @@ h2 {
     /* text-align: center; */
 }
 
+.division {
+    /* border: .1em black solid; */
+    padding-top: 1em;
+}
+
 .section_title {
     text-align: center;
 }
@@ -44,6 +50,8 @@ h2 {
 #bio_section_div {
     /* background: silver; */
     /* text-align: center; */
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 #copyright {
@@ -94,6 +102,26 @@ h2 {
     margin: 0 10px;
     background-color: transparent;
     border: none;
+}
+
+#projects_section_div {
+    /* background: lightsteelblue; */
+    /* border: .1em black solid; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projects_div {
+    /* background: lightskyblue; */
+    border: .1em black solid;
+    max-width: 300px;
+    margin: .5em;
+    padding: .5em;
+}
+
+.projects_title {
+    text-align: center;
 }
 
 .projects_button {
@@ -173,18 +201,31 @@ h2 {
 }
 
 /* The following is for the table */
+
 table tbody tr td {
     border: 1px solid black;
     border-collapse: collapse;
     border-spacing: 0rem;
-  }
+}
 
-  table {
-      margin: 0 auto;
+table {
+    margin: 0 auto;
     /* margin-left:auto; 
     margin-right:auto; */
-  }
+}
 
-  .table_div{
-      background-color: lightskyblue;
-  }
+.table_div {
+    /* background-color: lightskyblue; */
+}
+
+#construction_div {
+    border: 1px solid black;
+    /* margin: 0 auto; */
+}
+
+#construction {
+    display: block;
+    max-width: 25%;
+    border: 1px solid blue;
+    margin: 0 auto;
+}

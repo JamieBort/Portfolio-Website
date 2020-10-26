@@ -34,6 +34,8 @@ const resources = {
 // Using this:
 // https://zellwk.com/blog/looping-through-js-objects/
 // found from this internet search: javascript iterate through part of objects
+// maybe this:
+// https://stackoverflow.com/questions/684672/how-do-i-loop-through-or-enumerate-a-javascript-object
 
 var list = document.getElementById("list");
 for (var key in resources) {
@@ -70,16 +72,16 @@ var json = {
     },
 };
 
-// var abc = document.getElementById("abc");
+// var temp = document.getElementById("temp");
 // for (var key1 in json) {
 //     // console.log(key1);
 //     var h3 = document.createElement("h3");
 //     h3.innerHTML = key1;
-//     abc.appendChild(h3);
+//     temp.appendChild(h3);
 //     for (var key2 in json[key1]) {
 //         console.log(key2);
 //         var h5 = document.createElement("h5");
 //         h5.innerHTML = key2;
-//         abc.appendChild(h5);
+//         temp.appendChild(h5);
 //     }
 // }
