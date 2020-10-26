@@ -1,8 +1,8 @@
 const resources = {
-    "random_website": {
-        "name": "random website name",
-        "URL": "https://www.random.com/",
-        "section": "games",
+    "code_radio": {
+        "name": "Code Radio",
+        "URL": "https://coderadio.freecodecamp.org/",
+        "category": "Music",
         "attributes": {
             "first": "first",
             "second": "second",
@@ -12,7 +12,7 @@ const resources = {
     "flexbox_froggy": {
         "name": "Flexbox Froggy",
         "URL": "https://flexboxfroggy.com/",
-        "section": "UI",
+        "category": "UI",
         "attributes": {
             "first": "fourth",
             "second": "fifth",
@@ -20,9 +20,9 @@ const resources = {
         },
     },
     "google": {
-        "name": "Google",
-        "URL": "www.google.com",
-        "section": "back end",
+        "name": "Learn X in Y Minutes",
+        "URL": "https://learnxinyminutes.com",
+        "category": "Learning",
         "attributes": {
             "first": "seventh",
             "second": "eight",
@@ -30,9 +30,9 @@ const resources = {
         },
     },
     "google2": {
-        "name": "Google",
-        "URL": "www.google.com",
-        "section": "User Experience stuff",
+        "name": "Effective Portfolio",
+        "URL": "https://joshwcomeau.com/effective-portfolio/",
+        "category": "Career Prep.",
         "attributes": {
             "first": "seventh",
             "second": "eight",
@@ -40,9 +40,9 @@ const resources = {
         },
     },
     "google3": {
-        "name": "Google",
-        "URL": "www.google.com",
-        "section": "Interview stuff",
+        "name": "Contrast Checker",
+        "URL": "https://webaim.org/resources/contrastchecker/",
+        "category": "User Experience",
         "attributes": {
             "first": "seventh",
             "second": "eight",
@@ -52,7 +52,7 @@ const resources = {
     "g4oogle": {
         "name": "Google",
         "URL": "www.google.com",
-        "section": "Java stuff",
+        "category": "Java stuff",
         "attributes": {
             "first": "seventh",
             "second": "eight",
@@ -62,7 +62,7 @@ const resources = {
     "goog5le": {
         "name": "Google",
         "URL": "www.google.com",
-        "section": "Best Practices stuff",
+        "category": "Best Practices stuff",
         "attributes": {
             "first": "seventh",
             "second": "eight",
@@ -72,7 +72,7 @@ const resources = {
     "go2ogle": {
         "name": "Google",
         "URL": "www.google.com",
-        "section": "Writing a readme file",
+        "category": "Writing a readme file",
         "attributes": {
             "first": "seventh",
             "second": "eight",
@@ -82,7 +82,7 @@ const resources = {
     "goo3gle": {
         "name": "Google",
         "URL": "www.google.com",
-        "section": "CSS stuff",
+        "category": "CSS stuff",
         "attributes": {
             "first": "seventh",
             "second": "eight",
@@ -92,7 +92,7 @@ const resources = {
     "goo1gle": {
         "name": "Google",
         "URL": "www.google.com",
-        "section": "Interview prep stuff",
+        "category": "Interview prep stuff",
         "attributes": {
             "first": "seventh",
             "second": "eight",
@@ -120,19 +120,24 @@ for (var first_key in resources) {
 
     var h2 = document.createElement("h2");
     h2.className="resource_title";
-    h2.innerHTML = first_key;
+    // h2.innerHTML = first_key;
+    h2.innerHTML = resources[first_key]["name"];
     div.appendChild(h2);
 
+    // var p = document.createElement("p");
+    // p.innerHTML = resources[first_key]["name"];
+    // div.appendChild(p);
+
     var p = document.createElement("p");
-    p.innerHTML = resources[first_key]["name"];
+    p.innerHTML = "URL: "+ resources[first_key]["URL"];
     div.appendChild(p);
 
     var p = document.createElement("p");
-    p.innerHTML = resources[first_key]["URL"];
+    p.innerHTML = "Category: "+ resources[first_key]["category"];
     div.appendChild(p);
 
     var p = document.createElement("p");
-    p.innerHTML = resources[first_key]["section"];
+    p.innerHTML = "Attributes:" ;
     div.appendChild(p);
 
     for (var abc in resources[first_key]["attributes"]) {
