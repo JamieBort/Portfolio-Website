@@ -49,20 +49,20 @@ const resources = {
             "third": "nineth",
         },
     },
-    "g4oogle": {
-        "name": "Google",
-        "URL": "www.google.com",
-        "category": "Java stuff",
+    "radiooooo": {
+        "name": "Radiooooo.com",
+        "URL": "https://radiooooo.com/",
+        "category": "Music",
         "attributes": {
             "first": "seventh",
             "second": "eight",
             "third": "nineth",
         },
     },
-    "goog5le": {
-        "name": "Google",
-        "URL": "www.google.com",
-        "category": "Best Practices stuff",
+    "radio.garden": {
+        "name": "Radio Garden",
+        "URL": "http://radio.garden/",
+        "category": "Music",
         "attributes": {
             "first": "seventh",
             "second": "eight",
@@ -79,12 +79,12 @@ const resources = {
             "third": "nineth",
         },
     },
-    "goo3gle": {
-        "name": "Google",
-        "URL": "www.google.com",
-        "category": "CSS stuff",
+    "bongo.cat": {
+        "name": "Bongo Cat",
+        "URL": "https://bongo.cat/",
+        "category": "Fun, Silly, Goofy",
         "attributes": {
-            "first": "seventh",
+            "first": "credit to michelle",
             "second": "eight",
             "third": "nineth",
         },
