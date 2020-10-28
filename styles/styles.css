@@ -114,9 +114,9 @@ h2 {
 
 .projects_div {
     /* background: lightskyblue; */
-    /* border: .05em black solid; */
+    border: .05em black solid;
     border-radius: 1em;
-    max-width: 500px;
+    max-width: 300px;
     margin: .5em;
     padding: .5em;
     /* for background image */
@@ -128,12 +128,13 @@ h2 {
 /* for background image */
 
 .projects_background_img {
-    max-width: 70%;
-    height: 300px;
+    /* max-width: 70%;
+    height: 300px; */
+    
     /* min-height: 95%; */
     /* height:auto; */
     /* width: 50%; */
-/* height: auto; */
+    /* height: auto; */
 }
 
 .projects_title {
@@ -141,12 +142,13 @@ h2 {
 }
 
 /* for background image */
-.middle {
+
+/* .background_img_div {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
 .projects_button {
     /* margin: 0 10px; */
@@ -162,7 +164,11 @@ h2 {
     /* background-color: pink; */
 }
 
-.projects_img {
+.projects_img{
+    max-width: 50%;
+}
+
+.responsive_img {
     max-width: 75px;
     /* background-color: transparent; */
     /* background-color: lightpink; */
