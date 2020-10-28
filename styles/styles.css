@@ -116,13 +116,35 @@ h2 {
     /* background: lightskyblue; */
     border: .05em black solid;
     border-radius: 1em;
-    max-width: 300px;
+    max-width: 500px;
     margin: .5em;
     padding: .5em;
+    /* for background image */
+    position: relative;
+    text-align: center;
+    /* color: white; */
+}
+
+/* for background image */
+
+.projects_background_img {
+    max-width: 90%;
+    /* height:auto; */
+    /* width: 50%; */
+/* height: auto; */
 }
 
 .projects_title {
     text-align: center;
+}
+
+/* for background image */
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .projects_button {
@@ -140,7 +162,7 @@ h2 {
 }
 
 .projects_img {
-    max-width: 200px;
+    max-width: 75px;
     /* background-color: transparent; */
     /* background-color: lightpink; */
     /* background: lightskyblue; */

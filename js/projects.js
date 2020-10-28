@@ -9,6 +9,8 @@ const projects = {
         "repo_anchor_text":"Portfolio Website Repo",
         "repo_anchor_href": "https://github.com/JamieBort/jamiebort.github.io",
         "img_src": "../assets/Projects/clipart1656353.png",
+        // "backgground_image":"../assets/background_image/download.jpeg",
+        "backgground_image":"../assets/background_image/w-qjCHPZbeXCQ-unsplash.jpg",
     },
     "puppy_love": {
         "div_id": "puppy_love_div",
@@ -20,6 +22,7 @@ const projects = {
         "repo_anchor_text":"Puppy Love Repo",
         "repo_anchor_href": "https://github.com/JamieBort/PuppyLove",
         "img_src": "../assets/Projects/clipart1656353.png",
+        "backgground_image":"../assets/background_image/w-qjCHPZbeXCQ-unsplash.jpg",
     },
     "iPhysicist": {
         "div_id": "iPhysicist_div",
@@ -31,6 +34,7 @@ const projects = {
         "repo_anchor_text":"iPhysicist Repo",
         "repo_anchor_href": "https://github.com/JamieBort/iPhysicist-CSSLayoutFlexbox",
         "img_src": "../assets/Projects/clipart1656353.png",
+        "backgground_image":"../assets/background_image/photo-1579546929518-9e396f3cc809.jpeg",
     },
     "form_builder": {
         "div_id": "form_builder_div",
@@ -42,6 +46,8 @@ const projects = {
         "repo_anchor_text":"Form Builder Repo",
         "repo_anchor_href": "https://github.com/JamieBort/FormBuilder",
         "img_src": "../assets/Projects/clipart1656353.png",
+        // "backgground_image":"../assets/background_image/download (1).jpeg",
+        "backgground_image":"../assets/background_image/photo-1579546929518-9e396f3cc809.jpeg",
     },
     "dummy": {
         "div_id": "dummy_div",
@@ -53,6 +59,7 @@ const projects = {
         "repo_anchor_text":"dummy Repo",
         "repo_anchor_href": "",
         "img_src": "../assets/Projects/clipart1656353.png",
+        "backgground_image":"../assets/background_image/abstract-orange-background-260nw-323746937.webp",
     },
 }
 
@@ -73,41 +80,56 @@ for (var key in projects) {
     // console.log("div_id: ", projects[key]["div_id"]);
     // console.log("title: ", projects[key]["title"]);
 
-    var div = document.createElement("div");
-    div.className = "projects_div";
-    div.id = projects[key]["div_id"];
-    projects_section_div.appendChild(div);
+    var div1 = document.createElement("div");
+    div1.className = "projects_div";
+    div1.id = projects[key]["div_id"];
+    projects_section_div.appendChild(div1);
+
+
+
+    var img = document.createElement("img");
+    img.className="projects_background_img";
+    img.src=projects[key]["backgground_image"];
+    div1.appendChild(img);
+
+    var div2 = document.createElement("div");
+    div2.className="middle";
+    // img.src=projects[key]["backgground_image"];
+    div1.appendChild(div2);
+
+
+
 
     var h3 = document.createElement("h3");
     h3.className = "projects_title";
     h3.innerHTML = projects[key]["title"];
-    div.appendChild(h3);
+    div2.appendChild(h3);
 
     var p = document.createElement("p");
     p.className="projects_p";
     p.innerHTML=projects[key]["description"];
-    div.appendChild(p);
+    div2.appendChild(p);
 
     var p = document.createElement("p");
     p.className="projects_tech";
     p.innerHTML=projects[key]["tech"];
-    div.appendChild(p);
+    div2.appendChild(p);
 
     var a = document.createElement("a");
     a.className="projects_a";
     a.innerHTML=projects[key]["project_anchor_text"];
     a.href=projects[key]["project_anchor_href"];
-    div.appendChild(a);
+    div2.appendChild(a);
 
     var a = document.createElement("a");
     a.className="projects_a";
     a.innerHTML=projects[key]["repo_anchor_text"];
     a.href=projects[key]["repo_anchor_href"];
-    div.appendChild(a);
+    div2.appendChild(a);
 
     var img = document.createElement("img");
     img.className="projects_img";
     img.src=projects[key]["img_src"];
-    div.appendChild(img);
+    div2.appendChild(img);
 
 }
