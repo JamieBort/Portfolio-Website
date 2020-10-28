@@ -11,7 +11,7 @@ const projects = {
         "img_src": "../assets/Projects/clipart1656353.png",
         // "backgground_image":"../assets/background_image/download.jpeg", // used for when a background image is used.
         "backgground_image": "../assets/background_image/w-qjCHPZbeXCQ-unsplash.jpg",  // used for when a background image is used.
-        "project_img": "../assets/Project_images/Form_Builder.png",
+        "project_img": "../assets/Project_images/Portfolio_Website.png",
     },
     "puppy_love": {
         "div_id": "puppy_love_div",
@@ -24,7 +24,7 @@ const projects = {
         "repo_anchor_href": "https://github.com/JamieBort/PuppyLove",
         "img_src": "../assets/Projects/clipart1656353.png",
         "backgground_image": "../assets/background_image/w-qjCHPZbeXCQ-unsplash.jpg", // used for when a background image is used.
-        "project_img": "../assets/Project_images/iPhysicist_Large.png",
+        "project_img": "../assets/Project_images/Puppy_Love.png",
     },
     "iPhysicist": {
         "div_id": "iPhysicist_div",
