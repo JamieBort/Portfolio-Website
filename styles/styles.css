@@ -114,7 +114,7 @@ h2 {
 
 .projects_div {
     /* background: lightskyblue; */
-    border: .05em black solid;
+    /* border: .05em black solid; */
     border-radius: 1em;
     max-width: 500px;
     margin: .5em;
@@ -128,7 +128,9 @@ h2 {
 /* for background image */
 
 .projects_background_img {
-    max-width: 90%;
+    max-width: 70%;
+    height: 300px;
+    /* min-height: 95%; */
     /* height:auto; */
     /* width: 50%; */
 /* height: auto; */
@@ -139,7 +141,6 @@ h2 {
 }
 
 /* for background image */
-
 .middle {
     position: absolute;
     top: 50%;
