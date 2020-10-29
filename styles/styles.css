@@ -130,7 +130,6 @@ h2 {
 .projects_background_img {
     /* max-width: 70%;
     height: 300px; */
-    
     /* min-height: 95%; */
     /* height:auto; */
     /* width: 50%; */
@@ -164,7 +163,7 @@ h2 {
     /* background-color: pink; */
 }
 
-.projects_img{
+.projects_img {
     max-width: 50%;
 }
 
@@ -244,20 +243,39 @@ h2 {
 
 table tbody tr td {
     border: 1px solid black;
-    border-collapse: collapse;
-    border-spacing: 0rem;
+    /* border-collapse: collapse; */
+    /* border-spacing: 0rem; */
 }
 
-table tbody tr th {
+/* table tbody tr th {
     border: 1px solid green;
     border-collapse: collapse;
     border-spacing: 0rem;
-}
+} */
 
 table {
     margin: 0 auto;
     /* margin-left:auto; 
     margin-right:auto; */
+    /* ********************************************************* */
+    /* the below from: https://stackoverflow.com/a/16848343/8210460
+    and from: http://jsfiddle.net/ezific/43ZkH/ */
+    /* ********************************************************* */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c5deea+0,8abbd7+31,066dab+100;Web+2.0+Blue+3D+%231 */
+    background: rgb(197, 222, 234);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(197, 222, 234, 1) 0%, rgba(138, 187, 215, 1) 31%, rgba(6, 109, 171, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(197, 222, 234, 1) 0%, rgba(138, 187, 215, 1) 31%, rgba(6, 109, 171, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(197, 222, 234, 1) 0%, rgba(138, 187, 215, 1) 31%, rgba(6, 109, 171, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    /* ********************************************************* */
+    /* the above from: https://stackoverflow.com/a/16848343/8210460
+    and from: http://jsfiddle.net/ezific/43ZkH/ */
+    /* ********************************************************* */
 }
 
 .table_div {
@@ -293,4 +311,11 @@ table {
 
 .resource_title {
     text-align: center;
+}
+
+#point_down{
+    width: 50px;
+    /* background: green; */
+    background-color: transparent; 
+    /* background-color: green;   */
 }
