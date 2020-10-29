@@ -53,14 +53,14 @@ const projects = {
         "backgground_image": "../assets/background_image/photo-1579546929518-9e396f3cc809.jpeg", // used for when a background image is used.
         "project_img": "../assets/Project_images/Form_Builder.png",
     },
-    "dummy": {
+    "portfolio_website_hosted_on_heroku": {
         "div_id": "dummy_div",
-        "title": "Dummy",
+        "title": "Portfolio Website on Heroku",
         "description": "A simple form using HTML, CSS, and JavaScript.",
         "tech": ["CSS", "HTML", "JavaScript"],
-        "project_anchor_text": "dummy Static Site",
+        "project_anchor_text": "Portfolio Website on Heroku Static Site",
         "project_anchor_href": "",
-        "repo_anchor_text": "dummy Repo",
+        "repo_anchor_text": "Portfolio Website on Heroku Repo",
         "repo_anchor_href": "",
         "img_src": "../assets/Projects/clipart1656353.png",
         "backgground_image": "../assets/background_image/abstract-orange-background-260nw-323746937.webp", // used for when a background image is used.
