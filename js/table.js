@@ -2,7 +2,7 @@
 
 
 // array of objects
-const skillSets = [
+const First_Skillset_Object = [
     {
         "item": "HTML5",
         "strength": "Expert",
@@ -225,7 +225,7 @@ const skillSets = [
     },
 ];
 // object of objects
-const skillSets2 = {
+const Skillsets = {
     "HTML5": {
         "strength": "Expert",
         "type": "Language",
@@ -406,40 +406,7 @@ const skillSets2 = {
     },
 };
 
-// import {skillSets} from '../skill_sets.json';
-// import skillSets from '../skill_sets.json';
-// var skillSets = require('../skill_sets.json');
-// import * as skillSets from '../skill_sets.json';
-// import * as skillSets from './skill_sets.json';
-// import skillSets from './skill_sets.json';
-// var skillSets = require('./skill_sets.json');
-// var mydata = JSON.parse(skillSets);
-
-
-
 // Need to iterate through the skill_sets.json object. If a sub-object has 'Language' as 'type' and 'Expert' as 'strength', then value for 'name' needs to go in the cell occupied by the row 'Expert' and the column 'Language'.
-
-// console.log(skill_sets.json);
-// console.log(skillSets);
-// console.log(skillSets[0]);
-// console.log(skillSets[2].item);
-// var myArray = [];
-// for (let index = 0; index < skillSets.length; index++) {
-//     const element = skillSets[index].item;
-//     myArray.push(skillSets[index].item);
-//     console.log(element);
-// }
-// console.log(myArray);
-
-// fetch(skillSets)
-//   .then(response => response.json())
-//   .then(json => console.log(json));
-
-// (function(){
-//     console.log(skillSets); // {"a" : "b", "c" : "d"}
-//  })();
-
-
 
 // ******************************************************
 //             The below is for table.html
@@ -448,184 +415,291 @@ const skillSets2 = {
 //       https://codepen.io/JamieBort/pen/yLJVQdM
 // ******************************************************
 
-data = {
-    "Q1": [1, 2, 3, 2],
-    "Q2": [5, 6, 7, 6],
-    "Q3": [9, 10, 11, 10],
-    'Q4': [], // test case 1: no data
-    'Q5': [1], // test case 2: only answer field
-    'Q6': ['A', 'B', 'C'],// test case 3: for string
-    'Q7': ['TEST'] // test case 4: for answer(string) only
-};
+// data = {
+//     "Q1": [1, 2, 3, 2],
+//     "Q2": [5, 6, 7, 6],
+//     "Q3": [9, 10, 11, 10],
+//     'Q4': [], // test case 1: no data
+//     'Q5': [1], // test case 2: only answer field
+//     'Q6': ['A', 'B', 'C'],// test case 3: for string
+//     'Q7': ['TEST'] // test case 4: for answer(string) only
+// };
 // For Q4, Q5, you can added some extra codes to uses default values intead, or ignore this row.
 
 // formmat the data first, add some validators if neccessary
-function formatAdapter(data) {
-    return Object.entries(data).map((item) => {
-        let newItem = {}
-        newItem[item[0]] = {
-            'options': item[1].slice(0, item[1].length - 1),
-            'answer': item[-1]
-        } // assuming the last element is the answer, [0:last] is the options
-        return [item[0], item[1].slice(0, item[1].length - 1), item[1].slice(-1)[0]]
-    })
-}
-let formmatedData = formatAdapter(data)
+// function formatAdapter(data) {
+//     return Object.entries(data).map((item) => {
+//         let newItem = {}
+//         newItem[item[0]] = {
+//             'options': item[1].slice(0, item[1].length - 1),
+//             'answer': item[-1]
+//         } // assuming the last element is the answer, [0:last] is the options
+//         return [item[0], item[1].slice(0, item[1].length - 1), item[1].slice(-1)[0]]
+//     })
+// }
+// let formmatedData = formatAdapter(data)
 
-var tbody = document.getElementById('tbody');
+// var tbody_1 = document.getElementById('tbody_1');
 
 // generate the header
-tbody.innerHTML += "<tr>" +
-    "<th id='q'>" + "Question" + "</th>" +
-    "<th id='o'>" + "Options" + "</th>" +
-    "<th id='ca'>" + "Correct Answer" + "</th>" +
-    "</tr>"
+// tbody_1.innerHTML += "<tr>" +
+//     "<th id='q'>" + "Question" + "</th>" +
+//     "<th id='o'>" + "Options" + "</th>" +
+//     "<th id='ca'>" + "Correct Answer" + "</th>" +
+//     "</tr>"
 
 // generate the rows(Html) for each questions
-let rowHtmls = formmatedData.map((item) => {
-    let row = '<tr><td rowspan="' + (item[1].length || 1) + '">' + item[0] + '</td>'
-        + '<td>' + item[1][0] + '</td>'
-        + '<td rowspan="' + (item[1].length || 1) + '">' + item[2] + '</td></tr>'
-    row += item[1].slice(1).reduce((pre, cur) => {
-        return pre + '<tr><td>' + cur + '</td></tr>'
-    }, '');
-    console.log(row);
-    console.log(item[1]);
-    return row
-})
+// let rowHtmls_1 = formmatedData.map((item) => {
+//     let row = '<tr><td rowspan="' + (item[1].length || 1) + '">' + item[0] + '</td>'
+//         + '<td>' + item[1][0] + '</td>'
+//         + '<td rowspan="' + (item[1].length || 1) + '">' + item[2] + '</td></tr>'
+//     row += item[1].slice(1).reduce((pre, cur) => {
+//         return pre + '<tr><td>' + cur + '</td></tr>'
+//     }, '');
+//     console.log(row);
+//     console.log(item[1]);
+//     return row
+// })
 
 // combine header(html) and rows(html)
-tbody.innerHTML += rowHtmls.reduce((pre, cur) => {
-    return pre + cur
-}, '')
+// tbody_1.innerHTML += rowHtmls_1.reduce((pre, cur) => {
+//     return pre + cur
+// }, '')
 
 // ******************************************************
 //             The above is for table.html
 // from: https://stackoverflow.com/q/50996553/8210460
 // ******************************************************
 
+
 // ******************************************************
 //             My take on the above.
 // ******************************************************
 
+
+var tbody = document.getElementById('tbody');
+
 // generate the header
-tbody2.innerHTML += `<tr>
-                        <th>blank</th>
-                        <th>Language</th>
-                        <th>Frameworks & Libraries</th>
-                        <th>Databases</th>
-                        <th>Software & Cloud Platforms</th>
-                        <th>Methodologies, Practices, & IDEs</th>
+tbody.innerHTML += `<tr>
+                        <th></th>
+                        <th scope="col">Language</th>
+                        <th scope="col">Frameworks & Libraries</th>
+                        <th scope="col">Databases</th>
+                        <th scope="col">Software & Cloud Platforms</th>
+                        <th scope="col">Methodologies, Practices, & IDEs</th>
                     </tr>`;
 
-// I need to count how many expert for each column. Then choose the greatest among them.
-// Then do the same for intermediate.
-// And again for Learning/Some Experience.
+// I need to count how many 'Expert' for each column. Then make note of the number that is the greatest.
+// Then do the same for 'Intermediate'.
+// And again for 'Learning/Some Experience'.
 
-// countFunction= (strength) => {
-//     // console.log("instatiate count function");
-//     if (strength === "Expert") {
-//         switch (object[key].type) {
-//             case "Language":
-//                 languageCount++;
-//                 break;
-//             case "Software & Cloud Platforms":
-//                 Software_Cloud_PlatformsCount++;
-//                 break;
-//             case "Methodologies, Practices, & IDEs":
-//                 Methodologies_Practices_IDECount++;
-//                 break;
-//             default:
-//                 console.log("The default was triggered.");
-//         }
-//     };
-// }
 
 objectCountFunction = (object) => {
+    var ExpertLanguage = 0, IntermediateLanguage = 0, LearningLanguage = 0;
+    var ExpertFL = 0, IntermediateFL = 0, LearningFL = 0;
+    var ExpertDatabase = 0, IntermediateDatabase = 0, LearningDatabase = 0;
+    var ExpertSCP = 0, IntermediateSCP = 0, LearningSCP = 0;
+    var ExpertMPI = 0, IntermediateMPI = 0, LearningMPI = 0;
 
-    countFunction = (strength) => {
-        var languageCount = 0, Software_Cloud_PlatformsCount = 0, Methodologies_Practices_IDECount = 0;
-        switch (strength) {
-            case "Language":
-                languageCount++;
-                break;
-            case "Software & Cloud Platforms":
-                Software_Cloud_PlatformsCount++;
-                break;
-            case "Methodologies, Practices, & IDEs":
-                Methodologies_Practices_IDECount++;
-                break;
-            default:
-                console.log("The default was triggered.");
+    var One = 0, Two = 0, Three = 0;
+
+    for (var key in object) {
+
+        // NOTE: This commented out code is an attempt to condense the if() functions below.
+        // // var One = 0, Two = 0, Three = 0;
+        // var array = ["Language", "Frameworks and Libraries", "Databases", "Software & Cloud Platforms", "Methodologies, Practices, & IDEs"];
+        // for (var i = 0; i < 2; i++) {
+        //     //     // var One = 0, Two = 0, Three = 0;
+        //     if (object[key].type == array[i]) {
+        //         //         console.log("i: ", i, "array[i]: ", array[i], "One: ", One, "Two: ", Two, "Three: ", Three);
+        //         //         // var One = 0, Two = 0, Three = 0;
+        //         //         // console.log(array[i]);
+        //         if (object[key].strength == "Expert") { One++; }
+        //         if (object[key].strength == "Intermediate") { Two++; }
+        //         if (object[key].strength == "Learning/Some Experience") { Three++; }
+
+        //         // console.log(One, Two, Three);
+        //     }
+        //     console.log(One, Two, Three);
+        //     One = 0, Two = 0, Three = 0;
+        // }
+        // // One = 0, Two = 0, Three = 0;
+        // // console.log(One,Two,Three);
+
+        if (object[key].type == "Language") {
+            if (object[key].strength == "Expert") { ExpertLanguage++; }
+            if (object[key].strength == "Intermediate") { IntermediateLanguage++; }
+            if (object[key].strength == "Learning/Some Experience") { LearningLanguage++; }
         }
-        return Math.max(languageCount, Software_Cloud_PlatformsCount, Methodologies_Practices_IDECount);
-        
-    };
 
-    for (var key in object) { // where the strength is expert
-        // var languageCount = 0, Software_Cloud_PlatformsCount = 0, Methodologies_Practices_IDECount = 0;
+        if (object[key].type == "Frameworks and Libraries") {
+            if (object[key].strength == "Expert") { ExpertFL++; }
+            if (object[key].strength == "Intermediate") { IntermediateFL++; }
+            if (object[key].strength == "Learning/Some Experience") { LearningFL++; }
+        }
 
-        // countFunction(object[key].strength);
+        if (object[key].type == "Databases") {
+            if (object[key].strength == "Expert") { ExpertDatabase++; }
+            if (object[key].strength == "Intermediate") { IntermediateDatabase++; }
+            if (object[key].strength == "Learning/Some Experience") { LearningDatabase++; }
+        }
 
-        if (object[key].strength === "Expert") {
-            // var languageCount = 0, Software_Cloud_PlatformsCount = 0, Methodologies_Practices_IDECount = 0;
-            console.log(countFunction(object[key].type));
-        };
+        if (object[key].type == "Software & Cloud Platforms") {
+            if (object[key].strength == "Expert") { ExpertSCP++; }
+            if (object[key].strength == "Intermediate") { IntermediateSCP++; }
+            if (object[key].strength == "Learning/Some Experience") { LearningSCP++; }
+        }
 
-        // if (object[key].strength === "Intermediate") {
-        //     // console.log(object[key].type);
-        //     // countFunction(object[key].type);
-        // };
-
+        if (object[key].type == "Methodologies, Practices, & IDEs") {
+            if (object[key].strength == "Expert") { ExpertMPI++; }
+            if (object[key].strength == "Intermediate") { IntermediateMPI++; }
+            if (object[key].strength == "Learning/Some Experience") { LearningMPI++; }
+        }
+        // console.log(One,Two,Three);
+        // One = 0, Two = 0, Three = 0;
     }
-    // console.log("expert");
-    // console.log("languageCount", languageCount);
-    // console.log("Software_Cloud_PlatformsCount", Software_Cloud_PlatformsCount);
-    // console.log("Methodologies_Practices_IDECount", Methodologies_Practices_IDECount);
-    // console.log("The max number is: ", Math.max(languageCount, Software_Cloud_PlatformsCount, Methodologies_Practices_IDECount));
 
-
-    for (var key in object) { // where the strength is intermediate
-
-        // countFunction(object[key].strength);
-
-        // if (object[key].strength === "Expert") {
-            // var languageCount = 0, Software_Cloud_PlatformsCount = 0, Methodologies_Practices_IDECount = 0;
-            // countFunction(object[key].type);
-        // };
-
-        if (object[key].strength === "Intermediate") {
-            // console.log(object[key].type);
-            // countFunction(object[key].type);
-        };
-
-    }
-    // console.log("Intermediate");
-    // console.log("languageCount", languageCount);
-    // console.log("Software_Cloud_PlatformsCount", Software_Cloud_PlatformsCount);
-    // console.log("Methodologies_Practices_IDECount", Methodologies_Practices_IDECount);
-    // console.log("The max number is: ", Math.max(languageCount, Software_Cloud_PlatformsCount, Methodologies_Practices_IDECount));
-
+    // console.log("One, Two, Three: ",One, Two, Three);
+    // One = 0, Two = 0, Three = 0;
+    // console.log("===============================");
+    var Language = Math.max(ExpertLanguage, IntermediateLanguage, LearningLanguage);    
+    console.log("Language: ", Language);
+    // console.log("===============================");
+    var FL = Math.max(ExpertFL, IntermediateFL, LearningFL);
+    console.log("Frameworks and Libraries", FL);
+    // console.log("===============================");
+    var Databases = Math.max(ExpertDatabase, IntermediateDatabase, LearningDatabase);
+    console.log("Databases", Databases);
+    // console.log("===============================");
+    var SCP = Math.max(ExpertSCP, IntermediateSCP, LearningSCP);
+    console.log("Software & Cloud Platforms", SCP);
+    // console.log("===============================");
+    var MPI = Math.max(ExpertMPI, IntermediateMPI, LearningMPI);
+    console.log("Methodologies, Practices, & IDEs", MPI);
 };
-objectCountFunction(skillSets2);
+// objectCountFunction(Skillsets);
 
 
+// generate the rows(Html) for each questions
+// let rowHtmls = formmatedData.map((item) => {
+//     let row = '<tr><td rowspan="' + (item[1].length || 1) + '">' + item[0] + '</td>'
+//         + '<td>' + item[1][0] + '</td>'
+//         + '<td rowspan="' + (item[1].length || 1) + '">' + item[2] + '</td></tr>'
+//     row += item[1].slice(1).reduce((pre, cur) => {
+//         return pre + '<tr><td>' + cur + '</td></tr>'
+//     }, '');
+//     console.log(row);
+//     console.log(item[1]);
+//     return row;
+// });
+
+// first step: hardcode the table
+// let rowHtmls = formmatedData.map((item) => {
+    let row =   '<tr>'+
+                    '<th scope="row" rowspan="2">Excellent</th>'+
+                    '<td>HTML5</td>'+
+                    '<td></td>'+
+                    '<td></td>'+
+                    '<td>Jira</td>'+
+                    '<td>Visual Studio</td>'+
+                '</tr>'+
+                '<tr>'+
+                    
+                    '<td>CSS3</td>'+
+                    '<td></td>'+
+                    '<td></td>'+
+                    '<td>Confluence</td>'+
+                    '<td>InteliJ</td>'+
+                '</tr>'+
 
 
+                '<tr>'+
+                    '<th scope="row" rowspan="6">Intermediate</th>'+
+                    '<td>JavaScript</td>'+
+                    '<td>Angular</td>'+
+                    '<td>SQL</td>'+
+                    '<td>Maple</td>'+
+                    '<td>Test Driven Devlopment (TDD)</td>'+
+                '</tr>'+
+                '<tr>'+
+                    
+                    '<td>ES6</td>'+
+                    '<td>Express.js</td>'+
+                    '<th></th>'+
+                    '<td>Matlab</td>'+
+                    '<td>Agile</td>'+
+                '</tr>'+
+                '<tr>'+
+                    
+                    '<td>Java</td>'+
+                    '<td>Mustache-Express MVC</td>'+
+                    '<td></td>'+
+                    '<td></td>'+
+                    '<td>Scrum</td>'+
+                '</tr>'+
+                '<tr>'+
+                    
+                    '<td>GitHub/Git</td>'+
+                    '<td>Node.js</td>'+
+                    '<td></td>'+
+                    '<td></td>'+
+                    '<td>Xcode</td>'+
+                '</tr>'+
+                '<tr>'+
+                    
+                    '<td>Bash</td>'+
+                    '<td></td>'+
+                    '<td></td>'+
+                    '<td></td>'+
+                    '<td>Android Studio</td>'+
+                '</tr>'+
+                '<tr>'+
+                    
+                    '<td>Python</td>'+
+                    '<td></td>'+
+                    '<td></td>'+
+                    '<td></td>'+
+                    '<td></td>'+
+                '</tr>'+
+                
+                
+                '<tr>'+
+                    '<th scope="row"  rowspan="3">Learning/Some Experience</th>'+
+                    '<td>C Shapr</td>'+
+                    '<td>.Net</td>'+
+                    '<td>MongoDB</td>'+
+                    '<td></td>'+
+                    '<td></td>'+
+                '</tr>'+                
+                '<tr>'+
+                    
+                    '<td></td>'+
+                    '<td>DS.js</td>'+
+                    '<td>PostgreSQL</td>'+
+                    '<td></td>'+
+                    '<td></td>'+
+                '</tr>'+
+                    
+                    '<td></td>'+
+                    '<td></td>'+
+                    '<td>Mongoose</td>'+
+                    '<td></td>'+
+                    '<td></td>'+
+                '</tr>';
 
+                
 
-// generate the rows(Html) for each skill level
-let rowHtmls2 = ['<tr><td rowspan="3">Q1</td><td>1</td><td rowspan="3">2</td></tr><tr><td>2</td></tr><tr><td>3</td></tr>', '<tr><td rowspan="3">Q2</td><td>5</td><td rowspan="3">6</td></tr><tr><td>6</td></tr><tr><td>7</td></tr>'];
+//     row += item[1].slice(1).reduce((pre, cur) => {
+//         return pre + '<tr><td>' + cur + '</td></tr>'
+//     }, '');
+//     console.log("row: ", row);
+//     // console.log("item[1]", item[1]);
+//     return row;
+// });
 
-// first compile some arrays of each
-// console.log(skillSets2);
-// console.log(skillSets2[".NET"]);
-// console.log(skillSets2.HTML5.type);
-// if (skillSets2.HTML5.strength == "Expert") { console.log("Expert!!") };
+tbody.innerHTML += row;
 
-// console.log(formmatedData);
-// formmatedData.map((item) => {console.log(item)});
-// console.log(rowHtmls);
-// console.log(row);
-
-// export table.js;
+// combine header(html) and rows(html)
+// tbody.innerHTML += rowHtmls.reduce((pre, cur) => {
+//     return pre + cur
+// }, '')

@@ -246,7 +246,7 @@ objectCountFunction = (object) => {
         // One = 0, Two = 0, Three = 0;
     }
 
-    console.log(One, Two, Three);
+    console.log("One, Two, Three: ",One, Two, Three);
     // One = 0, Two = 0, Three = 0;
     // console.log("===============================");
     var Language = Math.max(ExpertLanguage, IntermediateLanguage, LearningLanguage);    
