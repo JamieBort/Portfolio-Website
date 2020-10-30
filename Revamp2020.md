@@ -1,7 +1,7 @@
 # My Portfolio Website
 
 ## ~~preliminaryExploration branch~~ 
-This has since been merged into master.
+This `preliminaryExploration` branch has since been merged into master.
 
 To that end, this README file outlines what I plan on doing with my [portfolio website](https://jamiebort.github.io/) as I revamp it.
 
