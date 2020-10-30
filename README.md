@@ -1,7 +1,6 @@
 # My Portfolio Website
 
-### The Purpose of this README.md file
-Unlike most README files on GitHub this one is not meant for you, the public. I am using this for my organization.
+## preliminaryExploration branch
 
 To that end, this README file outlines what I plan on doing with my [portfolio website](https://jamiebort.github.io/) as I revamp it.
 
