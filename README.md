@@ -4,6 +4,8 @@
 
 To that end, this README file outlines what I plan on doing with my [portfolio website](https://jamiebort.github.io/) as I revamp it.
 
+Note: The index.php and the composer.json files were created solely for the purpose of deploying to Heroku. I used this tutorial to do so: https://medium.com/@winnieliang/how-to-run-a-simple-html-css-javascript-application-on-heroku-4e664c541b0b 
+
 ### Business Requirements
 
 The site shall:
