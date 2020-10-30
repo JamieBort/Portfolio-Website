@@ -664,8 +664,9 @@ objectCountFunction = (object) => {
                 
                 
                 '<tr>'+
-                    '<th scope="row"  rowspan="3">Learning/Some Experience</th>'+
-                    '<td>C Shapr</td>'+
+                    // '<th scope="row"  rowspan="3">Learning/Some Experience</th>'+
+                    '<th scope="row"  rowspan="3">Some Experience</th>'+
+                    '<td>C Sharp</td>'+
                     '<td>.Net</td>'+
                     '<td>MongoDB</td>'+
                     '<td></td>'+
