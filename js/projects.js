@@ -57,7 +57,7 @@ const projects = {
         "div_id": "dummy_div",
         "title": "Portfolio Website on Heroku",
         "description": "A simple form using HTML, CSS, and JavaScript.",
-        "tech": ["CSS", "HTML", "JavaScript"],
+        "tech": ["CSS", "HTML", "JavaScript", "Node"],
         "project_anchor_text": "Portfolio Website on Heroku Static Site",
         "project_anchor_href": "",
         "repo_anchor_text": "Portfolio Website on Heroku Repo",
@@ -129,11 +129,17 @@ for (var key in projects) {
     // div2.appendChild(p); // used for when a background image is used.
     div1.appendChild(p);
 
-    var p = document.createElement("p");
-    p.className = "projects_tech";
-    p.innerHTML = projects[key]["tech"]; // I need a function to list these items in the array. Rather than simply add the whole array to the paragraph. This causes issues with the resonsiveness when viewing the page on a smaller screen.
-    // div2.appendChild(p); // used for when a background image is used.
-    div1.appendChild(p);
+
+    for (var index = 0; index < projects[key]["tech"].length; index++) {
+        // console.log("index: ", projects[key]["tech"][index]);
+        var li = document.createElement("li");
+        li.className = "projects_tech";
+        // li.innerHTML = projects[key]["tech"]; // I need a function to list these items in the array. Rather than simply add the whole array to the paragraph. This causes issues with the resonsiveness when viewing the page on a smaller screen.
+        // div2.appendChild(p); // used for when a background image is used.
+
+        li.innerHTML = projects[key]["tech"][index];
+        div1.appendChild(li);
+    }
 
     var a = document.createElement("a");
     a.className = "projects_a";
@@ -156,3 +162,16 @@ for (var key in projects) {
     div1.appendChild(img);
 
 }
+
+for (var key in projects) {
+
+    for (var index = 0; index < projects[key]["tech"].length; index++) {
+        console.log("index: ", projects[key]["tech"][index]);
+    }
+
+
+
+
+}
+
+// for(var index=0; index<projects["portfolio_website_hosted_on_heroku"]["tech"].length ;index++){console.log("index: ", projects["portfolio_website_hosted_on_heroku"]["tech"][index]);}
