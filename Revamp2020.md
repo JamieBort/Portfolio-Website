@@ -1,7 +1,8 @@
-# My Portfolio Website
+# Revamp2020
+This file started as README.md in the `preliminaryExploration` branch.
 
-## ~~preliminaryExploration branch~~ 
-This `preliminaryExploration` branch has since been merged into master.
+## ~~preliminaryExploration branch
+This `preliminaryExploration` branch has since been merged into master.~~ 
 
 To that end, this README file outlines what I plan on doing with my [portfolio website](https://jamiebort.github.io/) as I revamp it.
 
