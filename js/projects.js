@@ -131,7 +131,7 @@ for (var key in projects) {
 
     var p = document.createElement("p");
     p.className = "projects_tech";
-    p.innerHTML = projects[key]["tech"];
+    p.innerHTML = projects[key]["tech"]; // I need a function to list these items in the array. Rather than simply add the whole array to the paragraph. This causes issues with the resonsiveness when viewing the page on a smaller screen.
     // div2.appendChild(p); // used for when a background image is used.
     div1.appendChild(p);
 
