@@ -2,30 +2,30 @@
 class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <div class="header">
-            <div id="header-cont">
+        <header>
+            <nav>
                 <div id="left">
                     <a class="head_a" href="../html/index.html#title">Jamie Bort</a>
                 </div>
                 <div id="right">
                     <a class="head_a"  href="./index.html#bio">Bio</a>
-`            // below is commented out because the Blog is not ready to show to the public.
-            // <a class="head_a"  href="./blog.html#blog">Blog</a></button>
-            +`
-                      <a class="head_a"  href="./index.html#projects">Projects</a>
-                      `+
-            // below is commented out because the Resources is not ready to show to the public.
-            // <a class="head_a"  href="./resources.html">Resources</a>
-            // below is commented out because the Fun Stuff is not ready to show to the public.
-            // <a class="head_a"  href="./fun_stuff.html">Fun Stuff</a>
-            
-            // below is commented out because the Resume page is not ready to show to the public.
-            // <a class="head_a"  href="./resume.html">Resume </a>
-            `
-                      <a class="head_a"  href="./index.html#connect_with_me">Connect with me</a>
-                    </div>
-            </div>
-        </div>
+    `            // below is commented out because the Blog is not ready to show to the public.
+                // <a class="head_a"  href="./blog.html#blog">Blog</a></button>
+                +`
+                    <a class="head_a"  href="./index.html#projects">Projects</a>
+                        `+
+                // below is commented out because the Resources is not ready to show to the public.
+                // <a class="head_a"  href="./resources.html">Resources</a>
+                // below is commented out because the Fun Stuff is not ready to show to the public.
+                // <a class="head_a"  href="./fun_stuff.html">Fun Stuff</a>
+                
+                // below is commented out because the Resume page is not ready to show to the public.
+                // <a class="head_a"  href="./resume.html">Resume </a>
+                `
+                   <a class="head_a"  href="./index.html#connect_with_me">Connect with me</a>
+                </div>
+            </nav>
+        </header>
 `;
     }
 }
@@ -34,9 +34,9 @@ class Header extends HTMLElement {
 class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <div class="footer">
+        <footer class="footer">
             <span id="copyright">This should give the copyright date.</span>
-    </div>
+    </footer>
                         `;
     }
 }
