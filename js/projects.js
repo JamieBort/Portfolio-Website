@@ -8,10 +8,10 @@ const projects = {
         "project_anchor_href": "./index.html#title",
         "repo_anchor_text": "Portfolio Website Repo",
         "repo_anchor_href": "https://github.com/JamieBort/jamiebort.github.io",
-        "img_src": "../assets/Projects/clipart1656353.png",
-        // "backgground_image":"../assets/background_image/download.jpeg", // used for when a background image is used.
-        "backgground_image": "../assets/background_image/w-qjCHPZbeXCQ-unsplash.jpg",  // used for when a background image is used.
-        "project_img": "../assets/Project_images/Portfolio_Website.png",
+        "img_src": "./assets/Projects/clipart1656353.png",
+        // "backgground_image":"./assets/background_image/download.jpeg", // used for when a background image is used.
+        "backgground_image": "./assets/background_image/w-qjCHPZbeXCQ-unsplash.jpg",  // used for when a background image is used.
+        "project_img": "./assets/Project_images/Portfolio_Website.png",
     },
     "puppy_love": {
         "div_id": "puppy_love_div",
@@ -22,9 +22,9 @@ const projects = {
         "project_anchor_href": "https://jamiebort.github.io/PuppyLove/",
         "repo_anchor_text": "Puppy Love Repo",
         "repo_anchor_href": "https://github.com/JamieBort/PuppyLove",
-        "img_src": "../assets/Projects/clipart1656353.png",
-        "backgground_image": "../assets/background_image/w-qjCHPZbeXCQ-unsplash.jpg", // used for when a background image is used.
-        "project_img": "../assets/Project_images/Puppy_Love.png",
+        "img_src": "./assets/Projects/clipart1656353.png",
+        "backgground_image": "./assets/background_image/w-qjCHPZbeXCQ-unsplash.jpg", // used for when a background image is used.
+        "project_img": "./assets/Project_images/Puppy_Love.png",
     },
     "iPhysicist": {
         "div_id": "iPhysicist_div",
@@ -35,9 +35,9 @@ const projects = {
         "project_anchor_href": "https://jamiebort.github.io/iPhysicist-CSSLayoutFlexbox/",
         "repo_anchor_text": "iPhysicist Repo",
         "repo_anchor_href": "https://github.com/JamieBort/iPhysicist-CSSLayoutFlexbox",
-        "img_src": "../assets/Projects/clipart1656353.png",
-        "backgground_image": "../assets/background_image/photo-1579546929518-9e396f3cc809.jpeg", // used for when a background image is used.
-        "project_img": "../assets/Project_images/iPhysicist_Small.png",
+        "img_src": "./assets/Projects/clipart1656353.png",
+        "backgground_image": "./assets/background_image/photo-1579546929518-9e396f3cc809.jpeg", // used for when a background image is used.
+        "project_img": "./assets/Project_images/iPhysicist_Small.png",
     },
     "form_builder": {
         "div_id": "form_builder_div",
@@ -48,10 +48,10 @@ const projects = {
         "project_anchor_href": "https://jamiebort.github.io/FormBuilder/",
         "repo_anchor_text": "Form Builder Repo",
         "repo_anchor_href": "https://github.com/JamieBort/FormBuilder",
-        "img_src": "../assets/Projects/clipart1656353.png",
-        // "backgground_image":"../assets/background_image/download (1).jpeg",
-        "backgground_image": "../assets/background_image/photo-1579546929518-9e396f3cc809.jpeg", // used for when a background image is used.
-        "project_img": "../assets/Project_images/Form_Builder.png",
+        "img_src": "./assets/Projects/clipart1656353.png",
+        // "backgground_image":"./assets/background_image/download (1).jpeg",
+        "backgground_image": "./assets/background_image/photo-1579546929518-9e396f3cc809.jpeg", // used for when a background image is used.
+        "project_img": "./assets/Project_images/Form_Builder.png",
     },
     "portfolio_website_hosted_on_heroku": {
         "div_id": "dummy_div",
@@ -62,9 +62,9 @@ const projects = {
         "project_anchor_href": "",
         "repo_anchor_text": "Portfolio Website on Heroku Repo",
         "repo_anchor_href": "",
-        "img_src": "../assets/Projects/clipart1656353.png",
-        "backgground_image": "../assets/background_image/abstract-orange-background-260nw-323746937.webp", // used for when a background image is used.
-        "project_img": "../assets/Project_images/iPhysicist_Large.png",
+        "img_src": "./assets/Projects/clipart1656353.png",
+        "backgground_image": "./assets/background_image/abstract-orange-background-260nw-323746937.webp", // used for when a background image is used.
+        "project_img": "./assets/Project_images/iPhysicist_Large.png",
     },
 }
 
