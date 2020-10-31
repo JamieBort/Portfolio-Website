@@ -5,44 +5,28 @@ class Header extends HTMLElement {
         <div class="header">
             <div id="header-cont">
                 <div id="left">
-                    <button class="head_button">
-                        <a class="head_a" href="../html/index.html#title">Jamie Bort</a>
-                    </button>
+                    <a class="head_a" href="../html/index.html#title">Jamie Bort</a>
                 </div>
                 <div id="right">
-                    <button class="head_button">
-                        <a class="head_a"  href="./index.html#bio">Bio</a>
-                    </button>
-                    `
-            // below is commented out because the Blog is not ready to show to the public.
-            // <button class="head_button"><a class="head_a"  href="./blog.html#blog">Blog</a></button>
-            + `
-                    
-                    <button class="head_button">
-                        <a class="head_a"  href="./index.html#projects">Projects</a>
-                    </button>
-                    `
+                    <a class="head_a"  href="./index.html#bio">Bio</a>
+`            // below is commented out because the Blog is not ready to show to the public.
+            // <a class="head_a"  href="./blog.html#blog">Blog</a></button>
+            +`
+                      <a class="head_a"  href="./index.html#projects">Projects</a>
+                      `+
             // below is commented out because the Resources is not ready to show to the public.
-            // <button class="head_button"><a class="head_a"  href="./resources.html">Resources</a></button>
-            + `
-                    `
+            // <a class="head_a"  href="./resources.html">Resources</a>
             // below is commented out because the Fun Stuff is not ready to show to the public.
-            // <button class="head_button"><a class="head_a"  href="./fun_stuff.html">Fun Stuff</a></button>
-            + `
-                    `
+            // <a class="head_a"  href="./fun_stuff.html">Fun Stuff</a>
+            
             // below is commented out because the Resume page is not ready to show to the public.
-            // <button class="head_button">
             // <a class="head_a"  href="./resume.html">Resume </a>
-            // </button>
-            + `
-                    
-                    <button class="head_button">
-                        <a class="head_a"  href="./index.html#connect_with_me">Connect with me</a>
-                    </button>
-                </div>
+            `
+                      <a class="head_a"  href="./index.html#connect_with_me">Connect with me</a>
+                    </div>
             </div>
         </div>
-                            `;
+`;
     }
 }
 

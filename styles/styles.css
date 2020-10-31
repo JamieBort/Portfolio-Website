@@ -98,11 +98,11 @@ h2 {
     height: 300px;
 }
 
-.connect_with_me_button, .head_button {
+/* .connect_with_me_button, .head_button {
     margin: 0 10px;
     background-color: transparent;
     border: none;
-}
+} */
 
 #projects_section_div {
     /* background: lightsteelblue; */
@@ -190,8 +190,10 @@ h2 {
 
 .connect_with_me_button {
     /* background-color: lightblue; */
-    width: 200px;
-    height: 200px;
+    
+    /* width: 200px;
+    height: 200px; */
+    
     /* max-width: 100px;
     width: auto; */
 }
