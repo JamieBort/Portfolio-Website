@@ -10,14 +10,19 @@ html, body {
     margin: 0;
 }
 
-h2 {
-    font-size: 1.75em;
-}
-
 .wrapper {
     height: 100%;
     display: flex;
     flex-direction: column;
+}
+
+/* body {
+    display: flex;
+    flex-direction: column;
+} */
+
+h2 {
+    font-size: 1.75em;
 }
 
 /* I don't think #abc is being used. */
@@ -60,17 +65,12 @@ h2 {
     /* font-size: 1em; */
 }
 
-.footer {
-    /* background: brown; */
-    border-top: 1px solid red;
-}
-
-.header, .footer {
+header, footer {
     /* background: silver; */
     /* font-size: 30px; */
 }
 
-#header-cont {
+nav {
     border-bottom: 1px solid red;
     display: flex;
     justify-content: space-around;
@@ -98,11 +98,11 @@ h2 {
     height: 300px;
 }
 
-.connect_with_me_button, .head_button {
+/* .connect_with_me_button, .head_button {
     margin: 0 10px;
     background-color: transparent;
     border: none;
-}
+} */
 
 #projects_section_div {
     /* background: lightsteelblue; */
@@ -190,8 +190,10 @@ h2 {
 
 .connect_with_me_button {
     /* background-color: lightblue; */
-    width: 200px;
-    height: 200px;
+    
+    /* width: 200px;
+    height: 200px; */
+    
     /* max-width: 100px;
     width: auto; */
 }
@@ -227,16 +229,18 @@ h2 {
     text-decoration: none;
 } */
 
-.content {
+main {
     flex: 1;
     overflow: auto;
     /* background: pink; */
 }
 
-.footer {
+footer {
+    /* max-height: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid red;
 }
 
 /* The following is for the table */

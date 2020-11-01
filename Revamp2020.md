@@ -1,7 +1,8 @@
-# My Portfolio Website
+# Revamp2020
+This file started as README.md in the `preliminaryExploration` branch.
 
-## ~~preliminaryExploration branch~~ 
-This `preliminaryExploration` branch has since been merged into master.
+## ~~preliminaryExploration branch
+This `preliminaryExploration` branch has since been merged into master.~~ 
 
 To that end, this README file outlines what I plan on doing with my [portfolio website](https://jamiebort.github.io/) as I revamp it.
 
@@ -51,8 +52,6 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 
 ### To Do
 
-- [ ] [remove all button tags on my portfolio website](https://trello.com/c/9mD1AzSI/551-remove-all-button-tags-on-my-portfolio-website) Trello card.
-
 - [ ] [How to look at websites or apps I am developing on my phone before they are live](https://trello.com/c/svOMzdnt/535-how-to-look-at-websites-or-apps-i-am-developing-on-my-phone-before-they-are-live) Trello card.
 
 - [ ] [Share link for portfolio website with others](https://trello.com/c/D5iXcGcX/531-share-link-for-portfolio-website-with-others) Trello card.
@@ -83,9 +82,15 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [ ] [Decide on colors](https://trello.com/c/mXqq3kaO/526-decide-on-colors) Trello card.
 		- [ ] [Decide on logo](https://trello.com/c/aBiOmqZd/499-decide-on-logo) Trello card.
 		- [ ] [Decide on fonts](https://trello.com/c/WmfzueWk/498-decide-on-fonts) Trello card.
+		- [ ] [Style the project_divs](https://trello.com/c/kgiNSde6/555-style-the-projectdivs) Trello card.
+		- [ ] [Style the skills section](https://trello.com/c/y03gI5oR/556-style-the-skills-section) Trello card.
+		- [ ] [What needs to change with the mobile version of the Portfolio Website](https://trello.com/c/kBNxrjBe/557-what-needs-to-change-with-the-mobile-version-of-the-portfolio-website) Trello card.
+		- [ ] [What needs to change with the tablet version of the Portfolio Website](https://trello.com/c/viKpMCuc/559-what-needs-to-change-with-the-tablet-version-of-the-portfolio-website) Trello card.
+		- [ ] [What needs to change with the desktop version of the Portfolio Website](https://trello.com/c/d10h6NWq/558-what-needs-to-change-with-the-desktop-version-of-the-portfolio-website) Trello card.
 	- [X] ~~[Obtain wireframe app](https://trello.com/c/ogulw2aZ/492-obtain-wireframe-app?menu=filter&filter=due:incomplete) Trello card.~~
 
 - [ ] Build the site.
+	- [ ] [consider replacing section tag with article tag for my portfolio website](https://trello.com/c/ARthlAv7/554-consider-replacing-section-tag-with-article-tag-for-my-portfolio-website) Trello card.
 	- [ ] [Style buttons for my portfolio website](https://trello.com/c/Fny58qFO/538-style-buttons-for-my-portfolio-website) Trello card.
 	- [ ] [Implement smooth navigation](https://trello.com/c/rjsuhabM/539-implement-smooth-navigation) Trello card.
 	- [ ] [Design the basic architecture](https://trello.com/c/CyUFSwY3/522-design-the-basic-architecture) Trello card.
@@ -102,7 +107,9 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 
 - [X] ~~[Read up on functional versus business requirements](https://trello.com/c/CGFYOG9p/494-read-up-on-functional-versus-business-requirements) Trello card.~~
 
-- [X] [edit README files for the portfolio website](https://trello.com/c/ntfMYze3/552-edit-readme-files-for-the-portfolio-website) Trello card.
+- [X] ~~[edit README files for the portfolio website](https://trello.com/c/ntfMYze3/552-edit-readme-files-for-the-portfolio-website) Trello card.~~
+
+- [X] ~~[remove all button tags on my portfolio website](https://trello.com/c/9mD1AzSI/551-remove-all-button-tags-on-my-portfolio-website) Trello card.~~
 
 ### Types fo Content
 (see the [Explicitly list the content of the portfolio website 202010](https://trello.com/c/adJl19pT/496-explicitly-list-the-content-of-the-portfolio-website-202010) Trello card for content to list in this section.)
