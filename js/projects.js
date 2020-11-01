@@ -77,7 +77,7 @@ project_section.appendChild(h2);
 
 var projects_section_div = document.createElement("div");
 projects_section_div.id = "projects_section_div";
-projects_section_div.className = "section_div";
+projects_section_div.className = "section_div_not_used";
 project_section.appendChild(projects_section_div);
 
 for (var key in projects) {
@@ -106,7 +106,7 @@ for (var key in projects) {
     div1.appendChild(img);
 
     var h3 = document.createElement("h3");
-    h3.className = "projects_title";
+    h3.className = "subtitle";
     h3.innerHTML = projects[key]["title"];
     // div2.appendChild(h3); // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
     div1.appendChild(h3);

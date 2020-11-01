@@ -43,12 +43,17 @@ h2 {
     /* text-align: center; */
 }
 
-.division {
+/* .division { */
+    /* border: .1em black solid; */
+    /* padding-top: 1em;
+} */
+
+section {
     /* border: .1em black solid; */
     padding-top: 1em;
 }
 
-.section_title, .section_subtitle {
+.section_title {
     text-align: center;
 }
 
@@ -136,7 +141,7 @@ nav {
     /* height: auto; */
 }
 
-.projects_title {
+.subtitle {
     text-align: center;
 }
 
@@ -180,7 +185,7 @@ nav {
     border: none;
 } */
 
-.connect_with_me_icons {
+#connect_with_me_section_div {
     /* background-color: lightsalmon; */
     display: flex;
     justify-content: space-around;
