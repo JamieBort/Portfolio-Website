@@ -53,19 +53,19 @@ const projects = {
         "backgground_image": "./assets/background_image/photo-1579546929518-9e396f3cc809.jpeg", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
         "project_img": "./assets/Project_images/Form_Builder.png",
     },
-    "portfolio_website_hosted_on_heroku": {
-        "div_id": "dummy_div",
-        "title": "Portfolio Website on Heroku",
-        "description": "A simple form using HTML, CSS, and JavaScript.",
-        "tech": ["CSS", "HTML", "JavaScript", "Node"],
-        "project_anchor_text": "Portfolio Website on Heroku Static Site",
-        "project_anchor_href": "",
-        "repo_anchor_text": "Portfolio Website on Heroku Repo",
-        "repo_anchor_href": "",
-        "img_src": "./assets/Projects/clipart1656353.png",
-        "backgground_image": "./assets/background_image/abstract-orange-background-260nw-323746937.webp", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
-        "project_img": "./assets/Project_images/iPhysicist_Large.png",
-    },
+    // "portfolio_website_hosted_on_heroku": {
+    //     "div_id": "dummy_div",
+    //     "title": "Portfolio Website on Heroku",
+    //     "description": "A simple form using HTML, CSS, and JavaScript.",
+    //     "tech": ["CSS", "HTML", "JavaScript", "Node"],
+    //     "project_anchor_text": "Portfolio Website on Heroku Static Site",
+    //     "project_anchor_href": "",
+    //     "repo_anchor_text": "Portfolio Website on Heroku Repo",
+    //     "repo_anchor_href": "",
+    //     "img_src": "./assets/Projects/clipart1656353.png",
+    //     "backgground_image": "./assets/background_image/abstract-orange-background-260nw-323746937.webp", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
+    //     "project_img": "./assets/Project_images/iPhysicist_Large.png",
+    // },
 }
 
 var project_section = document.getElementById("projects");
