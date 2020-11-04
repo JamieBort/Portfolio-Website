@@ -166,6 +166,8 @@ nav {
     /* background-color: transparent; */
     /* font-size: 30px; */
     /* background-color: pink; */
+    /* border: 1px solid red; */
+    /* margin: 3 px; */
 }
 
 .projects_img {
@@ -328,3 +330,40 @@ table {
     background-color: transparent; 
     /* background-color: green;   */
 }
+
+/* Bio section Desktop             */
+/* Projects section Desktop        */
+/* Connect With Me section Desktop */
+/* Bio section Tablet              */
+/* Projects section Tablet         */
+/* Connect With Me section Tablet  */
+/* Bio section Mobile              */
+/* Projects section Mobile         */
+/* Connect With Me section Mobile  */
+
+.list_div{
+    /* 	border: 1px blue solid;	 */
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        padding:6px;
+    }
+    .projects_tech{
+        list-style:none;
+    /* 	margin:6px; */
+    /* 	border: 1px red solid;	 */
+    }
+    .bottom_div{
+        display: flex;
+        justify-content: space-around;
+    	/* border: 1px purple solid; */
+    /* 	height:150px; */
+    }
+    .anchor_div{
+    /* 	width: 55%; */
+    /* 	border: 1px blue solid; */
+        text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
