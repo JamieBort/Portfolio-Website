@@ -1,3 +1,6 @@
+/* DESKTOP                         */
+/* Home Page                       */
+
 html * {
     /* font-size: 1em !important; */
     /* color: #000 !important; */
@@ -16,20 +19,16 @@ html, body {
     flex-direction: column;
 }
 
-/* body {
-    display: flex;
-    flex-direction: column;
-} */
-
-h2 {
-    font-size: 1.75em;
+header, footer {
+    /* background: silver; */
+    /* font-size: 30px; */
 }
 
-/* I don't think #abc is being used. */
 
-#temp {
-    /* background: lightskyblue; */
-    height: 80px;
+main {
+    flex: 1;
+    overflow: auto;
+    /* background: pink; */
 }
 
 #title {
@@ -39,42 +38,13 @@ h2 {
     /* height: 80px; */
 }
 
-#bio {
-    /* text-align: center; */
-}
-
-/* .division { */
-    /* border: .1em black solid; */
-    /* padding-top: 1em;
-} */
-
-section {
-    /* border: .1em black solid; */
-    padding-top: 1em;
-}
-
 .section_title {
     text-align: center;
 }
 
-#bio_section_div {
-    /* background: silver; */
-    /* text-align: center; */
-    max-width: 90%;
-    margin: 0 auto;
-}
 
-#copyright {
-    /* border-top: 5px solid red; */
-    /* background: silver; */
-    /* font-size: 1em; */
-}
-
-header, footer {
-    /* background: silver; */
-    /* font-size: 30px; */
-}
-
+/* Header Desktop                  */
+/* Header Desktop                  */
 nav {
     border-bottom: 1px solid red;
     display: flex;
@@ -99,89 +69,186 @@ nav {
     align-items: center; */
 }
 
+.head_a {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* Bio section Desktop             */
+/* Bio section Desktop             */
+
+#bio {
+    /* text-align: center; */
+}
+
+#bio_section_div {
+    /* background: silver; */
+    /* text-align: center; */
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#point_down{
+    width: 50px;
+    /* background: green; */
+    background-color: transparent; 
+    /* background-color: green;   */
+}
+
+/* The following is for the table */
+
+table tbody tr td {
+    border: 1px solid black;
+    /* border-collapse: collapse; */
+    /* border-spacing: 0rem; */
+}
+
+table {
+    margin: 0 auto;
+    /* margin-left:auto; 
+    margin-right:auto; */
+    /* ********************************************************* */
+    /* the below from: https://stackoverflow.com/a/16848343/8210460
+    and from: http://jsfiddle.net/ezific/43ZkH/ */
+    /* ********************************************************* */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c5deea+0,8abbd7+31,066dab+100;Web+2.0+Blue+3D+%231 */
+    background: rgb(197, 222, 234);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(197, 222, 234, 1) 0%, rgba(138, 187, 215, 1) 31%, rgba(6, 109, 171, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(197, 222, 234, 1) 0%, rgba(138, 187, 215, 1) 31%, rgba(6, 109, 171, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(197, 222, 234, 1) 0%, rgba(138, 187, 215, 1) 31%, rgba(6, 109, 171, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    /* ********************************************************* */
+    /* the above from: https://stackoverflow.com/a/16848343/8210460
+    and from: http://jsfiddle.net/ezific/43ZkH/ */
+    /* ********************************************************* */
+}
+
+.table_div {
+    /* background-color: lightskyblue; */
+}
+
+/* Projects section Desktop        */
+/* Projects section Desktop        */
+
+.list_div{
+    /* 	border: 1px blue solid;	 */
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        padding:6px;
+    }
+    .projects_tech{
+        list-style:none;
+    /* 	margin:6px; */
+    /* 	border: 1px red solid;	 */
+    }
+    .bottom_div{
+        display: flex;
+        justify-content: space-around;
+    	/* border: 1px purple solid; */
+    /* 	height:150px; */
+    }
+    /* .anchor_div{ */
+        .img_div{
+    /* 	width: 55%; */
+    /* 	border: 1px blue solid; */
+        text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    #projects_section_div {
+        /* background: lightsteelblue; */
+        /* border: .1em black solid; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .projects_div {
+        /* background: lightskyblue; */
+        border: .05em black solid;
+        border-radius: 1em;
+        max-width: 300px;
+        margin: .5em;
+        padding: .5em;
+        /* for background image */
+        position: relative;
+        text-align: center;
+        /* color: white; */
+    }
+    
+    /* for background image */
+    
+    .projects_background_img {
+        /* max-width: 70%;
+        height: 300px; */
+        /* min-height: 95%; */
+        /* height:auto; */
+        /* width: 50%; */
+        /* height: auto; */
+    }
+    
+    .subtitle {
+        text-align: center;
+    }
+    
+    /* for background image */
+    
+    /* .background_img_div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } */
+    
+    .projects_button {
+        /* margin: 0 10px; */
+        /* background-color: lightblue; */
+        /* border: none; */
+        background-color: transparent;
+    }
+    
+    .projects_a {
+        text-decoration: none;
+        /* background-color: transparent; */
+        /* font-size: 30px; */
+        /* background-color: pink; */
+        /* border: 1px solid red; */
+        /* margin: 3 px; */
+    }
+    
+    .projects_img {
+        max-width: 50%;
+    }
+    
+    .responsive_img {
+        max-width: 75px;
+        /* background-color: transparent; */
+        /* background-color: lightpink; */
+        /* background: lightskyblue; */
+    }
+    
+    /* button {
+        margin: 0 10px;
+        background-color: transparent;
+        border: none;
+    } */
+
+
+/* Connect With Me section Desktop */
+/* Connect With Me section Desktop */
 #connect_with_me {
     height: 300px;
 }
 
 /* .connect_with_me_button, .head_button {
-    margin: 0 10px;
-    background-color: transparent;
-    border: none;
-} */
-
-#projects_section_div {
-    /* background: lightsteelblue; */
-    /* border: .1em black solid; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.projects_div {
-    /* background: lightskyblue; */
-    border: .05em black solid;
-    border-radius: 1em;
-    max-width: 300px;
-    margin: .5em;
-    padding: .5em;
-    /* for background image */
-    position: relative;
-    text-align: center;
-    /* color: white; */
-}
-
-/* for background image */
-
-.projects_background_img {
-    /* max-width: 70%;
-    height: 300px; */
-    /* min-height: 95%; */
-    /* height:auto; */
-    /* width: 50%; */
-    /* height: auto; */
-}
-
-.subtitle {
-    text-align: center;
-}
-
-/* for background image */
-
-/* .background_img_div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
-.projects_button {
-    /* margin: 0 10px; */
-    /* background-color: lightblue; */
-    /* border: none; */
-    background-color: transparent;
-}
-
-.projects_a {
-    text-decoration: none;
-    /* background-color: transparent; */
-    /* font-size: 30px; */
-    /* background-color: pink; */
-    /* border: 1px solid red; */
-    /* margin: 3 px; */
-}
-
-.projects_img {
-    max-width: 50%;
-}
-
-.responsive_img {
-    max-width: 75px;
-    /* background-color: transparent; */
-    /* background-color: lightpink; */
-    /* background: lightskyblue; */
-}
-
-/* button {
     margin: 0 10px;
     background-color: transparent;
     border: none;
@@ -219,29 +286,9 @@ nav {
     /* background-color: pink; */
 }
 
-/* img {
-    max-width: 100px;
-    /* max-width: 25px; */
 
-/*width: auto;
-    background-color: pink;
-} */
-
-.head_a {
-    text-decoration: none;
-    font-size: 30px;
-}
-
-/* a {
-    text-decoration: none;
-} */
-
-main {
-    flex: 1;
-    overflow: auto;
-    /* background: pink; */
-}
-
+/* Footer Desktop                  */
+/* Footer Desktop                  */
 footer {
     /* max-height: 10px; */
     display: flex;
@@ -250,49 +297,13 @@ footer {
     border-top: 1px solid red;
 }
 
-/* The following is for the table */
-
-table tbody tr td {
-    border: 1px solid black;
-    /* border-collapse: collapse; */
-    /* border-spacing: 0rem; */
+#copyright {
+    /* border-top: 5px solid red; */
+    /* background: silver; */
+    /* font-size: 1em; */
 }
 
-/* table tbody tr th {
-    border: 1px solid green;
-    border-collapse: collapse;
-    border-spacing: 0rem;
-} */
-
-table {
-    margin: 0 auto;
-    /* margin-left:auto; 
-    margin-right:auto; */
-    /* ********************************************************* */
-    /* the below from: https://stackoverflow.com/a/16848343/8210460
-    and from: http://jsfiddle.net/ezific/43ZkH/ */
-    /* ********************************************************* */
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c5deea+0,8abbd7+31,066dab+100;Web+2.0+Blue+3D+%231 */
-    background: rgb(197, 222, 234);
-    /* Old browsers */
-    background: -moz-linear-gradient(-45deg, rgba(197, 222, 234, 1) 0%, rgba(138, 187, 215, 1) 31%, rgba(6, 109, 171, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(197, 222, 234, 1) 0%, rgba(138, 187, 215, 1) 31%, rgba(6, 109, 171, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(197, 222, 234, 1) 0%, rgba(138, 187, 215, 1) 31%, rgba(6, 109, 171, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
-    /* ********************************************************* */
-    /* the above from: https://stackoverflow.com/a/16848343/8210460
-    and from: http://jsfiddle.net/ezific/43ZkH/ */
-    /* ********************************************************* */
-}
-
-.table_div {
-    /* background-color: lightskyblue; */
-}
-
+/* For the site is under construction image */
 #construction_div {
     /* border: 1px solid black; */
     margin: 0 auto;
@@ -307,6 +318,10 @@ table {
     /* border: 1px solid blue; */
     margin: 0 auto;
 }
+
+
+
+/* Resources Page                       */
 
 #list {
     display: flex;
@@ -324,46 +339,21 @@ table {
     text-align: center;
 }
 
-#point_down{
-    width: 50px;
-    /* background: green; */
-    background-color: transparent; 
-    /* background-color: green;   */
-}
 
-/* Bio section Desktop             */
-/* Projects section Desktop        */
-/* Connect With Me section Desktop */
+
+
+
+
+/* TABLET                          */
+/* Header Tablet                   */
 /* Bio section Tablet              */
 /* Projects section Tablet         */
 /* Connect With Me section Tablet  */
+/* Footer Tablet                   */
+
+/* MOBILE                          */
+/* Header Mobile                   */
 /* Bio section Mobile              */
 /* Projects section Mobile         */
 /* Connect With Me section Mobile  */
-
-.list_div{
-    /* 	border: 1px blue solid;	 */
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:space-around;
-        padding:6px;
-    }
-    .projects_tech{
-        list-style:none;
-    /* 	margin:6px; */
-    /* 	border: 1px red solid;	 */
-    }
-    .bottom_div{
-        display: flex;
-        justify-content: space-around;
-    	/* border: 1px purple solid; */
-    /* 	height:150px; */
-    }
-    .anchor_div{
-    /* 	width: 55%; */
-    /* 	border: 1px blue solid; */
-        text-align: center;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
+/* Footer Mobile                   */

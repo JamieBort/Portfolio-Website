@@ -119,7 +119,9 @@ for (var first_key in resources) {
     list.appendChild(div);
 
     var h2 = document.createElement("h2");
-    h2.className="resource_title";
+    // h2.className="resource_title";
+    h2.className="section_title";
+    
     // h2.innerHTML = first_key;
     h2.innerHTML = resources[first_key]["name"];
     div.appendChild(h2);

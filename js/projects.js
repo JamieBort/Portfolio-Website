@@ -139,7 +139,8 @@ for (var key in projects) {
     div1.appendChild(div4);
 
     var div5 = document.createElement("div");
-    div5.className = "anchor_div";
+    // div5.className = "anchor_div";
+    div5.className = "img_div";
     div4.appendChild(div5);
 
     var a = document.createElement("a");
