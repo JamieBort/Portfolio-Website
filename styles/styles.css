@@ -72,6 +72,7 @@ nav {
 .head_a {
     text-decoration: none;
     font-size: 30px;
+    margin:0 8px;
 }
 
 /* Bio section Desktop             */
@@ -86,6 +87,11 @@ nav {
     /* text-align: center; */
     max-width: 90%;
     margin: 0 auto;
+}
+
+#devs_img{
+width: 5%;
+/* background: lightblue; */
 }
 
 #point_down{

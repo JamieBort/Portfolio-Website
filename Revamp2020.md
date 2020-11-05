@@ -1,8 +1,8 @@
 # Revamp2020
 This file started as README.md in the `preliminaryExploration` branch.
 
-## ~~preliminaryExploration branch
-This `preliminaryExploration` branch has since been merged into master.~~ 
+## ~~preliminaryExploration branch~~
+~~This `preliminaryExploration` branch has since been merged into master.~~ 
 
 To that end, this README file outlines what I plan on doing with my [portfolio website](https://jamiebort.github.io/) as I revamp it.
 
@@ -82,16 +82,19 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [ ] [Decide on colors](https://trello.com/c/mXqq3kaO/526-decide-on-colors) Trello card.
 		- [ ] [Decide on logo](https://trello.com/c/aBiOmqZd/499-decide-on-logo) Trello card.
 		- [ ] [Decide on fonts](https://trello.com/c/WmfzueWk/498-decide-on-fonts) Trello card.
-		- [ ] [Style the project_divs](https://trello.com/c/kgiNSde6/555-style-the-projectdivs) Trello card.
 		- [ ] [Style the skills section](https://trello.com/c/y03gI5oR/556-style-the-skills-section) Trello card.
+		- [ ] [Be deliberate with the css units for the Portfolio Website project](https://trello.com/c/HVuqs695/563-be-deliberate-with-the-css-units-for-the-portfolio-website-project) Trello card.
 		- [ ] [What needs to change with the mobile version of the Portfolio Website](https://trello.com/c/kBNxrjBe/557-what-needs-to-change-with-the-mobile-version-of-the-portfolio-website) Trello card.
 		- [ ] [What needs to change with the tablet version of the Portfolio Website](https://trello.com/c/viKpMCuc/559-what-needs-to-change-with-the-tablet-version-of-the-portfolio-website) Trello card.
 		- [ ] [What needs to change with the desktop version of the Portfolio Website](https://trello.com/c/d10h6NWq/558-what-needs-to-change-with-the-desktop-version-of-the-portfolio-website) Trello card.
+		- [X] [Style the project_divs](https://trello.com/c/kgiNSde6/555-style-the-projectdivs) Trello card.
 	- [X] ~~[Obtain wireframe app](https://trello.com/c/ogulw2aZ/492-obtain-wireframe-app?menu=filter&filter=due:incomplete) Trello card.~~
 
 - [ ] Build the site.
 	- [ ] [consider replacing section tag with article tag for my portfolio website](https://trello.com/c/ARthlAv7/554-consider-replacing-section-tag-with-article-tag-for-my-portfolio-website) Trello card.
+	- [ ] [Modify devsatrtp image in Portfolio Website](https://trello.com/c/865I1iOD/565-modify-devsatrtp-image-in-portfolio-website) Trello card.
 	- [ ] [Style buttons for my portfolio website](https://trello.com/c/Fny58qFO/538-style-buttons-for-my-portfolio-website) Trello card.
+	- [ ] [Style Links](https://trello.com/c/AsOQKQjI/562-style-links-and) Trello card.
 	- [ ] [Implement smooth navigation](https://trello.com/c/rjsuhabM/539-implement-smooth-navigation) Trello card.
 	- [ ] [Design the basic architecture](https://trello.com/c/CyUFSwY3/522-design-the-basic-architecture) Trello card.
 	- [ ] [Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card.
