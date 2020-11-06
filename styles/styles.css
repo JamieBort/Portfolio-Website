@@ -1,3 +1,5 @@
+/* This is the Revamp2020 branch. */
+
 /* DESKTOP                         */
 /* Home Page                       */
 
@@ -344,6 +346,33 @@ footer {
 .resource_title {
     text-align: center;
 }
+
+
+/* ***************************************** */
+/* styles below for contact_form_style.html  */
+/* ***************************************** */
+form{
+    width: 75%;
+    margin: 0 auto;
+    /* background: lightpink; */
+}
+#one{
+
+    background: lightpink;
+}
+textarea{
+    width: 100%;
+    min-height: 100px;
+    /* background: lightpink; */
+}
+button{
+    /* width: 800px; */
+    width: 100%;
+    height: 30px;
+}
+/* ***************************************** */
+/* styles above for contact_form_style.html  */
+/* ***************************************** */
 
 
 
