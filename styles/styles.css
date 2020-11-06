@@ -1,6 +1,7 @@
 /* This is the Revamp2020 branch. */
 
 /* DESKTOP                         */
+
 /* Home Page                       */
 
 html * {
@@ -26,7 +27,6 @@ header, footer {
     /* font-size: 30px; */
 }
 
-
 main {
     flex: 1;
     overflow: auto;
@@ -44,9 +44,10 @@ main {
     text-align: center;
 }
 
+/* Header Desktop                  */
 
 /* Header Desktop                  */
-/* Header Desktop                  */
+
 nav {
     border-bottom: 1px solid red;
     display: flex;
@@ -74,10 +75,11 @@ nav {
 .head_a {
     text-decoration: none;
     font-size: 30px;
-    margin:0 8px;
+    margin: 0 8px;
 }
 
 /* Bio section Desktop             */
+
 /* Bio section Desktop             */
 
 #bio {
@@ -91,15 +93,15 @@ nav {
     margin: 0 auto;
 }
 
-#devs_img{
-width: 5%;
-/* background: lightblue; */
+#devs_img {
+    width: 5%;
+    /* background: lightblue; */
 }
 
-#point_down{
+#point_down {
     width: 50px;
     /* background: green; */
-    background-color: transparent; 
+    background-color: transparent;
     /* background-color: green;   */
 }
 
@@ -141,117 +143,123 @@ table {
 }
 
 /* Projects section Desktop        */
+
 /* Projects section Desktop        */
 
-.list_div{
+.list_div {
     /* 	border: 1px blue solid;	 */
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:space-around;
-        padding:6px;
-    }
-    .projects_tech{
-        list-style:none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 6px;
+}
+
+.projects_tech {
+    list-style: none;
     /* 	margin:6px; */
     /* 	border: 1px red solid;	 */
-    }
-    .bottom_div{
-        display: flex;
-        justify-content: space-around;
-    	/* border: 1px purple solid; */
+}
+
+.bottom_div {
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px purple solid; */
     /* 	height:150px; */
-    }
-    /* .anchor_div{ */
-        .img_div{
+}
+
+/* .anchor_div{ */
+
+.img_div {
     /* 	width: 55%; */
     /* 	border: 1px blue solid; */
-        text-align: center;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
-    #projects_section_div {
-        /* background: lightsteelblue; */
-        /* border: .1em black solid; */
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    
-    .projects_div {
-        /* background: lightskyblue; */
-        border: .05em black solid;
-        border-radius: 1em;
-        max-width: 300px;
-        margin: .5em;
-        padding: .5em;
-        /* for background image */
-        position: relative;
-        text-align: center;
-        /* color: white; */
-    }
-    
+#projects_section_div {
+    /* background: lightsteelblue; */
+    /* border: .1em black solid; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projects_div {
+    /* background: lightskyblue; */
+    border: .05em black solid;
+    border-radius: 1em;
+    max-width: 300px;
+    margin: .5em;
+    padding: .5em;
     /* for background image */
-    
-    .projects_background_img {
-        /* max-width: 70%;
+    position: relative;
+    text-align: center;
+    /* color: white; */
+}
+
+/* for background image */
+
+.projects_background_img {
+    /* max-width: 70%;
         height: 300px; */
-        /* min-height: 95%; */
-        /* height:auto; */
-        /* width: 50%; */
-        /* height: auto; */
-    }
-    
-    .subtitle {
-        text-align: center;
-    }
-    
-    /* for background image */
-    
-    /* .background_img_div {
+    /* min-height: 95%; */
+    /* height:auto; */
+    /* width: 50%; */
+    /* height: auto; */
+}
+
+.subtitle {
+    text-align: center;
+}
+
+/* for background image */
+
+/* .background_img_div {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     } */
-    
-    .projects_button {
-        /* margin: 0 10px; */
-        /* background-color: lightblue; */
-        /* border: none; */
-        background-color: transparent;
-    }
-    
-    .projects_a {
-        text-decoration: none;
-        /* background-color: transparent; */
-        /* font-size: 30px; */
-        /* background-color: pink; */
-        /* border: 1px solid red; */
-        /* margin: 3 px; */
-    }
-    
-    .projects_img {
-        max-width: 50%;
-    }
-    
-    .responsive_img {
-        max-width: 75px;
-        /* background-color: transparent; */
-        /* background-color: lightpink; */
-        /* background: lightskyblue; */
-    }
-    
-    /* button {
+
+.projects_button {
+    /* margin: 0 10px; */
+    /* background-color: lightblue; */
+    /* border: none; */
+    background-color: transparent;
+}
+
+.projects_a {
+    text-decoration: none;
+    /* background-color: transparent; */
+    /* font-size: 30px; */
+    /* background-color: pink; */
+    /* border: 1px solid red; */
+    /* margin: 3 px; */
+}
+
+.projects_img {
+    max-width: 50%;
+}
+
+.responsive_img {
+    max-width: 75px;
+    /* background-color: transparent; */
+    /* background-color: lightpink; */
+    /* background: lightskyblue; */
+}
+
+/* button {
         margin: 0 10px;
         background-color: transparent;
         border: none;
     } */
 
+/* Connect With Me section Desktop */
 
 /* Connect With Me section Desktop */
-/* Connect With Me section Desktop */
+
 #connect_with_me {
     height: 300px;
 }
@@ -272,10 +280,8 @@ table {
 
 .connect_with_me_button {
     /* background-color: lightblue; */
-    
     /* width: 200px;
     height: 200px; */
-    
     /* max-width: 100px;
     width: auto; */
 }
@@ -294,9 +300,10 @@ table {
     /* background-color: pink; */
 }
 
+/* Footer Desktop                  */
 
 /* Footer Desktop                  */
-/* Footer Desktop                  */
+
 footer {
     /* max-height: 10px; */
     display: flex;
@@ -312,6 +319,7 @@ footer {
 }
 
 /* For the site is under construction image */
+
 #construction_div {
     /* border: 1px solid black; */
     margin: 0 auto;
@@ -326,8 +334,6 @@ footer {
     /* border: 1px solid blue; */
     margin: 0 auto;
 }
-
-
 
 /* Resources Page                       */
 
@@ -347,48 +353,66 @@ footer {
     text-align: center;
 }
 
+/* ***************************************** */
+
+/* styles below for contact_form_style.html  */
 
 /* ***************************************** */
-/* styles below for contact_form_style.html  */
-/* ***************************************** */
-form{
+
+form {
     width: 75%;
     margin: 0 auto;
     /* background: lightpink; */
 }
-#one{
 
-    background: lightpink;
+#one {
+    /* background: lightpink; */
 }
-textarea{
+
+#form_input_div {
+    display: flex;
+    justify-content: space-around;
+    /* background: lightblue; */
+}
+
+textarea {
     width: 100%;
     min-height: 100px;
     /* background: lightpink; */
 }
-button{
+
+button {
     /* width: 800px; */
     width: 100%;
     height: 30px;
 }
+
 /* ***************************************** */
+
 /* styles above for contact_form_style.html  */
+
 /* ***************************************** */
-
-
-
-
-
 
 /* TABLET                          */
+
 /* Header Tablet                   */
+
 /* Bio section Tablet              */
+
 /* Projects section Tablet         */
+
 /* Connect With Me section Tablet  */
+
 /* Footer Tablet                   */
 
 /* MOBILE                          */
+
 /* Header Mobile                   */
+
 /* Bio section Mobile              */
+
 /* Projects section Mobile         */
+
 /* Connect With Me section Mobile  */
+
 /* Footer Mobile                   */
