@@ -24,25 +24,35 @@
                 <h2 class="section_title">I'll respond as soon as possible.</h2>
                 <div id="contact_me_section_div" class="section_div_not_used">
 
-                    <form class="" method="POST" data-email="" action="https://script.google.com/macros/s/AKfycbyIUl5VQYWaAsoUvj8PxEQadRjpiZYCXxzUQyTn/exec">
-                        <!-- <div id="one"> -->
-                        <div id="form_input_div">
-                            <div id="form_left_div" class="form_inner_div">
-                                <label for="">Your name:</label>
-                                <input id="" name="" placeholder="Your name" />
+                    <form class="gform pure-form pure-form-stacked" method="POST" data-email=""
+                        action="https://script.google.com/macros/s/AKfycbyIUl5VQYWaAsoUvj8PxEQadRjpiZYCXxzUQyTn/exec">
+                        <div class="form-elements">
+                            <div id="form_input_div">
+                            <!-- <div id="form_input_div"> -->
+                                <div id="form_left_div" class="form_inner_div">
+                                    <label for="name">Your name:</label>
+                                    <input id="" name="name" placeholder="Your name" />
+                                </div>
+                                <div id="form_right_div" class="form_inner_div">
+                                    <label for="email">Your email address:</label>
+                                    <input id="" name="email" type="email" value="" required
+                                        placeholder="Your email address">
+                                </div>
                             </div>
-                            <div id="form_right_div" class="form_inner_div">
-                                <label for="">Your email address:</label>
-                                <input id="" name="" type="" value="" required placeholder="Your email address">
-                            </div>
+                            <!-- <label for="">Your message</label> -->
+                            <textarea id="" name="message" placeholder="Type your message here."></textarea>
+                            <button>Submit</button>
+                            <!-- </div> -->
+                            <!-- Customise the Thankyou Message People See when they submit the form: -->
+                            <!-- <div class="thankyou_message" style="display:none;">
+                            <h2>Thank you for contacting us! We will get back to you soon!</h2> -->
                         </div>
-                        <!-- <label for="">Your message</label> -->
-                        <textarea id="" name="" placeholder="Type your message here."></textarea>
-                        <button>Submit</button>
-                        <!-- </div> -->
+
+
                         <!-- Customise the Thankyou Message People See when they submit the form: -->
                         <div class="thankyou_message" style="display:none;">
-                            <h2>Thank you for contacting us! We will get back to you soon!</h2>
+                            <h2><em>Thanks</em> for contacting us!
+                                We will get back to you soon!</h2>
                         </div>
                     </form>
 
@@ -51,6 +61,7 @@
         </main>
         <footer-web-component></footer-web-component>
     </div>
+    <script data-cfasync="false" type="text/javascript" src="../js/form-submission-handler.js"></script>
     <script src="../js/web_components.js"></script>
 </body>
 
