@@ -44,6 +44,21 @@ main {
     text-align: center;
 }
 
+.section_div_not_used {
+    /* background: silver;
+    max-width: 90%;
+    margin: 0 auto; */
+    /* text-align: center; */
+}
+
+.p_div {
+    /* background: salmon; */
+    max-width: 85%;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+
 /* Header Desktop                  */
 
 /* Header Desktop                  */
@@ -89,7 +104,7 @@ nav {
 #bio_section_div {
     /* background: silver; */
     /* text-align: center; */
-    max-width: 90%;
+    /* max-width: 90%; */
     margin: 0 auto;
 }
 
@@ -105,7 +120,7 @@ nav {
     /* background-color: green;   */
 }
 
-#skills_viewing_options{
+#skills_viewing_options {
     display: flex;
     justify-content: space-around;
     /* background-color: green;   */
@@ -270,33 +285,20 @@ table {
     height: 300px;
 }
 
-/* .connect_with_me_button, .head_button {
-    margin: 0 10px;
-    background-color: transparent;
-    border: none;
-} */
-
-#connect_with_me_section_div {
+#connect_with_me_div {
     /* background-color: lightsalmon; */
     display: flex;
     justify-content: space-around;
+margin-top: 40px;
+
+    /* height: 100%; */
     /* max-width: 100px;
     width: auto; */
-}
 
-.connect_with_me_button {
-    /* background-color: lightblue; */
-    /* width: 200px;
-    height: 200px; */
-    /* max-width: 100px;
-    width: auto; */
-}
-
-.connect_with_me_a {
     /* background-color: lightseagreen; */
-    background: lightseagreen;
-    width: 100px;
-    height: 100px;
+    /* background: lightseagreen; */
+    /* width: 100px;
+    height: 100px; */
 }
 
 .connect_with_me_img {
@@ -394,7 +396,7 @@ button {
     height: 30px;
 }
 
-.thankyou_message{
+.thankyou_message {
     text-align: center;
     /* background: lightpink; */
 }
