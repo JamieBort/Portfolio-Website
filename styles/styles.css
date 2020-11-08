@@ -105,6 +105,12 @@ nav {
     /* background-color: green;   */
 }
 
+#skills_viewing_options{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: green;   */
+}
+
 /* The following is for the table */
 
 table tbody tr td {
