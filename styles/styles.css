@@ -109,7 +109,7 @@ nav {
 }
 
 #devs_img {
-    width: 5%;
+    width: 5.5%;
     /* background: lightblue; */
 }
 
@@ -157,6 +157,8 @@ table {
     /* the above from: https://stackoverflow.com/a/16848343/8210460
     and from: http://jsfiddle.net/ezific/43ZkH/ */
     /* ********************************************************* */
+    border-radius: 1em;
+    padding: 1em;
 }
 
 .table_div {
