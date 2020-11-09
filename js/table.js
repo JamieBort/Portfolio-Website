@@ -625,7 +625,7 @@ objectCountFunction = (object) => {
                     
                     '<td>ES6</td>'+
                     '<td>Express.js</td>'+
-                    '<th></th>'+
+                    '<td></td>'+
                     '<td>Matlab</td>'+
                     '<td>Agile</td>'+
                 '</tr>'+

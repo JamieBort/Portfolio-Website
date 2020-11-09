@@ -16,11 +16,15 @@ class Header extends HTMLElement {
                         `+
                 // below is commented out because the Resources is not ready to show to the public.
                 // <a class="head_a"  href="./resources.html">Resources</a>
+
                 // below is commented out because the Fun Stuff is not ready to show to the public.
                 // <a class="head_a"  href="./fun_stuff.html">Fun Stuff</a>
                 
                 // below is commented out because the Resume page is not ready to show to the public.
                 // <a class="head_a"  href="./resume.html">Resume </a>
+
+                // below is commented out because the Talks page is not ready to show to the public.
+                // <a class="head_a"  href="./talks.html">Resume </a>
                 `
                    <a class="head_a"  href="./index.html#connect_with_me">Connect with me</a>
                 </div>
