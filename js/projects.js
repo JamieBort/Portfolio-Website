@@ -2,7 +2,7 @@ const projects = {
     "portfolio_website": {
         "div_id": "portfolio_website_div",
         "title": "This Portfolio Website",
-        "description": "This may be a little bit meta. But I am learning new skills while building this site. So I wanted to show them off. I chose not to use any JavaScript framwork and (few?) libraries to highlight and flex my vanillia JavaScript skills.",
+        "description": "This may be a little bit meta. But I am learning new skills while building this site. So I wanted to show them off. I chose not to use any JavaScript framework and (few?) libraries to highlight and flex my vanilla JavaScript skills.",
         "tech": ["CSS", "HTML", "JavaScript"],
         "project_anchor_text": "Portfolio Website Static Site",
         "project_anchor_href": "./index.html#title",
