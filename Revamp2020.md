@@ -56,6 +56,8 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 
 - [ ] [How to look at websites or apps I am developing on my phone before they are live](https://trello.com/c/svOMzdnt/535-how-to-look-at-websites-or-apps-i-am-developing-on-my-phone-before-they-are-live) Trello card.
 
+- [ ] [Look into dev tools for mobile](https://trello.com/c/WmVM46ii/575-look-into-dev-tools-for-mobile) Trello card.
+
 - [ ] [Practice seo search engine optimization for my portfolio website](https://trello.com/c/7h8xq1Qs/529-practice-seo-search-engine-optimization-for-my-portfolio-website) Trello card.
 
 - [ ] [Redirect my other domains to jamiebort.github.io](https://trello.com/c/Q7faEc6N/527-redirect-my-other-domains-to-jamiebortgithubio) Trello card.

@@ -7,7 +7,9 @@
 html * {
     /* font-size: 1em !important; */
     /* color: #000 !important; */
-    font-family: Garamond !important;
+    /* font-family: Garamond !important; */
+    /* font-family: Quattrocento; */
+    font-family: 'Quattrocento', serif;
     scroll-behavior: smooth;
 }
 
@@ -336,7 +338,8 @@ footer {
     margin: 0 auto;
     max-width: 50%;
     text-align: center;
-}
+    /* display: inline; */
+    }
 
 #construction {
     display: block;
