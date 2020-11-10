@@ -5,8 +5,9 @@ class Header extends HTMLElement {
         <header>
             <nav>
                 <div id="left">
-                    <a class="head_a" href="../html/index.html#title">Jamie Bort</a>
+                    <a class="head_a" href="./index.html#title">Jamie Bort</a>
                     `
+                    // <a class="head_a" href="../html/index.html#title">Jamie Bort</a>
                   //  <a class="head_a" href="../docs/index.html#title">Jamie Bort</a>
                 +`
                     </div>
