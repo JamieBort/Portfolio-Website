@@ -4,11 +4,12 @@ class Header extends HTMLElement {
         this.innerHTML = `
         <header>
             <nav>
-                <div id="left">`
-                    // <a class="head_a" href="../html/index.html#title">Jamie Bort</a>
-                    +`
-                    <a class="head_a" href="../docs/index.html#title">Jamie Bort</a>
-                </div>
+                <div id="left">
+                    <a class="head_a" href="../html/index.html#title">Jamie Bort</a>
+                    `
+                  //  <a class="head_a" href="../docs/index.html#title">Jamie Bort</a>
+                +`
+                    </div>
                 <div id="right">
                     <a class="head_a"  href="./index.html#bio">Bio</a>
     `            // below is commented out because the Blog is not ready to show to the public.
