@@ -70,7 +70,7 @@ nav {
 }
 
 #left, #right {
-    height: 50px;
+    height: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,8 +89,8 @@ nav {
 
 .head_a {
     text-decoration: none;
-    font-size: 30px;
-    margin: 0 8px;
+    font-size: 2em;
+    margin: 0 .5em;
 }
 
 /* Bio section Desktop             */
@@ -113,12 +113,11 @@ nav {
     /* background: lightblue; */
 }
 
-#point_down {
-    width: 50px;
-    /* background: green; */
+/* not used any more */
+/* #point_down {
+    width: 3em;
     background-color: transparent;
-    /* background-color: green;   */
-}
+} */
 
 #skills_viewing_options {
     display: flex;
@@ -131,7 +130,7 @@ nav {
 table tbody tr td {
     border: 1px solid black;
     /* border-collapse: collapse; */
-    /* border-spacing: 0rem; */
+    /* border-spacing: 0em; */
 }
 
 table {
@@ -174,7 +173,7 @@ table {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 6px;
+    padding: 1em;
 }
 
 .projects_tech {
@@ -213,7 +212,7 @@ table {
     /* background: lightskyblue; */
     border: .05em black solid;
     border-radius: 1em;
-    max-width: 300px;
+    max-width: 18em;
     margin: .5em;
     padding: .5em;
     /* for background image */
@@ -267,7 +266,7 @@ table {
 }
 
 .responsive_img {
-    max-width: 75px;
+    max-width: 4em;
     /* background-color: transparent; */
     /* background-color: lightpink; */
     /* background: lightskyblue; */
@@ -282,16 +281,16 @@ table {
 /* Connect With Me section Desktop */
 
 /* Connect With Me section Desktop */
-
+/* NOTE:/TODO: should this #connect_with_me selector be all by itself? rather, should it be removed or should there be a class for all sections?*/
 #connect_with_me {
-    height: 300px;
+    height: 18em;
 }
 
 #connect_with_me_div {
     /* background-color: lightsalmon; */
     display: flex;
     justify-content: space-around;
-margin-top: 40px;
+    margin-top: 3em;
 
     /* height: 100%; */
     /* max-width: 100px;
@@ -304,7 +303,7 @@ margin-top: 40px;
 }
 
 .connect_with_me_img {
-    max-width: 50px;
+    max-width: 3em;
     width: auto;
     /* max-width: 25px; */
     /* background-color: pink; */
@@ -382,20 +381,20 @@ form {
 #form_input_div {
     display: flex;
     justify-content: space-around;
-    margin: 25px 0;
+    margin: 1em 0;
     /* background: lightblue; */
 }
 
 textarea {
     width: 100%;
-    min-height: 100px;
+    min-height: 8em;
     /* background: lightpink; */
 }
 
 button {
     /* width: 800px; */
     width: 100%;
-    height: 30px;
+    height: 3em;
 }
 
 .thankyou_message {

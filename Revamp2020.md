@@ -85,11 +85,11 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [ ] [Decide on logo](https://trello.com/c/aBiOmqZd/499-decide-on-logo) Trello card.
 		- [ ] [Decide on fonts](https://trello.com/c/WmfzueWk/498-decide-on-fonts) Trello card.
 		- [ ] [Style the skills section](https://trello.com/c/y03gI5oR/556-style-the-skills-section) Trello card.
-		- [ ] [Be deliberate with the css units for the Portfolio Website project](https://trello.com/c/HVuqs695/563-be-deliberate-with-the-css-units-for-the-portfolio-website-project) Trello card.
 		- [ ] [What needs to change with the mobile version of the Portfolio Website](https://trello.com/c/kBNxrjBe/557-what-needs-to-change-with-the-mobile-version-of-the-portfolio-website) Trello card.
 		- [ ] [What needs to change with the tablet version of the Portfolio Website](https://trello.com/c/viKpMCuc/559-what-needs-to-change-with-the-tablet-version-of-the-portfolio-website) Trello card.
 		- [ ] [What needs to change with the desktop version of the Portfolio Website](https://trello.com/c/d10h6NWq/558-what-needs-to-change-with-the-desktop-version-of-the-portfolio-website) Trello card.
 		- [X] [Style the project_divs](https://trello.com/c/kgiNSde6/555-style-the-projectdivs) Trello card.
+		- [X] [Be deliberate with the css units for the Portfolio Website project](https://trello.com/c/HVuqs695/563-be-deliberate-with-the-css-units-for-the-portfolio-website-project) Trello card.
 	- [X] ~~[Obtain wireframe app](https://trello.com/c/ogulw2aZ/492-obtain-wireframe-app?menu=filter&filter=due:incomplete) Trello card.~~
 
 - [ ] Build the site.
