@@ -109,7 +109,9 @@ nav {
 }
 
 #devs_img {
-    width: 5.5%;
+    /* height: 1em; */
+    height: .75em;
+    /* width: 5.5%; */
     /* background: lightblue; */
 }
 
