@@ -56,8 +56,6 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 
 - [ ] [How to look at websites or apps I am developing on my phone before they are live](https://trello.com/c/svOMzdnt/535-how-to-look-at-websites-or-apps-i-am-developing-on-my-phone-before-they-are-live) Trello card.
 
-- [ ] [Share link for portfolio website with others](https://trello.com/c/D5iXcGcX/531-share-link-for-portfolio-website-with-others) Trello card.
-
 - [ ] [Practice seo search engine optimization for my portfolio website](https://trello.com/c/7h8xq1Qs/529-practice-seo-search-engine-optimization-for-my-portfolio-website) Trello card.
 
 - [ ] [Redirect my other domains to jamiebort.github.io](https://trello.com/c/Q7faEc6N/527-redirect-my-other-domains-to-jamiebortgithubio) Trello card.
@@ -95,7 +93,6 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 - [ ] Build the site.
 	- [ ] [consider replacing section tag with article tag for my portfolio website](https://trello.com/c/ARthlAv7/554-consider-replacing-section-tag-with-article-tag-for-my-portfolio-website) Trello card.
 	- [ ] [Modify devsatrtp image in Portfolio Website](https://trello.com/c/865I1iOD/565-modify-devsatrtp-image-in-portfolio-website) Trello card.
-	- [ ] [Style buttons for my portfolio website](https://trello.com/c/Fny58qFO/538-style-buttons-for-my-portfolio-website) Trello card.
 	- [ ] [Style Links](https://trello.com/c/AsOQKQjI/562-style-links-and) Trello card.
 	- [ ] [Implement smooth navigation](https://trello.com/c/rjsuhabM/539-implement-smooth-navigation) Trello card.
 	- [ ] [Design the basic architecture](https://trello.com/c/CyUFSwY3/522-design-the-basic-architecture) Trello card.
@@ -103,7 +100,8 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	- [ ] [Fix branch issues with portfolio site](https://trello.com/c/PxEFMj5s/374-fix-branch-issues-with-portfolio-site) Trello card.
 	- [ ] Maybe [Rebuild very simple static site using HTML and CSS](https://trello.com/c/FDIB9ePE/163-rebuild-very-simple-static-site-using-html-and-css) Trello card.
 	- [ ] Bug test.
-	- [ ] Add this [github calendar](https://github.com/IonicaBizau/github-calendar) to my portfolio site. [Or somewhere else?] and/or: https://github.com/fullcalendar/fullcalendar
+	- [ ] Add this [github calendar](https://github.com/IonicaBizau/github-calendar) to my portfolio site. [Or somewhere else? and/or:](https://github.com/fullcalendar/fullcalendar)
+	- [ ] [Style buttons for my portfolio website](https://trello.com/c/Fny58qFO/538-style-buttons-for-my-portfolio-website) Trello card. Tabling this one for now. Not necessarily completed. See card. 
 	- [X] ~~[Fix header and footer for my portfolio website](https://trello.com/c/CCtUbXY7/541-fix-header-and-footer-for-my-portfolio-website) Trello card.~~
 	- [X] ~~Remove this [old/20181126](https://github.com/JamieBort/jamiebort.github.io/tree/master/old/20181126) directory.~~
 	
@@ -115,6 +113,8 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 - [X] ~~[edit README files for the portfolio website](https://trello.com/c/ntfMYze3/552-edit-readme-files-for-the-portfolio-website) Trello card.~~
 
 - [X] ~~[remove all button tags on my portfolio website](https://trello.com/c/9mD1AzSI/551-remove-all-button-tags-on-my-portfolio-website) Trello card.~~
+
+- [ ] ~~[Share link for portfolio website with others](https://trello.com/c/D5iXcGcX/531-share-link-for-portfolio-website-with-others) Trello card.~~ Redundant. Replaced with `Give survey for portfolio site`.
 
 ### Types fo Content
 (see the [Explicitly list the content of the portfolio website 202010](https://trello.com/c/adJl19pT/496-explicitly-list-the-content-of-the-portfolio-website-202010) Trello card for content to list in this section.)
