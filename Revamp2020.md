@@ -1,8 +1,7 @@
 # Revamp2020
-This file started as README.md in the `preliminaryExploration` branch.
+## Revamp2020 branch
 
-## ~~preliminaryExploration branch~~
-~~This `preliminaryExploration` branch has since been merged into master.~~ 
+This file started as README.md in the `preliminaryExploration` branch.
 
 To that end, this README file outlines what I plan on doing with my [portfolio website](https://jamiebort.github.io/) as I revamp it.
 
