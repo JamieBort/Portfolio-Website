@@ -1,4 +1,4 @@
-# My Portfolio Website
+# Welcome to the repo for My Portfolio Website
 
 ### Notable Features
 Notable features of this site (that I have created/writen) using 
@@ -12,3 +12,5 @@ This site will have a blog, a resources page, and a fun stuff page. All of wich 
 By a text field and by drop-down menus. One for title. One for date. One for keep subjects (css, debugging, back end, etc.)
 
 This README file will serve as the documentation for future employers. It will be linked to from my portfolio website.
+
+I'll fill this out more as the website progresses.
