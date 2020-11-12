@@ -2,7 +2,7 @@ const projects = {
     "portfolio_website": {
         "div_id": "portfolio_website_div",
         "title": "This Portfolio Website",
-        "description": "This may be a little bit meta. But I am learning new skills while building this site. So I wanted to show them off. I chose not to use any JavaScript framework and (few?) libraries to highlight and flex my vanilla JavaScript skills.",
+        "description": "This may be a little bit meta. But I am learning new skills while building this site. So I wanted to show them off. I chose not to use any JavaScript framework and (few?) libraries to highlight and flex my vanilla JavaScript skills. More detailed information in the README file of the repo,found by selecting the 'Portfolio Website Repo' button below.",
         "tech": ["CSS", "HTML", "JavaScript"],
         "project_anchor_text": "Portfolio Website Static Site",
         "project_anchor_href": "../index.html#title",
@@ -13,7 +13,8 @@ const projects = {
         
         // "backgground_image":"../assets/background_image/download.jpeg", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
         "backgground_image": "../assets/background_image/w-qjCHPZbeXCQ-unsplash.jpg",  // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
-        "project_img": "../assets/Project_images/Portfolio_Website.png",
+        // "project_img": "../assets/Project_images/Portfolio_Website.png",
+        "project_img": "../assets/Project_images/aaa.png",
     },
     "puppy_love": {
         "div_id": "puppy_love_div",
@@ -147,7 +148,8 @@ for (var key in projects) {
 
     var a = document.createElement("a");
     a.className = "projects_a";
-    a.innerHTML = projects[key]["project_anchor_text"];
+    // a.innerHTML = projects[key]["project_anchor_text"];
+    a.innerHTML = "Static Site";
     a.href = projects[key]["project_anchor_href"];
     // div2.appendChild(a); // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
     // div1.appendChild(a);
@@ -155,7 +157,8 @@ for (var key in projects) {
 
     var a = document.createElement("a");
     a.className = "projects_a";
-    a.innerHTML = projects[key]["repo_anchor_text"];
+    // a.innerHTML = projects[key]["repo_anchor_text"];
+    a.innerHTML = "Repo";
     a.href = projects[key]["repo_anchor_href"];
     // div2.appendChild(a); // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
     // div1.appendChild(a);

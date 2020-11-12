@@ -5,12 +5,21 @@
 /* Home Page                       */
 
 html * {
-    /* font-size: 1em !important; */
-    /* color: #000 !important; */
-    /* font-family: Garamond !important; */
-    /* font-family: Quattrocento; */
-    font-family: 'Quattrocento', serif;
     scroll-behavior: smooth;
+}
+
+section{
+    margin:3em 0 0 0;
+}
+
+h1,h2, h3{
+    font-family: 'Quattrocento', serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+p, li{
+    /* font-family: 'Quattrocento', serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
 }
 
 html, body {
@@ -59,7 +68,6 @@ main {
     margin: 0 auto;
     /* text-align: center; */
 }
-
 
 /* Header Desktop                  */
 
@@ -118,6 +126,7 @@ nav {
 }
 
 /* not used any more */
+
 /* #point_down {
     width: 3em;
     background-color: transparent;
@@ -285,7 +294,9 @@ table {
 /* Connect With Me section Desktop */
 
 /* Connect With Me section Desktop */
+
 /* NOTE:/TODO: should this #connect_with_me selector be all by itself? rather, should it be removed or should there be a class for all sections?*/
+
 #connect_with_me {
     height: 18em;
 }
@@ -295,11 +306,9 @@ table {
     display: flex;
     justify-content: space-around;
     margin-top: 3em;
-
     /* height: 100%; */
     /* max-width: 100px;
     width: auto; */
-
     /* background-color: lightseagreen; */
     /* background: lightseagreen; */
     /* width: 100px;
@@ -319,6 +328,7 @@ table {
 
 footer {
     /* max-height: 10px; */
+    min-height: 1.5em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -339,7 +349,7 @@ footer {
     max-width: 50%;
     text-align: center;
     /* display: inline; */
-    }
+}
 
 #construction {
     display: block;
@@ -381,6 +391,10 @@ form {
 
 #one {
     /* background: lightpink; */
+}
+
+#contact_me_section_div{
+    margin: 3em 0 0 0;
 }
 
 #form_input_div {

@@ -1,3 +1,16 @@
+// for head
+class Head extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <link rel="icon" type="image/x-icon" href="../assets/Favicon/favicon-16x16.png" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quattrocento&family=Montserrat&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+    `;
+    }
+}
+
 // for header
 class Header extends HTMLElement {
     connectedCallback() {
@@ -7,30 +20,31 @@ class Header extends HTMLElement {
                 <div id="left">
                     <a class="head_a" href="./index.html#title">Jamie Bort</a>
                     `
-                    // <a class="head_a" href="../html/index.html#title">Jamie Bort</a>
-                  //  <a class="head_a" href="../docs/index.html#title">Jamie Bort</a>
-                +`
+            // <a class="head_a" href="../html/index.html#title">Jamie Bort</a>
+            //  <a class="head_a" href="../docs/index.html#title">Jamie Bort</a>
+            + `
                     </div>
                 <div id="right">
                     <a class="head_a"  href="./index.html#bio">Bio</a>
     `            // below is commented out because the Blog is not ready to show to the public.
-                // <a class="head_a"  href="./blog.html#blog">Blog</a></button>
-                +`
+            // <a class="head_a"  href="./blog.html#blog">Blog</a></button>
+            + `
                     <a class="head_a"  href="./index.html#projects">Projects</a>
                         `+
-                // below is commented out because the Resources is not ready to show to the public.
-                // <a class="head_a"  href="./resources.html">Resources</a>
+            // below is commented out because the Resources is not ready to show to the public.
+            // <a class="head_a"  href="./resources.html">Resources</a>
 
-                // below is commented out because the Fun Stuff is not ready to show to the public.
-                // <a class="head_a"  href="./fun_stuff.html">Fun Stuff</a>
-                
-                // below is commented out because the Resume page is not ready to show to the public.
-                // <a class="head_a"  href="./resume.html">Resume </a>
+            // below is commented out because the Fun Stuff is not ready to show to the public.
+            // <a class="head_a"  href="./fun_stuff.html">Fun Stuff</a>
 
-                // below is commented out because the Talks page is not ready to show to the public.
-                // <a class="head_a"  href="./talks.html">Resume </a>
-                `
+            // below is commented out because the Resume page is not ready to show to the public.
+            // <a class="head_a"  href="./resume.html">Resume </a>
+
+            // below is commented out because the Talks page is not ready to show to the public.
+            // <a class="head_a"  href="./talks.html">Resume </a>
+            `
                    <a class="head_a"  href="./index.html#connect_with_me">Connect with me</a>
+                   <a class="head_a"  href="./resources.html">Resources</a>
                 </div>
             </nav>
         </header>
@@ -63,6 +77,7 @@ class BlogEntry extends HTMLElement {
 }
 
 // last lines
+customElements.define('head-web-component', Head);
 customElements.define('header-web-component', Header);
 customElements.define('footer-web-component', Footer);
 customElements.define('blog-entry-web-component', BlogEntry);
