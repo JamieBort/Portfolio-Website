@@ -181,115 +181,124 @@ table {
 
 /* Projects section Desktop        */
 
-.list_div {
-    /* 	border: 1px blue solid;	 */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 1em;
-}
 
-.projects_tech {
-    list-style: none;
-    /* 	margin:6px; */
-    /* 	border: 1px red solid;	 */
-}
 
-.bottom_div {
-    display: flex;
-    justify-content: space-around;
-    /* border: 1px purple solid; */
-    /* 	height:150px; */
-}
+/* #container{ */
+    #projects{
+        /* border: .1em blue solid; */
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+    }
+    .card_outside_div{
+        border-radius:1em;
+        border: .1em black solid;
+        margin:.3em;
+        text-align:center;
+        max-height:30em;
+    /* 	max-width:20em;
+        min-width:15em; */
+        width:20em;
+        
+        
+        /* body - or any parent wrapper */
+      display: flex;
+      flex-direction: column;
+    /*   min-height: 100vh; */
+          min-height: 20em;
+    }
+    
+    .card_header_div {
+    /* 	border: .1em green solid; */
+    /* 	margin:.1em; */
+        width:100%;
+    /* max-hight:.2em; */
+    }
+    .card_header_img{
+        width:100%;
+        border-radius:1em 1em 0 0;
+        margin:0;
+        padding:0;
+    }
+    .card_body_outside_div{
+        flex: 1;
+        
+        
+    /* 	border: .1em green solid; */
+        margin:.5em auto;
+    /* 	margin-bottom:1em; */
+    /* 	padding:.1em; */
+        width:90%;
+    }
+    
+    .card_body_inside_div{
+    /* 	border: .1em orange solid; */
+        margin:.1em;
+        display:flex;
+        justify-content:space-around;
+    }
+    .card_a_div{
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+    /* 	flex-direction:column; */
+    /* 	border: .1em red solid; */
+        margin:.1em;
+        padding:.1em;
+    }
+    
+    /* .card_a_div a, .card_a_div img{ */
+    .card_a, .card_body_img{
+    /* 	border: .1em orange solid; */
+        margin: .5em;
+    /* 	padding: .5em; */
+        min-width:4em
+    }
+    
+    .card_a{
+    /* 	border: .1em orange solid; */
+        text-decoration:none;
+    /* 	padding:0; */
+        border-bottom: 2px solid green;
+    }
+    .card_footer_div{
+        border-top: .1em black solid;
+        min-height:2em;
+    /* 	max-height:2em; */
+        display:flex;
+        align-items:center;
+    }
+    .card_unordered_list{
+        list-style-type:none;
+    /* 	border: .1em green solid; */
+        margin:0 auto;
+        width:90%;
+        padding:0;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+    
+    .card_list_item{
+    /* 	display:inline; */
+        padding:.1em;
+    /* 	border: .1em red solid; */
+    }
 
-/* .anchor_div{ */
 
-.img_div {
-    /* 	width: 55%; */
-    /* 	border: 1px blue solid; */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
 
-#projects_section_div {
-    /* background: lightsteelblue; */
-    /* border: .1em black solid; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
-.projects_div {
-    /* background: lightskyblue; */
-    border: .05em black solid;
-    border-radius: 1em;
-    max-width: 18em;
-    margin: .5em;
-    padding: .5em;
-    /* for background image */
-    position: relative;
-    text-align: center;
-    /* color: white; */
-}
 
-/* for background image */
 
-.projects_background_img {
-    /* max-width: 70%;
-        height: 300px; */
-    /* min-height: 95%; */
-    /* height:auto; */
-    /* width: 50%; */
-    /* height: auto; */
-}
 
-.subtitle {
-    text-align: center;
-}
+/* 8888888888888888888888888888888888888888888888888888888 */
+/* 8888888888888888888888888888888888888888888888888888888 */
+/* 8888888888888888888888888888888888888888888888888888888 */
 
-/* for background image */
 
-/* .background_img_div {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    } */
 
-.projects_button {
-    /* margin: 0 10px; */
-    /* background-color: lightblue; */
-    /* border: none; */
-    background-color: transparent;
-}
 
-.projects_a {
-    text-decoration: none;
-    /* background-color: transparent; */
-    /* font-size: 30px; */
-    /* background-color: pink; */
-    /* border: 1px solid red; */
-    /* margin: 3 px; */
-}
 
-.projects_img {
-    max-width: 50%;
-}
-
-.responsive_img {
-    max-width: 4em;
-    /* background-color: transparent; */
-    /* background-color: lightpink; */
-    /* background: lightskyblue; */
-}
-
-/* button {
-        margin: 0 10px;
-        background-color: transparent;
-        border: none;
-    } */
 
 /* Connect With Me section Desktop */
 

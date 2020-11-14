@@ -71,105 +71,167 @@ const projects = {
     // },
 }
 
-var project_section = document.getElementById("projects");
+
+
+var project_section = document.getElementById("projects"); // keep this
+// var project_section = document.getElementById("container");
+
 
 var h2 = document.createElement("h2");
 h2.className = "section_title";
 h2.innerHTML = "Some of my projects";
 project_section.appendChild(h2);
 
-var projects_section_div = document.createElement("div");
-projects_section_div.id = "projects_section_div";
-projects_section_div.className = "section_div_not_used";
-project_section.appendChild(projects_section_div);
-
 for (var key in projects) {
-    var div1 = document.createElement("div");
-    div1.className = "projects_div";
-    div1.id = projects[key]["div_id"];
-    projects_section_div.appendChild(div1);
-
-
-    // Note: the below two were created so that  background image could be used behind the text.
-    // var img = document.createElement("img");
-    // img.className = "projects_background_img";
-    // img.src = projects[key]["backgground_image"];
-    // div1.appendChild(img);
-
-    // var div2 = document.createElement("div");
-    // div2.className="background_img_div";
-    // div1.appendChild(div2);
-    // Note: the above two were created so that  background image could be used behind the text.
-
-
-    var img = document.createElement("img");
-    img.className = "projects_img"; // change to project_img?
-    img.src = projects[key]["project_img"];
-    // div2.appendChild(img); // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
-    div1.appendChild(img);
-
-    var h3 = document.createElement("h3");
-    h3.className = "subtitle";
-    h3.innerHTML = projects[key]["title"];
-    // div2.appendChild(h3); // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
-    div1.appendChild(h3);
-
-    var p = document.createElement("p");
-    p.className = "projects_p";
-    p.innerHTML = projects[key]["description"];
-    // div2.appendChild(p); // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
-    div1.appendChild(p);
-
-
-
-    var div3 = document.createElement("div");
-    div3.className = "list_div";
-    div1.appendChild(div3);
-
-    for (var index = 0; index < projects[key]["tech"].length; index++) {
-        // console.log("index: ", projects[key]["tech"][index]);
-        var li = document.createElement("li");
-        li.className = "projects_tech";
-        // li.innerHTML = projects[key]["tech"]; // I need a function to list these items in the array. Rather than simply add the whole array to the paragraph. This causes issues with the resonsiveness when viewing the page on a smaller screen.
-        // div2.appendChild(p); // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
-        li.innerHTML = projects[key]["tech"][index];
-        // div1.appendChild(li);
-        div3.appendChild(li);
-    }
-
-    var div4 = document.createElement("div");
-    div4.className = "bottom_div";
-    div1.appendChild(div4);
-
-    var div5 = document.createElement("div");
-    // div5.className = "anchor_div";
-    div5.className = "img_div";
-    div4.appendChild(div5);
-
-    var a = document.createElement("a");
-    a.className = "projects_a";
-    // a.innerHTML = projects[key]["project_anchor_text"];
-    a.innerHTML = "Static Site";
-    a.href = projects[key]["project_anchor_href"];
-    // div2.appendChild(a); // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
-    // div1.appendChild(a);
-    div5.appendChild(a);
-
-    var a = document.createElement("a");
-    a.className = "projects_a";
-    // a.innerHTML = projects[key]["repo_anchor_text"];
-    a.innerHTML = "Repo";
-    a.href = projects[key]["repo_anchor_href"];
-    // div2.appendChild(a); // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
-    // div1.appendChild(a);
-    div5.appendChild(a);
-
-    var img = document.createElement("img");
-    img.className = "responsive_img";
-    img.src = projects[key]["img_src"];
-    // div2.appendChild(img); // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
-    // div1.appendChild(img);
-
-    div4.appendChild(img);
-
+	var card_outside_div = document.createElement("div");
+	card_outside_div.className = "card_outside_div";
+	project_section.appendChild(card_outside_div);
+	
+	var card_header_div = document.createElement("div");
+	card_header_div.className = "card_header_div";
+	card_outside_div.appendChild(card_header_div);
+	
+	var card_header_img = document.createElement("img");
+	card_header_img.className = "card_header_img";
+	// card_header_img.src = projects[key]["project_img"]; // keep this
+	card_header_img.src = "https://picsum.photos/300/40";
+	card_header_div.appendChild(card_header_img);
+	
+	var card_body_outside_div = document.createElement("div");
+	card_body_outside_div.className = "card_body_outside_div";
+	card_outside_div.appendChild(card_body_outside_div);
+	
+	var card_title = document.createElement("h3");
+	card_title.className="card_title";
+	card_title.innerHTML=projects[key]["title"];
+	card_body_outside_div.appendChild(card_title);
+	
+	var card_paragraph = document.createElement("p");
+	card_paragraph.className="card_paragraph";
+	card_paragraph.innerHTML = projects[key]["description"];
+	card_body_outside_div.appendChild(card_paragraph);
+	
+	var card_body_inside_div = document.createElement("div");
+	card_body_inside_div.className = "card_body_inside_div";
+	card_body_outside_div.appendChild(card_body_inside_div);
+	
+	var card_a_div = document.createElement("div");
+	card_a_div.className = "card_a_div";
+	card_body_inside_div.appendChild(card_a_div);
+	
+	var a = document.createElement("a");
+	a.className="card_a";
+	a.href = "";
+	a.innerHTML = "Static Site";
+	card_a_div.appendChild(a);
+	
+	var card_body_img = document.createElement("img");
+	card_body_img.className="card_body_img";
+	card_body_img.src = "https://picsum.photos/50";
+	card_a_div.appendChild(card_body_img);
+	
+	var a = document.createElement("a");
+	a.className="card_a";
+	a.href = "";
+	a.innerHTML = "Git Repo";
+	card_a_div.appendChild(a);
+	
+	var card_footer_div = document.createElement("div");
+	card_footer_div.className = "card_footer_div";
+	card_outside_div.appendChild(card_footer_div);
+	
+	var card_unordered_list = document.createElement("ul");
+	card_unordered_list.className="card_unordered_list";
+	card_footer_div.appendChild(card_unordered_list);
+	
+// 	cycle through the list of technologies used for this project
+	for (var index = 0; index < projects[key]["tech"].length; index++) {
+		var card_list_item = document.createElement("li");
+		card_list_item.className="card_list_item";
+		card_list_item.innerHTML =  projects[key]["tech"][index];
+		card_unordered_list.appendChild(card_list_item);
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+// var project_section = document.getElementById("projects");
+
+// var h2 = document.createElement("h2");
+// h2.className = "section_title";
+// h2.innerHTML = "Some of my projects";
+// project_section.appendChild(h2);
+
+// var projects_section_div = document.createElement("div");
+// projects_section_div.id = "projects_section_div";
+// projects_section_div.className = "section_div_not_used";
+// project_section.appendChild(projects_section_div);
+
+// for (var key in projects) {
+//     var div1 = document.createElement("div");
+//     div1.className = "projects_div";
+//     div1.id = projects[key]["div_id"];
+//     projects_section_div.appendChild(div1);
+    
+//     var img = document.createElement("img");
+//     img.className = "projects_img"; // change to project_img?
+//     img.src = projects[key]["project_img"];
+//     div1.appendChild(img);
+
+//     var h3 = document.createElement("h3");
+//     h3.className = "subtitle";
+//     h3.innerHTML = projects[key]["title"];
+//     div1.appendChild(h3);
+
+//     var p = document.createElement("p");
+//     p.className = "projects_p";
+//     p.innerHTML = projects[key]["description"];
+//     div1.appendChild(p);
+    
+//     var div3 = document.createElement("div");
+//     div3.className = "list_div";
+//     div1.appendChild(div3);
+
+//     for (var index = 0; index < projects[key]["tech"].length; index++) {
+//         // console.log("index: ", projects[key]["tech"][index]);
+//         var li = document.createElement("li");
+//         li.className = "projects_tech";
+//         li.innerHTML = projects[key]["tech"][index];
+//         div3.appendChild(li);
+//     }
+
+//     var div4 = document.createElement("div");
+//     div4.className = "bottom_div";
+//     div1.appendChild(div4);
+
+//     var div5 = document.createElement("div");
+//     div5.className = "img_div";
+//     div4.appendChild(div5);
+
+//     var a = document.createElement("a");
+//     a.className = "projects_a";
+//     a.innerHTML = "Static Site";
+//     a.href = projects[key]["project_anchor_href"];
+//     div5.appendChild(a);
+
+//     var a = document.createElement("a");
+//     a.className = "projects_a";
+//     a.innerHTML = "Repo";
+//     a.href = projects[key]["repo_anchor_href"];
+//     div5.appendChild(a);
+
+//     var img = document.createElement("img");
+//     img.className = "responsive_img";
+//     img.src = projects[key]["img_src"];
+    
+//     div4.appendChild(img);
+
+// }
