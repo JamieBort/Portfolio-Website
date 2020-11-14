@@ -82,6 +82,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 - [ ] [Wireframe the desktop and mobile layout](https://trello.com/c/3xtKwRIm/491-wireframe-the-desktop-and-mobile-layout-for-portfolio-website) Trello card.
 	- [ ] [Learn how to use Figma](https://trello.com/c/AnQb9Ewl/495-learn-how-to-use-figma) Trello card.
 	- [ ] Figure out aesthetics.
+		- [] [Style the project cards for the portfolio website](https://trello.com/c/U2wEY2Od/579-style-the-project-cards-for-the-portfolio-website) Trello card.
 		- [ ] [Decide on Favicon](https://trello.com/c/cVnMamJ4/578-decide-on-favicon) Trello card.
 		- [ ] [Decide on colors](https://trello.com/c/mXqq3kaO/526-decide-on-colors) Trello card.
 		- [ ] [Decide on logo](https://trello.com/c/aBiOmqZd/499-decide-on-logo) Trello card.
