@@ -3,7 +3,7 @@ const projects = {
         "div_id": "portfolio_website_div",
         "title": "This Portfolio Website",
         "description": "This may be a little bit meta. But I am learning new skills while building this site. So I wanted to show them off. I chose not to use any JavaScript framework and (few?) libraries to highlight and flex my vanilla JavaScript skills. More detailed information in the README file of the repo,found by selecting the 'Portfolio Website Repo' button below.",
-        "tech": ["CSS", "HTML", "JavaScript"],
+        "tech": ["CSS", "HTML", "JavaScript",],
         "project_anchor_text": "Portfolio Website Static Site",
         "project_anchor_href": "../index.html#title",
         "repo_anchor_text": "Portfolio Website Repo",
@@ -14,13 +14,13 @@ const projects = {
         // "backgground_image":"../assets/background_image/download.jpeg", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
         "backgground_image": "../assets/background_image/w-qjCHPZbeXCQ-unsplash.jpg",  // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
         // "project_img": "../assets/Project_images/Portfolio_Website.png",
-        "project_img": "../assets/Project_images/aaa.png",
+        "project_img": "../assets/Project_images/Portfolio_Website2.png",
     },
     "puppy_love": {
         "div_id": "puppy_love_div",
         "title": "Puppy Love",
         "description": "A website incorporating a form and a table using HTML and CSS.",
-        "tech": ["CSS", "HTML", "JavaScript","CSS", "HTML", "JavaScript"],
+        "tech": ["CSS", "HTML", "JavaScript",],
         "project_anchor_text": "Puppy Love Static Site",
         "project_anchor_href": "https://jamiebort.github.io/PuppyLove/",
         "repo_anchor_text": "Puppy Love Repo",
@@ -33,7 +33,7 @@ const projects = {
         "div_id": "iPhysicist_div",
         "title": "iPhysicist",
         "description": "A static page created with HTML and stylized with CSS.",
-        "tech": ["CSS", "HTML", "JavaScript"],
+        "tech": ["CSS", "HTML", "JavaScript",],
         "project_anchor_text": "iPhysicist Static Site",
         "project_anchor_href": "https://jamiebort.github.io/iPhysicist-CSSLayoutFlexbox/",
         "repo_anchor_text": "iPhysicist Repo",
@@ -46,7 +46,7 @@ const projects = {
         "div_id": "form_builder_div",
         "title": "Form Builder",
         "description": "A simple form using HTML, CSS, and JavaScript.",
-        "tech": ["CSS", "HTML", "JavaScript","CSS", "HTML", "JavaScript"],
+        "tech": ["CSS", "HTML", "JavaScript",],
         "project_anchor_text": "Form Builder Static Site",
         "project_anchor_href": "https://jamiebort.github.io/FormBuilder/",
         "repo_anchor_text": "Form Builder Repo",
@@ -56,26 +56,8 @@ const projects = {
         "backgground_image": "../assets/background_image/photo-1579546929518-9e396f3cc809.jpeg", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
         "project_img": "../assets/Project_images/Form_Builder.png",
     },
-    // "portfolio_website_hosted_on_heroku": {
-    //     "div_id": "dummy_div",
-    //     "title": "Portfolio Website on Heroku",
-    //     "description": "A simple form using HTML, CSS, and JavaScript.",
-    //     "tech": ["CSS", "HTML", "JavaScript", "Node"],
-    //     "project_anchor_text": "Portfolio Website on Heroku Static Site",
-    //     "project_anchor_href": "",
-    //     "repo_anchor_text": "Portfolio Website on Heroku Repo",
-    //     "repo_anchor_href": "",
-    //     "img_src": "../assets/responsive_images/multiple/responsive-svgrepo-com.svg",
-    //     "backgground_image": "../assets/background_image/abstract-orange-background-260nw-323746937.webp", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
-    //     "project_img": ".../assets/Project_images/iPhysicist_Large.png",
-    // },
+    // "the_next_project": {},
 }
-
-
-
-
-
-
 
 var project_section = document.getElementById("projects"); 
 
@@ -127,7 +109,9 @@ for (var key in projects) {
 	
 	var a = document.createElement("a");
 	a.className="card_a";
-	a.href = "";
+	a.href = projects[key]["project_anchor_href"];
+    // taget _blank
+    a.target="_blank";
 	a.innerHTML = "Static Site";
 	card_a_div.appendChild(a);
 	
@@ -138,7 +122,9 @@ for (var key in projects) {
 	
 	var a = document.createElement("a");
 	a.className="card_a";
-	a.href = "";
+    a.href = projects[key]["repo_anchor_href"];
+    // taget _blank
+    a.target="_blank";
 	a.innerHTML = "Git Repo";
 	card_a_div.appendChild(a);
 	
