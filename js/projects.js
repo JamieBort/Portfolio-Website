@@ -20,7 +20,7 @@ const projects = {
         "div_id": "puppy_love_div",
         "title": "Puppy Love",
         "description": "A website incorporating a form and a table using HTML and CSS.",
-        "tech": ["CSS", "HTML", "JavaScript"],
+        "tech": ["CSS", "HTML", "JavaScript","CSS", "HTML", "JavaScript"],
         "project_anchor_text": "Puppy Love Static Site",
         "project_anchor_href": "https://jamiebort.github.io/PuppyLove/",
         "repo_anchor_text": "Puppy Love Repo",
@@ -46,7 +46,7 @@ const projects = {
         "div_id": "form_builder_div",
         "title": "Form Builder",
         "description": "A simple form using HTML, CSS, and JavaScript.",
-        "tech": ["CSS", "HTML", "JavaScript"],
+        "tech": ["CSS", "HTML", "JavaScript","CSS", "HTML", "JavaScript"],
         "project_anchor_text": "Form Builder Static Site",
         "project_anchor_href": "https://jamiebort.github.io/FormBuilder/",
         "repo_anchor_text": "Form Builder Repo",
@@ -100,8 +100,7 @@ for (var key in projects) {
 	
 	var card_header_img = document.createElement("img");
 	card_header_img.className = "card_header_img";
-	// card_header_img.src = projects[key]["project_img"]; // keep this
-	card_header_img.src = "https://picsum.photos/300/40";
+	card_header_img.src = projects[key]["project_img"];
 	card_header_div.appendChild(card_header_img);
 	
 	var card_body_outside_div = document.createElement("div");
@@ -134,7 +133,7 @@ for (var key in projects) {
 	
 	var card_body_img = document.createElement("img");
 	card_body_img.className="card_body_img";
-	card_body_img.src = "https://picsum.photos/50";
+    card_body_img.src = projects[key]["img_src"];
 	card_a_div.appendChild(card_body_img);
 	
 	var a = document.createElement("a");
