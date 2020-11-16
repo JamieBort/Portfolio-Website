@@ -73,19 +73,26 @@ const projects = {
 
 
 
-var project_section = document.getElementById("projects"); // keep this
-// var project_section = document.getElementById("container");
 
+
+
+
+var project_section = document.getElementById("projects"); 
 
 var h2 = document.createElement("h2");
 h2.className = "section_title";
 h2.innerHTML = "Some of my projects";
 project_section.appendChild(h2);
 
+var temp_div = document.createElement("div");
+temp_div.className="projects_container";
+project_section.appendChild(temp_div);
+
 for (var key in projects) {
 	var card_outside_div = document.createElement("div");
 	card_outside_div.className = "card_outside_div";
-	project_section.appendChild(card_outside_div);
+	// project_section.appendChild(card_outside_div);
+	temp_div.appendChild(card_outside_div);
 	
 	var card_header_div = document.createElement("div");
 	card_header_div.className = "card_header_div";
@@ -152,6 +159,192 @@ for (var key in projects) {
 		card_unordered_list.appendChild(card_list_item);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+// var project_section = document.getElementById("projects"); 
+
+// var h2 = document.createElement("h2");
+// h2.className = "section_title";
+// h2.innerHTML = "Some of my projects";
+// project_section.appendChild(h2);
+
+// var temp_div = document.createElement("div");
+// temp_div.className="projects_container";
+// project_section.appendChild(temp_div);
+
+// for (var key in projects) {
+// 	var card_outside_div = document.createElement("div");
+// 	card_outside_div.className = "card_outside_div";
+// 	// project_section.appendChild(card_outside_div);
+// 	temp_div.appendChild(card_outside_div);
+	
+// 	var card_header_div = document.createElement("div");
+// 	card_header_div.className = "card_header_div";
+// 	card_outside_div.appendChild(card_header_div);
+	
+// 	var card_header_img = document.createElement("img");
+// 	card_header_img.className = "card_header_img";
+// 	// card_header_img.src = projects[key]["project_img"]; // keep this
+// 	card_header_img.src = "https://picsum.photos/300/40";
+// 	card_header_div.appendChild(card_header_img);
+	
+// 	var card_body_outside_div = document.createElement("div");
+// 	card_body_outside_div.className = "card_body_outside_div";
+// 	card_outside_div.appendChild(card_body_outside_div);
+	
+// 	var card_title = document.createElement("h3");
+// 	card_title.className="card_title";
+// 	card_title.innerHTML=projects[key]["title"];
+// 	card_body_outside_div.appendChild(card_title);
+	
+// 	var card_paragraph = document.createElement("p");
+// 	card_paragraph.className="card_paragraph";
+// 	card_paragraph.innerHTML = projects[key]["description"];
+// 	card_body_outside_div.appendChild(card_paragraph);
+	
+// 	var card_body_inside_div = document.createElement("div");
+// 	card_body_inside_div.className = "card_body_inside_div";
+// 	card_body_outside_div.appendChild(card_body_inside_div);
+	
+// 	var card_a_div = document.createElement("div");
+// 	card_a_div.className = "card_a_div";
+// 	card_body_inside_div.appendChild(card_a_div);
+	
+// 	var a = document.createElement("a");
+// 	a.className="card_a";
+// 	a.href = "";
+// 	a.innerHTML = "Static Site";
+// 	card_a_div.appendChild(a);
+	
+// 	var card_body_img = document.createElement("img");
+// 	card_body_img.className="card_body_img";
+// 	card_body_img.src = "https://picsum.photos/50";
+// 	card_a_div.appendChild(card_body_img);
+	
+// 	var a = document.createElement("a");
+// 	a.className="card_a";
+// 	a.href = "";
+// 	a.innerHTML = "Git Repo";
+// 	card_a_div.appendChild(a);
+	
+// 	var card_footer_div = document.createElement("div");
+// 	card_footer_div.className = "card_footer_div";
+// 	card_outside_div.appendChild(card_footer_div);
+	
+// 	var card_unordered_list = document.createElement("ul");
+// 	card_unordered_list.className="card_unordered_list";
+// 	card_footer_div.appendChild(card_unordered_list);
+	
+// // 	cycle through the list of technologies used for this project
+// 	for (var index = 0; index < projects[key]["tech"].length; index++) {
+// 		var card_list_item = document.createElement("li");
+// 		card_list_item.className="card_list_item";
+// 		card_list_item.innerHTML =  projects[key]["tech"][index];
+// 		card_unordered_list.appendChild(card_list_item);
+// 	}
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var project_section = document.getElementById("projects"); // keep this
+// // var project_section = document.getElementById("container");
+
+
+// var h2 = document.createElement("h2");
+// h2.className = "section_title";
+// h2.innerHTML = "Some of my projects";
+// project_section.appendChild(h2);
+
+// for (var key in projects) {
+// 	var card_outside_div = document.createElement("div");
+// 	card_outside_div.className = "card_outside_div";
+// 	project_section.appendChild(card_outside_div);
+	
+// 	var card_header_div = document.createElement("div");
+// 	card_header_div.className = "card_header_div";
+// 	card_outside_div.appendChild(card_header_div);
+	
+// 	var card_header_img = document.createElement("img");
+// 	card_header_img.className = "card_header_img";
+// 	// card_header_img.src = projects[key]["project_img"]; // keep this
+// 	card_header_img.src = "https://picsum.photos/300/40";
+// 	card_header_div.appendChild(card_header_img);
+	
+// 	var card_body_outside_div = document.createElement("div");
+// 	card_body_outside_div.className = "card_body_outside_div";
+// 	card_outside_div.appendChild(card_body_outside_div);
+	
+// 	var card_title = document.createElement("h3");
+// 	card_title.className="card_title";
+// 	card_title.innerHTML=projects[key]["title"];
+// 	card_body_outside_div.appendChild(card_title);
+	
+// 	var card_paragraph = document.createElement("p");
+// 	card_paragraph.className="card_paragraph";
+// 	card_paragraph.innerHTML = projects[key]["description"];
+// 	card_body_outside_div.appendChild(card_paragraph);
+	
+// 	var card_body_inside_div = document.createElement("div");
+// 	card_body_inside_div.className = "card_body_inside_div";
+// 	card_body_outside_div.appendChild(card_body_inside_div);
+	
+// 	var card_a_div = document.createElement("div");
+// 	card_a_div.className = "card_a_div";
+// 	card_body_inside_div.appendChild(card_a_div);
+	
+// 	var a = document.createElement("a");
+// 	a.className="card_a";
+// 	a.href = "";
+// 	a.innerHTML = "Static Site";
+// 	card_a_div.appendChild(a);
+	
+// 	var card_body_img = document.createElement("img");
+// 	card_body_img.className="card_body_img";
+// 	card_body_img.src = "https://picsum.photos/50";
+// 	card_a_div.appendChild(card_body_img);
+	
+// 	var a = document.createElement("a");
+// 	a.className="card_a";
+// 	a.href = "";
+// 	a.innerHTML = "Git Repo";
+// 	card_a_div.appendChild(a);
+	
+// 	var card_footer_div = document.createElement("div");
+// 	card_footer_div.className = "card_footer_div";
+// 	card_outside_div.appendChild(card_footer_div);
+	
+// 	var card_unordered_list = document.createElement("ul");
+// 	card_unordered_list.className="card_unordered_list";
+// 	card_footer_div.appendChild(card_unordered_list);
+	
+// // 	cycle through the list of technologies used for this project
+// 	for (var index = 0; index < projects[key]["tech"].length; index++) {
+// 		var card_list_item = document.createElement("li");
+// 		card_list_item.className="card_list_item";
+// 		card_list_item.innerHTML =  projects[key]["tech"][index];
+// 		card_unordered_list.appendChild(card_list_item);
+// 	}
+// }
 
 
 
