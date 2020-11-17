@@ -181,6 +181,16 @@ table {
     /* background-color: lightskyblue; */
 }
 
+#icon_div{
+    /* border: .1em blue solid; */
+    margin:3em;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;}
+.fab{
+    font-size: 5em;
+}
+
 /* Projects section Desktop        */
 
 /* Projects section Desktop        */
