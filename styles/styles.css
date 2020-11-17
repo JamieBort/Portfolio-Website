@@ -217,8 +217,9 @@ table {
 }
 
 .card_outside_div{
+    	/* border: .1em green solid; */
     border-radius:1em;
-    margin:.3em;
+    margin:1.5em 0;
     text-align:center;
     /* max-height:30em; */
 	/* max-width:20em; */
@@ -259,7 +260,7 @@ background: #FFFFFF;
 justify-content:space-between;
     
     
-/* 	border: .1em green solid; */
+	/* border: .1em green solid; */
     margin:.5em auto;
 /* 	margin-bottom:1em; */
 /* 	padding:.1em; */
@@ -349,6 +350,47 @@ justify-content:space-between;
     /* width: 100px;
     height: 100px; */
 }
+
+/* editing below */
+#myContainer{
+    /* margin:.1em; */
+    /* border: 1px solid brown; */
+    display: flex;
+    justify-content: center;
+}
+#myContainer span{
+    /* margin:.3em; */
+    /* border: 1px solid red; */
+    width: 100%;
+}
+#span_left {
+    /* margin:.3em; */
+    /* padding: .3em; */
+    /* border: 1px solid chartreuse; */
+    display:flex; 
+    justify-content:flex-end; 
+}
+#span_right {
+    /* margin:.3em; */
+    /* padding: .3em; */
+    /* border: 1px solid black; */
+    display:flex; 
+    justify-content:flex-start; 
+}
+#span_left h3{
+    margin-right:2em;
+    /* border: 1px solid green; */
+    /* display:flex; 
+    justify-content:flex-end;  */
+}
+#span_right h3{
+    margin-left:.3em;
+    /* border: 1px solid blue; */
+    /* display:flex; 
+    justify-content:flex-start;  */
+}
+
+/* editing below */
 
 .connect_with_me_img {
     max-width: 3em;
