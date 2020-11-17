@@ -183,11 +183,13 @@ table {
 
 #icon_div{
     /* border: .1em blue solid; */
-    margin:3em;
+    /* margin:3em; */
     display:flex;
     flex-wrap:wrap;
     justify-content:space-around;}
 .fab{
+    /* border: .1em blue solid; */
+    margin:.3em 1.3em;
     font-size: 5em;
 }
 
