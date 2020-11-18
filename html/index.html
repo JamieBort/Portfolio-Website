@@ -170,14 +170,21 @@
         JamieBort.addEventListener("click", function () {
         // a.addEventListener("click", function () {
             var bio = document.getElementById("bio");
-            
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            bio.className += " active";
+            // this.className += " active";
+        });
 
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                bio.className += " active";
-                    // this.className += " active";
-            
-            });
+        var resources = document.getElementById("resources");
+        resources.addEventListener("click", function () {
+        // a.addEventListener("click", function () {
+            var resources = document.getElementById("resources");
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            bresourcesio.className += " active";
+            // this.className += " active";
+        });
 
     </script>
 </body>

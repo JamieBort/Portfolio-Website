@@ -57,7 +57,7 @@ class Header extends HTMLElement {
             // <a class="head_a"  href="./talks.html">Resume </a>
             `
                    <a class="head_a"  href="./index.html#connect_with_me">Connect with me</a>
-                   <a class="head_a"  href="./resources.html">Resources</a>
+                   <a id="resources" class="head_a"  href="./resources.html">Resources</a>
                 </div>
             </nav>
         </header>
