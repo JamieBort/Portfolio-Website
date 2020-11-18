@@ -13,19 +13,32 @@ class Head extends HTMLElement {
 
 // for header
 class Header extends HTMLElement {
+    // constructor() {
+    //     super();
+    //     var right = document.getElementById("right");
+    //     var a = right.getElementsByClassName("head_a");
+    //     for (var i = 0; i < a.length; i++) {
+    //         a[i].addEventListener("click", function() {
+    //       var current = document.getElementsByClassName("active");
+    //       current[0].className = current[0].className.replace(" active", "");
+    //       this.className += " active";
+    //       });
+    //     }
+    // }
+
     connectedCallback() {
         this.innerHTML = `
         <header>
             <nav>
                 <div id="left">
-                    <a class="head_a" href="./index.html#title">Jamie Bort</a>
+                    <a id="JamieBort" onClick={console.log("click")} class="head_a" href="./index.html#title">Jamie Bort</a>
                     `
             // <a class="head_a" href="../html/index.html#title">Jamie Bort</a>
             //  <a class="head_a" href="../docs/index.html#title">Jamie Bort</a>
             + `
                     </div>
                 <div id="right">
-                    <a class="head_a"  href="./index.html#bio">Bio</a>
+                    <a id="bio" class="head_a active"  href="./index.html#bio">Bio</a>
     `            // below is commented out because the Blog is not ready to show to the public.
             // <a class="head_a"  href="./blog.html#blog">Blog</a></button>
             + `
@@ -51,6 +64,7 @@ class Header extends HTMLElement {
 `;
     }
 }
+
 
 // for footer
 class Footer extends HTMLElement {
