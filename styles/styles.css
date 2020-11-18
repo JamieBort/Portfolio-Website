@@ -111,6 +111,7 @@ nav {
 
 
 /* Style the buttons */
+/* .btn isn't used */
 .btn {
     /* border: none;
     outline: none;
@@ -121,7 +122,15 @@ nav {
   }
   
   /* Style the active class, and buttons on mouse-over */
-  .active, .btn:hover {
+  .active {
+    /* background-color: #666; */
+    background-color: lightslategray;
+    color: white;
+    padding:0 .4em;
+    border-radius: .25em;
+  }
+
+  .head_a:hover {
     /* background-color: #666; */
     background-color: lightgray;
     color: white;

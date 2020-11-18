@@ -13,42 +13,7 @@ class Head extends HTMLElement {
 
 // for header
 class Header extends HTMLElement {
-    // constructor() {
-    //     super();
-        
-
-
-    //     var right = document.getElementById("right");
-    //     var a = right.getElementsByClassName("head_a");
-    //     for (var i = 0; i < a.length; i++) {
-    //         a[i].addEventListener("click", function () {
-    //         var current = document.getElementsByClassName("active");
-    //         current[0].className = current[0].className.replace(" active", "");
-    //         this.className += " active";
-    //     });
-    // }
     
-    // var JamieBort = document.getElementById("JamieBort");
-    // JamieBort.addEventListener("click", function () {
-    //     var bio_link = document.getElementById("bio_link");
-    //     var current = document.getElementsByClassName("active");
-    //     current[0].className = current[0].className.replace(" active", "");
-    //     bio_link.className += " active";
-    // });
-
-
-    // }
-    
-
-    // constructor() {
-    //     super();
-    //     const shadow = this.attachShadow({mode: 'closed'});
-    //     const s = document.createElement('script');
-    //     // s.textContent = 'alert("hello");';
-    //     s.textContent = 'console.log("hello");';
-    //     shadow.appendChild(s);
-    //   }
-
     connectedCallback() {
         this.innerHTML = `
         <header>
