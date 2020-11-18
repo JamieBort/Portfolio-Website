@@ -8,12 +8,8 @@ const projects = {
         "project_anchor_href": "../index.html#title",
         "repo_anchor_text": "Portfolio Website Repo",
         "repo_anchor_href": "https://github.com/JamieBort/jamiebort.github.io",
-        // "img_src": "../assets/responsive_images/multiple/responsive-svgrepo-com.svg",
         "img_src": "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
-        
-        // "backgground_image":"../assets/background_image/download.jpeg", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
         "backgground_image": "../assets/background_image/w-qjCHPZbeXCQ-unsplash.jpg",  // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
-        // "project_img": "../assets/Project_images/Portfolio_Website.png",
         "project_img": "../assets/Project_images/Portfolio_Website2.png",
     },
     "puppy_love": {
@@ -73,7 +69,6 @@ project_section.appendChild(temp_div);
 for (var key in projects) {
 	var card_outside_div = document.createElement("div");
 	card_outside_div.className = "card_outside_div";
-	// project_section.appendChild(card_outside_div);
 	temp_div.appendChild(card_outside_div);
 	
 	var card_header_div = document.createElement("div");
@@ -110,7 +105,6 @@ for (var key in projects) {
 	var a = document.createElement("a");
 	a.className="card_a";
 	a.href = projects[key]["project_anchor_href"];
-    // taget _blank
     a.target="_blank";
 	a.innerHTML = "Static Site";
 	card_a_div.appendChild(a);
@@ -123,7 +117,6 @@ for (var key in projects) {
 	var a = document.createElement("a");
 	a.className="card_a";
     a.href = projects[key]["repo_anchor_href"];
-    // taget _blank
     a.target="_blank";
 	a.innerHTML = "Git Repo";
 	card_a_div.appendChild(a);
