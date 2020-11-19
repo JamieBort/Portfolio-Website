@@ -9,8 +9,7 @@ const projects = {
         "repo_anchor_text": "Portfolio Website Repo",
         "repo_anchor_href": "https://github.com/JamieBort/jamiebort.github.io",
         // "img_src": "../assets/responsive_images/multiple/responsive-svgrepo-com.svg",
-        "img_src": "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
-        
+        "img_src": "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",        
         // "backgground_image":"../assets/background_image/download.jpeg", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
         "backgground_image": "../assets/background_image/w-qjCHPZbeXCQ-unsplash.jpg",  // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
         // "project_img": "../assets/Project_images/Portfolio_Website.png",
@@ -26,6 +25,7 @@ const projects = {
         "repo_anchor_text": "Puppy Love Repo",
         "repo_anchor_href": "https://github.com/JamieBort/PuppyLove",
         "img_src": "../assets/responsive_images/multiple/responsive-svgrepo-com.svg",
+        // "img_src": "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
         "backgground_image": "../assets/background_image/w-qjCHPZbeXCQ-unsplash.jpg", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
         "project_img": "../assets/Project_images/Puppy_Love.png",
     },
@@ -38,7 +38,8 @@ const projects = {
         "project_anchor_href": "https://jamiebort.github.io/iPhysicist-CSSLayoutFlexbox/",
         "repo_anchor_text": "iPhysicist Repo",
         "repo_anchor_href": "https://github.com/JamieBort/iPhysicist-CSSLayoutFlexbox",
-        "img_src": "../assets/responsive_images/multiple/responsive-svgrepo-com.svg",
+        // "img_src": "../assets/responsive_images/multiple/responsive-svgrepo-com.svg",
+        "img_src": "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
         "backgground_image": "../assets/background_image/photo-1579546929518-9e396f3cc809.jpeg", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
         "project_img": "../assets/Project_images/iPhysicist_Small.png",
     },
@@ -51,7 +52,8 @@ const projects = {
         "project_anchor_href": "https://jamiebort.github.io/FormBuilder/",
         "repo_anchor_text": "Form Builder Repo",
         "repo_anchor_href": "https://github.com/JamieBort/FormBuilder",
-        "img_src": "../assets/responsive_images/multiple/responsive-svgrepo-com.svg",
+        // "img_src": "../assets/responsive_images/multiple/responsive-svgrepo-com.svg",
+        "img_src": "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
         // "backgground_image":"../assets/background_image/download (1).jpeg",
         "backgground_image": "../assets/background_image/photo-1579546929518-9e396f3cc809.jpeg", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
         "project_img": "../assets/Project_images/Form_Builder.png",
