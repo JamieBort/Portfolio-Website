@@ -2,9 +2,6 @@
 class Head extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <link rel="icon" type="image/x-icon" href="../assets/Favicon/favicon-16x16.png" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Quattrocento&family=Montserrat&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
     `;
