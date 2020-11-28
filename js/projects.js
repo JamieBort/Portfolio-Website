@@ -1,17 +1,26 @@
-const projects = {
+const projects =  {
+    "robot_employee_database":{
+        "div_id": "robot_employee_database_div",
+        "title": "Robot Employee Database",
+        "description": "Using Express and Express-Mustache to populate cards from a json file. If the employee doesn't have a job, the card says 'Available to hire.'",
+        "tech": ["JavaScript", "HTML", "CSS", "Heroku"],
+        "project_anchor_href": "https://vast-island-13423.herokuapp.com/",
+        "repo_anchor_href": "https://github.com/JamieBort/CreateAUserdirectory",
+        "img_src": "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
+        "project_img": "https://robohash.org/blanditiisexercitationemquaerat.png?size=150x150&set=set1",
+    },
     "portfolio_website": {
         "div_id": "portfolio_website_div",
         "title": "This Portfolio Website",
         "description": "This may be a little bit meta. But I am learning new skills while building this site. So I wanted to show them off. I chose not to use any JavaScript framework and (few?) libraries to highlight and flex my vanilla JavaScript skills. More detailed information in the README file of the repo,found by selecting the 'Portfolio Website Repo' button below.",
         "tech": ["CSS", "HTML", "JavaScript",],
-        "project_anchor_text": "Portfolio Website Static Site",
+        // "project_anchor_text": "Portfolio Website Static Site",
         "project_anchor_href": "../index.html#title",
-        "repo_anchor_text": "Portfolio Website Repo",
+        // "repo_anchor_text": "Portfolio Website Repo",
         "repo_anchor_href": "https://github.com/JamieBort/jamiebort.github.io",
         // "img_src": "../assets/responsive_images/multiple/responsive-svgrepo-com.svg",
-        "img_src": "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",        
-        // "backgground_image":"../assets/background_image/download.jpeg", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
-        "backgground_image": "../assets/background_image/w-qjCHPZbeXCQ-unsplash.jpg",  // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
+        "img_src": "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
+        // "backgground_image": "../assets/background_image/w-qjCHPZbeXCQ-unsplash.jpg",  // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
         // "project_img": "../assets/Project_images/Portfolio_Website.png",
         "project_img": "../assets/Project_images/Portfolio_Website2.png",
     },
@@ -20,13 +29,13 @@ const projects = {
         "title": "Puppy Love",
         "description": "A website incorporating a form and a table using HTML and CSS.",
         "tech": ["CSS", "HTML", "JavaScript",],
-        "project_anchor_text": "Puppy Love Static Site",
+        // "project_anchor_text": "Puppy Love Static Site",
         "project_anchor_href": "https://jamiebort.github.io/PuppyLove/",
-        "repo_anchor_text": "Puppy Love Repo",
+        // "repo_anchor_text": "Puppy Love Repo",
         "repo_anchor_href": "https://github.com/JamieBort/PuppyLove",
         "img_src": "../assets/responsive_images/multiple/responsive-svgrepo-com.svg",
         // "img_src": "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
-        "backgground_image": "../assets/background_image/w-qjCHPZbeXCQ-unsplash.jpg", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
+        // "backgground_image": "../assets/background_image/w-qjCHPZbeXCQ-unsplash.jpg", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
         "project_img": "../assets/Project_images/Puppy_Love.png",
     },
     "iPhysicist": {
@@ -34,13 +43,13 @@ const projects = {
         "title": "iPhysicist",
         "description": "A static page created with HTML and stylized with CSS.",
         "tech": ["CSS", "HTML", "JavaScript",],
-        "project_anchor_text": "iPhysicist Static Site",
+        // "project_anchor_text": "iPhysicist Static Site",
         "project_anchor_href": "https://jamiebort.github.io/iPhysicist-CSSLayoutFlexbox/",
-        "repo_anchor_text": "iPhysicist Repo",
+        // "repo_anchor_text": "iPhysicist Repo",
         "repo_anchor_href": "https://github.com/JamieBort/iPhysicist-CSSLayoutFlexbox",
         // "img_src": "../assets/responsive_images/multiple/responsive-svgrepo-com.svg",
         "img_src": "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
-        "backgground_image": "../assets/background_image/photo-1579546929518-9e396f3cc809.jpeg", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
+        // "backgground_image": "../assets/background_image/photo-1579546929518-9e396f3cc809.jpeg", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
         "project_img": "../assets/Project_images/iPhysicist_Small.png",
     },
     "form_builder": {
@@ -48,14 +57,13 @@ const projects = {
         "title": "Form Builder",
         "description": "A simple form using HTML, CSS, and JavaScript.",
         "tech": ["CSS", "HTML", "JavaScript",],
-        "project_anchor_text": "Form Builder Static Site",
+        // "project_anchor_text": "Form Builder Static Site",
         "project_anchor_href": "https://jamiebort.github.io/FormBuilder/",
-        "repo_anchor_text": "Form Builder Repo",
+        // "repo_anchor_text": "Form Builder Repo",
         "repo_anchor_href": "https://github.com/JamieBort/FormBuilder",
         // "img_src": "../assets/responsive_images/multiple/responsive-svgrepo-com.svg",
         "img_src": "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
-        // "backgground_image":"../assets/background_image/download (1).jpeg",
-        "backgground_image": "../assets/background_image/photo-1579546929518-9e396f3cc809.jpeg", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
+        // "backgground_image": "../assets/background_image/photo-1579546929518-9e396f3cc809.jpeg", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
         "project_img": "../assets/Project_images/Form_Builder.png",
     },
     // "the_next_project": {},
