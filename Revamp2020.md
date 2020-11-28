@@ -5,7 +5,9 @@ This file started as README.md in the `preliminaryExploration` branch.
 
 To that end, this README file outlines what I plan on doing with my [portfolio website](https://jamiebort.github.io/) as I revamp it.
 
-Note: The index.php and the composer.json files were created solely for the purpose of deploying to Heroku. I used this tutorial to do so: https://medium.com/@winnieliang/how-to-run-a-simple-html-css-javascript-application-on-heroku-4e664c541b0b 
+**Note:** 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The `index.php` and the `composer.json` files were created solely for the purpose of deploying to Heroku. 
+&nbsp;&nbsp;&nbsp;I used this [How to Run a Simple HTML/CSS/Javascript Application on Heroku](https://medium.com/@winnieliang/how-to-run-a-simple-html-css-javascript-application-on-heroku-4e664c541b0b) Medium tutorial by [Winnie Liang](https://medium.com/@winnieliang).
 
 ### Business Requirements
 
@@ -87,6 +89,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [ ] [Decide on colors](https://trello.com/c/mXqq3kaO/526-decide-on-colors) Trello card.
 		- [ ] [Decide on logo](https://trello.com/c/aBiOmqZd/499-decide-on-logo) Trello card.
 		- [ ] [Decide on fonts](https://trello.com/c/WmfzueWk/498-decide-on-fonts) Trello card.
+		- [ ] [Find source for all the logos that I need for portfolio website](https://trello.com/c/3pgamqFg/589-list-of-logos-needed-for-portfolio-website) Trello card.
 		- [ ] [Style the skills section](https://trello.com/c/y03gI5oR/556-style-the-skills-section) Trello card.
 		- [ ] [What needs to change with the mobile version of the Portfolio Website](https://trello.com/c/kBNxrjBe/557-what-needs-to-change-with-the-mobile-version-of-the-portfolio-website) Trello card.
 		- [ ] [What needs to change with the tablet version of the Portfolio Website](https://trello.com/c/viKpMCuc/559-what-needs-to-change-with-the-tablet-version-of-the-portfolio-website) Trello card.
@@ -97,8 +100,10 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 
 - [ ] Build the site.
 	- [ ] [consider replacing section tag with article tag for my portfolio website](https://trello.com/c/ARthlAv7/554-consider-replacing-section-tag-with-article-tag-for-my-portfolio-website) Trello card.
+	- [ ] [Polish this Create a User Directory project](https://trello.com/c/J21B72Na/591-polish-this-create-a-user-directory-project) Trello card.
 	- [ ] [Modify devsatrtp image in Portfolio Website](https://trello.com/c/865I1iOD/565-modify-devsatrtp-image-in-portfolio-website) Trello card.
 	- [ ] [Have the description in the project cards dynamically update from the github repo](https://trello.com/c/qcwpK1Gd/586-have-the-description-in-the-project-cards-dynamically-update-from-the-github-repo) Trello card.
+	- [ ] [Have the tech in the project cards dynamically update from the github repo](https://trello.com/c/qoEQZkfH/588-have-the-tech-in-the-project-cards-dynamically-update-from-the-github-repo) Trello card.
 	- [ ] [Style Links](https://trello.com/c/AsOQKQjI/562-style-links-and) Trello card.
 	- [ ] [Implement smooth navigation](https://trello.com/c/rjsuhabM/539-implement-smooth-navigation) Trello card.
 	- [ ] [Design the basic architecture](https://trello.com/c/CyUFSwY3/522-design-the-basic-architecture) Trello card.
