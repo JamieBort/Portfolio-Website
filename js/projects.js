@@ -19,6 +19,16 @@ const projects =  {
         "img_src": "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
         "project_img": "../assets/Project_images/customerdatabase/CustomerDatabase.png",
     },
+    "create_a_site_with_login":{
+        "div_id": "create_a_site_with_login_div",
+        "title": "Create A Site With Login",
+        "description": "Implementation of Node.js packages; specifically validating usernames and passwords.",
+        "tech": ["JavaScript", "HTML", "CSS"],
+        "project_anchor_href": "https://jamiebort.github.io/CreateASiteWithALogin/",
+        "repo_anchor_href": "https://github.com/JamieBort/CreateASiteWithALogin",
+        "img_src": "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
+        "project_img": "../assets/Project_images/customerdatabase/CustomerDatabase.png",
+    },
     "portfolio_website": {
         "div_id": "portfolio_website_div",
         "title": "This Portfolio Website",
