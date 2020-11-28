@@ -9,6 +9,16 @@ const projects =  {
         "img_src": "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
         "project_img": "https://robohash.org/blanditiisexercitationemquaerat.png?size=150x150&set=set1",
     },
+    "customer_database":{
+        "div_id": "customer_database_div",
+        "title": "Customer Database",
+        "description": "Implementation of Template Literals, DOM manipulation, and pulling data from arrays.",
+        "tech": ["JavaScript", "HTML", "CSS"],
+        "project_anchor_href": "https://jamiebort.github.io/CustomerDatabase/",
+        "repo_anchor_href": "https://github.com/JamieBort/CustomerDatabase",
+        "img_src": "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
+        "project_img": "../assets/Project_images/customerdatabase/CustomerDatabase.png",
+    },
     "portfolio_website": {
         "div_id": "portfolio_website_div",
         "title": "This Portfolio Website",
