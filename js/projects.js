@@ -72,20 +72,20 @@ const projects =  {
         // "backgground_image": "../assets/background_image/photo-1579546929518-9e396f3cc809.jpeg", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
         "project_img": "../assets/Project_images/iPhysicist_Small.png",
     },
-    "form_builder": {
-        "div_id": "form_builder_div",
-        "title": "Form Builder",
-        "description": "A simple form using HTML, CSS, and JavaScript.",
-        "tech": ["CSS", "HTML", "JavaScript",],
-        // "project_anchor_text": "Form Builder Static Site",
-        "project_anchor_href": "https://jamiebort.github.io/FormBuilder/",
-        // "repo_anchor_text": "Form Builder Repo",
-        "repo_anchor_href": "https://github.com/JamieBort/FormBuilder",
-        // "img_src": "../assets/responsive_images/multiple/responsive-svgrepo-com.svg",
-        "img_src": "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
-        // "backgground_image": "../assets/background_image/photo-1579546929518-9e396f3cc809.jpeg", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
-        "project_img": "../assets/Project_images/Form_Builder.png",
-    },
+    // "form_builder": {
+    //     "div_id": "form_builder_div",
+    //     "title": "Form Builder",
+    //     "description": "A simple form using HTML, CSS, and JavaScript.",
+    //     "tech": ["CSS", "HTML", "JavaScript",],
+    //     // "project_anchor_text": "Form Builder Static Site",
+    //     "project_anchor_href": "https://jamiebort.github.io/FormBuilder/",
+    //     // "repo_anchor_text": "Form Builder Repo",
+    //     "repo_anchor_href": "https://github.com/JamieBort/FormBuilder",
+    //     // "img_src": "../assets/responsive_images/multiple/responsive-svgrepo-com.svg",
+    //     "img_src": "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
+    //     // "backgground_image": "../assets/background_image/photo-1579546929518-9e396f3cc809.jpeg", // Used for when a background image is used. Rather than when an image is used at the top of the projects_div.
+    //     "project_img": "../assets/Project_images/Form_Builder.png",
+    // },
     // "the_next_project": {},
 }
 
