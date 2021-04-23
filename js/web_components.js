@@ -26,7 +26,7 @@ class Header extends HTMLElement {
                 <div id="right">
                     <a id="bio_link" class="head_a active"  href="./index.html#bio">Bio</a>
     `            // below is commented out because the Blog is not ready to show to the public.
-            // <a class="head_a"  href="./blog.html#blog">Blog</a></button>
+            // <a class="head_a"  href="./blog.html#blog">Blog</a>
             + `
                     <a class="head_a"  href="./index.html#projects">Projects</a>
                         `+
