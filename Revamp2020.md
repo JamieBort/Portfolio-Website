@@ -53,6 +53,10 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 
 ### To Do
 
+- [ ] Add this [Week4iTunesMusicSearch](https://github.com/JamieBort/Week4iTunesMusicSearch) to this portfolio website.
+
+- [ ] Add this [Code Snippet Organizer](https://github.com/JamieBort/CodeSnippetOrganizer) to this portfolio website.
+
 - [ ] [Update the portfolio website readme file](https://trello.com/c/k2H77o6L/576-update-the-portfolio-website-readme-file) Trello card.
 
 - [ ] [Give survey for portfolio site](https://trello.com/c/RF2s2gkE/567-create-survey-for-portfolio-site) Trello card.
