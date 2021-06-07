@@ -149,7 +149,6 @@ To add to the website.
 * [Update Portfolio Website](https://trello.com/c/dJHqhhfU/90-update-portfolio-website) Trello card.
 
 ### Branches
-#### Current
 * Revamp2020
 * branch_for_cleaning_before_pushing_to_master
 * dev
@@ -160,34 +159,3 @@ To add to the website.
 * remotes/origin/branch_for_cleaning_before_pushing_to_master
 * remotes/origin/dev
 * remotes/origin/master
-
-#### Old
-* Project_cards
-* Revamp2018
-* Revamp2019
-* Revamp201909
-* **Revamp2020**
-* TechnologyTableIframe
-* active_highlight_navigation_button
-* active_highlight_navigation_button_original
-* branch_for_cleaning_before_pushing_to_master
-* master
-* preliminaryExploration
-* responsive
-* revamp
-* styling
-* remotes/heroku/master
-* remotes/heroku/preliminaryExploration
-* remotes/origin/ButtonSize
-* remotes/origin/HEAD -> origin/master
-* remotes/origin/Project_cards
-* remotes/origin/Revamp2018
-* remotes/origin/Revamp201909
-* remotes/origin/Revamp2020
-* remotes/origin/TechnologyTableIframe
-* remotes/origin/active_highlight_navigation_button
-* remotes/origin/branch_for_cleaning_before_pushing_to_master
-* remotes/origin/master
-* remotes/origin/preliminaryExploration
-* remotes/origin/responsive
-* remotes/origin/revamp
