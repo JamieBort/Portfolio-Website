@@ -19,15 +19,45 @@ I'll fill this out more as the website progresses.
    Currently
 
         +-- master
-            +-- branch_for_cleaning_before_pushing_to_master (staging branch)
-            +-- Revamp2020
-            +-- dev
+            +-- branch_for_cleaning_before_pushing_to_master (staging branch created in 2017)
+            +-- Revamp2020 (created in 2020)
+            +-- dev (staging branch - created in 2021)
 
    Ideally
    
         +-- master
-            +-- dev (copy of master to start with)
+            +-- dev (copy of master to start with - created after Revamp2020)
                 +-- Revamp2020
                     +-- feature branches
 
 ### Directories and Files
+#### Directories
+
+`.vscode`
+
+`assets`
+
+`html`
+
+`js`
+
+`styles`
+
+#### Files
+
+`.gitignore`
+
+`composer.json` - created solely for the purpose of deploying to Heroku using this [How to Run a Simple HTML/CSS/Javascript Application on Heroku](https://medium.com/@winnieliang/how-to-run-a-simple-html-css-javascript-application-on-heroku-4e664c541b0b) Medium tutorial by [Winnie Liang](https://medium.com/@winnieliang).
+
+`index.html` 
+
+`index.php` - created solely for the purpose of deploying to Heroku using this [How to Run a Simple HTML/CSS/Javascript Application on Heroku](https://medium.com/@winnieliang/how-to-run-a-simple-html-css-javascript-application-on-heroku-4e664c541b0b) Medium tutorial by [Winnie Liang](https://medium.com/@winnieliang).
+
+`README.md`
+
+`Revamp202.md`
+
+
+**Note:** 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The `index.php` and the `composer.json` files were created solely for the purpose of deploying to Heroku. 
+&nbsp;&nbsp;&nbsp;I used this [How to Run a Simple HTML/CSS/Javascript Application on Heroku](https://medium.com/@winnieliang/how-to-run-a-simple-html-css-javascript-application-on-heroku-4e664c541b0b) Medium tutorial by [Winnie Liang](https://medium.com/@winnieliang).
