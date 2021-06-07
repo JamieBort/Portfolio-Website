@@ -21,6 +21,7 @@ I'll fill this out more as the website progresses.
         +-- master
             +-- branch_for_cleaning_before_pushing_to_master (staging branch)
             +-- Revamp2020
+            +-- dev
 
    Ideally
    
