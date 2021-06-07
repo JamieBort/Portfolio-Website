@@ -1,5 +1,5 @@
 # Revamp2020
-## Revamp2020 branch
+## dev branch
 
 This file started as README.md in the `preliminaryExploration` branch.
 
