@@ -114,13 +114,16 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [ ] [Have the tech in the project cards dynamically update from the github repo](https://trello.com/c/qoEQZkfH/588-have-the-tech-in-the-project-cards-dynamically-update-from-the-github-repo) Trello card.
 		- [ ] [Have the cards themselves created populated based on the pinned items in github](https://trello.com/c/RyfM5Z0E/1124-have-the-cards-themselves-created-populated-based-on-the-pinned-items-in-github) Trello card.
 		- [ ] [Implement smooth navigation](https://trello.com/c/rjsuhabM/539-implement-smooth-navigation) Trello card.
+		- [ ] Make website accessible - see the [Accessibility](https://github.com/JamieBort/LearningDirectory/tree/master/Accessibility) directory of the LearningDirectory repo  
+			* ~~[Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card and~~
+			* ~~https://github.com/JamieBort/LearningDirectory/tree/master/Accessibility~~
 
-	- [ ] Styling to address
+	- [ ] Styling to address - a lot of good info here. But not organized nor noted (yet): [Be deliberate with the css units for the Portfolio Website project](https://trello.com/c/HVuqs695/563-be-deliberate-with-the-css-units-for-the-portfolio-website-project) Trello card.
 		- [ ] [Style Links](https://trello.com/c/AsOQKQjI/562-style-links-and) Trello card.
 		- [ ] [Style buttons for my portfolio website](https://trello.com/c/Fny58qFO/538-style-buttons-for-my-portfolio-website) Trello card. Tabling this one for now. Not necessarily completed. See card.
 
 	- [ ] [Design the basic architecture](https://trello.com/c/CyUFSwY3/522-design-the-basic-architecture) Trello card.
-	- [ ] [Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card.
+	
 	- [ ] Bug test.
 	- [ ] ~~Maybe [Rebuild very simple static site using HTML and CSS](https://trello.com/c/FDIB9ePE/163-rebuild-very-simple-static-site-using-html-and-css) Trello card.~~ `Retiring this card. No longer needed. Not worked on. Moving to Completed.`
 	
@@ -146,6 +149,8 @@ To add to the website.
 * [Portfolio Website](https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo) Google Drive directory.
 * Chrome bookmark for this project: `chrome://bookmarks/?id=1300`
 * [Update Portfolio Website](https://trello.com/c/dJHqhhfU/90-update-portfolio-website) Trello card.
+* [Have all links and urls pointing to my portfolio website point to this url](https://trello.com/c/Ng3Fg14h/1125-have-all-links-and-urls-pointing-to-my-portfolio-website-point-to-this-url) (http://www.jamiebort.com/) Trello card.
+(not sure where this should be - settled on here rather than the [Update Portfolio Website](https://trello.com/c/dJHqhhfU/90-update-portfolio-website) Trello card.)
 
 ### Branches
 * Revamp2020
