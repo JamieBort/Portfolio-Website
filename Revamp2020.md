@@ -149,6 +149,19 @@ To add to the website.
 * [Update Portfolio Website](https://trello.com/c/dJHqhhfU/90-update-portfolio-website) Trello card.
 
 ### Branches
+#### Current
+* Revamp2020
+* branch_for_cleaning_before_pushing_to_master
+* dev
+* master
+* remotes/heroku/master
+* remotes/origin/HEAD -> origin/master
+* remotes/origin/Revamp2020
+* remotes/origin/branch_for_cleaning_before_pushing_to_master
+* remotes/origin/dev
+* remotes/origin/master
+
+#### Old
 * Project_cards
 * Revamp2018
 * Revamp2019
