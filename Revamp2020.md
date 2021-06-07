@@ -112,13 +112,13 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	- [ ] [Implement smooth navigation](https://trello.com/c/rjsuhabM/539-implement-smooth-navigation) Trello card.
 	- [ ] [Design the basic architecture](https://trello.com/c/CyUFSwY3/522-design-the-basic-architecture) Trello card.
 	- [ ] [Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card.
-	- [ ] [Fix branch issues with portfolio site](https://trello.com/c/PxEFMj5s/374-fix-branch-issues-with-portfolio-site) Trello card.
 	- [ ] Maybe [Rebuild very simple static site using HTML and CSS](https://trello.com/c/FDIB9ePE/163-rebuild-very-simple-static-site-using-html-and-css) Trello card.
 	- [ ] Bug test.
 	- [ ] Add this [github calendar](https://github.com/IonicaBizau/github-calendar) to my portfolio site. [Or somewhere else? and/or:](https://github.com/fullcalendar/fullcalendar)
 	- [ ] [Style buttons for my portfolio website](https://trello.com/c/Fny58qFO/538-style-buttons-for-my-portfolio-website) Trello card. Tabling this one for now. Not necessarily completed. See card. 
 	- [X] ~~[Fix header and footer for my portfolio website](https://trello.com/c/CCtUbXY7/541-fix-header-and-footer-for-my-portfolio-website) Trello card.~~
 	- [X] ~~Remove this [old/20181126](https://github.com/JamieBort/jamiebort.github.io/tree/master/old/20181126) directory.~~
+	- [x] ~~[Fix branch issues with portfolio site](https://trello.com/c/PxEFMj5s/374-fix-branch-issues-with-portfolio-site) Trello card.~~
 	
 
 - [X] ~~[Update the portfolio website README file](https://trello.com/c/hCRC1EG6/483-update-the-portfolio-website-readme-file) Trello card.~~
