@@ -41,8 +41,10 @@ The site shall:
 * Form to contact me.
 
 ### Status
-Created a `preliminaryExploration` branch.
-Last left off working there. Am about to start this [ReusableComponentsTutorial](https://github.com/JamieBort/LearningDirectory/tree/master/WebComponents/ReusableComponentsTutorial) tutorial to use for this site.
+* Created a `preliminaryExploration` branch.
+Last left off working there. Am about to start this [ReusableComponentsTutorial](https://github.com/JamieBort/LearningDirectory/tree/master/WebComponents/ReusableComponentsTutorial) tutorial to use for this site. <- **not sure what the status of this is**.
+
+* Am working on the [Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card.
 
 ### Next Steps
 1. Figure out my content.
@@ -106,6 +108,8 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	- [ ] [Modify devsatrtp image in Portfolio Website](https://trello.com/c/865I1iOD/565-modify-devsatrtp-image-in-portfolio-website) Trello card.
 	- [ ] [Have the description in the project cards dynamically update from the github repo](https://trello.com/c/qcwpK1Gd/586-have-the-description-in-the-project-cards-dynamically-update-from-the-github-repo) Trello card.
 	- [ ] [Have the tech in the project cards dynamically update from the github repo](https://trello.com/c/qoEQZkfH/588-have-the-tech-in-the-project-cards-dynamically-update-from-the-github-repo) Trello card.
+	- [ ] [Have the cards themselves created populated based on the pinned items in github](https://trello.com/c/RyfM5Z0E/1124-have-the-cards-themselves-created-populated-based-on-the-pinned-items-in-github) Trello card.
+
 	- [ ] [Style Links](https://trello.com/c/AsOQKQjI/562-style-links-and) Trello card.
 	- [ ] [Implement smooth navigation](https://trello.com/c/rjsuhabM/539-implement-smooth-navigation) Trello card.
 	- [ ] [Design the basic architecture](https://trello.com/c/CyUFSwY3/522-design-the-basic-architecture) Trello card.
