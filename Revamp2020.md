@@ -51,12 +51,6 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 
 ### To Do
 
-- [ ] Add this [Week4iTunesMusicSearch](https://github.com/JamieBort/Week4iTunesMusicSearch) to this portfolio website.
-
-- [ ] Add this [Code Snippet Organizer](https://github.com/JamieBort/CodeSnippetOrganizer) to this portfolio website.
-
-- [ ] [Update the portfolio website readme file](https://trello.com/c/k2H77o6L/576-update-the-portfolio-website-readme-file) Trello card.
-
 - [ ] [Give survey for portfolio site](https://trello.com/c/RF2s2gkE/567-create-survey-for-portfolio-site) Trello card.
 
 - [ ] [How to look at websites or apps I am developing on my phone before they are live](https://trello.com/c/svOMzdnt/535-how-to-look-at-websites-or-apps-i-am-developing-on-my-phone-before-they-are-live) Trello card.
@@ -69,7 +63,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 
 - [ ] [Listen to this podcast on hosting a website and make necessary notes](https://trello.com/c/QTWzA4bv/480-list-to-this-podcast-on-hosting-a-website-and-make-necessary-notes) Trello card.
 
-- [ ] Figure out my content for the portfolio website.
+- [ ] Figure out what content to add to the portfolio website.
 	- [ ] Review other portfolio websites to:
 		- [ ] [Explore ways to show off my skills on my portfolio website](https://trello.com/c/2oLiIllY/481-explore-ways-to-show-of-my-skills-on-my-portfolio-website) Trello card.
 		- [ ] [Decide on a layout and design for my portfolio website](https://trello.com/c/8Xdj7duH/482-decide-on-a-layout-and-design-for-my-portfolio-website) Trello card.
@@ -78,6 +72,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [ ] [See which languages and frameworks other people are creating their websites with](https://trello.com/c/EwC3EB2S/525-see-which-languages-and-frameworks-other-people-are-creating-their-websites-with) Trello card.
 		- [X] ~~[Place this with other examples of portfolio websites to get ideas for my own](https://trello.com/c/1JHiHOMI/485-place-this-with-other-examples-of-portfolio-websites-to-consider) Trello card.~~
 		- [X] ~~[Decide whether to create my portfolio site using React or React Native](https://trello.com/c/sLJ1fEBe/486-decide-whether-to-create-my-portfolio-site-using-react-or-react-native) Trello card.~~
+
 	- [ ] [Explicitly list the content of the portfolio website 202010](https://trello.com/c/adJl19pT/496-explicitly-list-the-content-of-the-portfolio-website-202010) Trello card.
 	- [ ] [Compile content for portfolio website](https://trello.com/c/VxCIvza2/530-compile-content-for-portfolio-website) Trello card.
 
@@ -99,33 +94,37 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	- [X] ~~[Obtain wireframe app](https://trello.com/c/ogulw2aZ/492-obtain-wireframe-app?menu=filter&filter=due:incomplete) Trello card.~~
 
 - [ ] Build the site.
-	- [ ] [consider replacing section tag with article tag for my portfolio website](https://trello.com/c/ARthlAv7/554-consider-replacing-section-tag-with-article-tag-for-my-portfolio-website) Trello card.
-	- [ ] [Polish this Create a User Directory project](https://trello.com/c/J21B72Na/591-polish-this-create-a-user-directory-project) Trello card.
-	- [ ] [Modify devsatrtp image in Portfolio Website](https://trello.com/c/865I1iOD/565-modify-devsatrtp-image-in-portfolio-website) Trello card.
-	- [ ] [Have the description in the project cards dynamically update from the github repo](https://trello.com/c/qcwpK1Gd/586-have-the-description-in-the-project-cards-dynamically-update-from-the-github-repo) Trello card.
-	- [ ] [Have the tech in the project cards dynamically update from the github repo](https://trello.com/c/qoEQZkfH/588-have-the-tech-in-the-project-cards-dynamically-update-from-the-github-repo) Trello card.
-	- [ ] [Have the cards themselves created populated based on the pinned items in github](https://trello.com/c/RyfM5Z0E/1124-have-the-cards-themselves-created-populated-based-on-the-pinned-items-in-github) Trello card.
-	- [ ] Styling
+	- [ ] Content to add or change
+		- [ ] [Polish this Create a User Directory project](https://trello.com/c/J21B72Na/591-polish-this-create-a-user-directory-project) Trello card.
+		- [ ] Add this [Week4iTunesMusicSearch](https://github.com/JamieBort/Week4iTunesMusicSearch) to this portfolio website.
+		- [ ] Add this [Code Snippet Organizer](https://github.com/JamieBort/CodeSnippetOrganizer) to this portfolio website.
+		- [ ] Add this [github calendar](https://github.com/IonicaBizau/github-calendar) to my portfolio site. [Or somewhere else? and/or:](https://github.com/fullcalendar/fullcalendar)
+		- [ ] [consider replacing section tag with article tag for my portfolio website](https://trello.com/c/ARthlAv7/554-consider-replacing-section-tag-with-article-tag-for-my-portfolio-website) Trello card.
+		- [ ] [Modify devsatrtp image in Portfolio Website](https://trello.com/c/865I1iOD/565-modify-devsatrtp-image-in-portfolio-website) Trello card.
+		- [ ] [Update the portfolio website readme file](https://trello.com/c/k2H77o6L/576-update-the-portfolio-website-readme-file) Trello card. (NOT THE SAME AS [Update the portfolio website README file](https://trello.com/c/hCRC1EG6/483-update-the-portfolio-website-readme-file) Trello card; which is already completed.)
+		- [X] ~~[Update the portfolio website README file](https://trello.com/c/hCRC1EG6/483-update-the-portfolio-website-readme-file) Trello card.~~ (NOT THE SAME AS [Update the portfolio website readme file](https://trello.com/c/k2H77o6L/576-update-the-portfolio-website-readme-file) Trello card; which isn't completed (yet).)
+		- [X] ~~[Fix header and footer for my portfolio website](https://trello.com/c/CCtUbXY7/541-fix-header-and-footer-for-my-portfolio-website) Trello card.~~
+		- [X] ~~Remove this [old/20181126](https://github.com/JamieBort/jamiebort.github.io/tree/master/old/20181126) directory.~~
+		- [x] ~~[Fix branch issues with portfolio site](https://trello.com/c/PxEFMj5s/374-fix-branch-issues-with-portfolio-site) Trello card.~~
+		- [X] ~~[edit README files for the portfolio website](https://trello.com/c/ntfMYze3/552-edit-readme-files-for-the-portfolio-website) Trello card.~~
+		- [X] ~~[remove all button tags on my portfolio website](https://trello.com/c/9mD1AzSI/551-remove-all-button-tags-on-my-portfolio-website) Trello card.~~
+
+	- [ ] Functionality to address
+		- [ ] [Have the description in the project cards dynamically update from the github repo](https://trello.com/c/qcwpK1Gd/586-have-the-description-in-the-project-cards-dynamically-update-from-the-github-repo) Trello card.
+		- [ ] [Have the tech in the project cards dynamically update from the github repo](https://trello.com/c/qoEQZkfH/588-have-the-tech-in-the-project-cards-dynamically-update-from-the-github-repo) Trello card.
+		- [ ] [Have the cards themselves created populated based on the pinned items in github](https://trello.com/c/RyfM5Z0E/1124-have-the-cards-themselves-created-populated-based-on-the-pinned-items-in-github) Trello card.
+		- [ ] [Implement smooth navigation](https://trello.com/c/rjsuhabM/539-implement-smooth-navigation) Trello card.
+
+	- [ ] Styling to address
 		- [ ] [Style Links](https://trello.com/c/AsOQKQjI/562-style-links-and) Trello card.
 		- [ ] [Style buttons for my portfolio website](https://trello.com/c/Fny58qFO/538-style-buttons-for-my-portfolio-website) Trello card. Tabling this one for now. Not necessarily completed. See card.
-	- [ ] [Implement smooth navigation](https://trello.com/c/rjsuhabM/539-implement-smooth-navigation) Trello card.
+
 	- [ ] [Design the basic architecture](https://trello.com/c/CyUFSwY3/522-design-the-basic-architecture) Trello card.
 	- [ ] [Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card.
 	- [ ] Bug test.
-	- [ ] Add this [github calendar](https://github.com/IonicaBizau/github-calendar) to my portfolio site. [Or somewhere else? and/or:](https://github.com/fullcalendar/fullcalendar)
-	- [X] ~~[Fix header and footer for my portfolio website](https://trello.com/c/CCtUbXY7/541-fix-header-and-footer-for-my-portfolio-website) Trello card.~~
-	- [X] ~~Remove this [old/20181126](https://github.com/JamieBort/jamiebort.github.io/tree/master/old/20181126) directory.~~
-	- [x] ~~[Fix branch issues with portfolio site](https://trello.com/c/PxEFMj5s/374-fix-branch-issues-with-portfolio-site) Trello card.~~
 	- [ ] ~~Maybe [Rebuild very simple static site using HTML and CSS](https://trello.com/c/FDIB9ePE/163-rebuild-very-simple-static-site-using-html-and-css) Trello card.~~ `Retiring this card. No longer needed. Not worked on. Moving to Completed.`
 	
-
-- [X] ~~[Update the portfolio website README file](https://trello.com/c/hCRC1EG6/483-update-the-portfolio-website-readme-file) Trello card.~~
-
 - [X] ~~[Read up on functional versus business requirements](https://trello.com/c/CGFYOG9p/494-read-up-on-functional-versus-business-requirements) Trello card.~~
-
-- [X] ~~[edit README files for the portfolio website](https://trello.com/c/ntfMYze3/552-edit-readme-files-for-the-portfolio-website) Trello card.~~
-
-- [X] ~~[remove all button tags on my portfolio website](https://trello.com/c/9mD1AzSI/551-remove-all-button-tags-on-my-portfolio-website) Trello card.~~
 
 - [ ] ~~[Share link for portfolio website with others](https://trello.com/c/D5iXcGcX/531-share-link-for-portfolio-website-with-others) Trello card.~~ Redundant. Replaced with `Give survey for portfolio site`.
 
