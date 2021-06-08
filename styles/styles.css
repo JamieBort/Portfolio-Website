@@ -83,18 +83,18 @@ nav {
     justify-content: space-around;
 }
 
-#left, #right {
+#nav_left, #nav_right {
     height: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#left {
+#nav_left {
     /* background:lightgreen; */
 }
 
-#right {
+#nav_right {
     /* background:lightgreen; */
     /* display: flex;
     justify-content: center;
@@ -162,7 +162,7 @@ nav {
 
 /* Bio section Desktop             */
 
-#bio {
+#bio_section {
     /* text-align: center; */
 }
 
@@ -255,7 +255,7 @@ table {
 
 
 
-#projects{
+#projects_section{
     /* border: .1em red solid; */
     padding:.1em;
 }
@@ -382,9 +382,9 @@ justify-content:space-between;
 
 /* Connect With Me section Desktop */
 
-/* NOTE:/TODO: should this #connect_with_me selector be all by itself? rather, should it be removed or should there be a class for all sections?*/
+/* NOTE:/TODO: should this #connect_with_me_section selector be all by itself? rather, should it be removed or should there be a class for all sections?*/
 
-#connect_with_me {
+#connect_with_me_section {
     height: 18em;
 }
 

@@ -90,7 +90,7 @@ const projects =  {
     // "the_next_project": {},
 }
 
-var project_section = document.getElementById("projects"); 
+var project_section = document.getElementById("projects_section"); 
 
 var h2 = document.createElement("h2");
 h2.className = "section_title";
