@@ -15,6 +15,31 @@ This README file will serve as the documentation for future employers. It will b
 
 I'll fill this out more as the website progresses.
 
+### Business Requirements
+The site shall:
+
+* share information about me.
+	* on the website itself
+		* display my involvement with Devs@rtp and other similar organizations,
+		* provide the user with a way to easily find, look at, and download my resume
+		* display to the user all of the projects that I wish them to see.
+		* show my interests as they pertain to my career and technical abilities.
+		* show off my skills to the user without them having to navigate to my projects.
+		* display in a graph, chart, or other visual representation my level of skills for each technology.
+		
+	* via links to other sites that I use such as
+		* social media and
+		* github
+
+* have way(s) to contact me
+	* bare minimum by email
+		
+### Functional Requirements
+
+* allow the user to send me a message via a form that goes into my email inbox, (and maybe texts me?)
+* follow accessibility standards.
+* be responsive (works on screens of varying sizes.)
+
 ### Branch Structure
    Currently
 
