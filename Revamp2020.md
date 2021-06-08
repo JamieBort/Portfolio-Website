@@ -97,6 +97,8 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 			* ~~[Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card and~~
 			* ~~https://github.com/JamieBort/LearningDirectory/tree/master/Accessibility~~
 		- [ ] [Refactor the web_components file](https://trello.com/c/nGQ8jQea/1126-refactor-the-webcomponents-file) Trello card. Refactor the `js/web_components.js` file such that the string literal(s) are replaced with variables consisting of the same string content.
+		- [ ] Implement the `head-web-component` so that each html file needs only that line of code.
+		- [ ] The `Bio` button in the navigation section remains highlighted no matter which section you've navigated to. Address that.
 
 	- [ ] Styling to address - a lot of good info here. But not organized nor noted (yet): [Be deliberate with the css units for the Portfolio Website project](https://trello.com/c/HVuqs695/563-be-deliberate-with-the-css-units-for-the-portfolio-website-project) Trello card.
 		- [ ] [Style Links](https://trello.com/c/AsOQKQjI/562-style-links-and) Trello card.
