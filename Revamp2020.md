@@ -13,49 +13,52 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 
 ### Next Steps
 #### Current
-1. Review and update the [Business Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#business-requirements) section.
-2. Review and update the [Functional Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#functional-requirements) section.
-3. Review and update the [Old](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#old) section.
+1. ~~Review and update the [Business Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#business-requirements) section.~~ Done.
+2. ~~Review and update the [Functional Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#functional-requirements) section.~~ Done.
+3. ~~Review and update the [Old](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#old) section.~~ Done.
 4. Fix CSS selectors - make uniform. Have them make sense/be semantic.
 5. Fix appearance for mobile design.
 6. Add one or all of the apps (listed in `Content to add or change` below) to the portfolio.
 
-#### Old
-1. Figure out my content.
-2. Then figure out the layout using Figma.
-3. Then build the site.
-4. Lastly add content.
+#### ~~Old~~
+1. ~~Figure out my content.~~
+2. ~~Then figure out the layout using Figma.~~
+3. ~~Then build the site.~~
+4. ~~Lastly add content.~~
 
 ### Business Requirements
-
 The site shall:
 
-* provide the user with a way to easily find, look at, and download my resume
-* allow the user to send me a message via a form that goes into my email inbox, (and maybe texts me?)
-* display to the user all of the projects that I wish them to see.
-* show my interests as they pertain to my career and technical abilities.
-* show off my skills to the user without them having to navigate to my projects.
-* display in a graph, chart, or other visual representation my level of skills for each technology.
-* follow accessibility standards.
-* add content that I create:
-  * on my blog. Such as "what I learned today" section,
-  * on my LinkedIn account,
-  * on my twitter account,
-  * etc.
-* link to social media sites such as:
-  * my LinkedIn profile,
-  * my Hackerrank profile (https://www.hackerrank.com/jamiebort),
-  * my GitHub profile,
-  * etc.
-* display my involvement with Devs@rtp and other similar organizations,
-* be responsive (works on screens of varying sizes.
-* maybe demonstrate my database and backend skills. (alternatively make sure these are demonstrated in my highlighted apps.)
+* share information about me.
+	* on the website itself
+		* display my involvement with Devs@rtp and other similar organizations,
+		* provide the user with a way to easily find, look at, and download my resume
+		* display to the user all of the projects that I wish them to see.
+		* show my interests as they pertain to my career and technical abilities.
+		* show off my skills to the user without them having to navigate to my projects.
+		* display in a graph, chart, or other visual representation my level of skills for each technology.
+		
+	* via links to other sites that I use such as
+		* social media and
+		* github
+
+* have way(s) to contact me
+	* bare minimum by email
+		
+
+
+* ~~maybe demonstrate my database and backend skills. (alternatively make sure these are demonstrated in my highlighted apps.)~~ They'll demonstrated in the highlighted apps
 
 ### Functional Requirements
 
-* Use `React.js` and/or `React Native`.
-* Header with my name and ... (?)
-* Form to contact me.
+* allow the user to send me a message via a form that goes into my email inbox, (and maybe texts me?)
+* follow accessibility standards.
+* be responsive (works on screens of varying sizes.)
+* ~~Pull in content that I create elsewhere. Such as~~:
+  * ~~on my blog. Such as "what I learned today" section~~,
+  * ~~on my LinkedIn account~~,
+  * ~~on my twitter account~~,
+  * ~~etc.~~
 
 ### To Do
 
