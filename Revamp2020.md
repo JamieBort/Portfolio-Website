@@ -17,7 +17,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 2. ~~Review and update the [Functional Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#functional-requirements) section.~~ Done.
 3. ~~Review and update the [Old](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#old) section.~~ Done.
 4. ~~Move the [Business Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#business-requirements) section and the [Functional Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#functional-requirements) section to the [README](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/README.md).md file.~~ Done.
-5. Fix CSS selectors - make uniform. Have them make sense/be semantic.
+5. Fix CSS selectors - make uniform. Have them make sense/be semantic. Started.
 6. Fix appearance for mobile design.
 7. Add one or all of the apps (listed in `Content to add or change` below) to the portfolio.
 8. Remove the [Old](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#old) section and the [Current](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#current) title.
@@ -99,6 +99,8 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [ ] [Refactor the web_components file](https://trello.com/c/nGQ8jQea/1126-refactor-the-webcomponents-file) Trello card. Refactor the `js/web_components.js` file such that the string literal(s) are replaced with variables consisting of the same string content.
 		- [ ] Implement the `head-web-component` so that each html file needs only that line of code.
 		- [ ] The `Bio` button in the navigation section remains highlighted no matter which section you've navigated to. Address that.
+		- [ ] The "Let's" section in the "connect_with_me_section" section isn't centered properly. To complicate maters each time that changes the center moves left or right. Address this so that it's always centered.
+		- [ ] Make CSS selectors more uniform. Have them make sense/be semantic. This has been started. But could be improved upon.
 
 	- [ ] Styling to address - a lot of good info here. But not organized nor noted (yet): [Be deliberate with the css units for the Portfolio Website project](https://trello.com/c/HVuqs695/563-be-deliberate-with-the-css-units-for-the-portfolio-website-project) Trello card.
 		- [ ] [Style Links](https://trello.com/c/AsOQKQjI/562-style-links-and) Trello card.
@@ -131,7 +133,7 @@ To add to the website.
 * [Portfolio Website](https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo) Google Drive directory.
 * Chrome bookmark for this project: `chrome://bookmarks/?id=1300`
 * [Update Portfolio Website](https://trello.com/c/dJHqhhfU/90-update-portfolio-website) Trello card.
-* [Have all links and urls pointing to my portfolio website point to this url](https://trello.com/c/Ng3Fg14h/1125-have-all-links-and-urls-pointing-to-my-portfolio-website-point-to-this-url) (http://www.jamiebort.com/) Trello card.
+* Make sure all URLs and links point to one url (http://www.jamiebort.com/) [Have all links and urls pointing to my portfolio website point to this url](https://trello.com/c/Ng3Fg14h/1125-have-all-links-and-urls-pointing-to-my-portfolio-website-point-to-this-url) (http://www.jamiebort.com/) Trello card.
 (not sure where this should be - settled on here rather than the [Update Portfolio Website](https://trello.com/c/dJHqhhfU/90-update-portfolio-website) Trello card.)
 
 ### Branches
