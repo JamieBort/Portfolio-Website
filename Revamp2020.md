@@ -15,7 +15,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 #### Current
 1. Review and update the [Business Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#business-requirements) section.
 2. Review and update the [Functional Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#functional-requirements) section.
-3. Review and update the `Next Steps-Old` section.
+3. Review and update the [Old](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#old) section.
 4. Fix CSS selectors - make uniform. Have them make sense/be semantic.
 5. Fix appearance for mobile design.
 6. Add one or all of the apps (listed in `Content to add or change` below) to the portfolio.
