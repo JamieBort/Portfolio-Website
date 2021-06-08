@@ -5,6 +5,27 @@ This file started as README.md in the `preliminaryExploration` branch.
 
 To that end, this README file outlines what I plan on doing with my [portfolio website](https://jamiebort.github.io/) as I revamp it.
 
+### Status
+* Created a `preliminaryExploration` branch.
+Last left off working there. Am about to start this [ReusableComponentsTutorial](https://github.com/JamieBort/LearningDirectory/tree/master/WebComponents/ReusableComponentsTutorial) tutorial to use for this site. <- **not sure what the status of this is**.
+
+* Am working on the [Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card.
+
+### Next Steps
+#### Current
+1. Review and update the [Business Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#business-requirements) section.
+2. Review and update the [Functional Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#functional-requirements) section.
+3. Review and update the `Next Steps-Old` section.
+4. Fix CSS selectors - make uniform. Have them make sense/be semantic.
+5. Fix appearance for mobile design.
+6. Add one or all of the apps (listed in `Content to add or change` below) to the portfolio.
+
+#### Old
+1. Figure out my content.
+2. Then figure out the layout using Figma.
+3. Then build the site.
+4. Lastly add content.
+
 ### Business Requirements
 
 The site shall:
@@ -35,19 +56,6 @@ The site shall:
 * Use `React.js` and/or `React Native`.
 * Header with my name and ... (?)
 * Form to contact me.
-
-### Status
-* Created a `preliminaryExploration` branch.
-Last left off working there. Am about to start this [ReusableComponentsTutorial](https://github.com/JamieBort/LearningDirectory/tree/master/WebComponents/ReusableComponentsTutorial) tutorial to use for this site. <- **not sure what the status of this is**.
-
-* Am working on the [Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card.
-
-### Next Steps
-1. Figure out my content.
-2. Then figure out the layout using Figma.
-3. Then build the site.
-4. Lastly add content.
-
 
 ### To Do
 
