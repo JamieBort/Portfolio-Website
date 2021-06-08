@@ -18,7 +18,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 3. ~~Review and update the [Old](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#old) section.~~ Done.
 4. ~~Move the [Business Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#business-requirements) section and the [Functional Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#functional-requirements) section to the [README](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/README.md).md file.~~ Done.
 5. Fix CSS selectors - make uniform. Have them make sense/be semantic. Started.
-6. Fix appearance for mobile design.
+6. Fix appearance for mobile design. Specifically the devs@rtp image and the hight of the footer and header.
 7. Add one or all of the apps (listed in `Content to add or change` below) to the portfolio.
 8. Remove the [Old](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#old) section and the [Current](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#current) title.
 
