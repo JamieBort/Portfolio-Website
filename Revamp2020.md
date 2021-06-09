@@ -30,7 +30,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	* ~~current changes in this `Revamp2020` branch will be merged into the `dev` branch~~.
 	* ~~then those changes will be pushed to the Heroku site/branch to be tested~~.
 	* ~~then those changes will be tested~~. Everything seems to be working as expected.
-	* then those changes will be pushed to the `dev` branch.
+	* ~~then those changes will be pushed to the `dev` branch~~.
 	* then switch back to the `Revamp2020` branch.
 	* then clean up the `Revamp2020.md` file.
 	* then a new `mobile_appearance` branch will be created.
