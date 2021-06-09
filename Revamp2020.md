@@ -26,7 +26,8 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 
 	To this end the 
 	* current changes in this `Revamp2020` branch will be merged into the `dev` branch.
-	* then those changes will be pushed to the Heroku site to be tested.
+	* then those changes will be pushed to the Heroku site/branch to be tested.
+	* then those changes will be pushed to the `dev` branch.
 	* then a new `mobile_appearance` branch will be created.
 	* then the changes will be made in the `mobile_appearance` branch.
 	* lastly the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
