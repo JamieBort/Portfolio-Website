@@ -81,18 +81,18 @@ nav {
     justify-content: space-around;
 }
 
-#left, #right {
+#nav_left, #nav_right {
     height: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#left {
+#nav_left {
     /* background:lightgreen; */
 }
 
-#right {
+#nav_right {
     /* background:lightgreen; */
     /* display: flex;
     justify-content: center;
@@ -143,7 +143,7 @@ nav {
 
 /* Bio section Desktop             */
 
-#bio {
+#bio_section {
     /* text-align: center; */
 }
 
@@ -236,7 +236,7 @@ table {
 
 
 
-#projects{
+#projects_section{
     /* border: .1em red solid; */
     padding:.1em;
 }
@@ -363,9 +363,9 @@ justify-content:space-between;
 
 /* Connect With Me section Desktop */
 
-/* NOTE:/TODO: should this #connect_with_me selector be all by itself? rather, should it be removed or should there be a class for all sections?*/
+/* NOTE:/TODO: should this #connect_with_me_section selector be all by itself? rather, should it be removed or should there be a class for all sections?*/
 
-#connect_with_me {
+#connect_with_me_section {
     height: 18em;
 }
 
@@ -384,38 +384,41 @@ justify-content:space-between;
 }
 
 /* editing below */
-#myContainer{
+#lets_container{
     /* margin:.1em; */
     /* border: 1px solid brown; */
     display: flex;
     justify-content: center;
 }
-#myContainer span{
+/* #lets_container span{
+    width: 100%;
+} */
+#lets_container_left,#lets_container_right{
     /* margin:.3em; */
     /* border: 1px solid red; */
     width: 100%;
 }
-#span_left {
+#lets_container_left {
     /* margin:.3em; */
     /* padding: .3em; */
     /* border: 1px solid chartreuse; */
     display:flex; 
     justify-content:flex-end; 
 }
-#span_right {
+#lets_container_right {
     /* margin:.3em; */
     /* padding: .3em; */
     /* border: 1px solid black; */
     display:flex; 
     justify-content:flex-start; 
 }
-#span_left h2{
+#lets_container_left h2{
     /* margin-right:2em; */
     /* border: 1px solid green; */
     /* display:flex; 
     justify-content:flex-end;  */
 }
-#span_right h2{
+#lets_container_right h2{
     margin-left:.3em;
     /* border: 1px solid blue; */
     /* display:flex; 

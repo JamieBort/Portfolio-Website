@@ -15,19 +15,19 @@ class Header extends HTMLElement {
         this.innerHTML = `
         <header>
             <nav>
-                <div id="left">
+                <div id="nav_left">
                     <a id="JamieBort" onClick={console.log("click")} class="head_a" href="./index.html#title">Jamie Bort</a>
                     `
             // <a class="head_a" href="../html/index.html#title">Jamie Bort</a>
             //  <a class="head_a" href="../docs/index.html#title">Jamie Bort</a>
             + `
                     </div>
-                <div id="right">
-                    <a id="bio_link" class="head_a active"  href="./index.html#bio">Bio</a>
+                <div id="nav_right">
+                    <a id="bio_link" class="head_a active"  href="./index.html#bio_section">Bio</a>
     `            // below is commented out because the Blog is not ready to show to the public.
-            // <a class="head_a"  href="./blog.html#blog">Blog</a></button>
+            // <a class="head_a"  href="./blog.html#blog">Blog</a>
             + `
-                    <a class="head_a"  href="./index.html#projects">Projects</a>
+                    <a class="head_a"  href="./index.html#projects_section">Projects</a>
                         `+
             // below is commented out because the Resources is not ready to show to the public.
             // <a id="resources" class="head_a"  href="./resources.html">Resources</a>
@@ -41,7 +41,7 @@ class Header extends HTMLElement {
             // below is commented out because the Talks page is not ready to show to the public.
             // <a class="head_a"  href="./talks.html">Resume </a>
             `
-                   <a class="head_a"  href="./index.html#connect_with_me">Connect with me</a>
+                   <a class="head_a"  href="./index.html#connect_with_me_section">Connect with me</a>
                    
                 </div>
             </nav>

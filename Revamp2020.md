@@ -5,59 +5,42 @@ This file started as README.md in the `preliminaryExploration` branch.
 
 To that end, this README file outlines what I plan on doing with my [portfolio website](https://jamiebort.github.io/) as I revamp it.
 
-**Note:** 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The `index.php` and the `composer.json` files were created solely for the purpose of deploying to Heroku. 
-&nbsp;&nbsp;&nbsp;I used this [How to Run a Simple HTML/CSS/Javascript Application on Heroku](https://medium.com/@winnieliang/how-to-run-a-simple-html-css-javascript-application-on-heroku-4e664c541b0b) Medium tutorial by [Winnie Liang](https://medium.com/@winnieliang).
-
-### Business Requirements
-
-The site shall:
-
-* provide the user with a way to easily find, look at, and download my resume
-* allow the user to send me a message via a form that goes into my email inbox, (and maybe texts me?)
-* display to the user all of the projects that I wish them to see.
-* show my interests as they pertain to my career and technical abilities.
-* show off my skills to the user without them having to navigate to my projects.
-* display in a graph, chart, or other visual representation my level of skills for each technology.
-* follow accessibility standards.
-* add content that I create:
-  * on my blog. Such as "what I learned today" section,
-  * on my LinkedIn account,
-  * on my twitter account,
-  * etc.
-* link to social media sites such as:
-  * my LinkedIn profile,
-  * my Hackerrank profile (https://www.hackerrank.com/jamiebort),
-  * my GitHub profile,
-  * etc.
-* display my involvement with Devs@rtp and other similar organizations,
-* be responsive (works on screens of varying sizes.
-* maybe demonstrate my database and backend skills. (alternatively make sure these are demonstrated in my highlighted apps.)
-
-### Functional Requirements
-
-* Use `React.js` and/or `React Native`.
-* Header with my name and ... (?)
-* Form to contact me.
-
 ### Status
-Created a `preliminaryExploration` branch.
-Last left off working there. Am about to start this [ReusableComponentsTutorial](https://github.com/JamieBort/LearningDirectory/tree/master/WebComponents/ReusableComponentsTutorial) tutorial to use for this site.
+* Created a `preliminaryExploration` branch.
+Last left off working there. Am about to start this [ReusableComponentsTutorial](https://github.com/JamieBort/LearningDirectory/tree/master/WebComponents/ReusableComponentsTutorial) tutorial to use for this site. <- **not sure what the status of this is**.
+
+* Am working on the [Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card.
 
 ### Next Steps
-1. Figure out my content.
-2. Then figure out the layout using Figma.
-3. Then build the site.
-4. Lastly add content.
+#### Current
+1. ~~Review and update the [Business Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#business-requirements) section.~~ Done.
+2. ~~Review and update the [Functional Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#functional-requirements) section.~~ Done.
+3. ~~Review and update the [Old](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#old) section.~~ Done.
+4. ~~Move the [Business Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#business-requirements) section and the [Functional Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#functional-requirements) section to the [README](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/README.md).md file.~~ Done.
+5. Fix CSS selectors - make uniform. Have them make sense/be semantic. Started.
+6. Fix appearance for mobile design. Specifically 
+	* the devs@rtp image in the bio
+	* and the hight of the footer and header.
+	* the font size(s) in the cards are too small.
+	* possibly more
 
+	To this end the 
+	* current changes in this `Revamp2020` branch will be merged into the `dev` branch.
+	* then those changes will be pushed to the Heroku site to be tested.
+	* then a new `mobile_appearance` branch will be created.
+	* then the changes will be made in the `mobile_appearance` branch.
+	* lastly the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
+
+7. Add one or all of the apps (listed in `Content to add or change` below) to the portfolio.
+8. Remove the [Old](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#old) section and the [Current](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#current) title.
+
+#### ~~Old~~
+1. ~~Figure out my content.~~
+2. ~~Then figure out the layout using Figma.~~
+3. ~~Then build the site.~~
+4. ~~Lastly add content.~~
 
 ### To Do
-
-- [ ] Add this [Week4iTunesMusicSearch](https://github.com/JamieBort/Week4iTunesMusicSearch) to this portfolio website.
-
-- [ ] Add this [Code Snippet Organizer](https://github.com/JamieBort/CodeSnippetOrganizer) to this portfolio website.
-
-- [ ] [Update the portfolio website readme file](https://trello.com/c/k2H77o6L/576-update-the-portfolio-website-readme-file) Trello card.
 
 - [ ] [Give survey for portfolio site](https://trello.com/c/RF2s2gkE/567-create-survey-for-portfolio-site) Trello card.
 
@@ -67,13 +50,11 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 
 - [ ] [Practice seo search engine optimization for my portfolio website](https://trello.com/c/7h8xq1Qs/529-practice-seo-search-engine-optimization-for-my-portfolio-website) Trello card.
 
-- [ ] [Redirect my other domains to jamiebort.github.io](https://trello.com/c/Q7faEc6N/527-redirect-my-other-domains-to-jamiebortgithubio) Trello card.
-
 - [ ] [Change the name of this repo to Portfolio Website](https://trello.com/c/pQzTccx3/514-change-the-name-of-this-repo-to-portfolio-website) Trello card.
 
 - [ ] [Listen to this podcast on hosting a website and make necessary notes](https://trello.com/c/QTWzA4bv/480-list-to-this-podcast-on-hosting-a-website-and-make-necessary-notes) Trello card.
 
-- [ ] Figure out my content for the portfolio website.
+- [ ] Figure out what content to add to the portfolio website.
 	- [ ] Review other portfolio websites to:
 		- [ ] [Explore ways to show off my skills on my portfolio website](https://trello.com/c/2oLiIllY/481-explore-ways-to-show-of-my-skills-on-my-portfolio-website) Trello card.
 		- [ ] [Decide on a layout and design for my portfolio website](https://trello.com/c/8Xdj7duH/482-decide-on-a-layout-and-design-for-my-portfolio-website) Trello card.
@@ -82,6 +63,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [ ] [See which languages and frameworks other people are creating their websites with](https://trello.com/c/EwC3EB2S/525-see-which-languages-and-frameworks-other-people-are-creating-their-websites-with) Trello card.
 		- [X] ~~[Place this with other examples of portfolio websites to get ideas for my own](https://trello.com/c/1JHiHOMI/485-place-this-with-other-examples-of-portfolio-websites-to-consider) Trello card.~~
 		- [X] ~~[Decide whether to create my portfolio site using React or React Native](https://trello.com/c/sLJ1fEBe/486-decide-whether-to-create-my-portfolio-site-using-react-or-react-native) Trello card.~~
+
 	- [ ] [Explicitly list the content of the portfolio website 202010](https://trello.com/c/adJl19pT/496-explicitly-list-the-content-of-the-portfolio-website-202010) Trello card.
 	- [ ] [Compile content for portfolio website](https://trello.com/c/VxCIvza2/530-compile-content-for-portfolio-website) Trello card.
 
@@ -103,33 +85,49 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	- [X] ~~[Obtain wireframe app](https://trello.com/c/ogulw2aZ/492-obtain-wireframe-app?menu=filter&filter=due:incomplete) Trello card.~~
 
 - [ ] Build the site.
-	- [ ] [consider replacing section tag with article tag for my portfolio website](https://trello.com/c/ARthlAv7/554-consider-replacing-section-tag-with-article-tag-for-my-portfolio-website) Trello card.
-	- [ ] [Polish this Create a User Directory project](https://trello.com/c/J21B72Na/591-polish-this-create-a-user-directory-project) Trello card.
-	- [ ] [Modify devsatrtp image in Portfolio Website](https://trello.com/c/865I1iOD/565-modify-devsatrtp-image-in-portfolio-website) Trello card.
-	- [ ] [Have the description in the project cards dynamically update from the github repo](https://trello.com/c/qcwpK1Gd/586-have-the-description-in-the-project-cards-dynamically-update-from-the-github-repo) Trello card.
-	- [ ] [Have the tech in the project cards dynamically update from the github repo](https://trello.com/c/qoEQZkfH/588-have-the-tech-in-the-project-cards-dynamically-update-from-the-github-repo) Trello card.
-	- [ ] [Style Links](https://trello.com/c/AsOQKQjI/562-style-links-and) Trello card.
-	- [ ] [Implement smooth navigation](https://trello.com/c/rjsuhabM/539-implement-smooth-navigation) Trello card.
+	- [ ] Content to add or change
+		- [ ] [Polish this Create a User Directory project](https://trello.com/c/J21B72Na/591-polish-this-create-a-user-directory-project) Trello card.
+		- [ ] Add this [Week4iTunesMusicSearch](https://github.com/JamieBort/Week4iTunesMusicSearch) to this portfolio website.
+		- [ ] Add this [Code Snippet Organizer](https://github.com/JamieBort/CodeSnippetOrganizer) to this portfolio website.
+		- [ ] Add this [github calendar](https://github.com/IonicaBizau/github-calendar) to my portfolio site. [Or somewhere else? and/or:](https://github.com/fullcalendar/fullcalendar)
+		- [ ] [consider replacing section tag with article tag for my portfolio website](https://trello.com/c/ARthlAv7/554-consider-replacing-section-tag-with-article-tag-for-my-portfolio-website) Trello card.
+		- [ ] [Modify devsatrtp image in Portfolio Website](https://trello.com/c/865I1iOD/565-modify-devsatrtp-image-in-portfolio-website) Trello card.
+		- [ ] [Update the portfolio website readme file](https://trello.com/c/k2H77o6L/576-update-the-portfolio-website-readme-file) Trello card. (NOT THE SAME AS [Update the portfolio website README file](https://trello.com/c/hCRC1EG6/483-update-the-portfolio-website-readme-file) Trello card; which is already completed.)
+		- [X] ~~[Update the portfolio website README file](https://trello.com/c/hCRC1EG6/483-update-the-portfolio-website-readme-file) Trello card.~~ (NOT THE SAME AS [Update the portfolio website readme file](https://trello.com/c/k2H77o6L/576-update-the-portfolio-website-readme-file) Trello card; which isn't completed (yet).)
+		- [X] ~~[Fix header and footer for my portfolio website](https://trello.com/c/CCtUbXY7/541-fix-header-and-footer-for-my-portfolio-website) Trello card.~~
+		- [X] ~~Remove this [old/20181126](https://github.com/JamieBort/jamiebort.github.io/tree/master/old/20181126) directory.~~
+		- [x] ~~[Fix branch issues with portfolio site](https://trello.com/c/PxEFMj5s/374-fix-branch-issues-with-portfolio-site) Trello card.~~
+		- [X] ~~[edit README files for the portfolio website](https://trello.com/c/ntfMYze3/552-edit-readme-files-for-the-portfolio-website) Trello card.~~
+		- [X] ~~[remove all button tags on my portfolio website](https://trello.com/c/9mD1AzSI/551-remove-all-button-tags-on-my-portfolio-website) Trello card.~~
+
+	- [ ] Functionality to address
+		- [ ] [Have the description in the project cards dynamically update from the github repo](https://trello.com/c/qcwpK1Gd/586-have-the-description-in-the-project-cards-dynamically-update-from-the-github-repo) Trello card.
+		- [ ] [Have the tech in the project cards dynamically update from the github repo](https://trello.com/c/qoEQZkfH/588-have-the-tech-in-the-project-cards-dynamically-update-from-the-github-repo) Trello card.
+		- [ ] [Have the cards themselves created populated based on the pinned items in github](https://trello.com/c/RyfM5Z0E/1124-have-the-cards-themselves-created-populated-based-on-the-pinned-items-in-github) Trello card.
+		- [ ] [Implement smooth navigation](https://trello.com/c/rjsuhabM/539-implement-smooth-navigation) Trello card.
+		- [ ] Make website accessible - see the [Accessibility](https://github.com/JamieBort/LearningDirectory/tree/master/Accessibility) directory of the LearningDirectory repo  
+			* ~~[Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card and~~
+			* ~~https://github.com/JamieBort/LearningDirectory/tree/master/Accessibility~~
+		- [ ] [Refactor the web_components file](https://trello.com/c/nGQ8jQea/1126-refactor-the-webcomponents-file) Trello card. Refactor the `js/web_components.js` file such that the string literal(s) are replaced with variables consisting of the same string content.
+		- [ ] Implement the `head-web-component` so that each html file needs only that line of code.
+		- [ ] The `Bio` button in the navigation section remains highlighted no matter which section you've navigated to. Address that.
+		- [ ] The "Let's" section in the "connect_with_me_section" section isn't centered properly. To complicate maters each time that changes the center moves left or right. Address this so that it's always centered.
+		- [ ] Make CSS selectors more uniform. Have them make sense/be semantic. This has been started. But could be improved upon.
+
+	- [ ] Styling to address - a lot of good info here. But not organized nor noted (yet): [Be deliberate with the css units for the Portfolio Website project](https://trello.com/c/HVuqs695/563-be-deliberate-with-the-css-units-for-the-portfolio-website-project) Trello card.
+		- [ ] [Style Links](https://trello.com/c/AsOQKQjI/562-style-links-and) Trello card.
+		- [ ] [Style buttons for my portfolio website](https://trello.com/c/Fny58qFO/538-style-buttons-for-my-portfolio-website) Trello card. Tabling this one for now. Not necessarily completed. See card.
+
 	- [ ] [Design the basic architecture](https://trello.com/c/CyUFSwY3/522-design-the-basic-architecture) Trello card.
-	- [ ] [Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card.
-	- [ ] Maybe [Rebuild very simple static site using HTML and CSS](https://trello.com/c/FDIB9ePE/163-rebuild-very-simple-static-site-using-html-and-css) Trello card.
-	- [ ] Bug test.
-	- [ ] Add this [github calendar](https://github.com/IonicaBizau/github-calendar) to my portfolio site. [Or somewhere else? and/or:](https://github.com/fullcalendar/fullcalendar)
-	- [ ] [Style buttons for my portfolio website](https://trello.com/c/Fny58qFO/538-style-buttons-for-my-portfolio-website) Trello card. Tabling this one for now. Not necessarily completed. See card. 
-	- [X] ~~[Fix header and footer for my portfolio website](https://trello.com/c/CCtUbXY7/541-fix-header-and-footer-for-my-portfolio-website) Trello card.~~
-	- [X] ~~Remove this [old/20181126](https://github.com/JamieBort/jamiebort.github.io/tree/master/old/20181126) directory.~~
-	- [x] ~~[Fix branch issues with portfolio site](https://trello.com/c/PxEFMj5s/374-fix-branch-issues-with-portfolio-site) Trello card.~~
 	
-
-- [X] ~~[Update the portfolio website README file](https://trello.com/c/hCRC1EG6/483-update-the-portfolio-website-readme-file) Trello card.~~
-
+	- [ ] Bug test.
+	- [ ] ~~Maybe [Rebuild very simple static site using HTML and CSS](https://trello.com/c/FDIB9ePE/163-rebuild-very-simple-static-site-using-html-and-css) Trello card.~~ `Retiring this card. No longer needed. Not worked on. Moving to Completed.`
+	
 - [X] ~~[Read up on functional versus business requirements](https://trello.com/c/CGFYOG9p/494-read-up-on-functional-versus-business-requirements) Trello card.~~
 
-- [X] ~~[edit README files for the portfolio website](https://trello.com/c/ntfMYze3/552-edit-readme-files-for-the-portfolio-website) Trello card.~~
-
-- [X] ~~[remove all button tags on my portfolio website](https://trello.com/c/9mD1AzSI/551-remove-all-button-tags-on-my-portfolio-website) Trello card.~~
-
 - [ ] ~~[Share link for portfolio website with others](https://trello.com/c/D5iXcGcX/531-share-link-for-portfolio-website-with-others) Trello card.~~ Redundant. Replaced with `Give survey for portfolio site`.
+
+- [x] ~~[Redirect my other domains to jamiebort.github.io](https://trello.com/c/Q7faEc6N/527-redirect-my-other-domains-to-jamiebortgithubio) Trello card.~~
 
 ### Types fo Content
 (see the [Explicitly list the content of the portfolio website 202010](https://trello.com/c/adJl19pT/496-explicitly-list-the-content-of-the-portfolio-website-202010) Trello card for content to list in this section.)
@@ -147,34 +145,17 @@ To add to the website.
 * [Portfolio Website](https://drive.google.com/drive/folders/1NchtYmGJ1wiZ6bEiqElTtK_IA84awWIo) Google Drive directory.
 * Chrome bookmark for this project: `chrome://bookmarks/?id=1300`
 * [Update Portfolio Website](https://trello.com/c/dJHqhhfU/90-update-portfolio-website) Trello card.
+* Make sure all URLs and links point to one url (http://www.jamiebort.com/) [Have all links and urls pointing to my portfolio website point to this url](https://trello.com/c/Ng3Fg14h/1125-have-all-links-and-urls-pointing-to-my-portfolio-website-point-to-this-url) (http://www.jamiebort.com/) Trello card.
+(not sure where this should be - settled on here rather than the [Update Portfolio Website](https://trello.com/c/dJHqhhfU/90-update-portfolio-website) Trello card.)
 
 ### Branches
-* Project_cards
-* Revamp2018
-* Revamp2019
-* Revamp201909
-* **Revamp2020**
-* TechnologyTableIframe
-* active_highlight_navigation_button
-* active_highlight_navigation_button_original
+* Revamp2020
 * branch_for_cleaning_before_pushing_to_master
+* dev
 * master
-* preliminaryExploration
-* responsive
-* revamp
-* styling
 * remotes/heroku/master
-* remotes/heroku/preliminaryExploration
-* remotes/origin/ButtonSize
 * remotes/origin/HEAD -> origin/master
-* remotes/origin/Project_cards
-* remotes/origin/Revamp2018
-* remotes/origin/Revamp201909
 * remotes/origin/Revamp2020
-* remotes/origin/TechnologyTableIframe
-* remotes/origin/active_highlight_navigation_button
 * remotes/origin/branch_for_cleaning_before_pushing_to_master
+* remotes/origin/dev
 * remotes/origin/master
-* remotes/origin/preliminaryExploration
-* remotes/origin/responsive
-* remotes/origin/revamp
