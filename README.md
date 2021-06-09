@@ -53,7 +53,8 @@ The site shall:
         +-- master
             +-- dev (copy of master to start with - created after Revamp2020)
                 +-- Revamp2020
-                    +-- feature branches
+                    +-- mobile_appearance
+					+-- other feature branches
 
 ### Directories and Files
 #### Directories

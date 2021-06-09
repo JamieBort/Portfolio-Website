@@ -1,5 +1,5 @@
 # Revamp2020
-## Revamp2020 branch
+## dev branch
 
 This file started as README.md in the `preliminaryExploration` branch.
 
@@ -12,33 +12,28 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 * Am working on the [Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card.
 
 ### Next Steps
-#### Current
-1. ~~Review and update the [Business Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#business-requirements) section.~~ Done.
-2. ~~Review and update the [Functional Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#functional-requirements) section.~~ Done.
-3. ~~Review and update the [Old](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#old) section.~~ Done.
-4. ~~Move the [Business Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#business-requirements) section and the [Functional Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#functional-requirements) section to the [README](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/README.md).md file.~~ Done.
-5. Fix CSS selectors - make uniform. Have them make sense/be semantic. Started.
-6. Fix appearance for mobile design. Specifically 
+1. Fix CSS selectors - make uniform. Have them make sense/be semantic. Started.
+2. Fix appearance for mobile design. Specifically 
 	* the devs@rtp image in the bio
 	* and the hight of the footer and header.
 	* the font size(s) in the cards are too small.
+	* email page is not displaying correctly for mobile.
+	* navigation header should be replaced with a hamburger menu.
 	* possibly more
 
 	To this end the 
-	* current changes in this `Revamp2020` branch will be merged into the `dev` branch.
-	* then those changes will be pushed to the Heroku site to be tested.
+	* ~~current changes in this `Revamp2020` branch will be merged into the `dev` branch~~.
+	* ~~then those changes will be pushed to the Heroku site/branch to be tested~~.
+	* ~~then those changes will be tested~~. Everything seems to be working as expected.
+	* ~~then those changes will be pushed to the `dev` branch~~.
+	* ~~then switch back to the `Revamp2020` branch~~.
+	* ~~then clean up the `Revamp2020.md` file~~.
 	* then a new `mobile_appearance` branch will be created.
-	* then the changes will be made in the `mobile_appearance` branch.
+	* then the necessary mobile design changes will be made in the `mobile_appearance` branch.
 	* lastly the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
 
-7. Add one or all of the apps (listed in `Content to add or change` below) to the portfolio.
-8. Remove the [Old](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#old) section and the [Current](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#current) title.
-
-#### ~~Old~~
-1. ~~Figure out my content.~~
-2. ~~Then figure out the layout using Figma.~~
-3. ~~Then build the site.~~
-4. ~~Lastly add content.~~
+3. Add one or all of the apps (listed in `Content to add or change` below) to the portfolio.
+4. ~~Remove the [Old](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#old) section and the [Current](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#current) title~~.
 
 ### To Do
 
