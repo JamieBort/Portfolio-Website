@@ -22,14 +22,19 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	* the devs@rtp image in the bio
 	* and the hight of the footer and header.
 	* the font size(s) in the cards are too small.
+	* email page is not displaying correctly for mobile.
+	* navigation header should be replaced with a hamburger menu.
 	* possibly more
 
 	To this end the 
-	* current changes in this `Revamp2020` branch will be merged into the `dev` branch.
-	* then those changes will be pushed to the Heroku site/branch to be tested.
+	* ~~current changes in this `Revamp2020` branch will be merged into the `dev` branch~~.
+	* ~~then those changes will be pushed to the Heroku site/branch to be tested~~.
+	* ~~then those changes will be tested~~. Everything seems to be working as expected.
 	* then those changes will be pushed to the `dev` branch.
+	* then switch back to the `Revamp2020` branch.
+	* then clean up the `Revamp2020.md` file.
 	* then a new `mobile_appearance` branch will be created.
-	* then the changes will be made in the `mobile_appearance` branch.
+	* then the necessary mobile design changes will be made in the `mobile_appearance` branch.
 	* lastly the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
 
 7. Add one or all of the apps (listed in `Content to add or change` below) to the portfolio.
