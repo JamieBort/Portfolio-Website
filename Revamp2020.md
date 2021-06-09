@@ -15,11 +15,18 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 1. Fix CSS selectors - make uniform. Have them make sense/be semantic. Started.
 2. Fix appearance for mobile design. Specifically 
 	* the devs@rtp image in the bio
-	* and the hight of the footer and header.
 	* the font size(s) in the cards are too small.
+	* current fonts don't look right - address this.
 	* email page is not displaying correctly for mobile.
-	* navigation header should be replaced with a hamburger menu.
+	* cards are smooshed - have them stack on onto of the other/next.
+	* and the hight of the footer and header.
+	* (later on) navigation header 
+		* should be replaced with a hamburger menu.
+		* and/or change the layout so that the projects section is to the right of the bio. And the connect with me is to the right of the projects section.
 	* possibly more
+	* lastly, remove the `<h3>` from the index file that reads:
+		
+		Please excuse the mess; particularly when viewing this website from a mobile device. I'm rebuilding it from scratch while I work on other projects. So this may take some time. The changes will be incremental.
 
 	To this end the 
 	* ~~current changes in this `Revamp2020` branch will be merged into the `dev` branch~~.
@@ -28,8 +35,8 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	* ~~then those changes will be pushed to the `dev` branch~~.
 	* ~~then switch back to the `Revamp2020` branch~~.
 	* ~~then clean up the `Revamp2020.md` file~~.
-	* then a new `mobile_appearance` branch will be created.
-	* then the necessary mobile design changes will be made in the `mobile_appearance` branch.
+	* ~~then a new `mobile_appearance` branch will be created~~.
+	* then the necessary mobile design changes will be made in the `mobile_appearance` branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)
 	* lastly the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
 
 3. Add one or all of the apps (listed in `Content to add or change` below) to the portfolio.

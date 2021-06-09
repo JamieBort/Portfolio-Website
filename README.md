@@ -46,6 +46,8 @@ The site shall:
         +-- master
             +-- branch_for_cleaning_before_pushing_to_master (staging branch created in 2017)
             +-- Revamp2020 (created in 2020)
+				+-- mobile_appearance
+				+-- other feature branches
             +-- dev (staging branch - created in 2021)
 
    Ideally
