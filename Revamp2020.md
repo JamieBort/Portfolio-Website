@@ -19,16 +19,17 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 4. ~~Move the [Business Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#business-requirements) section and the [Functional Requirements](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#functional-requirements) section to the [README](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/README.md).md file.~~ Done.
 5. Fix CSS selectors - make uniform. Have them make sense/be semantic. Started.
 6. Fix appearance for mobile design. Specifically 
-	* the devs@rtp image 
+	* the devs@rtp image in the bio
 	* and the hight of the footer and header.
-	* the font sizes in the cards are too small.
+	* the font size(s) in the cards are too small.
 	* possibly more
 
 	To this end the 
 	* current changes in this `Revamp2020` branch will be merged into the `dev` branch.
-	* those changes will be pushed to the Heroku site to be tested.
-	* a new `mobile_appearance` branch will be created.
-	* the changes will be made and merged into the `Revamp2020` branch. Or the `dev` branch.
+	* then those changes will be pushed to the Heroku site to be tested.
+	* then a new `mobile_appearance` branch will be created.
+	* then the changes will be made in the `mobile_appearance` branch.
+	* lastly the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
 
 7. Add one or all of the apps (listed in `Content to add or change` below) to the portfolio.
 8. Remove the [Old](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#old) section and the [Current](https://github.com/JamieBort/jamiebort.github.io/blob/Revamp2020/Revamp2020.md#current) title.
