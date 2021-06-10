@@ -9,45 +9,44 @@ class Head extends HTMLElement {
     }
 }
 
+// this.innerHTML = `
+//         <header>
+//             <nav>
+//                 <div id="nav_left" class="nav_div">
+//                     <a id="JamieBort" onClick={console.log("click")} class="nav_a" href="./index.html#title">Jamie Bort</a>
+//                     `
+
 // for header
 class Header extends HTMLElement {
     
     connectedCallback() {
+        const JamieBort_anchor="<a id='JamieBort' onClick={console.log('click')} class='nav_a' href='./index.html#title' >Jamie Bort</a>";
+        // const JamieBort_anchor= "<a class='nav_a' href='../html/index.html#title'>Jamie Bort</a>";
+        // const JamieBort_anchor=  "<a class='nav_a' href='../docs/index.html#title'>Jamie Bort</a>"
+
+        const bio_anchor = "<a class='nav_a active'  href='./index.html#bio_section'>Bio</a>";
+        const blog_anchor = "<a class='nav_a'  href='./blog.html#blog'>Blog</a>";
+        const projects_anchor = "<a class='nav_a'  href='./index.html#projects_section'>Projects</a>";
+        const resources_anchor = "<a id='resources' class='nav_a'  href='./resources.html'>Resources</a>";
+        const fun_anchor = "<a class='nav_a'  href='./fun_stuff.html'>Fun Stuff</a>";
+        const resume_anchor = "<a class='nav_a'  href='./resume.html'>Resume</a>";
+        const talks_anchor = "<a class='nav_a'  href='./talks.html'>Talks</a>";
+        const connect_anchor = " <a class='nav_a'  href='./index.html#connect_with_me_section'>Connect with me</a>";
+
         this.innerHTML = `
         <header>
             <nav>
-                <div id="nav_left">
-                    <a id="JamieBort" onClick={console.log("click")} class="head_a" href="./index.html#title">Jamie Bort</a>
-                    `
-            // <a class="head_a" href="../html/index.html#title">Jamie Bort</a>
-            //  <a class="head_a" href="../docs/index.html#title">Jamie Bort</a>
-            + `
-                    </div>
-                <div id="nav_right">
-                    <a id="bio_link" class="head_a active"  href="./index.html#bio_section">Bio</a>
-    `            // below is commented out because the Blog is not ready to show to the public.
-            // <a class="head_a"  href="./blog.html#blog">Blog</a>
-            + `
-                    <a class="head_a"  href="./index.html#projects_section">Projects</a>
-                        `+
-            // below is commented out because the Resources is not ready to show to the public.
-            // <a id="resources" class="head_a"  href="./resources.html">Resources</a>
-
-            // below is commented out because the Fun Stuff is not ready to show to the public.
-            // <a class="head_a"  href="./fun_stuff.html">Fun Stuff</a>
-
-            // below is commented out because the Resume page is not ready to show to the public.
-            // <a class="head_a"  href="./resume.html">Resume </a>
-
-            // below is commented out because the Talks page is not ready to show to the public.
-            // <a class="head_a"  href="./talks.html">Resume </a>
-            `
-                   <a class="head_a"  href="./index.html#connect_with_me_section">Connect with me</a>
-                   
+                <div id="nav_left" class="nav_div">
+                    ${JamieBort_anchor}
+                </div>
+                <div id="nav_right" class="nav_div">
+                    ${bio_anchor}
+                    ${projects_anchor}
+                    ${connect_anchor}
                 </div>
             </nav>
         </header>
-`;
+        `;
     }
 }
 
@@ -88,7 +87,7 @@ constructor() {
     // s.textContent = 'console.log("hello");';
     
     var right = document.getElementById("right");
-    var a = right.getElementsByClassName("head_a");
+    var a = right.getElementsByClassName("nav_a");
     for (var i = 0; i < a.length; i++) {
         a[i].addEventListener("click", function () {
             var current = document.getElementsByClassName("active");
