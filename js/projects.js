@@ -97,59 +97,60 @@ h2.className = "section_title";
 h2.innerHTML = "Some of my projects";
 project_section.appendChild(h2);
 
-var temp_div = document.createElement("div");
-temp_div.className="projects_container";
-project_section.appendChild(temp_div);
+var psd = document.createElement("div");
+// psd.className="projects_section_div";
+psd.id="projects_section_div";
+psd.className="section_div_not_used";
+project_section.appendChild(psd);
 
 for (var key in projects) {
-	var card_outside_div = document.createElement("div");
-	card_outside_div.className = "card_outside_div";
-	// project_section.appendChild(card_outside_div);
-	temp_div.appendChild(card_outside_div);
+	var cod = document.createElement("div");
+	cod.className = "card_outside_div";
+	// project_section.appendChild(cod);
+	psd.appendChild(cod);
 	
-	var card_header_div = document.createElement("div");
-	card_header_div.className = "card_header_div";
-	card_outside_div.appendChild(card_header_div);
+	var chd = document.createElement("div");
+	chd.className = "card_header_div";
+	cod.appendChild(chd);
 	
-	var card_header_img = document.createElement("img");
-	card_header_img.className = "card_header_img";
-	card_header_img.src = projects[key]["project_img"];
-	card_header_div.appendChild(card_header_img);
+	var chi = document.createElement("img");
+	chi.className = "card_header_img";
+	chi.src = projects[key]["project_img"];
+	chd.appendChild(chi);
 	
-	var card_body_outside_div = document.createElement("div");
-	card_body_outside_div.className = "card_body_outside_div";
-	card_outside_div.appendChild(card_body_outside_div);
+	var cbod = document.createElement("div");
+	cbod.className = "card_body_outside_div";
+	cod.appendChild(cbod);
 	
-	var card_title = document.createElement("h3");
-	card_title.className="card_title";
-	card_title.innerHTML=projects[key]["title"];
-	card_body_outside_div.appendChild(card_title);
+	var cd = document.createElement("h3");
+	cd.className="card_title";
+	cd.innerHTML=projects[key]["title"];
+	cbod.appendChild(cd);
 	
-	var card_paragraph = document.createElement("p");
-	card_paragraph.className="card_paragraph";
-	card_paragraph.innerHTML = projects[key]["description"];
-	card_body_outside_div.appendChild(card_paragraph);
+	var cp = document.createElement("p");
+	cp.className="card_paragraph";
+	cp.innerHTML = projects[key]["description"];
+	cbod.appendChild(cp);
 	
-	var card_body_inside_div = document.createElement("div");
-	card_body_inside_div.className = "card_body_inside_div";
-	card_body_outside_div.appendChild(card_body_inside_div);
+	var cbid = document.createElement("div");
+	cbid.className = "card_body_inside_div";
+	cbod.appendChild(cbid);
 	
-	var card_a_div = document.createElement("div");
-	card_a_div.className = "card_a_div";
-	card_body_inside_div.appendChild(card_a_div);
+	var cad = document.createElement("div");
+	cad.className = "card_a_div";
+	cbid.appendChild(cad);
 	
 	var a = document.createElement("a");
 	a.className="card_a";
 	a.href = projects[key]["project_anchor_href"];
-    // taget _blank
     a.target="_blank";
 	a.innerHTML = "Static Site";
-	card_a_div.appendChild(a);
+	cad.appendChild(a);
 	
-	var card_body_img = document.createElement("img");
-	card_body_img.className="card_body_img";
-    card_body_img.src = projects[key]["img_src"];
-	card_a_div.appendChild(card_body_img);
+	var cbi = document.createElement("img");
+	cbi.className="card_body_img";
+    cbi.src = projects[key]["img_src"];
+	cad.appendChild(cbi);
 	
 	var a = document.createElement("a");
 	a.className="card_a";
@@ -157,21 +158,21 @@ for (var key in projects) {
     // taget _blank
     a.target="_blank";
 	a.innerHTML = "Git Repo";
-	card_a_div.appendChild(a);
+	cad.appendChild(a);
 	
-	var card_footer_div = document.createElement("div");
-	card_footer_div.className = "card_footer_div";
-	card_outside_div.appendChild(card_footer_div);
+	var cfd = document.createElement("div");
+	cfd.className = "card_footer_div";
+	cod.appendChild(cfd);
 	
-	var card_unordered_list = document.createElement("ul");
-	card_unordered_list.className="card_unordered_list";
-	card_footer_div.appendChild(card_unordered_list);
+	var cul = document.createElement("ul");
+	cul.className="card_unordered_list";
+	cfd.appendChild(cul);
 	
-// 	cycle through the list of technologies used for this project
+    // cycle through the list of technologies used for this project
 	for (var index = 0; index < projects[key]["tech"].length; index++) {
-		var card_list_item = document.createElement("li");
-		card_list_item.className="card_list_item";
-		card_list_item.innerHTML =  projects[key]["tech"][index];
-		card_unordered_list.appendChild(card_list_item);
+		var cli = document.createElement("li");
+		cli.className="card_list_item";
+		cli.innerHTML =  projects[key]["tech"][index];
+		cul.appendChild(cli);
 	}
 }
