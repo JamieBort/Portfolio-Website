@@ -9,13 +9,6 @@ class Head extends HTMLElement {
     }
 }
 
-// this.innerHTML = `
-//         <header>
-//             <nav>
-//                 <div id="nav_left" class="nav_div">
-//                     <a id="JamieBort" onClick={console.log("click")} class="nav_a" href="./index.html#title">Jamie Bort</a>
-//                     `
-
 // for header
 class Header extends HTMLElement {
     
@@ -57,7 +50,7 @@ class Footer extends HTMLElement {
         this.innerHTML = `
         <footer class="footer">
             <span id="copyright">This should give the copyright date.</span>
-    </footer>
+        </footer>
                         `;
     }
 }
