@@ -1,5 +1,5 @@
 # Revamp2020
-## dev branch
+## mobile_appearance branch
 
 This file started as README.md in the `preliminaryExploration` branch.
 
@@ -110,13 +110,18 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [ ] Make website accessible - see the [Accessibility](https://github.com/JamieBort/LearningDirectory/tree/master/Accessibility) directory of the LearningDirectory repo  
 			* ~~[Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card and~~
 			* ~~https://github.com/JamieBort/LearningDirectory/tree/master/Accessibility~~
-		- [ ] [Refactor the web_components file](https://trello.com/c/nGQ8jQea/1126-refactor-the-webcomponents-file) Trello card. Refactor the `js/web_components.js` file such that the string literal(s) are replaced with variables consisting of the same string content.
-		- [ ] Implement the `head-web-component` so that each html file needs only that line of code.
+		- [ ] [Portfolio Website Web Component Issues](https://trello.com/c/M2Bneiy9/1128-portfolio-website-web-component-issues) Trello Card.
+			- [ ] [Refactor the web_components file](https://trello.com/c/nGQ8jQea/1126-refactor-the-webcomponents-file) Trello card. Refactor the `js/web_components.js` file such that the string literal(s) are replaced with variables consisting of the same string content.
+			- [ ] Implement the `head-web-component` so that each html file needs only that line of code.
 		- [ ] The `Bio` button in the navigation section remains highlighted no matter which section you've navigated to. Address that.
 		- [ ] The "Let's" section in the "connect_with_me_section" section isn't centered properly. To complicate maters each time that changes the center moves left or right. Address this so that it's always centered.
 		- [ ] Make CSS selectors more uniform. Have them make sense/be semantic. This has been started. But could be improved upon.
 
-	- [ ] Styling to address - a lot of good info here. But not organized nor noted (yet): [Be deliberate with the css units for the Portfolio Website project](https://trello.com/c/HVuqs695/563-be-deliberate-with-the-css-units-for-the-portfolio-website-project) Trello card.
+	- [ ] Styling to address 
+	
+		A lot of good info here. But not organized nor noted (yet): 
+		
+		(The completed) [Be deliberate with the css units for the Portfolio Website project](https://trello.com/c/HVuqs695/563-be-deliberate-with-the-css-units-for-the-portfolio-website-project) Trello card.
 		- [ ] [Style Links](https://trello.com/c/AsOQKQjI/562-style-links-and) Trello card.
 		- [ ] [Style buttons for my portfolio website](https://trello.com/c/Fny58qFO/538-style-buttons-for-my-portfolio-website) Trello card. Tabling this one for now. Not necessarily completed. See card.
 
