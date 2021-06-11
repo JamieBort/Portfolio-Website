@@ -23,7 +23,7 @@ p, li, h3{
 html, body {
     height: 100%;
     margin: 0;
-    background-color:lightsalmon;
+    background-color:lime;
 }
 
 .wrapper {
@@ -595,7 +595,7 @@ button {
 
 @media (max-width: 1000px) {
     body {
-      background-color:linen;
+      background-color:lightpink;
     }
 
 /* Header Mobile                   */
@@ -604,8 +604,10 @@ button {
 
 #devs_img {
     /* height: 2 em; */
-    height: 4.5em;
-    width: 13.5em;
+    /* height: 4.5em;
+    width: 13.5em; */
+    height: 3.5em;
+    width: 10.5em;
     /* height: 60px;
     width: 186.3px; */
     position: relative;
