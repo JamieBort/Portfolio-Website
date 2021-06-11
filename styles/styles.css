@@ -596,7 +596,7 @@ button {
 
 @media (max-width: 1000px) {
     body {
-      background-color: lightcyan;
+      background-color:lightgoldenrodyellow;
     }
 
 /* Header Mobile                   */
@@ -605,10 +605,10 @@ button {
 
 #devs_img {
     /* height: 2 em; */
-    height: 50px;
-    width: 156.25px;
+    height: 60px;
+    width: 186.3px;
     position: relative;
-    top: .4em;
+    top: .5em;
     /* top: .25em; */
     /* height: .75em; */
     /* width: 5.5%; */
