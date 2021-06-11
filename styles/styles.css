@@ -596,7 +596,7 @@ button {
 
 @media (max-width: 1000px) {
     body {
-      /* background-color: lightcoral; */
+      background-color: lightcoral;
     }
 
 /* Header Mobile                   */
