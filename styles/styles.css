@@ -23,6 +23,7 @@ p, li, h3{
 html, body {
     height: 100%;
     margin: 0;
+    background-color:lightsteelblue;
 }
 
 .wrapper {
@@ -596,7 +597,7 @@ button {
 
 @media (max-width: 1000px) {
     body {
-      background-color:lightsalmon;
+      background-color:lime;
     }
 
 /* Header Mobile                   */
