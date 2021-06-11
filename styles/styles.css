@@ -184,9 +184,10 @@ nav {
 }
 
 #devs_img {
-    /* height: 1em; */
-    height: .75em;
-    /* width: 5.5%; */
+    height: 20px;
+    width: 62.5px;
+    position: relative;
+    top: .25em;
     /* background: lightblue; */
 }
 
@@ -595,7 +596,7 @@ button {
 
 @media (max-width: 1000px) {
     body {
-      background-color: yellow;
+      background-color: yellowgreen;
     }
 
 /* Header Mobile                   */
@@ -603,7 +604,11 @@ button {
 /* Bio section Mobile              */
 
 #devs_img {
-    height: 2 em;
+    /* height: 2 em; */
+    /* height: 20px;
+    width: 62.5px;
+    position: relative;
+    top: .25em; */
     /* height: .75em; */
     /* width: 5.5%; */
     /* background: lightblue; */
