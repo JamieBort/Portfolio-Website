@@ -10,11 +10,11 @@ section{
     margin:3em 0 0 0;
 }
 
-h1,h2, h3{
+h1,h2{
     font-family: 'Quattrocento', serif;
     /* font-family: 'Roboto', sans-serif; */
 }
-p, li{
+p, li, h3{
     /* font-family: 'Quattrocento', serif; */
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Montserrat', sans-serif;
@@ -587,13 +587,32 @@ button {
 /* Footer Tablet                   */
 
 /* MOBILE                          */
+/* =========================================== */
+/* Style for mobile */
+/* =========================================== */
+
+/* Using: https://stackoverflow.com/questions/16704243/widths-to-use-in-media-queries */
+
+@media (max-width: 1000px) {
+    body {
+      background-color: pink;
+    }
 
 /* Header Mobile                   */
 
 /* Bio section Mobile              */
+
+#devs_img {
+    height: 1em;
+    /* height: .75em; */
+    /* width: 5.5%; */
+    /* background: lightblue; */
+}
 
 /* Projects section Mobile         */
 
 /* Connect With Me section Mobile  */
 
 /* Footer Mobile                   */
+    
+}

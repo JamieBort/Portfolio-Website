@@ -22,10 +22,12 @@ class Header extends HTMLElement {
         const projects_anchor = "<a class='nav_a'  href='./index.html#projects_section'>Projects</a>";
         const resources_anchor = "<a id='resources' class='nav_a'  href='./resources.html'>Resources</a>";
         const fun_anchor = "<a class='nav_a'  href='./fun_stuff.html'>Fun Stuff</a>";
-        const resume_anchor = "<a class='nav_a'  href='./resume.html'>Resume</a>";
         const talks_anchor = "<a class='nav_a'  href='./talks.html'>Talks</a>";
         const connect_anchor = " <a class='nav_a'  href='./index.html#connect_with_me_section'>Connect with me</a>";
 
+        // const resume_anchor = "<a class='nav_a'  href='./resume.html'>Resume</a>";
+        const resume_anchor = "<a class='nav_a'  href='./index.html#resume_section'>Resume</a>";
+        
         this.innerHTML = `
         <header>
             <nav>
@@ -36,6 +38,7 @@ class Header extends HTMLElement {
                     ${bio_anchor}
                     ${projects_anchor}
                     ${connect_anchor}
+                    ${resume_anchor}
                 </div>
             </nav>
         </header>

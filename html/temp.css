@@ -1,40 +1,64 @@
-.wrapper{}
+/* Desktop */
+
+html * {
+    scroll-behavior: smooth;
+}
+
+.wrapper {}
+
 /* header-web-component */
+
 /* main */
+
 /* footer-web-component */
 
-#title{}
+#title {}
 
-#nav_left{}
-#nav_right{}
-.nav_div{}
-.nav_a{}
+#nav_left {}
 
-#bio_section{}
-#projects_section{}
-#connect_with_me_section{}
+#nav_right {}
 
-.section_title{}
-#bio_section_div{}
-#connect_with_me_section_div{}
-#projects_section_div{}
-.section_div_not_used{}
+.nav_div {}
 
+.nav_a {}
 
-#lets_container{}
-.p_div{}
+section {
+    margin: 3em 0 0 0;
+}
 
-#connect_with_me_div{}
+#bio_section {}
 
-#lets_container_left{}
+#projects_section {}
 
-#lets_container_right{}
+#connect_with_me_section {}
 
 
+h1,h2, h3{
+    font-family: 'Quattrocento', serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+.section_title {}
 
+#bio_section_div {}
 
+#connect_with_me_section_div {}
 
+#projects_section_div {}
 
+.section_div_not_used {}
 
+#lets_container {}
 
+.p_div {}
 
+p, li{
+    /* font-family: 'Quattrocento', serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+#connect_with_me_div {}
+
+#lets_container_left {}
+
+#lets_container_right {}
