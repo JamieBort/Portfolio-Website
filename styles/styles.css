@@ -596,7 +596,7 @@ button {
 
 @media (max-width: 1000px) {
     body {
-      background-color:lightgoldenrodyellow;
+      background-color:lightsalmon;
     }
 
 /* Header Mobile                   */
@@ -608,7 +608,7 @@ button {
     height: 60px;
     width: 186.3px;
     position: relative;
-    top: .5em;
+    top: .7em;
     /* top: .25em; */
     /* height: .75em; */
     /* width: 5.5%; */
