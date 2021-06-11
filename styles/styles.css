@@ -23,7 +23,7 @@ p, li, h3{
 html, body {
     height: 100%;
     margin: 0;
-    background-color:lightsteelblue;
+    background-color:lightsalmon;
 }
 
 .wrapper {
@@ -185,10 +185,12 @@ nav {
 }
 
 #devs_img {
-    height: 20px;
-    width: 62.5px;
+    height: 1.5em;
+    width: 4.5em;
+    /* height: 20px;
+    width: 62.5px; */
     position: relative;
-    top: .25em;
+    top: .4em;
     /* background: lightblue; */
 }
 
@@ -238,10 +240,6 @@ table {
     /* ********************************************************* */
     border-radius: 1em;
     padding: 1em;
-}
-
-.table_div {
-    /* background-color: lightskyblue; */
 }
 
 #icon_div{
@@ -597,7 +595,7 @@ button {
 
 @media (max-width: 1000px) {
     body {
-      background-color:lime;
+      background-color:linen;
     }
 
 /* Header Mobile                   */
@@ -606,8 +604,10 @@ button {
 
 #devs_img {
     /* height: 2 em; */
-    height: 60px;
-    width: 186.3px;
+    height: 4.5em;
+    width: 13.5em;
+    /* height: 60px;
+    width: 186.3px; */
     position: relative;
     top: .7em;
     /* top: .25em; */
