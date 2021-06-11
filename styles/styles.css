@@ -595,7 +595,7 @@ button {
 
 @media (max-width: 1000px) {
     body {
-      background-color: pink;
+      background-color: yellow;
     }
 
 /* Header Mobile                   */
@@ -603,7 +603,7 @@ button {
 /* Bio section Mobile              */
 
 #devs_img {
-    height: 1em;
+    height: 2 em;
     /* height: .75em; */
     /* width: 5.5%; */
     /* background: lightblue; */
