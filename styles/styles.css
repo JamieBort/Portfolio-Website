@@ -596,7 +596,7 @@ button {
 
 @media (max-width: 1000px) {
     body {
-      background-color: lightcoral;
+      /* background-color: lightcoral; */
     }
 
 /* Header Mobile                   */
@@ -605,13 +605,13 @@ button {
 
 #devs_img {
     /* height: 2 em; */
-    height: 40px;
-    width: 125px;
+    height: 50px;
+    width: 156.25px;
     position: relative;
     top: .25em;
     /* height: .75em; */
     /* width: 5.5%; */
-    background: lightblue;
+    /* background: lightblue; */
 }
 
 /* Projects section Mobile         */
