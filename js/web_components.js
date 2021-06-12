@@ -110,7 +110,7 @@ constructor() {
     //         this.className += " active";
     //     });
 
-shadow.appendChild(s);
+    shadow.appendChild(s);
 
   }
 }
