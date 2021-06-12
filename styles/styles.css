@@ -23,7 +23,7 @@ p, li, h3{
 html, body {
     height: 100%;
     margin: 0;
-    background-color:lime;
+    background-color:lightpink;
 }
 
 .wrapper {
@@ -187,8 +187,6 @@ nav {
 #devs_img {
     height: 1.5em;
     width: 4.5em;
-    /* height: 20px;
-    width: 62.5px; */
     position: relative;
     top: .4em;
     /* background: lightblue; */
@@ -595,7 +593,7 @@ button {
 
 @media (max-width: 1000px) {
     body {
-      background-color:lightpink;
+      background-color:lightsteelblue;
     }
 
 /* Header Mobile                   */
@@ -603,18 +601,10 @@ button {
 /* Bio section Mobile              */
 
 #devs_img {
-    /* height: 2 em; */
-    /* height: 4.5em;
-    width: 13.5em; */
     height: 3.5em;
     width: 10.5em;
-    /* height: 60px;
-    width: 186.3px; */
     position: relative;
     top: .7em;
-    /* top: .25em; */
-    /* height: .75em; */
-    /* width: 5.5%; */
     /* background: lightblue; */
 }
 
