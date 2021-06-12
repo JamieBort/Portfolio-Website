@@ -14,7 +14,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 ### Next Steps
 1. Fix CSS selectors - make uniform. Have them make sense/be semantic. Started.
 2. Fix appearance for mobile design. Specifically 
-	* the devs@rtp image in the bio
+	* ~~the devs@rtp image in the bio~~ Addressed for now. See the [Modify devsatrtp image in Portfolio Website](https://trello.com/c/865I1iOD/565-modify-devsatrtp-image-in-portfolio-website) Trello card below.
 	* the font size(s) in the cards are too small.
 	* current fonts don't look right - address this.
 	* email page is not displaying correctly for mobile.
@@ -116,6 +116,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [ ] The `Bio` button in the navigation section remains highlighted no matter which section you've navigated to. Address that.
 		- [ ] The "Let's" section in the "connect_with_me_section" section isn't centered properly. To complicate maters each time that changes the center moves left or right. Address this so that it's always centered.
 		- [ ] Make CSS selectors more uniform. Have them make sense/be semantic. This has been started. But could be improved upon.
+		- [ ] This might help with the email form. For example, the subject doesn't get added to an email (yet): https://github.com/JamieBort/CodeTheDream/tree/main/RedEclipseIntroToProgramming/Lesson4_3/ And the readme file there.
 
 	- [ ] Styling to address 
 	
