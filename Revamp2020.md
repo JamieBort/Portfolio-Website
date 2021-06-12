@@ -14,11 +14,17 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 ### Next Steps
 1. Fix CSS selectors - make uniform. Have them make sense/be semantic. Started.
 2. Fix appearance for mobile design. Specifically 
-	* ~~the devs@rtp image in the bio~~ Addressed for now. See the [Modify devsatrtp image in Portfolio Website](https://trello.com/c/865I1iOD/565-modify-devsatrtp-image-in-portfolio-website) Trello card below.
-	* the font size(s) in the cards are too small.
-	* current fonts don't look right - address this.
+	* ~~the devs@rtp image in the bio~~ 
+	
+		Addressed for now. (See the [Modify devsatrtp image in Portfolio Website](https://trello.com/c/865I1iOD/565-modify-devsatrtp-image-in-portfolio-website) Trello card below.) 
+	
+		[Will revisit later](https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website) when **reviewing css units**.
+	* cards are smooshed - have them stack on top of the other/the next one. OR have them all in one row next to each other. **But first fix the css selectors** (to clean up the css file so it's more manageable to edit.)
+	* Address these together
+		* [Address the css units for the portfolio website](https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website) Trello card.
+		* the font size(s) in the cards are too small. (address this after the cards are addressed -they're smooshed)
+		* current fonts don't look right - address this.
 	* email page is not displaying correctly for mobile.
-	* cards are smooshed - have them stack on onto of the other/next.
 	* and the hight of the footer and header.
 	* (later on) navigation header 
 		* should be replaced with a hamburger menu.
@@ -123,6 +129,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		A lot of good info here. But not organized nor noted (yet): 
 		
 		(The completed) [Be deliberate with the css units for the Portfolio Website project](https://trello.com/c/HVuqs695/563-be-deliberate-with-the-css-units-for-the-portfolio-website-project) Trello card.
+		- [ ] Address the css units - Based on what I learned about `em`, `rem`, and the other css units, they may need to change. [Address the css units for the portfolio website](https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website) Trello card.
 		- [ ] [Style Links](https://trello.com/c/AsOQKQjI/562-style-links-and) Trello card.
 		- [ ] [Style buttons for my portfolio website](https://trello.com/c/Fny58qFO/538-style-buttons-for-my-portfolio-website) Trello card. Tabling this one for now. Not necessarily completed. See card.
 
