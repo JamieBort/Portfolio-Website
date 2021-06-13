@@ -320,6 +320,11 @@ p, li, h3 {
         height: 10em;
     }
 
+    #nav_left, #nav_right {
+        height: 6em;
+        background-color: darkseagreen;
+    }
+
     #devs_img {
         height: 3.5em;
         width: 10.5em;
