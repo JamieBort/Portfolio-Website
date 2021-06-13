@@ -81,7 +81,7 @@ footer {
 
 
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
 }
 
 .nav_a:hover {
@@ -322,7 +322,7 @@ p, li, h3 {
 
 @media (max-width: 1000px) {
     body {
-      background-color:burlywood;
+      background-color:ivory;
     }
 
     #nav {
@@ -331,7 +331,7 @@ p, li, h3 {
 
     #nav_left, #nav_right {
         height: 6em;
-        background-color: darkturquoise;
+        background-color: thistle;
     }
 
     #devs_img {
