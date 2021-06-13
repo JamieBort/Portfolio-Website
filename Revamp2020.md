@@ -19,7 +19,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		Addressed for now. (See the [Modify devsatrtp image in Portfolio Website](https://trello.com/c/865I1iOD/565-modify-devsatrtp-image-in-portfolio-website) Trello card below.) 
 	
 		[Will revisit later](https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website) when **reviewing css units**.
-	* cards are smooshed - have them stack on top of the other/the next one. OR have them all in one row next to each other. ~~But first fix the css selectors (to clean up the css file so it's more manageable to edit.)~~ That part is done.
+	* ~~cards are smooshed - have them stack on top of each other/the next one. OR have them all in one row next to each other.~~ ~~But first fix the css selectors (to clean up the css file so it's more manageable to edit.)~~ Done.
 	* Address these together
 		* [Address the css units for the portfolio website](https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website) Trello card.
 		* the font size(s) in the cards are too small. (address this after the cards are addressed -they're smooshed)
@@ -124,6 +124,10 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [ ] Make CSS selectors more uniform. Have them make sense/be semantic. This has been started. But could be improved upon.
 		- [ ] This might help with the email form. For example, the subject doesn't get added to an email (yet): https://github.com/JamieBort/CodeTheDream/tree/main/RedEclipseIntroToProgramming/Lesson4_3/ And the readme file there.
 		- [ ] [Hide the scroll bar in the desktop view](https://trello.com/c/J4Uxs71X/1132-hide-the-scroll-bar-in-the-desktop-view) Trello card.
+		- [ ] Have the project cards slide left and right. Rather than have them stacked one on to of the next. 
+		
+			**NOTE:** this might be a bad idea if one card is very tall and the next is very short.
+		- [ ] (next item)
 
 	- [ ] Styling to address 
 	

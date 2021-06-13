@@ -339,8 +339,8 @@ p, li, h3 {
 
 .card_outside_div{
     /* width:20em; */
-    width:80%;
-    background: lime;
+    width:95%;
+    /* background: lime; */
 /* border: .1em green solid; */
 }
 
