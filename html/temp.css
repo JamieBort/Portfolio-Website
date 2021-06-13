@@ -16,7 +16,7 @@ html{
 body{
     margin: 0;
     height: 100%;
-    background-color:peachpuff;
+    background-color:palevioletred;
 }
 
 .wrapper {
@@ -73,6 +73,10 @@ footer {
     font-size: 2em;
     margin: 0 .5em;
     padding:0 .4em;
+
+
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .nav_a:hover {
@@ -322,7 +326,7 @@ p, li, h3 {
 
     #nav_left, #nav_right {
         height: 6em;
-        background-color: darkseagreen;
+        background-color: darkorange;
     }
 
     #devs_img {
