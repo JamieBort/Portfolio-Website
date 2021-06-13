@@ -123,6 +123,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [ ] The "Let's" section in the "connect_with_me_section" section isn't centered properly. To complicate maters each time that changes the center moves left or right. Address this so that it's always centered.
 		- [ ] Make CSS selectors more uniform. Have them make sense/be semantic. This has been started. But could be improved upon.
 		- [ ] This might help with the email form. For example, the subject doesn't get added to an email (yet): https://github.com/JamieBort/CodeTheDream/tree/main/RedEclipseIntroToProgramming/Lesson4_3/ And the readme file there.
+		- [ ] [Hide the scroll bar in the desktop view](https://trello.com/c/J4Uxs71X/1132-hide-the-scroll-bar-in-the-desktop-view) Trello card.
 
 	- [ ] Styling to address 
 	

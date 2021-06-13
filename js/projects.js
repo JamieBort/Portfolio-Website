@@ -103,11 +103,21 @@ psd.id="projects_section_div";
 psd.className="section_div_not_used";
 project_section.appendChild(psd);
 
+// var abcdabcd = document.createElement("div");
+// abcdabcd.className="p_div";
+// psd.appendChild(abcdabcd);
+
+
+
+
+
 for (var key in projects) {
 	var cod = document.createElement("div");
 	cod.className = "card_outside_div";
 	// project_section.appendChild(cod);
 	psd.appendChild(cod);
+
+    // abcdabcd.appendChild(cod);
 	
 	var chd = document.createElement("div");
 	chd.className = "card_header_div";

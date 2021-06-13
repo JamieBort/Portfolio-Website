@@ -2,65 +2,56 @@
 
 /* Home Page                       */
 
-html * {
+/* html * {
     scroll-behavior: smooth;
-    /* background-color:lightpink; */
-}
+    background-color:orange;
+} */
 
-body{
-    background-color:greenyellow;}
-
-section{
+/* section{
     margin:3em 0 0 0;
-}
+} */
 
-h1,h2{
+/* h1,h2{
     font-family: 'Quattrocento', serif;
-    /* font-family: 'Roboto', sans-serif; */
-}
-p, li, h3{
-    /* font-family: 'Quattrocento', serif; */
-    /* font-family: 'Roboto', sans-serif; */
+} */
+/* p, li, h3{
     font-family: 'Montserrat', sans-serif;
-}
+} */
 
 html, body {
-    height: 100%;
-    margin: 0;
-    /* background-color:lightpink; */
+    /* height: 100%; */
+    /* margin: 0; */
+    background-color:lightpink;
 }
 
-.wrapper {
+/* .wrapper {
     height: 100%;
     display: flex;
     flex-direction: column;
-}
+} */
 
 header, footer {
     /* background: silver; */
     /* font-size: 30px; */
 }
 
-main {
+/* main {
     flex: 1;
     overflow: auto;
-    /* background: pink; */
-}
+} */
 
-#title {
-    /* background: blueviolet; */
+/* #title {
     text-align: center;
     font-size: 2.5em;
-    /* height: 80px; */
-}
+} */
 
-.section_title {
+/* .section_title {
     text-align: center;
-}
+} */
 
-.subtitle {
+/* .subtitle {
     text-align: center;
-}
+} */
 
 /* Not used before transitioning to the temp.css file. */
 .section_div_not_used {
@@ -70,29 +61,27 @@ main {
     /* text-align: center; */
 }
 
-.p_div {
-    /* background: salmon; */
+/* .p_div, #projects_section_div {
     max-width: 85%;
     margin: 0 auto;
-    /* text-align: center; */
-}
+} */
 
 /* Header Desktop                  */
 
 /* Header Desktop                  */
 
-nav {
+/* nav {
     border-bottom: 1px solid red;
     display: flex;
     justify-content: space-around;
-}
+} */
 
-#nav_left, #nav_right {
+/* #nav_left, #nav_right {
     height: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 /* Not used before transitioning to the temp.css file. */
 #nav_left {
@@ -115,12 +104,12 @@ nav {
     padding:0 .4em;
 } */
 
-.nav_a {
+/* .nav_a {
     text-decoration: none;
     font-size: 2em;
     margin: 0 .5em;
     padding:0 .4em;
-}
+} */
 
 
 
@@ -138,13 +127,12 @@ nav {
   }
   
   /* Style the active class, and buttons on mouse-over */
-  .active {
-    /* background-color: #666; */
+  /* .active {
     background-color: lightslategray;
     color: white;
     padding:0 .4em;
     border-radius: .25em;
-  }
+  } */
 
 /* Not used before transitioning to the temp.css file. */
   /* .head_a:hover {
@@ -152,15 +140,11 @@ nav {
     color: white;
     border-radius: .25em;} */
 
-  .nav_a:hover {
-    /* background-color: #666; */
+  /* .nav_a:hover {
     background-color: lightgray;
     color: white;
-    /* padding:0 .4em; */
     border-radius: .25em;
-    
-    /* margin: 0 .5em; */
-  }
+} */
 
 
 
@@ -188,21 +172,16 @@ nav {
     /* text-align: center; */
 }
 
-/* Not used before transitioning to the temp.css file. */
-#bio_section_div {
-    /* background: silver; */
-    /* text-align: center; */
-    /* max-width: 90%; */
+/* #bio_section_div {
     margin: 0 auto;
-}
+} */
 
-#devs_img {
+/* #devs_img {
     height: 1.5em;
     width: 4.5em;
     position: relative;
     top: .4em;
-    /* background: lightblue; */
-}
+} */
 
 /* not used any more */
 
@@ -212,12 +191,12 @@ nav {
     background-color: transparent;
 } */
 
-#skills_viewing_options {
+/* not used any more */
+/* #skills_viewing_options {
     display: flex;
     justify-content: space-around;
-    /* background-color: green;   */
-}
-
+} */
+/* not used any more */
 /* The following is for the table */
 
 table tbody tr td {
@@ -225,7 +204,7 @@ table tbody tr td {
     /* border-collapse: collapse; */
     /* border-spacing: 0em; */
 }
-
+/* not used any more */
 table {
     margin: 0 auto;
     /* margin-left:auto; 
@@ -253,17 +232,16 @@ table {
     padding: 1em;
 }
 
-#icon_div{
-    /* border: .1em blue solid; */
-    /* margin:3em; */
+/* #icon_div{
     display:flex;
     flex-wrap:wrap;
-    justify-content:space-around;}
-.fab{
-    /* border: .1em blue solid; */
+    justify-content:space-around;
+}
+
+    .fab{
     margin:.3em 1.3em;
     font-size: 5em;
-}
+} */
 
 /* Projects section Desktop        */
 
@@ -278,7 +256,7 @@ table {
 
 #projects_section{
     /* border: .1em red solid; */
-    padding:.1em;
+    /* padding:.1em; */
 }
 
 /* Not used before transitioning to the temp.css file. */
@@ -288,42 +266,27 @@ table {
     justify-content:space-around;
 } */
 
-#projects_section_div{
-    /* border: .1em blue solid; */
+/* #projects_section_div{
     display:flex;
     flex-wrap:wrap;
     justify-content:space-around;
-}
+} */
 
-.card_outside_div{
-    	/* border: .1em green solid; */
+/* .card_outside_div{
     border-radius:1em;
     margin:1.5em 0;
     text-align:center;
-    /* max-height:30em; */
-	/* max-width:20em; */
-    /* min-width:15em; */
     width:20em;
-    
-    
-    /* body - or any parent wrapper */
-  display: flex;
-  flex-direction: column;
-/*   min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
       min-height: 20em;
-    /* 	border: .1em lightgray solid; */
+    -webkit-box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.16);
+    box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.16);
+    background: #FFFFFF;
+} */
 
-    /* 	Used this https://html-css-js.com/css/generator/box-shadow/ for the following box shaddow */
--webkit-box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.16); 
-box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.16);
-background: #FFFFFF;
-}
-
-.card_header_div {
-/* 	border: .1em green solid; */
-/* 	margin:.1em; */
+/* .card_header_div {
     width:100%;
-/* max-hight:.2em; */
 }
 .card_header_img{
     width:100%;
@@ -333,52 +296,35 @@ background: #FFFFFF;
 }
 .card_body_outside_div{
     flex: 1;
-    
     display:flex;
     flex-direction:column;
-justify-content:space-between;
-    
-    
-	/* border: .1em green solid; */
+    justify-content:space-between;
     margin:.5em auto;
-/* 	margin-bottom:1em; */
-/* 	padding:.1em; */
     width:90%;
 }
-
 .card_a_div{
     display:flex;
     justify-content:space-around;
     align-items:center;
-/* 	flex-direction:column; */
-/* 	border: .1em red solid; */
     margin:.1em;
     padding:.1em;
 }
-
 .card_a, .card_body_img{
-/* 	border: .1em orange solid; */
     margin: .5em;
-/* 	padding: .5em; */
     min-width:4em
 }
-
 .card_a{
-/* 	border: .1em orange solid; */
     text-decoration:none;
-/* 	padding:0; */
     border-bottom: 1px solid black;
 }
 .card_footer_div{
     border-top: 1px solid black;
     min-height:2.5em;
-/* 	max-height:2em; */
     display:flex;
     align-items:center;
 }
 .card_unordered_list{
     list-style-type:none;
-/* 	border: .1em green solid; */
     margin:0 auto;
     width:90%;
     padding:0;
@@ -386,12 +332,9 @@ justify-content:space-between;
     flex-wrap:wrap;
     justify-content: space-around;
 }
-
 .card_list_item{
-/* 	display:inline; */
     padding:.1em;
-/* 	border: .1em red solid; */
-}
+} */
 
 
 
@@ -412,53 +355,35 @@ justify-content:space-between;
 
 /* NOTE:/TODO: should this #connect_with_me_section selector be all by itself? rather, should it be removed or should there be a class for all sections?*/
 
-#connect_with_me_section {
+/* #connect_with_me_section {
     height: 18em;
-}
+} */
 
-#connect_with_me_div {
-    /* background-color: lightsalmon; */
+/* #connect_with_me_div {
     display: flex;
     justify-content: space-around;
     margin-top: 3em;
-    /* height: 100%; */
-    /* max-width: 100px;
-    width: auto; */
-    /* background-color: lightseagreen; */
-    /* background: lightseagreen; */
-    /* width: 100px;
-    height: 100px; */
-}
+} */
 
 /* editing below */
-#lets_container{
-    /* margin:.1em; */
-    /* border: 1px solid brown; */
+/* #lets_container{
     display: flex;
     justify-content: center;
-}
+} */
 /* #lets_container span{
     width: 100%;
 } */
-#lets_container_left,#lets_container_right{
-    /* margin:.3em; */
-    /* border: 1px solid red; */
+/* #lets_container_left,#lets_container_right{
     width: 100%;
-}
-#lets_container_left {
-    /* margin:.3em; */
-    /* padding: .3em; */
-    /* border: 1px solid chartreuse; */
+} */
+/* #lets_container_left {
     display:flex; 
     justify-content:flex-end; 
-}
-#lets_container_right {
-    /* margin:.3em; */
-    /* padding: .3em; */
-    /* border: 1px solid black; */
+} */
+/* #lets_container_right {
     display:flex; 
     justify-content:flex-start; 
-}
+} */
 
 /* Not used before transitioning to the temp.css file. */
 #lets_container_left h2{
@@ -468,33 +393,30 @@ justify-content:space-between;
     justify-content:flex-end;  */
 }
 #lets_container_right h2{
-    margin-left:.3em;
-    /* border: 1px solid blue; */
+    /* margin-left:.3em;
+    border: 1px solid blue; */
     /* display:flex; 
     justify-content:flex-start;  */
 }
 
 /* editing below */
 
-.connect_with_me_img {
+/* .connect_with_me_img {
     max-width: 3em;
     width: auto;
-    /* max-width: 25px; */
-    /* background-color: pink; */
-}
+} */
 
 /* Footer Desktop                  */
 
 /* Footer Desktop                  */
 
-footer {
-    /* max-height: 10px; */
+/* footer {
     min-height: 1.5em;
     display: flex;
     justify-content: center;
     align-items: center;
     border-top: 1px solid red;
-}
+} */
 
 /* Not used before transitioning to the temp.css file. */
 #copyright {
@@ -505,39 +427,34 @@ footer {
 
 /* For the site is under construction image */
 
-#construction_div {
-    /* border: 1px solid black; */
+/* #construction_div {
     margin: 0 auto;
     max-width: 50%;
     text-align: center;
-    /* display: inline; */
-}
+} */
 
-#construction {
+/* #construction {
     display: block;
     max-width: 30%;
-    /* max-height: 10%; */
-    /* border: 1px solid blue; */
     margin: 0 auto;
-}
+} */
 
 /* Resources Page                       */
 
-#list {
+/* #list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
+} */
 
-.resource_div {
+/* .resource_div {
     max-width: 50%;
     min-width: 40%;
-    /* border: 1px solid blue; */
-}
+} */
 
-.resource_title {
+/* .resource_title {
     text-align: center;
-}
+} */
 
 /* ***************************************** */
 
@@ -545,43 +462,34 @@ footer {
 
 /* ***************************************** */
 
-form {
+/* form {
     width: 75%;
     margin: 0 auto;
-    /* background: lightpink; */
-}
+} */
 
-#one {
-    /* background: lightpink; */
-}
-
-#contact_me_section_div{
+/* #contact_me_section_div{
     margin: 3em 0 0 0;
-}
+} */
 
-#form_input_div {
+/* #form_input_div {
     display: flex;
     justify-content: space-around;
     margin: 1em 0;
-    /* background: lightblue; */
-}
+} */
 
-textarea {
+/* textarea {
     width: 100%;
     min-height: 8em;
-    /* background: lightpink; */
-}
+} */
 
-button {
-    /* width: 800px; */
+/* button {
     width: 100%;
     height: 3em;
-}
+} */
 
-.thankyou_message {
+/* .thankyou_message {
     text-align: center;
-    /* background: lightpink; */
-}
+} */
 
 /* ***************************************** */
 
@@ -609,21 +517,20 @@ button {
 /* Using: https://stackoverflow.com/questions/16704243/widths-to-use-in-media-queries */
 
 @media (max-width: 1000px) {
-    body {
+    /* body {
       background-color:lightsteelblue;
-    }
+    } */
 
 /* Header Mobile                   */
 
 /* Bio section Mobile              */
 
-#devs_img {
+/* #devs_img {
     height: 3.5em;
     width: 10.5em;
     position: relative;
     top: .7em;
-    /* background: lightblue; */
-}
+} */
 
 /* Projects section Mobile         */
 

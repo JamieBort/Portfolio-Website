@@ -30,7 +30,7 @@ class Header extends HTMLElement {
         
         this.innerHTML = `
         <header>
-            <nav>
+            <nav id="nav">
                 <div id="nav_left" class="nav_div">
                     ${JamieBort_anchor}
                 </div>
@@ -51,7 +51,7 @@ class Header extends HTMLElement {
 class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <footer class="footer">
+        <footer>
             <span id="copyright">This should give the copyright date.</span>
         </footer>
                         `;
@@ -83,9 +83,9 @@ constructor() {
     // s.textContent = 'console.log("hello");';
     
     var right = document.getElementById("right");
-    var a = right.getElementsByClassName("nav_a");
-    for (var i = 0; i < a.length; i++) {
-        a[i].addEventListener("click", function () {
+    var nav_a = right.getElementsByClassName("nav_a");
+    for (var i = 0; i < nav_a.length; i++) {
+        nav_a[i].addEventListener("click", function () {
             var current = document.getElementsByClassName("active");
             current[0].className = current[0].className.replace(" active", "");
             this.className += " active";

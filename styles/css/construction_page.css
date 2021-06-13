@@ -1,0 +1,18 @@
+
+/* For the site is under construction image */
+
+#construction_div {
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    max-width: 50%;
+    text-align: center;
+    /* display: inline; */
+}
+
+#construction {
+    display: block;
+    max-width: 30%;
+    /* max-height: 10%; */
+    /* border: 1px solid blue; */
+    margin: 0 auto;
+}
