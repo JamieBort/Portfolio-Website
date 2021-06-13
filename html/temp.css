@@ -65,6 +65,11 @@ footer {
     background-color: darkturquoise;
 }
 
+#nav_right {
+    display: flex;
+    justify-content: center;
+}
+
 /* this one was not used previously */
 .nav_div {}
 
@@ -76,7 +81,7 @@ footer {
 
 
     /* justify-content: center; */
-    align-items: center;
+    /* align-items: center; */
 }
 
 .nav_a:hover {
@@ -317,7 +322,7 @@ p, li, h3 {
 
 @media (max-width: 1000px) {
     body {
-      background-color:lightyellow;
+      background-color:greenyellow;
     }
 
     #nav {
@@ -326,7 +331,7 @@ p, li, h3 {
 
     #nav_left, #nav_right {
         height: 6em;
-        background-color: darkorange;
+        background-color: darkturquoise;
     }
 
     #devs_img {
