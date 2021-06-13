@@ -51,8 +51,8 @@ footer {
     border-bottom: 1px solid green;
     display: flex;
     justify-content: space-around;
-    height: 5em;
     align-items: center;
+    height: 5em;
     /* border: .1em green solid; */
     background-color: lightskyblue;
 }
@@ -65,10 +65,10 @@ footer {
     background-color: darkturquoise;
 }
 
-#nav_right {
+/* #nav_right {
     display: flex;
     justify-content: center;
-}
+} */
 
 /* this one was not used previously */
 .nav_div {}
@@ -80,8 +80,11 @@ footer {
     padding:0 .4em;
 
 
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
+
+    /* width: 40px; */
+    text-align: center;
 }
 
 .nav_a:hover {
