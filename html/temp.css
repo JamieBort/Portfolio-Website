@@ -54,7 +54,7 @@ footer {
     align-items: center;
     /* height: 5em; */
     /* border: .1em green solid; */
-    background-color: lightskyblue;
+    /* background-color: lightskyblue; */
 }
 
 #nav_left, #nav_right {
@@ -62,7 +62,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: darkturquoise;
+    /* background-color: darkturquoise; */
 }
 
 /* this one was not used previously */
