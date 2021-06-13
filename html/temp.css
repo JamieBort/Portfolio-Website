@@ -80,7 +80,7 @@ footer {
     padding:0 .4em;
 
 
-    /* justify-content: center; */
+    justify-content: center;
     /* align-items: center; */
 }
 
@@ -322,7 +322,7 @@ p, li, h3 {
 
 @media (max-width: 1000px) {
     body {
-      background-color:greenyellow;
+      background-color:burlywood;
     }
 
     #nav {
