@@ -321,11 +321,12 @@ p, li, h3 {
 
     #nav {
         height: 8em;
+        background-color: lightslategray;
     }
 
     #nav_left, #nav_right {
         height: 5em;
-        /* background-color: thistle; */
+        background-color: thistle;
     }
 
     #devs_img {
