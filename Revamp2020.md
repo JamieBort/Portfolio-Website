@@ -29,6 +29,9 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	* (later on) navigation header 
 		* should be replaced with a hamburger menu.
 		* and/or change the layout so that the projects section is to the right of the bio. And the connect with me is to the right of the projects section.
+	* the overall appearance of the project cards
+	* the size of the connect with me icons
+	* add my resume
 	* possibly more
 	* lastly, remove the `<h3>` from the index file that reads:
 		

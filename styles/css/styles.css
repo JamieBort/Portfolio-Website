@@ -321,9 +321,9 @@ p, li, h3 {
 
     footer {
         min-height: 3em;
-        background-color: greenyellow;
+        /* background-color: greenyellow; */
     }
-    #copyright{font-size: 4em;}
+    #copyright{font-size: 2em;}
 
     #nav {
         height: 7em;
