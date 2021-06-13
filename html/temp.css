@@ -40,6 +40,7 @@ footer {
     justify-content: center;
     align-items: center;
     border-top: 1px solid red;
+    background-color: greenyellow;
 }
 
 #title {
@@ -319,11 +320,11 @@ p, li, h3 {
     }
 
     #nav {
-        height: 10em;
+        height: 8em;
     }
 
     #nav_left, #nav_right {
-        height: 6em;
+        height: 5em;
         /* background-color: thistle; */
     }
 
