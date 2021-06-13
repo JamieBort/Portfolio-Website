@@ -313,7 +313,11 @@ p, li, h3 {
 
 @media (max-width: 1000px) {
     body {
-      background-color:lightsteelblue;
+      background-color:lightyellow;
+    }
+
+    #nav {
+        height: 10em;
     }
 
     #devs_img {
