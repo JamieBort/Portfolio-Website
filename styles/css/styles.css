@@ -337,4 +337,11 @@ p, li, h3 {
         /* background: lightblue; */
         }
 
+.card_outside_div{
+    /* width:20em; */
+    width:80%;
+    background: lime;
+/* border: .1em green solid; */
+}
+
 }

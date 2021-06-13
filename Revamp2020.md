@@ -12,14 +12,14 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 * Am working on the [Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card.
 
 ### Next Steps
-1. Fix CSS selectors - make uniform. Have them make sense/be semantic. Started.
+1. ~~Fix CSS selectors - make uniform. Have them make sense/be semantic~~. Done.
 2. Fix appearance for mobile design. Specifically 
 	* ~~the devs@rtp image in the bio~~ 
 	
 		Addressed for now. (See the [Modify devsatrtp image in Portfolio Website](https://trello.com/c/865I1iOD/565-modify-devsatrtp-image-in-portfolio-website) Trello card below.) 
 	
 		[Will revisit later](https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website) when **reviewing css units**.
-	* cards are smooshed - have them stack on top of the other/the next one. OR have them all in one row next to each other. **But first fix the css selectors** (to clean up the css file so it's more manageable to edit.)
+	* cards are smooshed - have them stack on top of the other/the next one. OR have them all in one row next to each other. ~~But first fix the css selectors (to clean up the css file so it's more manageable to edit.)~~ That part is done.
 	* Address these together
 		* [Address the css units for the portfolio website](https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website) Trello card.
 		* the font size(s) in the cards are too small. (address this after the cards are addressed -they're smooshed)
