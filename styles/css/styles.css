@@ -319,6 +319,12 @@ p, li, h3 {
       /* background-color:ivory; */
     }
 
+    footer {
+        min-height: 3em;
+        background-color: greenyellow;
+    }
+    #copyright{font-size: 4em;}
+
     #nav {
         height: 7em;
         /* background-color: palegreen; */
