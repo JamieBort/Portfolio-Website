@@ -169,13 +169,13 @@ p, li, h3 {
     display:flex;
     flex-wrap:wrap;
     justify-content:space-around;
-    /* border: .1em blue solid; */
+    border: 1px blue solid;
 }
 
 .fab{
     margin:.3em 1.3em;
     font-size: 5em;
-    /* border: .1em blue solid; */
+    border: 1px red solid;
 }
 
 /* ***************** */
@@ -185,7 +185,8 @@ p, li, h3 {
     border-radius:1em;
     margin:1.5em 0;
     text-align:center;
-    width:20em;
+    /* width:20em; */
+    width:30%;
 
     /* body - or any parent wrapper */
     display: flex;
@@ -226,13 +227,14 @@ p, li, h3 {
         align-items:center;
         margin:.1em;
         padding:.1em;
-            /* 	border: .1em red solid; */
+        /* border: .1em red solid; */
     }
     
     .card_a, .card_body_img{
         margin: .5em;
-        min-width:4em
-    /* 	border: .1em orange solid; */
+        /* min-width:4em; */
+        min-width:20%;
+    	/* border: .1em orange solid; */
 }
     
     .card_a{
@@ -265,13 +267,6 @@ p, li, h3 {
 /* card styles above */
 /* ***************** */
 
-#connect_with_me_div {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 3em;
-    /* background-color: lightsalmon; */
-}
-
 #lets_container_left {
     width: 100%;
     display:flex; 
@@ -292,10 +287,60 @@ p, li, h3 {
     /* border: 1px solid brown; */
 }
 
+#connect_with_me_div {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    flex-wrap:wrap;
+    margin-top: 3em;
+    /* background-color: lightsalmon; */
+    border: 1px solid chartreuse;
+
+    /* height:200px; */
+
+
+
+    /* display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    border: 1px blue solid; */
+    padding : 4px;
+    /* margin: 2px; */
+    
+}
+
+.connect_with_me_a{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: red; */
+    border: 1px solid red;
+
+    /* max-width: 10em; */
+    /* min-width: 45%; */
+    /* max-width: 45%; */
+    /* min-width: 30%; */
+    width: 45%;
+    padding : 4px;
+    margin: 2px;
+
+
+    /* margin:.3em 1.3em;
+    font-size: 5em;
+    border: 1px red solid; */
+
+}
+
 .connect_with_me_img {
-    max-width: 3em;
-    width: auto;
-    /* background-color: pink; */
+    /* max-width: 3em; */
+    max-width: 5em;
+    /* max-width: 20%; */
+    /* width: auto; */
+    background-color: pink;
+
+
+    padding : 4px;
+    margin: 2px;
 }
 
 .p_div {}
