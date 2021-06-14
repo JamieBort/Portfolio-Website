@@ -100,7 +100,7 @@ project_section.appendChild(h2);
 var psd = document.createElement("div");
 // psd.className="projects_section_div";
 psd.id="projects_section_div";
-psd.className="section_div_not_used";
+psd.className="section_div_class";
 project_section.appendChild(psd);
 
 // var abcdabcd = document.createElement("div");
