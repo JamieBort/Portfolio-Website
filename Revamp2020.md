@@ -17,21 +17,21 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	* ~~the devs@rtp image in the bio~~ 
 	
 		Addressed for now. (See the [Modify devsatrtp image in Portfolio Website](https://trello.com/c/865I1iOD/565-modify-devsatrtp-image-in-portfolio-website) Trello card below.) 
-	
+		
 		[Will revisit later](https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website) when **reviewing css units**.
 	* ~~cards are smooshed - have them stack on top of each other/the next one. OR have them all in one row next to each other.~~ ~~But first fix the css selectors (to clean up the css file so it's more manageable to edit.)~~ Done.
 	* Address these together
 		* [Address the css units for the portfolio website](https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website) Trello card.
-		* the font size(s) in the cards are too small. (address this after the cards are addressed -they're smooshed)
+		* the font size(s) in the cards are too small. (~~address this after the cards are addressed -they're smooshed~~ This part is done.)
 		* current fonts don't look right - address this.
-	* email page is not displaying correctly for mobile.
 	* and the hight of the footer and header.
 	* (later on) navigation header 
 		* should be replaced with a hamburger menu.
 		* and/or change the layout so that the projects section is to the right of the bio. And the connect with me is to the right of the projects section.
 	* the overall appearance of the project cards
 	* the size of the connect with me icons
-	* add my resume
+	* add my resume - first have the button navigate to the/a `Resume` page where it can be downloaded from there. If that doesn't work out well, simply have the button link to a pdf of it like before.
+	* email page is not displaying correctly for mobile nor desktop.
 	* possibly more
 	* lastly, remove the `<h3>` from the index file that reads:
 		
@@ -80,7 +80,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 
 - [ ] [Wireframe the desktop and mobile layout](https://trello.com/c/3xtKwRIm/491-wireframe-the-desktop-and-mobile-layout-for-portfolio-website) Trello card.
 	- [ ] [Learn how to use Figma](https://trello.com/c/AnQb9Ewl/495-learn-how-to-use-figma) Trello card.
-	- [ ] Figure out aesthetics.
+	- [ ] Figure out aesthetics
 		- [ ] [Style the project cards for the portfolio website](https://trello.com/c/U2wEY2Od/579-style-the-project-cards-for-the-portfolio-website) Trello card.
 		- [ ] [Decide on Favicon](https://trello.com/c/cVnMamJ4/578-decide-on-favicon) Trello card.
 		- [ ] [Decide on colors](https://trello.com/c/mXqq3kaO/526-decide-on-colors) Trello card.
@@ -130,7 +130,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [ ] Have the project cards slide left and right. Rather than have them stacked one on to of the next. 
 		
 			**NOTE:** this might be a bad idea if one card is very tall and the next is very short.
-		- [ ] (next item)
+		- [ ] See the `what needs to change with the ...` Trello cards listed above in the `Figure out aesthetics` section.
 
 	- [ ] Styling to address 
 	
@@ -140,6 +140,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [ ] Address the css units - Based on what I learned about `em`, `rem`, and the other css units, they may need to change. [Address the css units for the portfolio website](https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website) Trello card.
 		- [ ] [Style Links](https://trello.com/c/AsOQKQjI/562-style-links-and) Trello card.
 		- [ ] [Style buttons for my portfolio website](https://trello.com/c/Fny58qFO/538-style-buttons-for-my-portfolio-website) Trello card. Tabling this one for now. Not necessarily completed. See card.
+		- [ ] See the `what needs to change with the ...` Trello cards listed above in the `Figure out aesthetics` section.
 
 	- [ ] [Design the basic architecture](https://trello.com/c/CyUFSwY3/522-design-the-basic-architecture) Trello card.
 	
