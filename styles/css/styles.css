@@ -377,8 +377,8 @@ p, li, h3 {
     #copyright{font-size: 2em;}
 
     #nav {
-        height: 7em;
-        /* background-color: palegreen; */
+        height: 3em;
+        background-color: palegreen;
     }
 
     #nav_left, #nav_right {
