@@ -222,7 +222,7 @@ p, li, h3 {
     border-radius:10px 10px 0 0;
     margin:0;
     padding:0;
-    border: .1px greenyellow solid;
+    /* border: .1px greenyellow solid; */
 }
 
 .card_body_outside_div{
@@ -232,12 +232,12 @@ p, li, h3 {
     justify-content:space-between;
     margin:.5em auto;
     width:90%;
-    border: .1px green solid;
+    /* border: .1px green solid; */
 }
 
-.card_title{border: .1px orangered solid;}
+/* .card_title{border: .1px orangered solid;}
 
-.card_paragraph{border: .1px orange solid;}
+.card_paragraph{border: .1px orange solid;} */
 
 .card_a_div{
     display:flex;
