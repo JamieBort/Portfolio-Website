@@ -141,6 +141,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [ ] [Style Links](https://trello.com/c/AsOQKQjI/562-style-links-and) Trello card.
 		- [ ] [Style buttons for my portfolio website](https://trello.com/c/Fny58qFO/538-style-buttons-for-my-portfolio-website) Trello card. Tabling this one for now. Not necessarily completed. See card.
 		- [ ] See the `what needs to change with the ...` Trello cards listed above in the `Figure out aesthetics` section.
+		- [ ] 
 
 	- [ ] [Design the basic architecture](https://trello.com/c/CyUFSwY3/522-design-the-basic-architecture) Trello card.
 	

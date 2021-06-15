@@ -20,8 +20,6 @@ body{
 }
 
 .wrapper {
-    /* max-width: 95%;
-    margin: auto; */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -34,15 +32,12 @@ body{
 main {
     flex: 1;
     overflow: auto;
-    /* padding:0, 15%; */
-    /* max-width: 95%; */
-    /* margin: auto; */
 }
 
 /* footer-web-component */
 
 footer {
-    min-height: 1.5em;
+    padding: .2em 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,13 +55,11 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* height: 5em; */
-    /* border: .1em green solid; */
-    /* background-color: lightskyblue; */
+    /* border: .1em green solid;
+    background-color: lightskyblue; */
 }
 
 #nav_left, #nav_right {
-    /* height: 3em; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,14 +111,10 @@ footer {
 }
 
 #connect_with_me_section {
-    height: 18em;
+    /* border: 1px rgba(0,0,0,0.16) solid; */
 }
 
-#resume_section {
-    min-height: 200px;
-    /* border: 1px blue solid; */
-    margin-top: 150px;
-}
+#resume_section {}
 
 
 #title, .section_title, .subtitle {
@@ -154,7 +143,6 @@ footer {
 }
 
 .section_div_class {
-    /* max-width: 85%; */
     margin: auto;
     /* border: .1em blue solid;
     margin: 5px; */
@@ -171,17 +159,14 @@ footer {
     /* border: .1em blue solid; */
 }
 
-/* .p_div, #connect_with_me_section_div, #projects_section_div {
-    max-width: 85%;
-    margin: 0 auto;
-} */
-
 p, li, h3 {
     /* font-family: 'Quattrocento', serif; */
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Maybe put this in a div or other container? Maybe. */
+/* Regardless, keep it relative to font size. Probably em rather than rem. */
 #devs_img {
     height: 1.5em;
     width: 4.5em;
@@ -206,37 +191,36 @@ p, li, h3 {
 /* ***************** */
 /* card styles below */
 
-.card_outside_div{
-    border-radius:1em;
-    margin:1.5em 0;
-    text-align:center;
-    /* width:20em; */
-    width:30%;
+    .card_outside_div{
+        border-radius:1em;
+        margin:1.5em 0;
+        text-align:center;
+        width:30%;
 
-    /* body - or any parent wrapper */
-    display: flex;
-    flex-direction: column;
-    /*   min-height: 100vh; */
-    min-height: 20em;
+        /* body - or any parent wrapper */
+        display: flex;
+        flex-direction: column;
 
-    /* 	Used this https://html-css-js.com/css/generator/box-shadow/ for the following box shadow */
-    -webkit-box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.16); 
-    box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.16);
-    background: #FFFFFF;
-    /* border: .1em green solid; */
-}
-
-.card_header_div {
-        width:100%;
-    /* 	border: .1em green solid; */
+        /* 	Used this https://html-css-js.com/css/generator/box-shadow/ for the following box shadow */
+        -webkit-box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.16); 
+        box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.16);
+        background: #FFFFFF;
+        /* border: .1em green solid; */
     }
+
+/* .card_header_div {
+        border: .1em green solid;
+    } */
+
     .card_header_img{
         width:100%;
         border-radius:1em 1em 0 0;
         margin:0;
         padding:0;
+        /* border: .1em greenyellow solid; */
     }
-.card_body_outside_div{
+
+    .card_body_outside_div{
         flex: 1;        
         display:flex;
         flex-direction:column;
@@ -246,7 +230,7 @@ p, li, h3 {
         /* border: .1em green solid; */
     }
     
-.card_a_div{
+    .card_a_div{
         display:flex;
         justify-content:space-around;
         align-items:center;
@@ -257,7 +241,6 @@ p, li, h3 {
     
     .card_a, .card_body_img{
         margin: .5em;
-        /* min-width:4em; */
         min-width:20%;
     	/* border: .1em orange solid; */
 }
@@ -269,9 +252,10 @@ p, li, h3 {
     }
     .card_footer_div{
         border-top: 1px solid black;
-        min-height:2.5em;
+        padding: .2em 0;
         display:flex;
         align-items:center;
+    	border: .1em orange solid;
     }
     .card_unordered_list{
         list-style-type:none;
@@ -327,12 +311,12 @@ p, li, h3 {
     display:flex;
     align-items: center;
     justify-content: space-around;
-    
+    margin: 18px 0;
     /* min-width: 45%; */
     min-width: 100px;
     /* max-height: 100px; */
     /* width: 45%; */
-
+    
     /* background-color: red;
     border: 1px solid red;
     padding : 2px;
@@ -371,18 +355,18 @@ p, li, h3 {
     }
 
     footer {
-        min-height: 3em;
+        padding: .5em 0;
         /* background-color: greenyellow; */
     }
     #copyright{font-size: 2em;}
 
     #nav {
-        height: 3em;
-        background-color: palegreen;
+        padding: .5em 0;
+        /* background-color: palegreen; */
     }
 
     #nav_left, #nav_right {
-        height: 4em;
+        padding: .5em 0;
         /* background-color: thistle; */
     }
 
@@ -395,10 +379,9 @@ p, li, h3 {
         }
 
 .card_outside_div{
-    /* width:20em; */
     width:95%;
     /* background: lime; */
-/* border: .1em green solid; */
+    /* border: .1em green solid; */
 }
 
 }
