@@ -1,5 +1,5 @@
 # Revamp2020
-## mobile_appearance branch
+## Revamp2020 branch
 
 This file started as README.md in the `preliminaryExploration` branch.
 
