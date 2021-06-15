@@ -22,7 +22,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	* ~~cards are smooshed - have them stack on top of each other/the next one. OR have them all in one row next to each other.~~ ~~But first fix the css selectors (to clean up the css file so it's more manageable to edit.)~~ Done.
 	* Address these together
 		* [Address the css units for the portfolio website](https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website) Trello card.
-		* the font size(s) in the cards are too small. (~~address this after the cards are addressed -they're smooshed~~ This part is done.)
+		* ~~the font size(s) in the cards are too small. (address this after the cards are addressed -they're smooshed.)~~ Done.
 		* current fonts don't look right - address this.
 	* and the hight of the footer and header.
 	* (later on) navigation header 
