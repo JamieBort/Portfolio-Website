@@ -126,7 +126,7 @@ footer {
 
 .section_title {
     text-align: center;
-    font-size: 2rem;
+    /* font-size: 2rem; */
 }
 
 /* .subtitle{
@@ -339,6 +339,11 @@ p, li, h3 {
 }
 
 .p_div {}
+
+/* p{
+    font-size: 1rem;
+} */
+
 /* ============================= */
 /* Style for tablet - horizontal */
 /* ============================= */
@@ -400,6 +405,11 @@ p, li, h3 {
     .card_list_item{
         /* font-size: 2em; */
         font-size: 2rem;
+    }
+
+    /* temp fix below */
+    h3{
+        font-size: 4rem;
     }
 
 }
