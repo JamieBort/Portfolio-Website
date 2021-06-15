@@ -24,7 +24,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		* [Address the css units for the portfolio website](https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website) Trello card.
 		* ~~the font size(s) in the cards are too small. (address this after the cards are addressed -they're smooshed.)~~ Done.
 		* current fonts don't look right - address this.
-	* and the hight of the footer and header.
+	* ~~and the hight of the footer and header~~.
 	* (later on) navigation header 
 		* should be replaced with a hamburger menu.
 		* and/or change the layout so that the projects section is to the right of the bio. And the connect with me is to the right of the projects section.

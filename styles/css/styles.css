@@ -232,8 +232,12 @@ p, li, h3 {
         justify-content:space-between;
         margin:.5em auto;
         width:90%;
-        /* border: .1px green solid; */
+        border: .1px green solid;
     }
+
+    .card_title{border: .1px orangered solid;}
+
+    .card_paragraph{border: .1px orange solid;}
     
     .card_a_div{
         display:flex;
@@ -330,7 +334,7 @@ p, li, h3 {
 
 .connect_with_me_img {
     /* max-width: 3em; */
-    max-width: 100px;
+    max-width: 75px;
     /* max-width: 10%; */
     /* width: auto; */
     /* background-color: pink;
@@ -343,6 +347,11 @@ p, li, h3 {
 /* p{
     font-size: 1rem;
 } */
+
+    /* temp fix below */
+    h3{font-size: 2rem;}
+    /* p{font-size: 2rem;} */
+    /* temp fix above */
 
 /* ============================= */
 /* Style for tablet - horizontal */
