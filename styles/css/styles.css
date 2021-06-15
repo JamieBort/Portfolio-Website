@@ -55,7 +55,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* border: .1em green solid;
+    /* border: .1px green solid;
     background-color: lightskyblue; */
 }
 
@@ -73,7 +73,7 @@ footer {
     text-decoration: none;
     font-size: 2em;
     padding:0 .2em;
-    margin: .2em;
+    margin: .1em ;
     text-align: center;
 }
 
@@ -255,7 +255,7 @@ p, li, h3 {
         padding: .2em 0;
         display:flex;
         align-items:center;
-    	border: .1em orange solid;
+    	/* border: .1em orange solid; */
     }
     .card_unordered_list{
         list-style-type:none;
@@ -378,10 +378,18 @@ p, li, h3 {
         /* background: lightblue; */
         }
 
-.card_outside_div{
-    width:95%;
-    /* background: lime; */
-    /* border: .1em green solid; */
-}
+    .card_outside_div{
+        width:95%;
+        /* background: lime; */
+        /* border: .1em green solid; */
+    }
+
+    .card_a{
+        font-size: 2em;
+    }
+
+    .card_list_item{
+        font-size: 2em;
+    }
 
 }
