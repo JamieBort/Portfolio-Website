@@ -92,16 +92,16 @@ footer {
 }
 
 /* section{
-    border: .1em gold solid;
-    padding:5 px;
-    margin: 5px;
+    border: .1px gold solid;
+    padding:5em;
+    margin: 5em;
 } */
 
 #bio_section, #projects_section, #connect_with_me_section, #resume_section {
     margin:auto;
     max-width: 95%;
     /* border: .1em goldenrod solid;
-    margin: 8px auto; */
+    margin: 8em auto; */
 }
 
 #bio_section {}
@@ -145,7 +145,7 @@ footer {
 .section_div_class {
     margin: auto;
     /* border: .1em blue solid;
-    margin: 5px; */
+    margin: 5em; */
 }
 
 #bio_section_div {}
@@ -236,19 +236,19 @@ p, li, h3 {
         align-items:center;
         margin:.1em;
         padding:.1em;
-        /* border: .1em red solid; */
+        /* border: .1px red solid; */
     }
     
     .card_a, .card_body_img{
         margin: .5em;
         min-width:20%;
-    	/* border: .1em orange solid; */
+    	/* border: .1px orange solid; */
 }
     
     .card_a{
         text-decoration:none;
         border-bottom: 1px solid black;
-    /* 	border: .1em orange solid; */
+    /* 	border: .1px orange solid; */
     }
     .card_footer_div{
         border-top: 1px solid black;
@@ -303,15 +303,15 @@ p, li, h3 {
     margin-top: 3em;
     /* background-color: lightsalmon;
     border: 1px solid chartreuse;
-    padding : 2px;
-    margin: 4px; */
+    padding : 2em;
+    margin: 4em; */
 }
 
 .connect_with_me_a{
     display:flex;
     align-items: center;
     justify-content: space-around;
-    margin: 18px 0;
+    margin: 3em 0;
     /* min-width: 45%; */
     min-width: 100px;
     /* max-height: 100px; */
@@ -329,8 +329,8 @@ p, li, h3 {
     /* max-width: 10%; */
     /* width: auto; */
     /* background-color: pink;
-    padding : 8px;
-    margin: 8px; */
+    padding : 3em;
+    margin: 3em; */
 }
 
 .p_div {}
