@@ -21,21 +21,21 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		[Will revisit later](https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website) when **reviewing css units**.
 	* ~~cards are smooshed - have them stack on top of each other/the next one. OR have them all in one row next to each other.~~ ~~But first fix the css selectors (to clean up the css file so it's more manageable to edit.)~~ Done.
 	* Address these together
-		* [Address the css units for the portfolio website](https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website) Trello card.
+		* [Address the css units for the portfolio website](https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website) Trello card. Started.
 		* ~~the font size(s) in the cards are too small. (address this after the cards are addressed -they're smooshed.)~~ Done.
-		* current fonts don't look right - address this.
+		* ~~current fonts don't look right - address this~~.
 	* ~~and the hight of the footer and header~~.
 	* (later on) navigation header 
 		* should be replaced with a hamburger menu.
 		* and/or change the layout so that the projects section is to the right of the bio. And the connect with me is to the right of the projects section.
 	* the overall appearance of the project cards
-	* the size of the connect with me icons
+	* ~~the size of the connect with me icons~~
 	* add my resume - first have the button navigate to the/a `Resume` page where it can be downloaded from there. If that doesn't work out well, simply have the button link to a pdf of it like before.
 	* email page is not displaying correctly for mobile nor desktop.
 	* possibly more
-	* lastly, remove the `<h3>` from the index file that reads:
+	* ~~lastly, remove the `<h3>` from the index file that reads:~~
 		
-		Please excuse the mess; particularly when viewing this website from a mobile device. I'm rebuilding it from scratch while I work on other projects. So this may take some time. The changes will be incremental.
+		~~Please excuse the mess; particularly when viewing this website from a mobile device. I'm rebuilding it from scratch while I work on other projects. So this may take some time. The changes will be incremental.~~
 
 	To this end the 
 	* ~~current changes in this `Revamp2020` branch will be merged into the `dev` branch~~.
