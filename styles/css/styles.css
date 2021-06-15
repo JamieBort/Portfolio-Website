@@ -408,8 +408,8 @@ p, li, h3 {
     }
 
     /* temp fix below */
-    h3{font-size: 3rem;}
-    p{font-size: 2rem;}
+    h3{font-size: 4rem;}
+    /* p{font-size: 2rem;} */
     /* temp fix above */
 
 }
