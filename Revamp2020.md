@@ -14,20 +14,10 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 ### Next Steps
 1. ~~Fix CSS selectors - make uniform. Have them make sense/be semantic~~. Done.
 2. Fix appearance for mobile design. Specifically 
-	* ~~the devs@rtp image in the bio~~ 
-	
-		Addressed for now. (See the [Modify devsatrtp image in Portfolio Website](https://trello.com/c/865I1iOD/565-modify-devsatrtp-image-in-portfolio-website) Trello card below.) 
-		
-		[Will revisit later](https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website) when **reviewing css units**.
-	* ~~cards are smooshed - have them stack on top of each other/the next one. OR have them all in one row next to each other.~~ ~~But first fix the css selectors (to clean up the css file so it's more manageable to edit.)~~ Done.
-	* Address these together
-		* [Address the css units for the portfolio website](https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website) Trello card. Started.
-		* ~~the font size(s) in the cards are too small. (address this after the cards are addressed -they're smooshed.)~~ Done.
-		* ~~current fonts don't look right - address this~~.
 	* (later on) navigation header 
 		* should be replaced with a hamburger menu.
 		* and/or change the layout so that the projects section is to the right of the bio. And the connect with me is to the right of the projects section.
-	* the overall appearance of the project cards
+	* the overall appearance of the `project cards`
 	* add my resume - first have the button navigate to the/a `Resume` page where it can be downloaded from there. If that doesn't work out well, simply have the button link to a pdf of it like before.
 	* email page is not displaying correctly for mobile nor desktop.
 	* possibly more
@@ -36,6 +26,16 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		~~Please excuse the mess; particularly when viewing this website from a mobile device. I'm rebuilding it from scratch while I work on other projects. So this may take some time. The changes will be incremental.~~
 	* ~~and the hight of the footer and header~~.
 	* ~~the size of the connect with me icons~~
+	* ~~the devs@rtp image in the bio~~ 
+	
+		~~Addressed for now. (See the [Modify devsatrtp image in Portfolio Website](https://trello.com/c/865I1iOD/565-modify-devsatrtp-image-in-portfolio-website) Trello card below.)~~
+		
+		~~[Will revisit later](https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website) when **reviewing css units**~~.
+	* ~~cards are smooshed - have them stack on top of each other/the next one. OR have them all in one row next to each other.~~ ~~But first fix the css selectors (to clean up the css file so it's more manageable to edit.)~~ Done.
+	* ~~Address these together~~
+		* ~~[Address the css units for the portfolio website](https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website) Trello card. Started~~.
+		* ~~the font size(s) in the cards are too small. (address this after the cards are addressed -they're smooshed.)~~ Done.
+		* ~~current fonts don't look right - address this~~.
 
 	To this end the 
 	* ~~current changes in this `Revamp2020` branch will be merged into the `dev` branch~~.
@@ -45,7 +45,11 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	* ~~then switch back to the `Revamp2020` branch~~.
 	* ~~then clean up the `Revamp2020.md` file~~.
 	* ~~then a new `mobile_appearance` branch will be created~~.
-	* then the necessary mobile design changes will be made in the `mobile_appearance` branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)
+	* ~~then the necessary mobile design changes will be made in the `mobile_appearance` branch~~. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)
+	* ~~lastly the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested~~. They were merged into the `Revamp2020` branch.
+	* then delete the `mobile_appearance` branch.
+	* then create the `???` branch.
+	* then the necessary mobile design changes will be made in the `???` branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)
 	* lastly the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
 
 3. Add one or all of the apps (listed in `Content to add or change` below) to the portfolio.
