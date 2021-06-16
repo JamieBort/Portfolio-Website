@@ -26,7 +26,9 @@ class Header extends HTMLElement {
         const connect_anchor = " <a class='nav_a'  href='./index.html#connect_with_me_section'>Connect with me</a>";
 
         // const resume_anchor = "<a class='nav_a'  href='./resume.html'>Resume</a>";
-        const resume_anchor = "<a class='nav_a'  href='./index.html#resume_section'>Resume</a>";
+        // const resume_anchor = "<a class='nav_a'  href='./index.html#resume_section'>Resume</a>";
+        const resume_anchor_PDF = "<a class='nav_a'  href='https://drive.google.com/file/d/1QBmObGsYkChxd0M1LgT8uTAWornz5jXR/view?usp=sharing' target='_blank'>Resume</a>";
+        const resume_anchor_Page = "<a class='nav_a'  href='../html/resume.html' target='_blank'>Resume Page</a>";
         
         this.innerHTML = `
         <header>
@@ -38,7 +40,7 @@ class Header extends HTMLElement {
                     ${bio_anchor}
                     ${projects_anchor}
                     ${connect_anchor}
-                    ${resume_anchor}
+                    ${resume_anchor_PDF}
                 </div>
             </nav>
         </header>
