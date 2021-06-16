@@ -48,8 +48,8 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	* ~~then the necessary mobile design changes will be made in the `mobile_appearance` branch~~. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)
 	* ~~lastly the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested~~. They were merged into the `Revamp2020` branch.
 	* then delete the `mobile_appearance` branch.
-	* then create the `???` branch.
-	* then the necessary mobile design changes will be made in the `???` branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)
+	* then create the `add_resume` branch.
+	* then the necessary mobile design changes will be made in the `add_resume` branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)
 	* lastly the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
 
 3. Add one or all of the apps (listed in `Content to add or change` below) to the portfolio.
