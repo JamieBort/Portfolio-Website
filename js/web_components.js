@@ -23,12 +23,12 @@ class Header extends HTMLElement {
         const resources_anchor = "<a id='resources' class='nav_a'  href='./resources.html'>Resources</a>";
         const fun_anchor = "<a class='nav_a'  href='./fun_stuff.html'>Fun Stuff</a>";
         const talks_anchor = "<a class='nav_a'  href='./talks.html'>Talks</a>";
-        const connect_anchor = " <a class='nav_a'  href='./index.html#connect_with_me_section'>Connect with me</a>";
+        const connect_anchor = " <a class='nav_a'  href='./index.html#connect_with_me_section'>Connect With Me</a>";
 
         // const resume_anchor = "<a class='nav_a'  href='./resume.html'>Resume</a>";
         // const resume_anchor = "<a class='nav_a'  href='./index.html#resume_section'>Resume</a>";
         const resume_anchor_PDF = "<a class='nav_a'  href='https://drive.google.com/file/d/1QBmObGsYkChxd0M1LgT8uTAWornz5jXR/view?usp=sharing' target='_blank'>Resume</a>";
-        const resume_anchor_Page = "<a class='nav_a'  href='../html/resume.html' target='_blank'>Resume Page</a>";
+        const resume_anchor_Page = "<a class='nav_a'  href='../html/resume.html'>Resume</a>";
         
         this.innerHTML = `
         <header>
@@ -40,7 +40,7 @@ class Header extends HTMLElement {
                     ${bio_anchor}
                     ${projects_anchor}
                     ${connect_anchor}
-                    ${resume_anchor_PDF}
+                    ${resume_anchor_Page}
                 </div>
             </nav>
         </header>

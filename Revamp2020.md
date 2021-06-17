@@ -15,13 +15,14 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 
 ### Next Steps
 1. Fix appearance for mobile design. Specifically 
-	* add my resume - first have the button navigate to the/a `Resume` page where it can be downloaded from there. If that doesn't work out well, simply have the button link to a pdf of it like before. Started. 
-		* a presentable resume.pdf file needs to be linked to this site.
-		* The `Resume.html` file needs to be improved - the look/function needs to be improved.
-	* the email page needs these two changes
+	* the **email page** needs these two changes
 		* email page is not displaying correctly for mobile nor desktop.
 		* email page is not sending the subject line to the email.
-	* the overall appearance of the `project cards`
+	* the **overall appearance** of the `project cards`
+	* add my **resume**
+		* the `Resume` button in the navigation section loads the `Resume` page.
+		* from there you'll be able to read the long form resume (not yet created)
+		* or download a pdf of the resume (also not yet created)
 	* (later on) navigation header 
 		* should be replaced with a hamburger menu.
 		* and/or change the layout so that the projects section is to the right of the bio. And the connect with me is to the right of the projects section.
