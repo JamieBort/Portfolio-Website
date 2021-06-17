@@ -70,6 +70,12 @@ footer {
 /* this one was not used previously */
 .nav_div {}
 
+
+#nav_right a {
+    border: 1px lightgray solid;
+    border-radius: 5px;
+}
+
 .nav_a {
     text-decoration: none;
     /* font-size: 2em; */
