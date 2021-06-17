@@ -129,6 +129,8 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	
 	- [ ] Bug test.
 	- [ ] ~~Maybe [Rebuild very simple static site using HTML and CSS](https://trello.com/c/FDIB9ePE/163-rebuild-very-simple-static-site-using-html-and-css) Trello card.~~ `Retiring this card. No longer needed. Not worked on. Moving to Completed.`
+
+- [ ] consider renaming the Heroku URL for this site from `damp-reaches-12115` to `Portfolio-Website-Heroku` (or the like). This will require renaming or [updating the Git Remotes](https://devcenter.heroku.com/articles/renaming-apps#updating-git-remotes).
 	
 - [X] ~~[Read up on functional versus business requirements](https://trello.com/c/CGFYOG9p/494-read-up-on-functional-versus-business-requirements) Trello card.~~
 
