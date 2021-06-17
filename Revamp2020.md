@@ -1,5 +1,5 @@
 # Revamp2020
-## Revamp2020 branch
+## add_resume branch
 
 This file started as README.md in the `preliminaryExploration` branch.
 
@@ -9,7 +9,9 @@ To that end, this README file outlines what I plan on doing with my [portfolio w
 * Created a `preliminaryExploration` branch.
 Last left off working there. Am about to start this [ReusableComponentsTutorial](https://github.com/JamieBort/LearningDirectory/tree/master/WebComponents/ReusableComponentsTutorial) tutorial to use for this site. <- **not sure what the status of this is**.
 
-* Am working on the [Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card.
+* Am working on the [Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card. <- **not sure what the status of this is**.
+
+* am working on adding my resume.
 
 ### Next Steps
 1. Fix appearance for mobile design. Specifically 
