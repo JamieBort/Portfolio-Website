@@ -1,4 +1,3 @@
-/* Using this file to organize the CSS selectors in a way that makes more sense. */
 /* ============================= */
 /* Style for desktop             */
 /* ============================= */
@@ -105,7 +104,7 @@ footer {
     margin: 5em;
 } */
 
-#bio_section, #projects_section, #connect_with_me_section, #resume_section {
+#bio_section, #projects_section, #connect_with_me_section, #resume_section, #contact_me_section {
     margin:auto;
     max-width: 95%;
     /* border: .1px goldenrod solid;

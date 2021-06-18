@@ -6,6 +6,7 @@
     <title>Jamie Bort Contact Form</title>
     <meta name="description" content="contact form example">
     <link rel="stylesheet" href="../styles/css/styles.css"> 
+    <link rel="stylesheet" href="../styles/css/contact_form_page.css"> 
 
     <!-- *** The following are in the head-web-component *** -->
     <!-- this line was given to me from Marina to address the text size issue -->
@@ -19,9 +20,9 @@
         <header-web-component></header-web-component>
         <main>
             <h1 id="title">Contact Form</h1>
-            <section id="">
+            <section id="contact_me_section">
                 <h2 class="section_title">I'll respond as soon as possible.</h2>
-                <div id="contact_me_section_div" class="section_div_not_used">
+                <div id="contact_me_section_div" class="section_div_class">
 
                     <form class="gform pure-form pure-form-stacked" method="POST" data-email=""
                         action="https://script.google.com/macros/s/AKfycbyIUl5VQYWaAsoUvj8PxEQadRjpiZYCXxzUQyTn/exec">
@@ -33,14 +34,13 @@
                                     <input id="" name="name" placeholder="Your name" />
                                 </div>
                                 <div id="form_middle_div" class="form_inner_div">
-                                    <label for="">The subject:</label>
-                                    <input id="" name="" placeholder="The subject" />
-                                </div>
-                                
-                                <div id="form_right_div" class="form_inner_div">
                                     <label for="email">Your email address:</label>
                                     <input id="" name="email" type="email" value="" required
                                         placeholder="Your email address">
+                                </div>
+                                <div id="form_right_div" class="form_inner_div">
+                                    <label for="">The subject:</label>
+                                    <input id="" name="" placeholder="The subject" />
                                 </div>
                             </div>
                             <!-- <label for="">Your message</label> -->

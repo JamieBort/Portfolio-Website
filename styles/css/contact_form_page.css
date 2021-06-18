@@ -1,9 +1,12 @@
-
 /* ***************************************** */
 
 /* styles below for contact_form_style.html  */
 
 /* ***************************************** */
+/* ============================= */
+/* Style for desktop             */
+/* ============================= */
+
 
 form {
     width: 75%;
@@ -11,19 +14,47 @@ form {
     /* background: lightpink; */
 }
 
-#one {
-    /* background: lightpink; */
-}
-
-#contact_me_section_div{
+#contact_me_section_div {
     margin: 3em 0 0 0;
+    /* border: 1px orangered solid; */
 }
 
 #form_input_div {
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
     margin: 1em 0;
     /* background: lightblue; */
+}
+
+#form_left_div{
+    /* display: inline;
+    float:left;
+    width:49%; */
+    /* border: 1px olive solid; */
+}
+
+#form_middle_div{
+    /* display: inline;
+    float:right;
+    width:49%; */
+    /* border: 1px orange solid; */
+}
+
+label{display: block; width: 300px;
+    /* width: 300px; */
+    /* width: 90%; */
+    /* border: 1px thistle solid; */
+}
+
+input{ width: 300px;
+    /* width: 300px; */
+    /* width: 90%; */
+    /* border: 1px tomato solid; */
+}
+
+#form_right_div{
+    width:100%;
+    /* border: 1px orchid solid; */
 }
 
 textarea {
@@ -33,8 +64,8 @@ textarea {
 }
 
 button {
-    /* width: 800px; */
-    width: 100%;
+    width: 300px;
+    /* width: 100%; */
     height: 3em;
 }
 
@@ -48,3 +79,43 @@ button {
 /* styles above for contact_form_style.html  */
 
 /* ***************************************** */
+
+/* ============================= */
+
+/* Style for tablet - horizontal */
+
+/* ============================= */
+
+/* ============================= */
+
+/* Style for tablet - vertical   */
+
+/* ============================= */
+
+/* ============================= */
+
+/* Style for mobile - horizontal */
+
+/* ============================= */
+
+/* ============================= */
+
+/* Style for mobile - vertical   */
+
+/* ============================= */
+
+@media (max-width: 1000px) {
+    body {
+        /* background-color:ivory; */
+    }
+    footer {
+        /* background-color: greenyellow; */
+    }
+    #copyright {}
+    #nav {
+        /* background-color: palegreen; */
+    }
+    #nav_left, #nav_right {
+        /* background-color: thistle; */
+    }
+}
