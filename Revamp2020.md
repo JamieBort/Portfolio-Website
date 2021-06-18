@@ -1,5 +1,5 @@
 # Revamp2020
-## Revamp2020 branch
+## contact_page branch
 
 This file started as README.md in the `preliminaryExploration` branch.
 
