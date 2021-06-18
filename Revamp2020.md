@@ -40,7 +40,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	* ~~then create the `contact_page` branch~~.
 	* ~~then the necessary contact page changes will be made in the `contact_page` branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)~~
 	* ~~lastly the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested~~.
-	* then delete the `contact_page` branch.
+	* ~~then delete the `contact_page` branch~~.
 	* then create the `project_card` branch.
 	* then the necessary contact page changes will be made in the project_card branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)
 	* lastly the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
