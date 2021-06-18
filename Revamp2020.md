@@ -1,5 +1,5 @@
 # Revamp2020
-## add_resume branch
+## Revamp2020 branch
 
 This file started as README.md in the `preliminaryExploration` branch.
 
@@ -14,10 +14,12 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 * am working on adding my resume.
 
 ### Next Steps
-1. Fix appearance for mobile design. Specifically 
-	* the **email page** needs these two changes
-		* email page is not displaying correctly for mobile nor desktop.
-		* email page is not sending the subject line to the email.
+1. Fix appearance for mobile design. Specifically
+	* create a `contact_page` branch
+	* checkout the `contact_page` branch
+	* the **contact_page** needs these two changes
+		* contact_page is not displaying correctly for mobile nor desktop.
+		* contact_page is not sending the subject line to the email.
 	* the **overall appearance** of the `project cards`
 	* add my **resume**
 		* the `Resume` button in the navigation section loads the `Resume` page.
