@@ -15,15 +15,16 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 
 ### Next Steps
 1. Fix appearance for mobile design. Specifically
-	* create a `contact_page` branch
-	* checkout the `contact_page` branch
-	* the **contact_page** needs these two changes
-		* contact_page is not displaying correctly for mobile nor desktop.
-		* contact_page is not sending the subject line to the email.
+	* ~~create a `contact_page` branch~~
+	* ~~checkout the `contact_page` branch~~
+	* ~~the **contact_page** needs these two changes~~
+		* ~~contact_page is not displaying correctly for mobile nor desktop~~. Done.
+		* ~~contact_page is not sending the subject line to the email~~.
 	* the **overall appearance** of the `project cards`
 	* add my **resume**
-		* the `Resume` button in the navigation section loads the `Resume` page.
+		* ~~the `Resume` button in the navigation section loads the `Resume` page~~. Done
 		* from there you'll be able to read the long form resume (not yet created)
+		* ~~add old resume in interim~~. Done
 		* or download a pdf of the resume (also not yet created)
 	* (later on) navigation header 
 		* should be replaced with a hamburger menu.
@@ -136,6 +137,8 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	- [ ] ~~Maybe [Rebuild very simple static site using HTML and CSS](https://trello.com/c/FDIB9ePE/163-rebuild-very-simple-static-site-using-html-and-css) Trello card.~~ `Retiring this card. No longer needed. Not worked on. Moving to Completed.`
 
 - [ ] consider renaming the Heroku URL for this site from `damp-reaches-12115` to `Portfolio-Website-Heroku` (or the like). This will require renaming or [updating the Git Remotes](https://devcenter.heroku.com/articles/renaming-apps#updating-git-remotes).
+
+- [ ] How does the [H-educate-Send mail Sheet](https://docs.google.com/spreadsheets/d/1fyGDL1Ev2T-Wfi46Upix16ObMnZFySc5RsDlMJyRdws/edit#gid=0) Google Drive spreadsheet file work? When I get the subject working, will that show up in this file too? How do I make it show up? Background found [here](https://docs.google.com/document/d/1C26IEYlVEnyKCIoI79r_AsTM5bL3BqolVfweZ9H6j2I/edit#heading=h.m1unndreopk5).
 	
 - [X] ~~[Read up on functional versus business requirements](https://trello.com/c/CGFYOG9p/494-read-up-on-functional-versus-business-requirements) Trello card.~~
 
