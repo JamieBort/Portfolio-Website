@@ -1,3 +1,7 @@
+// More info about this form found here:
+// "HTML page with Google sheets" Google Drive directory.
+// https://drive.google.com/drive/folders/1X4pyG1NjufPdxk_gRlLXIyFWgCJTD6Iy
+
 (function() {
   function validEmail(email) {
     var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
@@ -63,7 +67,7 @@
     event.preventDefault();           // we are submitting via xhr below
     var form = event.target;
     var data = getFormData(form);         // get the values submitted in the form
-
+console.log("the data: ", data)
     /* OPTION: Remove this comment to enable SPAM prevention, see README.md
     if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
       return false;
