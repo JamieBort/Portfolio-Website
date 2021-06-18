@@ -15,11 +15,6 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 
 ### Next Steps
 1. Fix appearance for mobile design. Specifically
-	* ~~create a `contact_page` branch~~
-	* ~~checkout the `contact_page` branch~~
-	* ~~the **contact_page** needs these two changes~~
-		* ~~contact_page is not displaying correctly for mobile nor desktop~~. Done.
-		* ~~contact_page is not sending the subject line to the email~~.
 	* the **overall appearance** of the `project cards`
 	* add my **resume**
 		* ~~the `Resume` button in the navigation section loads the `Resume` page~~. Done
@@ -30,12 +25,30 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		* should be replaced with a hamburger menu.
 		* and/or change the layout so that the projects section is to the right of the bio. And the connect with me is to the right of the projects section.
 	* possibly more
+	* ~~create a `contact_page` branch~~
+	* ~~checkout the `contact_page` branch~~
+	* ~~the **contact_page** needs these two changes~~
+		* ~~contact_page is not displaying correctly for mobile nor desktop~~. Done.
+		* ~~contact_page is not sending the subject line to the email~~.
 
 	To this end the 
-	* then delete the `mobile_appearance` branch.
-	* then create the `add_resume` branch.
-	* then the necessary mobile design changes will be made in the `add_resume` branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)
+	* ~~then delete the `mobile_appearance` branch~~.
+	* ~~then create the `add_resume` branch~~.
+	* ~~then the necessary mobile design changes will be made in the `add_resume` branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)~~
+	* ~~lastly the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested~~.
+	* ~~then delete the `add_resume` branch~~.
+	* ~~then create the `contact_page` branch~~.
+	* ~~then the necessary contact page changes will be made in the `contact_page` branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)~~
+	* ~~lastly the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested~~.
+	* then delete the `contact_page` branch.
+	* then create the `project_card` branch.
+	* then the necessary contact page changes will be made in the project_card branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)
 	* lastly the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
+	* then create the `project_card` branch.
+	* then the necessary contact page changes will be made in the project_card branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)
+	* lastly the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
+
+	
 
 2. Add one or all of the apps (listed in `Content to add or change` below) to the portfolio.
 
