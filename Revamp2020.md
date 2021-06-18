@@ -14,7 +14,8 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 * am working on adding my resume.
 
 ### Next Steps
-1. Fix appearance for mobile design. Specifically
+1. [Have the cards themselves created populated based on the pinned items in github](https://trello.com/c/RyfM5Z0E/1124-have-the-cards-themselves-created-populated-based-on-the-pinned-items-in-github). (from the `functionality to address` section below. ) **See the Trello card for status.**
+2. Fix appearance for mobile design. Specifically
 	* the **overall appearance** of the `project cards`
 	* add my **resume**
 		* ~~the `Resume` button in the navigation section loads the `Resume` page~~. Done
@@ -41,16 +42,24 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	* ~~then the necessary contact page changes will be made in the `contact_page` branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)~~
 	* ~~lastly the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested~~.
 	* ~~then delete the `contact_page` branch~~.
-	* then create the `project_card` branch.
+	* then create the `project_card_api` branch.
 	* then the necessary contact page changes will be made in the project_card branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)
-	* lastly the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
-	* then create the `project_card` branch.
+	* then the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
+	* lastly delete the `project_card_api` branch.
+	* then create the `project_card_appearance` branch.
 	* then the necessary contact page changes will be made in the project_card branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)
-	* lastly the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
+	* then the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
+	* lastly delete the `project_card_appearance` branch.
+	* then create the `resume_card` branch.
+	* then the necessary resume page changes will be made in the project_card branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)
+	* then the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
+	* lastly delete the `resume_card` branch.
+	* then create the `navigation_header` branch.
+	* then the necessary resume page changes will be made in the project_card branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)
+	* then the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
+	* lastly delete the `navigation_header` branch.
 
-	
-
-2. Add one or all of the apps (listed in `Content to add or change` below) to the portfolio.
+3. Add one or all of the apps (listed in `Content to add or change` below) to the portfolio.
 
 ### To Do
 
@@ -113,8 +122,8 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [X] ~~[remove all button tags on my portfolio website](https://trello.com/c/9mD1AzSI/551-remove-all-button-tags-on-my-portfolio-website) Trello card.~~
 
 	- [ ] Functionality to address
-		- [ ] [Have the description in the project cards dynamically update from the github repo](https://trello.com/c/qcwpK1Gd/586-have-the-description-in-the-project-cards-dynamically-update-from-the-github-repo) Trello card.
-		- [ ] [Have the tech in the project cards dynamically update from the github repo](https://trello.com/c/qoEQZkfH/588-have-the-tech-in-the-project-cards-dynamically-update-from-the-github-repo) Trello card.
+		- [ ] ~~[Have the description in the project cards dynamically update from the github repo](https://trello.com/c/qcwpK1Gd/586-have-the-description-in-the-project-cards-dynamically-update-from-the-github-repo) Trello card~~. (taken care of with `Have the cards themselves created populated based on the pinned items in github` below.)
+		- [ ] [Have the tech in the project cards dynamically update from the github repo](https://trello.com/c/qoEQZkfH/588-have-the-tech-in-the-project-cards-dynamically-update-from-the-github-repo) Trello card~~. (taken care of with `Have the cards themselves created populated based on the pinned items in github` below.)
 		- [ ] [Have the cards themselves created populated based on the pinned items in github](https://trello.com/c/RyfM5Z0E/1124-have-the-cards-themselves-created-populated-based-on-the-pinned-items-in-github) Trello card.
 		- [ ] [Implement smooth navigation](https://trello.com/c/rjsuhabM/539-implement-smooth-navigation) Trello card.
 		- [ ] Make website accessible - see the [Accessibility](https://github.com/JamieBort/LearningDirectory/tree/master/Accessibility) directory of the LearningDirectory repo  
