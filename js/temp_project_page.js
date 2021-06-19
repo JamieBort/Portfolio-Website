@@ -328,36 +328,122 @@ CreateAUserdirectory_obj = {
 //     // console.log("****************************************")
 //     // console.log("****************************************")
 var pinned_array = [];
-fetch("https://gh-pinned-repos-5l2i19um3.vercel.app/?username=jamiebort")
-    .then(response => response.json())
-    .then(data => {
-        // console.log("data: ", data);
-        for (let index = 0; index < data.length; index++) {
-            pinned_array.push(data[index]['repo']);
-        }
 
-    });
+async function myFetch() {
+    const response = await fetch("https://gh-pinned-repos-5l2i19um3.vercel.app/?username=jamiebort")
+    // .then(response => response.json())
+    // .then(data => {
+    //     // console.log("data: ", data);
+    //     for (let index = 0; index < data.length; index++) {
+    //         pinned_array.push(data[index]['repo']);
+    //     }
 
-console.log("pinned_array: ", pinned_array);
+    // });
 
-for (let index = 0; index < pinned_array.length; index++) {
-    fetch('https://api.github.com/repos/jamiebort/' + pinned_array[index])
-        // fetch('https://api.github.com/repos/jamiebort/' + pinned_array[0])
-        // fetch('https://api.github.com/repos/jamiebort/' + 'LearningDirectory')
-        .then(response => response.json())
-        .then(data => {
-            console.log("data.name: ", data.name);
-            console.log("data.description: ", data.description);
-        });
-    fetch('https://api.github.com/repos/JamieBort/' + pinned_array[index] + '/languages')
-    // fetch('https://api.github.com/repos/JamieBort/' + pinned_array[0] + '/languages')
-    fetch('https://api.github.com/repos/JamieBort/' + 'LearningDirectory' + '/languages')
-        .then(response => response.json())
-        .then(data => {
-            console.log("languages: ", data);
-            for (let index = 0; index < 6; index++) {
-                console.log("Object.keys(data)[index]: ", Object.keys(data)[index]);
-            }
-        });
+    // console.log(response);
+
+    const repo_names = await response.json();
+    return repo_names;
 
 }
+
+
+myFetch().then(repo_names => {
+    console.log(repo_names);
+    for (let index = 0; index < repo_names.length; index++) {
+        pinned_array.push(repo_names[index]['repo']);
+    }
+
+
+    console.log("pinned_array: ", pinned_array);
+
+    //     console.log("pinned_array: ", data);
+
+    for (let index = 0; index < pinned_array.length; index++) {
+        var body = document.getElementsByTagName("body")[0];
+
+
+        fetch('https://api.github.com/repos/jamiebort/' + pinned_array[index])
+            .then(response => response.json())
+            .then(data => {
+                var div = document.createElement("div");
+                body.appendChild(div);
+
+                var ul = document.createElement("ul");
+                ul.setAttribute("class", "first_ul");
+                div.appendChild(ul);
+
+                console.log("data.name: ", data.name);
+                console.log("data.description: ", data.description);
+
+                var li1 = document.createElement("li");
+                li1.innerHTML = data.name;
+                ul.appendChild(li1);
+
+                var li2 = document.createElement("li");
+                li2.innerHTML = data.description;
+                ul.appendChild(li2);
+
+                var li3 = document.createElement("li");
+                li3.innerHTML = "languages";
+                ul.appendChild(li3);
+
+                // var another_li = document.getElementsByTagName("li")[2];
+                second_ul= document.createElement("ul");
+                second_ul.setAttribute("class", "second_ul");
+                li3.appendChild(second_ul);
+
+            });
+        fetch('https://api.github.com/repos/JamieBort/' + pinned_array[index] + '/languages')
+            .then(response => response.json())
+            .then(data => {
+                // var body = document.getElementsByTagName("body")[0];
+
+                // var u_l = document.getElementsByTagName("ul")[0];
+
+                // var another_li = document.getElementsByTagName("li")[2];
+                // second_ul= document.createElement("ul");
+                // another_li.appendChild(second_ul);
+
+                // var another_ul = document.getElementsByClassName("second_ul")[0];
+                // another_ul.innerHTML="ajklj;l";
+
+                // var first_ul = document.getElementsByClassName("first_ul")[0];
+                // var second_ul = document.createElement("ul");
+                // second_ul.innerHTML="Languages";
+                // first_ul.appendChild(second_ul);
+
+                // var li3 = document.createElement("li");
+                // li3.innerHTML = "languages";
+                // second_ul.appendChild(li3);
+
+                // console.log("languages: ", data);
+                // var ul2 = document.createElement("ul");
+                // li3.appendChild(ul2);
+                
+                // var another_ul;
+var another_ul;
+                for (let index = 0; index < 6; index++) {
+                    console.log("Object.keys(data)[index]: ", Object.keys(data)[index]);
+                // var first_ul = document.getElementsByClassName("first_ul")[index];
+                // var second_ul = document.createElement("ul");
+                // second_ul.innerHTML="Languages";
+                // first_ul.appendChild(second_ul);
+
+                // another_ul = document.getElementsByClassName("second_ul")[index];
+                // if(Object.keys(data)[index]){
+
+                //     li4 = document.createElement("li");
+                //     li4.innerHTML=Object.keys(data)[index];
+                //     another_ul.appendChild(li4);
+
+                // }
+                }
+            });
+
+
+
+
+    };
+
+});
