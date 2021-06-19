@@ -15,6 +15,15 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 
 ### Next Steps
 1. [Have the cards themselves created populated based on the pinned items in github](https://trello.com/c/RyfM5Z0E/1124-have-the-cards-themselves-created-populated-based-on-the-pinned-items-in-github). (from the `functionality to address` section below. ) **See the Trello card for status.**
+	* use postman to make api calls to my repo to get the info to the pinned items
+		* to that end do 
+			* find the endpoint to the pinned items (or the end points to the individual items) 
+			* then create an temporary html page to make the api call(s) with.
+			* then use that logic in the `projects.js` file.
+	* **if necessary**, set up the `.env` environment to authenticate with github. (this **appears** to not be necessary)
+		* create .env file
+		* install `dotEnv` with npm.
+		* test out variables using `console.log()`.
 2. Fix appearance for mobile design. Specifically
 	* the **overall appearance** of the `project cards`
 	* add my **resume**
@@ -31,6 +40,8 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	* ~~the **contact_page** needs these two changes~~
 		* ~~contact_page is not displaying correctly for mobile nor desktop~~. Done.
 		* ~~contact_page is not sending the subject line to the email~~.
+
+3. Add one or all of the apps (listed in `Content to add or change` below) to the portfolio.
 
 	To this end the 
 	* ~~then delete the `mobile_appearance` branch~~.
@@ -58,8 +69,6 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	* then the necessary resume page changes will be made in the project_card branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)
 	* then the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
 	* lastly delete the `navigation_header` branch.
-
-3. Add one or all of the apps (listed in `Content to add or change` below) to the portfolio.
 
 ### To Do
 
