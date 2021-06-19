@@ -208,83 +208,155 @@ CreateAUserdirectory_obj = {
     "subscribers_count": 0
 }
 
-//   this works. now to iterate through the object and then come back to this.
-const ul = document.getElementById("egoist_array");
-var li = document.createElement("li");
-fetch('https://api.github.com/repos/jamiebort/CreateAUserdirectory')
+
+// console.log("****************************************")
+// console.log("****************************************")
+
+
+// //   this works. now to iterate through the object and then come back to this.
+// const ul = document.getElementById("egoist_array");
+// var li = document.createElement("li");
+// fetch('https://api.github.com/repos/jamiebort/CreateAUserdirectory')
+//     .then(response => response.json())
+//     .then(data => {
+
+//         li = document.createElement("li");
+//         li.innerHTML = "name: " + data.name;
+//         ul.appendChild(li);
+
+//         li = document.createElement("li");
+//         li.innerHTML = "description: " + data.description;
+//         ul.appendChild(li);
+
+//         // ul2 = document.createElement('ul');
+//         // ul.appendChild(ul2);
+
+//         li = document.createElement("li");
+//         // li.innerHTML="language- css: "+data.language;
+//         ul.appendChild(li);
+//         console.log("data.language: ", data.language);
+//         console.log("data.languages_url: ", data.languages_url);
+//     });
+
+// ul2 = document.createElement('ul');
+// ul.appendChild(ul2);
+
+// fetch('https://api.github.com/repos/JamieBort/CreateAUserdirectory/languages')
+//     .then(response => response.json())
+//     .then(data => {
+//         for (const property in data) {
+//             li = document.createElement("li");
+//             li.innerHTML = property + ":&emsp;" + data[property];
+//             ul2.appendChild(li);
+//         }
+//         console.log("data: ", data);
+//     });
+
+// console.log("****************************************")
+// console.log("****************************************")
+
+// // console.log("egoist_array: ", egoist_array)
+// // // console.log("egoist_array[0]['repo']: ", egoist_array[0]["repo"])
+// for (const x of egoist_array) {
+//     // console.log('x: ',x);
+//     // console.log('x["repo"]): ',x["repo"]);
+
+
+
+
+//     fetch('https://api.github.com/repos/jamiebort/' + x["repo"])
+//         .then(response => response.json())
+//         .then(data => {
+//             console.log('x["repo"]): ',x["repo"]);
+//             console.log("data.name: ", data.name);
+//             console.log("data.description: ", data.description);
+
+//             // for (const property in data) {
+//             //     li = document.createElement("li");
+//             //     li.innerHTML = property + ":&emsp;" + data[property];
+//             //     ul2.appendChild(li);
+//             // }
+//             // console.log("data: ", data);
+//         });
+
+
+//     fetch('https://api.github.com/repos/JamieBort/' + x["repo"] + '/languages')
+//         .then(response => response.json())
+//         .then(data => {
+//             console.log('x["repo"]', x["repo"]);
+//             // for (const property in data) {
+//             //     li = document.createElement("li");
+//             //     li.innerHTML = property + ":&emsp;" + data[property];
+//             //     ul2.appendChild(li);
+//             // }
+
+//             console.log("data: ", data);
+//             // console.log("data[0]: ", data[Object]);
+//             for (const property in data) {
+//                 console.log("property: ", property)
+//             }
+//         });
+
+// }
+
+// console.log("****************************************")
+// console.log("****************************************")
+
+// fetch("https://gh-pinned-repos-5l2i19um3.vercel.app/?username=jamiebort")
+//     .then(response => response.json())
+//     .then(data => {
+//         console.log("data: ", data);
+//         for (let index = 0; index < data.length; index++) {
+//             fetch('https://api.github.com/repos/JamieBort/' + data[index]['repo'] + '/languages')
+//                 .then(response => response.json())
+//                 .then(data => {
+//                     console.log("languages: ", data);
+//                     // for (const property in data) {
+//                     //     console.log("property: ", property)
+//                     // }
+//                 });
+//             fetch('https://api.github.com/repos/jamiebort/' + data[index]['repo'])
+//                 .then(response => response.json())
+//                 .then(data => {
+//                     console.log("data.name: ", data.name);
+//                     console.log("data.description: ", data.description);
+//                 });
+//         }
+
+//     });
+
+//     // console.log("****************************************")
+//     // console.log("****************************************")
+var pinned_array = [];
+fetch("https://gh-pinned-repos-5l2i19um3.vercel.app/?username=jamiebort")
     .then(response => response.json())
     .then(data => {
-
-        li = document.createElement("li");
-        li.innerHTML = "name: " + data.name;
-        ul.appendChild(li);
-
-        li = document.createElement("li");
-        li.innerHTML = "description: " + data.description;
-        ul.appendChild(li);
-
-        // ul2 = document.createElement('ul');
-        // ul.appendChild(ul2);
-
-        li = document.createElement("li");
-        // li.innerHTML="language- css: "+data.language;
-        ul.appendChild(li);
-        console.log("data.language: ", data.language);
-        console.log("data.languages_url: ", data.languages_url);
-    });
-
-ul2 = document.createElement('ul');
-ul.appendChild(ul2);
-
-fetch('https://api.github.com/repos/JamieBort/CreateAUserdirectory/languages')
-    .then(response => response.json())
-    .then(data => {
-        for (const property in data) {
-            li = document.createElement("li");
-            li.innerHTML = property + ":&emsp;" + data[property];
-            ul2.appendChild(li);
+        // console.log("data: ", data);
+        for (let index = 0; index < data.length; index++) {
+            pinned_array.push(data[index]['repo']);
         }
-        console.log("data: ", data);
+
     });
 
-console.log("****************************************")
-// console.log("egoist_array: ", egoist_array)
-// // console.log("egoist_array[0]['repo']: ", egoist_array[0]["repo"])
-for (const x of egoist_array) {
-    console.log(x["repo"]);
+console.log("pinned_array: ", pinned_array);
 
-
-
-
-    fetch('https://api.github.com/repos/jamiebort/' + x["repo"])
+for (let index = 0; index < pinned_array.length; index++) {
+    fetch('https://api.github.com/repos/jamiebort/' + pinned_array[index])
+        // fetch('https://api.github.com/repos/jamiebort/' + pinned_array[0])
+        // fetch('https://api.github.com/repos/jamiebort/' + 'LearningDirectory')
         .then(response => response.json())
         .then(data => {
             console.log("data.name: ", data.name);
             console.log("data.description: ", data.description);
-
-            // for (const property in data) {
-            //     li = document.createElement("li");
-            //     li.innerHTML = property + ":&emsp;" + data[property];
-            //     ul2.appendChild(li);
-            // }
-            // console.log("data: ", data);
         });
-
-
-        fetch('https://api.github.com/repos/JamieBort/'+x["repo"]+'/languages')
+    fetch('https://api.github.com/repos/JamieBort/' + pinned_array[index] + '/languages')
+    // fetch('https://api.github.com/repos/JamieBort/' + pinned_array[0] + '/languages')
+    fetch('https://api.github.com/repos/JamieBort/' + 'LearningDirectory' + '/languages')
         .then(response => response.json())
         .then(data => {
-
-            // for (const property in data) {
-            //     li = document.createElement("li");
-            //     li.innerHTML = property + ":&emsp;" + data[property];
-            //     ul2.appendChild(li);
-            // }
-
-            console.log("data: ", data);
-            // console.log("data[0]: ", data[Object]);
-            for (const property in data) {
-                console.log("property: ",property)
+            console.log("languages: ", data);
+            for (let index = 0; index < 6; index++) {
+                console.log("Object.keys(data)[index]: ", Object.keys(data)[index]);
             }
         });
 
