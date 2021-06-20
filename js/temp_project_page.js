@@ -388,8 +388,7 @@ myFetch().then(repo_names => {
                 li3.innerHTML = "languages";
                 ul.appendChild(li3);
 
-                // var another_li = document.getElementsByTagName("li")[2];
-                second_ul= document.createElement("ul");
+                second_ul = document.createElement("ul");
                 second_ul.setAttribute("class", "second_ul");
                 li3.appendChild(second_ul);
 
@@ -397,48 +396,46 @@ myFetch().then(repo_names => {
         fetch('https://api.github.com/repos/JamieBort/' + pinned_array[index] + '/languages')
             .then(response => response.json())
             .then(data => {
-                // var body = document.getElementsByTagName("body")[0];
+                var t = 0;
 
-                // var u_l = document.getElementsByTagName("ul")[0];
+                second_ul = document.getElementsByClassName("second_ul");
 
-                // var another_li = document.getElementsByTagName("li")[2];
-                // second_ul= document.createElement("ul");
-                // another_li.appendChild(second_ul);
-
-                // var another_ul = document.getElementsByClassName("second_ul")[0];
-                // another_ul.innerHTML="ajklj;l";
-
-                // var first_ul = document.getElementsByClassName("first_ul")[0];
-                // var second_ul = document.createElement("ul");
-                // second_ul.innerHTML="Languages";
-                // first_ul.appendChild(second_ul);
-
-                // var li3 = document.createElement("li");
-                // li3.innerHTML = "languages";
-                // second_ul.appendChild(li3);
-
-                // console.log("languages: ", data);
-                // var ul2 = document.createElement("ul");
-                // li3.appendChild(ul2);
-                
-                // var another_ul;
-var another_ul;
-                for (let index = 0; index < 6; index++) {
+                console.log("Object.keys(data).length: ", Object.keys(data).length);
+                // console.log("data: ", data);
+                for (let index = 0; index < Object.keys(data).length; index++) {
                     console.log("Object.keys(data)[index]: ", Object.keys(data)[index]);
-                // var first_ul = document.getElementsByClassName("first_ul")[index];
-                // var second_ul = document.createElement("ul");
-                // second_ul.innerHTML="Languages";
-                // first_ul.appendChild(second_ul);
+                    
+                    while (t < 2) {
+                        li4 = document.createElement("li");
+                        li4.innerHTML = "Object.keys(data)[0]";
+                        second_ul[0].appendChild(li4);
+                        t++;
+                    }
 
-                // another_ul = document.getElementsByClassName("second_ul")[index];
-                // if(Object.keys(data)[index]){
-
-                //     li4 = document.createElement("li");
-                //     li4.innerHTML=Object.keys(data)[index];
-                //     another_ul.appendChild(li4);
-
-                // }
                 }
+
+                // second_ul = document.getElementsByClassName("second_ul");
+                // li4 = document.createElement("li");
+                // li4.innerHTML = "Object.keys(data)[0]";
+                // second_ul[0].appendChild(li4);
+
+                // if (Object.keys(data)[0]) {
+                //     li4 = document.createElement("li");
+                //     li4.innerHTML = "Object.keys(data)[0]";
+                //     second_ul.appendChild(li4);
+                // }
+
+                // for (let index = 0; index < 6; index++) {
+                //     if (Object.keys(data)[index]) {
+                //         console.log("index: ", index);
+                //         console.log("Object.keys(data)[index]: ", Object.keys(data)[index]);
+                //         // second_ul = document.getElementsByClassName("second_ul")[index];
+                //         // li4 = document.createElement("li");
+                //         // li4.innerHTML = Object.keys(data)[index];
+                //         // second_ul.appendChild(li4);
+                //     }
+                // }
+
             });
 
 
