@@ -210,6 +210,18 @@ CreateAUserdirectory_obj = {
 
 var pinned_array = [];
 
+var project_section = document.getElementById("projects_section"); 
+
+var h2 = document.createElement("h2");
+h2.className = "section_title";
+h2.innerHTML = "Some of my projects";
+project_section.appendChild(h2);
+
+var psd = document.createElement("div");
+psd.id="projects_section_div";
+psd.className="section_div_class";
+project_section.appendChild(psd);
+
 async function myFetch() {
     const response = await fetch("https://gh-pinned-repos-5l2i19um3.vercel.app/?username=jamiebort")
     // .then(response => response.json())
@@ -242,14 +254,41 @@ myFetch().then(repo_names => {
 
     for (let index1 = 0; index1 < pinned_array.length; index1++) {
         // var body = document.getElementsByTagName("body")[0];
-        var project_section = document.getElementById("projects_section"); 
 
         fetch('https://api.github.com/repos/jamiebort/' + pinned_array[index1])
             .then(response => response.json())
             .then(data => {
+
+
+
+
+
+                var cod = document.createElement("div");
+                cod.className = "card_outside_div";
+                // project_section.appendChild(cod);
+                psd.appendChild(cod);
+
+
+
+
+
+
+
+
+
                 var div = document.createElement("div");
                 // body.appendChild(div);
-                project_section.appendChild(div);
+                // project_section.appendChild(div);
+
+                cod.appendChild(div);
+
+
+
+
+
+
+
+
 
                 var ul = document.createElement("ul");
                 ul.setAttribute("class", "first_ul");
