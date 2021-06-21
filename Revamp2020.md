@@ -19,23 +19,23 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		* to that end do 
 			* find the endpoint to the pinned items (or the end points to the individual items) 
 			* then create an temporary html page to make the api call(s) with.
-			* then use that logic in the `projects.js` file.
+			* then use that logic in the `/js/projects.js` file.
 			* tactic/plan of attack/procedure:
-				* leaving the `projects.js` file alone.
-				* create the `temp_project_page.js` file as a copy of the `projects.js` file. **Done.**
-				* got the `temp_project_page.js` file to make api calls as needed. **Done.**
-				* create the `copy_temp_project_page.js` file as a copy of the `temp_project_page.js` file. **Done.**
-				* swap scripts in the `index.html` file:
-					* commenting out the `project.js` script: **Done.**
+				* leaving the `/js/projects.js` file alone.
+				* create the `/js/temp_project_page.js` file as a copy of the `/js/projects.js` file. **Done.**
+				* got the `/js/temp_project_page.js` file to make api calls as needed. **Done.**
+				* create the `/js/copy_temp_project_page.js` file as a copy of the `/js/temp_project_page.js` file. **Done.**
+				* start editing the `/js/temp_project_page.js` file so that the cards in the `/html/index.html` file look the same as when projects.js is is referenced in the the `/html/index.html` file. (the `/js/temp_project_page.js` file is referenced in the `/js/temp_project_page.js` file.)
+				* swap scripts in the `/html/index.html` file:
+					* commenting out the `/js/projects.js` script:
 
 							<!-- <script type="text/javascript" src="../js/projects.js"></script> -->
 
-					* adding the `temp_project_page.js` script:
+					* adding the `/js/temp_project_page.js` script:
 
 							<script type="text/javascript" src="../js/temp_project_page.js"></script>
 
-				* start editing the `temp_project_page.js` file so that the cards in the `index.html` file look the same as when projects.js is is referenced in the the `index.html` file.
-				* then rename the `temp_project_page.js` file appropriately to start using it permanently.
+				* then rename the `/js/temp_project_page.js` file appropriately to start using it permanently.
 
 	* **if necessary**, set up the `.env` environment to authenticate with github. (this **appears** to not be necessary)
 		* create .env file
