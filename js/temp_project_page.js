@@ -7,210 +7,25 @@
 // more info on it found here:
 // https://trello.com/c/RyfM5Z0E/1124-have-the-cards-themselves-created-populated-based-on-the-pinned-items-in-github?menu=filter&filter=label:none
 
-egoist_array = [{ "owner": "jamiebort", "repo": "LearningDirectory", "link": "https://github.com/jamiebort/LearningDirectory", "description": "The purpose of this directory is to house all the code I write as I learn new technologies and hone my skills. This is to help keep my GitHub account organized.", "language": "JavaScript", "stars": 0, "forks": 0 }, { "owner": "jamiebort", "repo": "PersonalDashboard", "link": "https://github.com/jamiebort/PersonalDashboard", "description": "The repository for a static website that will house charts, graphs, and the like of things I need to keep track of.", "language": "JavaScript", "stars": 0, "forks": 0 }, { "owner": "jamiebort", "repo": "jamiebort.github.io", "link": "https://github.com/jamiebort/jamiebort.github.io", "description": "My Portfolio Website", "language": "JavaScript", "stars": 0, "forks": 0 }, { "owner": "jamiebort", "repo": "iPhysicist-CSSLayoutFlexbox", "link": "https://github.com/jamiebort/iPhysicist-CSSLayoutFlexbox", "description": "Finish the styling for the 'i Physicist' blog mockup. Skills using CSS, HTML, GitHub, Bash.", "language": "HTML", "stars": 0, "forks": 0 }, { "owner": "jamiebort", "repo": "PuppyLove", "link": "https://github.com/jamiebort/PuppyLove", "description": "This project tests your basic knowledge of CSS and styling.", "language": "HTML", "stars": 0, "forks": 0 }, { "owner": "jamiebort", "repo": "CreateAUserdirectory", "link": "https://github.com/jamiebort/CreateAUserdirectory", "description": "Using Express and Mustache-express to implement MVC.", "language": "CSS", "stars": 0, "forks": 0 }]
-
-// https://api.github.com/repos/jamiebort/CodeSnippetOrganizer
-
-CodeSnippetOrganizer_obj = {
-    "id": 102218042,
-    "node_id": "MDEwOlJlcG9zaXRvcnkxMDIyMTgwNDI=",
-    "name": "CodeSnippetOrganizer",
-    "full_name": "JamieBort/CodeSnippetOrganizer",
-    "private": false,
-    "owner": {
-        "login": "JamieBort",
-        "id": 4405730,
-        "node_id": "MDQ6VXNlcjQ0MDU3MzA=",
-        "avatar_url": "https://avatars.githubusercontent.com/u/4405730?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/JamieBort",
-        "html_url": "https://github.com/JamieBort",
-        "followers_url": "https://api.github.com/users/JamieBort/followers",
-        "following_url": "https://api.github.com/users/JamieBort/following{/other_user}",
-        "gists_url": "https://api.github.com/users/JamieBort/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/JamieBort/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/JamieBort/subscriptions",
-        "organizations_url": "https://api.github.com/users/JamieBort/orgs",
-        "repos_url": "https://api.github.com/users/JamieBort/repos",
-        "events_url": "https://api.github.com/users/JamieBort/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/JamieBort/received_events",
-        "type": "User",
-        "site_admin": false
-    },
-    "html_url": "https://github.com/JamieBort/CodeSnippetOrganizer",
-    "description": "Build an organizer for holding your and others' code snippets.",
-    "fork": false,
-    "url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer",
-    "forks_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/forks",
-    "keys_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/keys{/key_id}",
-    "collaborators_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/collaborators{/collaborator}",
-    "teams_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/teams",
-    "hooks_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/hooks",
-    "issue_events_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/issues/events{/number}",
-    "events_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/events",
-    "assignees_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/assignees{/user}",
-    "branches_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/branches{/branch}",
-    "tags_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/tags",
-    "blobs_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/git/blobs{/sha}",
-    "git_tags_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/git/tags{/sha}",
-    "git_refs_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/git/refs{/sha}",
-    "trees_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/git/trees{/sha}",
-    "statuses_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/statuses/{sha}",
-    "languages_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/languages",
-    "stargazers_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/stargazers",
-    "contributors_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/contributors",
-    "subscribers_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/subscribers",
-    "subscription_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/subscription",
-    "commits_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/commits{/sha}",
-    "git_commits_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/git/commits{/sha}",
-    "comments_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/comments{/number}",
-    "issue_comment_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/issues/comments{/number}",
-    "contents_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/contents/{+path}",
-    "compare_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/compare/{base}...{head}",
-    "merges_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/merges",
-    "archive_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/{archive_format}{/ref}",
-    "downloads_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/downloads",
-    "issues_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/issues{/number}",
-    "pulls_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/pulls{/number}",
-    "milestones_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/milestones{/number}",
-    "notifications_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/notifications{?since,all,participating}",
-    "labels_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/labels{/name}",
-    "releases_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/releases{/id}",
-    "deployments_url": "https://api.github.com/repos/JamieBort/CodeSnippetOrganizer/deployments",
-    "created_at": "2017-09-02T19:11:32Z",
-    "updated_at": "2021-06-07T15:55:26Z",
-    "pushed_at": "2021-06-07T15:55:23Z",
-    "git_url": "git://github.com/JamieBort/CodeSnippetOrganizer.git",
-    "ssh_url": "git@github.com:JamieBort/CodeSnippetOrganizer.git",
-    "clone_url": "https://github.com/JamieBort/CodeSnippetOrganizer.git",
-    "svn_url": "https://github.com/JamieBort/CodeSnippetOrganizer",
-    "homepage": null,
-    "size": 38,
-    "stargazers_count": 0,
-    "watchers_count": 0,
-    "language": "JavaScript",
-    "has_issues": true,
-    "has_projects": true,
-    "has_downloads": true,
-    "has_wiki": true,
-    "has_pages": false,
-    "forks_count": 0,
-    "mirror_url": null,
-    "archived": false,
-    "disabled": false,
-    "open_issues_count": 1,
-    "license": null,
-    "forks": 0,
-    "open_issues": 1,
-    "watchers": 0,
-    "default_branch": "master",
-    "temp_clone_token": null,
-    "network_count": 0,
-    "subscribers_count": 0
-}
-
-//   https://api.github.com/repos/jamiebort/CreateAUserdirectory
-CreateAUserdirectory_obj = {
-    "id": 99573781,
-    "node_id": "MDEwOlJlcG9zaXRvcnk5OTU3Mzc4MQ==",
-    "name": "CreateAUserdirectory",
-    "full_name": "JamieBort/CreateAUserdirectory",
-    "private": false,
-    "owner": {
-        "login": "JamieBort",
-        "id": 4405730,
-        "node_id": "MDQ6VXNlcjQ0MDU3MzA=",
-        "avatar_url": "https://avatars.githubusercontent.com/u/4405730?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/JamieBort",
-        "html_url": "https://github.com/JamieBort",
-        "followers_url": "https://api.github.com/users/JamieBort/followers",
-        "following_url": "https://api.github.com/users/JamieBort/following{/other_user}",
-        "gists_url": "https://api.github.com/users/JamieBort/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/JamieBort/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/JamieBort/subscriptions",
-        "organizations_url": "https://api.github.com/users/JamieBort/orgs",
-        "repos_url": "https://api.github.com/users/JamieBort/repos",
-        "events_url": "https://api.github.com/users/JamieBort/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/JamieBort/received_events",
-        "type": "User",
-        "site_admin": false
-    },
-    "html_url": "https://github.com/JamieBort/CreateAUserdirectory",
-    "description": "Using Express and Mustache-express to implement MVC.",
-    "fork": false,
-    "url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory",
-    "forks_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/forks",
-    "keys_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/keys{/key_id}",
-    "collaborators_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/collaborators{/collaborator}",
-    "teams_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/teams",
-    "hooks_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/hooks",
-    "issue_events_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/issues/events{/number}",
-    "events_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/events",
-    "assignees_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/assignees{/user}",
-    "branches_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/branches{/branch}",
-    "tags_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/tags",
-    "blobs_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/git/blobs{/sha}",
-    "git_tags_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/git/tags{/sha}",
-    "git_refs_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/git/refs{/sha}",
-    "trees_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/git/trees{/sha}",
-    "statuses_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/statuses/{sha}",
-    "languages_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/languages",
-    "stargazers_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/stargazers",
-    "contributors_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/contributors",
-    "subscribers_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/subscribers",
-    "subscription_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/subscription",
-    "commits_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/commits{/sha}",
-    "git_commits_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/git/commits{/sha}",
-    "comments_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/comments{/number}",
-    "issue_comment_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/issues/comments{/number}",
-    "contents_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/contents/{+path}",
-    "compare_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/compare/{base}...{head}",
-    "merges_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/merges",
-    "archive_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/{archive_format}{/ref}",
-    "downloads_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/downloads",
-    "issues_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/issues{/number}",
-    "pulls_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/pulls{/number}",
-    "milestones_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/milestones{/number}",
-    "notifications_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/notifications{?since,all,participating}",
-    "labels_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/labels{/name}",
-    "releases_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/releases{/id}",
-    "deployments_url": "https://api.github.com/repos/JamieBort/CreateAUserdirectory/deployments",
-    "created_at": "2017-08-07T12:05:12Z",
-    "updated_at": "2021-01-19T14:25:44Z",
-    "pushed_at": "2021-01-19T14:25:41Z",
-    "git_url": "git://github.com/JamieBort/CreateAUserdirectory.git",
-    "ssh_url": "git@github.com:JamieBort/CreateAUserdirectory.git",
-    "clone_url": "https://github.com/JamieBort/CreateAUserdirectory.git",
-    "svn_url": "https://github.com/JamieBort/CreateAUserdirectory",
-    "homepage": "",
-    "size": 1854,
-    "stargazers_count": 0,
-    "watchers_count": 0,
-    "language": "CSS",
-    "has_issues": true,
-    "has_projects": true,
-    "has_downloads": true,
-    "has_wiki": true,
-    "has_pages": true,
-    "forks_count": 0,
-    "mirror_url": null,
-    "archived": false,
-    "disabled": false,
-    "open_issues_count": 0,
-    "license": null,
-    "forks": 0,
-    "open_issues": 0,
-    "watchers": 0,
-    "default_branch": "master",
-    "temp_clone_token": null,
-    "network_count": 0,
-    "subscribers_count": 0
-}
-
 var pinned_array = [];
+const static_site_urls = {
+    first: "https://vast-island-13423.herokuapp.com/",
+    second: "https://jamiebort.github.io/CustomerDatabase/",
+    third: "../index.html#title",
+    fourth: "https://jamiebort.github.io/PuppyLove/",
+    fifth: "https://jamiebort.github.io/iPhysicist-CSSLayoutFlexbox/",
+    six: "https://jamiebort.github.io/FormBuilder/",
+}
+const images = {
+    first: "https://robohash.org/blanditiisexercitationemquaerat.png?size=150x150&set=set1",
+    second: "../assets/Project_images/customerdatabase/CustomerDatabase.png",
+    third: "../assets/Project_images/Portfolio_Website2.png",
+    fourth: "../assets/Project_images/Puppy_Love.png",
+    fifth: "../assets/Project_images/iPhysicist_Small.png",
+    six:  "../assets/Project_images/Form_Builder.png",
+}
 
-var project_section = document.getElementById("projects_section"); 
+var project_section = document.getElementById("projects_section");
 
 var h2 = document.createElement("h2");
 h2.className = "section_title";
@@ -218,8 +33,8 @@ h2.innerHTML = "Some of my projects";
 project_section.appendChild(h2);
 
 var psd = document.createElement("div");
-psd.id="projects_section_div";
-psd.className="section_div_class";
+psd.id = "projects_section_div";
+psd.className = "section_div_class";
 project_section.appendChild(psd);
 
 async function myFetch() {
@@ -258,10 +73,10 @@ myFetch().then(repo_names => {
         fetch('https://api.github.com/repos/jamiebort/' + pinned_array[index1])
             .then(response => response.json())
             .then(data => {
-
-
-
-
+                // console.log("data: ", data);
+                // console.log("data.name: ", data.name);
+                // console.log("data.html_url: ", data.html_url);
+                // console.log("data.description: ", data.description);
 
                 var cod = document.createElement("div");
                 cod.className = "card_outside_div";
@@ -283,6 +98,108 @@ myFetch().then(repo_names => {
                 // cod.appendChild(div);
 
 
+                var chd = document.createElement("div");
+                chd.className = "card_header_div";
+                cod.appendChild(chd);
+
+                var chi = document.createElement("img");
+                chi.className = "card_header_img";
+                // chi.src = projects[key]["project_img"];
+                // for (let indexx = 0; indexx < 6; indexx++) {
+                    // chi = document.createElement("img");
+                    // chi.className = "card_header_img";
+                    console.log("Object.keys(data)[index1]: ", Object.keys(images)[index1]);
+                    console.log("images[Object.keys(images)[index1]]: ", images[Object.keys(images)[index1]]);
+                    chi.src=images[Object.keys(images)[index1]]
+                // }
+                // chi.src = images["second"];
+                // chi.src = "../assets/under_construction/website-construction.jpg";
+                chd.appendChild(chi);
+
+                var cbod = document.createElement("div");
+                cbod.className = "card_body_outside_div";
+                cod.appendChild(cbod);
+
+                var cd = document.createElement("h3");
+                cd.className = "card_title";
+                // cd.innerHTML=projects[key]["title"];
+                cd.innerHTML = data.name;
+                cbod.appendChild(cd);
+
+                // var li1 = document.createElement("li");
+                // li1.innerHTML = data.name;
+                // cbod.appendChild(li1);
+
+
+
+
+                // var ul = document.createElement("ul");
+                // ul.setAttribute("class", "first_ul");
+                // // div.appendChild(ul);
+                // chd.appendChild(ul);
+
+
+
+
+
+                var cp = document.createElement("p");
+                cp.className = "card_paragraph";
+                // cp.innerHTML = projects[key]["description"];
+                cp.innerHTML = data.description;
+                cbod.appendChild(cp);
+
+
+
+                // var li2 = document.createElement("li");
+                // li2.innerHTML = data.description;
+                // ul.appendChild(li2);
+
+
+
+                var cbid = document.createElement("div");
+                cbid.className = "card_body_inside_div";
+                cbod.appendChild(cbid);
+
+                var cad = document.createElement("div");
+                cad.className = "card_a_div";
+                cbid.appendChild(cad);
+
+                var site_anchor = document.createElement("a");
+                site_anchor.setAttribute("class", "card_a site_link");
+                // a.href = projects[key]["project_anchor_href"];
+                site_anchor.href = "https://github.com/JamieBort/jamiebort.github.io#welcome-to-the-repo-for-my-portfolio-website";
+                // site_anchor.href = "data.html_url";
+                site_anchor.target = "_blank";
+                site_anchor.innerHTML = "Static Site";
+                cad.appendChild(site_anchor);
+
+                var cbi = document.createElement("img");
+                cbi.className = "card_body_img";
+                // cbi.src = projects[key]["img_src"];
+                cbi.src = "../assets/under_construction/website-construction.jpg";
+                cad.appendChild(cbi);
+
+                var repo_anchor = document.createElement("a");
+                repo_anchor.setAttribute("class", "card_a repo_link");
+                // repo_anchor.className = "card_a";
+                // repo_anchor.setAttribute("id", "repo_link");
+                // repo_anchor.href = projects[key]["repo_anchor_href"];
+                // repo_anchor.href = "https://github.com/JamieBort/jamiebort.github.io#welcome-to-the-repo-for-my-portfolio-website";
+                repo_anchor.href = data.html_url;
+
+                repo_anchor.target = "_blank";
+                repo_anchor.innerHTML = "Git Repo";
+                cad.appendChild(repo_anchor);
+
+                var cfd = document.createElement("div");
+                cfd.className = "card_footer_div";
+                cod.appendChild(cfd);
+
+                var cul = document.createElement("ul");
+                // cul.className="card_unordered_list";
+                cul.setAttribute("class", "card_unordered_list");
+                cul.setAttribute("id", "aaaa");
+                cfd.appendChild(cul);
 
 
 
@@ -290,48 +207,36 @@ myFetch().then(repo_names => {
 
 
 
-                var ul = document.createElement("ul");
-                ul.setAttribute("class", "first_ul");
-                // div.appendChild(ul);
-                cod.appendChild(ul);
 
 
 
 
 
-                console.log("data.name: ", data.name);
-                console.log("data.description: ", data.description);
+                // var li3 = document.createElement("li");
+                // li3.innerHTML = "languages";
+                // ul.appendChild(li3);
 
-                var li1 = document.createElement("li");
-                li1.innerHTML = data.name;
-                ul.appendChild(li1);
-
-                var li2 = document.createElement("li");
-                li2.innerHTML = data.description;
-                ul.appendChild(li2);
-
-                var li3 = document.createElement("li");
-                li3.innerHTML = "languages";
-                ul.appendChild(li3);
-
-                second_ul = document.createElement("ul");
-                second_ul.setAttribute("class", "second_ul");
-                li3.appendChild(second_ul);
+                // second_ul = document.createElement("ul");
+                // second_ul.setAttribute("class", "second_ul");
+                // li3.appendChild(second_ul);
 
             });
         fetch('https://api.github.com/repos/JamieBort/' + pinned_array[index1] + '/languages')
             .then(response => response.json())
             .then(data => {
+                c_u_l = document.getElementsByClassName("card_unordered_list");
 
-                second_ul = document.getElementsByClassName("second_ul");
-
-                console.log("Object.keys(data).length: ", Object.keys(data).length);
+                // console.log("Object.keys(data).length: ", Object.keys(data).length);
                 // console.log("data: ", data);
                 for (let index2 = 0; index2 < Object.keys(data).length && index2 < 6; index2++) {
                     console.log("Object.keys(data)[index2]: ", Object.keys(data)[index2]);
-                    li4 = document.createElement("li");
-                    li4.innerHTML = Object.keys(data)[index2];
-                    second_ul[index1].appendChild(li4);
+
+                    var cli = document.createElement("li");
+                    cli.className = "card_list_item";
+                    // cli.innerHTML =  projects[key]["tech"][index];
+                    cli.innerHTML = Object.keys(data)[index2];
+                    // cli.innerHTML =  "Object.keys(data)[index2]";
+                    c_u_l[index1].appendChild(cli);
                 }
             });
     };
