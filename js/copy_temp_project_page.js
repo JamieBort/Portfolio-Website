@@ -241,15 +241,13 @@ myFetch().then(repo_names => {
     //     console.log("pinned_array: ", data);
 
     for (let index1 = 0; index1 < pinned_array.length; index1++) {
-        // var body = document.getElementsByTagName("body")[0];
-        var project_section = document.getElementById("projects_section"); 
+        var body = document.getElementsByTagName("body")[0];
 
         fetch('https://api.github.com/repos/jamiebort/' + pinned_array[index1])
             .then(response => response.json())
             .then(data => {
                 var div = document.createElement("div");
-                // body.appendChild(div);
-                project_section.appendChild(div);
+                body.appendChild(div);
 
                 var ul = document.createElement("ul");
                 ul.setAttribute("class", "first_ul");
