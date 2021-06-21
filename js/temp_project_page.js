@@ -276,11 +276,11 @@ myFetch().then(repo_names => {
 
 
 
-                var div = document.createElement("div");
-                // body.appendChild(div);
-                // project_section.appendChild(div);
+                // var div = document.createElement("div");
+                // // body.appendChild(div);
+                // // project_section.appendChild(div);
 
-                cod.appendChild(div);
+                // cod.appendChild(div);
 
 
 
@@ -292,7 +292,12 @@ myFetch().then(repo_names => {
 
                 var ul = document.createElement("ul");
                 ul.setAttribute("class", "first_ul");
-                div.appendChild(ul);
+                // div.appendChild(ul);
+                cod.appendChild(ul);
+
+
+
+
 
                 console.log("data.name: ", data.name);
                 console.log("data.description: ", data.description);
