@@ -241,14 +241,15 @@ myFetch().then(repo_names => {
     //     console.log("pinned_array: ", data);
 
     for (let index1 = 0; index1 < pinned_array.length; index1++) {
-        var body = document.getElementsByTagName("body")[0];
-
+        // var body = document.getElementsByTagName("body")[0];
+        var project_section = document.getElementById("projects_section"); 
 
         fetch('https://api.github.com/repos/jamiebort/' + pinned_array[index1])
             .then(response => response.json())
             .then(data => {
                 var div = document.createElement("div");
-                body.appendChild(div);
+                // body.appendChild(div);
+                project_section.appendChild(div);
 
                 var ul = document.createElement("ul");
                 ul.setAttribute("class", "first_ul");
@@ -277,13 +278,12 @@ myFetch().then(repo_names => {
         fetch('https://api.github.com/repos/JamieBort/' + pinned_array[index1] + '/languages')
             .then(response => response.json())
             .then(data => {
-                // var t = 0;
 
                 second_ul = document.getElementsByClassName("second_ul");
 
                 console.log("Object.keys(data).length: ", Object.keys(data).length);
                 // console.log("data: ", data);
-                for (let index2 = 0; index2 < Object.keys(data).length; index2++) {
+                for (let index2 = 0; index2 < Object.keys(data).length && index2 < 6; index2++) {
                     console.log("Object.keys(data)[index2]: ", Object.keys(data)[index2]);
                     li4 = document.createElement("li");
                     li4.innerHTML = Object.keys(data)[index2];
