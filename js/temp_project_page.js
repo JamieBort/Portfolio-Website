@@ -349,21 +349,21 @@ async function myFetch() {
 
 
 myFetch().then(repo_names => {
-    console.log(repo_names);
+    // console.log("repo_names: ",repo_names);
     for (let index = 0; index < repo_names.length; index++) {
         pinned_array.push(repo_names[index]['repo']);
     }
 
 
-    console.log("pinned_array: ", pinned_array);
+    // console.log("pinned_array: ", pinned_array);
 
     //     console.log("pinned_array: ", data);
 
-    for (let index = 0; index < pinned_array.length; index++) {
+    for (let index1 = 0; index1 < pinned_array.length; index1++) {
         var body = document.getElementsByTagName("body")[0];
 
 
-        fetch('https://api.github.com/repos/jamiebort/' + pinned_array[index])
+        fetch('https://api.github.com/repos/jamiebort/' + pinned_array[index1])
             .then(response => response.json())
             .then(data => {
                 var div = document.createElement("div");
@@ -393,26 +393,35 @@ myFetch().then(repo_names => {
                 li3.appendChild(second_ul);
 
             });
-        fetch('https://api.github.com/repos/JamieBort/' + pinned_array[index] + '/languages')
+        fetch('https://api.github.com/repos/JamieBort/' + pinned_array[index1] + '/languages')
             .then(response => response.json())
             .then(data => {
-                var t = 0;
+                // var t = 0;
 
                 second_ul = document.getElementsByClassName("second_ul");
 
                 console.log("Object.keys(data).length: ", Object.keys(data).length);
                 // console.log("data: ", data);
-                for (let index = 0; index < Object.keys(data).length; index++) {
-                    console.log("Object.keys(data)[index]: ", Object.keys(data)[index]);
-                    
-                    while (t < 2) {
-                        li4 = document.createElement("li");
-                        li4.innerHTML = "Object.keys(data)[0]";
-                        second_ul[0].appendChild(li4);
-                        t++;
-                    }
-
+                for (let index2 = 0; index2 < Object.keys(data).length; index2++) {
+                    console.log("Object.keys(data)[index2]: ", Object.keys(data)[index2]);
+                    li4 = document.createElement("li");
+                    li4.innerHTML = Object.keys(data)[index2];
+                    second_ul[index1].appendChild(li4);
                 }
+
+                // for (let index4 = 0; index4 < Object.keys(data).length; index4++) {
+                //     console.log("Object.keys(data)[index4]: ", Object.keys(data)[index4]);
+                //     li4 = document.createElement("li");
+                //     li4.innerHTML = Object.keys(data)[index4];
+                //     second_ul[1].appendChild(li4);
+                // }
+
+                // for (let index5 = 0; index5 < Object.keys(data).length; index5++) {
+                //     console.log("Object.keys(data)[index5]: ", Object.keys(data)[index5]);
+                //     li4 = document.createElement("li");
+                //     li4.innerHTML = Object.keys(data)[index5];
+                //     second_ul[2].appendChild(li4);
+                // }
 
                 // second_ul = document.getElementsByClassName("second_ul");
                 // li4 = document.createElement("li");
@@ -425,13 +434,13 @@ myFetch().then(repo_names => {
                 //     second_ul.appendChild(li4);
                 // }
 
-                // for (let index = 0; index < 6; index++) {
-                //     if (Object.keys(data)[index]) {
-                //         console.log("index: ", index);
-                //         console.log("Object.keys(data)[index]: ", Object.keys(data)[index]);
-                //         // second_ul = document.getElementsByClassName("second_ul")[index];
+                // for (let index3 = 0; index3 < 6; index3++) {
+                //     if (Object.keys(data)[index3]) {
+                //         console.log("index3: ", index3);
+                //         console.log("Object.keys(data)[index3]: ", Object.keys(data)[index3]);
+                //         // second_ul = document.getElementsByClassName("second_ul")[index3];
                 //         // li4 = document.createElement("li");
-                //         // li4.innerHTML = Object.keys(data)[index];
+                //         // li4.innerHTML = Object.keys(data)[index3];
                 //         // second_ul.appendChild(li4);
                 //     }
                 // }
