@@ -14,7 +14,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 * am working on adding my resume.
 
 ### Next Steps
-1. [Have the cards themselves created populated based on the pinned items in github](https://trello.com/c/RyfM5Z0E/1124-have-the-cards-themselves-created-populated-based-on-the-pinned-items-in-github). (from the `functionality to address` section below. ) **See the Trello card for status.**
+1. ~~[Have the cards themselves created populated based on the pinned items in github](https://trello.com/c/RyfM5Z0E/1124-have-the-cards-themselves-created-populated-based-on-the-pinned-items-in-github). (from the `functionality to address` section below. ). See the Trello card for status.~~ **Done.**
 	* use postman to make api calls to my repo to get the info to the pinned items
 		* to that end do 
 			* find the endpoint to the pinned items (or the end points to the individual items) 
@@ -29,11 +29,13 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 				* rename the `/js/projects.js` file as `/js/old_projects.js`. **Done.**
 				* rename the `/js/temp_project_page.js` file as `/js/projects.js`. **Done.**
 
-	* **if necessary**, set up the `.env` environment to authenticate with github. (this **appears** to not be necessary)
+	* If necessary, set up the `.env` environment to authenticate with github. **Not necessary** (yet).
 		* create .env file
 		* install `dotEnv` with npm.
 		* test out variables using `console.log()`.
-2. Fix appearance for mobile design. Specifically
+
+2. Add one or all of the apps (listed in `Content to add or change` below) to the portfolio.
+3. Fix appearance for mobile design. Specifically
 	* the **overall appearance** of the `project cards`
 	* add my **resume**
 		* ~~the `Resume` button in the navigation section loads the `Resume` page~~. Done
@@ -45,13 +47,14 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		* and/or change the layout so that the projects section is to the right of the bio. And the connect with me is to the right of the projects section.
 	* possibly more
 
-3. Add one or all of the apps (listed in `Content to add or change` below) to the portfolio.
-
 	To this end the
 	* ~~then create the `project_card_api` branch~~.
-	* then the necessary contact page changes will be made in the project_card branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)
+	* ~~then the necessary project card changes will be made in the project_card branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)~~
 	* then the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
 	* lastly delete the `project_card_api` branch.
+
+	* then curate the pinned projects in GitHub so that I have more and better work to show/display on my portfolio site.
+	
 	* then create the `project_card_appearance` branch.
 	* then the necessary contact page changes will be made in the project_card branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)
 	* then the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
