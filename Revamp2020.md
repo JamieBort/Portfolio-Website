@@ -151,7 +151,11 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 			* I am making one api call to load the page (rather than three).
 			* I am not using this `https://gh-pinned-repos-5l2i19um3.vercel.app/?username=jamiebort` fetch api to get my pinned repos. (see the `gh-pinned-repos` comments in the [Have the cards themselves created populated based on the pinned items in github](https://trello.com/c/RyfM5Z0E/1124-have-the-cards-themselves-created-populated-based-on-the-pinned-items-in-github) Trello card.)
 			* the `projects` object in the `/js/projects.js` file will be used to populate the projects cards in the `/html/index.html` file for when the api call fails.
-			* this error `Uncaught (in promise) TypeError: Cannot read property 'appendChild' of undefined at projects.js:306` is addressed. It occurs here `c_u_l[index1].appendChild(cli);` in the `/js/projects.js` file. 
+			* this error `Uncaught (in promise) TypeError: Cannot read property 'appendChild' of undefined at projects.js:306` is addressed. It occurs here `c_u_l[index1].appendChild(cli);` in the `/js/projects.js` file.
+		- [ ] Reorganize the `assets` directory so that 
+			* There is a directory for the icons in the `connect with me` section.
+			* And the `connect with me` icons are in it.
+			* The icons that are not used are removed.
 
 	- [ ] Styling to address 
 	
