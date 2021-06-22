@@ -136,6 +136,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [ ] [Portfolio Website Web Component Issues](https://trello.com/c/M2Bneiy9/1128-portfolio-website-web-component-issues) Trello Card.
 			- [ ] [Refactor the web_components file](https://trello.com/c/nGQ8jQea/1126-refactor-the-webcomponents-file) Trello card. Refactor the `js/web_components.js` file such that the string literal(s) are replaced with variables consisting of the same string content.
 			- [ ] Implement the `head-web-component` so that each html file needs only that line of code.
+			- [ ] [ ] this `Uncaught TypeError: Cannot read property 'getElementsByClassName' of null at new scripts (web_components.js:88)` error is addressed. It **might** be happening because the constructor is loaded before the `const` variables that assign the `nav_a` class. As a result, the card list items are not populated.
 		- [ ] [Address Bio button in Navigation](https://trello.com/c/gUtXuVRL/1131-address-bio-button-in-navigation) Trello card.
 		- [ ] The "Let's" section in the "connect_with_me_section" section isn't centered properly. To complicate maters each time that changes the center moves left or right. Address this so that it's always centered.
 		- [ ] Make CSS selectors more uniform. Have them make sense/be semantic. This has been started. But could be improved upon.
@@ -150,6 +151,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 			* I am making one api call to load the page (rather than three).
 			* I am not using this `https://gh-pinned-repos-5l2i19um3.vercel.app/?username=jamiebort` fetch api to get my pinned repos. (see the `gh-pinned-repos` comments in the [Have the cards themselves created populated based on the pinned items in github](https://trello.com/c/RyfM5Z0E/1124-have-the-cards-themselves-created-populated-based-on-the-pinned-items-in-github) Trello card.)
 			* the `projects` object in the `/js/projects.js` file will be used to populate the projects cards in the `/html/index.html` file for when the api call fails.
+			* this error `Uncaught (in promise) TypeError: Cannot read property 'appendChild' of undefined at projects.js:306` is addressed. It occurs here `c_u_l[index1].appendChild(cli);` in the `/js/projects.js` file. 
 
 	- [ ] Styling to address 
 	
