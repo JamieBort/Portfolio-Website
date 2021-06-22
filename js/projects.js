@@ -95,43 +95,47 @@ const projects =  {
 var pinned_array = [];
 const static_site_urls = {
     first: "https://vast-island-13423.herokuapp.com/",
-    second: "https://jamiebort.github.io/CustomerDatabase/",
+    second: "https://jamiebort.github.io/PersonalDashboard/",
     third: "../index.html#title",
-    fourth: "https://jamiebort.github.io/PuppyLove/",
-    fifth: "https://jamiebort.github.io/iPhysicist-CSSLayoutFlexbox/",
+    fourth: "https://jamiebort.github.io/iPhysicist-CSSLayoutFlexbox/",
+    fifth: "https://jamiebort.github.io/PuppyLove/",
+    // fourth: "https://jamiebort.github.io/PuppyLove/",
+    // fifth: "https://jamiebort.github.io/iPhysicist-CSSLayoutFlexbox/",
     six: "https://jamiebort.github.io/FormBuilder/",
 }
 const images = {
-    first: "https://robohash.org/blanditiisexercitationemquaerat.png?size=150x150&set=set1",
-    second: "../assets/Project_images/customerdatabase/CustomerDatabase.png",
+    first: "../assets/learningimage/pexels-negative-space-34592_640_106.jpeg",
+    second: "../assets/learningimage/dashboard/PIXNIO-344890-640x106.jpeg",
     third: "../assets/Project_images/Portfolio_Website2.png",
-    fourth: "../assets/Project_images/Puppy_Love.png",
-    fifth: "../assets/Project_images/iPhysicist_Small.png",
+    fourth: "../assets/Project_images/iPhysicist_Small.png",
+    fifth: "../assets/Project_images/Puppy_Love.png",
     six: "../assets/Project_images/Form_Builder.png",
 }
 const responsive_images = {
-    first: "https://robohash.org/blanditiisexercitationemquaerat.png?size=150x150&set=set1",
-    second: "../assets/Project_images/customerdatabase/CustomerDatabase.png",
-    third: "../assets/Project_images/Portfolio_Website2.png",
-    fourth: "../assets/Project_images/Puppy_Love.png",
-    fifth: "../assets/Project_images/iPhysicist_Small.png",
-    six: "../assets/Project_images/Form_Builder.png",
+    first: "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
+    second: "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
+    third: "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
+    fourth: "../assets/responsive_images/multiple/responsive-svgrepo-com.svg",
+    fifth: "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
+    six: "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
 }
+
+// The `static_assets` object below is to replace the `static_site_urls`, `images`, and `responsive_images` objects above.
 const static_assets = {
     first: {
         static_site_url: "https://vast-island-13423.herokuapp.com/",
-        header_image: "https://robohash.org/blanditiisexercitationemquaerat.png?size=150x150&set=set1",
-        responsive_image: "https://robohash.org/blanditiisexercitationemquaerat.png?size=150x150&set=set1",
+        header_image: "",
+        responsive_image: "",
     },
     second: {
         static_site_url: "https://jamiebort.github.io/CustomerDatabase/",
         header_image: "../assets/Project_images/customerdatabase/CustomerDatabase.png",
-        responsive_image: "../assets/Project_images/customerdatabase/CustomerDatabase.png",
+        responsive_image: "",
     },
     third: {
         static_site_url: "../index.html#title",
         header_image: "../assets/Project_images/Portfolio_Website2.png",
-        responsive_image: "../assets/Project_images/Portfolio_Website2.png",
+        responsive_image: "",
     },
     fourth: {
         static_site_url: "https://jamiebort.github.io/PuppyLove/",
@@ -254,7 +258,7 @@ myFetch().then(repo_names => {
                 // a.href = projects[key]["project_anchor_href"];
                 // site_anchor.href = "https://github.com/JamieBort/jamiebort.github.io#welcome-to-the-repo-for-my-portfolio-website";
                 // site_anchor.href = "data.html_url";
-                site_anchor.href = static_site_urls[Object.keys(static_site_urls)[index1]]
+                site_anchor.href = static_site_urls[Object.keys(static_site_urls)[index1]];
                 site_anchor.target = "_blank";
                 site_anchor.innerHTML = "Static Site";
                 cad.appendChild(site_anchor);
@@ -262,7 +266,8 @@ myFetch().then(repo_names => {
                 var cbi = document.createElement("img");
                 cbi.className = "card_body_img";
                 // cbi.src = projects[key]["img_src"];
-                cbi.src = "../assets/under_construction/website-construction.jpg";
+                cbi.src = responsive_images[Object.keys(responsive_images)[index1]];
+                // cbi.src = "../assets/under_construction/website-construction.jpg";
                 cad.appendChild(cbi);
 
                 var repo_anchor = document.createElement("a");
@@ -295,7 +300,7 @@ myFetch().then(repo_names => {
 
                 // console.log("Object.keys(data).length: ", Object.keys(data).length);
                 // console.log("data: ", data);
-                for (let index2 = 0; index2 < Object.keys(data).length && index2 < 6; index2++) {
+                for (let index2 = 0; index2 < Object.keys(data).length && index2 < 4; index2++) {
                     // console.log("Object.keys(data)[index2]: ", Object.keys(data)[index2]);
 
                     var cli = document.createElement("li");
