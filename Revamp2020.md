@@ -11,7 +11,9 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 
 * Am working on the [Work on accessibility issues](https://trello.com/c/QiXs2V0r/164-work-on-accessibility-issues) Trello card. <- **not sure what the status of this is**.
 
-* am working on adding my resume.
+* per the `Content to add or change` section below I am working on this `https://github.com/JamieBort/CreateAUserdirectory` repo.
+	* specifically I am working on getting it hosted on Netlify.
+	* next I will work on finishing that project per the `Progress.md` file in that repo.
 
 ### Next Steps
 1. ~~[Have the cards themselves created populated based on the pinned items in github](https://trello.com/c/RyfM5Z0E/1124-have-the-cards-themselves-created-populated-based-on-the-pinned-items-in-github). (from the `functionality to address` section below. ). See the Trello card for status.~~ **Done.**
@@ -50,8 +52,8 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	To this end the
 	* ~~then create the `project_card_api` branch~~.
 	* ~~then the necessary project card changes will be made in the project_card branch. (this branch will have to push to the heroku site periodically: `git push heroku yourbranch:master`)~~
-	* then the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.
-	* lastly delete the `project_card_api` branch.
+	* ~~then the changes will be merged into the `Revamp2020` branch. Or the `dev` branch to be tested.~~
+	* ~~lastly delete the `project_card_api` branch.~~
 
 	* then curate the pinned projects in GitHub so that I have more and better work to show/display on my portfolio site.
 	
