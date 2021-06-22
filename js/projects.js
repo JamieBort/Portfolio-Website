@@ -1,7 +1,7 @@
 // the `projects` object below will be used for when the api call fails.
 // It will be hard coded info.
-const projects =  {
-    "robot_employee_database":{
+const projects = {
+    "robot_employee_database": {
         "div_id": "robot_employee_database_div",
         "title": "Robot Employee Database",
         "description": "Using Express and Express-Mustache to populate cards from a json file. If the employee doesn't have a job, the card says 'Available to hire.'",
@@ -11,7 +11,7 @@ const projects =  {
         "img_src": "../assets/responsive_images/desktop/laptop-svgrepo-com.svg",
         "project_img": "https://robohash.org/blanditiisexercitationemquaerat.png?size=150x150&set=set1",
     },
-    "customer_database":{
+    "customer_database": {
         "div_id": "customer_database_div",
         "title": "Customer Database",
         "description": "Implementation of Template Literals, DOM manipulation, and pulling data from arrays.",
@@ -94,13 +94,11 @@ const projects =  {
 
 var pinned_array = [];
 const static_site_urls = {
-    first: "https://vast-island-13423.herokuapp.com/",
+    first: "https://github.com/JamieBort/LearningDirectory",
     second: "https://jamiebort.github.io/PersonalDashboard/",
     third: "../index.html#title",
     fourth: "https://jamiebort.github.io/iPhysicist-CSSLayoutFlexbox/",
     fifth: "https://jamiebort.github.io/PuppyLove/",
-    // fourth: "https://jamiebort.github.io/PuppyLove/",
-    // fifth: "https://jamiebort.github.io/iPhysicist-CSSLayoutFlexbox/",
     six: "https://jamiebort.github.io/FormBuilder/",
 }
 const images = {
@@ -123,7 +121,7 @@ const responsive_images = {
 // The `static_assets` object below is to replace the `static_site_urls`, `images`, and `responsive_images` objects above.
 const static_assets = {
     first: {
-        static_site_url: "https://vast-island-13423.herokuapp.com/",
+        static_site_url: "",
         header_image: "",
         responsive_image: "",
     },
@@ -255,9 +253,6 @@ myFetch().then(repo_names => {
 
                 var site_anchor = document.createElement("a");
                 site_anchor.setAttribute("class", "card_a site_link");
-                // a.href = projects[key]["project_anchor_href"];
-                // site_anchor.href = "https://github.com/JamieBort/jamiebort.github.io#welcome-to-the-repo-for-my-portfolio-website";
-                // site_anchor.href = "data.html_url";
                 site_anchor.href = static_site_urls[Object.keys(static_site_urls)[index1]];
                 site_anchor.target = "_blank";
                 site_anchor.innerHTML = "Static Site";
@@ -265,17 +260,11 @@ myFetch().then(repo_names => {
 
                 var cbi = document.createElement("img");
                 cbi.className = "card_body_img";
-                // cbi.src = projects[key]["img_src"];
                 cbi.src = responsive_images[Object.keys(responsive_images)[index1]];
-                // cbi.src = "../assets/under_construction/website-construction.jpg";
                 cad.appendChild(cbi);
 
                 var repo_anchor = document.createElement("a");
                 repo_anchor.setAttribute("class", "card_a repo_link");
-                // repo_anchor.className = "card_a";
-                // repo_anchor.setAttribute("id", "repo_link");
-                // repo_anchor.href = projects[key]["repo_anchor_href"];
-                // repo_anchor.href = "https://github.com/JamieBort/jamiebort.github.io#welcome-to-the-repo-for-my-portfolio-website";
                 repo_anchor.href = data.html_url;
 
                 repo_anchor.target = "_blank";
@@ -287,7 +276,6 @@ myFetch().then(repo_names => {
                 cod.appendChild(cfd);
 
                 var cul = document.createElement("ul");
-                // cul.className="card_unordered_list";
                 cul.setAttribute("class", "card_unordered_list");
                 cul.setAttribute("id", "aaaa");
                 cfd.appendChild(cul);
@@ -305,9 +293,7 @@ myFetch().then(repo_names => {
 
                     var cli = document.createElement("li");
                     cli.className = "card_list_item";
-                    // cli.innerHTML =  projects[key]["tech"][index];
                     cli.innerHTML = Object.keys(data)[index2];
-                    // cli.innerHTML =  "Object.keys(data)[index2]";
                     c_u_l[index1].appendChild(cli);
                 }
             });
