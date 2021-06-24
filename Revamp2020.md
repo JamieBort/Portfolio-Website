@@ -120,6 +120,10 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [ ] Add this [Week4iTunesMusicSearch](https://github.com/JamieBort/Week4iTunesMusicSearch) to this portfolio website.
 		- [ ] Add this [Code Snippet Organizer](https://github.com/JamieBort/CodeSnippetOrganizer) to this portfolio website.
 		- [ ] Add this [github calendar](https://github.com/IonicaBizau/github-calendar) to my portfolio site. [Or somewhere else? and/or:](https://github.com/fullcalendar/fullcalendar)
+		- [ ] Add this [CreateASiteWithALogin](https://github.com/JamieBort/CreateASiteWithALogin)
+		- [ ] Add this [ReturnToRobots](https://github.com/JamieBort/ReturnToRobots)
+
+			See also: [Descriptions of the Return to Robots program](https://docs.google.com/document/d/1q-ZE0Q0Si-YTMIl12HzOczL3DMyiyv6Zbr45xVkIndU/edit#)
 		- [ ] [consider replacing section tag with article tag for my portfolio website](https://trello.com/c/ARthlAv7/554-consider-replacing-section-tag-with-article-tag-for-my-portfolio-website) Trello card.
 		- [ ] [Modify devsatrtp image in Portfolio Website](https://trello.com/c/865I1iOD/565-modify-devsatrtp-image-in-portfolio-website) Trello card.
 		- [ ] [Update the portfolio website readme file](https://trello.com/c/k2H77o6L/576-update-the-portfolio-website-readme-file) Trello card. (NOT THE SAME AS [Update the portfolio website README file](https://trello.com/c/hCRC1EG6/483-update-the-portfolio-website-readme-file) Trello card; which is already completed.)
