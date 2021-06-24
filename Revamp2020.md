@@ -44,6 +44,9 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		* from there you'll be able to read the long form resume (not yet created)
 		* ~~add old resume in interim~~. Done
 		* or download a pdf of the resume (also not yet created)
+		* work on the resume page. see:
+			* `The content of the resume page needs to be added.` below.
+			* and `The appearance of the resume page needs to be addressed.` below.
 	* (later on) navigation header 
 		* should be replaced with a hamburger menu.
 		* and/or change the layout so that the projects section is to the right of the bio. And the connect with me is to the right of the projects section.
@@ -127,6 +130,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [ ] [consider replacing section tag with article tag for my portfolio website](https://trello.com/c/ARthlAv7/554-consider-replacing-section-tag-with-article-tag-for-my-portfolio-website) Trello card.
 		- [ ] [Modify devsatrtp image in Portfolio Website](https://trello.com/c/865I1iOD/565-modify-devsatrtp-image-in-portfolio-website) Trello card.
 		- [ ] [Update the portfolio website readme file](https://trello.com/c/k2H77o6L/576-update-the-portfolio-website-readme-file) Trello card. (NOT THE SAME AS [Update the portfolio website README file](https://trello.com/c/hCRC1EG6/483-update-the-portfolio-website-readme-file) Trello card; which is already completed.)
+		- [ ] The content of the [resume page](file:///Users/jamiebort/Documents/DevFiles/personal_projects/jamiebort.github.io/html/resume.html) needs to be added.
 		- [X] ~~[Update the portfolio website README file](https://trello.com/c/hCRC1EG6/483-update-the-portfolio-website-readme-file) Trello card.~~ (NOT THE SAME AS [Update the portfolio website readme file](https://trello.com/c/k2H77o6L/576-update-the-portfolio-website-readme-file) Trello card; which isn't completed (yet).)
 		- [X] ~~[Fix header and footer for my portfolio website](https://trello.com/c/CCtUbXY7/541-fix-header-and-footer-for-my-portfolio-website) Trello card.~~
 		- [X] ~~Remove this [old/20181126](https://github.com/JamieBort/jamiebort.github.io/tree/master/old/20181126) directory.~~
@@ -175,7 +179,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [ ] [Style Links](https://trello.com/c/AsOQKQjI/562-style-links-and) Trello card.
 		- [ ] [Style buttons for my portfolio website](https://trello.com/c/Fny58qFO/538-style-buttons-for-my-portfolio-website) Trello card. Tabling this one for now. Not necessarily completed. See card.
 		- [ ] See the `what needs to change with the ...` Trello cards listed above in the `Figure out aesthetics` section.
-		- [ ] 
+		- [ ] The appearance of the [resume page](file:///Users/jamiebort/Documents/DevFiles/personal_projects/jamiebort.github.io/html/resume.html) needs to be addressed.
 
 	- [ ] [Design the basic architecture](https://trello.com/c/CyUFSwY3/522-design-the-basic-architecture) Trello card.
 	
