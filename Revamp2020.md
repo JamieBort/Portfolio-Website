@@ -131,6 +131,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 		- [ ] [Modify devsatrtp image in Portfolio Website](https://trello.com/c/865I1iOD/565-modify-devsatrtp-image-in-portfolio-website) Trello card.
 		- [ ] [Update the portfolio website readme file](https://trello.com/c/k2H77o6L/576-update-the-portfolio-website-readme-file) Trello card. (NOT THE SAME AS [Update the portfolio website README file](https://trello.com/c/hCRC1EG6/483-update-the-portfolio-website-readme-file) Trello card; which is already completed.)
 		- [ ] The content of the [resume page](file:///Users/jamiebort/Documents/DevFiles/personal_projects/jamiebort.github.io/html/resume.html) needs to be added.
+		- [ ] The `Static Site` on the Project Cards needs to change to `Website` or the like - some of the projects are no longer static...
 		- [X] ~~[Update the portfolio website README file](https://trello.com/c/hCRC1EG6/483-update-the-portfolio-website-readme-file) Trello card.~~ (NOT THE SAME AS [Update the portfolio website readme file](https://trello.com/c/k2H77o6L/576-update-the-portfolio-website-readme-file) Trello card; which isn't completed (yet).)
 		- [X] ~~[Fix header and footer for my portfolio website](https://trello.com/c/CCtUbXY7/541-fix-header-and-footer-for-my-portfolio-website) Trello card.~~
 		- [X] ~~Remove this [old/20181126](https://github.com/JamieBort/jamiebort.github.io/tree/master/old/20181126) directory.~~
@@ -171,6 +172,7 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 			* And the `connect with me` icons are in it.
 			* The icons that are not used are removed.
 		- [ ] The order of the pinned repos in github effect the information displayed in the project cards on the Portfolio website - if I change the order of the pinned repos, then some of the header images do not line up with the correct cards.
+		- [ ] The `Static Website` link (soon to be the `Website` link) need to pull from an api call. Maybe parse the README file for that URL?
 
 	- [ ] Styling to address 
 	
