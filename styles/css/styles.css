@@ -377,8 +377,8 @@ p, li, h3 {
 
 @media (max-width: 1000px) {
     body {
-      /* background-color:ivory; */
-    }
+        /* background-color:ivory; */
+        }
 
     footer {
         padding: .5em 0;

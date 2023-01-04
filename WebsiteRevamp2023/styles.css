@@ -1,0 +1,188 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    border: aqua 2px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the navigation menu */
+header {
+    /* Make sure I don't need this before I delete it. */
+    /* overflow: hidden; */
+    background-color: red;
+    /* Make sure I don't need this before I delete it. */
+    /* position: relative; */
+
+    border: brown 2px solid;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+header #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+header a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Style the hamburger menu */
+header a.icon {
+    background: gold;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+header a:hover {
+    background-color: #ddd;
+    color: goldenrod;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+#content {
+    border: #04AA6D 2px solid;
+    flex: 1;
+    overflow: auto;
+}
+
+header,
+h1,
+h2,
+h3,
+/* #contact_p, */
+footer,
+.card_header,
+.card_body,
+.card_footer {
+    text-align: center;
+}
+
+h1 {
+    border: salmon 2px solid;
+}
+
+h2 {
+    border: burlywood 2px solid;
+}
+
+section {
+    border: blue 2px solid;
+}
+
+.card {
+    border: green 2px solid;
+    background-color: beige;
+    position: relative;
+    margin: 15px 0;
+}
+
+.card_header {
+    border: yellow 2px solid;
+}
+
+.card_body {
+    border: yellowgreen 2px solid;
+}
+
+.body_inset {
+    border: violet 2px solid;
+}
+
+.card_footer {
+    border: orange 2px solid;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+#social_media_div {
+    display: flex;
+    flex-direction: column;
+}
+
+.social_media_anchor {
+    border: olive 2px solid;
+    background-color: beige;
+    margin: 15px 0;
+}
+
+.social_media_anchor,
+.card {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+}
+
+footer {
+    border: greenyellow 2px solid;
+}
+
+@media (min-width: 400px) {
+    body {
+        background-color: lightblue;
+    }
+
+    /* Navigation needs to change. */
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /* Style the active link (or home/logo) */
+    .active {
+        background-color: peru;
+        color: white;
+        /* width: 50%; */
+        flex: 1;
+    }
+
+    #myLinks {
+        align-items: center;
+        background-color: #04AA6D;
+        flex: 1;
+        justify-content: space-around;
+    }
+
+    /* Style the hamburger menu */
+    header a.icon {
+        visibility: hidden;
+        display: none;
+        /* background: greenyellow; */
+    }
+
+    /* Project card alignment needs to change from column to flex row. */
+
+    #cards_div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    /* .social_media_anchor, */
+    .card {
+        width: 30%;
+        height: 0;
+        /* padding-bottom: 100%; */
+    }
+
+    /* Social media links need to change from column to row. */
+}
