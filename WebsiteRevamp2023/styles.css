@@ -1,24 +1,24 @@
 html,
 body {
     height: 100%;
-    margin: 0;
+    margin: 0 .4em;
 }
 
 body {
-    border: aqua 2px solid;
+    /* border: aqua 2px solid; */
     display: flex;
     flex-direction: column;
 }
 
 /* Style the navigation menu */
 header {
+    /* background-color: red; */
     /* Make sure I don't need this before I delete it. */
     /* overflow: hidden; */
-    background-color: red;
     /* Make sure I don't need this before I delete it. */
     /* position: relative; */
 
-    border: brown 2px solid;
+    /* border: brown 2px solid; */
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -28,7 +28,9 @@ header #myLinks {
 
 /* Style navigation menu links */
 header a {
-    color: white;
+    /* color: white; */
+    color: black;
+
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -37,7 +39,7 @@ header a {
 
 /* Style the hamburger menu */
 header a.icon {
-    background: gold;
+    /* background: gold; */
     display: block;
     position: absolute;
     right: 0;
@@ -46,18 +48,19 @@ header a.icon {
 
 /* Add a grey background color on mouse-over */
 header a:hover {
-    background-color: #ddd;
+    /* background-color: #ddd; */
     color: goldenrod;
 }
 
 /* Style the active link (or home/logo) */
 .active {
-    background-color: #04AA6D;
-    color: white;
+    /* background-color: #04AA6D; */
+    /* color: white; */
+    color: black;
 }
 
 #content {
-    border: #04AA6D 2px solid;
+    /* border: #04AA6D 2px solid; */
     flex: 1;
     overflow: auto;
 }
@@ -75,68 +78,95 @@ footer,
 }
 
 h1 {
-    border: salmon 2px solid;
+    /* border: salmon 2px solid; */
 }
 
 h2 {
-    border: burlywood 2px solid;
+    /* border: burlywood 2px solid; */
 }
 
 section {
-    border: blue 2px solid;
+    border: black 1px solid;
+    margin: 8px 0;
+}
+
+.bio_p {
+    /* border: darkorange 2px solid; */
+}
+
+#cards_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-    border: green 2px solid;
-    background-color: beige;
-    position: relative;
-    margin: 15px 0;
+    border: black 1px solid;
+    /* position: relative; */
+    margin: 2px;
+    width: 95%;
 }
 
 .card_header {
-    border: yellow 2px solid;
+    /* border: yellow 2px solid; */
 }
 
 .card_body {
-    border: yellowgreen 2px solid;
+    /* border: yellowgreen 2px solid; */
 }
 
 .body_inset {
-    border: violet 2px solid;
+    /* border: violet 2px solid; */
+}
+
+img {
+    max-width: 150px;
+    max-height: 100%;
+    /* width: 200px;
+    height: 120px; */
 }
 
 .card_footer {
-    border: orange 2px solid;
-    position: absolute;
+    /* border: orange 2px solid; */
+    /* position: absolute;
     bottom: 0px;
-    width: 100%;
+    width: 100%; */
 }
 
 #social_media_div {
+    /* display: flex;
+    flex-direction: column; */
+
+
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .social_media_anchor {
-    border: olive 2px solid;
-    background-color: beige;
-    margin: 15px 0;
-}
-
-.social_media_anchor,
-.card {
-    width: 100%;
+    border: black 1px solid;
+    /* margin: 2px;
+    width: 100%; */
     height: 0;
     padding-bottom: 100%;
+
+
+    margin: 2px;
+    width: 95%;
 }
 
 footer {
-    border: greenyellow 2px solid;
+    /* border: greenyellow 2px solid; */
 }
 
 @media (min-width: 400px) {
     body {
-        background-color: lightblue;
+        /* background-color: lightblue; */
     }
 
     /* Navigation needs to change. */
@@ -150,7 +180,8 @@ footer {
     /* Style the active link (or home/logo) */
     .active {
         background-color: peru;
-        color: white;
+        /* color: white; */
+        color: black;
         /* width: 50%; */
         flex: 1;
     }
@@ -180,8 +211,8 @@ footer {
     /* .social_media_anchor, */
     .card {
         width: 30%;
-        height: 0;
-        /* padding-bottom: 100%; */
+        /* height: 0; */
+        /* padding-bottom: auto; */
     }
 
     /* Social media links need to change from column to row. */
