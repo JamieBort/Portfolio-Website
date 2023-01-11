@@ -16,6 +16,10 @@ Last left off working there. Am about to start this [ReusableComponentsTutorial]
 	* next I will work on finishing that project per the `Progress.md` file in that repo.
 
 ### Next Steps
+
+0. Work on the https://github.com/JamieBort/jamiebort.github.io/tree/Revamp2020/WebsiteRevamp2023 directory. 
+	See that README.md file.
+
 1. ~~[Have the cards themselves created populated based on the pinned items in github](https://trello.com/c/RyfM5Z0E/1124-have-the-cards-themselves-created-populated-based-on-the-pinned-items-in-github). (from the `functionality to address` section below. ). See the Trello card for status.~~ **Done.**
 	* use postman to make api calls to my repo to get the info to the pinned items
 		* to that end do 

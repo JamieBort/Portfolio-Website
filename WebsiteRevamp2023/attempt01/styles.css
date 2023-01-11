@@ -1,11 +1,12 @@
 html,
 body {
+    /* border: black 1px solid; */
     height: 100%;
-    margin: 0 .4em;
+    margin: 0 .2em;
 }
 
 body {
-    /* border: aqua 2px solid; */
+    border: black 1px solid;
     display: flex;
     flex-direction: column;
 }
@@ -24,6 +25,7 @@ header {
 /* Hide the links inside the navigation menu (except for logo/home) */
 header #myLinks {
     display: none;
+    border: black 1px solid;
 }
 
 /* Style navigation menu links */
@@ -39,10 +41,11 @@ header a {
 
 /* Style the hamburger menu */
 header a.icon {
+    border: black 1px solid;
     /* background: gold; */
     display: block;
     position: absolute;
-    right: 0;
+    right: .5em;
     top: 0;
 }
 
@@ -54,6 +57,7 @@ header a:hover {
 
 /* Style the active link (or home/logo) */
 .active {
+    border: black 1px solid;
     /* background-color: #04AA6D; */
     /* color: white; */
     color: black;
@@ -87,19 +91,47 @@ h2 {
 
 section {
     border: black 1px solid;
+    /* border-bottom: black 1px solid;
+    border-top: black 1px solid; */
     margin: 8px 0;
+
+    /* margin: 8 .2em; */
 }
 
-.bio_p {
-    /* border: darkorange 2px solid; */
-}
-
-#cards_div {
+#bio_div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-content: center;
     align-items: center;
+}
+
+#projects_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact_div {
+    /* display: flex;
+    flex-direction: column; */
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bio_p {
+    /* border: darkorange 2px solid; */
+    /* border: black 1px solid; */
+    margin: 2px;
+    width: 95%;
 }
 
 .card {
@@ -133,19 +165,6 @@ img {
     /* position: absolute;
     bottom: 0px;
     width: 100%; */
-}
-
-#social_media_div {
-    /* display: flex;
-    flex-direction: column; */
-
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: center;
-    align-items: center;
-
 }
 
 .social_media_anchor {
@@ -202,7 +221,7 @@ footer {
 
     /* Project card alignment needs to change from column to flex row. */
 
-    #cards_div {
+    #projects_div {
         display: flex;
         flex-wrap: wrap;
     }
