@@ -35,7 +35,7 @@ header {
     font-size: 20px
 }
 
-a {
+#jamie_bort {
     background: orange;
     flex: 5;
     height: 100%;
@@ -57,6 +57,27 @@ main {
     /* takes the remaining height of the "container" div */
     overflow: auto;
     /* to scroll just the "main" div */
+
+    position: relative;
+}
+
+#menu {
+    background: aqua;
+    z-index: 9;
+
+
+    position: absolute;
+    /* <-- added declarations */
+    left: 0;
+    top: 0;
+    /*     here               */
+    width: 100%;
+    /*     and here...        */
+}
+
+.menu_anchor {
+    background: olive;
+    display: block;
 }
 
 section {

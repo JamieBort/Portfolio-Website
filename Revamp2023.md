@@ -16,6 +16,8 @@
 
 * **The following is for other branches.**
     * Create a new branch for styling the website.
+    * Clean up the `id` and `class` names.
+    * Clean up the html tags - change any that are not appropriate for that part or purpose of the website.
     * Style the navigation menu that displays when the navigation button is selected.
     * Deliberately choose text sizes.
     * Deliberately choose units.
