@@ -1,84 +1,103 @@
+<!-- Using https://codepen.io/anthonyLukes/pen/qBjLdv?editors=1100 for the fixed header and footer with scrollable content -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my portfolio website</title>
     <link href="./../styles.css" rel="stylesheet">
+    <title>Document</title>
 </head>
-<body>
-    <header>
-        <a id="jamie_bort">Jamie Bort</a>
-        <button id="navigation_button" onclick="toggleFunction()">Button</button>
-    </header>
+<body class="page">
 
-    <div id="menu" style="display:none">
-        <a class="menu_anchor" href="#top">top</a>
-        <a class="menu_anchor" href="#section_01">first section</a>
-        <a class="menu_anchor" href="#section_02">second section</a>
-        <a class="menu_anchor" href="#section_03">third section</a>
-        <a class="menu_anchor" href="#section_04">fourth section</a>
-        <a class="menu_anchor" href="#section_05">fifth section</a>
-    </div>
-    <main id="top">
+    <!-- <div class="page"> -->
+        <header class="page-header">
+            <button onclick="section(0)">Jamie Bort</button>
+            <button onclick="toggleFunction()">Button</button>
+        </header>
+        <div id="content" style="position: relative;"> 
+            <nav id="menu" style="background: greenyellow;display:none;position: fixed; width: 90%;">
+                <p>Navigation Menu</p>
+                <button onclick="section(1)">section_01</button>
+                <button onclick="section(2)">section_02</button>
+                <button onclick="section(3)">section_03</button>
+                <button onclick="section(4)">section_04</button>
+            </nav>
+            <h1 id="top">Engineer</h1>
 
-        <!-- <div id="menu" style="display:none">
-            <a class="menu_anchor" href="#top">top</a>
-            <a class="menu_anchor" href="#section_01">first section</a>
-            <a class="menu_anchor" href="#section_02">second section</a>
-            <a class="menu_anchor" href="#section_03">third section</a>
-            <a class="menu_anchor" href="#section_04">fourth section</a>
-            <a class="menu_anchor" href="#section_05">fifth section</a>
-        </div> -->
+            <section id="section01"> 
+                <h3>Section 01</h3>
+                <p>Sriracha small batch tousled Tumblr banh mi sartorial. Cosby sweater XOXO direct trade Austin meggings banjo. Wayfarers deep v tousled Schlitz shabby chic, Portland Truffaut Marfa aesthetic keffiyeh. Salvia retro tattooed sartorial polaroid. Selvage hella 3 wolf moon PBR pug, ugh Schlitz freegan keffiyeh raw denim jean shorts wayfarers roof party. Neutra Shoreditch iPhone, +1 brunch Echo Park XOXO slow-carb street art Vice Williamsburg tattooed forage. Butcher Godard ethical try-hard.</p>
+        
+                <p>Vegan blog Truffaut irony deep v Etsy. You probably haven't heard of them Schlitz chambray art party craft beer Echo Park mixtape, deep v fashion axe Wes Anderson twee McSweeney's DIY. Retro twee polaroid 3 wolf moon, Bushwick locavore organic skateboard keffiyeh Kickstarter Williamsburg sustainable Godard sartorial trust fund. Stumptown paleo put a bird on it VHS hella. Put a bird on it mixtape Godard, vegan farm-to-table letterpress chia hella. Meggings DIY freegan normcore gastropub blog. Dreamcatcher wolf kitsch biodiesel lomo jean shorts, pug fap Odd Future craft beer stumptown locavore cornhole put a bird on it salvia.</p>
+        
+                <p>Hoodie Truffaut chillwave PBR art party. Slow-carb literally readymade, tousled stumptown ennui trust fund seitan paleo blog typewriter vegan. 90's mixtape American Apparel, kale chips art party iPhone Etsy Neutra organic kogi direct trade typewriter. Aesthetic occupy Portland artisan craft beer fixie, Pinterest irony normcore letterpress. 8-bit craft beer seitan flexitarian, synth banh mi cardigan ethical High Life. Fixie whatever literally semiotics Helvetica 8-bit. Gluten-free tattooed Odd Future umami blog master cleanse, asymmetrical 8-bit yr.</p>
+        
+                <p>Tattooed gentrify asymmetrical twee, fashion axe normcore banh mi Etsy. Irony post-ironic kale chips readymade selfies art party, Marfa narwhal occupy before they sold out Thundercats. Banjo locavore 3 wolf moon artisan Marfa. XOXO church-key hella bitters, pour-over Blue Bottle wolf typewriter Carles. American Apparel umami twee locavore, blog hella artisan. Mixtape Shoreditch sriracha, organic before they sold out asymmetrical fashion axe ugh. Kale chips yr Pitchfork jean shorts Vice gentrify.</p>
+            </section>
+            
+            <section id="section02"> 
+                <h3>Section 02</h3>
+                <p>Sriracha small batch tousled Tumblr banh mi sartorial. Cosby sweater XOXO direct trade Austin meggings banjo. Wayfarers deep v tousled Schlitz shabby chic, Portland Truffaut Marfa aesthetic keffiyeh. Salvia retro tattooed sartorial polaroid. Selvage hella 3 wolf moon PBR pug, ugh Schlitz freegan keffiyeh raw denim jean shorts wayfarers roof party. Neutra Shoreditch iPhone, +1 brunch Echo Park XOXO slow-carb street art Vice Williamsburg tattooed forage. Butcher Godard ethical try-hard.</p>
+        
+                <p>Vegan blog Truffaut irony deep v Etsy. You probably haven't heard of them Schlitz chambray art party craft beer Echo Park mixtape, deep v fashion axe Wes Anderson twee McSweeney's DIY. Retro twee polaroid 3 wolf moon, Bushwick locavore organic skateboard keffiyeh Kickstarter Williamsburg sustainable Godard sartorial trust fund. Stumptown paleo put a bird on it VHS hella. Put a bird on it mixtape Godard, vegan farm-to-table letterpress chia hella. Meggings DIY freegan normcore gastropub blog. Dreamcatcher wolf kitsch biodiesel lomo jean shorts, pug fap Odd Future craft beer stumptown locavore cornhole put a bird on it salvia.</p>
+        
+                <p>Hoodie Truffaut chillwave PBR art party. Slow-carb literally readymade, tousled stumptown ennui trust fund seitan paleo blog typewriter vegan. 90's mixtape American Apparel, kale chips art party iPhone Etsy Neutra organic kogi direct trade typewriter. Aesthetic occupy Portland artisan craft beer fixie, Pinterest irony normcore letterpress. 8-bit craft beer seitan flexitarian, synth banh mi cardigan ethical High Life. Fixie whatever literally semiotics Helvetica 8-bit. Gluten-free tattooed Odd Future umami blog master cleanse, asymmetrical 8-bit yr.</p>
+        
+                <p>Tattooed gentrify asymmetrical twee, fashion axe normcore banh mi Etsy. Irony post-ironic kale chips readymade selfies art party, Marfa narwhal occupy before they sold out Thundercats. Banjo locavore 3 wolf moon artisan Marfa. XOXO church-key hella bitters, pour-over Blue Bottle wolf typewriter Carles. American Apparel umami twee locavore, blog hella artisan. Mixtape Shoreditch sriracha, organic before they sold out asymmetrical fashion axe ugh. Kale chips yr Pitchfork jean shorts Vice gentrify.</p>
+            </section>
+            
+            <section id="section03"> 
+                <h3>Section 03</h3>
+                <p>Sriracha small batch tousled Tumblr banh mi sartorial. Cosby sweater XOXO direct trade Austin meggings banjo. Wayfarers deep v tousled Schlitz shabby chic, Portland Truffaut Marfa aesthetic keffiyeh. Salvia retro tattooed sartorial polaroid. Selvage hella 3 wolf moon PBR pug, ugh Schlitz freegan keffiyeh raw denim jean shorts wayfarers roof party. Neutra Shoreditch iPhone, +1 brunch Echo Park XOXO slow-carb street art Vice Williamsburg tattooed forage. Butcher Godard ethical try-hard.</p>
+        
+                <p>Vegan blog Truffaut irony deep v Etsy. You probably haven't heard of them Schlitz chambray art party craft beer Echo Park mixtape, deep v fashion axe Wes Anderson twee McSweeney's DIY. Retro twee polaroid 3 wolf moon, Bushwick locavore organic skateboard keffiyeh Kickstarter Williamsburg sustainable Godard sartorial trust fund. Stumptown paleo put a bird on it VHS hella. Put a bird on it mixtape Godard, vegan farm-to-table letterpress chia hella. Meggings DIY freegan normcore gastropub blog. Dreamcatcher wolf kitsch biodiesel lomo jean shorts, pug fap Odd Future craft beer stumptown locavore cornhole put a bird on it salvia.</p>
+        
+                <p>Hoodie Truffaut chillwave PBR art party. Slow-carb literally readymade, tousled stumptown ennui trust fund seitan paleo blog typewriter vegan. 90's mixtape American Apparel, kale chips art party iPhone Etsy Neutra organic kogi direct trade typewriter. Aesthetic occupy Portland artisan craft beer fixie, Pinterest irony normcore letterpress. 8-bit craft beer seitan flexitarian, synth banh mi cardigan ethical High Life. Fixie whatever literally semiotics Helvetica 8-bit. Gluten-free tattooed Odd Future umami blog master cleanse, asymmetrical 8-bit yr.</p>
+        
+                <p>Tattooed gentrify asymmetrical twee, fashion axe normcore banh mi Etsy. Irony post-ironic kale chips readymade selfies art party, Marfa narwhal occupy before they sold out Thundercats. Banjo locavore 3 wolf moon artisan Marfa. XOXO church-key hella bitters, pour-over Blue Bottle wolf typewriter Carles. American Apparel umami twee locavore, blog hella artisan. Mixtape Shoreditch sriracha, organic before they sold out asymmetrical fashion axe ugh. Kale chips yr Pitchfork jean shorts Vice gentrify.</p>
+            </section>
+            
+            <section id="section04"> 
+                <h3>Section 04</h3>
+                <p>Sriracha small batch tousled Tumblr banh mi sartorial. Cosby sweater XOXO direct trade Austin meggings banjo. Wayfarers deep v tousled Schlitz shabby chic, Portland Truffaut Marfa aesthetic keffiyeh. Salvia retro tattooed sartorial polaroid. Selvage hella 3 wolf moon PBR pug, ugh Schlitz freegan keffiyeh raw denim jean shorts wayfarers roof party. Neutra Shoreditch iPhone, +1 brunch Echo Park XOXO slow-carb street art Vice Williamsburg tattooed forage. Butcher Godard ethical try-hard.</p>
+        
+                <p>Vegan blog Truffaut irony deep v Etsy. You probably haven't heard of them Schlitz chambray art party craft beer Echo Park mixtape, deep v fashion axe Wes Anderson twee McSweeney's DIY. Retro twee polaroid 3 wolf moon, Bushwick locavore organic skateboard keffiyeh Kickstarter Williamsburg sustainable Godard sartorial trust fund. Stumptown paleo put a bird on it VHS hella. Put a bird on it mixtape Godard, vegan farm-to-table letterpress chia hella. Meggings DIY freegan normcore gastropub blog. Dreamcatcher wolf kitsch biodiesel lomo jean shorts, pug fap Odd Future craft beer stumptown locavore cornhole put a bird on it salvia.</p>
+        
+                <p>Hoodie Truffaut chillwave PBR art party. Slow-carb literally readymade, tousled stumptown ennui trust fund seitan paleo blog typewriter vegan. 90's mixtape American Apparel, kale chips art party iPhone Etsy Neutra organic kogi direct trade typewriter. Aesthetic occupy Portland artisan craft beer fixie, Pinterest irony normcore letterpress. 8-bit craft beer seitan flexitarian, synth banh mi cardigan ethical High Life. Fixie whatever literally semiotics Helvetica 8-bit. Gluten-free tattooed Odd Future umami blog master cleanse, asymmetrical 8-bit yr.</p>
+        
+                <p>Tattooed gentrify asymmetrical twee, fashion axe normcore banh mi Etsy. Irony post-ironic kale chips readymade selfies art party, Marfa narwhal occupy before they sold out Thundercats. Banjo locavore 3 wolf moon artisan Marfa. XOXO church-key hella bitters, pour-over Blue Bottle wolf typewriter Carles. American Apparel umami twee locavore, blog hella artisan. Mixtape Shoreditch sriracha, organic before they sold out asymmetrical fashion axe ugh. Kale chips yr Pitchfork jean shorts Vice gentrify.</p>
+            </section>
 
-        <section id="section_01">1st<br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></section>
-            <section id="section_02">2nd<br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></section>
-            <section id="section_03">3rd<br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
-        <section id="section_04">4th<br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></section>
-            <section id="section_05">5th<br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></section>
-      </main>
-    <footer >
-        &copy
-        <span id="copyright"></span>
-    </footer>
-    <script>
+        </div>
+
+        <footer class="page-footer">Footer</foot>
+      <!-- </div> -->
+      <script>
         
         // for the navigation button
         function toggleFunction(){
+            // console.log("inside the toggleFunction function");
             var element = document.getElementById('menu');
             if(element.style.display === "none"){
                 element.style.display = "block";
             }else{
                 element.style.display = "none";
             }
-};
-        
-        // for the footer
-        const copyright = document.getElementById('copyright');
-        if(new Date().getFullYear()){
-            var date = new Date().getFullYear();
+        };
+
+        function section(param){
+            // console.log("param:", param)
+            if(param>0) {
+                window.location = '#section0'+param; 
+                toggleFunction();
+            }
+            else window.location = '#top'; 
+            
         }
-        else {
-            var date = "2023";
-        }
-        document.getElementById('copyright').appendChild(document.createTextNode(date));
-    </script>
+
+      </script>
+
 </body>
 </html>

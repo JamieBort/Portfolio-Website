@@ -2,6 +2,10 @@
 
 ## Status
 
+* Done.
+    >Modify the CSS so that the navigation menu overlays over the content of the website, no matter where the user is currently in the website. (at the moment, the user needs to scroll to the top of the website in order to see the navigation menu.)
+    >If necessary, modify the CSS and/or JavaScript so that the navigation menu disappears after a button in the navigation menu is selected.
+
 * Implemented the menu navigation. But the navigation menu is not overlaying over the content of the website properly. 
     >Implement the basic JavaScript functionality to display and hid an html element by toggling the button.
 
@@ -9,9 +13,7 @@
 
 ### Next Steps
 
-* Modify the CSS so that the navigation menu overlays over the content of the website, no matter where the user is currently in the website. (at the moment, the user needs to scroll to the top of the website in order to see the navigation menu.)
-
-* If necessary, modify the CSS and/or JavaScript so that the navigation menu disappears after a button in the navigation menu is selected.
+* Use media queries to implement the navigation differently for laptop/desktop.
 
 * Add this `Revamp2023.md` file to the `Revamp2023` branch.
 
