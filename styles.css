@@ -21,10 +21,15 @@ body,
 
 p {
     /* change as necessary - was pasted in... */
-    /* margin-bottom: 1em; */
+    margin-bottom: 1em;
+    /* display: block; */
 }
 
-header {
+/* .dummy_text {
+    display: none;
+} */
+
+#mobile_header {
     display: flex;
     justify-content: space-between;
     flex: 0 0 auto;
@@ -32,21 +37,21 @@ header {
     background-color: #dcdcdc;
 }
 
-header>button {
+#desktop_header {
+    display: none;
+}
+
+.mobile_header_button {
     font-size: 1.75rem;
     /* background-color: green; */
 }
 
-/* header button {
-    background-color: green;
-} */
-
-button:first-child {
+#name_button {
     width: 100%;
     /* background-color: green; */
 }
 
-/* Font areas */
+/* Font areas to be aware of. */
 /* header, nav, button, span, h1, h2, p, footer, span */
 
 
@@ -76,9 +81,6 @@ nav button {
     display: block;
 }
 
-/* 
-            <nav id="menu" style="background: greenyellow;display:none;position: fixed; width: 90%;"> */
-
 footer {
     flex: 0 0 auto;
     text-align: center;
@@ -88,10 +90,30 @@ footer {
 
 /* Breakpoint for laptops */
 @media (min-width: 1025px) {
-
     /* @media (min-width: 40rem) { */
+
     body {
         border: medium solid blue;
+    }
+
+    #mobile_header {
+        display: none;
+    }
+
+    #desktop_header {
+        /* display: inline-block; */
+        display: flex;
+        justify-content: space-between;
+        background-color: #dcdcdc;
+    }
+
+    .desktop_header_button {
+        font-size: 1.75rem;
+        /* background-color: green; */
+    }
+
+    .dummy_text {
+        display: block;
     }
 
     footer {

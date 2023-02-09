@@ -50,6 +50,8 @@ The site shall:
 				|
 				+-- basic_framework - create the basic HTML and JavaScript needed for populating and navigating through the website.
 				|
+				+-- modify_basic_framework - 
+				|
 				+-- other feature branches
 
 ### Directories and Files

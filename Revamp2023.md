@@ -2,6 +2,11 @@
 
 ## Status
 
+**Note - all the following has been completed in the `basic_framework` branch.**
+
+* Done.
+    >Use media queries to implement the navigation differently for laptop/desktop.
+
 * Done.
     >Create an event listener for the toggleFunction() so that when the user taps outside of the navigation menu, the navigation menu disappears.
 
@@ -12,7 +17,7 @@
     >Modify the CSS so that the navigation menu overlays over the content of the website, no matter where the user is currently in the website. (at the moment, the user needs to scroll to the top of the website in order to see the navigation menu.)
     >If necessary, modify the CSS and/or JavaScript so that the navigation menu disappears after a button in the navigation menu is selected.
 
-    Also, created a new `index.html` file and rebuilt the page using a different flexbox example. The old index file was renamed as `old_index.html`
+    Also, **created a new `index.html` file** and **rebuilt the page using a different flexbox example**. The old index file was renamed as `old_index.html`
 
 * Implemented the menu navigation. But the navigation menu is not overlaying over the content of the website properly. 
     >Implement the basic JavaScript functionality to display and hid an html element by toggling the button.
@@ -20,8 +25,6 @@
 * With commit 20cf11710ea8067d5ce3c119e5265b726300f123 just created the basic framework for the website.
 
 ### Next Steps
-
-* Use media queries to implement the navigation differently for laptop/desktop.
 
 * Address the `ToDo` item in the `<script>` tag in the index.html file.
 
@@ -32,10 +35,10 @@
 * Close out this `basic_framework` branch.
 
 * **The following is for other branches.**
-    * Create a new branch for styling the website.
+    * Create a new branch for styling the website and adding the project cards. Call the branch `modify_basic_framework`. (Side note - consider having a more basic card that brings the user to a dedicated page. Or just a more simple card...)
     * Clean up the `id` and `class` names.
     * Clean up the html tags - change any that are not appropriate for that part or purpose of the website.
-    * Style the navigation menu that displays when the navigation button is selected.
+    * Style the mobile navigation menu.
     * Deliberately choose text sizes.
     * Deliberately choose units.
     * Modify the https://github.com/JamieBort/jamiebort.github.io/tree/basic_framework#branch-structure, https://github.com/JamieBort/jamiebort.github.io/tree/dev#branch-structure, https://github.com/JamieBort/jamiebort.github.io/tree/Revamp2023#branch-structure and sections to reflect the new branches.
