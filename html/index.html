@@ -10,15 +10,25 @@
     <title>Document</title>
 </head>
 <body class="page">
+<!-- <body class="page" style="position: relative;"> -->
 
     <!-- <div class="page"> -->
         <header class="page-header">
-            <button onclick="section(0)">Jamie Bort</button>
-            <button onclick="toggleFunction()">Button</button>
+            <button id="name_button" onclick="section(0)">Jamie Bort</button>
+            <button id="nav_button" onclick="toggleFunction()">Nav</button>
         </header>
+        <!-- <nav id="menu" style="display: none;">
+            <span>Navigation Menu</span>
+            <button onclick="section(1)">section_01</button>
+            <button onclick="section(2)">section_02</button>
+            <button onclick="section(3)">section_03</button>
+            <button onclick="section(4)">section_04</button>
+        </nav> -->
         <div id="content" style="position: relative;"> 
-            <nav id="menu" style="background: greenyellow;display:none;position: fixed; width: 90%;">
-                <p>Navigation Menu</p>
+        <!-- <div id="content">  -->
+            <nav id="menu" style="display: none; position: fixed; top: 2.4rem;">
+            <!-- <nav id="menu" style="display: none; position: absolute;"> -->
+                <span>Navigation Menu</span>
                 <button onclick="section(1)">section_01</button>
                 <button onclick="section(2)">section_02</button>
                 <button onclick="section(3)">section_03</button>
@@ -27,7 +37,7 @@
             <h1 id="top">Engineer</h1>
 
             <section id="section01"> 
-                <h3>Section 01</h3>
+                <h2>Bio</h2>
                 <p>Sriracha small batch tousled Tumblr banh mi sartorial. Cosby sweater XOXO direct trade Austin meggings banjo. Wayfarers deep v tousled Schlitz shabby chic, Portland Truffaut Marfa aesthetic keffiyeh. Salvia retro tattooed sartorial polaroid. Selvage hella 3 wolf moon PBR pug, ugh Schlitz freegan keffiyeh raw denim jean shorts wayfarers roof party. Neutra Shoreditch iPhone, +1 brunch Echo Park XOXO slow-carb street art Vice Williamsburg tattooed forage. Butcher Godard ethical try-hard.</p>
         
                 <p>Vegan blog Truffaut irony deep v Etsy. You probably haven't heard of them Schlitz chambray art party craft beer Echo Park mixtape, deep v fashion axe Wes Anderson twee McSweeney's DIY. Retro twee polaroid 3 wolf moon, Bushwick locavore organic skateboard keffiyeh Kickstarter Williamsburg sustainable Godard sartorial trust fund. Stumptown paleo put a bird on it VHS hella. Put a bird on it mixtape Godard, vegan farm-to-table letterpress chia hella. Meggings DIY freegan normcore gastropub blog. Dreamcatcher wolf kitsch biodiesel lomo jean shorts, pug fap Odd Future craft beer stumptown locavore cornhole put a bird on it salvia.</p>
@@ -38,7 +48,7 @@
             </section>
             
             <section id="section02"> 
-                <h3>Section 02</h3>
+                <h2>Section 02</h2>
                 <p>Sriracha small batch tousled Tumblr banh mi sartorial. Cosby sweater XOXO direct trade Austin meggings banjo. Wayfarers deep v tousled Schlitz shabby chic, Portland Truffaut Marfa aesthetic keffiyeh. Salvia retro tattooed sartorial polaroid. Selvage hella 3 wolf moon PBR pug, ugh Schlitz freegan keffiyeh raw denim jean shorts wayfarers roof party. Neutra Shoreditch iPhone, +1 brunch Echo Park XOXO slow-carb street art Vice Williamsburg tattooed forage. Butcher Godard ethical try-hard.</p>
         
                 <p>Vegan blog Truffaut irony deep v Etsy. You probably haven't heard of them Schlitz chambray art party craft beer Echo Park mixtape, deep v fashion axe Wes Anderson twee McSweeney's DIY. Retro twee polaroid 3 wolf moon, Bushwick locavore organic skateboard keffiyeh Kickstarter Williamsburg sustainable Godard sartorial trust fund. Stumptown paleo put a bird on it VHS hella. Put a bird on it mixtape Godard, vegan farm-to-table letterpress chia hella. Meggings DIY freegan normcore gastropub blog. Dreamcatcher wolf kitsch biodiesel lomo jean shorts, pug fap Odd Future craft beer stumptown locavore cornhole put a bird on it salvia.</p>
@@ -49,7 +59,7 @@
             </section>
             
             <section id="section03"> 
-                <h3>Section 03</h3>
+                <h2>Section 03</h2>
                 <p>Sriracha small batch tousled Tumblr banh mi sartorial. Cosby sweater XOXO direct trade Austin meggings banjo. Wayfarers deep v tousled Schlitz shabby chic, Portland Truffaut Marfa aesthetic keffiyeh. Salvia retro tattooed sartorial polaroid. Selvage hella 3 wolf moon PBR pug, ugh Schlitz freegan keffiyeh raw denim jean shorts wayfarers roof party. Neutra Shoreditch iPhone, +1 brunch Echo Park XOXO slow-carb street art Vice Williamsburg tattooed forage. Butcher Godard ethical try-hard.</p>
         
                 <p>Vegan blog Truffaut irony deep v Etsy. You probably haven't heard of them Schlitz chambray art party craft beer Echo Park mixtape, deep v fashion axe Wes Anderson twee McSweeney's DIY. Retro twee polaroid 3 wolf moon, Bushwick locavore organic skateboard keffiyeh Kickstarter Williamsburg sustainable Godard sartorial trust fund. Stumptown paleo put a bird on it VHS hella. Put a bird on it mixtape Godard, vegan farm-to-table letterpress chia hella. Meggings DIY freegan normcore gastropub blog. Dreamcatcher wolf kitsch biodiesel lomo jean shorts, pug fap Odd Future craft beer stumptown locavore cornhole put a bird on it salvia.</p>
@@ -60,7 +70,7 @@
             </section>
             
             <section id="section04"> 
-                <h3>Section 04</h3>
+                <h2>Section 04</h2>
                 <p>Sriracha small batch tousled Tumblr banh mi sartorial. Cosby sweater XOXO direct trade Austin meggings banjo. Wayfarers deep v tousled Schlitz shabby chic, Portland Truffaut Marfa aesthetic keffiyeh. Salvia retro tattooed sartorial polaroid. Selvage hella 3 wolf moon PBR pug, ugh Schlitz freegan keffiyeh raw denim jean shorts wayfarers roof party. Neutra Shoreditch iPhone, +1 brunch Echo Park XOXO slow-carb street art Vice Williamsburg tattooed forage. Butcher Godard ethical try-hard.</p>
         
                 <p>Vegan blog Truffaut irony deep v Etsy. You probably haven't heard of them Schlitz chambray art party craft beer Echo Park mixtape, deep v fashion axe Wes Anderson twee McSweeney's DIY. Retro twee polaroid 3 wolf moon, Bushwick locavore organic skateboard keffiyeh Kickstarter Williamsburg sustainable Godard sartorial trust fund. Stumptown paleo put a bird on it VHS hella. Put a bird on it mixtape Godard, vegan farm-to-table letterpress chia hella. Meggings DIY freegan normcore gastropub blog. Dreamcatcher wolf kitsch biodiesel lomo jean shorts, pug fap Odd Future craft beer stumptown locavore cornhole put a bird on it salvia.</p>
@@ -72,13 +82,20 @@
 
         </div>
 
-        <footer class="page-footer">Footer</foot>
+        <footer class="page-footer">
+            &copy
+            <span id="copyright"></span>
+        </foot>
+
       <!-- </div> -->
+
       <script>
+
+        // ToDo: use JavaScript to name section_01, section01, and Bio, as only Bio in one location.
         
         // for the navigation button
         function toggleFunction(){
-            // console.log("inside the toggleFunction function");
+            console.log("inside the toggleFunction function");
             var element = document.getElementById('menu');
             if(element.style.display === "none"){
                 element.style.display = "block";
@@ -96,6 +113,12 @@
             else window.location = '#top'; 
             
         }
+
+        // for the footer
+        const copyright = document.getElementById('copyright');
+        if(new Date().getFullYear()) var date = new Date().getFullYear();
+        else var date = "2023";
+        document.getElementById('copyright').appendChild(document.createTextNode(date));
 
       </script>
 

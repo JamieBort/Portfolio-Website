@@ -2,9 +2,14 @@
 
 ## Status
 
+* Done. Sufficient for now.
+    >Improve the styling before moving on to the next task.
+
 * Done.
     >Modify the CSS so that the navigation menu overlays over the content of the website, no matter where the user is currently in the website. (at the moment, the user needs to scroll to the top of the website in order to see the navigation menu.)
     >If necessary, modify the CSS and/or JavaScript so that the navigation menu disappears after a button in the navigation menu is selected.
+
+    Also, created a new `index.html` file and rebuilt the page using a different flexbox example. The old index file was renamed as `old_index.html`
 
 * Implemented the menu navigation. But the navigation menu is not overlaying over the content of the website properly. 
     >Implement the basic JavaScript functionality to display and hid an html element by toggling the button.
@@ -13,7 +18,11 @@
 
 ### Next Steps
 
+* Create an event listener for the toggleFunction() so that when the user taps outside of the navigation menu, the navigation menu disappears.
+
 * Use media queries to implement the navigation differently for laptop/desktop.
+
+* Address the `ToDo` item in the `<script>` tag in the index.html file.
 
 * Add this `Revamp2023.md` file to the `Revamp2023` branch.
 
