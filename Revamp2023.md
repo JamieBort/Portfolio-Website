@@ -4,6 +4,16 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ## Status
 
+**Note - all the following has been completed in the `modify_basic_framework` branch.**
+
+* Done.
+    >Clean up the `id` and `class` names.
+    >Clean up the html tags - change any that are not appropriate for that part or purpose of the website.
+
+* Done.
+    >Create a new branch. Call the branch `modify_basic_framework`. This branch is for styling the website and further developing the skeleton of it. Specifically, for adding the framework for the project cards.
+
+
 **Note - all the following has been completed in the `Revamp2023` branch.**
 
 * Done.
@@ -39,18 +49,23 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 * Clean up the `./html/index.html` and `./styles.css` files. Specifically,
 
     * Create a new branch. Call the branch `modify_basic_framework`. This branch is for styling the website and further developing the skeleton of it. Specifically, for adding the framework for the project cards.
-    * Clean up the `id` and `class` names.
-    * Clean up the html tags - change any that are not appropriate for that part or purpose of the website.
     * Add Project Cards for my the Projects section.  (Side note - consider having a more basic card that brings the user to a dedicated page. Or just a more simple card...)
+    One over the other in mobile view.
+    * Add Connect links - 2 side-by-side in mobile view.
     * Style the mobile navigation menu.
-    * Deliberately choose text sizes.
+    * Deliberately choose text sizes. Tags that I need to be aware of: header, nav, button, span, h1, h2, h3, p, footer, span 
     * Deliberately choose units.
     
 
 * Other tasks to address; maybe in a different branch.:    
     
     * Modify the https://github.com/JamieBort/jamiebort.github.io/tree/basic_framework#branch-structure, https://github.com/JamieBort/jamiebort.github.io/tree/dev#branch-structure, https://github.com/JamieBort/jamiebort.github.io/tree/Revamp2023#branch-structure and sections to reflect the new branches.
-    * Add the `Revamp2023.md` file to the Revamp2023 branch. Maybe add it to the dev branch too.
+    * Add the `Revamp2023.md` file to the `dev` branch. Maybe add it to the `master` branch too.
     * So that as I/someone looks at the master branch they know the status of this project.
     * Close out this `basic_framework` branch.
     * Address the `ToDo` item in the `<script>` tag in the index.html file.
+    * Make api call to github for my project info.
+    * Make my website accessible.
+        * Create an `accessibility` branch.
+        * Modify the `<img>`, `<a>`, `<button>`, `<nav>`, and other tags for assistive screen readers.
+        

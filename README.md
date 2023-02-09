@@ -52,6 +52,8 @@ The site shall:
 				|
 				+-- modify_basic_framework - For styling the website and adding the project cards. (Side note - consider having a more basic card that brings the user to a dedicated page. Or just a more simple card...)
 				|
+				+-- accessibility - For 
+				|
 				+-- other feature branches
 
 ### Directories and Files
