@@ -2,6 +2,9 @@
 
 ## Status
 
+* Done.
+    >Create an event listener for the toggleFunction() so that when the user taps outside of the navigation menu, the navigation menu disappears.
+
 * Done. Sufficient for now.
     >Improve the styling before moving on to the next task.
 
@@ -17,8 +20,6 @@
 * With commit 20cf11710ea8067d5ce3c119e5265b726300f123 just created the basic framework for the website.
 
 ### Next Steps
-
-* Create an event listener for the toggleFunction() so that when the user taps outside of the navigation menu, the navigation menu disappears.
 
 * Use media queries to implement the navigation differently for laptop/desktop.
 
@@ -37,3 +38,6 @@
     * Style the navigation menu that displays when the navigation button is selected.
     * Deliberately choose text sizes.
     * Deliberately choose units.
+    * Modify the https://github.com/JamieBort/jamiebort.github.io/tree/basic_framework#branch-structure, https://github.com/JamieBort/jamiebort.github.io/tree/dev#branch-structure, https://github.com/JamieBort/jamiebort.github.io/tree/Revamp2023#branch-structure and sections to reflect the new branches.
+    * Add the `Revamp2023.md` file to the Revamp2023 branch. Maybe add it to the dev branch too.
+    * So that as I/someone looks at the master branch they know the status of this project.

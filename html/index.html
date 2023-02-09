@@ -93,6 +93,8 @@
 
         // ToDo: use JavaScript to name section_01, section01, and Bio, as only Bio in one location.
         
+        // *************************
+        // *************************
         // for the navigation button
         function toggleFunction(){
             console.log("inside the toggleFunction function");
@@ -113,6 +115,19 @@
             else window.location = '#top'; 
             
         }
+
+        // for when the user taps off of the navigation menue, it needs to close
+        function modifyText() {
+            console.log("event listener firing");
+            var element = document.getElementById('menu');
+            element.style.display = "none";
+        }
+        
+        // Add event listener to page.
+        const el = document.getElementById("content");
+        el.addEventListener("click", modifyText, false); // why false?
+        // *************************
+        // *************************
 
         // for the footer
         const copyright = document.getElementById('copyright');
