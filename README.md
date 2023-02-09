@@ -48,9 +48,9 @@ The site shall:
 			|
 			+-- Revamp2023
 				|
-				+-- basic_framework - create the basic HTML and JavaScript needed for populating and navigating through the website.
+				+-- basic_framework - ~~Create the basic HTML and JavaScript needed for populating and navigating through the website.~~ Done.
 				|
-				+-- modify_basic_framework - 
+				+-- modify_basic_framework - For styling the website and adding the project cards. (Side note - consider having a more basic card that brings the user to a dedicated page. Or just a more simple card...)
 				|
 				+-- other feature branches
 
@@ -58,20 +58,24 @@ The site shall:
 
 #### Directories
 
-* .vscode/ - add description/reason for it's presence.
+* .vscode/			- add description/reason for it's presence.
 
-* assets/ - add description/reason for it's presence.
+* assets/			- The directory for the static resources.
 
-* html/ - add description/reason for it's presence.
+* html/				- With the exception of `./index.html`, this directory contains all of the html files. And it contains only html files.
 
-* pre-Revamp2023/ - add description/reason for it's presence.
+* pre-Revamp2023/	- This directory was created when I created the `Revamp2023` branch. It contains the contents of the `jamiebort.github.io` directory at the point of when the `Revamp2023` branch was created.
 
 #### Files
 
-* .gitignore	 - add description/reason for it's presence.
+* .gitignore	- add description/reason for it's presence.
 
-* contact.html	 - The page for the contact form.
+* index.html	- The landing page. This links to `./html/index.html`.
 
-* index.html	 - The landing page.
+* old_styes.css	- The previous stylesheet. `./html/old_index.html` links to it. Renamed because I rebuilt the index file and I wasn't ready to delete the old one yet.
 
-* README.md		 - This readme file.
+* README.md		- This readme file.
+
+* Revamp2023.md	- This file is for keeping track of the status and the tasks that need to be completed while I rebuild my portfolio website.
+
+* styles.css	- The stylesheet.

@@ -1,6 +1,16 @@
 # Revamp2023
 
+This file is for keeping track of the `Status` and the tasks that need to be completed (see `Next Steps`) while I rebuild my portfolio website.
+
 ## Status
+
+**Note - all the following has been completed in the `Revamp2023` branch.**
+
+* Done.
+    >Add this `Revamp2023.md` file to the `Revamp2023` branch.
+    >Then modify the `Status` and `Next Steps` sections of it.
+
+    Also, updated the `Branch Structure`, `Directories`, and `Files` sections of the `./README.md`.
 
 **Note - all the following has been completed in the `basic_framework` branch.**
 
@@ -26,21 +36,21 @@
 
 ### Next Steps
 
-* Address the `ToDo` item in the `<script>` tag in the index.html file.
+* Clean up the `./html/index.html` and `./styles.css` files. Specifically,
 
-* Add this `Revamp2023.md` file to the `Revamp2023` branch.
-
-    Then modify the `Status` and `Next Steps` sections of it.
-
-* Close out this `basic_framework` branch.
-
-* **The following is for other branches.**
-    * Create a new branch for styling the website and adding the project cards. Call the branch `modify_basic_framework`. (Side note - consider having a more basic card that brings the user to a dedicated page. Or just a more simple card...)
+    * Create a new branch. Call the branch `modify_basic_framework`. This branch is for styling the website and further developing the skeleton of it. Specifically, for adding the framework for the project cards.
     * Clean up the `id` and `class` names.
     * Clean up the html tags - change any that are not appropriate for that part or purpose of the website.
+    * Add Project Cards for my the Projects section.  (Side note - consider having a more basic card that brings the user to a dedicated page. Or just a more simple card...)
     * Style the mobile navigation menu.
     * Deliberately choose text sizes.
     * Deliberately choose units.
+    
+
+* Other tasks to address; maybe in a different branch.:    
+    
     * Modify the https://github.com/JamieBort/jamiebort.github.io/tree/basic_framework#branch-structure, https://github.com/JamieBort/jamiebort.github.io/tree/dev#branch-structure, https://github.com/JamieBort/jamiebort.github.io/tree/Revamp2023#branch-structure and sections to reflect the new branches.
     * Add the `Revamp2023.md` file to the Revamp2023 branch. Maybe add it to the dev branch too.
     * So that as I/someone looks at the master branch they know the status of this project.
+    * Close out this `basic_framework` branch.
+    * Address the `ToDo` item in the `<script>` tag in the index.html file.
