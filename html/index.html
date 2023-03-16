@@ -14,12 +14,13 @@
 
     <!-- <div class="page"> -->
         <header id="mobile_header">
-            <button class = "mobile_header_button" id="name_button" onclick="section(0)">Jamie Bort</button>
-            <button class = "mobile_header_button" id="nav_toggle_button" onclick="toggleFunction()">Nav</button>
+            <!-- <button class = "mobile_header_button" id="name_button" onclick="section(0)">Jamie Bort</button> -->
+            <button class = "mobile_header_button" id="name_button" onclick="mobileHeaderButton()">Jamie Bort</button>
+            <button class = "mobile_header_button" id="nav_toggle_button" onclick="toggleMenu()">Nav</button>
         </header>
         <header id="desktop_header">
             <button class = "desktop_header_button" onclick="section(0)" id="name_button">Jamie Bort</button>
-            <!-- <button id="nav_button" onclick="toggleFunction()">Nav</button> -->
+            <!-- <button id="nav_button" onclick="toggleMenu()">Nav</button> -->
             <button class = "desktop_header_button" onclick="section(1)">Bio</button>
             <button class = "desktop_header_button" onclick="section(2)">Projects</button>
             <button class = "desktop_header_button" onclick="section(3)">Connect with Me</button>
@@ -36,9 +37,12 @@
         <div id="content" style="position: relative;"> 
         <!-- <div id="content">  -->
 
-            <nav id="menu" style="display: none; position: fixed; top: 2.4rem;">
+            <!-- <nav id="menu" style="display: none; position: fixed; top: 2.4rem;"> -->
+
+            <nav id="menu" style="display: none;">
+                <!-- <nav id="menu"> -->
             <!-- <nav id="menu" style="display: none; position: absolute;"> -->
-                <span>Navigation Menu</span>
+                <!-- <span>Navigation Menu</span> -->
                 <button onclick="section(1)">Bio</button>
                 <button onclick="section(2)">Projects</button>
                 <button onclick="section(3)">Connect with Me</button>
@@ -50,6 +54,8 @@
                 <h2>A little bit about myself</h2>
                 <p class = "section_p">A little something about me.</p>
             </section>
+
+            <hr style="border-top: 1px solid gray;">
             
             <section id="section02"> 
                 <h2>Projects I have completed or am working on</h2>
@@ -57,47 +63,49 @@
                 <div id="card_container">
                     <div class="card">
                         <h3>Card title - pull from github repo</h3>
-                        <p>About the project - pull from github repo.</p>
-                        <p>Technologies used - pull from github repo.</p>
+                        <p>About the project - pull from github repo. The purpose of this directory is to house all the code I write as I learn new technologies and hone my skills. This is to help keep my GitHub account organized.</p>
+                        <p class = "technology_p">Technologies used - pull from github repo. JavaScript</p>
                     </div>
                     <div class="card">
                         <h3>Card title - pull from github repo</h3>
-                        <p>About the project - pull from github repo.</p>
-                        <p>Technologies used - pull from github repo.</p>
+                        <p>About the project - pull from github repo. A website for displaying important daily data. Such as blood glucose numbers and upcoming events. By using API calls, databases, authentication, etc.</p>
+                        <p class = "technology_p">Technologies used - pull from github repo. JavaScript</p>
                     </div>
                     <div class="card">
                         <h3>Card title - pull from github repo</h3>
-                        <p>About the project - pull from github repo.</p>
-                        <p>Technologies used - pull from github repo.</p>
+                        <p>About the project - pull from github repo. My Portfolio Website. This is where I share a bit about myself, showcase what I've been working on, host my blog, and more.</p>
+                        <p class = "technology_p">Technologies used - pull from github repo. JavaScript</p>
                     </div></div>
             </section>
+
+            <hr style="border-top: 1px solid gray;">
             
             <section id="section03"> 
                 <h2>Connect with Me</h2>
                 <p class = "section_p">Ways we can connect.</p>
                 <div id = "connect_container">
 
-                    <a href="https://www.linkedin.com/in/jamie-bort/" target="_blank">
+                    <a class = "connect_a" href="https://www.linkedin.com/in/jamie-bort/" target="_blank">
                         <img class="connect_img" src="../assets/LinkedIn.png">
                     </a>
-                    <a href="https://github.com/JamieBort" target="_blank">
+                    <a class = "connect_a" href="https://github.com/JamieBort" target="_blank">
                         <img class="connect_img"
                             src="../assets/GitHub.png">
                     </a>
-                    <a href="https://twitter.com/jamiebort" target="_blank">
+                    <a class = "connect_a" href="https://twitter.com/jamiebort" target="_blank">
                         <img class="connect_img" src="../assets/Twitter.png">
                     </a>
-                    <a href="https://stackoverflow.com/users/8210460/jamie-bort" target="_blank">
+                    <a class = "connect_a" href="https://stackoverflow.com/users/8210460/jamie-bort" target="_blank">
                         <img class="connect_img"
                             src="../assets/StackOverflow.png">
                     </a>
-                    <a href="./contact_form.html">
+                    <a class = "connect_a" href="./contact_form.html">
                         <img class="connect_img"
                             src="../assets/Email.png">
                     </a>
 
                     <!-- ****** A anchor to a coding challenge website ****** -->
-                    <!-- <a href="../html/contact_form.html" target="_blank">
+                    <!-- <a class = "connect_a" href="../html/contact_form.html" target="_blank">
                         <img class="connect_img"
                             src="../assets/Email/FAVPNG_email-box-clip-art_W0UEsKSp.png">
                     </a> -->
@@ -139,24 +147,28 @@
         // *************************
         // for the navigation 
         // *************************
-        function toggleFunction(){
-            console.log("inside the toggleFunction function");
+
+        // this toggles the hidden nav window to appear or disappear
+        function toggleMenu(){
+            console.log("inside the toggleMenu function");
             var element = document.getElementById('menu');
             if(element.style.display === "none"){
                 element.style.display = "block";
             }else{
-                element.style.display = "none";
+                // element.style.display = "none";
+                closeMenu();
             }
         };
 
+        // this navigates to a specific section of the page
         function section(param){
             // console.log("param:", param)
             if(param>0) window.location = '#section0'+param;
             else window.location = '#top'; 
         }
 
-        // for when the user taps off of the navigation menu, it needs to close
-        function modifyText() {
+        // for when the user taps off of the navigation menu, the navigation menu needs to close
+        function closeMenu() {
             console.log("event listener firing");
             var element = document.getElementById('menu');
             element.style.display = "none";
@@ -164,7 +176,13 @@
         
         // Add event listener to page.
         const el = document.getElementById("content");
-        el.addEventListener("click", modifyText, false); // why false? --> "A boolean value indicating that the listener should be invoked at most once after being added. If true, the listener would be automatically removed when invoked. If not specified, defaults to false."
+        el.addEventListener("click", closeMenu, false); // why false? --> "A boolean value indicating that the listener should be invoked at most once after being added. If true, the listener would be automatically removed when invoked. If not specified, defaults to false."
+
+        function mobileHeaderButton(){
+            closeMenu();
+            section(0)
+        }
+
         // *************************
         // *************************
 
