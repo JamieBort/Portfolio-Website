@@ -8,6 +8,8 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 - Done.
 
+  > Deliberately choose text sizes. Tags that I need to be aware of: header, nav, button, span, h1, h2, h3, p, footer, span
+
   > Style the mobile navigation menu.
 
   > Add Connect links - 2 side-by-side in mobile view.
@@ -68,8 +70,9 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     **This branch is for styling the website and further developing the skeleton of it. Specifically, for adding the framework for the project cards.**
 
-  - Deliberately choose text sizes. Tags that I need to be aware of: header, nav, button, span, h1, h2, h3, p, footer, span
   - Deliberately choose units.
+
+  - Link to the fonts locally. So they'll be used when the user of offline.
 
 - Other tasks to address; ~~maybe~~ in a different branch.:
 
