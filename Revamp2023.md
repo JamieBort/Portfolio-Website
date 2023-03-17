@@ -6,6 +6,16 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 **Note - all the following has been completed in the `modify_basic_framework` branch.**
 
+- Started with https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website
+
+  But I am still working on https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website#comment-6414aed791ebc1e0f42a2208,
+
+  https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website#comment-6414b0004939687655d5ea9a,
+
+  and https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website#comment-6414b35c73d541512e92936c
+
+  > Deliberately choose units.
+
 - Done.
 
   > Link to the fonts locally. So they'll be used when the user of offline.

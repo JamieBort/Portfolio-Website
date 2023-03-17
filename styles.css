@@ -102,8 +102,10 @@ nav {
 
     /* display: none; position: fixed; top: 2.4rem; */
     position: fixed; 
-    top: 2.4rem;
-    left: 0.01rem;
+    /* top: 2.4rem; */
+    /* top: 2.4em; */
+    /* left: 0.01rem; */
+    left: 0em;
     width: 80%;
     min-width: 10em;
     /* min-height: 30em; */
@@ -133,7 +135,7 @@ nav span, nav button {
     border: thin solid gray;
     border-radius: .5em;
     margin: 1em 0;
-    min-height: 150px;
+    min-height: 10em;
     padding: 0 .5em;
 }
 
@@ -177,7 +179,8 @@ footer {
 }
 
 /* Breakpoint for laptops */
-@media (min-width: 1025px) {
+    @media (min-width: 64em) {
+/* @media (min-width: 1025px) { */
     /* @media (min-width: 40rem) { */
 
     body {
@@ -196,8 +199,10 @@ footer {
     }
 
     .desktop_header_button {
-        font-size: 1.75rem;
         /* background-color: green; */
+        font-size: 1.75rem;
+        /* maybe change the `font-size: 1.75rem;` above for the `font-size: 1.75em;` below */
+        /* font-size: 1.75em; */
     }
 
     #card_container {
@@ -222,10 +227,11 @@ footer {
 }
 
     footer {
+        /* background-color: #dcdcdc; */
         /* flex: 0 0 auto; */
         text-align: center;
         font-size: 1.00rem;
-        /* background-color: #dcdcdc; */
+        /* maybe change the `font-size: 1.00rem;` above for the `font-size: 1.00em;`  */
     }
 
 }
