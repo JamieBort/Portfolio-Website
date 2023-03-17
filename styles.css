@@ -1,3 +1,11 @@
+@font-face {
+    font-family: Tinos;
+    font-weight: 400;
+    font-style: normal;
+    src: url(./assets/fonts/Tinos/Tinos-Regular.ttf);
+    /* src: local('Delicious'), local('Delicious'), url(Delicious-Roman.otf) format('opentype'); */
+  }
+
 html {
     height: 100%;
     /* font-size: 100%; */
@@ -16,8 +24,7 @@ body {
     /* border: medium dashed black; */
 }
 
-html,
-body {
+html, body {
     height: 100%;
     /* needed for proper layout */
 }
