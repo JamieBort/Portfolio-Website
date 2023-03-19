@@ -63,10 +63,10 @@ The site shall:
     			+-- script - For all script related logic.
     			|
     			+-- breakpoint - For implementing breakpoints in the CSS file.
-          |   |
-          |   +-- tablet_breakpoint - For implementing a tablet breakpoint in the CSS file.
-          |   |
-          |   +-- desktop_breakpoint - For implementing desktop breakpoint in the CSS file.
+    			|	|
+    			|	+-- tablet_breakpoint - For implementing a tablet breakpoint in the CSS file.
+    			|	|
+    			|	+-- desktop_breakpoint - For implementing desktop breakpoint in the CSS file.
     			|
     			+-- other feature branches
 
