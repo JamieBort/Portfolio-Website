@@ -6,6 +6,18 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 **Note - all the following has been completed in the `modify_basic_framework` branch.**
 
+- Done.
+
+  > Clean up the `./html/index.html` and `./styles.css` files. Specifically,
+
+      Create a new branch. Call the branch `modify_basic_framework`.
+
+      **This branch is for styling the website and further developing the skeleton of it. Specifically, for adding the framework for the project cards.**
+
+  > Deliberately choose units.
+
+      See https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website
+
 - Started with https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website
 
   But I am still working on https://trello.com/c/0x0av6IA/1130-address-the-css-units-for-the-portfolio-website#comment-6414aed791ebc1e0f42a2208,
@@ -78,28 +90,35 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ### Next Steps
 
-- Clean up the `./html/index.html` and `./styles.css` files. Specifically,
+- Other tasks to address; in a different branch.:
 
-  - Create a new branch. Call the branch `modify_basic_framework`.
+  - General housekeeping
 
-    **This branch is for styling the website and further developing the skeleton of it. Specifically, for adding the framework for the project cards.**
+    - Modify the https://github.com/JamieBort/jamiebort.github.io/tree/basic_framework#branch-structure, https://github.com/JamieBort/jamiebort.github.io/tree/dev#branch-structure, https://github.com/JamieBort/jamiebort.github.io/tree/Revamp2023#branch-structure and sections to reflect the new branches.
+    - Add the `Revamp2023.md` file to the `dev` branch. ~~Maybe add~~ Add it to the `master` branch too.
 
-  - Deliberately choose units.
+      So that as I/someone looks at the master branch they know the status of this project.
 
-- Other tasks to address; ~~maybe~~ in a different branch.:
+    - Close out this `basic_framework` branch.
 
-  - Modify the https://github.com/JamieBort/jamiebort.github.io/tree/basic_framework#branch-structure, https://github.com/JamieBort/jamiebort.github.io/tree/dev#branch-structure, https://github.com/JamieBort/jamiebort.github.io/tree/Revamp2023#branch-structure and sections to reflect the new branches.
-  - Add the `Revamp2023.md` file to the `dev` branch. ~~Maybe add~~ Add it to the `master` branch too.
-
-    So that as I/someone looks at the master branch they know the status of this project.
-
-  - Close out this `basic_framework` branch.
   - Address the `ToDo` item in the `<script>` tag in the index.html file.
+
+    **Maybe a new branch for this.**
+
   - API related tasks
+
     - Make api call to github for my project info.
     - Consolidate and organize ALL Trello cards with
       - `API` in the Title.
       - and that come up when searching for `API`
+
   - Make my website accessible.
+
     - Create an `accessibility` branch.
     - Modify the `<img>`, `<a>`, `<button>`, `<nav>`, and other tags for assistive screen readers.
+
+  - Working on the Project Cards.
+
+    Use this https://css-tricks.com/aspect-ratio-boxes/
+
+    **Maybe a new branch for this.**
