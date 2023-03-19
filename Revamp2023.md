@@ -140,8 +140,12 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     - the `Revamp2020` branch,
 
+    - the `branch_for_cleaning_before_pushing_to_master` branch,
+
     - the `old_styes.css` file,
 
     - the `./html/old_index.html`, file,
 
     - and the pre-Revamp2023/ directory,
+
+    Go through them each to make sure I will not be losing anything valuable.
