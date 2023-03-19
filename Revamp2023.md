@@ -136,6 +136,8 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     - Create an `desktop_breakpoint` branch inside the new `breakpoint` branch.
 
+  - When the `Revamp2023` branch is ready to merge into the `dev` branch, first create a staging branch for the `dev` branch. To run through a mock process of merging all the files and directories.
+
   - Once the `Revamp2023` branch has been merged into the `dev` branch delete
 
     - the `Revamp2020` branch,
