@@ -4,6 +4,12 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ## Status
 
+**Note - all the following has been completed in the `Revamp2023` branch.**
+
+- Done
+
+  > Delete the ~~Close out this~~ `basic_framework` branch.
+
 **Note - all the following has been completed in the `modify_basic_framework` branch.**
 
 - Done.
@@ -99,14 +105,13 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
       So that as I/someone looks at the master branch they know the status of this project.
 
-    - Close out this `basic_framework` branch.
-
   - Address the `ToDo` item in the `<script>` tag in the index.html file.
 
-    **Maybe a new branch for this.**
+    **Create a new branch for this.**
 
   - API related tasks
 
+    - Create an `api` branch.
     - Make api call to github for my project info.
     - Consolidate and organize ALL Trello cards with
       - `API` in the Title.
@@ -121,4 +126,14 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     Use this https://css-tricks.com/aspect-ratio-boxes/
 
-    **Maybe a new branch for this.**
+    **Create a new branch for this.**
+
+  - When the above is complete, write CSS for tablet breakpoint.
+
+    - Create an `tablet_breakpoint` branch inside of a new `breakpoint` branch.
+
+  - When the above is complete, write CSS for desktop breakpoint.
+
+    - Create an `desktop_breakpoint` branch inside the new `breakpoint` branch.
+
+  - Do not delete the `Revamp2020` branch until I delete the `Revamp2023` branch
