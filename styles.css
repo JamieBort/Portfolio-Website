@@ -1,7 +1,17 @@
+@font-face {
+    font-family: Tinos;
+    font-weight: 400;
+    font-style: normal;
+    src: url(./assets/fonts/Tinos/Tinos-Regular.ttf);
+    /* src: local('Delicious'), local('Delicious'), url(Delicious-Roman.otf) format('opentype'); */
+  }
+
 html {
     height: 100%;
-    font-size: 100%;
-    background: bisque;
+    /* font-size: 100%; */
+    font-size: 16px;
+    font-family: 'Tinos', serif;
+    background-color: bisque;
 }
 
 body {
@@ -9,25 +19,15 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    border: medium dashed black;
+    margin: 0;
+    /* margin: 0 8px; */
+    /* border: medium dashed black; */
 }
 
-html,
-body,
-.page {
+html, body {
     height: 100%;
     /* needed for proper layout */
 }
-
-p {
-    /* change as necessary - was pasted in... */
-    margin-bottom: 1em;
-    /* display: block; */
-}
-
-/* .dummy_text {
-    display: none;
-} */
 
 #mobile_header {
     display: flex;
@@ -40,32 +40,56 @@ p {
 #desktop_header {
     display: none;
 }
-
-.mobile_header_button {
-    font-size: 1.75rem;
-    /* background-color: green; */
+/* establishing font sizes below */
+.mobile_header_button, nav button {
+    font-size: 28px;
 }
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 19px;
+    /* border: thin solid black; */
+}
+
+p {
+    font-size: 16px;
+    /* border: thin solid black; */
+}
+/* establishing font sizes above */
 
 #name_button {
     width: 100%;
     /* background-color: green; */
 }
 
-/* Font areas to be aware of. */
-/* header, nav, button, span, h1, h2, p, footer, span */
-
-
-
 #content {
+    /* border: thin dashed magenta; */
+    /* background-color: azure; */
+
     flex: 1 1 auto;
+    /* width: 95%; */
     /* position: relative; */
     /* need this to position inner content */
     overflow-y: auto;
     /* padding: 0; */
+
+    max-width: 97%;
+    margin: auto;
 }
 
-h1,
-h2 {
+nav span, h1, h2, h3 {
+    text-align: center;
+}
+
+.technology_p {
+    /* background-color: gray; */
     text-align: center;
 }
 
@@ -73,23 +97,90 @@ nav {
     /* position: absolute; */
     /* position: fixed;
     top: 22.5px; */
-    background: greenyellow;
+    background-color: bisque;
+    border: thin solid black;
+
+    /* display: none; position: fixed; top: 2.4rem; */
+    position: fixed; 
+    /* top: 2.4rem; */
+    /* top: 2.4em; */
+    /* left: 0.01rem; */
+    left: 0em;
+    width: 80%;
+    min-width: 10em;
+    /* min-height: 30em; */
 }
 
-nav span,
-nav button {
+nav span, nav button {
     display: block;
+    width: 100%;
+    margin: .25em 0;
+    /* font-size: 20px; */
+}
+
+.section_p{
+    padding: 0 .5em;
+    /* border: thin solid gray; */
+    /* border-radius: .5em; */
+}
+
+#card_container {
+    /* Use this to make sure each card in the row is the same height. For desktop. */
+    /* display: none; */
+    /* background-color: greenyellow; */
+}
+
+.card {
+    /* background-color: aqua; */
+    border: thin solid gray;
+    border-radius: .5em;
+    margin: 1em 0;
+    min-height: 10em;
+    padding: 0 .5em;
+}
+
+#connect_container {
+    /* background-color: lightsalmon; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
+    /* height: 100%; */
+    /* max-width: 100px;
+    width: auto; */
+    /* background-color: lightseagreen; */
+    /* background: lightseagreen; */
+    /* width: 100px;
+    height: 100px; */
+
+    flex-wrap: wrap;
+}
+
+.connect_a{
+    /* background-color: lightsalmon; */
+    /* border: medium dashed maroon; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.connect_img {
+        /* background-color: pink; */
+    max-width: 8em;
+    /* min-width: 4em; */
+    padding: 1em;
 }
 
 footer {
     flex: 0 0 auto;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 19px;
     background-color: #dcdcdc;
 }
 
 /* Breakpoint for laptops */
-@media (min-width: 1025px) {
+    @media (min-width: 64em) {
+/* @media (min-width: 1025px) { */
     /* @media (min-width: 40rem) { */
 
     body {
@@ -108,19 +199,39 @@ footer {
     }
 
     .desktop_header_button {
-        font-size: 1.75rem;
         /* background-color: green; */
+        font-size: 1.75rem;
+        /* maybe change the `font-size: 1.75rem;` above for the `font-size: 1.75em;` below */
+        /* font-size: 1.75em; */
     }
 
-    .dummy_text {
-        display: block;
+    #card_container {
+        /* use this to make sure each card in the row is the same height. */
     }
+
+
+/* connect_container styles before I started messing them them in the mobile view. */
+/* In the mobile view they were all in a single row */
+#connect_container {
+    /* background-color: lightsalmon; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
+    /* height: 100%; */
+    /* max-width: 100px;
+    width: auto; */
+    /* background-color: lightseagreen; */
+    /* background: lightseagreen; */
+    /* width: 100px;
+    height: 100px; */
+}
 
     footer {
+        /* background-color: #dcdcdc; */
         /* flex: 0 0 auto; */
         text-align: center;
         font-size: 1.00rem;
-        /* background-color: #dcdcdc; */
+        /* maybe change the `font-size: 1.00rem;` above for the `font-size: 1.00em;`  */
     }
 
 }

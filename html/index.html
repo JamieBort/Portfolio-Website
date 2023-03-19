@@ -7,128 +7,181 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./../styles.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
-<body class="page">
-<!-- <body class="page" style="position: relative;"> -->
+<body>
+    <header id="mobile_header">
+        <!-- <button class = "mobile_header_button" id="name_button" onclick="section(0)">Jamie Bort</button> -->
+        <button class = "mobile_header_button" id="name_button" onclick="mobileHeaderButton()">Jamie Bort</button>
+        <button class = "mobile_header_button" id="nav_toggle_button" onclick="toggleMenu()">Nav</button>
+    </header>
+    
+    <header id="desktop_header">
+        <button class = "desktop_header_button" onclick="section(0)" id="name_button">Jamie Bort</button>
+        <!-- <button id="nav_button" onclick="toggleMenu()">Nav</button> -->
+        <button class = "desktop_header_button" onclick="section(1)">Bio</button>
+        <button class = "desktop_header_button" onclick="section(2)">Projects</button>
+        <button class = "desktop_header_button" onclick="section(3)">Connect with Me</button>
+    </header>
+    
+    <div id="content" style="position: relative;"> 
+    <!-- <div id="content">  -->
 
-    <!-- <div class="page"> -->
-        <header id="mobile_header">
-            <button class = "mobile_header_button" id="name_button" onclick="section(0)">Jamie Bort</button>
-            <button class = "mobile_header_button" id="nav_toggle_button" onclick="toggleFunction()">Nav</button>
-        </header>
-        <header id="desktop_header">
-            <button class = "desktop_header_button" id="name_button" onclick="section(0)">Jamie Bort</button>
-            <!-- <button id="nav_button" onclick="toggleFunction()">Nav</button> -->
-            <button class = "desktop_header_button" id="name_button" onclick="section(1)">Bio</button>
-            <button class = "desktop_header_button" id="name_button" onclick="section(2)">Projects</button>
-            <button class = "desktop_header_button" id="name_button" onclick="section(3)">Connect with Me</button>
-        </header>
+        <!-- <nav id="menu" style="display: none; position: fixed; top: 2.4rem;"> -->
 
+        <nav id="menu" style="display: none;">
+            <!-- <nav id="menu"> -->
+        <!-- <nav id="menu" style="display: none; position: absolute;"> -->
+            <!-- <span>Navigation Menu</span> -->
+            <button onclick="section(1)">Bio</button>
+            <button onclick="section(2)">Projects</button>
+            <button onclick="section(3)">Connect with Me</button>
+        </nav>
 
-        <!-- <nav id="menu" style="display: none;">
-            <span>Navigation Menu</span>
-            <button onclick="section(1)">section_01</button>
-            <button onclick="section(2)">section_02</button>
-            <button onclick="section(3)">section_03</button>
-            <button onclick="section(4)">section_04</button>
-        </nav> -->
-        <div id="content" style="position: relative;"> 
-        <!-- <div id="content">  -->
-            <nav id="menu" style="display: none; position: fixed; top: 2.4rem;">
-            <!-- <nav id="menu" style="display: none; position: absolute;"> -->
-                <span>Navigation Menu</span>
-                <button onclick="section(1)">Bio</button>
-                <button onclick="section(2)">Projects</button>
-                <button onclick="section(3)">Connect with Me</button>
-            </nav>
-            <h1 id="top">Software Engineer</h1>
+        <h1 id="top">Software Engineer</h1>
 
-            <section id="section01"> 
-                <h2>Bio</h2>
-                <p class = "dummy_text">Sriracha small batch tousled Tumblr banh mi sartorial. Cosby sweater XOXO direct trade Austin meggings banjo. Wayfarers deep v tousled Schlitz shabby chic, Portland Truffaut Marfa aesthetic keffiyeh. Salvia retro tattooed sartorial polaroid. Selvage hella 3 wolf moon PBR pug, ugh Schlitz freegan keffiyeh raw denim jean shorts wayfarers roof party. Neutra Shoreditch iPhone, +1 brunch Echo Park XOXO slow-carb street art Vice Williamsburg tattooed forage. Butcher Godard ethical try-hard.</p>
-        
-                <p class = "dummy_text">Vegan blog Truffaut irony deep v Etsy. You probably haven't heard of them Schlitz chambray art party craft beer Echo Park mixtape, deep v fashion axe Wes Anderson twee McSweeney's DIY. Retro twee polaroid 3 wolf moon, Bushwick locavore organic skateboard keffiyeh Kickstarter Williamsburg sustainable Godard sartorial trust fund. Stumptown paleo put a bird on it VHS hella. Put a bird on it mixtape Godard, vegan farm-to-table letterpress chia hella. Meggings DIY freegan normcore gastropub blog. Dreamcatcher wolf kitsch biodiesel lomo jean shorts, pug fap Odd Future craft beer stumptown locavore cornhole put a bird on it salvia.</p>
-        
-                <p class = "dummy_text">Hoodie Truffaut chillwave PBR art party. Slow-carb literally readymade, tousled stumptown ennui trust fund seitan paleo blog typewriter vegan. 90's mixtape American Apparel, kale chips art party iPhone Etsy Neutra organic kogi direct trade typewriter. Aesthetic occupy Portland artisan craft beer fixie, Pinterest irony normcore letterpress. 8-bit craft beer seitan flexitarian, synth banh mi cardigan ethical High Life. Fixie whatever literally semiotics Helvetica 8-bit. Gluten-free tattooed Odd Future umami blog master cleanse, asymmetrical 8-bit yr.</p>
-        
-                <p class = "dummy_text">Tattooed gentrify asymmetrical twee, fashion axe normcore banh mi Etsy. Irony post-ironic kale chips readymade selfies art party, Marfa narwhal occupy before they sold out Thundercats. Banjo locavore 3 wolf moon artisan Marfa. XOXO church-key hella bitters, pour-over Blue Bottle wolf typewriter Carles. American Apparel umami twee locavore, blog hella artisan. Mixtape Shoreditch sriracha, organic before they sold out asymmetrical fashion axe ugh. Kale chips yr Pitchfork jean shorts Vice gentrify.</p>
-            </section>
-            
-            <section id="section02"> 
-                <h2>Projects</h2>
-                <p class = "dummy_text">Sriracha small batch tousled Tumblr banh mi sartorial. Cosby sweater XOXO direct trade Austin meggings banjo. Wayfarers deep v tousled Schlitz shabby chic, Portland Truffaut Marfa aesthetic keffiyeh. Salvia retro tattooed sartorial polaroid. Selvage hella 3 wolf moon PBR pug, ugh Schlitz freegan keffiyeh raw denim jean shorts wayfarers roof party. Neutra Shoreditch iPhone, +1 brunch Echo Park XOXO slow-carb street art Vice Williamsburg tattooed forage. Butcher Godard ethical try-hard.</p>
-        
-                <p class = "dummy_text">Vegan blog Truffaut irony deep v Etsy. You probably haven't heard of them Schlitz chambray art party craft beer Echo Park mixtape, deep v fashion axe Wes Anderson twee McSweeney's DIY. Retro twee polaroid 3 wolf moon, Bushwick locavore organic skateboard keffiyeh Kickstarter Williamsburg sustainable Godard sartorial trust fund. Stumptown paleo put a bird on it VHS hella. Put a bird on it mixtape Godard, vegan farm-to-table letterpress chia hella. Meggings DIY freegan normcore gastropub blog. Dreamcatcher wolf kitsch biodiesel lomo jean shorts, pug fap Odd Future craft beer stumptown locavore cornhole put a bird on it salvia.</p>
-        
-                <p class = "dummy_text">Hoodie Truffaut chillwave PBR art party. Slow-carb literally readymade, tousled stumptown ennui trust fund seitan paleo blog typewriter vegan. 90's mixtape American Apparel, kale chips art party iPhone Etsy Neutra organic kogi direct trade typewriter. Aesthetic occupy Portland artisan craft beer fixie, Pinterest irony normcore letterpress. 8-bit craft beer seitan flexitarian, synth banh mi cardigan ethical High Life. Fixie whatever literally semiotics Helvetica 8-bit. Gluten-free tattooed Odd Future umami blog master cleanse, asymmetrical 8-bit yr.</p>
-        
-                <p class = "dummy_text">Tattooed gentrify asymmetrical twee, fashion axe normcore banh mi Etsy. Irony post-ironic kale chips readymade selfies art party, Marfa narwhal occupy before they sold out Thundercats. Banjo locavore 3 wolf moon artisan Marfa. XOXO church-key hella bitters, pour-over Blue Bottle wolf typewriter Carles. American Apparel umami twee locavore, blog hella artisan. Mixtape Shoreditch sriracha, organic before they sold out asymmetrical fashion axe ugh. Kale chips yr Pitchfork jean shorts Vice gentrify.</p>
-            </section>
-            
-            <section id="section03"> 
-                <h2>Connect with Me</h2>
-                <p class = "dummy_text">Sriracha small batch tousled Tumblr banh mi sartorial. Cosby sweater XOXO direct trade Austin meggings banjo. Wayfarers deep v tousled Schlitz shabby chic, Portland Truffaut Marfa aesthetic keffiyeh. Salvia retro tattooed sartorial polaroid. Selvage hella 3 wolf moon PBR pug, ugh Schlitz freegan keffiyeh raw denim jean shorts wayfarers roof party. Neutra Shoreditch iPhone, +1 brunch Echo Park XOXO slow-carb street art Vice Williamsburg tattooed forage. Butcher Godard ethical try-hard.</p>
-        
-                <p class = "dummy_text">Vegan blog Truffaut irony deep v Etsy. You probably haven't heard of them Schlitz chambray art party craft beer Echo Park mixtape, deep v fashion axe Wes Anderson twee McSweeney's DIY. Retro twee polaroid 3 wolf moon, Bushwick locavore organic skateboard keffiyeh Kickstarter Williamsburg sustainable Godard sartorial trust fund. Stumptown paleo put a bird on it VHS hella. Put a bird on it mixtape Godard, vegan farm-to-table letterpress chia hella. Meggings DIY freegan normcore gastropub blog. Dreamcatcher wolf kitsch biodiesel lomo jean shorts, pug fap Odd Future craft beer stumptown locavore cornhole put a bird on it salvia.</p>
-        
-                <p class = "dummy_text">Hoodie Truffaut chillwave PBR art party. Slow-carb literally readymade, tousled stumptown ennui trust fund seitan paleo blog typewriter vegan. 90's mixtape American Apparel, kale chips art party iPhone Etsy Neutra organic kogi direct trade typewriter. Aesthetic occupy Portland artisan craft beer fixie, Pinterest irony normcore letterpress. 8-bit craft beer seitan flexitarian, synth banh mi cardigan ethical High Life. Fixie whatever literally semiotics Helvetica 8-bit. Gluten-free tattooed Odd Future umami blog master cleanse, asymmetrical 8-bit yr.</p>
-        
-                <p class = "dummy_text">Tattooed gentrify asymmetrical twee, fashion axe normcore banh mi Etsy. Irony post-ironic kale chips readymade selfies art party, Marfa narwhal occupy before they sold out Thundercats. Banjo locavore 3 wolf moon artisan Marfa. XOXO church-key hella bitters, pour-over Blue Bottle wolf typewriter Carles. American Apparel umami twee locavore, blog hella artisan. Mixtape Shoreditch sriracha, organic before they sold out asymmetrical fashion axe ugh. Kale chips yr Pitchfork jean shorts Vice gentrify.</p>
-            </section>
+        <section id="section01"> 
+            <h2>A little bit about myself</h2>
+            <p class = "section_p">A little something about me.</p>
+        </section>
 
-        </div>
-
-        <footer class="page-footer">
-            &copy
-            <span id="copyright"></span>
-        </foot>
-
-      <!-- </div> -->
-
-      <script>
-
-        // ToDo: use JavaScript to name section_01, section01, and Bio, as only Bio in one location.
+        <hr style="border-top: 1px solid gray;">
         
-        // *************************
-        // *************************
-        // for the navigation button
-        function toggleFunction(){
-            console.log("inside the toggleFunction function");
-            var element = document.getElementById('menu');
-            if(element.style.display === "none"){
-                element.style.display = "block";
-            }else{
-                element.style.display = "none";
-            }
-        };
+        <section id="section02"> 
+            <h2>Projects I have completed or am working on</h2>
+            <p class = "section_p">A little something about my projects.</p>
+            <div id="card_container">
+                <div class="card">
+                    <h3>Card title - pull from github repo</h3>
+                    <p>About the project - pull from github repo. The purpose of this directory is to house all the code I write as I learn new technologies and hone my skills. This is to help keep my GitHub account organized.</p>
+                    <p class = "technology_p">Technologies used - pull from github repo. JavaScript</p>
+                </div>
+                <div class="card">
+                    <h3>Card title - pull from github repo</h3>
+                    <p>About the project - pull from github repo. A website for displaying important daily data. Such as blood glucose numbers and upcoming events. By using API calls, databases, authentication, etc.</p>
+                    <p class = "technology_p">Technologies used - pull from github repo. JavaScript</p>
+                </div>
+                <div class="card">
+                    <h3>Card title - pull from github repo</h3>
+                    <p>About the project - pull from github repo. My Portfolio Website. This is where I share a bit about myself, showcase what I've been working on, host my blog, and more.</p>
+                    <p class = "technology_p">Technologies used - pull from github repo. JavaScript</p>
+                </div></div>
+        </section>
 
-        function section(param){
-            // console.log("param:", param)
-            if(param>0) window.location = '#section0'+param;
-            else window.location = '#top'; 
+        <hr style="border-top: 1px solid gray;">
+        
+        <section id="section03"> 
+            <h2>Connect with Me</h2>
+            <p class = "section_p">Ways we can connect.</p>
+            <div id = "connect_container">
+
+                <a class = "connect_a" href="https://www.linkedin.com/in/jamie-bort/" target="_blank">
+                    <img class="connect_img" src="../assets/images/LinkedIn.png">
+                </a>
+                <a class = "connect_a" href="https://github.com/JamieBort" target="_blank">
+                    <img class="connect_img"
+                        src="../assets/images/GitHub.png">
+                </a>
+                <a class = "connect_a" href="https://twitter.com/jamiebort" target="_blank">
+                    <img class="connect_img" src="../assets/images/Twitter.png">
+                </a>
+                <a class = "connect_a" href="https://stackoverflow.com/users/8210460/jamie-bort" target="_blank">
+                    <img class="connect_img"
+                        src="../assets/images/StackOverflow.png">
+                </a>
+                <a class = "connect_a" href="./contact_form.html">
+                    <img class="connect_img"
+                        src="../assets/images/Email.png">
+                </a>
+
+                <!-- ****** A anchor to a coding challenge website ****** -->
+                <!-- <a class = "connect_a" href="../html/contact_form.html" target="_blank">
+                    <img class="connect_img"
+                        src="../assets/Email/FAVPNG_email-box-clip-art_W0UEsKSp.png">
+                </a> -->
+
+                <!-- <div class = "connect_div">
+                    <a class = "connect_a">
+                        <img class="connect_img" src="./../pre-Revamp2023/jamiebort.github.io/assets/LinkedIn/clipart1055005.png">icon
+                    </a>
+                </div>
+                <div class = "connect_div">
+                    <a class = "connect_a">
+                        <img class="connect_img">icon
+                    </a>
+                </div>
+                <div class = "connect_div">
+                    <a class = "connect_a">
+                        <img class="connect_img">icon
+                    </a>
+                </div> -->
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>&copy<span id="copyright"></span>
+    </foot>
+
+    <script>
+
+    // ToDo: use JavaScript to name section_01, section01, and Bio, as only Bio in one location.
+    
+    // *************************
+    // for the navigation 
+    // *************************
+
+    // this toggles the hidden nav window to appear or disappear
+    function toggleMenu(){
+        console.log("inside the toggleMenu function");
+        var element = document.getElementById('menu');
+        if(element.style.display === "none"){
+            element.style.display = "block";
+        }else{
+            // element.style.display = "none";
+            closeMenu();
         }
+    };
 
-        // for when the user taps off of the navigation menue, it needs to close
-        function modifyText() {
-            console.log("event listener firing");
-            var element = document.getElementById('menu');
-            element.style.display = "none";
-        }
-        
-        // Add event listener to page.
-        const el = document.getElementById("content");
-        el.addEventListener("click", modifyText, false); // why false? --> "A boolean value indicating that the listener should be invoked at most once after being added. If true, the listener would be automatically removed when invoked. If not specified, defaults to false."
-        // *************************
-        // *************************
+    // this navigates to a specific section of the page
+    function section(param){
+        // console.log("param:", param)
+        if(param>0) window.location = '#section0'+param;
+        else window.location = '#top'; 
+    }
 
-        // For the footer
-        const copyright = document.getElementById('copyright');
-        if(new Date().getFullYear()) var date = new Date().getFullYear();
-        else var date = "2023";
-        document.getElementById('copyright').appendChild(document.createTextNode(date));
+    // for when the user taps off of the navigation menu, the navigation menu needs to close
+    function closeMenu() {
+        console.log("event listener firing");
+        var element = document.getElementById('menu');
+        element.style.display = "none";
+    }
+    
+    // Add event listener to page.
+    const el = document.getElementById("content");
+    el.addEventListener("click", closeMenu, false); // why false? --> "A boolean value indicating that the listener should be invoked at most once after being added. If true, the listener would be automatically removed when invoked. If not specified, defaults to false."
 
-      </script>
+    function mobileHeaderButton(){
+        closeMenu();
+        section(0)
+    }
+
+    // *************************
+    // *************************
+
+    // For the footer
+    const copyright = document.getElementById('copyright');
+    if(new Date().getFullYear()) var date = new Date().getFullYear();
+    else var date = "2023";
+    document.getElementById('copyright').appendChild(document.createTextNode(date));
+
+    </script>
 
 </body>
 </html>
