@@ -52,13 +52,9 @@ The site shall:
     		|
     		+-- Revamp2023
     			|
-    			+-- basic_framework - ~~Create the basic HTML and JavaScript needed for populating and navigating through the website.~~ Done. **DELETED**
-    			|
-    			+-- modify_basic_framework - For styling the website and adding the project cards. (Side note - consider having a more basic card that brings the user to a dedicated page. Or just a more simple card...) **DELETED**
-    			|
-    			+-- accessibility - For all accessibility implementation.
-    			|
     			+-- api - For all api related logic.
+    			|	|
+    			|	+-- api_github - For implementing api calls to GitHub.
     			|
     			+-- script - For all script related logic.
     			|
@@ -67,6 +63,8 @@ The site shall:
     			|	+-- tablet_breakpoint - For implementing a tablet breakpoint in the CSS file.
     			|	|
     			|	+-- desktop_breakpoint - For implementing desktop breakpoint in the CSS file.
+    			|
+    			+-- accessibility - For all accessibility implementation.
     			|
     			+-- other feature branches
 

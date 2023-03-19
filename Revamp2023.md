@@ -6,6 +6,16 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 **Note - all the following has been completed in the `Revamp2023` branch.**
 
+- Done.
+
+  > General housekeeping
+
+  > > Modify the https://github.com/JamieBort/jamiebort.github.io/tree/basic_framework#branch-structure, https://github.com/JamieBort/jamiebort.github.io/tree/dev#branch-structure, https://github.com/JamieBort/jamiebort.github.io/tree/Revamp2023#branch-structure and sections to reflect the new branches.
+
+  > > Add the `Revamp2023.md` file to the `dev` branch. Add it to the `master` branch too.
+
+  > > > So that as I/someone looks at the master branch they know the status of this project.
+
 - Done
 
   > Delete the ~~Close out this~~ `basic_framework` branch.
@@ -98,33 +108,22 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 - Other tasks to address; in a different branch.:
 
-  - General housekeeping
-
-    - Modify the https://github.com/JamieBort/jamiebort.github.io/tree/basic_framework#branch-structure, https://github.com/JamieBort/jamiebort.github.io/tree/dev#branch-structure, https://github.com/JamieBort/jamiebort.github.io/tree/Revamp2023#branch-structure and sections to reflect the new branches.
-    - Add the `Revamp2023.md` file to the `dev` branch. ~~Maybe add~~ Add it to the `master` branch too.
-
-      So that as I/someone looks at the master branch they know the status of this project.
-
-  - Address the `ToDo` item in the `<script>` tag in the index.html file.
-
-    **Create a new branch for this.**
-
   - API related tasks
 
     - Create an `api` branch.
+    - Create an `api_github` branch.
     - Make api call to github for my project info.
     - Consolidate and organize ALL Trello cards with
       - `API` in the Title.
       - and that come up when searching for `API`
 
-  - Make my website accessible.
-
-    - Create an `accessibility` branch.
-    - Modify the `<img>`, `<a>`, `<button>`, `<nav>`, and other tags for assistive screen readers.
-
   - Working on the Project Cards.
 
     Use this https://css-tricks.com/aspect-ratio-boxes/
+
+    **Create a new branch for this.**
+
+  - Address the `ToDo` item in the `<script>` tag in the index.html file.
 
     **Create a new branch for this.**
 
@@ -137,3 +136,19 @@ This file is for keeping track of the `Status` and the tasks that need to be com
     - Create an `desktop_breakpoint` branch inside the new `breakpoint` branch.
 
   - Do not delete the `Revamp2020` branch until I delete the `Revamp2023` branch
+
+  - Make my website accessible.
+
+    - **This should be done once all of the content has been added.**
+    - Create an `accessibility` branch.
+    - Modify the `<img>`, `<a>`, `<button>`, `<nav>`, and other tags for assistive screen readers.
+
+  - Once the `Revamp2023` branch has been merged into the `dev` branch delete
+
+    - the `Revamp2020` branch,
+    - the `branch_for_cleaning_before_pushing_to_master` branch,
+    - the `old_styes.css` file,
+    - the `./html/old_index.html`, file,
+    - and the pre-Revamp2023/ directory,
+
+    Go through them each to make sure I will not be losing anything valuable.
