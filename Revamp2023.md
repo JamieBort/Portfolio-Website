@@ -4,6 +4,16 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ## Status
 
+**Note - all the following has been completed in the `content_20230328` branch.**
+
+- Done.
+
+  > Create a `content` branch.
+
+  > Create a `content_20230328` branch.
+
+  > Comment out the email button and possibly disable the logic of the email contact form (until I fix the functionality of the contact me form).
+
 **Note - all the following has been completed in the `host_routed_react_gh-pages_with_graphql_api_call` branch.**
 
 - Done. Attempted to see if I could make API calls using the hosted React app while hosted by gh-pages.
@@ -161,12 +171,6 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 ### Next Steps
 
 - for the `content_20230328` branch.
-
-  - Create a `content` branch.
-
-  - Create a `content_20230328` branch.
-
-  - Comment out the email button and possibly disable the logic of the email contact form (until I fix the functionality of the contact me form).
 
   - Add content to the `Bio` section.
 
