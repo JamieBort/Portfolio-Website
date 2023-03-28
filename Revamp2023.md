@@ -160,6 +160,20 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ### Next Steps
 
+- for the `content_20230328` branch.
+
+  - Create a `content` branch.
+
+  - Create a `content_20230328` branch.
+
+  - Comment out the email button and possibly disable the logic of the email contact form (until I fix the functionality of the contact me form).
+
+  - Add content to the `Bio` section.
+
+  - Add content to the `Projects` section.
+
+  - Add content to the `Connect with Me` section.
+
 - Other tasks to address; in a different branch.:
 
   - API related tasks
@@ -174,9 +188,17 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     **Create a new branch for this.**
 
-  - Address the `ToDo` item in the `<script>` tag in the index.html file.
+  - All JavaScript
 
     **Create a new branch for this.**
+
+    - Address the `ToDo` item in the `<script>` tag in the index.html file.
+
+      **Create a new branch for this.**
+
+    - Fix the functionality of the contact me form.
+
+      **Create a new branch for this.**
 
   - When the above is complete, write CSS for tablet breakpoint.
 
@@ -194,7 +216,7 @@ This file is for keeping track of the `Status` and the tasks that need to be com
     - Create an `accessibility` branch.
     - Modify the `<img>`, `<a>`, `<button>`, `<nav>`, and other tags for assistive screen readers.
 
-  - Once the `Revamp2023` branch has been merged into the `dev` branch delete
+  - Once the `Revamp2023` branch has been merged into the `dev` branch, delete
 
     - the `Revamp2020` branch,
     - the `branch_for_cleaning_before_pushing_to_master` branch,
@@ -205,6 +227,10 @@ This file is for keeping track of the `Status` and the tasks that need to be com
     Go through them each to make sure I will not be losing anything valuable.
 
     Each one should (now) be in the `./jamiebort.github.io/old/` directory.
+
+    **Create a new branch for this.**
+
+    Also prune or generally clean up all the old branches.
 
   - Remove the Workflow from
 

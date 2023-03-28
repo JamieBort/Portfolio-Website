@@ -53,6 +53,8 @@ The site shall:
     		+-- Revamp2023
     			|
     			+-- content - For adding content.
+    			|	|
+    			|	+-- content_20230328 - Content updated as of content_20230328.
     			|
     			+-- host - For all things host related.
     			|	|
