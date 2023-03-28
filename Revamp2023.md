@@ -203,3 +203,9 @@ This file is for keeping track of the `Status` and the tasks that need to be com
     - and the pre-Revamp2023/ directory,
 
     Go through them each to make sure I will not be losing anything valuable.
+
+    Each one should (now) be in the `./jamiebort.github.io/old/` directory.
+
+  - Remove the Workflow from
+
+    https://github.com/JamieBort/jamiebort.github.io/tree/master/.github/workflows

@@ -52,6 +52,8 @@ The site shall:
     		|
     		+-- Revamp2023
     			|
+    			+-- content - For adding content.
+    			|
     			+-- host - For all things host related.
     			|	|
     			|	+-- host_routed_react_gh-pages - To determine if we can run a react app in gh-pages. If so, we'll make a GraphQL call.
