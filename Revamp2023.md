@@ -4,6 +4,60 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ## Status
 
+**Note - all the following has been completed in the `host_routed_react_gh-pages_with_graphql_api_call` branch.**
+
+- Done. Attempted to see if I could make API calls using the hosted React app while hosted by gh-pages.
+
+  To that end, I was going to use GitHubPinnedRepositoriesReactNextJsGitHubGraphQLAPI https://github.com/JamieBort/API-Playground/tree/main/GitHubPinnedRepositoriesReactNextJsGitHubGraphQLAPI/my-pinned-repos
+
+  However I wasn't able to access the github secret using GitHub Actions. See https://github.com/JamieBort/GitHub-Actions-Learning-repo
+
+  **I will table this task for now.** And will focus on rebuilding the site WITHOUT making an API call.
+
+  > API related tasks
+
+  - Make api call to github for my project info.
+
+    Start with this https://github.com/JamieBort/API-Playground/tree/main/GitHubPinnedRepositoriesReactNextJsGitHubGraphQLAPI
+
+    Then attempt to do the same with vanilla JavaScript.
+
+    For example: [github REST API v3 Crash Course with Vanilla Javascript (No dependencies)](https://www.youtube.com/watch?v=5QlE6o-iYcE) YouTube video.
+
+    And [GitHub REST APIs with vanilla JavaScript](https://raajnadar.medium.com/github-rest-apis-with-vanilla-javascript-63f568814b8d) tutorial.
+
+    **Findings**
+
+    Not able to make a rest api call to the pinned items. There is not an endpoint for this. Therefore I need to make a GraphQL call for that info.
+
+    Furthermore I need to authenticate for that info.
+
+    Which means I need use environment variables.
+
+    Which means I need to learn how to host the page on Gh-pages with environment variables.
+
+    This is a second step - first get it working locally.
+
+    To that end, see ~~WorkingWithGraphQLusingVanillaJS in https://github.com/JamieBort/API-Playground#directories~~ GitHubPinnedRepositoriesReactNextJsGitHubGraphQLAPI https://github.com/JamieBort/API-Playground/tree/main/GitHubPinnedRepositoriesReactNextJsGitHubGraphQLAPI/my-pinned-repos
+
+    Now that I am going to use this "Add GitHub Pinned Repositories to React & Next.js with the GitHub GraphQL API" YouTube video, **I am going to switch branches and make sure I can host a React site in gh-pages**.
+
+    This is working: https://github.com/JamieBort/react-gh-pages-tutorial
+
+    And this will suite me better since I'll have navigation: https://github.com/JamieBort/routed-react-app-gh-pages
+
+**Note - all the following has been completed in the `api_github` branch.**
+
+- Done.
+
+  > Create an `api_github` branch.
+
+**Note - all the following has been completed in the `api` branch.**
+
+- Done.
+
+  > Create an `api` branch.
+
 **Note - all the following has been completed in the `Revamp2023` branch.**
 
 - Done.
@@ -110,9 +164,6 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
   - API related tasks
 
-    - Create an `api` branch.
-    - Create an `api_github` branch.
-    - Make api call to github for my project info.
     - Consolidate and organize ALL Trello cards with
       - `API` in the Title.
       - and that come up when searching for `API`

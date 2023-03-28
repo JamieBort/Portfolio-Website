@@ -52,6 +52,12 @@ The site shall:
     		|
     		+-- Revamp2023
     			|
+    			+-- host - For all things host related.
+    			|	|
+    			|	+-- host_routed_react_gh-pages - To determine if we can run a react app in gh-pages. If so, we'll make a GraphQL call.
+    			|		|
+    			|		+-- host_routed_react_gh-pages_with_graphql_api_call - To see if I can make API calls using the a React app while hosted by gh-pages. **Tabled for now**
+    			|
     			+-- api - For all api related logic.
     			|	|
     			|	+-- api_github - For implementing api calls to GitHub.
