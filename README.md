@@ -86,15 +86,13 @@ The site shall:
 
 - html/ - With the exception of `./index.html`, this directory contains all of the html files. And it contains only html files.
 
-- pre-Revamp2023/ - This directory was created when I created the `Revamp2023` branch. It contains the contents of the `jamiebort.github.io` directory at the point of when the `Revamp2023` branch was created.
+- old/ - Contains files and directories that are no longer used. But are not ready to be deleted.
 
 #### Files
 
 - .gitignore - Specifies intentionally untracked files. See https://git-scm.com/docs/gitignore
 
 - index.html - The landing page. This links to `./html/index.html`.
-
-- old_styes.css - The previous stylesheet. `./html/old_index.html` links to it. Renamed because I rebuilt the index file and I wasn't ready to delete the old one yet.
 
 - README.md - This readme file.
 
