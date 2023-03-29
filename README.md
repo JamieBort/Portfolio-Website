@@ -46,15 +46,15 @@ The site shall:
 
 ### Branch Structure
 
-    +-- master
+    +-- master - The live branch.
     	|
-    	+-- dev
+    	+-- dev - The development branch
     		|
-    		+-- Revamp2023
+    		+-- Revamp2023 - The branch created to update the website in 2023.
     			|
     			+-- content - For adding content.
     			|	|
-    			|	+-- content_20230328 - Content updated as of content_20230328.
+    			|	+-- content_20230328 - Content updated as of 20230328.
     			|
     			+-- host - For all things host related.
     			|	|

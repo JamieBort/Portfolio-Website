@@ -67,7 +67,7 @@ document.getElementById('copyright').appendChild(document.createTextNode(date));
 //                  pinned project 
 // **************************************************
 
-// generated from the following using https://docs.github.com/en/graphql/overview/explorer
+// pinnedProjects (below) was generated from the following using https://docs.github.com/en/graphql/overview/explorer
 
 //     {
 //   user(login: "jamiebort") {
@@ -98,6 +98,11 @@ document.getElementById('copyright').appendChild(document.createTextNode(date));
 //   }
 // }
 
+const collectionOfIcons=[];
+
+// switch statement for collectionOfIcons and 
+
+// In the future, this pinnedProjects object will be pulled in from an GraphQL API call to GitHub.
 const pinnedProjects = 
 {
 "data": {
@@ -312,6 +317,7 @@ const pinnedProjects =
 }
 }
 
+// Creating each project card from the pinnedProjects object.
 const returnValue = pinnedProjects.data.user.pinnedItems.edges.map((value)=>{
   const languages = value.node.languages.edges.map((value)=>value.node.name);
   return {description:value.node.description,
@@ -321,49 +327,7 @@ const returnValue = pinnedProjects.data.user.pinnedItems.edges.map((value)=>{
    };
 })
 
-// I want
-// [
-//   {
-//     name: "",
-//     description:"",
-//     url: "",
-//     languages:[
-//       language1,
-//       language2,
-//       language3,
-//       language4,
-//       language5,
-//     ]
-//   },
-//   {
-//     name: "",
-//     description:"",
-//     url: "",
-//     languages:[
-//       language1,
-//       language2,
-//       language3,
-//       language4,
-//       language5,
-//     ]
-//   },
-// ]
-
-// get the div by id: card_container
-// for each pinned project:
-// create a <div>
-// give the div a class=card
-// create a <h3>
-// Insert the title into the <h3>
-// create a first <p>
-// Insert the description into the first <p>
-// create a second <p>
-// Insert the technologies into the second <p>
-// append the <div> to the card_container.
-// append the <h3> to the div.
-// append the first <p> to the div.
-// append the second <p> to the div.
-
+// Creating each project card from the returnValue array.
 returnValue.forEach(project=>{
   // console.log("project.description:",project.description);
   // console.log("project.url:",project.url);
@@ -371,12 +335,8 @@ returnValue.forEach(project=>{
 
   const card_container = document.getElementById("card_container");
 
-  const div_tag = document.createElement("div");
-  div_tag.setAttribute("class", "card");
-
-  const a_tag = document.createElement("a");
-  a_tag.setAttribute("target", "_blank");
-  a_tag.setAttribute("href", project.url);
+  const div1_tag = document.createElement("div");
+  div1_tag.setAttribute("class", "card");
 
   const h3_tag = document.createElement("h3");
   h3_tag.innerHTML = project.name;
@@ -384,20 +344,74 @@ returnValue.forEach(project=>{
   const p1_tag = document.createElement("p");
   p1_tag.innerHTML = project.description;
 
-  const span_tag = document.createElement("span");
-  // span_tag.innerHTML = "languages in p2";
+  const div2_tag = document.createElement("div");
+  div2_tag.setAttribute("style", "font-size:2.25em; display: flex; justify-content: space-around;"); // Maybe move this to styles.
 
+  // Listing the languages each repo uses.
   project.languages.forEach((language)=>{
-    // console.log(language);
-    const p_tag = document.createElement("p");
-    p_tag.innerHTML = language;
-    span_tag.appendChild(p_tag);
+    // console.log("language:",language);
+    
+  // const i_tag = document.createElement("i");
+
+  const span_tag = document.createElement("span");
+
+    switch (language) {
+      case "JavaScript":
+        span_tag.setAttribute("class", "fab fa-js-square");
+        div2_tag.appendChild(span_tag);
+        break;
+        case "Java":
+          span_tag.setAttribute("class", "fab fa-java");
+          div2_tag.appendChild(span_tag);
+          break;
+      case "HTML":
+        span_tag.setAttribute("class", "fab fa-html5");
+        div2_tag.appendChild(span_tag);
+        break;
+      case "CSS":
+        span_tag.setAttribute("class", "fab fa-css3-alt");
+        div2_tag.appendChild(span_tag);
+        break;
+      // case "NODE":
+      //   // console.log("language: NODE");
+      //   span1_tag.innerHTML = language;
+      //   div2_tag.appendChild(span1_tag);
+      //   break;
+      // case "Mustache":
+      //   // console.log("language: Mustache");
+      //   span1_tag.innerHTML = language;
+      //   div2_tag.appendChild(span1_tag);
+      //   break;
+      default:
+        console.log("other:",language);
+        // span_tag.innerHTML = language;
+        // div2_tag.appendChild(span_tag);
+        break;
+    }
+
   })
 
-  card_container.appendChild(div_tag);
-  div_tag.appendChild(a_tag);
-  a_tag.appendChild(h3_tag);
-  a_tag.appendChild(p1_tag);
-  a_tag.appendChild(span_tag);
+  // Link to repo.
+  const a_tag1 = document.createElement("a");
+  a_tag1.setAttribute("target", "_blank");
+  a_tag1.setAttribute("href", project.url);
+  a_tag1.setAttribute("style", "display: inline-block; width: 100%; text-align:center;"); // Maybe move this to styles.
+  a_tag1.innerHTML = "GitHub Repo";
+
+  // // Link to live site - if it exists.
+  // const a_tag2 = document.createElement("a");
+  // a_tag1.setAttribute("target", "_blank");
+  // a_tag1.setAttribute("href", project.url);
+  // a_tag1.innerHTML = "GitHub Repo";
+
+  card_container.appendChild(div1_tag);
+  div1_tag.appendChild(h3_tag);
+  div1_tag.appendChild(p1_tag);
+  div1_tag.appendChild(div2_tag);
+  div1_tag.appendChild(a_tag1);
+  // div1_tag.appendChild(a_tag2); // Append the link to live site to the div.
 
 });
+
+// **************************************************
+// **************************************************

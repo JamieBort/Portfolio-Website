@@ -2,8 +2,14 @@
 
 For the static resources.
 
-Directories
+### Directories and Files
 
-fonts
+#### Directories
 
-images
+- fonts
+
+- images
+
+#### Files
+
+- README.md - This readme file.

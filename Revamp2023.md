@@ -178,6 +178,14 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
   - Add content to the `Connect with Me` section.
 
+  - Refactor the JavaScript to clean it up.
+
+  - Clean up the styling.
+
+  - Clean up the files:
+
+    - Remove commented code and notes.
+
 - Other tasks to address; in a different branch.:
 
   - API related tasks

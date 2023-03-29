@@ -2,7 +2,8 @@
     font-family: Tinos;
     font-weight: 400;
     font-style: normal;
-    src: url(./assets/fonts/Tinos/Tinos-Regular.ttf);
+    src: url(./assets/fonts/GoogleFonts/Tinos/Tinos-Regular.ttf);
+    /* src: url(./assets/fonts/Tinos/Tinos-Regular.ttf); */
     /* src: local('Delicious'), local('Delicious'), url(Delicious-Roman.otf) format('opentype'); */
   }
 
@@ -166,7 +167,7 @@ nav span, nav button {
 
 .connect_img {
         /* background-color: pink; */
-    max-width: 8em;
+    max-width: 6em;
     /* min-width: 4em; */
     padding: 1em;
 }

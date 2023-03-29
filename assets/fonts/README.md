@@ -1,3 +1,13 @@
 # fonts
 
-Right now, just the Tinos font family from https://fonts.google.com/specimen/Tinos
+### Directories and Files
+
+#### Directories
+
+- FontAwesome/
+
+- GoogleFonts/
+
+#### Files
+
+- README.md - This readme file.
