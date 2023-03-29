@@ -312,8 +312,14 @@ const pinnedProjects =
 }
 }
 
-const projects=[];
-pinnedProjects.data.user.pinnedItems.edges.map((project)=>projects.push(project));
+const returnValue = pinnedProjects.data.user.pinnedItems.edges.map((value)=>{
+  const languages = value.node.languages.edges.map((value)=>value.node.name);
+  return {description:value.node.description,
+    url:value.node.url,
+    name:value.node.name,
+    languages:languages,
+   };
+})
 
 // I want
 // [
@@ -343,21 +349,6 @@ pinnedProjects.data.user.pinnedItems.edges.map((project)=>projects.push(project)
 //   },
 // ]
 
-// console.log(projects);
-// console.log(projects[0].node);
-
-// console.log("The length of pinnedProjects.data.user.pinnedItems.edges:", pinnedProjects.data.user.pinnedItems.edges.length)
-
-projects.forEach(element=>{
-  console.log("========");
-  // console.log(element.node.name);
-  // console.log(element.node.url);
-  // console.log(element.node.description);
-  console.log(element.node.languages);
-  console.log("Length of element.node.languages.edges:",element.node.languages.edges.length);
-  console.log(element.node.languages.edges[0].node.name);
-});
-
 // get the div by id: card_container
 // for each pinned project:
 // create a <div>
@@ -373,7 +364,10 @@ projects.forEach(element=>{
 // append the first <p> to the div.
 // append the second <p> to the div.
 
-projects.forEach(element=>{
+returnValue.forEach(project=>{
+  // console.log("project.description:",project.description);
+  // console.log("project.url:",project.url);
+  // console.log("project.languages:",project.languages);
 
   const card_container = document.getElementById("card_container");
 
@@ -382,21 +376,28 @@ projects.forEach(element=>{
 
   const a_tag = document.createElement("a");
   a_tag.setAttribute("target", "_blank");
-  a_tag.setAttribute("href", element.node.url);
+  a_tag.setAttribute("href", project.url);
 
   const h3_tag = document.createElement("h3");
-  h3_tag.innerHTML = element.node.name;
+  h3_tag.innerHTML = project.name;
 
   const p1_tag = document.createElement("p");
-  p1_tag.innerHTML = element.node.description;
+  p1_tag.innerHTML = project.description;
 
-  const p2_tag = document.createElement("p");
-  p2_tag.innerHTML = "languages in p2";
+  const span_tag = document.createElement("span");
+  // span_tag.innerHTML = "languages in p2";
+
+  project.languages.forEach((language)=>{
+    // console.log(language);
+    const p_tag = document.createElement("p");
+    p_tag.innerHTML = language;
+    span_tag.appendChild(p_tag);
+  })
 
   card_container.appendChild(div_tag);
   div_tag.appendChild(a_tag);
   a_tag.appendChild(h3_tag);
   a_tag.appendChild(p1_tag);
-  a_tag.appendChild(p2_tag);
+  a_tag.appendChild(span_tag);
 
 });
