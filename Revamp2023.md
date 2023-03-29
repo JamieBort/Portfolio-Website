@@ -172,15 +172,25 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 - for the `content_20230328` branch.
 
-  - Add content to the `Bio` section.
+  - Add content to the `Bio` section. Done.
 
-  - Add content to the `Projects` section.
+  - Add content to the `Projects` section. Done.
 
-  - Add content to the `Connect with Me` section.
+  - Add content to the `Connect with Me` section. Done.
+
+  - Choose between the .pnp files for the `Connect with Me` icons. And the Font Awesome logos.
+
+    If I remain with the .pnp files, refactor to use fewer `<div>` tags.
 
   - Refactor the JavaScript to clean it up.
 
-  - Clean up the styling.
+  - Clean up the styling. Specifically
+
+    - The buttons in the `Bio` section.
+
+    - The `Code the Dream` link in the `Bio` section.
+
+    - The `GitHub Repo` link in the `Projects` section.
 
   - Clean up the files:
 

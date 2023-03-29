@@ -172,6 +172,28 @@ nav span, nav button {
     padding: 1em;
 }
 
+#fontAwesome{
+    /* background-color: lightsalmon; */
+    font-size: 7em; 
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    /* padding: 1em; */
+    /* margin: 2em; */
+    /* margin-top: 3em; */
+}
+
+.fontAwesome{
+    /* background-color: lightsalmon; */
+    /* font-size: 7em;  */
+    /* display: flex;  */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around;  */
+    /* padding: .25em; */
+    margin: .25em;
+    /* margin-top: 3em; */
+}
+
 footer {
     flex: 0 0 auto;
     text-align: center;
