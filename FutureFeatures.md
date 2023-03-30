@@ -8,7 +8,7 @@ Here is listed the things I plan on adding to or modifying in the repo.
 
 ### Head tag
 
-- Change `<head><title>Jamie Bort</title></head>` so that nothing but my logo shows up in the browser tab, including `Jamie Bort` and `index.html`.
+- Change `<head><title>Jamie Bort</title></head>` so that nothing but my logo shows up in the browser tab, including `Jamie Bort` and `index.html`. Or leave it alone - I like Jamie bort there.
 
 ### Styling/CSS
 

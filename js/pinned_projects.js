@@ -1,7 +1,7 @@
 // ./js/pinned_projects.js
 
 // **************************************************
-//                  pinned project 
+//                  pinned project
 // **************************************************
 
 // pinnedProjects (below) was generated from the following using https://docs.github.com/en/graphql/overview/explorer
@@ -36,232 +36,237 @@
 // }
 
 // In the future, this pinnedProjects object will be pulled in from an GraphQL API call to GitHub.
-const pinnedProjects = 
-{
-"data": {
-"user": {
-"pinnedItems": {
-  "totalCount": 6,
-  "edges": [
-    {
-      "node": {
-        "id": "MDEwOlJlcG9zaXRvcnkxNjI0Njg1MjA=",
-        "name": "LearningDirectory",
-        "url": "https://github.com/JamieBort/LearningDirectory",
-        "stargazerCount": 3,
-        "description": "The purpose of this directory is to house all the code I write as I learn new technologies and hone my skills. This is to help keep my GitHub account organized.",
-        "languages": {
-          "totalCount": 20,
-          "edges": [
-            {
-              "node": {
-                "name": "HTML"
-              }
+const pinnedProjects = {
+  data: {
+    user: {
+      pinnedItems: {
+        totalCount: 6,
+        edges: [
+          {
+            node: {
+              id: "MDEwOlJlcG9zaXRvcnkxNjI0Njg1MjA=",
+              name: "LearningDirectory",
+              url: "https://github.com/JamieBort/LearningDirectory",
+              stargazerCount: 3,
+              description:
+                "The purpose of this directory is to house all the code I write as I learn new technologies and hone my skills. This is to help keep my GitHub account organized.",
+              languages: {
+                totalCount: 20,
+                edges: [
+                  {
+                    node: {
+                      name: "HTML",
+                    },
+                  },
+                  {
+                    node: {
+                      name: "JavaScript",
+                    },
+                  },
+                  {
+                    node: {
+                      name: "CSS",
+                    },
+                  },
+                  {
+                    node: {
+                      name: "PHP",
+                    },
+                  },
+                  {
+                    node: {
+                      name: "Java",
+                    },
+                  },
+                  {
+                    node: {
+                      name: "Groovy",
+                    },
+                  },
+                ],
+              },
+              homepageUrl: null,
+              forkCount: 0,
             },
-            {
-              "node": {
-                "name": "JavaScript"
-              }
+          },
+          {
+            node: {
+              id: "MDEwOlJlcG9zaXRvcnkxNjI2NTg4ODM=",
+              name: "PersonalDashboard",
+              url: "https://github.com/JamieBort/PersonalDashboard",
+              stargazerCount: 0,
+              description:
+                "A website for displaying important daily data. Such as blood glucose numbers and upcoming events. By using API calls, databases, authentication, etc.",
+              languages: {
+                totalCount: 3,
+                edges: [
+                  {
+                    node: {
+                      name: "CSS",
+                    },
+                  },
+                  {
+                    node: {
+                      name: "HTML",
+                    },
+                  },
+                  {
+                    node: {
+                      name: "JavaScript",
+                    },
+                  },
+                ],
+              },
+              homepageUrl: "",
+              forkCount: 0,
             },
-            {
-              "node": {
-                "name": "CSS"
-              }
+          },
+          {
+            node: {
+              id: "MDEwOlJlcG9zaXRvcnk5NjcwOTAwNg==",
+              name: "jamiebort.github.io",
+              url: "https://github.com/JamieBort/jamiebort.github.io",
+              stargazerCount: 0,
+              description:
+                "My Portfolio Website. This is where I share a bit about myself, showcase what I've been working on, host my blog, and more.",
+              languages: {
+                totalCount: 4,
+                edges: [
+                  {
+                    node: {
+                      name: "CSS",
+                    },
+                  },
+                  {
+                    node: {
+                      name: "HTML",
+                    },
+                  },
+                  {
+                    node: {
+                      name: "JavaScript",
+                    },
+                  },
+                  {
+                    node: {
+                      name: "PHP",
+                    },
+                  },
+                ],
+              },
+              homepageUrl: "",
+              forkCount: 0,
             },
-            {
-              "node": {
-                "name": "PHP"
-              }
+          },
+          {
+            node: {
+              id: "MDEwOlJlcG9zaXRvcnkxMDg4MDk5NzM=",
+              name: "iPhysicist-CSSLayoutFlexbox",
+              url: "https://github.com/JamieBort/iPhysicist-CSSLayoutFlexbox",
+              stargazerCount: 0,
+              description:
+                "Finish the styling for the 'i Physicist' blog mockup. Skills using CSS, HTML, GitHub, Bash.",
+              languages: {
+                totalCount: 2,
+                edges: [
+                  {
+                    node: {
+                      name: "HTML",
+                    },
+                  },
+                  {
+                    node: {
+                      name: "CSS",
+                    },
+                  },
+                ],
+              },
+              homepageUrl: null,
+              forkCount: 0,
             },
-            {
-              "node": {
-                "name": "Java"
-              }
+          },
+          {
+            node: {
+              id: "MDEwOlJlcG9zaXRvcnkxMDg3NzA5MDQ=",
+              name: "PuppyLove",
+              url: "https://github.com/JamieBort/PuppyLove",
+              stargazerCount: 0,
+              description: "An exercise in styling with CSS.",
+              languages: {
+                totalCount: 3,
+                edges: [
+                  {
+                    node: {
+                      name: "HTML",
+                    },
+                  },
+                  {
+                    node: {
+                      name: "CSS",
+                    },
+                  },
+                  {
+                    node: {
+                      name: "JavaScript",
+                    },
+                  },
+                ],
+              },
+              homepageUrl: "",
+              forkCount: 0,
             },
-            {
-              "node": {
-                "name": "Groovy"
-              }
-            }
-          ]
-        },
-        "homepageUrl": null,
-        "forkCount": 0
-      }
+          },
+          {
+            node: {
+              id: "MDEwOlJlcG9zaXRvcnk5OTU3Mzc4MQ==",
+              name: "Create-A-User-Directory",
+              url: "https://github.com/JamieBort/Create-A-User-Directory",
+              stargazerCount: 0,
+              description:
+                "A directory using the Express framework and the Mustache-Express templating engine to implement MVC.",
+              languages: {
+                totalCount: 3,
+                edges: [
+                  {
+                    node: {
+                      name: "CSS",
+                    },
+                  },
+                  {
+                    node: {
+                      name: "JavaScript",
+                    },
+                  },
+                  {
+                    node: {
+                      name: "Mustache",
+                    },
+                  },
+                ],
+              },
+              homepageUrl: "",
+              forkCount: 0,
+            },
+          },
+        ],
+      },
     },
-    {
-      "node": {
-        "id": "MDEwOlJlcG9zaXRvcnkxNjI2NTg4ODM=",
-        "name": "PersonalDashboard",
-        "url": "https://github.com/JamieBort/PersonalDashboard",
-        "stargazerCount": 0,
-        "description": "A website for displaying important daily data. Such as blood glucose numbers and upcoming events. By using API calls, databases, authentication, etc.",
-        "languages": {
-          "totalCount": 3,
-          "edges": [
-            {
-              "node": {
-                "name": "CSS"
-              }
-            },
-            {
-              "node": {
-                "name": "HTML"
-              }
-            },
-            {
-              "node": {
-                "name": "JavaScript"
-              }
-            }
-          ]
-        },
-        "homepageUrl": "",
-        "forkCount": 0
-      }
-    },
-    {
-      "node": {
-        "id": "MDEwOlJlcG9zaXRvcnk5NjcwOTAwNg==",
-        "name": "jamiebort.github.io",
-        "url": "https://github.com/JamieBort/jamiebort.github.io",
-        "stargazerCount": 0,
-        "description": "My Portfolio Website. This is where I share a bit about myself, showcase what I've been working on, host my blog, and more.",
-        "languages": {
-          "totalCount": 4,
-          "edges": [
-            {
-              "node": {
-                "name": "CSS"
-              }
-            },
-            {
-              "node": {
-                "name": "HTML"
-              }
-            },
-            {
-              "node": {
-                "name": "JavaScript"
-              }
-            },
-            {
-              "node": {
-                "name": "PHP"
-              }
-            }
-          ]
-        },
-        "homepageUrl": "",
-        "forkCount": 0
-      }
-    },
-    {
-      "node": {
-        "id": "MDEwOlJlcG9zaXRvcnkxMDg4MDk5NzM=",
-        "name": "iPhysicist-CSSLayoutFlexbox",
-        "url": "https://github.com/JamieBort/iPhysicist-CSSLayoutFlexbox",
-        "stargazerCount": 0,
-        "description": "Finish the styling for the 'i Physicist' blog mockup. Skills using CSS, HTML, GitHub, Bash.",
-        "languages": {
-          "totalCount": 2,
-          "edges": [
-            {
-              "node": {
-                "name": "HTML"
-              }
-            },
-            {
-              "node": {
-                "name": "CSS"
-              }
-            }
-          ]
-        },
-        "homepageUrl": null,
-        "forkCount": 0
-      }
-    },
-    {
-      "node": {
-        "id": "MDEwOlJlcG9zaXRvcnkxMDg3NzA5MDQ=",
-        "name": "PuppyLove",
-        "url": "https://github.com/JamieBort/PuppyLove",
-        "stargazerCount": 0,
-        "description": "An exercise in styling with CSS.",
-        "languages": {
-          "totalCount": 3,
-          "edges": [
-            {
-              "node": {
-                "name": "HTML"
-              }
-            },
-            {
-              "node": {
-                "name": "CSS"
-              }
-            },
-            {
-              "node": {
-                "name": "JavaScript"
-              }
-            }
-          ]
-        },
-        "homepageUrl": "",
-        "forkCount": 0
-      }
-    },
-    {
-      "node": {
-        "id": "MDEwOlJlcG9zaXRvcnk5OTU3Mzc4MQ==",
-        "name": "Create-A-User-Directory",
-        "url": "https://github.com/JamieBort/Create-A-User-Directory",
-        "stargazerCount": 0,
-        "description": "A directory using the Express framework and the Mustache-Express templating engine to implement MVC.",
-        "languages": {
-          "totalCount": 3,
-          "edges": [
-            {
-              "node": {
-                "name": "CSS"
-              }
-            },
-            {
-              "node": {
-                "name": "JavaScript"
-              }
-            },
-            {
-              "node": {
-                "name": "Mustache"
-              }
-            }
-          ]
-        },
-        "homepageUrl": "",
-        "forkCount": 0
-      }
-    }
-  ]
-}
-}
-}
-}
+  },
+};
 
 // Creating each project card from the pinnedProjects object.
-const returnValue = pinnedProjects.data.user.pinnedItems.edges.map((value)=>{
-  const languages = value.node.languages.edges.map((value)=>value.node.name);
-  return {description:value.node.description,
-    url:value.node.url,
-    name:value.node.name,
-    languages:languages,
-   };
-})
+const returnValue = pinnedProjects.data.user.pinnedItems.edges.map((value) => {
+  const languages = value.node.languages.edges.map((value) => value.node.name);
+  return {
+    description: value.node.description,
+    url: value.node.url,
+    name: value.node.name,
+    languages: languages,
+  };
+});
 
 // Creating each project card from the returnValue array.
-returnValue.forEach(project=>{
+returnValue.forEach((project) => {
   // console.log("project.description:",project.description);
   // console.log("project.url:",project.url);
   // console.log("project.languages:",project.languages);
@@ -282,25 +287,28 @@ returnValue.forEach(project=>{
   p1_tag.innerHTML = project.description;
 
   const div2_tag = document.createElement("div");
-  div2_tag.setAttribute("style", "font-size:2.25em; display: flex; justify-content: space-around;"); // Maybe move this to styles.
+  div2_tag.setAttribute(
+    "style",
+    "font-size:2.25em; display: flex; justify-content: space-around;",
+  ); // Maybe move this to styles.
 
   // Listing the languages each repo uses.
-  project.languages.forEach((language)=>{
+  project.languages.forEach((language) => {
     // console.log("language:",language);
-    
-  // const i_tag = document.createElement("i");
 
-  const span_tag = document.createElement("span");
+    // const i_tag = document.createElement("i");
+
+    const span_tag = document.createElement("span");
 
     switch (language) {
       case "JavaScript":
         span_tag.setAttribute("class", "fab fa-js-square");
         div2_tag.appendChild(span_tag);
         break;
-        case "Java":
-          span_tag.setAttribute("class", "fab fa-java");
-          div2_tag.appendChild(span_tag);
-          break;
+      case "Java":
+        span_tag.setAttribute("class", "fab fa-java");
+        div2_tag.appendChild(span_tag);
+        break;
       case "HTML":
         span_tag.setAttribute("class", "fab fa-html5");
         div2_tag.appendChild(span_tag);
@@ -320,17 +328,16 @@ returnValue.forEach(project=>{
       //   div2_tag.appendChild(span1_tag);
       //   break;
       default:
-        console.log("other:",language);
+        console.log("other:", language);
         // span_tag.innerHTML = language;
         // div2_tag.appendChild(span_tag);
         break;
     }
-
-  })
+  });
 
   // Link to repo.
   const a_tag1 = document.createElement("a");
-  a_tag1.setAttribute("class", 'github_repo');
+  a_tag1.setAttribute("class", "github_repo");
   a_tag1.setAttribute("target", "_blank");
   a_tag1.setAttribute("href", project.url);
   // a_tag1.setAttribute("style", "display: inline-block; width: 100%; text-align:center;"); // Maybe move this to styles.
@@ -344,11 +351,10 @@ returnValue.forEach(project=>{
 
   card_container.appendChild(div1_tag);
   div1_tag.appendChild(div3_tag);
-  
+
   div3_tag.appendChild(h3_tag);
   div3_tag.appendChild(p1_tag);
   div3_tag.appendChild(div2_tag);
   div1_tag.appendChild(a_tag1);
   // div1_tag.appendChild(a_tag2); // Append the link to live site to the div.
-
 });

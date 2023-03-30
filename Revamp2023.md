@@ -28,6 +28,18 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     - The `GitHub Repo` link in the `Projects` section. Done.
 
+  - Refactor the JavaScript to clean it up. Done. Cleaned up but not refactored.
+
+  - Clean up the files: Done.
+
+    - Remove commented code and notes.
+
+  - Address the JSHint error that pops up. Done.
+
+  - (Re-)Add auto-formatting upon save. Done.
+
+  - Add T0-Do plugin. Done.
+
 - Done.
 
   > Create a `content` branch.
@@ -191,20 +203,6 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 - With commit 20cf11710ea8067d5ce3c119e5265b726300f123 just created the basic framework for the website.
 
 ### Next Steps
-
-- for the `content_20230328` branch.
-
-  - Refactor the JavaScript to clean it up. Done. Cleaned up but not refactored.
-
-  - Clean up the files: Done.
-
-    - Remove commented code and notes.
-
-  - Address the JSHint error that pops up.
-
-  - (Re-)Add auto-formatting upon save.
-
-  - Add T0-Do plugin.
 
 - Other tasks to address; in a different branch.:
 
