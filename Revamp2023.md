@@ -194,7 +194,7 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 - for the `content_20230328` branch.
 
-  - Refactor the JavaScript to clean it up.
+  - Refactor the JavaScript to clean it up. Done. Cleaned up but not refactored.
 
   - Clean up the files:
 

@@ -1,7 +1,5 @@
 // ./js/pinned_projects.js
 
-// // ToDo: use JavaScript to name section_01, section01, and Bio, as only Bio in one location.
-
 // **************************************************
 //                  pinned project 
 // **************************************************
@@ -36,10 +34,6 @@
 //     }
 //   }
 // }
-
-const collectionOfIcons=[];
-
-// switch statement for collectionOfIcons and 
 
 // In the future, this pinnedProjects object will be pulled in from an GraphQL API call to GitHub.
 const pinnedProjects = 
@@ -342,7 +336,7 @@ returnValue.forEach(project=>{
   // a_tag1.setAttribute("style", "display: inline-block; width: 100%; text-align:center;"); // Maybe move this to styles.
   a_tag1.innerHTML = "GitHub Repo";
 
-  // // Link to live site - if it exists.
+  // // Use this to ink to live the site - if it exists.
   // const a_tag2 = document.createElement("a");
   // a_tag1.setAttribute("target", "_blank");
   // a_tag1.setAttribute("href", project.url);
