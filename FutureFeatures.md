@@ -2,26 +2,17 @@
 
 Future features section of the repo.
 
-Here is listed the things I plan on adding to or modifying in the repo.
+Here is listed the things I plan on adding to the repo.
 
-## To Modify
+## Features To Add
 
-### Head tag
+- A blog in general. Either a button in the navigation to opens a new page. Or a blog that I build on the same site but a different page.
 
-- Change `<head><title>Jamie Bort</title></head>` so that nothing but my logo shows up in the browser tab, including `Jamie Bort` and `index.html`. Or leave it alone - I like Jamie bort there.
+- A presentations section. Where I can list my talks and presentations.
 
-### Styling/CSS
+- A contract me form that sends me an email - existing code needs to be modified.
 
-- The buttons.
-
-- The nav menu.
-
-- The colors of
-
-  - the links
-  - footer/header
-
-- The `Jamie Bort` button in the header doesn't bring the page to the top but instead to my `<h1>` tag.
+- Develop API call for the projects in GitHub.
 
 ### The Projects Section
 
@@ -36,33 +27,3 @@ Here is listed the things I plan on adding to or modifying in the repo.
     - "Both" - enables both "My Own Projects" and "Projects I'm Contributing On" on.
   - One button:
     - "Pinned Repos" - toggles the pinned repos ON/OFF.
-
-### Connect with Me Section
-
-- Swap the .png icons for the Font Awesome logos.
-
-## To Add
-
-- A blog section.
-
-- A presentations section.
-
-- A contract me form that sends me an email - existing code needs to be modified.
-
-- Develop API call for the projects in GitHub.
-
-- CSS Transitions for
-
-  - navigation menu
-
-  - links
-
-  - buttons
-
-  Search for
-
-      - `css transition property navigation`
-
-      - and for `css transition property buttons`
-
-      - and for `css transition property links`

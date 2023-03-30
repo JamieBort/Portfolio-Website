@@ -212,7 +212,7 @@ This file is for keeping track of the `Status` and the tasks that need to be com
       - `API` in the Title.
       - and that come up when searching for `API`
 
-  - Working on the Project Cards.
+  - ~~Working on the Project Cards.~~ Right now they appear just fine.
 
     Use this https://css-tricks.com/aspect-ratio-boxes/
 
