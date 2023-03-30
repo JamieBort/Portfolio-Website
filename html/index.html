@@ -8,47 +8,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./../styles.css" rel="stylesheet">
+    <link href="./../css/styles.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
-    
-    <!-- <link rel="stylesheet" href="./../assets/fonts/FontAwesome/fontawesome-free-6.4.0-web/css/font-awesome.min.css"> -->
-    <link href="./../assets/fonts/FontAwesome/fontawesome-free-6.4.0-web//css/fontawesome.css" rel="stylesheet">
+
+    <link href="./../assets/fonts/FontAwesome/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
     <link href="./../assets/fonts/FontAwesome/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
-    <link href="./../assets/fonts/FontAwesome/fontawesome-free-6.4.0-web//css/solid.css" rel="stylesheet">
+    <link href="./../assets/fonts/FontAwesome/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
 
-    <link href="./../assets/fonts/FontAwesome/fontawesome-free-6.4.0-web//css/fontawesome.css" rel="stylesheet">
-<!-- <link rel="stylesheet" href="path/to/fontawesome.min.css"> -->
-
-
-    <title>Document</title>
+    <title>Jamie Bort</title>
 </head>
 <body>
     <header id="mobile_header">
-        <!-- <button class = "mobile_header_button" id="name_button" onclick="section(0)">Jamie Bort</button> -->
         <button class = "mobile_header_button" id="name_button" onclick="mobileHeaderButton()">Jamie Bort</button>
         <button class = "mobile_header_button" id="nav_toggle_button" onclick="toggleMenu()">Nav</button>
     </header>
     
     <header id="desktop_header">
         <button class = "desktop_header_button" onclick="section(0)" id="name_button">Jamie Bort</button>
-        <!-- <button id="nav_button" onclick="toggleMenu()">Nav</button> -->
         <button class = "desktop_header_button" onclick="section(1)">Bio</button>
         <button class = "desktop_header_button" onclick="section(2)">Projects</button>
         <button class = "desktop_header_button" onclick="section(3)">Connect with Me</button>
     </header>
     
-    <div id="content" style="position: relative;"> 
-    <!-- <div id="content">  -->
-
-        <!-- <nav id="menu" style="display: none; position: fixed; top: 2.4rem;"> -->
-
+    <div id="content" style="position: relative;">
         <nav id="menu" style="display: none;">
-            <!-- <nav id="menu"> -->
-        <!-- <nav id="menu" style="display: none; position: absolute;"> -->
-            <!-- <span>Navigation Menu</span> -->
             <button class = "mobile_nav_button" onclick="section(1)">Bio</button>
             <button class = "mobile_nav_button" onclick="section(2)">Projects</button>
             <button class = "mobile_nav_button" onclick="section(3)">Connect with Me</button>
@@ -58,20 +44,29 @@
         
         <section id="section01"> 
             <h2>A little bit about myself</h2>
-            <p class = "section_p">I teach and mentor at <a class = "styled_links" target="_blank" href="https://codethedream.org/">Code the Dream</a>, a software boot camp for underrepresented people.</p>
+            <p class = "section_p">I teach and mentor at 
+                <a class = "styled_links" target="_blank" href="https://codethedream.org/">Code the Dream</a>
+                , a software boot camp for underrepresented people.
+            </p>
+
             <!-- Hidden text to consider. -->
-            <p class = "section_p">Below you will find some of my <button class = "section_button" onclick="section(2)">projects</button> .<br>
-                <hidden hidden>
-                    In addition to the technologies listed in each project below, I am quite proficient with Git,...<br>
-                Additionally, I have experience with ...
-                </hidden>    
+            <p class = "section_p">
+                Below you will find some of my 
+                <button class = "section_button" onclick="section(2)">projects</button>
+                 .<br>
+                In addition to the technologies listed in each project below, I am proficient with Git and Bash.<br>
+                <hidden hidden>Additionally, I have experience with ...</hidden>
             </p>
             <p class = "section_p">Some other things that have my attention at the moment:
-                <ul>
-                    <li>Spring Boot - It's been a minute since I last worked with it. So I am refreshing my memory by working on a side project with it.</li>
-                    <li>Statistics - In addition to having a genuine interest in it I also have projects that require me to know that branch of mathematics better.</li>
-                    <li>Data visualization - It's a fun and challenging way to represent the data that I enjoy crunching.</li>
-                    <li>Presenting - Frankly the idea of it scares me. But I know it will help me become a better communicator, and by extension, a better coder and teammate.</li>
+                <ul style="padding-right: 8px;">
+                    <li>Spring Boot - It's been a minute since I last worked with it. So I am refreshing my memory by working on a side project with it.
+                    </li>
+                    <li>Statistics - In addition to having a genuine interest in it I also have projects that require me to know that branch of mathematics better.
+                    </li>
+                    <li>Data visualization - It's a fun and challenging way to represent the data that I enjoy crunching.
+                    </li>
+                    <li>Presenting - Frankly the idea of it scares me. But I know it will help me become a better communicator, and by extension, a better coder and teammate.
+                    </li>
                 </ul>
             </p>
 
@@ -83,50 +78,24 @@
                 </hidden>
             </p>
             <p class = "section_p">
-                When I am not coding I am working on my next presentation, mentoring, or teaching; all of which push me to learn and grow.</p>
-            <p class = "section_p">
-                I invite you to <button class = "section_button" onclick="section(3)">Connect with Me</button> on social media below.
+                When I am not coding I am working on my next presentation, mentoring, or teaching; all of which push me to learn and grow.
             </p>
-        
+            <p class = "section_p">
+                I invite you to 
+                <button class = "section_button" onclick="section(3)">Connect with Me</button> 
+                on social media below.
+            </p>
         </section>
 
         <hr style="border-top: 1px solid gray;">
 
-
-        <!-- Projects
-                     Both button
-Completed button In Progress button
-
-                     Both button
-My Own Projects button 
-Projects I'm Contributing On button 
-  
-Toggle one or the other. Or select "Both" to view both. 
-Display the technologies by using their logos, rather than strings. Use switch statement. -->
-        
-        <section id="section02"> 
-            <!-- <h2>Projects I have completed or am working on</h2> -->
+        <section id="section02">
+            <!-- Projects buttons to toggle on and off: -->
+            <!-- "Completed" vs "In Progress" toggle button plus a third button that enables both.-->
+            <!-- "My Own Projects" vs "Projects I'm Contributing On" toggle button plus a third button that enables both.-->
+            <!-- "Pinned Repos" button that toggles it ON vs OFF.-->
             <h2>Projects</h2>
-            <!-- <p class = "section_p">A little something about my projects.</p> -->
-            <div id="card_container">
-                <!-- <div class="card">
-                    <a target="_blank" href="https://www.wikipedia.org">
-                        <h3>Card title - pull from github repo</h3>
-                        <p>About the project - pull from github repo. The purpose of this directory is to house all the code I write as I learn new technologies and hone my skills. This is to help keep my GitHub account organized.</p>
-                        <p class = "technology_p">Technologies used - pull from github repo. JavaScript</p>
-                    </a>
-                </div>
-                <div class="card">
-                    <h3>Card title - pull from github repo</h3>
-                    <p>About the project - pull from github repo. A website for displaying important daily data. Such as blood glucose numbers and upcoming events. By using API calls, databases, authentication, etc.</p>
-                    <p class = "technology_p">Technologies used - pull from github repo. JavaScript</p>
-                </div>
-                <div class="card">
-                    <h3>Card title - pull from github repo</h3>
-                    <p>About the project - pull from github repo. My Portfolio Website. This is where I share a bit about myself, showcase what I've been working on, host my blog, and more.</p>
-                    <p class = "technology_p">Technologies used - pull from github repo. JavaScript</p>
-                </div> -->
-            </div>
+            <div id="card_container"></div>
         </section>
 
         <hr style="border-top: 1px solid gray;">
@@ -163,32 +132,13 @@ Display the technologies by using their logos, rather than strings. Use switch s
                         src="../assets/Email/FAVPNG_email-box-clip-art_W0UEsKSp.png">
                 </a> -->
 
-                    <!-- my blog -->
-                    <!-- <span class="connect_img fa fa-medium" aria-hidden="true">
-                        <a class = "connect_a" href="https://medium.com/@jamie-bort" target="_blank"></a>
-                    </span> -->
+                <!-- ****** A anchor to a coding challenge website ****** -->
+                <!-- <span class="connect_img fa fa-medium" aria-hidden="true">
+                    <a class = "connect_a" href="https://medium.com/@jamie-bort" target="_blank"></a>
+                </span> -->
                         
-                
-
-                <!-- <div class = "connect_div">
-                    <a class = "connect_a">
-                        <img class="connect_img" src="./../pre-Revamp2023/jamiebort.github.io/assets/LinkedIn/clipart1055005.png">icon
-                    </a>
-                </div>
-                <div class = "connect_div">
-                    <a class = "connect_a">
-                        <img class="connect_img">icon
-                    </a>
-                </div>
-                <div class = "connect_div">
-                    <a class = "connect_a">
-                        <img class="connect_img">icon
-                    </a>
-                </div> -->
-
+                <!-- ****** Font Awesome Logs for later. To replace the .png icons ****** -->
                 <!-- <hr style="border-top: 1px solid gray;"> -->
-                
-                <!-- Font Awesome Logs for later. To replace the .png icons -->
                 <!-- <div id = "fontAwesome" >
                     <span class="fontAwesome fa-brands fa-medium"></span>
                     <span class="fontAwesome fa-brands fa-linkedin" style="color: #02010e;"></span>
@@ -199,7 +149,6 @@ Display the technologies by using their logos, rather than strings. Use switch s
                     <span class="fontAwesome fa-solid fa-envelope" style="color: #02010e;"></span> -->
                     <!-- <span class="fontAwesome fa-thin fa-envelope" style="color: #02010e;"></span> -->
                 <!-- </div> -->
-                
                 <!-- <hr style="border-top: 1px solid gray;"> -->
 
             </div>
@@ -207,8 +156,7 @@ Display the technologies by using their logos, rather than strings. Use switch s
 
     </div>
 
-    <footer>&copy<span id="copyright"></span>
-    </foot>
+    <footer>&copy<span id="copyright"></span></foot>
 
     <script type="text/javascript" src="./../js/main.js"></script>
     <script type="text/javascript" src="./../js/pinned_projects.js"></script>

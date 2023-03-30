@@ -196,7 +196,7 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
   - Refactor the JavaScript to clean it up. Done. Cleaned up but not refactored.
 
-  - Clean up the files:
+  - Clean up the files: Done.
 
     - Remove commented code and notes.
 

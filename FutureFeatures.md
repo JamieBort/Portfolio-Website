@@ -6,6 +6,10 @@ Here is listed the things I plan on adding to or modifying in the repo.
 
 ## To Modify
 
+### Head tag
+
+- Change `<head><title>Jamie Bort</title></head>` so that nothing but my logo shows up in the browser tab, including `Jamie Bort` and `index.html`.
+
 ### Styling/CSS
 
 - The buttons.
@@ -13,8 +17,11 @@ Here is listed the things I plan on adding to or modifying in the repo.
 - The nav menu.
 
 - The colors of
+
   - the links
   - footer/header
+
+- The `Jamie Bort` button in the header doesn't bring the page to the top but instead to my `<h1>` tag.
 
 ### The Projects Section
 
