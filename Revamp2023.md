@@ -200,6 +200,12 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     - Remove commented code and notes.
 
+  - Address the JSHint error that pops up.
+
+  - (Re-)Add auto-formatting upon save.
+
+  - Add T0-Do plugin.
+
 - Other tasks to address; in a different branch.:
 
   - API related tasks

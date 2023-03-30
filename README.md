@@ -94,6 +94,8 @@ The site shall:
 
 - .gitignore - Specifies intentionally untracked files. See https://git-scm.com/docs/gitignore
 
+- FutureFeatures.md - Future features section of the repo. Here is listed the things I plan on adding to or modifying in the repo.
+
 - index.html - The landing page. This links to `./html/index.html`.
 
 - README.md - This readme file.

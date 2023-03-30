@@ -1,6 +1,8 @@
 # Future Features
 
-Future features section of the repo
+Future features section of the repo.
+
+Here is listed the things I plan on adding to or modifying in the repo.
 
 ## To Modify
 
@@ -16,11 +18,17 @@ Future features section of the repo
 
 ### The Projects Section
 
-- Pinned repos toggled on/off
-
-- My Own Projects button/Projects I'm Contributing On/To toggle button
-
-- Completed button/In Progress toggle button
+- Projects buttons that do the following:
+  - Three buttons:
+    - "Completed" - toggles "In Progress" off.
+    - "In Progress" - toggles "Completed" off.
+    - "Both" - enables both "Completed" and "In Progress" on.
+  - Three buttons:
+    - "My Own Projects" - toggles "Projects I'm Contributing On" off.
+    - "Projects I'm Contributing On" - toggles "My Own Projects" off.
+    - "Both" - enables both "My Own Projects" and "Projects I'm Contributing On" on.
+  - One button:
+    - "Pinned Repos" - toggles the pinned repos ON/OFF.
 
 ### Connect with Me Section
 
