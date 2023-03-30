@@ -49,18 +49,18 @@
             <!-- <nav id="menu"> -->
         <!-- <nav id="menu" style="display: none; position: absolute;"> -->
             <!-- <span>Navigation Menu</span> -->
-            <button onclick="section(1)">Bio</button>
-            <button onclick="section(2)">Projects</button>
-            <button onclick="section(3)">Connect with Me</button>
+            <button class = "mobile_nav_button" onclick="section(1)">Bio</button>
+            <button class = "mobile_nav_button" onclick="section(2)">Projects</button>
+            <button class = "mobile_nav_button" onclick="section(3)">Connect with Me</button>
         </nav>
 
         <h1 id="top">Software Engineer</h1>
         
         <section id="section01"> 
             <h2>A little bit about myself</h2>
-            <p class = "section_p">I teach and mentor at <a target="_blank" href="https://codethedream.org/">Code the Dream</a>, a software boot camp for underrepresented people.</p>
+            <p class = "section_p">I teach and mentor at <a class = "styled_links" target="_blank" href="https://codethedream.org/">Code the Dream</a>, a software boot camp for underrepresented people.</p>
             <!-- Hidden text to consider. -->
-            <p class = "section_p">Below you will find some of my <button onclick="section(2)">projects</button> .<br>
+            <p class = "section_p">Below you will find some of my <button class = "section_button" onclick="section(2)">projects</button> .<br>
                 <hidden hidden>
                     In addition to the technologies listed in each project below, I am quite proficient with Git,...<br>
                 Additionally, I have experience with ...
@@ -85,21 +85,9 @@
             <p class = "section_p">
                 When I am not coding I am working on my next presentation, mentoring, or teaching; all of which push me to learn and grow.</p>
             <p class = "section_p">
-                I invite you to <button onclick="section(3)">Connect with Me</button> on social media below.
+                I invite you to <button class = "section_button" onclick="section(3)">Connect with Me</button> on social media below.
             </p>
         
-
-        <!-- <hr style="border-top: 1px solid gray;">
-            <a style="border: thin dashed black;" target='_blank' href='searchresults.com'>
-                Search results!
-                <span class='screenreader-text'>(Link opens in a new tab)</span>
-            </a>
-        <hr style="border-top: 1px solid gray;">
-            <span style="border: thin dashed black;" class='screenreader-text'>
-                <a target='_blank' href='searchresults.com'>Search results!</a>
-                (Link opens in a new tab)
-            </span> -->
-              
         </section>
 
         <hr style="border-top: 1px solid gray;">
@@ -200,18 +188,19 @@ Display the technologies by using their logos, rather than strings. Use switch s
 
                 <!-- <hr style="border-top: 1px solid gray;"> -->
                 
-                <div id = "fontAwesome" >
+                <!-- Font Awesome Logs for later. To replace the .png icons -->
+                <!-- <div id = "fontAwesome" >
                     <span class="fontAwesome fa-brands fa-medium"></span>
                     <span class="fontAwesome fa-brands fa-linkedin" style="color: #02010e;"></span>
                     <span class="fontAwesome fa-brands fa-twitter" style="color: #02010e;"></span>
                     <span class="fontAwesome fa-brands fa-stack-overflow" style="color: #02010e;"></span>
                     <span class="fontAwesome fa-brands fa-square-github" style="color: #02010e;"></span>
                     <span class="fontAwesome fa-brands fa-github" style="color: #02010e;"></span>
-                    <span class="fontAwesome fa-solid fa-envelope" style="color: #02010e;"></span>
+                    <span class="fontAwesome fa-solid fa-envelope" style="color: #02010e;"></span> -->
                     <!-- <span class="fontAwesome fa-thin fa-envelope" style="color: #02010e;"></span> -->
-                </div>
+                <!-- </div> -->
                 
-                <hr style="border-top: 1px solid gray;">
+                <!-- <hr style="border-top: 1px solid gray;"> -->
 
             </div>
         </section>
@@ -221,6 +210,7 @@ Display the technologies by using their logos, rather than strings. Use switch s
     <footer>&copy<span id="copyright"></span>
     </foot>
 
-    <script  type="text/javascript" src="./../js/main.js"></script>
+    <script type="text/javascript" src="./../js/main.js"></script>
+    <script type="text/javascript" src="./../js/pinned_projects.js"></script>
 </body>
 </html>
