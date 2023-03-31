@@ -276,17 +276,20 @@ returnValue.forEach((project) => {
   const div1_tag = document.createElement("div");
   div1_tag.setAttribute("class", "card");
 
+  const h3_tag = document.createElement("h3");
+  h3_tag.setAttribute("class", "card_header_tag");
+  // class="card_header_tag"
+  h3_tag.innerHTML = project.name;
+
   const div3_tag = document.createElement("div");
   div3_tag.setAttribute("class", "card_div");
-
-  const h3_tag = document.createElement("h3");
-  h3_tag.innerHTML = project.name;
 
   const p1_tag = document.createElement("p");
   // p1_tag.setAttribute("class", "card_p");
   p1_tag.innerHTML = project.description;
 
   const div2_tag = document.createElement("div");
+  div2_tag.setAttribute("class", "icon_div");
   div2_tag.setAttribute(
     "style",
     "font-size:2.25em; display: flex; justify-content: space-around;",
@@ -350,9 +353,9 @@ returnValue.forEach((project) => {
   // a_tag1.innerHTML = "GitHub Repo";
 
   card_container.appendChild(div1_tag);
-  div1_tag.appendChild(div3_tag);
 
-  div3_tag.appendChild(h3_tag);
+  div1_tag.appendChild(h3_tag);
+  div1_tag.appendChild(div3_tag);
   div3_tag.appendChild(p1_tag);
   div3_tag.appendChild(div2_tag);
   div1_tag.appendChild(a_tag1);

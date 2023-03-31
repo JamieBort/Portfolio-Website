@@ -1,5 +1,9 @@
 # temp
 
+Directory to build the Projects section; including the project cards.
+
+`index2_v3.htm` is now exactly what I need for my website.
+
 Using this to look at the code from https://codepen.io/JamieBort/pen/eYzXMdp in my browser.
 
 index1.html - copied without editing.

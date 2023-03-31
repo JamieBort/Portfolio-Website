@@ -87,6 +87,8 @@ p {
     margin: auto;
 }
 
+/* TODO: pull "text-align: center;" up higher. For example, the "text-align: center;" for the h2 is addressed in the ".card" rule set. */
+/* TODO: pull "text-align: center;" up higher. For example, the "text-align: center;" for the h3 is addressed in the ".card" rule set. */
 nav span, h1, h2, h3 {
     text-align: center;
 }
@@ -164,22 +166,37 @@ nav span, nav button {
 }
 
 #card_container {
-    /* Use this to make sure each card in the row is the same height. For desktop. */
-    /* display: none; */
-    /* background-color: greenyellow; */
+    border: 0.1em blue solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .card {
     /* background-color: aqua; */
-    border: thin solid gray;
+    /* border: thin solid gray;
     border-radius: .5em;
     margin: 1em 0;
-    min-height: 10em;
+    min-height: 10em; */
     /* padding: 0 .5em; */
+
+    border: thin solid gray;
+/* Using from other file. */
+    display: flex;
+    flex-direction: column;
+    max-height: 30em;
+    min-height: 15em;
+    margin: 0.3em;
+    width: 20em;
 }
 
 .card_div {
-    padding: 0 .5em .5em .5em;
+    /* padding: 0 .5em .5em .5em; */
+    /* border: 0.1em yellowgreen solid; */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
 }
 
 /* .card_p {
@@ -209,7 +226,6 @@ nav span, nav button {
     justify-content: center;
     align-items: center;
 }
-
 
 .connect_img {
         /* background-color: pink; */
@@ -313,7 +329,7 @@ footer {
     /* @media (min-width: 40rem) { */
 
     body {
-        border: medium solid blue;
+        /* border: medium solid blue; */
     }
 
     #mobile_header {
@@ -334,32 +350,44 @@ footer {
         /* font-size: 1.75em; */
     }
 
-    #card_container {
-        /* use this to make sure each card in the row is the same height. */
+    /* connect_container styles before I started messing them them in the mobile view. */
+    /* In the mobile view they were all in a single row */
+
+    #content {
+        /* border: thin dashed magenta; */
+        /* background-color: azure; */
+        /* margin:0 auto; */
+        /* margin:0 99%; */
+        /* margin-left: 2px;
+        margin-right: 2px; */
+        width:97%;
+        max-width:none;
+    }
+    
+    #connect_container {
+        /* background-color: lightsalmon; */
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3em;
+        /* height: 100%; */
+        /* max-width: 100px;
+        width: auto; */
+        /* background-color: lightseagreen; */
+        /* background: lightseagreen; */
+        /* width: 100px;
+        height: 100px; */
     }
 
-
-/* connect_container styles before I started messing them them in the mobile view. */
-/* In the mobile view they were all in a single row */
-#connect_container {
-    /* background-color: lightsalmon; */
-    display: flex;
-    justify-content: space-around;
-    margin-top: 3em;
-    /* height: 100%; */
-    /* max-width: 100px;
-    width: auto; */
-    /* background-color: lightseagreen; */
-    /* background: lightseagreen; */
-    /* width: 100px;
-    height: 100px; */
-}
+    .connect_img {
+        max-width: 4em;
+    }
 
     footer {
         /* background-color: #dcdcdc; */
         /* flex: 0 0 auto; */
         text-align: center;
         font-size: 1.00rem;
+        /* display: block; */
         /* maybe change the `font-size: 1.00rem;` above for the `font-size: 1.00em;`  */
     }
 

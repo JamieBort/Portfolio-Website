@@ -94,6 +94,8 @@ The site shall:
 
 - old/ - Contains files and directories that are no longer used. But are not ready to be deleted.
 
+- temp/ - Directory to build the Projects section; including the project cards. `index2_v3.htm` is now exactly what I need for my website.
+
 #### Files
 
 - .gitignore - Specifies intentionally untracked files. See https://git-scm.com/docs/gitignore
