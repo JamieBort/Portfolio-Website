@@ -1,0 +1,173 @@
+<!-- ./temp/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #projects {
+        border: 0.1em red solid;
+        padding: 0.1em;
+      }
+
+      .projects_container {
+        border: 0.1em blue solid;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .section_title {
+        border: 0.1em green solid;
+        text-align: center;
+      }
+
+      .card_div {
+        border-radius: 1em;
+        /* 	Used this https://html-css-js.com/css/generator/box-shadow/ for the following box shadow */
+        -webkit-box-shadow: 5px 5px 16px 5px rgba(0, 0, 0, 0.16);
+        box-shadow: 5px 5px 16px 5px rgba(0, 0, 0, 0.16);
+        background: #ffffff;
+        /* 	Used this https://html-css-js.com/css/generator/box-shadow/ for the following box shadow */
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-height: 30em;
+        min-height: 15em;
+        margin: 0.3em;
+        width: 20em;
+        /* 	max-width:20em;
+	      min-width:15em; */
+        /*   min-height: 100vh; */
+        /* 	border: .1em lightgray solid; */
+        /* 	box-shadow: 1px 2px; */
+      }
+
+      .card_header_tag {
+        border: 0.1em green solid;
+      }
+
+      .card_body_tag {
+        border: 0.1em yellowgreen solid;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: space-between;
+
+        /* margin: 0 auto; */
+        /* 	margin-bottom:1em; */
+        /* 	padding:.1em; */
+        /* width: 90%; */
+      }
+
+      .card_body_p {
+        border: 0.1em orange solid;
+      }
+
+      .card_body_div {
+        border: 0.1em orangered solid;
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="projects">
+      <h2 class="section_title">Some of my projects</h2>
+      <div class="projects_container">
+        <div class="card_div">
+          <h3 class="card_header_tag">Title</h3>
+          <div class="card_body_tag">
+            <p class="card_body_p">
+              This may be a little bit meta. But I am learning new skills while
+              building this siteThis may be a littl building this site. So I
+              wanted to show them off. In the README. So I wanted to show them
+              off. In the README file of the repo,found by selecting the
+              'Portfolio Website Repo' button below.
+            </p>
+            <div class="card_body_div">
+              <span>CSS</span>
+              <span>CSS</span>
+              <span>CSS</span>
+            </div>
+          </div>
+          <footer class="card_footer_tag">Footer</footer>
+        </div>
+
+        <!-- duplicates of <div class="card_div"> above -->
+        <div class="card_div">
+          <h3 class="card_header_tag">Title</h3>
+          <div class="card_body_tag">
+            <p class="card_body_p">
+              This may be a little bit meta. But I am learning new skills while
+              building this site. So I wanted to show them off. In the README
+              Website Repo' button below.
+            </p>
+            <div class="card_body_div">
+              <span>CSS</span>
+              <span>CSS</span>
+              <span>CSS</span>
+            </div>
+          </div>
+          <footer class="card_footer_tag">Footer</footer>
+        </div>
+        <div class="card_div">
+          <h3 class="card_header_tag">Title</h3>
+          <div class="card_body_tag">
+            <p class="card_body_p">
+              This may be a little bit meta. But I am learning new skills while
+              building this site. So I wanted to show them off. In the README
+              file of the repo This may be a little bit meta. But I am learning
+              new skills while building this site. So I wanted to show them off.
+              In the README file of the repo,found by selecting the 'Portfolio
+              Website Repo' button below.
+            </p>
+            <div class="card_body_div">
+              <span>CSS</span>
+              <span>CSS</span>
+              <span>CSS</span>
+            </div>
+          </div>
+          <footer class="card_footer_tag">Footer</footer>
+        </div>
+        <div class="card_div">
+          <h3 class="card_header_tag">Title</h3>
+          <div class="card_body_tag">
+            <p class="card_body_p">
+              This may be a little bit meta. But I am learning new skills while
+              building this site. So I wanted to show them off. In the README
+              file of the repo,found by selecting the 'Portfolio Website Repo'
+              button below.
+            </p>
+            <div class="card_body_div">
+              <span>CSS</span>
+              <span>CSS</span>
+              <span>CSS</span>
+            </div>
+          </div>
+          <footer class="card_footer_tag">Footer</footer>
+        </div>
+        <div class="card_div">
+          <h3 class="card_header_tag">Title</h3>
+          <div class="card_body_tag">
+            <p class="card_body_p">
+              This may be a littl building this site. So I wanted to show them
+              off. In the README button below.
+            </p>
+            <div class="card_body_div">
+              <span>CSS</span>
+              <span>CSS</span>
+              <span>CSS</span>
+            </div>
+          </div>
+          <footer class="card_footer_tag">Footer</footer>
+        </div>
+        <!-- duplicates -->
+      </div>
+    </section>
+  </body>
+</html>

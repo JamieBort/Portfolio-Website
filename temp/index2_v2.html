@@ -1,0 +1,379 @@
+<!-- ./temp/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #projects {
+        border: 0.1em red solid;
+        padding: 0.1em;
+      }
+
+      /* This is called class="section_title" in the repo */
+      #projects h2 {
+        border: 0.1em green solid;
+        text-align: center;
+      }
+
+      .projects_container {
+        border: 0.1em blue solid;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      h2 {
+      }
+
+      .card_outside_div {
+        border-radius: 1em;
+        margin: 0.3em;
+        text-align: center;
+        max-height: 30em;
+        /* 	max-width:20em;
+	      min-width:15em; */
+        width: 20em;
+
+        /* body - or any parent wrapper */
+        display: flex;
+        flex-direction: column;
+        /*   min-height: 100vh; */
+        min-height: 20em;
+
+        /* 	border: .1em lightgray solid; */
+        /* 	box-shadow: 1px 2px; */
+        /* 	Used this https://html-css-js.com/css/generator/box-shadow/ for the following box shadow */
+        -webkit-box-shadow: 5px 5px 16px 5px rgba(0, 0, 0, 0.16);
+        box-shadow: 5px 5px 16px 5px rgba(0, 0, 0, 0.16);
+        background: #ffffff;
+      }
+
+      .card_header_div {
+        border: 0.1em green solid;
+        /* 	margin:.1em; */
+        width: 100%;
+        /* max-hight:.2em; */
+      }
+
+      .card_header_img {
+        width: 100%;
+        border-radius: 1em 1em 0 0;
+        margin: 0;
+        padding: 0;
+      }
+      .card_body_outside_div {
+        border: 0.1em yellowgreen solid;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: space-between;
+
+        /* margin: 0 auto; */
+        /* 	margin-bottom:1em; */
+        /* 	padding:.1em; */
+        /* width: 90%; */
+      }
+
+      .card_body_inside_div {
+        border: 0.1em yellow solid;
+      }
+
+      .card_a_div {
+        /* border: 0.1em red solid; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* 	flex-direction:column; */
+        margin: 0.1em;
+        padding: 0.1em;
+      }
+
+      /* .card_a_div a, .card_a_div img{ */
+      .card_a,
+      .card_body_img {
+        /* border: 0.1em orange solid; */
+        margin: 0.5em;
+        /* 	padding: .5em; */
+        min-width: 4em;
+      }
+
+      .card_a {
+        /* border: 0.1em orange solid; */
+        text-decoration: none;
+        border-bottom: 1px solid black;
+      }
+      .card_footer_div {
+        border-top: 1px solid black;
+        min-height: 2.5em;
+        /* 	max-height:2em; */
+        display: flex;
+        align-items: center;
+      }
+      .card_unordered_list {
+        /* border: 0.1em green solid; */
+        list-style-type: none;
+        margin: 0 auto;
+        width: 90%;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .card_list_item {
+        /* 	border: .1em red solid; */
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="projects">
+      <h2 class="section_title">Some of my projects</h2>
+      <div class="projects_container">
+        <div class="card_outside_div">
+          <div class="card_header_div">
+            <!-- <img class="card_header_img" /> -->
+            <p>originally an `img` tag</p>
+          </div>
+          <div class="card_body_outside_div">
+            <h3 class="card_title">Title.</h3>
+            <p class="card_paragraph">
+              This may be a little bit meta. But I am learning new skills while
+              building this site. So I wanted to show them off. In the README
+              file of the repo,found by selecting the 'Portfolio Website Repo'
+              button below.
+            </p>
+            <div class="card_body_inside_div">
+              <div class="card_a_div">
+                <a class="card_a"></a>
+                <img class="card_body_img" />
+                <a class="card_a"></a>
+              </div>
+            </div>
+          </div>
+          <div class="card_footer_div">
+            <ul class="card_unordered_list">
+              <li class="card_list_item">CSS</li>
+              <li class="card_list_item">HTML</li>
+              <li class="card_list_item">JavaScript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card_outside_div">
+          <div class="card_header_div">
+            <!-- <img class="card_header_img" /> -->
+            <p>originally an `img` tag</p>
+          </div>
+          <div class="card_body_outside_div">
+            <h3 class="card_title">Title.</h3>
+            <p class="card_paragraph">
+              This may be a little bit meta. But I am learning new skills while
+              building this site. So I wanted to show them off. In the README
+              file of the repo,found by selecting the 'Portfolio Website Repo'
+              button below.
+            </p>
+            <div class="card_body_inside_div">
+              <div class="card_a_div">
+                <a class="card_a"></a>
+                <img class="card_body_img" />
+                <a class="card_a"></a>
+              </div>
+            </div>
+          </div>
+          <div class="card_footer_div">
+            <ul class="card_unordered_list">
+              <li class="card_list_item">CSS</li>
+              <li class="card_list_item">HTML</li>
+              <li class="card_list_item">JavaScript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card_outside_div">
+          <div class="card_header_div">
+            <!-- <img class="card_header_img" /> -->
+            <p>originally an `img` tag</p>
+          </div>
+          <div class="card_body_outside_div">
+            <h3 class="card_title">Title.</h3>
+            <p class="card_paragraph">
+              This may be a little bit meta. But I am learning new skills while
+              building this site. So I wanted to show them off. In the README
+              file of the repo,found by selecting the 'Portfolio Website Repo'
+              button below.
+            </p>
+            <div class="card_body_inside_div">
+              <div class="card_a_div">
+                <a class="card_a"></a>
+                <img class="card_body_img" />
+                <a class="card_a"></a>
+              </div>
+            </div>
+          </div>
+          <div class="card_footer_div">
+            <ul class="card_unordered_list">
+              <li class="card_list_item">CSS</li>
+              <li class="card_list_item">HTML</li>
+              <li class="card_list_item">JavaScript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card_outside_div">
+          <div class="card_header_div">
+            <!-- <img class="card_header_img" /> -->
+            <p>originally an `img` tag</p>
+          </div>
+          <div class="card_body_outside_div">
+            <h3 class="card_title">Title.</h3>
+            <p class="card_paragraph">
+              This may be a little bit meta. But I am learning new skills while
+              building this site. So I wanted to show them off. In the README
+              file of the repo,found by selecting the 'Portfolio Website Repo'
+              button below.
+            </p>
+            <div class="card_body_inside_div">
+              <div class="card_a_div">
+                <a class="card_a"></a>
+                <img class="card_body_img" />
+                <a class="card_a"></a>
+              </div>
+            </div>
+          </div>
+          <div class="card_footer_div">
+            <ul class="card_unordered_list">
+              <li class="card_list_item">CSS</li>
+              <li class="card_list_item">HTML</li>
+              <li class="card_list_item">JavaScript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card_outside_div">
+          <div class="card_header_div">
+            <!-- <img class="card_header_img" /> -->
+            <p>originally an `img` tag</p>
+          </div>
+          <div class="card_body_outside_div">
+            <h3 class="card_title">Title.</h3>
+            <p class="card_paragraph">
+              This may be a little bit meta. But I am learning new skills while
+              building this site. So I wo,found by selecting the 'Portfolio
+              Website Repo' button below.anted to show them off. In the README
+              file of the repo,found by selecting the 'Portfolio Website Repo'
+              button below.
+            </p>
+            <div class="card_body_inside_div">
+              <div class="card_a_div">
+                <a class="card_a"></a>
+                <img class="card_body_img" />
+                <a class="card_a"></a>
+              </div>
+            </div>
+          </div>
+          <div class="card_footer_div">
+            <ul class="card_unordered_list">
+              <li class="card_list_item">CSS</li>
+              <li class="card_list_item">HTML</li>
+              <li class="card_list_item">JavaScript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card_outside_div">
+          <div class="card_header_div">
+            <!-- <img class="card_header_img" /> -->
+            <p>originally an `img` tag</p>
+          </div>
+          <div class="card_body_outside_div">
+            <h3 class="card_title">Title.</h3>
+            <p class="card_paragraph">
+              This may be a little bit mo,found by selecting the 'Portfolio
+              Website Repo' button below.o,found by selecting the 'Portfolio
+              Website Repo' button below.o,found by selecting the 'Portfolio
+              Website Repo' button below.eta. But I am learning new skills while
+              building this site. So I wanted to show them off. In the README
+              file of the repo,found by selecting the 'Portfolio Website Repo'
+              button below.
+            </p>
+            <div class="card_body_inside_div">
+              <div class="card_a_div">
+                <a class="card_a"></a>
+                <img class="card_body_img" />
+                <a class="card_a"></a>
+              </div>
+            </div>
+          </div>
+          <div class="card_footer_div">
+            <ul class="card_unordered_list">
+              <li class="card_list_item">CSS</li>
+              <li class="card_list_item">HTML</li>
+              <li class="card_list_item">JavaScript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card_outside_div">
+          <div class="card_header_div">
+            <!-- <img class="card_header_img" /> -->
+            <p>originally an `img` tag</p>
+          </div>
+          <div class="card_body_outside_div">
+            <h3 class="card_title">Title.</h3>
+            <p class="card_paragraph">
+              This may be a little bit meta. But I am learning new skills while
+              building this site. So I wanted to,found by selecting the
+              'Portfolio Website Repo' button below.o show them off. In the
+              README file of the repo,found by selecting the 'Portfolio Website
+              Repo' button below.meta. But I am learning new skills while
+              building this site. So I wanted to,found by selecting the
+              'Portfolio Website Repo' button below.o show them off. In the
+              README file of the repo,found by selecting the 'Portfolio Website
+              Repo' button below.
+            </p>
+            <div class="card_body_inside_div">
+              <div class="card_a_div">
+                <a class="card_a"></a>
+                <img class="card_body_img" />
+                <a class="card_a"></a>
+              </div>
+            </div>
+          </div>
+          <div class="card_footer_div">
+            <ul class="card_unordered_list">
+              <li class="card_list_item">CSS</li>
+              <li class="card_list_item">HTML</li>
+              <li class="card_list_item">JavaScript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card_outside_div">
+          <div class="card_header_div">
+            <!-- <img class="card_header_img" /> -->
+            <p>originally an `img` tag</p>
+          </div>
+          <div class="card_body_outside_div">
+            <h3 class="card_title">Title.</h3>
+            <p class="card_paragraph">
+              This may be a little bit meta. But I am learning new skills while
+              button below.o,found by selecting the 'Portfolio Website Repo'
+              button below.
+            </p>
+            <div class="card_body_inside_div">
+              <div class="card_a_div">
+                <a class="card_a"></a>
+                <img class="card_body_img" />
+                <a class="card_a"></a>
+              </div>
+            </div>
+          </div>
+          <div class="card_footer_div">
+            <ul class="card_unordered_list">
+              <li class="card_list_item">CSS</li>
+              <li class="card_list_item">HTML</li>
+              <li class="card_list_item">JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
