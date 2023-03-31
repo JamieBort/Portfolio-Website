@@ -70,9 +70,9 @@ The site shall:
     			|
     			+-- breakpoint - For implementing breakpoints in the CSS file.
     			|	|
-    			|	+-- tablet_breakpoint - For implementing a tablet breakpoint in the CSS file.
+    			|	+-- breakpoint_tablet - For implementing a tablet breakpoint in the CSS file.
     			|	|
-    			|	+-- desktop_breakpoint - For implementing desktop breakpoint in the CSS file.
+    			|	+-- breakpoint_desktop - For implementing desktop breakpoint in the CSS file.
     			|
     			+-- accessibility - For all accessibility implementation.
     			|
