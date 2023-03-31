@@ -86,7 +86,11 @@ The site shall:
 
 - assets/ - The directory for the static resources.
 
+- css/ - Contains all CSS files.
+
 - html/ - With the exception of `./index.html`, this directory contains all of the html files. And it contains only html files.
+
+- js/ - Contains all JavaScript files.
 
 - old/ - Contains files and directories that are no longer used. But are not ready to be deleted.
 
@@ -103,5 +107,3 @@ The site shall:
 - README.md - This readme file.
 
 - Revamp2023.md - This file is for keeping track of the status and the tasks that need to be completed while I rebuild my portfolio website.
-
-- styles.css - The stylesheet.
