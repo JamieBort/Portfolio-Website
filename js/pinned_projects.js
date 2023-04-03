@@ -185,69 +185,70 @@ const pinnedProjects = {
               forkCount: 0,
             },
           },
-          {
-            node: {
-              id: "MDEwOlJlcG9zaXRvcnkxMDg3NzA5MDQ=",
-              name: "PuppyLove",
-              url: "https://github.com/JamieBort/PuppyLove",
-              stargazerCount: 0,
-              description: "An exercise in styling with CSS.",
-              languages: {
-                totalCount: 3,
-                edges: [
-                  {
-                    node: {
-                      name: "HTML",
-                    },
-                  },
-                  {
-                    node: {
-                      name: "CSS",
-                    },
-                  },
-                  {
-                    node: {
-                      name: "JavaScript",
-                    },
-                  },
-                ],
-              },
-              homepageUrl: "",
-              forkCount: 0,
-            },
-          },
-          {
-            node: {
-              id: "MDEwOlJlcG9zaXRvcnk5OTU3Mzc4MQ==",
-              name: "Create-A-User-Directory",
-              url: "https://github.com/JamieBort/Create-A-User-Directory",
-              stargazerCount: 0,
-              description:
-                "A directory using the Express framework and the Mustache-Express templating engine to implement MVC.",
-              languages: {
-                totalCount: 3,
-                edges: [
-                  {
-                    node: {
-                      name: "CSS",
-                    },
-                  },
-                  {
-                    node: {
-                      name: "JavaScript",
-                    },
-                  },
-                  {
-                    node: {
-                      name: "Mustache",
-                    },
-                  },
-                ],
-              },
-              homepageUrl: "",
-              forkCount: 0,
-            },
-          },
+          // NOTE: commented out because they're not ready to display/they're too basic to display.
+          // {
+          //   node: {
+          //     id: "MDEwOlJlcG9zaXRvcnkxMDg3NzA5MDQ=",
+          //     name: "PuppyLove",
+          //     url: "https://github.com/JamieBort/PuppyLove",
+          //     stargazerCount: 0,
+          //     description: "An exercise in styling with CSS.",
+          //     languages: {
+          //       totalCount: 3,
+          //       edges: [
+          //         {
+          //           node: {
+          //             name: "HTML",
+          //           },
+          //         },
+          //         {
+          //           node: {
+          //             name: "CSS",
+          //           },
+          //         },
+          //         {
+          //           node: {
+          //             name: "JavaScript",
+          //           },
+          //         },
+          //       ],
+          //     },
+          //     homepageUrl: "",
+          //     forkCount: 0,
+          //   },
+          // },
+          // {
+          //   node: {
+          //     id: "MDEwOlJlcG9zaXRvcnk5OTU3Mzc4MQ==",
+          //     name: "Create-A-User-Directory",
+          //     url: "https://github.com/JamieBort/Create-A-User-Directory",
+          //     stargazerCount: 0,
+          //     description:
+          //       "A directory using the Express framework and the Mustache-Express templating engine to implement MVC.",
+          //     languages: {
+          //       totalCount: 3,
+          //       edges: [
+          //         {
+          //           node: {
+          //             name: "CSS",
+          //           },
+          //         },
+          //         {
+          //           node: {
+          //             name: "JavaScript",
+          //           },
+          //         },
+          //         {
+          //           node: {
+          //             name: "Mustache",
+          //           },
+          //         },
+          //       ],
+          //     },
+          //     homepageUrl: "",
+          //     forkCount: 0,
+          //   },
+          // },
         ],
       },
     },
@@ -293,7 +294,7 @@ returnValue.forEach((project) => {
   div2_tag.setAttribute(
     "style",
     "font-size:2.25em; display: flex; justify-content: space-around;",
-  ); // Maybe move this to styles.
+  ); //NOTE:  Maybe move this to styles.
 
   // Listing the languages each repo uses.
   project.languages.forEach((language) => {
@@ -338,6 +339,9 @@ returnValue.forEach((project) => {
     }
   });
 
+  // footer div
+  const div4_tag = document.createElement("div");
+
   // Link to repo.
   const a_tag1 = document.createElement("a");
   a_tag1.setAttribute("class", "github_repo");
@@ -346,18 +350,19 @@ returnValue.forEach((project) => {
   // a_tag1.setAttribute("style", "display: inline-block; width: 100%; text-align:center;"); // Maybe move this to styles.
   a_tag1.innerHTML = "GitHub Repo";
 
-  // // Use this to ink to live the site - if it exists.
+  // // NOTE: Use this to ink to the live site - if it exists.
   // const a_tag2 = document.createElement("a");
-  // a_tag1.setAttribute("target", "_blank");
-  // a_tag1.setAttribute("href", project.url);
-  // a_tag1.innerHTML = "GitHub Repo";
+  // a_tag2.setAttribute("class", "live_site");
+  // a_tag2.setAttribute("target", "_blank");
+  // a_tag2.setAttribute("href", project.url);
+  // a_tag2.innerHTML = "GitHub Repo";
 
   card_container.appendChild(div1_tag);
-
   div1_tag.appendChild(h3_tag);
   div1_tag.appendChild(div3_tag);
   div3_tag.appendChild(p1_tag);
   div3_tag.appendChild(div2_tag);
-  div1_tag.appendChild(a_tag1);
-  // div1_tag.appendChild(a_tag2); // Append the link to live site to the div.
+  div1_tag.appendChild(div4_tag);
+  div4_tag.appendChild(a_tag1);
+  // div4_tag.appendChild(a_tag2); //NOTE:  Append the link to live site to the div.
 });

@@ -89,7 +89,7 @@ p {
 
 /* TODO: pull "text-align: center;" up higher. For example, the "text-align: center;" for the h2 is addressed in the ".card" rule set. */
 /* TODO: pull "text-align: center;" up higher. For example, the "text-align: center;" for the h3 is addressed in the ".card" rule set. */
-nav span, h1, h2, h3 {
+h1, h2, h3 {
     text-align: center;
 }
 
@@ -103,7 +103,7 @@ nav {
     /* position: fixed;
     top: 22.5px; */
     background-color: bisque;
-    border: thin solid black;
+    /* border: thin solid black; */
 
     /* display: none; position: fixed; top: 2.4rem; */
     position: fixed; 
@@ -111,16 +111,19 @@ nav {
     /* top: 2.4em; */
     /* left: 0.01rem; */
     left: 0em;
-    width: 80%;
+    /* width: 80%; */
+    width: 100%;
     min-width: 10em;
     /* min-height: 30em; */
 }
 
-nav span, nav button {
+nav button {
     display: block;
     width: 100%;
-    margin: .25em 0;
-    /* font-size: 20px; */
+}
+
+#section01{
+    /* border: .05em solid black; */
 }
 
 .section_p{
@@ -166,7 +169,7 @@ nav span, nav button {
 }
 
 #card_container {
-    border: 0.1em blue solid;
+    /* border: 0.1em blue solid; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -181,13 +184,14 @@ nav span, nav button {
     /* padding: 0 .5em; */
 
     border: thin solid gray;
-/* Using from other file. */
+    /* Using from other file. */
     display: flex;
     flex-direction: column;
     max-height: 30em;
     min-height: 15em;
     margin: 0.3em;
     width: 20em;
+    border-radius: 0.5em;
 }
 
 .card_div {
@@ -197,11 +201,10 @@ nav span, nav button {
     flex-direction: column;
     flex: 1;
     justify-content: space-between;
-}
 
-/* .card_p {
-    padding: 0 .5em;
-} */
+    max-width: 90%;
+    margin: 0 auto 1em auto;
+}
 
 #connect_container {
     /* background-color: lightsalmon; */
@@ -348,6 +351,7 @@ footer {
         font-size: 1.75rem;
         /* maybe change the `font-size: 1.75rem;` above for the `font-size: 1.75em;` below */
         /* font-size: 1.75em; */
+        white-space: nowrap; 
     }
 
     /* connect_container styles before I started messing them them in the mobile view. */
@@ -362,6 +366,12 @@ footer {
         margin-right: 2px; */
         width:97%;
         max-width:none;
+    }
+
+    #section01{
+        /* border: .1em solid green; */
+        max-width: 60em;
+        margin: auto;
     }
     
     #connect_container {

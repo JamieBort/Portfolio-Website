@@ -4,6 +4,16 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ## Status
 
+**Note - all the following has been completed in the `desktop_breakpoint` branch.**
+
+- Done.
+
+  > Create an `desktop_breakpoint` branch inside the new `breakpoint` branch.
+
+- Started.
+
+  > Modify files to address the todo items in the `./jamiebort.github.io/DesignChanges/DesignChanges.md` file.
+
 **Note - all the following has been completed in the `content_20230328` branch.**
 
 - Done.
@@ -206,6 +216,10 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 - Other tasks to address; in a different branch.:
 
+  - When the above is complete, write CSS for desktop breakpoint.
+
+    - Modify files to address the todo items in the `./jamiebort.github.io/DesignChanges/DesignChanges.md` file.
+
   - API related tasks
 
     - Consolidate and organize ALL Trello cards with
@@ -233,10 +247,6 @@ This file is for keeping track of the `Status` and the tasks that need to be com
   - When the above is complete, write CSS for tablet breakpoint.
 
     - Create an `tablet_breakpoint` branch inside of a new `breakpoint` branch.
-
-  - When the above is complete, write CSS for desktop breakpoint.
-
-    - Create an `desktop_breakpoint` branch inside the new `breakpoint` branch.
 
   - Do not delete the `Revamp2020` branch until I delete the `Revamp2023` branch
 

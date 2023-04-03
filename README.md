@@ -88,6 +88,8 @@ The site shall:
 
 - css/ - Contains all CSS files.
 
+- DesignChanges/ - A directory for the list of things that need to change with the website.
+
 - html/ - With the exception of `./index.html`, this directory contains all of the html files. And it contains only html files.
 
 - js/ - Contains all JavaScript files.
@@ -99,8 +101,6 @@ The site shall:
 #### Files
 
 - .gitignore - Specifies intentionally untracked files. See https://git-scm.com/docs/gitignore
-
-- Design Changes.md - List of things that need to change with the website.
 
 - FutureFeatures.md - Future features section of the repo. Here is listed the things I plan on adding to the repo.
 
