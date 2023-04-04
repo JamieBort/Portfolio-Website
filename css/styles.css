@@ -1,0 +1,404 @@
+/* ./css/styles.css */
+
+@font-face {
+    font-family: Tinos;
+    font-weight: 400;
+    font-style: normal;
+    src: url(./assets/fonts/GoogleFonts/Tinos/Tinos-Regular.ttf);
+    /* src: url(./assets/fonts/Tinos/Tinos-Regular.ttf); */
+    /* src: local('Delicious'), local('Delicious'), url(Delicious-Roman.otf) format('opentype'); */
+  }
+
+html {
+    height: 100%;
+    /* font-size: 100%; */
+    font-size: 16px;
+    font-family: 'Tinos', serif;
+    background-color: bisque;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    /* margin: 0 8px; */
+    /* border: medium dashed black; */
+}
+
+html, body {
+    height: 100%;
+    /* needed for proper layout */
+}
+
+#mobile_header {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 auto;
+    text-align: center;
+    background-color: #dcdcdc;
+}
+
+#desktop_header {
+    display: none;
+}
+/* establishing font sizes below */
+.mobile_header_button, nav button {
+    font-size: 28px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 19px;
+    /* border: thin solid black; */
+}
+
+p {
+    font-size: 16px;
+    /* border: thin solid black; */
+}
+/* establishing font sizes above */
+
+#name_button {
+    width: 100%;
+    /* background-color: green; */
+}
+
+#content {
+    /* border: thin dashed magenta; */
+    /* background-color: azure; */
+
+    flex: 1 1 auto;
+    /* width: 95%; */
+    /* position: relative; */
+    /* need this to position inner content */
+    overflow-y: auto;
+    /* padding: 0; */
+
+    max-width: 97%;
+    margin: auto;
+}
+
+/* TODO: pull "text-align: center;" up higher. For example, the "text-align: center;" for the h2 is addressed in the ".card" rule set. */
+/* TODO: pull "text-align: center;" up higher. For example, the "text-align: center;" for the h3 is addressed in the ".card" rule set. */
+h1, h2, h3 {
+    text-align: center;
+}
+
+.technology_p {
+    /* background-color: gray; */
+    text-align: center;
+}
+
+nav {
+    /* position: absolute; */
+    /* position: fixed;
+    top: 22.5px; */
+    background-color: bisque;
+    /* border: thin solid black; */
+
+    /* display: none; position: fixed; top: 2.4rem; */
+    position: fixed; 
+    /* top: 2.4rem; */
+    /* top: 2.4em; */
+    /* left: 0.01rem; */
+    left: 0em;
+    /* width: 80%; */
+    width: 100%;
+    min-width: 10em;
+    /* min-height: 30em; */
+}
+
+nav button {
+    display: block;
+    width: 100%;
+}
+
+#section01{
+    /* border: .05em solid black; */
+}
+
+.section_p{
+    padding: 0 .5em;
+    /* border: thin solid gray; */
+    /* border-radius: .5em; */
+}
+
+/* style button */
+.section_button {
+    /* border:; */
+    border-radius: .40em;
+    /* padding:.2em; */
+    /* border: 1px solid black; */
+    border: .05em solid black;
+    /* background-color:antiquewhite; */
+    background-color: rgb(239, 207, 168);
+}
+
+/* style button */
+.section_button:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #5a01a7;
+    transition: 0.7s;
+}
+
+/* style button */
+.section_button:active {
+    background-color: #ffbf00;
+}
+
+.section_button:hover {
+    background-color:bisque;
+    transition: 0.7s;
+}
+
+/* style button */
+.section_button:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #5a01a7;
+}
+
+#card_container {
+    /* border: 0.1em blue solid; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    /* background-color: aqua; */
+    /* border: thin solid gray;
+    border-radius: .5em;
+    margin: 1em 0;
+    min-height: 10em; */
+    /* padding: 0 .5em; */
+
+    border: thin solid gray;
+    /* Using from other file. */
+    display: flex;
+    flex-direction: column;
+    max-height: 30em;
+    min-height: 15em;
+    margin: 0.3em;
+    width: 20em;
+    border-radius: 0.5em;
+}
+
+.card_div {
+    /* padding: 0 .5em .5em .5em; */
+    /* border: 0.1em yellowgreen solid; */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+
+    max-width: 90%;
+    margin: 0 auto 1em auto;
+}
+
+#connect_container {
+    /* background-color: lightsalmon; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
+    /* height: 100%; */
+    /* max-width: 100px;
+    width: auto; */
+    /* background-color: lightseagreen; */
+    /* background: lightseagreen; */
+    /* width: 100px;
+    height: 100px; */
+
+    flex-wrap: wrap;
+}
+
+.connect_a{
+    /* background-color: lightsalmon; */
+    /* border: medium dashed maroon; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect_img {
+        /* background-color: pink; */
+    max-width: 6em;
+    /* min-width: 4em; */
+    padding: 1em;
+}
+
+#fontAwesome{
+    /* background-color: lightsalmon; */
+    font-size: 7em; 
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    /* padding: 1em; */
+    /* margin: 2em; */
+    /* margin-top: 3em; */
+}
+
+.fontAwesome{
+    /* background-color: lightsalmon; */
+    /* font-size: 7em;  */
+    /* display: flex;  */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around;  */
+    /* padding: .25em; */
+    margin: .25em;
+    /* margin-top: 3em; */
+}
+
+footer {
+    flex: 0 0 auto;
+    text-align: center;
+    font-size: 19px;
+    background-color: #dcdcdc;
+}
+
+
+.styled_links {
+    /* background-color: red; */
+    color: white;
+    /* padding: 1em 1.5em; */
+    /* text-decoration: none; */
+    /* text-transform: uppercase; */
+  }
+  
+  .styled_links:hover {
+    background-color: #555;
+  }
+  
+  .styled_links:active {
+    background-color: black;
+  }
+  
+  .styled_links:visited {
+    /* background-color: #ccc; */
+    color: black;
+  }
+
+.github_repo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    /* display: inline-block; 
+    width:100%;
+    text-align:center; */
+/* margin:0 2em; */
+/* padding:0 .25em; */
+
+    background-color:burlywood;
+    border-radius: 0 0 .5em .5em;
+    /* border-ra */
+    /* color: white; */
+    /* padding: 1em 1.5em; */
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 2em;
+    /* width: 100%; */
+  }
+  
+  .github_repo:hover {
+    background-color: #555;
+  }
+  
+  .github_repo:active {
+    background-color: black;
+  }
+  
+  .github_repo:visited {
+    background-color: #ccc;
+    /* color: black; */
+  }
+
+
+
+/* Breakpoint for laptops */
+    @media (min-width: 64em) {
+/* @media (min-width: 1025px) { */
+    /* @media (min-width: 40rem) { */
+
+    body {
+        /* border: medium solid blue; */
+    }
+
+    #mobile_header {
+        display: none;
+    }
+
+    #desktop_header {
+        /* display: inline-block; */
+        display: flex;
+        justify-content: space-between;
+        background-color: #dcdcdc;
+    }
+
+    .desktop_header_button {
+        /* background-color: green; */
+        font-size: 1.75rem;
+        /* maybe change the `font-size: 1.75rem;` above for the `font-size: 1.75em;` below */
+        /* font-size: 1.75em; */
+        white-space: nowrap; 
+    }
+
+    /* connect_container styles before I started messing them them in the mobile view. */
+    /* In the mobile view they were all in a single row */
+
+    #content {
+        /* border: thin dashed magenta; */
+        /* background-color: azure; */
+        /* margin:0 auto; */
+        /* margin:0 99%; */
+        /* margin-left: 2px;
+        margin-right: 2px; */
+        width:97%;
+        max-width:none;
+    }
+
+    #section01{
+        /* border: .1em solid green; */
+        max-width: 60em;
+        margin: auto;
+    }
+    
+    #connect_container {
+        /* background-color: lightsalmon; */
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3em;
+        /* height: 100%; */
+        /* max-width: 100px;
+        width: auto; */
+        /* background-color: lightseagreen; */
+        /* background: lightseagreen; */
+        /* width: 100px;
+        height: 100px; */
+    }
+
+    .connect_img {
+        max-width: 4em;
+    }
+
+    footer {
+        /* background-color: #dcdcdc; */
+        /* flex: 0 0 auto; */
+        text-align: center;
+        font-size: 1.00rem;
+        /* display: block; */
+        /* maybe change the `font-size: 1.00rem;` above for the `font-size: 1.00em;`  */
+    }
+
+}

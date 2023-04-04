@@ -4,7 +4,125 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ## Status
 
+**Note - all the following has been completed in the `desktop_breakpoint` branch.**
+
+- Done.
+
+  > Create an `desktop_breakpoint` branch inside the new `breakpoint` branch.
+
+- Started.
+
+  > Modify files to address the todo items in the `./jamiebort.github.io/DesignChanges/DesignChanges.md` file.
+
+**Note - all the following has been completed in the `content_20230328` branch.**
+
+- Done.
+
+  > for the `content_20230328` branch.
+
+  - Add content to the `Bio` section. Done.
+
+  - Add content to the `Projects` section. Done.
+
+  - Add content to the `Connect with Me` section. Done.
+
+  - Choose between the .png files for the `Connect with Me` icons. And the Font Awesome logos. Done.
+
+    If I remain with the .png files, refactor to use fewer `<div>` tags. Done - not possible.
+
+  - Clean up the styling. Specifically
+
+    - The buttons in the `Bio` section. Done.
+
+    - The `Code the Dream` link in the `Bio` section. Done.
+
+    - The `GitHub Repo` link in the `Projects` section. Done.
+
+  - Refactor the JavaScript to clean it up. Done. Cleaned up but not refactored.
+
+  - Clean up the files: Done.
+
+    - Remove commented code and notes.
+
+  - Address the JSHint error that pops up. Done.
+
+  - (Re-)Add auto-formatting upon save. Done.
+
+  - Add T0-Do plugin. Done.
+
+- Done.
+
+  > Create a `content` branch.
+
+  > Create a `content_20230328` branch.
+
+  > Comment out the email button and possibly disable the logic of the email contact form (until I fix the functionality of the contact me form).
+
+**Note - all the following has been completed in the `host_routed_react_gh-pages_with_graphql_api_call` branch.**
+
+- Done. Attempted to see if I could make API calls using the hosted React app while hosted by gh-pages.
+
+  To that end, I was going to use GitHubPinnedRepositoriesReactNextJsGitHubGraphQLAPI https://github.com/JamieBort/API-Playground/tree/main/GitHubPinnedRepositoriesReactNextJsGitHubGraphQLAPI/my-pinned-repos
+
+  However I wasn't able to access the github secret using GitHub Actions. See https://github.com/JamieBort/GitHub-Actions-Learning-repo
+
+  **I will table this task for now.** And will focus on rebuilding the site WITHOUT making an API call.
+
+  > API related tasks
+
+  - Make api call to github for my project info.
+
+    Start with this https://github.com/JamieBort/API-Playground/tree/main/GitHubPinnedRepositoriesReactNextJsGitHubGraphQLAPI
+
+    Then attempt to do the same with vanilla JavaScript.
+
+    For example: [github REST API v3 Crash Course with Vanilla Javascript (No dependencies)](https://www.youtube.com/watch?v=5QlE6o-iYcE) YouTube video.
+
+    And [GitHub REST APIs with vanilla JavaScript](https://raajnadar.medium.com/github-rest-apis-with-vanilla-javascript-63f568814b8d) tutorial.
+
+    **Findings**
+
+    Not able to make a rest api call to the pinned items. There is not an endpoint for this. Therefore I need to make a GraphQL call for that info.
+
+    Furthermore I need to authenticate for that info.
+
+    Which means I need use environment variables.
+
+    Which means I need to learn how to host the page on Gh-pages with environment variables.
+
+    This is a second step - first get it working locally.
+
+    To that end, see ~~WorkingWithGraphQLusingVanillaJS in https://github.com/JamieBort/API-Playground#directories~~ GitHubPinnedRepositoriesReactNextJsGitHubGraphQLAPI https://github.com/JamieBort/API-Playground/tree/main/GitHubPinnedRepositoriesReactNextJsGitHubGraphQLAPI/my-pinned-repos
+
+    Now that I am going to use this "Add GitHub Pinned Repositories to React & Next.js with the GitHub GraphQL API" YouTube video, **I am going to switch branches and make sure I can host a React site in gh-pages**.
+
+    This is working: https://github.com/JamieBort/react-gh-pages-tutorial
+
+    And this will suite me better since I'll have navigation: https://github.com/JamieBort/routed-react-app-gh-pages
+
+**Note - all the following has been completed in the `api_github` branch.**
+
+- Done.
+
+  > Create an `api_github` branch.
+
+**Note - all the following has been completed in the `api` branch.**
+
+- Done.
+
+  > Create an `api` branch.
+
 **Note - all the following has been completed in the `Revamp2023` branch.**
+
+- Done.
+
+  > General housekeeping
+
+  > > Modify the https://github.com/JamieBort/jamiebort.github.io/tree/basic_framework#branch-structure, https://github.com/JamieBort/jamiebort.github.io/tree/dev#branch-structure, https://github.com/JamieBort/jamiebort.github.io/tree/Revamp2023#branch-structure and sections to reflect the new branches.
+
+  > > Add the `Revamp2023.md` file to the `dev` branch. Add it to the `master` branch too.
+
+  > > > So that as I/someone looks at the master branch they know the status of this project.
 
 - Done
 
@@ -98,56 +216,62 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 - Other tasks to address; in a different branch.:
 
-  - General housekeeping
+  - When the above is complete, write CSS for desktop breakpoint.
 
-    - Modify the https://github.com/JamieBort/jamiebort.github.io/tree/basic_framework#branch-structure, https://github.com/JamieBort/jamiebort.github.io/tree/dev#branch-structure, https://github.com/JamieBort/jamiebort.github.io/tree/Revamp2023#branch-structure and sections to reflect the new branches.
-    - Add the `Revamp2023.md` file to the `dev` branch. ~~Maybe add~~ Add it to the `master` branch too.
-
-      So that as I/someone looks at the master branch they know the status of this project.
-
-  - Address the `ToDo` item in the `<script>` tag in the index.html file.
-
-    **Create a new branch for this.**
+    - Modify files to address the todo items in the `./jamiebort.github.io/DesignChanges/DesignChanges.md` file.
 
   - API related tasks
 
-    - Create an `api` branch.
-    - Make api call to github for my project info.
     - Consolidate and organize ALL Trello cards with
       - `API` in the Title.
       - and that come up when searching for `API`
 
-  - Make my website accessible.
-
-    - Create an `accessibility` branch.
-    - Modify the `<img>`, `<a>`, `<button>`, `<nav>`, and other tags for assistive screen readers.
-
-  - Working on the Project Cards.
+  - ~~Working on the Project Cards.~~ Right now they appear just fine.
 
     Use this https://css-tricks.com/aspect-ratio-boxes/
 
     **Create a new branch for this.**
 
+  - All JavaScript
+
+    **Create a new branch for this.**
+
+    - Address the `ToDo` item in the `<script>` tag in the index.html file.
+
+      **Create a new branch for this.**
+
+    - Fix the functionality of the contact me form.
+
+      **Create a new branch for this.**
+
   - When the above is complete, write CSS for tablet breakpoint.
 
     - Create an `tablet_breakpoint` branch inside of a new `breakpoint` branch.
 
-  - When the above is complete, write CSS for desktop breakpoint.
+  - Do not delete the `Revamp2020` branch until I delete the `Revamp2023` branch
 
-    - Create an `desktop_breakpoint` branch inside the new `breakpoint` branch.
+  - Make my website accessible.
 
-  - When the `Revamp2023` branch is ready to merge into the `dev` branch, first create a staging branch for the `dev` branch. To run through a mock process of merging all the files and directories.
+    - **This should be done once all of the content has been added.**
+    - Create an `accessibility` branch.
+    - Modify the `<img>`, `<a>`, `<button>`, `<nav>`, and other tags for assistive screen readers.
 
-  - Once the `Revamp2023` branch has been merged into the `dev` branch delete
+  - Once the `Revamp2023` branch has been merged into the `dev` branch, delete
 
     - the `Revamp2020` branch,
-
     - the `branch_for_cleaning_before_pushing_to_master` branch,
-
     - the `old_styes.css` file,
-
     - the `./html/old_index.html`, file,
-
     - and the pre-Revamp2023/ directory,
 
     Go through them each to make sure I will not be losing anything valuable.
+
+    Each one should (now) be in the `./jamiebort.github.io/old/` directory.
+
+    **Create a new branch for this.**
+
+    Also prune or generally clean up all the old branches.
+
+  - Remove the Workflow from
+
+    https://github.com/JamieBort/jamiebort.github.io/tree/master/.github/workflows

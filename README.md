@@ -46,27 +46,35 @@ The site shall:
 
 ### Branch Structure
 
-    +-- master
+    +-- master - The live branch.
     	|
-    	+-- dev
+    	+-- dev - The development branch
     		|
-    		+-- Revamp2023
+    		+-- Revamp2023 - The branch created to update the website in 2023.
     			|
-    			+-- basic_framework - ~~Create the basic HTML and JavaScript needed for populating and navigating through the website.~~ Done. **DELETED**
+    			+-- content - For adding content.
+    			|	|
+    			|	+-- content_20230328 - Content updated as of 20230328.
     			|
-    			+-- modify_basic_framework - For styling the website and adding the project cards. (Side note - consider having a more basic card that brings the user to a dedicated page. Or just a more simple card...) **DELETED**
-    			|
-    			+-- accessibility - For all accessibility implementation.
+    			+-- host - For all things host related.
+    			|	|
+    			|	+-- host_routed_react_gh-pages - To determine if we can run a react app in gh-pages. If so, we'll make a GraphQL call.
+    			|		|
+    			|		+-- host_routed_react_gh-pages_with_graphql_api_call - To see if I can make API calls using the a React app while hosted by gh-pages. **Tabled for now**
     			|
     			+-- api - For all api related logic.
+    			|	|
+    			|	+-- api_github - For implementing api calls to GitHub.
     			|
     			+-- script - For all script related logic.
     			|
     			+-- breakpoint - For implementing breakpoints in the CSS file.
     			|	|
-    			|	+-- tablet_breakpoint - For implementing a tablet breakpoint in the CSS file.
+    			|	+-- breakpoint_tablet - For implementing a tablet breakpoint in the CSS file.
     			|	|
-    			|	+-- desktop_breakpoint - For implementing desktop breakpoint in the CSS file.
+    			|	+-- breakpoint_desktop - For implementing desktop breakpoint in the CSS file.
+    			|
+    			+-- accessibility - For all accessibility implementation.
     			|
     			+-- other feature branches
 
@@ -78,20 +86,24 @@ The site shall:
 
 - assets/ - The directory for the static resources.
 
+- css/ - Contains all CSS files.
+
+- DesignChanges/ - A directory for the list of things that need to change with the website.
+
 - html/ - With the exception of `./index.html`, this directory contains all of the html files. And it contains only html files.
 
-- pre-Revamp2023/ - This directory was created when I created the `Revamp2023` branch. It contains the contents of the `jamiebort.github.io` directory at the point of when the `Revamp2023` branch was created.
+- js/ - Contains all JavaScript files.
+
+- old/ - Contains files and directories that are no longer used. But are not ready to be deleted.
 
 #### Files
 
 - .gitignore - Specifies intentionally untracked files. See https://git-scm.com/docs/gitignore
 
-- index.html - The landing page. This links to `./html/index.html`.
+- FutureFeatures.md - Future features section of the repo. Here is listed the things I plan on adding to the repo.
 
-- old_styes.css - The previous stylesheet. `./html/old_index.html` links to it. Renamed because I rebuilt the index file and I wasn't ready to delete the old one yet.
+- index.html - The landing page. This links to `./html/index.html`.
 
 - README.md - This readme file.
 
 - Revamp2023.md - This file is for keeping track of the status and the tasks that need to be completed while I rebuild my portfolio website.
-
-- styles.css - The stylesheet.
