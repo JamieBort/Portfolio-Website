@@ -21,7 +21,11 @@
 
       #content {
         background-color: bisque;
-        height: 1200px;
+      }
+
+      section {
+        background-color: lightblue;
+        height: 400px;
       }
 
       footer {
@@ -33,12 +37,13 @@
   </head>
   <body>
     <header>
-      <button onclick="window.location= '#top'">Jamie Bort</button>
-      <button onclick="navigation()">Nav</button>
+      <button onclick="leftHeaderButton()">Jamie Bort</button>
+      <button onclick="rightHeaderButton()">Nav</button>
     </header>
     <div id="content">
       <nav id="menu" style="display: none; background-color: aquamarine">
-        Nav Menu
+        <span>Nav Menu</span>
+        <button onclick="jumpToSection2()">Projects</button>
       </nav>
       <h1 id="title">Title</h1>
       <section id="section01">section 1</section>
@@ -48,10 +53,15 @@
     <footer>footer</footer>
   </body>
   <script>
-    const navigation = () => {
-      //   window.location = "#top";
+    const leftHeaderButton = () => {
+      window.location = "#top";
+    };
+    const rightHeaderButton = () => {
       const menu = document.getElementById("menu");
       menu.style.display = "block";
+    };
+    const jumpToSection2 = () => {
+      window.location = "#section02";
     };
   </script>
 </html>
