@@ -99,28 +99,17 @@ h1, h2, h3 {
 }
 
 nav {
-    /* position: absolute; */
-    /* position: fixed;
-    top: 22.5px; */
     background-color: bisque;
     /* border: thin solid black; */
-
-    /* display: none; position: fixed; top: 2.4rem; */
-    /* position: fixed;  */
-    /* top: 2.4rem; */
-    /* top: 2.4em; */
-    /* left: 0.01rem; */
-    left: 0em;
-    /* width: 80%; */
+/* left: 0em;
     width: 100%;
-    min-width: 10em;
-    /* min-height: 30em; */
+    min-width: 10em; */
 }
 
-nav button {
+/* nav button {
     display: block;
-    /* width: 100%; */
-}
+    width: 100%;
+} */
 
 #section01{
     /* border: .05em solid black; */

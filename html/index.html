@@ -35,7 +35,7 @@
   <body>
     <header id="mobile_header">
       <button onclick="leftHeaderButton()">Jamie Bort</button>
-      <button onclick="rightHeaderButton()">Nav</button>
+      <!-- <button onclick="rightHeaderButton()">Nav</button> -->
 
       <!-- <button
         class="mobile_header_button"
@@ -247,61 +247,66 @@
       // temp script section for addressing Header issue.
       const leftHeaderButton = () => {
         console.log("leftHeaderButton");
-        const top = document.getElementById("top");
+
+        // const top = document.getElementById("top");
         // top.setAttribute("style", "background-color: #dcdcdc;");
+
+        const mobile_header = document.getElementById("mobile_header");
+        mobile_header.setAttribute("style", "background-color: lightgreen;");
+
         window.location = "#top";
         // menu.style.display = "none";
       };
 
-      const rightHeaderButton = () => {
-        console.log("rightHeaderButton");
-        // const menu = document.getElementById("menu");
-        // menu.setAttribute("style", ": block; background-color: bisque;");
-        const top = document.getElementById("top");
-        // top.setAttribute("style", "background-color: bisque;");
-        toggleNavMenu();
-      };
+      // const rightHeaderButton = () => {
+      //   console.log("rightHeaderButton");
+      //   // const menu = document.getElementById("menu");
+      //   // menu.setAttribute("style", ": block; background-color: bisque;");
+      //   const top = document.getElementById("top");
+      //   // top.setAttribute("style", "background-color: bisque;");
+      //   toggleNavMenu();
+      // };
 
-      const toggleNavMenu = () => {
-        const menu = document.getElementById("menu");
+      // const toggleNavMenu = () => {
+      //   const menu = document.getElementById("menu");
 
-        if (menu.style.display === "none") {
-          menu.style.display = "block";
-        } else menu.style.display = "none";
-      };
+      //   if (menu.style.display === "none") {
+      //     menu.style.display = "block";
+      //   } else menu.style.display = "none";
+      // };
 
-      const section01 = () => {
-        window.location = "#section01";
-        // toggleNavMenu();
-        // menu.style.display = "none";
-        closeMenu();
-      };
+      // const section01 = () => {
+      //   window.location = "#section01";
+      //   // toggleNavMenu();
+      //   // menu.style.display = "none";
+      //   closeMenu();
+      // };
 
-      const section02 = () => {
-        window.location = "#section02";
-        // toggleNavMenu();
-        // menu.style.display = "none";
-        closeMenu();
-      };
+      // const section02 = () => {
+      //   window.location = "#section02";
+      //   // toggleNavMenu();
+      //   // menu.style.display = "none";
+      //   closeMenu();
+      // };
 
-      const section03 = () => {
-        window.location = "#section03";
-        // toggleNavMenu();
-        // menu.style.display = "none";
-        closeMenu();
-      };
+      // const section03 = () => {
+      //   window.location = "#section03";
+      //   // toggleNavMenu();
+      //   // menu.style.display = "none";
+      //   closeMenu();
+      // };
 
-      const closeMenu = () => (menu.style.display = "none");
+      // const closeMenu = () => (menu.style.display = "none");
 
-      // const content = document.getElementById("content");
-      // content.addEventListener("click", closeMenu, false);
-      // // content.addEventListener(
-      // //   "click",
-      // //   () => {
-      // //     menu.style.display = "none";
-      // //   },
-      // //   false,
-      // // );
+      // // const content = document.getElementById("content");
+      // // content.addEventListener("click", closeMenu, false);
+      // // // content.addEventListener(
+      // // //   "click",
+      // // //   () => {
+      // // //     menu.style.display = "none";
+      // // //   },
+      // // //   false,
+      // // // );
     </script>
   </body>
 </html>
