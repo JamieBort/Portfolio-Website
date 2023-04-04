@@ -4,6 +4,60 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ## Status
 
+**Note - all the following has been completed in the `desktop_breakpoint` branch.**
+
+- Done.
+
+  > Create an `desktop_breakpoint` branch inside the new `breakpoint` branch.
+
+- Started.
+
+  > Modify files to address the todo items in the `./jamiebort.github.io/DesignChanges/DesignChanges.md` file.
+
+**Note - all the following has been completed in the `content_20230328` branch.**
+
+- Done.
+
+  > for the `content_20230328` branch.
+
+  - Add content to the `Bio` section. Done.
+
+  - Add content to the `Projects` section. Done.
+
+  - Add content to the `Connect with Me` section. Done.
+
+  - Choose between the .png files for the `Connect with Me` icons. And the Font Awesome logos. Done.
+
+    If I remain with the .png files, refactor to use fewer `<div>` tags. Done - not possible.
+
+  - Clean up the styling. Specifically
+
+    - The buttons in the `Bio` section. Done.
+
+    - The `Code the Dream` link in the `Bio` section. Done.
+
+    - The `GitHub Repo` link in the `Projects` section. Done.
+
+  - Refactor the JavaScript to clean it up. Done. Cleaned up but not refactored.
+
+  - Clean up the files: Done.
+
+    - Remove commented code and notes.
+
+  - Address the JSHint error that pops up. Done.
+
+  - (Re-)Add auto-formatting upon save. Done.
+
+  - Add T0-Do plugin. Done.
+
+- Done.
+
+  > Create a `content` branch.
+
+  > Create a `content_20230328` branch.
+
+  > Comment out the email button and possibly disable the logic of the email contact form (until I fix the functionality of the contact me form).
+
 **Note - all the following has been completed in the `host_routed_react_gh-pages_with_graphql_api_call` branch.**
 
 - Done. Attempted to see if I could make API calls using the hosted React app while hosted by gh-pages.
@@ -162,29 +216,37 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 - Other tasks to address; in a different branch.:
 
+  - When the above is complete, write CSS for desktop breakpoint.
+
+    - Modify files to address the todo items in the `./jamiebort.github.io/DesignChanges/DesignChanges.md` file.
+
   - API related tasks
 
     - Consolidate and organize ALL Trello cards with
       - `API` in the Title.
       - and that come up when searching for `API`
 
-  - Working on the Project Cards.
+  - ~~Working on the Project Cards.~~ Right now they appear just fine.
 
     Use this https://css-tricks.com/aspect-ratio-boxes/
 
     **Create a new branch for this.**
 
-  - Address the `ToDo` item in the `<script>` tag in the index.html file.
+  - All JavaScript
 
     **Create a new branch for this.**
+
+    - Address the `ToDo` item in the `<script>` tag in the index.html file.
+
+      **Create a new branch for this.**
+
+    - Fix the functionality of the contact me form.
+
+      **Create a new branch for this.**
 
   - When the above is complete, write CSS for tablet breakpoint.
 
     - Create an `tablet_breakpoint` branch inside of a new `breakpoint` branch.
-
-  - When the above is complete, write CSS for desktop breakpoint.
-
-    - Create an `desktop_breakpoint` branch inside the new `breakpoint` branch.
 
   - Do not delete the `Revamp2020` branch until I delete the `Revamp2023` branch
 
@@ -194,7 +256,7 @@ This file is for keeping track of the `Status` and the tasks that need to be com
     - Create an `accessibility` branch.
     - Modify the `<img>`, `<a>`, `<button>`, `<nav>`, and other tags for assistive screen readers.
 
-  - Once the `Revamp2023` branch has been merged into the `dev` branch delete
+  - Once the `Revamp2023` branch has been merged into the `dev` branch, delete
 
     - the `Revamp2020` branch,
     - the `branch_for_cleaning_before_pushing_to_master` branch,
@@ -203,3 +265,13 @@ This file is for keeping track of the `Status` and the tasks that need to be com
     - and the pre-Revamp2023/ directory,
 
     Go through them each to make sure I will not be losing anything valuable.
+
+    Each one should (now) be in the `./jamiebort.github.io/old/` directory.
+
+    **Create a new branch for this.**
+
+    Also prune or generally clean up all the old branches.
+
+  - Remove the Workflow from
+
+    https://github.com/JamieBort/jamiebort.github.io/tree/master/.github/workflows
