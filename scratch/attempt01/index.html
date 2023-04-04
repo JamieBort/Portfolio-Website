@@ -1,0 +1,57 @@
+<!-- ./jamiebort.github.io/scratch/attempt01/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: aqua;
+        text-align: center;
+      }
+
+      header {
+        background-color: beige;
+        position: sticky;
+        top: 0;
+      }
+
+      #content {
+        background-color: bisque;
+        height: 1200px;
+      }
+
+      footer {
+        background-color: chartreuse;
+        position: sticky;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <button onclick="window.location= '#top'">Jamie Bort</button>
+      <button onclick="navigation()">Nav</button>
+    </header>
+    <div id="content">
+      <nav id="menu" style="display: none; background-color: aquamarine">
+        Nav Menu
+      </nav>
+      <h1 id="title">Title</h1>
+      <section id="section01">section 1</section>
+      <section id="section02">section 2</section>
+      <section id="section03">section 3</section>
+    </div>
+    <footer>footer</footer>
+  </body>
+  <script>
+    const navigation = () => {
+      //   window.location = "#top";
+      const menu = document.getElementById("menu");
+      menu.style.display = "block";
+    };
+  </script>
+</html>
