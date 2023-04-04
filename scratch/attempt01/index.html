@@ -43,7 +43,9 @@
     <div id="content">
       <nav id="menu" style="display: none; background-color: aquamarine">
         <span>Nav Menu</span>
+        <button onclick="jumpToSection1()">Bio</button>
         <button onclick="jumpToSection2()">Projects</button>
+        <button onclick="jumpToSection3()">Connect</button>
       </nav>
       <h1 id="title">Title</h1>
       <section id="section01">section 1</section>
@@ -60,8 +62,14 @@
       const menu = document.getElementById("menu");
       menu.style.display = "block";
     };
+    const jumpToSection1 = () => {
+      window.location = "#section01";
+    };
     const jumpToSection2 = () => {
       window.location = "#section02";
+    };
+    const jumpToSection3 = () => {
+      window.location = "#section03";
     };
   </script>
 </html>
