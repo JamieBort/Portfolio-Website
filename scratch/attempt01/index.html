@@ -23,6 +23,12 @@
         background-color: bisque;
       }
 
+      #menu {
+        /* position: sticky;
+        top: 0;
+        z-index: 9999; */
+      }
+
       section {
         background-color: lightblue;
         height: 400px;
@@ -39,14 +45,24 @@
     <header>
       <button onclick="leftHeaderButton()">Jamie Bort</button>
       <button onclick="rightHeaderButton()">Nav</button>
-    </header>
-    <div id="content">
-      <nav id="menu" style="display: none; background-color: aquamarine">
+      <nav
+        id="menu"
+        style="
+          display: none;
+          /* z-index: 9999; */
+          /* top: 0; */
+          position: sticky;
+          background-color: aquamarine;
+        "
+      >
         <span>Nav Menu</span>
         <button onclick="jumpToSection1()">Bio</button>
         <button onclick="jumpToSection2()">Projects</button>
         <button onclick="jumpToSection3()">Connect</button>
       </nav>
+    </header>
+
+    <div id="content">
       <h1 id="title">Title</h1>
       <section id="section01">section 1</section>
       <section id="section02">section 2</section>
