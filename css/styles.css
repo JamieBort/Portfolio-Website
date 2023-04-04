@@ -76,7 +76,8 @@ p {
     /* border: thin dashed magenta; */
     /* background-color: azure; */
 
-    flex: 1 1 auto;
+    /* commented "flex: 1 1 auto;" out */
+    /* flex: 1 1 auto; */
     /* width: 95%; */
     /* position: relative; */
     /* need this to position inner content */
