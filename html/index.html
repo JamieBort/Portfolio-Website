@@ -70,7 +70,9 @@
       </button>
     </header>
 
-    <div id="content" style="position: relative">
+    <!-- <div id="content" style="position: relative"> -->
+
+    <div id="content">
       <nav id="menu" style="display: none">
         <span>Nav Menu</span>
         <button onclick="section01()">Bio</button>
@@ -248,6 +250,7 @@
         const top = document.getElementById("top");
         // top.setAttribute("style", "background-color: #dcdcdc;");
         window.location = "#top";
+        menu.style.display = "none";
       };
 
       const rightHeaderButton = () => {
@@ -269,18 +272,36 @@
 
       const section01 = () => {
         window.location = "#section01";
-        toggleNavMenu();
+        // toggleNavMenu();
+        // menu.style.display = "none";
+        closeMenu();
       };
 
       const section02 = () => {
         window.location = "#section02";
-        toggleNavMenu();
+        // toggleNavMenu();
+        // menu.style.display = "none";
+        closeMenu();
       };
 
       const section03 = () => {
         window.location = "#section03";
-        toggleNavMenu();
+        // toggleNavMenu();
+        // menu.style.display = "none";
+        closeMenu();
       };
+
+      const closeMenu = () => (menu.style.display = "none");
+
+      // const content = document.getElementById("content");
+      // content.addEventListener("click", closeMenu, false);
+      // // content.addEventListener(
+      // //   "click",
+      // //   () => {
+      // //     menu.style.display = "none";
+      // //   },
+      // //   false,
+      // // );
     </script>
   </body>
 </html>
