@@ -67,6 +67,8 @@ The site shall:
     			|	+-- api_github - For implementing api calls to GitHub.
     			|
     			+-- script - For all script related logic.
+    			|	|
+    			|	+-- script_header - For fixing the header. It disappears when viewing the site on a mobile device.
     			|
     			+-- breakpoint - For implementing breakpoints in the CSS file.
     			|	|

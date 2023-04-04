@@ -214,6 +214,10 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ### Next Steps
 
+**The mobile version is broken - the header disappears when one of the buttons in the header is selected.**
+
+**Also, the extra html isn't right: https://jamiebort.github.io/html/index.html It should be removed.**
+
 - Other tasks to address; in a different branch.:
 
   - When the above is complete, write CSS for desktop breakpoint.

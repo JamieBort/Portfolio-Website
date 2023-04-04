@@ -2,6 +2,10 @@
 
 List of things that need to change with the website.
 
+**The mobile version is broken - the header disappears when one of the buttons in the header is selected.**
+
+**Also, the extra html isn't right: https://jamiebort.github.io/html/index.html It should be removed.**
+
 ## Throughout the site.
 
 - CSS Transitions for
