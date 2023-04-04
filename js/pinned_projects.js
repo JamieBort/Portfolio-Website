@@ -332,7 +332,7 @@ returnValue.forEach((project) => {
       //   div2_tag.appendChild(span1_tag);
       //   break;
       default:
-        console.log("other:", language);
+        // console.log("other language:", language);
         // span_tag.innerHTML = language;
         // div2_tag.appendChild(span_tag);
         break;
