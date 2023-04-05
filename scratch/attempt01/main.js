@@ -7,6 +7,7 @@
 // const leftHeaderButton = () => (window.location = "#top");
 
 const leftHeaderButton = () => {
+  console.log("top fired");
   window.location = "#top";
   closeNavMenu();
 };
