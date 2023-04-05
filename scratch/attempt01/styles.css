@@ -51,6 +51,8 @@ p , ul{
 
 #content {
 /* background-color: bisque; */
+width: 97%;
+margin: 0 auto;
 
 /* play with this calc(100vh - 50px)value */
 /* min-height: calc(100vh - 25px); */
@@ -69,6 +71,34 @@ width: 100%;
 section {
 /* background-color: lightblue; */
 /* height: 400px; */
+}
+
+#card_container {
+    /* border: 0.1em blue solid; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    border: thin solid gray;
+    max-height: 30em;
+    min-height: 15em;
+    margin: 0.3em;
+    /* width: 20em; */
+    border-radius: 0.5em;
+}
+
+.card_div {
+    /* padding: 0 .5em .5em .5em; */
+    /* border: 0.1em yellowgreen solid; */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+
+    max-width: 90%;
+    margin: 0 auto 1em auto;
 }
 
 #ConnectWithMe{
