@@ -1,12 +1,12 @@
 /* ./styles.css */
 
 body {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     text-align: center;
   }
 
   header {
-    /* background-color:blueviolet; */
+    background-color:blueviolet;
     position: sticky;
     top: 0;
   }
@@ -16,9 +16,13 @@ body {
   }
 
   #menu {
-    /* display: none; */
     position: sticky;
     background-color: aquamarine;
+  }
+
+  .menu_button{
+    display: block;
+    width: 100%;
   }
 
   section {

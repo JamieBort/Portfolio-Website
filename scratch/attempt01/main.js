@@ -1,11 +1,11 @@
 // ./main.js
 
-const leftHeaderButton = () => (window.location = "#top");
+// const leftHeaderButton = () => (window.location = "#top");
 
-// const leftHeaderButton = () => {
-//   window.location = "#top";
-//   closeNavMenu();
-// };
+const leftHeaderButton = () => {
+  window.location = "#top";
+  closeNavMenu();
+};
 
 const rightHeaderButton = () => toggleNavMenu();
 
