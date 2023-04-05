@@ -25,14 +25,10 @@ body{
     font-family: "Tinos";
     font-weight: 400;
     font-style: normal;
-
+/* 
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */
   
-}
-
-#test {
-    flex: 1 0 auto;
 }
 
 header {
@@ -51,7 +47,7 @@ p , ul{
 }
 
 #content {
-background-color: bisque;
+/* background-color: bisque; */
 
 /* play with this calc(100vh - 50px)value */
 /* min-height: calc(100vh - 25px); */
@@ -77,10 +73,27 @@ section {
     /* margin-bottom: 25px; */
 }
 
+#connect_container {
+    /* background-color: lightsalmon; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .fontAwesome{
-    background-color: bisque;
+    /* background-color: lightsalmon; */
+    border: thin solid maroon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 3em;
 
+    /* Former styles for the images */
+    /* background-color: pink; */
+    max-width: 6em;
+    /* min-width: 4em; */
+    padding: 1em;
+    margin: .25em;
 }
 
 footer {
