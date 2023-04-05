@@ -42,7 +42,10 @@ top: 0;
 
 header div{
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
+}
+.headerButtons{
+    background-color:gold;
 }
 
 p , ul{
@@ -55,7 +58,7 @@ width: 97%;
 margin: 0 auto;
 
 /* play with this calc(100vh - 50px)value */
-/* min-height: calc(100vh - 25px); */
+min-height: calc(500vh - 25px);
 }
 
 #menu {
@@ -70,7 +73,7 @@ width: 100%;
 
 section {
 /* background-color: lightblue; */
-/* height: 400px; */
+/* height: 2000px; */
 }
 
 #card_container {
@@ -134,7 +137,7 @@ footer {
     background-color:gainsboro;
     position: sticky;
     bottom: 0;
-    /* height: 25px; */
+    height: 25px;
 
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
 }
