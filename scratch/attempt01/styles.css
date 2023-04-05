@@ -16,6 +16,7 @@
 
 html, body {
     height: 100%;
+    font-size: 16px;
 }
 
 body{
@@ -52,7 +53,8 @@ display: flex;
 justify-content: space-around;
 }
 .headerButtons{
-    background-color:lightcoral;
+    /* background-color:lightcoral; */
+    font-size: 28px;
 }
 
 p , ul{
