@@ -9,7 +9,11 @@
     <title>Document</title>
     <link href="./styles.css" rel="stylesheet" />
 
-    <!-- <link
+    <!-- NOTE: use one or both of these if the fonts or logos are not loading fast enough when the page is live. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
       href="./../../assets/fonts/FontAwesome/fontawesome-free-6.4.0-web/css/fontawesome.css"
       rel="stylesheet"
     />
@@ -20,7 +24,7 @@
     <link
       href="./../../assets/fonts/FontAwesome/fontawesome-free-6.4.0-web/css/solid.css"
       rel="stylesheet"
-    /> -->
+    />
   </head>
   <body>
     <header>
@@ -41,6 +45,7 @@
 
     <div id="content">
       <h1 id="title">Title</h1>
+
       <section id="Bio">
         <h2>A little bit about myself</h2>
         <p class="section_p">
@@ -123,6 +128,7 @@
         <h2>Connect with Me</h2>
         <!-- <p class = "section_p">Ways we can connect.</p> -->
         <div id="connect_container">
+          <!-- TODO: remove these below. -->
           <!-- <a
             class="connect_a"
             href="https://www.linkedin.com/in/jamie-bort/"
@@ -151,40 +157,59 @@
           >
             <img class="connect_img" src="../assets/images/StackOverflow.png" />
           </a> -->
+          <!-- TODO: remove these above. -->
 
-          <!-- ****** Disabled contact form until it can be fixed. ****** -->
-          <!-- <a class = "connect_a" href="./contact_form.html">
+          <!-- ****** Font Awesome Logs for later. To replace the .png icons ****** -->
+          <!-- <hr style="border-top: 1px solid gray;"> -->
+          <div id="fontAwesome">
+            <span class="fontAwesome fa-brands fa-medium"></span>
+            <span
+              class="fontAwesome fa-brands fa-linkedin"
+              style="color: #02010e"
+            ></span>
+            <span
+              class="fontAwesome fa-brands fa-twitter"
+              style="color: #02010e"
+            ></span>
+            <span
+              class="fontAwesome fa-brands fa-stack-overflow"
+              style="color: #02010e"
+            ></span>
+            <span
+              class="fontAwesome fa-brands fa-square-github"
+              style="color: #02010e"
+            ></span>
+            <span
+              class="fontAwesome fa-brands fa-github"
+              style="color: #02010e"
+            ></span>
+            <span
+              class="fontAwesome fa-solid fa-envelope"
+              style="color: #02010e"
+            ></span>
+            <!-- <span class="fontAwesome fa-thin fa-envelope" style="color: #02010e;"></span> -->
+
+            <!-- ****** Disabled contact form until it can be fixed. ****** -->
+            <!-- <a class = "connect_a" href="./contact_form.html">
                     <img class="connect_img"
                         src="../assets/images/Email.png">
                 </a> -->
 
-          <!-- ****** A anchor to a coding challenge website ****** -->
-          <!-- <a class = "connect_a" href="../html/contact_form.html" target="_blank">
+            <!-- ****** A anchor to a coding challenge website ****** -->
+            <!-- <a class = "connect_a" href="../html/contact_form.html" target="_blank">
                     <img class="connect_img"
                         src="../assets/Email/FAVPNG_email-box-clip-art_W0UEsKSp.png">
                 </a> -->
 
-          <!-- ****** A anchor to a coding challenge website ****** -->
-          <!-- <span class="connect_img fa fa-medium" aria-hidden="true">
+            <!-- ****** A anchor to a coding challenge website ****** -->
+            <!-- <span class="connect_img fa fa-medium" aria-hidden="true">
                     <a class = "connect_a" href="https://medium.com/@jamie-bort" target="_blank"></a>
                 </span> -->
-
-          <!-- ****** Font Awesome Logs for later. To replace the .png icons ****** -->
-          <!-- <hr style="border-top: 1px solid gray;"> -->
-          <!-- <div id = "fontAwesome" >
-                    <span class="fontAwesome fa-brands fa-medium"></span>
-                    <span class="fontAwesome fa-brands fa-linkedin" style="color: #02010e;"></span>
-                    <span class="fontAwesome fa-brands fa-twitter" style="color: #02010e;"></span>
-                    <span class="fontAwesome fa-brands fa-stack-overflow" style="color: #02010e;"></span>
-                    <span class="fontAwesome fa-brands fa-square-github" style="color: #02010e;"></span>
-                    <span class="fontAwesome fa-brands fa-github" style="color: #02010e;"></span>
-                    <span class="fontAwesome fa-solid fa-envelope" style="color: #02010e;"></span> -->
-          <!-- <span class="fontAwesome fa-thin fa-envelope" style="color: #02010e;"></span> -->
-          <!-- </div> -->
-          <!-- <hr style="border-top: 1px solid gray;"> -->
+          </div>
         </div>
       </section>
     </div>
+
     <footer>&copy<span id="copyright"></span></footer>
 
     <script src="./main.js"></script>

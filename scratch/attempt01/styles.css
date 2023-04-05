@@ -60,6 +60,12 @@ background-color: lightblue;
 /* height: 400px; */
 }
 
+.fontAwesome{
+    background-color: bisque;
+    font-size: 3em;
+
+}
+
 footer {
 background-color: fuchsia;
 position: sticky;
