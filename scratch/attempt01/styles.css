@@ -1,0 +1,33 @@
+/* ./styles.css */
+
+body {
+    background-color: coral;
+    text-align: center;
+  }
+
+  header {
+    background-color: beige;
+    position: sticky;
+    top: 0;
+  }
+
+  #content {
+    background-color: bisque;
+  }
+
+  #menu {
+    /* position: sticky;
+    top: 0;
+    z-index: 9999; */
+  }
+
+  section {
+    background-color: lightblue;
+    height: 400px;
+  }
+
+  footer {
+    background-color: fuchsia;
+    position: sticky;
+    bottom: 0;
+  }
