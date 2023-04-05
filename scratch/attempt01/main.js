@@ -51,3 +51,13 @@ document.getElementById("copyright").appendChild(document.createTextNode(date));
 // **************************************************
 //                  For the footer
 // **************************************************
+
+// var stickyElement = document.querySelector(".header");
+// var parent = stickyElement.parentElement;
+// while (parent) {
+//   var hasOverflow = getComputedStyle(parent).overflow;
+//   if (hasOverflow != "visible") {
+//     console.log(hasOverflow, parent);
+//   } else console.log("not found");
+//   parent = parent.parentElement;
+// }

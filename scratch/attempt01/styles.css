@@ -30,14 +30,21 @@ body{
 /* 
     display: flex;
     flex-direction: column; */
+
+    
+
+/* added! */
+  display: flex; /* displays flex-items (children) inline */
+  flex-direction: column; /* stacks them vertically */
+  height: 100%; /* needs to take the parents height, alternative: body {display: flex} */
+
   
 }
 
 header {
 background-color:gainsboro;
-position: sticky;
-top: 0;
-/* width: 100%; */
+/* position: sticky;
+top: 0; */
 }
 
 header div{
@@ -45,7 +52,7 @@ display: flex;
 justify-content: space-around;
 }
 .headerButtons{
-    background-color:gold;
+    background-color:lightblue;
 }
 
 p , ul{
@@ -58,7 +65,13 @@ width: 97%;
 margin: 0 auto;
 
 /* play with this calc(100vh - 50px)value */
-min-height: calc(500vh - 25px);
+/* min-height: calc(500vh - 25px); */
+
+/* added! */
+flex: 1; /* takes the remaining height of the "container" div */
+overflow: auto; /* to scroll just the "main" div */
+
+
 }
 
 #menu {
@@ -135,9 +148,9 @@ section {
 
 footer {
     background-color:gainsboro;
-    position: sticky;
-    bottom: 0;
-    height: 25px;
+    /* position: sticky;
+    bottom: 0; */
+    /* height: 25px; */
 
     /* flex-shrink: 0; */
 }
