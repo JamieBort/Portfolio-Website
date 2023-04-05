@@ -82,7 +82,8 @@ section {
 
 .fontAwesome{
     /* background-color: lightsalmon; */
-    border: thin solid maroon;
+    border: thin solid black;
+    border-radius: .12em;
     display: flex;
     justify-content: center;
     align-items: center;
