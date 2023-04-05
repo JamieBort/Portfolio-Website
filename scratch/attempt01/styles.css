@@ -39,15 +39,14 @@ p , ul{
 }
 
 #content {
-background-color: bisque;
+/* background-color: bisque; */
 
 /* play with this calc(100vh - 50px)value */
 min-height: calc(100vh - 25px);
 }
 
 #menu {
-position: sticky;
-background-color: aquamarine;
+/* position: sticky; */
 }
 
 .menu_button{
@@ -58,6 +57,11 @@ width: 100%;
 section {
 background-color: lightblue;
 /* height: 400px; */
+}
+
+#ConnectWithMe{
+    padding-bottom: 25px;
+    /* margin-bottom: 25px; */
 }
 
 .fontAwesome{
