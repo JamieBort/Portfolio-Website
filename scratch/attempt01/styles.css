@@ -21,6 +21,8 @@ html, body {
 body{
     /* background-color: blueviolet; */
     text-align: center;
+    /* width: 100%; */
+    margin: 0 auto;
 
     font-family: "Tinos";
     font-weight: 400;
@@ -32,9 +34,10 @@ body{
 }
 
 header {
-background-color:blueviolet;
+background-color:gainsboro;
 position: sticky;
 top: 0;
+/* width: 100%; */
 }
 
 header div{
@@ -98,7 +101,7 @@ section {
 }
 
 footer {
-    background-color: fuchsia;
+    background-color:gainsboro;
     position: sticky;
     bottom: 0;
     /* height: 25px; */
