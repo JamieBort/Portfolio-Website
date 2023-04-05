@@ -11,8 +11,10 @@
   </head>
   <body>
     <header>
-      <button onclick="leftHeaderButton()">Jamie Bort</button>
-      <button onclick="rightHeaderButton()">Nav</button>
+      <div>
+        <button onclick="leftHeaderButton()">Jamie Bort</button>
+        <button onclick="rightHeaderButton()">Nav</button>
+      </div>
       <nav id="menu" style="display: none">
         <button class="menu_button" onclick="jumpToSection('Bio')">Bio</button>
         <button class="menu_button" onclick="jumpToSection('Projects')">
@@ -26,11 +28,63 @@
 
     <div id="content">
       <h1 id="title">Title</h1>
-      <section id="Bio">Bio</section>
+      <section id="Bio">
+        <h2>A little bit about myself</h2>
+        <p class="section_p">
+          I teach and mentor at
+          <a
+            class="styled_links"
+            target="_blank"
+            href="https://codethedream.org/"
+            >Code the Dream</a
+          >, a software boot camp for underrepresented people.
+        </p>
+
+        <!-- NOTE: hidden text to consider. -->
+        <p class="section_p">
+          Below you will find some of my
+          <button class="section_button" onclick="section(2)">projects</button
+          >.<br />
+          In addition to the technologies listed in each project below, I am
+          proficient with Git and Bash.<br />
+          <hidden hidden>Additionally, I have experience with ...</hidden>
+        </p>
+        <ul>
+          <!-- NOTE: hidden text to consider. -->
+          <li hidden>
+            Spring Boot - It's been a minute since I last worked with it. So I
+            am refreshing my memory by working on a side project with it.
+          </li>
+          <li>
+            Statistics - In addition to having a genuine interest in it I also
+            have projects that require me to know that branch of mathematics
+            better.
+          </li>
+          <li>
+            Data visualization - It's a fun and challenging way to represent the
+            data that I enjoy crunching.
+          </li>
+          <li>
+            Presenting - I enjoy sharing and exchanging knowledge. But talking
+            in front of large crowds scares me. In spite of that I know it will
+            also make me a better communicator, coder, and coworker.
+          </li>
+        </ul>
+        <p class="section_p"></p>
+        <p class="section_p"></p>
+        <p class="section_p"></p>
+      </section>
+
+      <hr style="border-top: 1px solid gray" />
+
       <section id="Projects">Projects</section>
+
+      <hr style="border-top: 1px solid gray" />
+
       <section id="ConnectWithMe">Connect With Me</section>
     </div>
-    <footer>footer</footer>
+    <footer>&copy<span id="copyright"></span></footer>
+
     <script src="./main.js"></script>
   </body>
 </html>

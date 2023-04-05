@@ -11,8 +11,16 @@ body {
     top: 0;
   }
 
+  header div{
+    display: flex;
+    justify-content: space-between;
+  }
+
   #content {
     background-color: bisque;
+    
+    /* play with this calc(100vh - 50px)value */
+    min-height: calc(100vh - 50px);
   }
 
   #menu {
@@ -27,11 +35,12 @@ body {
 
   section {
     background-color: lightblue;
-    height: 1200px;
+    /* height: 400px; */
   }
 
   footer {
     background-color: fuchsia;
     position: sticky;
     bottom: 0;
+    height: 50px;
   }

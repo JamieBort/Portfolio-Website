@@ -1,5 +1,9 @@
 // ./main.js
 
+// **************************************************
+//                  for the navigation
+// **************************************************
+
 // const leftHeaderButton = () => (window.location = "#top");
 
 const leftHeaderButton = () => {
@@ -30,3 +34,19 @@ const closeNavMenu = () =>
 document
   .getElementById("content")
   .addEventListener("click", closeNavMenu, false);
+
+// **************************************************
+//                  for the navigation
+// **************************************************
+
+// **************************************************
+//                  For the footer
+// **************************************************
+
+if (new Date().getFullYear()) var date = new Date().getFullYear();
+else var date = "203";
+document.getElementById("copyright").appendChild(document.createTextNode(date));
+
+// **************************************************
+//                  For the footer
+// **************************************************
