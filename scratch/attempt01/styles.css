@@ -1,46 +1,68 @@
 /* ./styles.css */
 
+@font-face {
+    font-family: Tinos;
+    font-weight: 400;
+    font-style: normal;
+    src:    local(Tinos), 
+            url("../../assets/fonts/GoogleFonts/Tinos/Tinos-Bold.ttf") format('truetype'),
+     
+            url("../../assets/fonts/GoogleFonts/Tinos/Tinos-BoldItalic.ttf") format('truetype'),
+     
+            url("../../assets/fonts/GoogleFonts/Tinos/Tinos-Italic.ttf") format('truetype'), 
+            
+            url("../../assets/fonts/GoogleFonts/Tinos/Tinos-Regular.ttf") format('truetype');
+  }
+
 body {
     /* background-color: blueviolet; */
     text-align: center;
-  }
 
-  header {
-    background-color:blueviolet;
-    position: sticky;
-    top: 0;
-  }
+    font-family: "Tinos";
+    font-weight: 400;
+    font-style: normal;
+}
 
-  header div{
-    display: flex;
-    justify-content: space-between;
-  }
+header {
+background-color:blueviolet;
+position: sticky;
+top: 0;
+}
 
-  #content {
-    background-color: bisque;
-    
-    /* play with this calc(100vh - 50px)value */
-    min-height: calc(100vh - 50px);
-  }
+header div{
+display: flex;
+justify-content: space-between;
+}
 
-  #menu {
-    position: sticky;
-    background-color: aquamarine;
-  }
+p , ul{
+    text-align: left;
+}
 
-  .menu_button{
-    display: block;
-    width: 100%;
-  }
+#content {
+background-color: bisque;
 
-  section {
-    background-color: lightblue;
-    /* height: 400px; */
-  }
+/* play with this calc(100vh - 50px)value */
+min-height: calc(100vh - 25px);
+}
 
-  footer {
-    background-color: fuchsia;
-    position: sticky;
-    bottom: 0;
-    height: 50px;
-  }
+#menu {
+position: sticky;
+background-color: aquamarine;
+}
+
+.menu_button{
+display: block;
+width: 100%;
+}
+
+section {
+background-color: lightblue;
+/* height: 400px; */
+}
+
+footer {
+background-color: fuchsia;
+position: sticky;
+bottom: 0;
+height: 25px;
+}
