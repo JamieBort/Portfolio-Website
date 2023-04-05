@@ -7,55 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- <style>
-      body {
-        background-color: coral;
-        text-align: center;
-      }
-
-      header {
-        background-color: beige;
-        position: sticky;
-        top: 0;
-      }
-
-      #content {
-        background-color: bisque;
-      }
-
-      #menu {
-        /* position: sticky;
-        top: 0;
-        z-index: 9999; */
-      }
-
-      section {
-        background-color: lightblue;
-        height: 400px;
-      }
-
-      footer {
-        background-color: fuchsia;
-        position: sticky;
-        bottom: 0;
-      }
-    </style> -->
     <link href="./styles.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <button onclick="leftHeaderButton()">Jamie Bort</button>
       <button onclick="rightHeaderButton()">Nav</button>
-      <nav
-        id="menu"
-        style="
-          display: none;
-          /* z-index: 9999; */
-          /* top: 0; */
-          position: sticky;
-          background-color: aquamarine;
-        "
-      >
+      <nav id="menu" style="display: none">
         <span>Nav Menu</span>
         <button onclick="jumpToSection1()">Bio</button>
         <button onclick="jumpToSection2()">Projects</button>
@@ -71,23 +29,5 @@
     </div>
     <footer>footer</footer>
     <script src="./main.js"></script>
-    <!-- <script>
-      const leftHeaderButton = () => {
-        window.location = "#top";
-      };
-      const rightHeaderButton = () => {
-        const menu = document.getElementById("menu");
-        menu.style.display = "block";
-      };
-      const jumpToSection1 = () => {
-        window.location = "#section01";
-      };
-      const jumpToSection2 = () => {
-        window.location = "#section02";
-      };
-      const jumpToSection3 = () => {
-        window.location = "#section03";
-      };
-    </script> -->
   </body>
 </html>

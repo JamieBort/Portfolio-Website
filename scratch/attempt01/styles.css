@@ -1,7 +1,7 @@
 /* ./styles.css */
 
 body {
-    background-color: coral;
+    /* background-color: coral; */
     text-align: center;
   }
 
@@ -16,9 +16,9 @@ body {
   }
 
   #menu {
-    /* position: sticky;
-    top: 0;
-    z-index: 9999; */
+    /* display: none; */
+    position: sticky;
+    background-color: aquamarine;
   }
 
   section {
