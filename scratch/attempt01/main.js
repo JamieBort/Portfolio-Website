@@ -19,6 +19,7 @@ const jumpToSection = (param) => {
 };
 
 const toggleNavMenu = () => {
+  console.log("fired");
   const menu = document.getElementById("menu");
   menu.style.display === "none"
     ? (menu.style.display = "block")

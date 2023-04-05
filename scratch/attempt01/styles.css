@@ -12,21 +12,33 @@
             url("../../assets/fonts/GoogleFonts/Tinos/Tinos-Italic.ttf") format('truetype'), 
             
             url("../../assets/fonts/GoogleFonts/Tinos/Tinos-Regular.ttf") format('truetype');
-  }
+}
 
-body {
+html, body {
+    height: 100%;
+}
+
+body{
     /* background-color: blueviolet; */
     text-align: center;
 
     font-family: "Tinos";
     font-weight: 400;
     font-style: normal;
+
+    display: flex;
+    flex-direction: column;
+  
+}
+
+#test {
+    flex: 1 0 auto;
 }
 
 header {
-/* background-color:blueviolet; */
-position: sticky;
-top: 0;
+background-color:blueviolet;
+/* position: sticky;
+top: 0; */
 }
 
 header div{
@@ -39,14 +51,15 @@ p , ul{
 }
 
 #content {
-/* background-color: bisque; */
+background-color: bisque;
 
 /* play with this calc(100vh - 50px)value */
-min-height: calc(100vh - 25px);
+/* min-height: calc(100vh - 25px); */
 }
 
 #menu {
 /* position: sticky; */
+/* background-color: bisque; */
 }
 
 .menu_button{
@@ -61,7 +74,7 @@ background-color: lightblue;
 
 #ConnectWithMe{
     /* padding-bottom: 25px; */
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
 }
 
 .fontAwesome{
@@ -71,8 +84,10 @@ background-color: lightblue;
 }
 
 footer {
-background-color: fuchsia;
-position: sticky;
-bottom: 0;
-height: 25px;
+    background-color: fuchsia;
+    /* position: sticky;
+    bottom: 0;
+    height: 25px; */
+
+    flex-shrink: 0;
 }
