@@ -37,8 +37,8 @@ body{
 
 header {
 background-color:blueviolet;
-/* position: sticky;
-top: 0; */
+position: sticky;
+top: 0;
 }
 
 header div{
@@ -68,7 +68,7 @@ width: 100%;
 }
 
 section {
-background-color: lightblue;
+/* background-color: lightblue; */
 /* height: 400px; */
 }
 
@@ -85,9 +85,9 @@ background-color: lightblue;
 
 footer {
     background-color: fuchsia;
-    /* position: sticky;
+    position: sticky;
     bottom: 0;
-    height: 25px; */
+    /* height: 25px; */
 
     flex-shrink: 0;
 }
