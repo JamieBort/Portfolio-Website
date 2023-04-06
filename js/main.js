@@ -1,45 +1,41 @@
-// ./js/main.js
-
-// TODO: use JavaScript to name section_01, section01, and Bio, as only Bio in one location.
+// ./main.js
 
 // **************************************************
 //                  for the navigation
 // **************************************************
 
-// this toggles the hidden nav window to appear or disappear
-function toggleMenu() {
-  console.log("inside the toggleMenu function");
-  var element = document.getElementById("menu");
-  if (element.style.display === "none") {
-    element.style.display = "block";
-  } else {
-    // element.style.display = "none";
-    closeMenu();
-  }
-}
+// const leftHeaderButton = () => (window.location = "#top");
 
-// this navigates to a specific section of the page
-function section(param) {
-  // console.log("param:", param)
-  if (param > 0) window.location = "#section0" + param;
-  else window.location = "#top";
-}
+const leftHeaderButton = () => {
+  console.log("top fired");
+  window.location = "#top";
+  closeNavMenu();
+};
 
-// for when the user taps off of the navigation menu, the navigation menu needs to close
-function closeMenu() {
-  console.log("event listener firing");
-  var element = document.getElementById("menu");
-  element.style.display = "none";
-}
+const rightHeaderButton = () => toggleNavMenu();
+
+const jumpToSection = (param) => {
+  window.location = "#" + param;
+  toggleNavMenu();
+};
+
+const toggleNavMenu = () => {
+  console.log("fired");
+  const menu = document.getElementById("menu");
+  menu.style.display === "none"
+    ? (menu.style.display = "block")
+    : (menu.style.display = "none");
+};
+
+const closeNavMenu = () =>
+  (document.getElementById("menu").style.display = "none");
 
 // Add event listener to page.
-const el = document.getElementById("content");
-el.addEventListener("click", closeMenu, false); // why false? --> "A boolean value indicating that the listener should be invoked at most once after being added. If true, the listener would be automatically removed when invoked. If not specified, defaults to false."
-
-function mobileHeaderButton() {
-  closeMenu();
-  section(0);
-}
+// why false? --> "A boolean value indicating that the listener should be invoked at most once after being added.
+// If true, the listener would be automatically removed when invoked. If not specified, defaults to false."
+document
+  .getElementById("content")
+  .addEventListener("click", closeNavMenu, false);
 
 // **************************************************
 //                  for the navigation
@@ -49,11 +45,20 @@ function mobileHeaderButton() {
 //                  For the footer
 // **************************************************
 
-const copyright = document.getElementById("copyright");
 if (new Date().getFullYear()) var date = new Date().getFullYear();
-else var date = "2023";
+else var date = "203";
 document.getElementById("copyright").appendChild(document.createTextNode(date));
 
 // **************************************************
 //                  For the footer
 // **************************************************
+
+// var stickyElement = document.querySelector(".header");
+// var parent = stickyElement.parentElement;
+// while (parent) {
+//   var hasOverflow = getComputedStyle(parent).overflow;
+//   if (hasOverflow != "visible") {
+//     console.log(hasOverflow, parent);
+//   } else console.log("not found");
+//   parent = parent.parentElement;
+// }

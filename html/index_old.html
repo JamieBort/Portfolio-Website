@@ -1,0 +1,312 @@
+<!-- /html/index.html -->
+
+<!-- Using https://codepen.io/anthonyLukes/pen/qBjLdv?editors=1100 for the fixed header and footer with scrollable content -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./../css/styles.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tinos&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="./../assets/fonts/FontAwesome/fontawesome-free-6.4.0-web/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <link
+      href="./../assets/fonts/FontAwesome/fontawesome-free-6.4.0-web/css/brands.css"
+      rel="stylesheet"
+    />
+    <link
+      href="./../assets/fonts/FontAwesome/fontawesome-free-6.4.0-web/css/solid.css"
+      rel="stylesheet"
+    />
+
+    <title>Jamie Bort</title>
+  </head>
+  <body>
+    <header id="mobile_header">
+      <button onclick="leftHeaderButton()">Jamie Bort</button>
+      <!-- <button onclick="rightHeaderButton()">Nav</button> -->
+
+      <!-- <button
+        class="mobile_header_button"
+        id="name_button"
+        onclick="mobileHeaderButton()"
+      >
+        Jamie Bort
+      </button>
+      <button
+        class="mobile_header_button"
+        id="nav_toggle_button"
+        onclick="toggleMenu()"
+      >
+        Nav
+      </button> -->
+    </header>
+
+    <header id="desktop_header">
+      <button
+        class="desktop_header_button"
+        onclick="section(0)"
+        id="name_button"
+      >
+        Jamie Bort
+      </button>
+      <button class="desktop_header_button" onclick="section(1)">Bio</button>
+      <button class="desktop_header_button" onclick="section(2)">
+        Projects
+      </button>
+      <button class="desktop_header_button" onclick="section(3)">
+        Connect with Me
+      </button>
+    </header>
+
+    <!-- <div id="content" style="position: relative"> -->
+
+    <div id="content">
+      <nav id="menu" style="display: none; background-color: darkgoldenrod">
+        <span>Nav Menu</span>
+        <button onclick="section01()">Bio</button>
+        <button onclick="section02()">Projects</button>
+        <button onclick="section03()">LetsMeet</button>
+      </nav>
+
+      <!-- <nav id="menu" style="display: none">
+        <button class="mobile_nav_button" onclick="section(1)">Bio</button>
+        <button class="mobile_nav_button" onclick="section(2)">Projects</button>
+        <button class="mobile_nav_button" onclick="section(3)">
+          Connect with Me
+        </button>
+      </nav> -->
+
+      <h1 id="top">Software Engineer</h1>
+
+      <section id="section01">
+        <h2>A little bit about myself</h2>
+        <p class="section_p">
+          I teach and mentor at
+          <a
+            class="styled_links"
+            target="_blank"
+            href="https://codethedream.org/"
+            >Code the Dream</a
+          >, a software boot camp for underrepresented people.
+        </p>
+
+        <!-- NOTE: hidden text to consider. -->
+        <p class="section_p">
+          Below you will find some of my
+          <button class="section_button" onclick="section(2)">projects</button
+          >.<br />
+          In addition to the technologies listed in each project below, I am
+          proficient with Git and Bash.<br />
+          <hidden hidden>Additionally, I have experience with ...</hidden>
+        </p>
+        <p class="section_p">
+          Some other things that have my attention at the moment:
+        </p>
+        <ul style="padding-right: 8px">
+          <!-- NOTE: hidden text to consider. -->
+          <li hidden>
+            Spring Boot - It's been a minute since I last worked with it. So I
+            am refreshing my memory by working on a side project with it.
+          </li>
+          <li>
+            Statistics - In addition to having a genuine interest in it I also
+            have projects that require me to know that branch of mathematics
+            better.
+          </li>
+          <li>
+            Data visualization - It's a fun and challenging way to represent the
+            data that I enjoy crunching.
+          </li>
+          <li>
+            Presenting - I enjoy sharing and exchanging knowledge. But talking
+            in front of large crowds scares me. In spite of that I know it will
+            also make me a better communicator, coder, and coworker.
+          </li>
+        </ul>
+
+        <!-- NOTE: hidden text to consider. -->
+        <p class="section_p">
+          <hidden hidden
+            >What are some of my soft skills? List them here?<br />
+            In addition to the technologies listed in each project below, I am
+            quite proficient with Git,...<br />
+            Additionally, I have experience with ...
+          </hidden>
+        </p>
+        <p class="section_p">
+          When I am not coding I am working on my next presentation, mentoring,
+          or teaching; all of which push me to learn and grow.
+        </p>
+        <p class="section_p">
+          I invite you to
+          <button class="section_button" onclick="section(3)">
+            Connect with Me
+          </button>
+          on social media below.
+        </p>
+      </section>
+
+      <hr style="border-top: 1px solid gray" />
+
+      <section id="section02">
+        <!-- Projects buttons to toggle on and off: -->
+        <!-- "Completed" vs "In Progress" toggle button plus a third button that enables both.-->
+        <!-- "My Own Projects" vs "Projects I'm Contributing On" toggle button plus a third button that enables both.-->
+        <!-- "Pinned Repos" button that toggles it ON vs OFF.-->
+        <h2>Projects</h2>
+        <div id="card_container"></div>
+      </section>
+
+      <hr style="border-top: 1px solid gray" />
+
+      <section id="section03">
+        <h2>Connect with Me</h2>
+        <!-- <p class = "section_p">Ways we can connect.</p> -->
+        <div id="connect_container">
+          <a
+            class="connect_a"
+            href="https://www.linkedin.com/in/jamie-bort/"
+            target="_blank"
+          >
+            <img class="connect_img" src="../assets/images/LinkedIn.png" />
+          </a>
+          <a
+            class="connect_a"
+            href="https://github.com/JamieBort"
+            target="_blank"
+          >
+            <img class="connect_img" src="../assets/images/GitHub.png" />
+          </a>
+          <a
+            class="connect_a"
+            href="https://twitter.com/jamiebort"
+            target="_blank"
+          >
+            <img class="connect_img" src="../assets/images/Twitter.png" />
+          </a>
+          <a
+            class="connect_a"
+            href="https://stackoverflow.com/users/8210460/jamie-bort"
+            target="_blank"
+          >
+            <img class="connect_img" src="../assets/images/StackOverflow.png" />
+          </a>
+
+          <!-- ****** Disabled contact form until it can be fixed. ****** -->
+          <!-- <a class = "connect_a" href="./contact_form.html">
+                    <img class="connect_img"
+                        src="../assets/images/Email.png">
+                </a> -->
+
+          <!-- ****** A anchor to a coding challenge website ****** -->
+          <!-- <a class = "connect_a" href="../html/contact_form.html" target="_blank">
+                    <img class="connect_img"
+                        src="../assets/Email/FAVPNG_email-box-clip-art_W0UEsKSp.png">
+                </a> -->
+
+          <!-- ****** A anchor to a coding challenge website ****** -->
+          <!-- <span class="connect_img fa fa-medium" aria-hidden="true">
+                    <a class = "connect_a" href="https://medium.com/@jamie-bort" target="_blank"></a>
+                </span> -->
+
+          <!-- ****** Font Awesome Logs for later. To replace the .png icons ****** -->
+          <!-- <hr style="border-top: 1px solid gray;"> -->
+          <!-- <div id = "fontAwesome" >
+                    <span class="fontAwesome fa-brands fa-medium"></span>
+                    <span class="fontAwesome fa-brands fa-linkedin" style="color: #02010e;"></span>
+                    <span class="fontAwesome fa-brands fa-twitter" style="color: #02010e;"></span>
+                    <span class="fontAwesome fa-brands fa-stack-overflow" style="color: #02010e;"></span>
+                    <span class="fontAwesome fa-brands fa-square-github" style="color: #02010e;"></span>
+                    <span class="fontAwesome fa-brands fa-github" style="color: #02010e;"></span>
+                    <span class="fontAwesome fa-solid fa-envelope" style="color: #02010e;"></span> -->
+          <!-- <span class="fontAwesome fa-thin fa-envelope" style="color: #02010e;"></span> -->
+          <!-- </div> -->
+          <!-- <hr style="border-top: 1px solid gray;"> -->
+        </div>
+      </section>
+    </div>
+
+    <footer>&copy<span id="copyright"></span></footer>
+
+    <!-- <script type="text/javascript" src="./../js/main.js"></script> -->
+    <!-- <script type="text/javascript" src="./../js/header.js"></script> -->
+    <script type="text/javascript" src="./../js/pinned_projects.js"></script>
+    <script>
+      // temp script section for addressing Header issue.
+      const leftHeaderButton = () => {
+        console.log("leftHeaderButton");
+
+        // const top = document.getElementById("top");
+        // top.setAttribute("style", "background-color: #dcdcdc;");
+
+        const mobile_header = document.getElementById("mobile_header");
+        mobile_header.setAttribute("style", "background-color: darkorange;");
+
+        window.location = "#top";
+        // menu.style.display = "none";
+      };
+
+      // const rightHeaderButton = () => {
+      //   console.log("rightHeaderButton");
+      //   // const menu = document.getElementById("menu");
+      //   // menu.setAttribute("style", ": block; background-color: bisque;");
+      //   const top = document.getElementById("top");
+      //   // top.setAttribute("style", "background-color: bisque;");
+      //   toggleNavMenu();
+      // };
+
+      // const toggleNavMenu = () => {
+      //   const menu = document.getElementById("menu");
+
+      //   if (menu.style.display === "none") {
+      //     menu.style.display = "block";
+      //   } else menu.style.display = "none";
+      // };
+
+      // const section01 = () => {
+      //   window.location = "#section01";
+      //   // toggleNavMenu();
+      //   // menu.style.display = "none";
+      //   closeMenu();
+      // };
+
+      // const section02 = () => {
+      //   window.location = "#section02";
+      //   // toggleNavMenu();
+      //   // menu.style.display = "none";
+      //   closeMenu();
+      // };
+
+      // const section03 = () => {
+      //   window.location = "#section03";
+      //   // toggleNavMenu();
+      //   // menu.style.display = "none";
+      //   closeMenu();
+      // };
+
+      // const closeMenu = () => (menu.style.display = "none");
+
+      // // const content = document.getElementById("content");
+      // // content.addEventListener("click", closeMenu, false);
+      // // // content.addEventListener(
+      // // //   "click",
+      // // //   () => {
+      // // //     menu.style.display = "none";
+      // // //   },
+      // // //   false,
+      // // // );
+    </script>
+  </body>
+</html>
