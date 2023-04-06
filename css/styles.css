@@ -5,13 +5,13 @@
     font-weight: 400;
     font-style: normal;
     src:    local(Tinos), 
-            url("../../assets/fonts/GoogleFonts/Tinos/Tinos-Bold.ttf") format('truetype'),
+            url("../assets/fonts/GoogleFonts/Tinos/Tinos-Bold.ttf") format('truetype'),
      
-            url("../../assets/fonts/GoogleFonts/Tinos/Tinos-BoldItalic.ttf") format('truetype'),
+            url("../assets/fonts/GoogleFonts/Tinos/Tinos-BoldItalic.ttf") format('truetype'),
      
-            url("../../assets/fonts/GoogleFonts/Tinos/Tinos-Italic.ttf") format('truetype'), 
+            url("../assets/fonts/GoogleFonts/Tinos/Tinos-Italic.ttf") format('truetype'), 
             
-            url("../../assets/fonts/GoogleFonts/Tinos/Tinos-Regular.ttf") format('truetype');
+            url("../assets/fonts/GoogleFonts/Tinos/Tinos-Regular.ttf") format('truetype');
 }
 
 html, body {
