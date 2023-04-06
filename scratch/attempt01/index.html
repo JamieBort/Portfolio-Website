@@ -28,11 +28,21 @@
   </head>
   <body>
     <header>
-      <div>
-        <button class="headerButtons" onclick="leftHeaderButton()">
+      <div id="header_div">
+        <button
+          id="headerButtonLeft"
+          class="headerButtons"
+          onclick="leftHeaderButton()"
+        >
           Jamie Bort
         </button>
-        <button class="headerButtons" onclick="rightHeaderButton()">Nav</button>
+        <button
+          id="headerButtonRight"
+          class="headerButtons"
+          onclick="rightHeaderButton()"
+        >
+          Nav
+        </button>
       </div>
       <nav id="menu" style="display: none">
         <button class="menu_button" onclick="jumpToSection('Bio')">Bio</button>
@@ -64,7 +74,7 @@
         <p class="section_p">
           Below you will find some of my
           <button class="section_button" onclick="jumpToSection('Projects')">
-            projects</button
+            Projects</button
           >.<br />
           In addition to the technologies listed in each project below, I am
           proficient with Git and Bash.<br />

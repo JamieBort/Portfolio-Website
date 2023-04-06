@@ -20,36 +20,23 @@ html, body {
 }
 
 body{
-    background-color: rgb(234, 241, 102);
+    /* background-color: rgb(234, 241, 102); */
     text-align: center;
-    /* width: 100%; */
     margin: 0 auto;
-
     font-family: "Tinos";
     font-weight: 400;
     font-style: normal;
-/* 
-    display: flex;
-    flex-direction: column; */
-
-    
-
-/* added! */
-  display: flex; /* displays flex-items (children) inline */
-  flex-direction: column; /* stacks them vertically */
-  height: 100%; /* needs to take the parents height, alternative: body {display: flex} */
-
-  
+    display: flex; /* displays flex-items (children) inline */
+    flex-direction: column; /* stacks them vertically */
+    height: 100%; /* needs to take the parents height, alternative: body {display: flex} */
 }
 
 header {
-background-color:gainsboro;
-/* position: sticky;
-top: 0; */
+    background-color:gainsboro;
 }
 
-header div{
-display: flex;
+#header_div {
+    display: flex;
 }
 
 .headerButtons{
@@ -57,11 +44,11 @@ display: flex;
     font-size: 28px;
 }
 
-header div button:nth-child(odd) {
+#headerButtonLeft {
     flex-grow: 15;
 }
 
-header div button:nth-child(even) {
+#headerButtonRight {
     flex-grow: 1;
 }
 
@@ -70,36 +57,26 @@ p , ul{
 }
 
 #content {
-/* background-color: bisque; */
-width: 97%;
-margin: 0 auto;
-
-/* play with this calc(100vh - 50px)value */
-/* min-height: calc(500vh - 25px); */
-
-/* added! */
-flex: 1; /* takes the remaining height of the "container" div */
-overflow: auto; /* to scroll just the "main" div */
-
-
+    /* background-color: bisque; */
+    width: 97%;
+    margin: 0 auto;
+    flex: 1; /* takes the remaining height of the "container" div */
+    overflow: auto; /* to scroll just the "main" div */
 }
 
 #menu {
-/* position: sticky; */
-/* background-color: bisque; */
+    /* background-color: bisque; */
 }
 
 .menu_button{
-display: block;
-width: 100%;
-font-size: 22px;
-padding: .25em 0;
-/* height: 4em; */
+    display: block;
+    width: 100%;
+    font-size: 22px;
+    padding: .25em 0;
 }
 
 section {
-/* background-color: lightblue; */
-/* height: 2000px; */
+    /* background-color: lightblue; */
 }
 
 .section_button {
@@ -124,7 +101,6 @@ section {
     max-height: 30em;
     min-height: 15em;
     margin: 0.3em;
-    /* width: 20em; */
     border-radius: 0.5em;
 }
 
@@ -171,9 +147,5 @@ section {
 
 footer {
     background-color:gainsboro;
-    /* position: sticky;
-    bottom: 0; */
-    /* height: 25px; */
-
-    /* flex-shrink: 0; */
+    padding: .12em 0;
 }
