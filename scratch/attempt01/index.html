@@ -56,10 +56,25 @@
     </header>
 
     <header id="desktopHeader">
-      <button class="desktopHeaderButtons">Jamie Bort</button>
-      <button class="desktopHeaderButtons">Bio</button>
-      <button class="desktopHeaderButtons">Projects</button>
-      <button class="desktopHeaderButtons">Connect with Me</button>
+      <!-- <button class="desktopHeaderButtons">Jamie Bort</button> -->
+      <button class="desktopHeaderButtons" onclick="leftHeaderButton()">
+        Jamie Bort
+      </button>
+      <!-- <button class="desktopHeaderButtons">Bio</button> -->
+      <button class="desktopHeaderButtons" onclick="jumpToSection('Bio')">
+        Bio
+      </button>
+      <!-- <button class="desktopHeaderButtons">Projects</button> -->
+      <button class="desktopHeaderButtons" onclick="jumpToSection('Projects')">
+        Projects
+      </button>
+      <!-- <button class="desktopHeaderButtons">Connect with Me</button> -->
+      <button
+        class="desktopHeaderButtons"
+        onclick="jumpToSection('ConnectWithMe')"
+      >
+        Connect With Me
+      </button>
     </header>
 
     <div id="content">
