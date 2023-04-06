@@ -31,15 +31,19 @@ body{
     height: 100%; /* needs to take the parents height, alternative: body {display: flex} */
 }
 
-header {
+#mobileHeader {
     background-color:gainsboro;
 }
 
-#header_div {
+#desktopHeader {
+    display: none;
+}
+
+#mobileHeaderDiv {
     display: flex;
 }
 
-.headerButtons{
+.mobileHeaderButtons{
     /* background-color:lightcoral; */
     font-size: 28px;
 }
@@ -50,6 +54,14 @@ header {
 
 #headerButtonRight {
     flex-grow: 1;
+}
+
+#desktopHeader .desktopHeaderButtons:first-child {
+    flex-grow: 5;
+}
+
+.desktopHeaderButtons:first-child {
+    font-size: 1.75rem;
 }
 
 p , ul{
@@ -148,4 +160,50 @@ section {
 footer {
     background-color:gainsboro;
     padding: .12em 0;
+}
+
+
+/* Breakpoint for laptops */
+@media (min-width: 64em) {
+
+
+    body{
+        /* background-color: rgb(234, 241, 102); */
+    }
+
+    #mobileHeader {
+        display: none;
+    }
+
+    #desktopHeader {
+        /* display: inline-block;
+        background-color: aqua; */
+
+        display: flex;
+        justify-content: space-between;
+        background-color: #dcdcdc;
+    }
+
+    /* #content { */
+        /* border: thin dashed magenta; */
+        /* background-color: azure; */
+        /* margin:0 auto; */
+        /* margin:0 99%; */
+        /* margin-left: 2px;
+        margin-right: 2px; */
+        /* width:97%;
+        max-width:none;
+    }
+
+    #section01{ */
+        /* border: .1em solid green; */
+        /* max-width: 60em;
+        margin: auto;
+    } */
+
+    #Bio {
+        /* border: 0.1em blue solid; */
+        max-width: 60em;
+        margin: auto;
+    }
 }

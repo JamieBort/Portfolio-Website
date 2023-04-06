@@ -27,18 +27,18 @@
     />
   </head>
   <body>
-    <header>
-      <div id="header_div">
+    <header id="mobileHeader">
+      <div id="mobileHeaderDiv">
         <button
           id="headerButtonLeft"
-          class="headerButtons"
+          class="mobileHeaderButtons"
           onclick="leftHeaderButton()"
         >
           Jamie Bort
         </button>
         <button
           id="headerButtonRight"
-          class="headerButtons"
+          class="mobileHeaderButtons"
           onclick="rightHeaderButton()"
         >
           Nav
@@ -53,6 +53,13 @@
           Connect With Me
         </button>
       </nav>
+    </header>
+
+    <header id="desktopHeader">
+      <button class="desktopHeaderButtons">Jamie Bort</button>
+      <button class="desktopHeaderButtons">Bio</button>
+      <button class="desktopHeaderButtons">Projects</button>
+      <button class="desktopHeaderButtons">Connect with Me</button>
     </header>
 
     <div id="content">
