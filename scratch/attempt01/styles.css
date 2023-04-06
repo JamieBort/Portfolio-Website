@@ -110,9 +110,12 @@ section {
 
 .card {
     border: thin solid gray;
+    display: flex;
+    flex-direction: column;
     max-height: 30em;
     min-height: 15em;
     margin: 0.3em;
+    width: 20em;
     border-radius: 0.5em;
 }
 
@@ -168,7 +171,7 @@ footer {
 
 
     body{
-        background-color: rgb(234, 241, 102);
+        /* background-color: rgb(234, 241, 102); */
     }
 
     #mobileHeader {
