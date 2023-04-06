@@ -64,6 +64,30 @@ body{
     font-size: 1.75rem;
 }
 
+/* establishing font sizes below */
+.mobile_header_button, nav button {
+    font-size: 28px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 19px;
+    /* border: thin solid black; */
+}
+
+p {
+    font-size: 16px;
+    /* border: thin solid black; */
+}
+/* establishing font sizes above */
+
 p , ul{
     text-align: left;
 }

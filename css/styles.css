@@ -43,6 +43,7 @@ html, body {
 #desktop_header {
     display: none;
 }
+
 /* establishing font sizes below */
 .mobile_header_button, nav button {
     font-size: 28px;
