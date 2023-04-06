@@ -228,5 +228,6 @@ footer {
     .fontAwesome {
         border:none;
         font-size: 4em;
+        padding: 0;
     }
 }
