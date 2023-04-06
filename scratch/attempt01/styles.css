@@ -20,7 +20,7 @@ html, body {
 }
 
 body{
-    background-color: rgb(123, 247, 132);
+    background-color: rgb(234, 241, 102);
     text-align: center;
     /* width: 100%; */
     margin: 0 auto;
@@ -100,6 +100,11 @@ padding: .25em 0;
 section {
 /* background-color: lightblue; */
 /* height: 2000px; */
+}
+
+.section_button {
+    border-radius: .20em;
+    border-width: thin;
 }
 
 #Bio {
