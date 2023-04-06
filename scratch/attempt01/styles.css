@@ -32,7 +32,7 @@ body{
 }
 
 #mobileHeader {
-    background-color:gainsboro;
+    background-color: #dcdcdc;
 }
 
 #desktopHeader {
@@ -68,7 +68,6 @@ p , ul{
     text-align: left;
 }
 
-
 hr {
     border-top: 1px solid #dcdcdc;
 }
@@ -96,6 +95,7 @@ section {
     /* background-color: lightblue; */
 }
 
+/* TODO: style the .section_button with .section_button:focus, .section_button:active, .section_button:hover, .section_button:visited, and ??? */
 .section_button {
     border-radius: .20em;
     border-width: thin;
@@ -106,6 +106,11 @@ section {
     margin: 0 auto;
 }
 
+/* TODO: style the .styled_links with .styled_links:focus, .styled_links:active, .styled_links:hover, .styled_links:visited, and ??? */
+.styled_links{
+
+}
+
 #card_container {
     /* border: 0.1em blue solid; */
     display: flex;
@@ -114,7 +119,7 @@ section {
 }
 
 .card {
-    border: thin solid gray;
+    border: thin solid #dcdcdc;
     display: flex;
     flex-direction: column;
     max-height: 30em;
@@ -131,7 +136,6 @@ section {
     flex-direction: column;
     flex: 1;
     justify-content: space-between;
-
     max-width: 90%;
     margin: 0 auto 1em auto;
 }
@@ -140,25 +144,26 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:burlywood;
+    background-color: #dcdcdc;
     border-radius: 0 0 .5em .5em;
     text-decoration: none;
     text-transform: uppercase;
     height: 2em;
   }
   
-  .github_repo:hover {
-    background-color: #555;
-  }
-  
-  .github_repo:active {
-    background-color: black;
-  }
-  
-  .github_repo:visited {
-    background-color: #ccc;
-    /* color: black; */
-  }
+.github_repo:hover {
+/* background-color: #555; */
+background-color: green;
+}
+
+.github_repo:active {
+background-color: black;
+}
+
+.github_repo:visited {
+background-color: #ccc;
+/* color: black; */
+}
 
 #ConnectWithMe{
     /* padding-bottom: 25px; */
@@ -172,6 +177,7 @@ section {
     flex-wrap: wrap;
 }
 
+/* TODO: style the .fontAwesome with .fontAwesome:focus, .fontAwesome:active, .fontAwesome:hover, .fontAwesome:visited, and ??? */
 .fontAwesome{
     /* background-color: lightsalmon; */
     border: thin solid black;
@@ -182,7 +188,6 @@ section {
     font-size: 3em;
 
     /* Former styles for the images */
-    /* background-color: pink; */
     max-width: 6em;
     /* min-width: 4em; */
     padding: 1em;
@@ -190,7 +195,7 @@ section {
 }
 
 footer {
-    background-color:gainsboro;
+    background-color: #dcdcdc;
     padding: .12em 0;
 }
 
@@ -208,30 +213,11 @@ footer {
     }
 
     #desktopHeader {
-        /* display: inline-block;
-        background-color: aqua; */
-
+        /* background-color: aqua; */
         display: flex;
         justify-content: space-between;
         background-color: #dcdcdc;
     }
-
-    /* #content { */
-        /* border: thin dashed magenta; */
-        /* background-color: azure; */
-        /* margin:0 auto; */
-        /* margin:0 99%; */
-        /* margin-left: 2px;
-        margin-right: 2px; */
-        /* width:97%;
-        max-width:none;
-    }
-
-    #section01{ */
-        /* border: .1em solid green; */
-        /* max-width: 60em;
-        margin: auto;
-    } */
 
     #Bio {
         /* border: 0.1em blue solid; */
