@@ -140,6 +140,7 @@ section {
     margin: 0 auto 1em auto;
 }
 
+/* TODO: style the .github_repo with .github_repo:focus, .github_repo:active, .github_repo:hover, .github_repo:visited, and ??? */
 .github_repo {
     display: flex;
     justify-content: center;
@@ -149,11 +150,12 @@ section {
     text-decoration: none;
     text-transform: uppercase;
     height: 2em;
+    color: #4d4c4c;
   }
   
 .github_repo:hover {
 /* background-color: #555; */
-background-color: green;
+background-color: #9f9d9d;
 }
 
 .github_repo:active {
@@ -162,7 +164,6 @@ background-color: black;
 
 .github_repo:visited {
 background-color: #ccc;
-/* color: black; */
 }
 
 #ConnectWithMe{
