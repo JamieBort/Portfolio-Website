@@ -68,6 +68,11 @@ p , ul{
     text-align: left;
 }
 
+
+hr {
+    border-top: 1px solid #dcdcdc;
+}
+
 #content {
     /* background-color: bisque; */
     width: 97%;
@@ -130,6 +135,30 @@ section {
     max-width: 90%;
     margin: 0 auto 1em auto;
 }
+
+.github_repo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:burlywood;
+    border-radius: 0 0 .5em .5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 2em;
+  }
+  
+  .github_repo:hover {
+    background-color: #555;
+  }
+  
+  .github_repo:active {
+    background-color: black;
+  }
+  
+  .github_repo:visited {
+    background-color: #ccc;
+    /* color: black; */
+  }
 
 #ConnectWithMe{
     /* padding-bottom: 25px; */
@@ -208,5 +237,10 @@ footer {
         /* border: 0.1em blue solid; */
         max-width: 60em;
         margin: auto;
+    }
+
+    .fontAwesome {
+        border:none;
+        font-size: 4em;
     }
 }
