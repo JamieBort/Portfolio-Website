@@ -20,7 +20,7 @@ html, body {
 }
 
 body{
-    background-color: rgb(230, 165, 166);
+    background-color: rgb(155, 239, 242);
     text-align: center;
     /* width: 100%; */
     margin: 0 auto;
@@ -50,17 +50,15 @@ top: 0; */
 
 header div{
 display: flex;
-justify-content: space-around;
 }
 
 .headerButtons{
     /* background-color:lightcoral; */
     font-size: 28px;
-    /* flex: 4 1 auto; */
 }
 
 header div button:nth-child(odd) {
-    flex-grow: 7;
+    flex-grow: 15;
 }
 
 header div button:nth-child(even) {
@@ -95,6 +93,7 @@ overflow: auto; /* to scroll just the "main" div */
 display: block;
 width: 100%;
 font-size: 22px;
+padding: .25em 0;
 /* height: 4em; */
 }
 
