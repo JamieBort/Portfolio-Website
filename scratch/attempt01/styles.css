@@ -20,7 +20,7 @@ html, body {
 }
 
 body{
-    background-color: rgb(155, 239, 242);
+    background-color: rgb(123, 247, 132);
     text-align: center;
     /* width: 100%; */
     margin: 0 auto;
@@ -100,6 +100,11 @@ padding: .25em 0;
 section {
 /* background-color: lightblue; */
 /* height: 2000px; */
+}
+
+#Bio {
+    width: 90%;
+    margin: 0 auto;
 }
 
 #card_container {
