@@ -107,8 +107,8 @@ section {
 }
 
 /* TODO: style the .styled_links with .styled_links:focus, .styled_links:active, .styled_links:hover, .styled_links:visited, and ??? */
-.styled_links{
-
+#textLink {
+    color: #4d4c4c;
 }
 
 #card_container {
@@ -118,6 +118,8 @@ section {
     justify-content: space-around;
 }
 
+/* TODO: the cards are not distrubted the way I'd like them to be. Specifically, there are three cards in the first row and one card in the second row.  */
+/* To address this I've added "margin: 2em 3em;" below. But I don't think this is teh correct approach. I think it needs to be addressed in the #card_container above. */
 .card {
     border: thin solid #dcdcdc;
     display: flex;
@@ -126,6 +128,7 @@ section {
     min-height: 15em;
     margin: 0.3em;
     width: 20em;
+    margin: 2em 3em;
     border-radius: 0.5em;
 }
 
