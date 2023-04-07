@@ -1,0 +1,111 @@
+<!-- ./jamiebort.github.io/scratch/attempt01/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JamieBort.com</title>
+    <!-- <link href="./styles.css" rel="stylesheet" /> -->
+    <link href="./../css/styles.css" rel="stylesheet" />
+
+    <!-- NOTE: IF the fonts or logos are not loading fast enough when the page is live use one or both of these. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="./../assets/fonts/FontAwesome/fontawesome-free-6.4.0-web/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <link
+      href="./../assets/fonts/FontAwesome/fontawesome-free-6.4.0-web/css/brands.css"
+      rel="stylesheet"
+    />
+    <link
+      href="./../assets/fonts/FontAwesome/fontawesome-free-6.4.0-web/css/solid.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <navigation-element></navigation-element>
+
+    <div id="content">
+      <h1 id="top">Software Engineer Blog</h1>
+
+      <section id="bio">
+        <h2>A little bit about myself</h2>
+        <p class="section_p">
+          I teach and mentor at
+          <a id="textLink" target="_blank" href="https://codethedream.org/"
+            >Code the Dream</a
+          >, a software boot camp for underrepresented people.
+        </p>
+
+        <!-- NOTE: hidden text to consider. -->
+        <p class="section_p">
+          Below you will find some of my
+          <button class="section_button" onclick="jumpToSection('projects')">
+            Projects</button
+          >.<br />
+          In addition to the technologies listed in each project below, I am
+          proficient with Git and Bash.<br />
+          <hidden hidden>Additionally, I have experience with ...</hidden>
+        </p>
+        <ul>
+          <!-- NOTE: hidden text to consider. -->
+          <li hidden>
+            Spring Boot - It's been a minute since I last worked with it. So I
+            am refreshing my memory by working on a side project with it.
+          </li>
+          <li>
+            Statistics - In addition to having a genuine interest in it I also
+            have projects that require me to know that branch of mathematics
+            better.
+          </li>
+          <li>
+            Data visualization - It's a fun and challenging way to represent the
+            data that I enjoy crunching.
+          </li>
+          <li>
+            Presenting - I enjoy sharing and exchanging knowledge. But talking
+            in front of large crowds scares me. In spite of that I know it will
+            also make me a better communicator, coder, and coworker.
+          </li>
+        </ul>
+
+        <!-- NOTE: hidden text to consider. -->
+        <p class="section_p">
+          <hidden hidden
+            >What are some of my soft skills? List them here?<br />
+            In addition to the technologies listed in each project below, I am
+            quite proficient with Git,...<br />
+            Additionally, I have experience with ...
+          </hidden>
+        </p>
+        <p class="section_p">
+          When I am not coding I am working on my next presentation, mentoring,
+          or teaching; all of which push me to learn and grow.
+        </p>
+        <p class="section_p">
+          I invite you to
+          <button
+            class="section_button"
+            onclick="jumpToSection('ConnectWithMe')"
+          >
+            Connect with Me
+          </button>
+          on social media below.
+        </p>
+      </section>
+    </div>
+
+    <footer>&copy<span id="copyright"></span></footer>
+
+    <!-- <script type="text/javascript" src="./main.js"></script> -->
+    <script type="text/javascript" src="./../js/main.js"></script>
+
+    <!-- <script type="text/javascript" src="./pinned_projects.js"></script> -->
+    <script type="text/javascript" src="./../js/pinned_projects.js"></script>
+  </body>
+</html>

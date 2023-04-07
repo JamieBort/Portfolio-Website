@@ -125,7 +125,7 @@ section {
     border-width: thin;
 }
 
-#Bio {
+#bio {
     width: 90%;
     margin: 0 auto;
 }
@@ -193,7 +193,7 @@ background-color: black;
 background-color: #ccc;
 }
 
-#ConnectWithMe{
+#connectWithMe{
     /* padding-bottom: 25px; */
     /* margin-bottom: 25px; */
 }
@@ -247,7 +247,7 @@ footer {
         background-color: #dcdcdc;
     }
 
-    #Bio {
+    #bio {
         /* border: 0.1em blue solid; */
         max-width: 60em;
         margin: auto;
