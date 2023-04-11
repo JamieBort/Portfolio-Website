@@ -58,10 +58,13 @@ body{
 
 #desktopHeader .desktopHeaderButtons:first-child {
     flex-grow: 5;
+    font-size: 1.75rem;
 }
 
-.desktopHeaderButtons:first-child {
-    font-size: 1.75rem;
+.desktopHeaderButtons:nth-last-child(-n + 5) {
+    /* background-color:lightcoral; */
+    /* width: 9.5%; */
+    padding: 0 1em;
 }
 
 /* establishing font sizes below */
@@ -194,8 +197,7 @@ background-color: #ccc;
 }
 
 #connectWithMe{
-    /* padding-bottom: 25px; */
-    /* margin-bottom: 25px; */
+    padding-bottom: 1.25em;
 }
 
 #connect_container {

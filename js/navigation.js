@@ -1,5 +1,7 @@
 // ./js/indexOne.js
 
+// Navigation component.
+
 class Navigation extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -33,6 +35,9 @@ class Navigation extends HTMLElement {
         <button class="menu_button" onclick="jumpToSection('ConnectWithMe')">
           Connect With Me
         </button>
+        <button class="menu_button" onclick="jumpToSection('ConnectWithMe')">
+          Resume
+        </button>
       </nav>
     </header>
 
@@ -52,9 +57,12 @@ class Navigation extends HTMLElement {
       </button>
       <button
         class="desktopHeaderButtons"
-        onclick="jumpToSection('ConnectWithMe')"
+        onclick="jumpToSection('connectWithMe')"
       >
         Connect With Me
+      </button>
+      <button class="desktopHeaderButtons" onclick="jumpToSection('blog')">
+        Resume
       </button>
     </header>
     `;
