@@ -8,6 +8,8 @@ List of things that need to change with the website.
 
 ## Throughout the site.
 
+- The logo in the tab (see screenshots in the `./DesignChanges/logo_in_the_tab/` directory) does not display on the live site. Only the local site.
+
 - CSS Transitions for
 
   - navigation menu
