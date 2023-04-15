@@ -1,6 +1,6 @@
 // ./js/pinned_projects.js
 
-// Content obtained from .js/PinnedProjects
+// Content obtained from .js/PinnedProjects/
 const pinnedProjects = {
   data: {
     user: {
@@ -124,7 +124,7 @@ const pinnedProjects = {
                   },
                 ],
               },
-              homepageUrl: "https://jamiebort.com",
+              homepageUrl: "https://jamiebort.github.io/",
               forkCount: 0,
             },
           },
@@ -239,30 +239,28 @@ const returnValue = pinnedProjects.data.user.pinnedItems.edges.map((value) => {
 
 // Creating each project card from the returnValue array.
 returnValue.forEach((project) => {
-  // console.log("project.description:",project.description);
-  // console.log("project.url:",project.url);
-  // console.log("project.languages:",project.languages);
+  // // console.log("project.description:",project.description);
+  // console.log("project.url:", project.url);
+  // // console.log("project.languages:",project.languages);
+  // console.log("project.homepageUrl:", project.homepageUrl);
+  // // console.log("project.stargazerCount:", project.stargazerCount);
 
   const card_container = document.getElementById("card_container");
 
   const div1_tag = document.createElement("div");
   div1_tag.setAttribute("class", "card");
-  card_container.appendChild(div1_tag);
 
   const h3_tag = document.createElement("h3");
   h3_tag.setAttribute("class", "card_header_tag");
   // class="card_header_tag"
   h3_tag.innerHTML = project.name;
-  div1_tag.appendChild(h3_tag);
 
   const div3_tag = document.createElement("div");
   div3_tag.setAttribute("class", "card_div");
-  div1_tag.appendChild(div3_tag);
 
   const p1_tag = document.createElement("p");
   // p1_tag.setAttribute("class", "card_p");
   p1_tag.innerHTML = project.description;
-  div3_tag.appendChild(p1_tag);
 
   const div2_tag = document.createElement("div");
   div2_tag.setAttribute("class", "icon_div");
@@ -314,13 +312,9 @@ returnValue.forEach((project) => {
     }
   });
 
-  div3_tag.appendChild(div2_tag);
-
-  // footer div for the project card
+  // footer div
   const div4_tag = document.createElement("div");
   div4_tag.setAttribute("class", "anchor_div");
-  div4_tag.setAttribute("style", "border: solid blue; .3em");
-  div1_tag.appendChild(div4_tag);
 
   // Link to repo.
   const a_tag1 = document.createElement("a");
@@ -329,42 +323,38 @@ returnValue.forEach((project) => {
   a_tag1.setAttribute("href", project.url);
   // a_tag1.setAttribute("style", "display: inline-block; width: 100%; text-align:center;"); // Maybe move this to styles.
   a_tag1.innerHTML = "GitHub Repo";
+
+  // // NOTE: Use this to ink to the live site - if it exists.
+  // const a_tag2 = document.createElement("a");
+  // a_tag2.setAttribute("class", "live_site");
+  // a_tag2.setAttribute("target", "_blank");
+  // a_tag2.setAttribute("href", project.homepageUrl);
+  // a_tag2.innerHTML = "Live Page";
+
+  card_container.appendChild(div1_tag);
+  div1_tag.appendChild(h3_tag);
+  div1_tag.appendChild(div3_tag);
+  div3_tag.appendChild(p1_tag);
+  div3_tag.appendChild(div2_tag);
+  div1_tag.appendChild(div4_tag);
   div4_tag.appendChild(a_tag1);
+  // div4_tag.appendChild(a_tag2); //NOTE:  Append the link to live site to the div.
 
   if (project.homepageUrl) {
-    // NOTE: Use this to ink to the live site - if it exists.
-    // Link to live site
     const a_tag2 = document.createElement("a");
     a_tag2.setAttribute("class", "live_site");
     a_tag2.setAttribute("target", "_blank");
     a_tag2.setAttribute("href", project.homepageUrl);
-    a_tag2.innerHTML = "GitHub Repo";
-    div4_tag.appendChild(a_tag2);
-  } else {
-    // // footer div for the project card
-    // const div4_tag = document.createElement("div");
-    // div4_tag.setAttribute("class", "anchor_div");
-    div4_tag.setAttribute("style", "border: solid red; .3em");
-    // div1_tag.appendChild(div4_tag);
-
-    // ============
-
-    // // Link to repo.
-    // const a_tag1 = document.createElement("a");
-    // a_tag1.setAttribute("class", "github_repo");
-    // a_tag1.setAttribute("target", "_blank");
-    // a_tag1.setAttribute("href", project.url);
-    // // a_tag1.setAttribute("style", "display: inline-block; width: 100%; text-align:center;"); // Maybe move this to styles.
-    // a_tag1.innerHTML = "GitHub Repo";
-    // div4_tag.appendChild(a_tag1);
+    a_tag2.innerHTML = "Live Page";
+    div4_tag.appendChild(a_tag2); //NOTE:  Append the link to live site to the div.
   }
 
-  // card_container.appendChild(div1_tag); // TODO: delete me.
-  // div1_tag.appendChild(h3_tag); // TODO: delete me.
-  // div1_tag.appendChild(div3_tag); // TODO: delete me.
-  // div3_tag.appendChild(p1_tag); // TODO: delete me.
-  // div3_tag.appendChild(div2_tag); // TODO: delete me.
-  // div1_tag.appendChild(div4_tag); // TODO: delete me.
-  // div4_tag.appendChild(a_tag1); // TODO: delete me.
-  // div4_tag.appendChild(a_tag2); //NOTE:  Append the link to live site to the div.
+  // card_container.appendChild(div1_tag);
+  // div1_tag.appendChild(h3_tag);
+  // div1_tag.appendChild(div3_tag);
+  // div3_tag.appendChild(p1_tag);
+  // div3_tag.appendChild(div2_tag);
+  // div1_tag.appendChild(div4_tag);
+  // div4_tag.appendChild(a_tag1);
+  // // div4_tag.appendChild(a_tag2); //NOTE:  Append the link to live site to the div.
 });
