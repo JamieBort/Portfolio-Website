@@ -1,6 +1,6 @@
 // ./js/pinned_projects.js
 
-// Content obtained from .js/PinnedProjects
+// Content to the const pinnedProjects is obtained from .js/PinnedProjects
 const pinnedProjects = {
   data: {
     user: {
@@ -237,7 +237,7 @@ const returnValue = pinnedProjects.data.user.pinnedItems.edges.map((value) => {
   };
 });
 
-// Creating each project card from the returnValue array.
+// Creating each project card from the returnValue array above.
 returnValue.forEach((project) => {
   // console.log("project.description:",project.description);
   // console.log("project.url:",project.url);
@@ -274,8 +274,6 @@ returnValue.forEach((project) => {
   // Listing the languages each repo uses.
   project.languages.forEach((language) => {
     // console.log("language:",language);
-
-    // const i_tag = document.createElement("i");
 
     const span_tag = document.createElement("span");
 
@@ -319,7 +317,7 @@ returnValue.forEach((project) => {
   // footer div for the project card
   const div4_tag = document.createElement("div");
   div4_tag.setAttribute("class", "anchor_div");
-  div4_tag.setAttribute("style", "border: solid blue; .3em");
+  // div4_tag.setAttribute("style", "border: solid blue; .3em"); // to find the div used for the anchors...
   div1_tag.appendChild(div4_tag);
 
   // Link to repo.
@@ -327,44 +325,20 @@ returnValue.forEach((project) => {
   a_tag1.setAttribute("class", "github_repo");
   a_tag1.setAttribute("target", "_blank");
   a_tag1.setAttribute("href", project.url);
-  // a_tag1.setAttribute("style", "display: inline-block; width: 100%; text-align:center;"); // Maybe move this to styles.
   a_tag1.innerHTML = "GitHub Repo";
   div4_tag.appendChild(a_tag1);
 
   if (project.homepageUrl) {
-    // NOTE: Use this to ink to the live site - if it exists.
-    // Link to live site
+    // For when there is a live site to link to/share/display.
     const a_tag2 = document.createElement("a");
     a_tag2.setAttribute("class", "live_site");
     a_tag2.setAttribute("target", "_blank");
     a_tag2.setAttribute("href", project.homepageUrl);
-    a_tag2.innerHTML = "GitHub Repo";
+    a_tag2.innerHTML = "Live Site";
     div4_tag.appendChild(a_tag2);
   } else {
-    // // footer div for the project card
-    // const div4_tag = document.createElement("div");
-    // div4_tag.setAttribute("class", "anchor_div");
-    div4_tag.setAttribute("style", "border: solid red; .3em");
-    // div1_tag.appendChild(div4_tag);
-
-    // ============
-
-    // // Link to repo.
-    // const a_tag1 = document.createElement("a");
-    // a_tag1.setAttribute("class", "github_repo");
-    // a_tag1.setAttribute("target", "_blank");
-    // a_tag1.setAttribute("href", project.url);
-    // // a_tag1.setAttribute("style", "display: inline-block; width: 100%; text-align:center;"); // Maybe move this to styles.
-    // a_tag1.innerHTML = "GitHub Repo";
-    // div4_tag.appendChild(a_tag1);
+    // For when there is NOT a live site to link to/share/display.
+    // div4_tag.setAttribute("style", "border: solid red; .3em"); // to find the div used for the anchors...
+    a_tag1.setAttribute("style", "width: 100%;border-radius: 0 0 .5em .5em;");
   }
-
-  // card_container.appendChild(div1_tag); // TODO: delete me.
-  // div1_tag.appendChild(h3_tag); // TODO: delete me.
-  // div1_tag.appendChild(div3_tag); // TODO: delete me.
-  // div3_tag.appendChild(p1_tag); // TODO: delete me.
-  // div3_tag.appendChild(div2_tag); // TODO: delete me.
-  // div1_tag.appendChild(div4_tag); // TODO: delete me.
-  // div4_tag.appendChild(a_tag1); // TODO: delete me.
-  // div4_tag.appendChild(a_tag2); //NOTE:  Append the link to live site to the div.
 });
