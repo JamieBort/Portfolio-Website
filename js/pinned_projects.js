@@ -124,7 +124,8 @@ const pinnedProjects = {
                   },
                 ],
               },
-              homepageUrl: "https://jamiebort.com",
+              // TODO: figure out why I can't use jamiebort.com nor https://jamiebort.com nor https://www.jamiebort.com here.
+              homepageUrl: "https://jamiebort.github.io",
               forkCount: 0,
             },
           },
