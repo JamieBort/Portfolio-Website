@@ -55,6 +55,8 @@ The site shall:
     			+-- content - For adding content.
     			|	|
     			|	+-- content_20230328 - Content updated as of 20230328.
+    			|		|
+    			|		+-- content_20230328_blog - For creating a blog section of the website.
     			|
     			+-- host - For all things host related.
     			|	|
@@ -67,6 +69,8 @@ The site shall:
     			|	+-- api_github - For implementing api calls to GitHub.
     			|
     			+-- script - For all script related logic.
+    			|	|
+    			|	+-- script_header - For fixing the header. It disappears when viewing the site on a mobile device.
     			|
     			+-- breakpoint - For implementing breakpoints in the CSS file.
     			|	|
@@ -82,7 +86,7 @@ The site shall:
 
 #### Directories
 
-- .vscode/ - See https://code.visualstudio.com/docs/getstarted/settings#:~:text=Note%3A%20A%20VS%20Code%20%22workspace,feature%20called%20Multi%2Droot%20workspaces.
+- .vscode/ - See the [Workspace settings](https://code.visualstudio.com/docs/getstarted/settings#:~:text=Note%3A%20A%20VS%20Code%20%22workspace,feature%20called%20Multi%2Droot%20workspaces) in the VS Code documentation.
 
 - assets/ - The directory for the static resources.
 
