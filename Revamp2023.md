@@ -214,8 +214,6 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ### Next Steps
 
-**The mobile version is broken - the header disappears when one of the buttons in the header is selected.**
-
 **Also, the extra html isn't right: https://jamiebort.github.io/html/index.html It should be removed.**
 
 - Other tasks to address; in a different branch.:
@@ -279,5 +277,3 @@ This file is for keeping track of the `Status` and the tasks that need to be com
   - Remove the Workflow from
 
     https://github.com/JamieBort/jamiebort.github.io/tree/master/.github/workflows
-
-  - TODO: Update the README.md file. So that it is up to date, fun, interesting, etc.

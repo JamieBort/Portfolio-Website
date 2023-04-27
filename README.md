@@ -55,6 +55,8 @@ The site shall:
     			+-- content - For adding content.
     			|	|
     			|	+-- content_20230328 - Content updated as of 20230328.
+    			|		|
+    			|		+-- content_20230328_blog - For creating a blog section of the website.
     			|
     			+-- host - For all things host related.
     			|	|
