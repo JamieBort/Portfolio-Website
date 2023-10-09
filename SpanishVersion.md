@@ -1,6 +1,18 @@
-from: https://www.linkedin.com/messaging/thread/2-ODliNTM3ODUtODYwYy00Y2I5LWEzYjQtOTk1YTJhMDVjY2M1XzAxMA==/
+# SpanishVersion.md
 
-via LinkedIn.
+Thoughts and notes about implementing a Spanish translation of my website using a single toggle button.
+
+**Issues to address:**
+
+1. have the default language displayed be based on the user's default settings
+
+2. have a single button/switch to toggle between the two languages, not one button for each language.
+
+**Notes from a colleague**
+
+From: https://www.linkedin.com/messaging/thread/2-ODliNTM3ODUtODYwYy00Y2I5LWEzYjQtOTk1YTJhMDVjY2M1XzAxMA==/
+
+Via LinkedIn.
 
 > Translating your portfolio website into Spanish and providing a toggle button for users to switch between languages can be a good practice from both an accessibility and user experience standpoint.
 > Here are some considerations to keep in mind:
@@ -23,9 +35,3 @@ via LinkedIn.
 > Hope this helps!
 
 Also waiting to hear back from Nely and Rosalía about translations.
-
-Issues to address:
-
-1. have the default language displayed be based on the user's default settings
-
-2. have a single button/switch to toggle between the two languages, not one button for each language.

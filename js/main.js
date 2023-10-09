@@ -1,14 +1,15 @@
 // ./main.js
 
 // **************************************************
-//                  for the navigation
+//                  For the navigation
 // **************************************************
 
 // const leftHeaderButton = () => (window.location = "#top");
 
 const leftHeaderButton = () => {
   console.log("top fired");
-  window.location = "#top";
+  // window.location = "#top";
+  window.location = "#title";
   closeNavMenu();
 };
 
@@ -33,7 +34,7 @@ const closeNavMenu = () => (document.getElementById("menu").style.display = "non
 document.getElementById("content").addEventListener("click", closeNavMenu, false);
 
 // **************************************************
-//                  for the navigation
+//                  For the navigation
 // **************************************************
 
 // **************************************************
@@ -77,6 +78,108 @@ const toggle = () => {
   // DEFINE VARIABLES
   const h2Array = [];
   const pArray = [];
+
+  // Variables for the languageContent object.
+  const codeTheDreamAnchor = `<a id="textLink" target="_blank" href="https://codethedream.org/">Code the Dream</a>`;
+  const projectsButton = `<button class="section_button" onclick="jumpToSection('projects')">Projects</button>`;
+  // const projectsButton = `<button class="section_button" onclick="jumpToSection('projects')">${this.variables[0]()}</button>`;
+  const connectWithMeButton = `<button class="section_button" onclick="jumpToSection('ConnectWithMe')">Connect with Me</button>`;
+  // var connectWithMeButton = `<button class="section_button" onclick="jumpToSection('ConnectWithMe')">${languageContent["body"]["header"]["connectWithMe"][languageValue]}</button>`;
+
+  const languageContent = {
+    html: ["en", "es"],
+    head: "",
+    body: {
+      header: {
+        // TODO: Consider changing the default text "English" in the language toggle button to "Cambia a español"
+        // And the text to change it back to "Change to English"
+        // Or something to that effect.
+        idioma: ["Español", "English"],
+        bio: ["Bio", "Bio"],
+        projects: ["Projects", "Proyectos"],
+        blog: ["Blog", "Blog"],
+        connectWithMe: ["Connect With Me", "Contáctame"],
+      },
+      content: {
+        // h1: ["Software Engineer", "Ingeniero en Software"],
+        // top: { h1: ["English version", "Ingeniero en Software"] },
+        top: { h1: ["Software Engineer", "Ingeniero en Software"], h2: null },
+
+        bio: {
+          // NOTE: commented this out because I don't want to use the content in languageContent.body.header.bio
+          // h2: {
+          //   0: function () {
+          //     return languageContent.body.header.bio[0];
+          //   },
+          //   1: function () {
+          //     return languageContent.body.header.bio[1];
+          //   },
+          // },
+          h2: ["A little bit about myself", "Un poco sobre mi"],
+          p1: [
+            `I write code and teach at ${codeTheDreamAnchor}, a software boot camp for underrepresented people.`,
+            `Escribo código y enseno en ${codeTheDreamAnchor}, un campo de entrenamiento de software para personas subrepresentadas.`,
+          ],
+          p2: [`Below you will find some of my ${projectsButton}.`, `En la parte de abajo encontrarás algunos de mis proyectos ${projectsButton}.`],
+          p3: [
+            "When I am not coding I am working on my next presentation or mentoring; both of which push me to learn and grow.",
+            "Cuando no estoy codificando, estoy trabajando en mi próxima presentación o soy mentor; lo cual me empuja a aprender y a crecer.",
+          ],
+          p4: [`I invite you to ${connectWithMeButton} on social media below.`, `Te invito a Conectarte Conmigo ${connectWithMeButton} en las redes sociales a continuación.`],
+          // p4: [connectWithMeFunction(), `Te invito a Conectarte Conmigo ${connectWithMeButton} en las redes sociales a continuación.`],
+        },
+        projects: {
+          h2: {
+            0: function () {
+              return languageContent.body.header.projects[0];
+            },
+            1: function () {
+              return languageContent.body.header.projects[1];
+            },
+          },
+          // h2: ["Projects", "Proyectos"],
+        },
+        blog: {
+          h2: {
+            0: function () {
+              return languageContent.body.header.blog[0];
+            },
+            1: function () {
+              return languageContent.body.header.blog[1];
+            },
+          },
+          // h2: ["Blog", "Spanish version Blog H2"],
+          p1: ["English version Blog first paragraph", "Spanish version Blog first paragraph"],
+          p2: ["English version Blog second paragraph", "Spanish version Blog second paragraph"],
+        },
+        connectWithMe: {
+          h2: {
+            0: function () {
+              return languageContent.body.header.connectWithMe[0];
+            },
+            1: function () {
+              return languageContent.body.header.connectWithMe[1];
+            },
+          },
+          // h2: ["Connect with Me", "Contáctame"],
+        },
+      },
+      footer: ["English version", "Spanish version"],
+    },
+    // variables:["English Option","Español Option"],
+    variables: {
+      0: function () {
+        return "English Option";
+        return languageContent.body.header.bio[0];
+      },
+      1: function () {
+        return "Español Option";
+        return languageContent.body.header.bio[1];
+      },
+    },
+  };
+
+  // const tempVariable = languageContent.variables[0]();
 
   // Toggle between Spanish (1) and English (0).
   // console.log("languageValue before:", languageValue);
@@ -162,88 +265,105 @@ const toggle = () => {
     // console.log("the p statements:", pArray[index][languageValue]);
     document.getElementsByClassName("section_p")[index].innerHTML = pArray[index][languageValue];
   }
+
+  console.log(languageContent.variables[languageValue]());
 };
 
-// Variables for the languageContent object.
-const codeTheDreamAnchor = `<a id="textLink" target="_blank" href="https://codethedream.org/">Code the Dream</a>`;
-const projectsButton = `<button class="section_button" onclick="jumpToSection('projects')">Projects</button>`;
-const connectWithMeButton = `<button class="section_button" onclick="jumpToSection('ConnectWithMe')">Connect with Me</button>`;
-// var connectWithMeButton = `<button class="section_button" onclick="jumpToSection('ConnectWithMe')">${languageContent["body"]["header"]["connectWithMe"][languageValue]}</button>`;
+// // Variables for the languageContent object.
+// const codeTheDreamAnchor = `<a id="textLink" target="_blank" href="https://codethedream.org/">Code the Dream</a>`;
+// const projectsButton = `<button class="section_button" onclick="jumpToSection('projects')">Projects</button>`;
+// // const projectsButton = `<button class="section_button" onclick="jumpToSection('projects')">${tempVariable}</button>`;
+// const connectWithMeButton = `<button class="section_button" onclick="jumpToSection('ConnectWithMe')">Connect with Me</button>`;
+// // var connectWithMeButton = `<button class="section_button" onclick="jumpToSection('ConnectWithMe')">${languageContent["body"]["header"]["connectWithMe"][languageValue]}</button>`;
 
-var languageContent = {
-  html: ["en", "es"],
-  head: "",
-  body: {
-    header: {
-      // TODO: Consider changing the default text "English" in the language toggle button to "Cambia a español"
-      // And the text to change it back to "Change to English"
-      // Or something to that effect.
-      idioma: ["Español", "English"],
-      bio: ["Bio", "Bio"],
-      projects: ["Projects", "Proyectos"],
-      blog: ["Blog", "Blog"],
-      connectWithMe: ["Connect With Me", "Contáctame"],
-    },
-    content: {
-      // h1: ["Software Engineer", "Ingeniero en Software"],
-      // top: { h1: ["English version", "Ingeniero en Software"] },
-      top: { h1: ["Software Engineer", "Ingeniero en Software"], h2: null },
+// // const tempVariable = languageContent.variables[0]();
 
-      bio: {
-        // h2: {
-        //   0: function () {
-        //     return languageContent.body.header.bio[0];
-        //   },
-        //   1: function () {
-        //     return languageContent.body.header.bio[1];
-        //   },
-        // },
-        h2: ["A little bit about myself", "Un poco sobre mi"],
-        p1: [`I write code and teach at ${codeTheDreamAnchor}, a software boot camp for underrepresented people.`, "Spanish version bio first paragraph"],
-        p2: [`Below you will find some of my ${projectsButton}.`, "Spanish version bio second paragraph"],
-        p3: ["When I am not coding I am working on my next presentation or mentoring; both of which push me to learn and grow.", "Spanish version bio third paragraph"],
-        p4: [`I invite you to ${connectWithMeButton} on social media below.`, `Te invito a Conectarte Conmigo ${connectWithMeButton} en las redes sociales a continuación.`],
-        // p4: [connectWithMeFunction(), `Te invito a Conectarte Conmigo ${connectWithMeButton} en las redes sociales a continuación.`],
-      },
-      projects: {
-        h2: {
-          0: function () {
-            return languageContent.body.header.projects[0];
-          },
-          1: function () {
-            return languageContent.body.header.projects[1];
-          },
-        },
-        // h2: ["Projects", "Proyectos"],
-      },
-      blog: {
-        h2: {
-          0: function () {
-            return languageContent.body.header.blog[0];
-          },
-          1: function () {
-            return languageContent.body.header.blog[1];
-          },
-        },
-        // h2: ["Blog", "Spanish version Blog H2"],
-        p1: ["English version Blog first paragraph", "Spanish version Blog first paragraph"],
-        p2: ["English version Blog second paragraph", "Spanish version Blog second paragraph"],
-      },
-      connectWithMe: {
-        h2: {
-          0: function () {
-            return languageContent.body.header.connectWithMe[0];
-          },
-          1: function () {
-            return languageContent.body.header.connectWithMe[1];
-          },
-        },
-        // h2: ["Connect with Me", "Contáctame"],
-      },
-    },
-    footer: ["English version", "Spanish version"],
-  },
-};
+// const languageContent = {
+//   html: ["en", "es"],
+//   head: "",
+//   body: {
+//     header: {
+//       // TODO: Consider changing the default text "English" in the language toggle button to "Cambia a español"
+//       // And the text to change it back to "Change to English"
+//       // Or something to that effect.
+//       idioma: ["Español", "English"],
+//       bio: ["Bio", "Bio"],
+//       projects: ["Projects", "Proyectos"],
+//       blog: ["Blog", "Blog"],
+//       connectWithMe: ["Connect With Me", "Contáctame"],
+//     },
+//     content: {
+//       // h1: ["Software Engineer", "Ingeniero en Software"],
+//       // top: { h1: ["English version", "Ingeniero en Software"] },
+//       top: { h1: ["Software Engineer", "Ingeniero en Software"], h2: null },
+
+//       bio: {
+//         // NOTE: commented this out because I don't want to use the content in languageContent.body.header.bio
+//         // h2: {
+//         //   0: function () {
+//         //     return languageContent.body.header.bio[0];
+//         //   },
+//         //   1: function () {
+//         //     return languageContent.body.header.bio[1];
+//         //   },
+//         // },
+//         h2: ["A little bit about myself", "Un poco sobre mi"],
+//         p1: [`I write code and teach at ${codeTheDreamAnchor}, a software boot camp for underrepresented people.`, "Spanish version bio first paragraph"],
+//         p2: [`Below you will find some of my ${projectsButton}.`, `Spanish version bio second paragraph. ${projectsButton}`],
+//         p3: ["When I am not coding I am working on my next presentation or mentoring; both of which push me to learn and grow.", "Spanish version bio third paragraph"],
+//         p4: [`I invite you to ${connectWithMeButton} on social media below.`, `Te invito a Conectarte Conmigo ${connectWithMeButton} en las redes sociales a continuación.`],
+//         // p4: [connectWithMeFunction(), `Te invito a Conectarte Conmigo ${connectWithMeButton} en las redes sociales a continuación.`],
+//       },
+//       projects: {
+//         h2: {
+//           0: function () {
+//             return languageContent.body.header.projects[0];
+//           },
+//           1: function () {
+//             return languageContent.body.header.projects[1];
+//           },
+//         },
+//         // h2: ["Projects", "Proyectos"],
+//       },
+//       blog: {
+//         h2: {
+//           0: function () {
+//             return languageContent.body.header.blog[0];
+//           },
+//           1: function () {
+//             return languageContent.body.header.blog[1];
+//           },
+//         },
+//         // h2: ["Blog", "Spanish version Blog H2"],
+//         p1: ["English version Blog first paragraph", "Spanish version Blog first paragraph"],
+//         p2: ["English version Blog second paragraph", "Spanish version Blog second paragraph"],
+//       },
+//       connectWithMe: {
+//         h2: {
+//           0: function () {
+//             return languageContent.body.header.connectWithMe[0];
+//           },
+//           1: function () {
+//             return languageContent.body.header.connectWithMe[1];
+//           },
+//         },
+//         // h2: ["Connect with Me", "Contáctame"],
+//       },
+//     },
+//     footer: ["English version", "Spanish version"],
+//   },
+//   // variables:["English Option","Español Option"],
+//   variables: {
+//     0: function () {
+//       return "English Option";
+//       return languageContent.body.header.bio[0];
+//     },
+//     1: function () {
+//       return "Español Option";
+//       return languageContent.body.header.bio[1];
+//     },
+//   },
+// };
 
 // **************************************************
 //                  For the translation

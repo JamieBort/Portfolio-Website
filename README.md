@@ -55,6 +55,13 @@ The site shall:
     			+-- content - For adding content.
     			|	|
     			|	+-- content_20230328 - Content updated as of 20230328.
+    			|		|
+    			|		+-- content_20230328_Spanish_Version - 	Add Spanish translation of website.
+    															Also, use this branch to implement a toggle button to switch between languages.
+    			|	|
+    			|	+-- content_README - 	Change content of the README.md file.
+    										Update the README.md file.
+    										So that it is up to date, fun, interesting, etc.
     			|
     			+-- host - For all things host related.
     			|	|
@@ -68,7 +75,8 @@ The site shall:
     			|
     			+-- script - For all script related logic.
     			|	|
-    			|	+-- script_header - For fixing the header. It disappears when viewing the site on a mobile device.
+    			|	+-- script_header - NOT AN ISSUE ANYMORE.
+    									(For fixing the header. It disappears when viewing the site on a mobile device.)
     			|
     			+-- breakpoint - For implementing breakpoints in the CSS file.
     			|	|
@@ -109,3 +117,5 @@ The site shall:
 - README.md - This readme file.
 
 - Revamp2023.md - This file is for keeping track of the status and the tasks that need to be completed while I rebuild my portfolio website.
+
+- SpanishVersion.md - Thoughts and notes about implementing a Spanish translation of my website using a single toggle button.

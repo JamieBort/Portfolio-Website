@@ -56,12 +56,26 @@ body {
   flex-grow: 1;
 }
 
-#desktopHeader .desktopHeaderButtons:first-child {
-  flex-grow: 5;
+#desktopHeader .desktopHeaderButtons:nth-child(1) {
+  min-width: 6em;
+}
+
+#desktopHeader .desktopHeaderButtons:nth-child(2) {
+  /* background: red; */
+  flex-grow: 1;
   font-size: 1.75rem;
 }
 
-.desktopHeaderButtons:nth-last-child(-n + 5) {
+#desktopHeader .desktopHeaderButtons:nth-child(4) {
+  min-width: 7em;
+}
+
+#desktopHeader .desktopHeaderButtons:nth-child(6) {
+  /* background-color:burlywood; */
+  min-width: 10em;
+}
+
+#desktopHeader .desktopHeaderButtons:first-child,.desktopHeaderButtons:nth-last-child(-n + 4) {
   /* background-color:lightcoral; */
   /* width: 9.5%; */
   padding: 0 1em;
@@ -122,7 +136,11 @@ hr {
 
 section {
   /* background-color: lightblue; */
+  width: 90%;
+  margin: 0 auto;
 }
+
+.section_a{text-decoration: none;}
 
 /* TODO: style the .section_button with .section_button:focus, .section_button:active, .section_button:hover, .section_button:visited, and ??? */
 .section_button {
@@ -130,10 +148,10 @@ section {
   border-width: thin;
 }
 
-#bio {
+/* #bio, #blog {
   width: 90%;
   margin: 0 auto;
-}
+} */
 
 /* TODO: style the .styled_links with .styled_links:focus, .styled_links:active, .styled_links:hover, .styled_links:visited, and ??? */
 #textLink {
@@ -145,9 +163,10 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  /* justify-content: space-between; */
 }
 
-/* TODO: the cards are not distrubted the way I'd like them to be. Specifically, there are three cards in the first row and one card in the second row.  */
+/* TODO: the cards are not distributed the way I'd like them to be. Specifically, there are three cards in the first row and one card in the second row.  */
 /* To address this I've added "margin: 2em 3em;" below. But I don't think this is teh correct approach. I think it needs to be addressed in the #card_container above. */
 .card {
   border: thin solid #dcdcdc;
@@ -155,9 +174,9 @@ section {
   flex-direction: column;
   max-height: 30em;
   min-height: 15em;
-  margin: 0.3em;
   width: 20em;
   margin: 2em 3em;
+  /* margin: 2em 0; */
   border-radius: 0.5em;
 }
 
@@ -223,7 +242,8 @@ background-color: #ccc;
 #connect_container {
   /* background-color: lightsalmon; */
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  justify-content:space-between;
   flex-wrap: wrap;
 }
 
@@ -252,7 +272,7 @@ footer {
 /* Breakpoint for laptops */
 @media (min-width: 64em) {
   body {
-    /* background-color: rgb(234, 241, 102); */
+    /* background-color: blue */
   }
 
   #mobileHeader {
@@ -266,15 +286,27 @@ footer {
     background-color: #dcdcdc;
   }
 
-  #bio {
-    /* border: 0.1em blue solid; */
+  /* #bio {
+   
     max-width: 60em;
     margin: auto;
-  }
+  } */
 
   .fontAwesome {
     border: none;
     font-size: 4em;
     padding: 0;
+  }
+
+  #card_container {
+    /* border: 0.1em blue solid; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    justify-content: space-between;
+  }
+
+  .card {
+    margin: 2em 0;
   }
 }

@@ -28,7 +28,7 @@ List of things that need to change with the website.
 
 ### Head tag
 
-- Change `<head><title>Jamie Bort</title></head>` so that nothing but my logo shows up in the browser tab, including `Jamie Bort` and `index.html`. Or leave it alone - I like Jamie bort there.
+- Change `<head><title>Jamie Bort</title></head>` so that nothing but my logo shows up in the browser tab, including `Jamie Bort` and `index.html`. Or leave it alone - I like Jamie Bort there.
 
 ### Styling/CSS
 
