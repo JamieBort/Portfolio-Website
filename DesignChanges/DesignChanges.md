@@ -57,8 +57,18 @@ List of things that need to change with the website.
 
 - This one may not be an issue. See the ~~two~~ three screenshots in the `./DesignChanges/display_of_project_cards/` directory. One looks fine while the other ~~does~~ two do not. Specifically, I'd like the two rows of cards have at most a difference of one card between them, not two or more cards.
 
+- Update: Now the last card is left justified. See:
+
+  ![Projects](../DesignChanges/display_of_project_cards/projects.png)
+
 - For the projects that have a live site to navigate to, a second button in the footer of the card that says `Live Site` or something like that. See the references to `live site` in the `./js/pinned_projects.js` file.
 
 ### Connect with Me Section
 
 - Swap the .png icons for the Font Awesome logos.
+
+- The fifth anchor is left justified in the mobile view. See:
+
+  ![Contact](../DesignChanges/display_of_project_cards/connect.png)
+
+  Also, it is a slightly larger card/anchor.
