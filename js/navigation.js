@@ -2,9 +2,8 @@
 
 // Navigation component.
 
-// TODO: Consider changing the default text "English" in the language toggle button to "Cambia a español"
-// And the text to change it back to "Change to English"
-// Or something to that effect.
+// NOTE:  The "hidden" attribute didn't work for the mobile blog button below.
+//        So I'm using id="blogButton" and applying "display:none; in the css file."
 
 class Navigation extends HTMLElement {
   connectedCallback() {
@@ -20,18 +19,18 @@ class Navigation extends HTMLElement {
       <nav id="menu" style="display: none">
         <button class="menu_button" onclick="jumpToSection('bio')">Bio</button>
         <button class="menu_button" onclick="jumpToSection('projects')">Projects</button>
-        <button class="menu_button" onclick="jumpToSection('blog')">Blog</button>
+        <button id="blogButton" class="menu_button" onclick="jumpToSection('blog')">Blog</button>
         <button class="menu_button" onclick="jumpToSection('ConnectWithMe')">Connect With Me</button>
       </nav>
     </header>
 
-    <!-- TODO: make the width of the Bio and Projects buttons equal to that of the ConnectWithME button. -->
+    <!-- TODO: Consider making all the desktop navigation buttons equal in width to the widest one. -->
     <header id="desktopHeader">
       <button class="desktopHeaderButtons" onclick="toggle()">Español</button>
       <button class="desktopHeaderButtons" onclick="leftHeaderButton()">Jamie Bort</button>
       <button class="desktopHeaderButtons" onclick="jumpToSection('bio')">Bio</button>
       <button class="desktopHeaderButtons" onclick="jumpToSection('projects')">Projects</button>
-      <button class="desktopHeaderButtons" onclick="jumpToSection('blog')">Blog</button>
+      <button id="blogButton" class="desktopHeaderButtons" onclick="jumpToSection('blog')">Blog</button>
       <button class="desktopHeaderButtons" onclick="jumpToSection('connectWithMe')">Connect With Me</button>
     </header>
     `;

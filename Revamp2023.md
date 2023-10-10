@@ -4,6 +4,36 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ## Status
 
+**Note - all the following has been completed in the `content_20230328_Spanish_Version` branch.**
+
+- Done.
+
+  > Comment out or hide the Blog section.
+
+  > Clean up the files. Specifically
+
+  - remove all unnecessary code,
+
+  - remove all unnecessary comments,
+
+  - remove all unnecessary console.log()'s,
+
+  - remove all unnecessary files,
+
+    - remove the `html/old_index_spanish.html` file.
+
+    - remove the `html/index_spanish_copy.html` file.
+
+    - remove the `css/styles_backup.css` file.
+
+  > Address all relevant `TODO`s in the files.
+
+  > Determine which version of the Pinned Projects I want to have on the live website. My options are to
+
+  - not update the projects section of the website. (In other words, comment out or delete that section in this branch.)
+  - use that section of this branch as is. (In other words not do anything differently with that section.)
+  - or make a new api call and obtain a third version of the Pinned Projects. (See the ./js/ directory and the ./js/README.md file.)
+
 **Note - all the following has been completed in the `desktop_breakpoint` branch.**
 
 - Done.
@@ -214,31 +244,15 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ### Next Steps
 
-- Determine which version of the Pinned Projects I want to have on the live website. My options are to
+- Replace the `index.html` file with the `index_spanish.html` file. To that end
 
-  - not update the projects section of the website. (In other words, comment out or delete that section in this branch.)
-  - use that section of this branch as is. (In other words not do anything differently with that section.)
-  - or make a new api call and obtain a third version of the Pinned Projects. (See the ./js/ directory and the ./js/README.md file.)
+  - Rename the `index.html` file as `copy_index.html`.
 
-- Comment out or hide the Blog section.
+  - Then rename the `index_spanish.html` file as `index.html`.
 
-- Address all relevant `TODO`s in the files.
+  - Verify `index.html` works without issues.
 
-- Clean up the files. Specifically
-
-  - remove all unnecessary code,
-
-  - remove all unnecessary comments,
-
-  - remove all unnecessary console.log()'s,
-
-  - replace the `index.html` file with the `index_spanish.html` file. Then rename the `index_spanish.html` file as `index.html`.
-
-  - remove all unnecessary files,
-
-    - remove the `old_index_spanish.html` file.
-
-    - remove the `index_spanish_copy.html` file.
+  - **Do NOT** delete the `copy_index.html` file.
 
 - Merge the `content_20230328_Spanish_Version` branch into the `content_20230328` branch.
 
@@ -250,9 +264,7 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 - Merge the `dev` branch into the `master` branch.
 
-- **For later** - figure out how to update the "Projects" and "Connect with Me" buttons in the "Bio" section so that they say "Proyectos" and "Conectarte Conmigo" respectively.
-
-~~The mobile version is broken - the header disappears when one of the buttons in the header is selected.~~ This is no longer an issue.
+- Delete this `content_20230328_Spanish_Version` branch.
 
 **Also, the extra html isn't right: https://jamiebort.github.io/html/index.html It should be removed.**
 
@@ -268,12 +280,6 @@ This file is for keeping track of the `Status` and the tasks that need to be com
       - `API` in the Title.
       - and that come up when searching for `API`
 
-  - ~~Working on the Project Cards.~~ Right now they appear just fine.
-
-    Use this https://css-tricks.com/aspect-ratio-boxes/
-
-    **Create a new branch for this.**
-
   - All JavaScript
 
     **Create a new branch for this.**
@@ -286,17 +292,22 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
       **Create a new branch for this.**
 
+    - Figure out how to update the "Projects" and "Connect with Me" buttons in the "Bio" section so that they say "Proyectos" and "Conectarte Conmigo" respectively.
+
+      **Create a new branch for this.**
+
   - When the above is complete, write CSS for tablet breakpoint.
 
     - Create an `tablet_breakpoint` branch inside of a new `breakpoint` branch.
 
-  - Do not delete the `Revamp2020` branch until I delete the `Revamp2023` branch
+  - **Do NOT** delete the `Revamp2020` branch until I delete the `Revamp2023` branch
 
   - Make my website accessible.
 
     - **This should be done once all of the content has been added.**
     - Create an `accessibility` branch.
     - Modify the `<img>`, `<a>`, `<button>`, `<nav>`, and other tags for assistive screen readers.
+    - See the `TODO: style the .section_button with .section_button:focus, .section_button:active, .section_button:hover, .section_button:visited, and ???` comment in the `./css/styles.css` file.
 
   - Once the `Revamp2023` branch has been merged into the `dev` branch, delete
 
@@ -323,3 +334,13 @@ This file is for keeping track of the `Status` and the tasks that need to be com
     **Create a new branch for this.**
 
     Create a `content_README` branch inside the `content` branch.
+
+  - Update the list of projects in the Projects section. So that `iPhysicist-CSSLayoutFlexbox` , `PuppyLove`, and `Create-A-User-Directory` are not listed. **Alternatively**, update those three projects.
+
+    **Create a new branch for this.**
+
+    Create a `content_projects` branch inside the `content` branch.
+
+    There is one or three other things that I made note of to address with these projects cards. Find them and address them.
+
+    - See the `TODO: Add three Projects buttons to toggle on and off these three features:` comment**s** in the `./html/index_spanish.html` file.

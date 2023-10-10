@@ -127,6 +127,8 @@ hr {
   /* background-color: bisque; */
 }
 
+#blogButton{display: none;}
+
 .menu_button {
   display: block;
   width: 100%;

@@ -57,11 +57,11 @@ The site shall:
     			|	+-- content_20230328 - Content updated as of 20230328.
     			|		|
     			|		+-- content_20230328_Spanish_Version - 	Add Spanish translation of website.
-    															Also, use this branch to implement a toggle button to switch between languages.
+    										Also, use this branch to implement a toggle button to switch between languages.
     			|	|
     			|	+-- content_README - 	Change content of the README.md file.
-    										Update the README.md file.
-    										So that it is up to date, fun, interesting, etc.
+    							Update the README.md file.
+    							So that it is up to date, fun, interesting, etc.
     			|
     			+-- host - For all things host related.
     			|	|
@@ -75,8 +75,8 @@ The site shall:
     			|
     			+-- script - For all script related logic.
     			|	|
-    			|	+-- script_header - NOT AN ISSUE ANYMORE.
-    									(For fixing the header. It disappears when viewing the site on a mobile device.)
+    			|	+-- script_header - 	NOT AN ISSUE ANYMORE.
+    							(For fixing the header. It disappears when viewing the site on a mobile device.)
     			|
     			+-- breakpoint - For implementing breakpoints in the CSS file.
     			|	|
