@@ -22,6 +22,18 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     - Address merge conflicts.
 
+    - Checkout the `content_20230328` branch.
+
+    - Merge `content_20230328_Spanish_Version` into `content_20230328`.
+
+    - **Do NOT** delete the `content_20230328_backup` branch.
+
+    - **Do NOT** delete the `content_20230328_Spanish_Version_backup` branch.
+
+  - Merge the `content_20230328` branch into the `content` branch.
+
+    - Make a copy of the `content` branch. Call it `content_backup`.
+
 **Note - all the following has been completed in the `content_20230328_Spanish_Version` branch.**
 
 - Done.
@@ -274,7 +286,7 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 - Merge the `content_20230328_Spanish_Version` branch into the `master` branch.
 
-  - Merge the `content_20230328_Spanish_Version` branch into the `content_20230328` branch.
+  - ~~Merge the `content_20230328_Spanish_Version` branch into the `content_20230328` branch.~~
 
     - ~~Make a copy of the `content_20230328_Spanish_Version` branch. Call it `content_20230328_Spanish_Version_backup`.~~
 
@@ -284,17 +296,17 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     - ~~Address merge conflicts.~~
 
-    - Checkout the `content_20230328` branch.
+    - ~~Checkout the `content_20230328` branch.~~
 
-    - Merge `content_20230328_Spanish_Version` into `content_20230328`.
+    - ~~Merge `content_20230328_Spanish_Version` into `content_20230328`.~~
 
-    - **Do NOT** delete the `content_20230328_backup` branch.
+    - ~~**Do NOT** delete the `content_20230328_backup` branch.~~
 
-    - **Do NOT** delete the `content_20230328_Spanish_Version_backup` branch.
+    - ~~**Do NOT** delete the `content_20230328_Spanish_Version_backup` branch.~~
 
   - Merge the `content_20230328` branch into the `content` branch.
 
-    - Make a copy of the `content` branch. Call it `content_backup`.
+    - ~~Make a copy of the `content` branch. Call it `content_backup`.~~
 
     - Merge `content` into `content_20230328`.
 
