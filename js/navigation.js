@@ -20,7 +20,7 @@ class Navigation extends HTMLElement {
         <button class="menu_button" onclick="jumpToSection('bio')">Bio</button>
         <button class="menu_button" onclick="jumpToSection('projects')">Projects</button>
         <button id="blogButton" class="menu_button" onclick="jumpToSection('blog')">Blog</button>
-        <button class="menu_button" onclick="jumpToSection('ConnectWithMe')">Connect With Me</button>
+        <button class="menu_button" onclick="jumpToSection('connectWithMe')">Connect With Me</button>
       </nav>
     </header>
 

@@ -8,6 +8,16 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 - Done.
 
+  > Replace the `index.html` file with the `index_spanish.html` file. To that end
+
+  - Rename the `index.html` file as `copy_index.html`.
+
+  - Then rename the `index_spanish.html` file as `index.html`.
+
+  - Verify `index.html` works without issues.
+
+  - **Do NOT** delete the `copy_index.html` file.
+
   > Comment out or hide the Blog section.
 
   > Clean up the files. Specifically
@@ -244,27 +254,91 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ### Next Steps
 
-- Replace the `index.html` file with the `index_spanish.html` file. To that end
+- Merge the `content_20230328_Spanish_Version` branch into the `master` branch.
 
-  - Rename the `index.html` file as `copy_index.html`.
+  - Merge the `content_20230328_Spanish_Version` branch into the `content_20230328` branch.
 
-  - Then rename the `index_spanish.html` file as `index.html`.
+    - Make a copy of the `content_20230328_Spanish_Version` branch. Call it `content_20230328_Spanish_Version_backup`.
 
-  - Verify `index.html` works without issues.
+    - Make a copy of the `content_20230328` branch. Call it `content_20230328_backup`.
 
-  - **Do NOT** delete the `copy_index.html` file.
+    - Merge `content_20230328` into `content_20230328_Spanish_Version`.
 
-- Merge the `content_20230328_Spanish_Version` branch into the `content_20230328` branch.
+    - Address merge conflicts.
 
-- Merge the `content_20230328` branch into the `content` branch.
+    - Merge `content_20230328_Spanish_Version` into `content_20230328`.
 
-- Merge the `content` branch into the `Revamp2023` branch.
+    - **Do NOT** delete the `content_20230328_backup` branch.
 
-- Merge the `Revamp2023` branch into the `dev` branch.
+    - **Do NOT** delete the `content_20230328_Spanish_Version_backup` branch.
 
-- Merge the `dev` branch into the `master` branch.
+  - Merge the `content_20230328` branch into the `content` branch.
 
-- Delete this `content_20230328_Spanish_Version` branch.
+    - Make a copy of the `content` branch. Call it `content_backup`.
+
+    - Merge `content` into `content_20230328`.
+
+    - Address merge conflicts.
+
+    - Merge `content_20230328` into `content`.
+
+    - **Do NOT** delete the `content_backup` branch.
+
+  - Merge the `content` branch into the `Revamp2023` branch.
+
+    - Make a copy of the `Revamp2023` branch. Call it `Revamp2023_backup`.
+
+    - Merge `Revamp2023` into `content`.
+
+    - Address merge conflicts.
+
+    - Merge `content` into `Revamp2023`.
+
+    - **Do NOT** delete the `Revamp2023_backup` branch.
+
+  - Merge the `Revamp2023` branch into the `dev` branch.
+
+    - Make a copy of the `dev` branch. Call it `dev_backup`.
+
+    - Merge `dev` into `Revamp2023`.
+
+    - Address merge conflicts.
+
+    - Merge `Revamp2023` into `dev`.
+
+    - **Do NOT** delete the `dev_backup` branch.
+
+  - Merge the `dev` branch into the `master` branch.
+
+    - Make a copy of the `master` branch. Call it `master_backup`.
+
+    - Merge `master` into `dev`.
+
+    - Address merge conflicts.
+
+    - Merge `dev` into `master`.
+
+    - **Do NOT** delete the `master_backup` branch.
+
+  - Check to make sure the site is working locally without problems.
+
+  - Check to make sure the live site is working without problems.
+
+  - Delete these branches:
+
+    - `content_20230328_Spanish_Version`
+
+    - `content_20230328_Spanish_Version_backup`
+
+    - `content_20230328_backup`
+
+    - `content_backup`
+
+    - `Revamp2023_backup`
+
+    - `dev_backup`
+
+    - `master_backup`
 
 **Also, the extra html isn't right: https://jamiebort.github.io/html/index.html It should be removed.**
 

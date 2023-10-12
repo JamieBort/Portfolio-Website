@@ -74,8 +74,8 @@ const toggle = () => {
   const codeTheDreamAnchor = `<a id="textLink" target="_blank" href="https://codethedream.org/">Code the Dream</a>`;
   const projectsButtonEnglish = `<button class="section_button" onclick="jumpToSection('projects')">Projects</button>`;
   const projectsButtonSpanish = `<button class="section_button" onclick="jumpToSection('projects')">Proyectos</button>`;
-  const connectWithMeButtonEnglish = `<button class="section_button" onclick="jumpToSection('ConnectWithMe')">Connect with Me</button>`;
-  const connectWithMeButtonSpanish = `<button class="section_button" onclick="jumpToSection('ConnectWithMe')">Conectarte Conmigo</button>`;
+  const connectWithMeButtonEnglish = `<button class="section_button" onclick="jumpToSection('connectWithMe')">Connect with Me</button>`;
+  const connectWithMeButtonSpanish = `<button class="section_button" onclick="jumpToSection('connectWithMe')">Conectarte Conmigo</button>`;
 
   const languageContent = {
     html: ["en", "es"],
@@ -95,25 +95,27 @@ const toggle = () => {
 
         bio: {
           // NOTE: commented this out because I don't want to use the content in languageContent.body.header.bio
-          // h2: {
-          //   0: function () {
-          //     return languageContent.body.header.bio[0];
-          //   },
-          //   1: function () {
-          //     return languageContent.body.header.bio[1];
-          //   },
-          // },
+          // h2: {0: function () {return languageContent.body.header.bio[0];},1: function () {return languageContent.body.header.bio[1];},},
           h2: ["A little bit about myself", "Un poco sobre mi"],
+          // p1: [
+          //   `I write code and teach at ${codeTheDreamAnchor}, a software boot camp for underrepresented people.`,`Escribo código y enseno en ${codeTheDreamAnchor}, un campo de entrenamiento de software para personas subrepresentadas.`,],
+          // Danni's translation.
           p1: [
             `I write code and teach at ${codeTheDreamAnchor}, a software boot camp for underrepresented people.`,
-            `Escribo código y enseno en ${codeTheDreamAnchor}, un campo de entrenamiento de software para personas subrepresentadas.`,
+            `Escribo código y enseno en ${codeTheDreamAnchor}, un campo de entrenamiento de software para personas con escasa representación.`,
           ],
-          p2: [`Below you will find some of my ${projectsButtonEnglish}.`, `En la parte de abajo encontrarás algunos de mis ${projectsButtonSpanish}.`],
+          // p2: [`Below you will find some of my ${projectsButtonEnglish}.`, `En la parte de abajo encontrarás algunos de mis ${projectsButtonSpanish}.`],
+          // Danni's translation.
+          p2: [`Below you will find some of my ${projectsButtonEnglish}.`, `Aquí encontrarás algunos de mis ${projectsButtonSpanish}.`],
+          // p3: ["When I am not coding I am working on my next presentation or mentoring; both of which push me to learn and grow.","Cuando no estoy codificando, estoy trabajando en mi próxima presentación o soy mentor; lo cual me empuja a aprender y a crecer.",],
+          // Danni's translation.
           p3: [
             "When I am not coding I am working on my next presentation or mentoring; both of which push me to learn and grow.",
-            "Cuando no estoy codificando, estoy trabajando en mi próxima presentación o soy mentor; lo cual me empuja a aprender y a crecer.",
+            "Cuando no estoy codificando estoy trabajando en mi próxima presentación o para mis citas como mentor, ambos de los cuales me empujan a aprender y crecer.",
           ],
-          p4: [`I invite you to ${connectWithMeButtonEnglish} on social media below.`, `Te invito a ${connectWithMeButtonSpanish} en las redes sociales a continuación.`],
+          // p4: [`I invite you to ${connectWithMeButtonEnglish} on social media below.`, `Te invito a ${connectWithMeButtonSpanish} en las redes sociales a continuación.`],
+          // Danni's translation.
+          p4: [`I invite you to ${connectWithMeButtonEnglish} on social media below.`, `Te invito a ${connectWithMeButtonSpanish} en las redes sociales.`],
           // p4: [`I invite you to ${connectWithMeButton} on social media below.`, `Te invito a Conectarte Conmigo ${connectWithMeButton} en las redes sociales a continuación.`],
           // p4: [connectWithMeFunction(), `Te invito a Conectarte Conmigo ${connectWithMeButton} en las redes sociales a continuación.`],
         },
