@@ -40,6 +40,12 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     - Address merge conflicts.
 
+    - Checkout the `content` branch.
+
+    - Merge `content_20230328` into `content`.
+
+    - **Do NOT** delete the `content_backup` branch.
+
 **Note - all the following has been completed in the `content_20230328_Spanish_Version` branch.**
 
 - Done.
@@ -318,11 +324,11 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     - ~~Address merge conflicts.~~
 
-    - Checkout the `content` branch.
+    - ~~Checkout the `content` branch.~~
 
-    - Merge `content_20230328` into `content`.
+    - ~~Merge `content_20230328` into `content`.~~
 
-    - **Do NOT** delete the `content_backup` branch.
+    - ~~**Do NOT** delete the `content_backup` branch.~~
 
   - Merge the `content` branch into the `Revamp2023` branch.
 
