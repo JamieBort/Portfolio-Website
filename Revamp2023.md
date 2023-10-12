@@ -4,6 +4,24 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ## Status
 
+**Note - all the following has been completed in the various branches.**
+
+- Done.
+
+  > Merge the `content_20230328_Spanish_Version` branch into the `master` branch.
+
+  - Merge the `content_20230328_Spanish_Version` branch into the `content_20230328` branch.
+
+    - Make a copy of the `content_20230328_Spanish_Version` branch. Call it `content_20230328_Spanish_Version_backup`.
+
+    - Make a copy of the `content_20230328` branch. Call it `content_20230328_backup`.
+
+    - Merge `content_20230328` into `content_20230328_Spanish_Version`.
+
+      NOTE: While in the `content_20230328_Spanish_Version` branch ran `git merge content_20230328` and received `Already up to date.` as a response.
+
+    - Address merge conflicts.
+
 **Note - all the following has been completed in the `content_20230328_Spanish_Version` branch.**
 
 - Done.
@@ -258,13 +276,15 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
   - Merge the `content_20230328_Spanish_Version` branch into the `content_20230328` branch.
 
-    - Make a copy of the `content_20230328_Spanish_Version` branch. Call it `content_20230328_Spanish_Version_backup`.
+    - ~~Make a copy of the `content_20230328_Spanish_Version` branch. Call it `content_20230328_Spanish_Version_backup`.~~
 
-    - Make a copy of the `content_20230328` branch. Call it `content_20230328_backup`.
+    - ~~Make a copy of the `content_20230328` branch. Call it `content_20230328_backup`.~~
 
-    - Merge `content_20230328` into `content_20230328_Spanish_Version`.
+    - ~~Merge `content_20230328` into `content_20230328_Spanish_Version`.~~
 
-    - Address merge conflicts.
+    - ~~Address merge conflicts.~~
+
+    - Checkout the `content_20230328` branch.
 
     - Merge `content_20230328_Spanish_Version` into `content_20230328`.
 
@@ -280,6 +300,8 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     - Address merge conflicts.
 
+    - Checkout the `content` branch.
+
     - Merge `content_20230328` into `content`.
 
     - **Do NOT** delete the `content_backup` branch.
@@ -291,6 +313,8 @@ This file is for keeping track of the `Status` and the tasks that need to be com
     - Merge `Revamp2023` into `content`.
 
     - Address merge conflicts.
+
+    - Checkout the `Revamp2023` branch.
 
     - Merge `content` into `Revamp2023`.
 
@@ -304,6 +328,8 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     - Address merge conflicts.
 
+    - Checkout the `dev` branch.
+
     - Merge `Revamp2023` into `dev`.
 
     - **Do NOT** delete the `dev_backup` branch.
@@ -315,6 +341,8 @@ This file is for keeping track of the `Status` and the tasks that need to be com
     - Merge `master` into `dev`.
 
     - Address merge conflicts.
+
+    - Checkout the `master` branch.
 
     - Merge `dev` into `master`.
 
