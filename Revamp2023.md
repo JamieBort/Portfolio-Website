@@ -54,6 +54,16 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     - Address merge conflicts.
 
+    - Checkout the `Revamp2023` branch.
+
+    - Merge `content` into `Revamp2023`.
+
+    - **Do NOT** delete the `Revamp2023_backup` branch.
+
+  - Merge the `Revamp2023` branch into the `dev` branch.
+
+    - Make a copy of the `dev` branch. Call it `dev_backup`.
+
 **Note - all the following has been completed in the `content_20230328_Spanish_Version` branch.**
 
 - Done.
@@ -338,7 +348,7 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     - ~~**Do NOT** delete the `content_backup` branch.~~
 
-  - Merge the `content` branch into the `Revamp2023` branch.
+  - ~~Merge the `content` branch into the `Revamp2023` branch.~~
 
     - ~~Make a copy of the `Revamp2023` branch. Call it `Revamp2023_backup`.~~
 
@@ -346,15 +356,15 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     - ~~Address merge conflicts.~~
 
-    - Checkout the `Revamp2023` branch.
+    - ~~Checkout the `Revamp2023` branch.~~
 
-    - Merge `content` into `Revamp2023`.
+    - ~~Merge `content` into `Revamp2023`.~~
 
-    - **Do NOT** delete the `Revamp2023_backup` branch.
+    - ~~**Do NOT** delete the `Revamp2023_backup` branch.~~
 
   - Merge the `Revamp2023` branch into the `dev` branch.
 
-    - Make a copy of the `dev` branch. Call it `dev_backup`.
+    - ~~Make a copy of the `dev` branch. Call it `dev_backup`.~~
 
     - Merge `dev` into `Revamp2023`.
 
