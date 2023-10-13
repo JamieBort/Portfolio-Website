@@ -74,6 +74,14 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     - **Do NOT** delete the `dev_backup` branch.
 
+  - Merge the `dev` branch into the `master` branch.
+
+    - Make a copy of the `master` branch. Call it `master_backup`.
+
+    - Merge `master` into `dev`.
+
+    - Address merge conflicts.
+
 **Note - all the following has been completed in the `content_20230328_Spanish_Version` branch.**
 
 - Done.
@@ -388,11 +396,11 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
   - Merge the `dev` branch into the `master` branch.
 
-    - Make a copy of the `master` branch. Call it `master_backup`.
+    - ~~Make a copy of the `master` branch. Call it `master_backup`.~~
 
-    - Merge `master` into `dev`.
+    - ~~Merge `master` into `dev`.~~
 
-    - Address merge conflicts.
+    - ~~Address merge conflicts.~~
 
     - Checkout the `master` branch.
 
