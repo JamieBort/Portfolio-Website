@@ -75,7 +75,7 @@ The site shall:
     			|
     			+-- script - For all script related logic.
     			|	|
-    			|	+-- script_other_feature_branches -
+    			|	+-- script_other-feature-branches -
     			|
     			+-- breakpoint - For implementing breakpoints in the CSS file.
     			|	|
