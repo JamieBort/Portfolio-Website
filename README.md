@@ -63,6 +63,8 @@ Additionally, I will continue to make changes to this site to make it more acces
 			|	+-- breakpoint_desktop - Doesn't exist (yet). For implementing desktop breakpoint in the CSS file.
 			|
 			+-- accessibility - For all accessibility implementation.
+				|
+				+-- accessibility_alt_text_focus - For adding alt text and maintaining focus.
 ```
 
 ### Directories and Files
