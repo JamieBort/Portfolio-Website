@@ -52,6 +52,9 @@ The site shall:
     		|
     		+-- Revamp2023 - The branch created to update the website in 2023.
     			|
+    			+-- cleanup - 	For cleaning up the repo.
+    					For removing old files, directories, and branches.
+    			|
     			+-- content - For adding content.
     			|	|
     			|	+-- content_20230328 - Content updated as of 20230328.
@@ -72,18 +75,15 @@ The site shall:
     			|
     			+-- script - For all script related logic.
     			|	|
-    			|	+-- script_header - 	NOT AN ISSUE ANYMORE.
-    							(For fixing the header. It disappears when viewing the site on a mobile device.)
+    			|	+-- script_other_feature_branches -
     			|
     			+-- breakpoint - For implementing breakpoints in the CSS file.
     			|	|
-    			|	+-- breakpoint_tablet - For implementing a tablet breakpoint in the CSS file.
+    			|	+-- breakpoint_tablet - Doesn't exist (yet). For implementing a tablet breakpoint in the CSS file.
     			|	|
-    			|	+-- breakpoint_desktop - For implementing desktop breakpoint in the CSS file.
+    			|	+-- breakpoint_desktop - Doesn't exist (yet). For implementing desktop breakpoint in the CSS file.
     			|
     			+-- accessibility - For all accessibility implementation.
-    			|
-    			+-- other feature branches
 
 ### Directories and Files
 
