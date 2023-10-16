@@ -4,6 +4,14 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ## Status
 
+**Note - all the following has been completed in the `content_20230328_README` branch.**
+
+- Done.
+
+  > Update the README.md file. So that it is up to date, fun, interesting, etc.
+
+      Created a `content_20230328_README` branch inside the `content_README` branch.
+
 **Note - Done at some point recently just before or during the content_20230328_Spanish_Version branch.**
 
 - Done.
@@ -382,12 +390,6 @@ This file is for keeping track of the `Status` and the tasks that need to be com
     - Create an `tablet_breakpoint` branch inside of a new `breakpoint` branch.
 
   - **All Content Updates**
-
-    - Update the README.md file. So that it is up to date, fun, interesting, etc.
-
-      _Create a new branch for this._
-
-      Create a `content_README` branch inside the `content` branch.
 
   - **API related tasks**
 
