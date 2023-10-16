@@ -92,6 +92,22 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
   - Check to make sure the live site is working without problems.
 
+  - Delete these branches:
+
+    - `content_20230328_Spanish_Version`
+
+    - `content_20230328_Spanish_Version_backup`
+
+    - `content_20230328_backup`
+
+    - `content_backup`
+
+    - `Revamp2023_backup`
+
+    - `dev_backup`
+
+    - `master_backup`
+
 **Note - all the following has been completed in the `content_20230328_Spanish_Version` branch.**
 
 - Done.
@@ -342,7 +358,7 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ### Next Steps
 
-- Merge the `content_20230328_Spanish_Version` branch into the `master` branch.
+- ~~Merge the `content_20230328_Spanish_Version` branch into the `master` branch.~~
 
   - ~~Merge the `content_20230328_Spanish_Version` branch into the `content_20230328` branch.~~
 
@@ -422,21 +438,21 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
   - ~~Check to make sure the live site is working without problems.~~
 
-  - Delete these branches:
+  - ~~Delete these branches:~~
 
-    - `content_20230328_Spanish_Version`
+    - ~~`content_20230328_Spanish_Version`~~
 
-    - `content_20230328_Spanish_Version_backup`
+    - ~~`content_20230328_Spanish_Version_backup`~~
 
-    - `content_20230328_backup`
+    - ~~`content_20230328_backup`~~
 
-    - `content_backup`
+    - ~~`content_backup`~~
 
-    - `Revamp2023_backup`
+    - ~~`Revamp2023_backup`~~
 
-    - `dev_backup`
+    - ~~`dev_backup`~~
 
-    - `master_backup`
+    - ~~`master_backup`~~
 
 **Also, the extra html isn't right: https://jamiebort.github.io/html/index.html It should be removed.**
 
