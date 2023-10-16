@@ -55,9 +55,15 @@ List of things that need to change with the website.
 
 - This one may not be an issue. See the ~~two~~ three screenshots in the `./DesignChanges/display_of_project_cards/` directory. One looks fine while the other ~~does~~ two do not. Specifically, I'd like the two rows of cards have at most a difference of one card between them, not two or more cards.
 
-- Update: Now the last card is left justified. See:
+- Update:
 
-  ![Projects](../DesignChanges/display_of_project_cards/projects.png)
+  - Now the last card is left justified. See:
+
+    ![Projects desktop view](../DesignChanges/display_of_project_cards/projects.png)
+
+  - And the tablet view the cards are single ~~file~~ column. See:
+
+    ![Projects tablet vertical view](../DesignChanges/display_of_project_cards/JamieBort.com.png)
 
 - For the projects that have a live site to navigate to, a second button in the footer of the card that says `Live Site` or something like that. See the references to `live site` in the `./js/pinned_projects.js` file.
 

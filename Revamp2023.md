@@ -399,8 +399,6 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
   - **All JavaScript**
 
-    _Create a new branch for this._
-
     - Address the `ToDo` item in the `<script>` tag in the index.html file.
 
       _Create a new branch for this._

@@ -41,10 +41,6 @@ Additionally, I will continue to make changes to this site to make it more acces
 			+-- content - For adding content.
 			|	|
 			|	+-- content_20230328 - Content updated as of 20230328.
-			|		|
-			|		+-- content_20230328_README - 	Change content of the README.md file.
-													Update the README.md file.
-													So that it is up to date, fun, interesting, etc.
 			|
 			+-- host - For all things host related.
 			|	|
