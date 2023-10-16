@@ -52,9 +52,6 @@ The site shall:
     		|
     		+-- Revamp2023 - The branch created to update the website in 2023.
     			|
-    			+-- cleanup - 	For cleaning up the repo.
-    					For removing old files, directories, and branches.
-    			|
     			+-- content - For adding content.
     			|	|
     			|	+-- content_20230328 - Content updated as of 20230328.
