@@ -437,4 +437,4 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     There is one or three other things that I made note of to address with these projects cards. Find them and address them.
 
-    - See the `TODO: Add three Projects buttons to toggle on and off these three features:` comment**s** in the `./html/index_spanish.html` file.
+    - See the `TODO: Add three Projects buttons to toggle on and off these three features:` comment**s** in the ~~`./html/index_spanish.html`~~ `./html/index.html` file.

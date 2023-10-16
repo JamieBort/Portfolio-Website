@@ -40,7 +40,7 @@ Additionally, I will continue to make changes to this site to make it more acces
 			|
 			+-- content - For adding content.
 			|	|
-			|	+-- content_20230328 - Content updated as of 20230328.
+			|	+-- content_other-feature-branches -
 			|
 			+-- host - For all things host related.
 			|	|
