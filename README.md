@@ -55,9 +55,6 @@ The site shall:
     			+-- content - For adding content.
     			|	|
     			|	+-- content_20230328 - Content updated as of 20230328.
-    			|		|
-    			|		+-- content_20230328_Spanish_Version - 	Add Spanish translation of website.
-    										Also, use this branch to implement a toggle button to switch between languages.
     			|	|
     			|	+-- content_README - 	Change content of the README.md file.
     							Update the README.md file.
