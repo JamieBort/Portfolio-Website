@@ -2,9 +2,9 @@
 
 List of things that need to change with the website.
 
-**The extra html isn't right: https://jamiebort.github.io/html/index.html It should be removed.**
-
 ## Throughout the site.
+
+- The extra html isn't right: https://jamiebort.github.io/html/index.html It should be removed.
 
 - The logo in the tab (see screenshots in the `./DesignChanges/logo_in_the_tab/` directory) does not display on the live site. Only the local site.
 

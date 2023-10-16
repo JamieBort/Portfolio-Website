@@ -4,6 +4,14 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ## Status
 
+**Note - Done at some point recently just before or during the content_20230328_Spanish_Version branch.**
+
+- Done.
+
+  > Remove the Workflow from
+
+  https://github.com/JamieBort/jamiebort.github.io/tree/master/.github/workflows
+
 **Note - all the following has been completed in the various branches.**
 
 - Done.
@@ -358,48 +366,52 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ### Next Steps
 
-**Also, the extra html isn't right: https://jamiebort.github.io/html/index.html It should be removed.**
-
 - Other tasks to address; in a different branch.:
 
-  - When the above is complete, write CSS for desktop breakpoint.
+  - **All accessibly updates**
+
+    - _This should be done once all of the content has been added._
+    - Create an `accessibility` branch.
+    - Modify the `<img>`, `<a>`, `<button>`, `<nav>`, and other tags for assistive screen readers.
+    - See the `TODO: style the .section_button with .section_button:focus, .section_button:active, .section_button:hover, .section_button:visited, and ???` comment in the `./css/styles.css` file.
+
+  - **All CSS/Styling**
 
     - Modify files to address the todo items in the `./jamiebort.github.io/DesignChanges/DesignChanges.md` file.
 
-  - API related tasks
+    - Create an `tablet_breakpoint` branch inside of a new `breakpoint` branch.
+
+  - **All Content Updates**
+
+    - Update the README.md file. So that it is up to date, fun, interesting, etc.
+
+      _Create a new branch for this._
+
+      Create a `content_README` branch inside the `content` branch.
+
+  - **API related tasks**
 
     - Consolidate and organize ALL Trello cards with
       - `API` in the Title.
       - and that come up when searching for `API`
 
-  - All JavaScript
+  - **All JavaScript**
 
-    **Create a new branch for this.**
+    _Create a new branch for this._
 
     - Address the `ToDo` item in the `<script>` tag in the index.html file.
 
-      **Create a new branch for this.**
+      _Create a new branch for this._
 
     - Fix the functionality of the contact me form.
 
-      **Create a new branch for this.**
+      _Create a new branch for this._
 
     - Figure out how to update the "Projects" and "Connect with Me" buttons in the "Bio" section so that they say "Proyectos" and "Conectarte Conmigo" respectively.
 
-      **Create a new branch for this.**
-
-  - When the above is complete, write CSS for tablet breakpoint.
-
-    - Create an `tablet_breakpoint` branch inside of a new `breakpoint` branch.
+      _Create a new branch for this._
 
   - **Do NOT** delete the `Revamp2020` branch until I delete the `Revamp2023` branch
-
-  - Make my website accessible.
-
-    - **This should be done once all of the content has been added.**
-    - Create an `accessibility` branch.
-    - Modify the `<img>`, `<a>`, `<button>`, `<nav>`, and other tags for assistive screen readers.
-    - See the `TODO: style the .section_button with .section_button:focus, .section_button:active, .section_button:hover, .section_button:visited, and ???` comment in the `./css/styles.css` file.
 
   - Once the `Revamp2023` branch has been merged into the `dev` branch, delete
 
@@ -413,23 +425,13 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     Each one should (now) be in the `./jamiebort.github.io/old/` directory.
 
-    **Create a new branch for this.**
+    _Create a new branch for this._
 
     Also prune or generally clean up all the old branches.
 
-  - Remove the Workflow from
-
-    https://github.com/JamieBort/jamiebort.github.io/tree/master/.github/workflows
-
-  - Update the README.md file. So that it is up to date, fun, interesting, etc.
-
-    **Create a new branch for this.**
-
-    Create a `content_README` branch inside the `content` branch.
-
   - Update the list of projects in the Projects section. So that `iPhysicist-CSSLayoutFlexbox` , `PuppyLove`, and `Create-A-User-Directory` are not listed. **Alternatively**, update those three projects.
 
-    **Create a new branch for this.**
+    _Create a new branch for this._
 
     Create a `content_projects` branch inside the `content` branch.
 
