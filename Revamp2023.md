@@ -82,6 +82,16 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     - Address merge conflicts.
 
+    - Checkout the `master` branch.
+
+    - Merge `dev` into `master`.
+
+    - **Do NOT** delete the `master_backup` branch.
+
+  - Check to make sure the site is working locally without problems.
+
+  - Check to make sure the live site is working without problems.
+
 **Note - all the following has been completed in the `content_20230328_Spanish_Version` branch.**
 
 - Done.
@@ -394,7 +404,7 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     - ~~**Do NOT** delete the `dev_backup` branch.~~
 
-  - Merge the `dev` branch into the `master` branch.
+  - ~~Merge the `dev` branch into the `master` branch.~~
 
     - ~~Make a copy of the `master` branch. Call it `master_backup`.~~
 
@@ -402,15 +412,15 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     - ~~Address merge conflicts.~~
 
-    - Checkout the `master` branch.
+    - ~~Checkout the `master` branch.~~
 
-    - Merge `dev` into `master`.
+    - ~~Merge `dev` into `master`.~~
 
-    - **Do NOT** delete the `master_backup` branch.
+    - ~~**Do NOT** delete the `master_backup` branch.~~
 
-  - Check to make sure the site is working locally without problems.
+  - ~~Check to make sure the site is working locally without problems.~~
 
-  - Check to make sure the live site is working without problems.
+  - ~~Check to make sure the live site is working without problems.~~
 
   - Delete these branches:
 
