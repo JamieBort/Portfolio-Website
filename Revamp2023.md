@@ -378,10 +378,23 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
   - **All accessibly updates**
 
-    - _This should be done once all of the content has been added._
-    - Create an `accessibility` branch.
-    - Modify the `<img>`, `<a>`, `<button>`, `<nav>`, and other tags for assistive screen readers.
-    - See the `TODO: style the .section_button with .section_button:focus, .section_button:active, .section_button:hover, .section_button:visited, and ???` comment in the `./css/styles.css` file.
+    - Tasks that need to be addressed:
+
+      - ~~Create an `accessibility` branch.~~
+      - Modify the `<img>`, `<a>`, `<button>`, `<nav>`, and other tags for assistive screen readers.
+      - See the `TODO: style the .section_button with .section_button:focus, .section_button:active, .section_button:hover, .section_button:visited, and ???` comment in the `./css/styles.css` file.
+      - As I tab through the page, I am not able to put focus on the project cards nor the titles nor text of those cards. Address this so that a screen reader can be tabbed back/forward to read those sections.
+      - With NaturalReader screen reader the text in the "Projects"/"Proyectos" and "Connect with me"/"Conectarte Conmigo" buttons are glossed over. It is not read at all.
+      - The NaturalReader screen reader does not read beyond the Bio section of Spanish version of my website.
+      - The NaturalReader screen reader does not read the "GITHUB REPO" nor the "LIVE SITE" buttons in the cards.
+      - The NaturalReader screen reader does not read the tech icons in the cards.
+
+    - Steps:
+      - Analyze the situation. Find what needs to be fixed or improved. Add to the "Tasks that need to be addressed" list above.
+        - The first step is to "walk" through the page with just a keyboard. See if I can navigate every button by moving the focus around.
+        - The next step is to use a desktop screen reader to see if everything is read correctly.
+        - Next is to use a screen reader on my phone to see if everything is read correctly.
+      - Address the things that need to be fixed. See the "Tasks that need to be addressed" list above.
 
   - **All CSS/Styling**
 
