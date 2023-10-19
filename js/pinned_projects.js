@@ -60,8 +60,7 @@ const pinnedProjects = {
               name: "PersonalDashboard",
               url: "https://github.com/JamieBort/PersonalDashboard",
               stargazerCount: 0,
-              description:
-                "A website for displaying important daily data. Such as blood glucose numbers and upcoming events. By using API calls, databases, authentication, etc.",
+              description: "A website for displaying important daily data. Such as blood glucose numbers and upcoming events. By using API calls, databases, authentication, etc.",
               languages: {
                 totalCount: 3,
                 edges: [
@@ -92,8 +91,7 @@ const pinnedProjects = {
               name: "jamiebort.github.io",
               url: "https://github.com/JamieBort/jamiebort.github.io",
               stargazerCount: 0,
-              description:
-                "My Portfolio Website. This is where I share a bit about myself, showcase what I've been working on, host my blog, and more.",
+              description: "My Portfolio Website. This is where I share a bit about myself, showcase what I've been working on, host my blog, and more.",
               languages: {
                 totalCount: 5,
                 edges: [
@@ -135,8 +133,7 @@ const pinnedProjects = {
               name: "iPhysicist-CSSLayoutFlexbox",
               url: "https://github.com/JamieBort/iPhysicist-CSSLayoutFlexbox",
               stargazerCount: 0,
-              description:
-                "Website for demonstrating HTML, CSS, AND GitHub skills.",
+              description: "Website for demonstrating HTML, CSS, AND GitHub skills.",
               languages: {
                 totalCount: 2,
                 edges: [
@@ -152,8 +149,7 @@ const pinnedProjects = {
                   },
                 ],
               },
-              homepageUrl:
-                "https://jamiebort.github.io/iPhysicist-CSSLayoutFlexbox/",
+              homepageUrl: "https://jamiebort.github.io/iPhysicist-CSSLayoutFlexbox/",
               forkCount: 0,
             },
           },
@@ -194,8 +190,7 @@ const pinnedProjects = {
               name: "Create-A-User-Directory",
               url: "https://github.com/JamieBort/Create-A-User-Directory",
               stargazerCount: 0,
-              description:
-                "A directory using the Express framework and the Mustache-Express templating engine to implement MVC.",
+              description: "A directory using the Express framework and the Mustache-Express templating engine to implement MVC.",
               languages: {
                 totalCount: 3,
                 edges: [
@@ -248,6 +243,7 @@ returnValue.forEach((project) => {
 
   const div1_tag = document.createElement("div");
   div1_tag.setAttribute("class", "card");
+  div1_tag.setAttribute("aria-label", `${project.name} project card`);
   card_container.appendChild(div1_tag);
 
   const h3_tag = document.createElement("h3");
@@ -267,33 +263,53 @@ returnValue.forEach((project) => {
 
   const div2_tag = document.createElement("div");
   div2_tag.setAttribute("class", "icon_div");
-  div2_tag.setAttribute(
-    "style",
-    "font-size:2.25em; display: flex; justify-content: space-around;",
-  ); //NOTE:  Maybe move this to styles.
+  div2_tag.setAttribute("aria-label", "language list");
+  div2_tag.setAttribute("style", "font-size:2.25em; display: flex; justify-content: space-around;"); //NOTE:  Maybe move this to styles.
 
   // Listing the languages each repo uses.
   project.languages.forEach((language) => {
     // console.log("language:",language);
 
-    const span_tag = document.createElement("span");
+    // TODO: investigate this more.
+    // According to https://fontawesome.com/docs/web/add-icons/how-to, "Accessibility-minded folks may want to opt for the <span> element instead of <i>.".
+    // Also, I attempted to use <img> instead of <span> but it didn't work.
+    // NOTE: <svg>, <span>, and <i> work.
+
+    // const span_tag = document.createElement("span"); // TODO: delete this line.
+    const i_tag = document.createElement("i");
 
     switch (language) {
       case "JavaScript":
-        span_tag.setAttribute("class", "fab fa-js-square");
-        div2_tag.appendChild(span_tag);
+        // span_tag.setAttribute("class", "fab fa-js-square"); // TODO: delete this line.
+        // span_tag.setAttribute("aria-label", "JavaScript icon"); // TODO: delete this line.
+        // div2_tag.appendChild(span_tag); // TODO: delete this line.
+        i_tag.setAttribute("class", "fab fa-js-square");
+        i_tag.setAttribute("aria-label", "JavaScript icon");
+        div2_tag.appendChild(i_tag);
         break;
       case "Java":
-        span_tag.setAttribute("class", "fab fa-java");
-        div2_tag.appendChild(span_tag);
+        // span_tag.setAttribute("class", "fab fa-java"); // TODO: delete this line.
+        // span_tag.setAttribute("aria-label", "Java icon"); // TODO: delete this line.
+        // div2_tag.appendChild(span_tag); // TODO: delete this line.
+        i_tag.setAttribute("class", "fab fa-java");
+        i_tag.setAttribute("aria-label", "Java icon");
+        div2_tag.appendChild(i_tag);
         break;
       case "HTML":
-        span_tag.setAttribute("class", "fab fa-html5");
-        div2_tag.appendChild(span_tag);
+        // span_tag.setAttribute("class", "fab fa-html5"); // TODO: delete this line.
+        // span_tag.setAttribute("aria-label", "HTML icon"); // TODO: delete this line.
+        // div2_tag.appendChild(span_tag); // TODO: delete this line.
+        i_tag.setAttribute("class", "fab fa-html5");
+        i_tag.setAttribute("aria-label", "HTML icon");
+        div2_tag.appendChild(i_tag);
         break;
       case "CSS":
-        span_tag.setAttribute("class", "fab fa-css3-alt");
-        div2_tag.appendChild(span_tag);
+        // span_tag.setAttribute("class", "fab fa-css3-alt"); // TODO: delete this line.
+        // span_tag.setAttribute("aria-label", "CSS icon"); // TODO: delete this line.
+        // div2_tag.appendChild(span_tag); // TODO: delete this line.
+        i_tag.setAttribute("class", "fab fa-css3-alt");
+        i_tag.setAttribute("aria-label", "CSS icon");
+        div2_tag.appendChild(i_tag);
         break;
       // case "NODE":
       //   // console.log("language: NODE");
@@ -318,7 +334,7 @@ returnValue.forEach((project) => {
   // footer div for the project card
   const div4_tag = document.createElement("div");
   div4_tag.setAttribute("class", "anchor_div");
-  // div4_tag.setAttribute("style", "border: solid blue; .3em"); // to find the div used for the anchors...
+  // div4_tag.setAttribute("style", "border: solid blue; .3em"); // NOTE: To find the div used for the anchors...
   div1_tag.appendChild(div4_tag);
 
   // Link to repo.
@@ -339,7 +355,7 @@ returnValue.forEach((project) => {
     div4_tag.appendChild(a_tag2);
   } else {
     // For when there is NOT a live site to link to/share/display.
-    // div4_tag.setAttribute("style", "border: solid red; .3em"); // to find the div used for the anchors...
+    // div4_tag.setAttribute("style", "border: solid red; .3em"); // NOTE: To find the div used for the anchors...
     a_tag1.setAttribute("style", "width: 100%;border-radius: 0 0 .5em .5em;");
   }
 });

@@ -380,36 +380,62 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
   TODO: look into whether this [WebAIM certification[(https://webaim.org/services/certification/) would be worth having on my website(s).
 
-  - Tasks that need to be addressed:
+  - Issues that need to be addressed:
 
     - ~~Create an `accessibility` branch.~~
     - Modify the `<img>`, `<a>`, `<button>`, `<nav>`, and other tags for assistive screen readers.
     - See the `TODO: style the .section_button with .section_button:focus, .section_button:active, .section_button:hover, .section_button:visited, and ???` comment in the `./css/styles.css` file.
     - With the macos VoiceOver program
-      - the social media icons are not dictated. it just says "link" and not "LinkedIn link nor "twitter link" etc. Make sure VoiceOver spells out which link is which.
-      - The <hr> horizontal rule tag is read out loud. Do I want that to be read? Do I want to keep that but tell the reader to ignore it? Do I want to replace it with something else?
-      - The project cards are not announced individually. the "Github repo" button is announced and then the next card title is announced. But we don't know when one card ends and the next one starts.
+      - ~~The social media icons are not dictated. It just says "link" and not "LinkedIn link nor "twitter link" etc. Make sure VoiceOver spells out which link is which.~~ Addressed.
+      - ~~The <hr> horizontal rule tag is read out loud. Do I want that to be read? Do I want to keep that but tell the reader to ignore it? Do I want to replace it with something else?~~ According to https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr and https://www.sarasoueidan.com/blog/horizontal-rules/ I can keep the <hr>s. In fact I am using them exactly how it is intended to be used; including for accessibility.
+      - ~~The project cards are not announced individually. The "Github repo" button is announced and then the next card title is announced. But we don't know when one card ends and the next one starts.~~ Addressed.
     - With the tabbing through the page with the tab key (moving focus):
       - ~~I am not able to put focus on the project cards nor the titles nor text of those cards. Address this so that a screen reader can be tabbed back/forward to read those sections.~~ I don't think this is necessary./This isn't an issue when moving focus alone. Because I want to move focus to those things that need to be selected, pressed, etc.. The screen reader can still be tabbed through those text areas. Therefore it does not need to be address their either.
     - With NaturalReader macos screen reader:
-      - the text in the "Projects"/"Proyectos" and "Connect with me"/"Conectarte Conmigo" buttons are glossed over. It is not read at all.
-      - the screen reader does not read beyond the Bio section of Spanish version of my website.
-      - the screen reader does not read the "GITHUB REPO" nor the "LIVE SITE" buttons in the cards.
-      - the screen reader does not read the tech icons in the cards.
+      - The text in the "Projects"/"Proyectos" and "Connect with me"/"Conectarte Conmigo" buttons are glossed over. It is not read at all.
+      - ~~The screen reader does not read beyond the Bio section of Spanish version of my website.~~ No longer an issue.
+      - ~~The screen reader does not read the "GITHUB REPO" nor the "LIVE SITE" buttons in the cards.~~ I don't think that is purpose.
+      - ~~The screen reader does not read the tech icons in the cards.~~ I don't think that is purpose.
     - With TalkBack android screen reader:
       - Social media anchors/links are named. It just says "link".
     - With android text to speech:
       - Social media anchors/links are not dictated.
 
+  - Testing:
+
+    - Laptop
+
+      - Screen reader look for
+        - reading all the text
+        - announcing all the links, buttons, project cards, technology icons.
+      - Text to speech look for
+        - reading all the text including the text in the buttons.
+      - Focus/visual look for
+        - buttons and links look differently when hovered, clicked, etc.
+
+    - Tablet
+
+      - Screen reader look for
+      - Text to speech look for
+      - Focus/visual look for
+
+    - Cell
+      - Screen reader look for
+      - Text to speech look for
+      - Focus/visual look for
+
   - Steps:
 
-    - ~~Analyze the situation. Find what needs to be fixed or improved. Add to the "Tasks that need to be addressed" list above.~~ DONE.
+    - ~~Analyze the situation. Find what needs to be fixed or improved. Add to the "Issues that need to be addressed" list above.~~ DONE.
       - ~~MacOS screen reader - Use VoiceOver screen reader to navigate and read my site.~~ DONE.
       - ~~MacOS navigating with only the keyboard - The first step is to "walk" through the page with just a keyboard. See if I can navigate every button by moving the focus around.~~ DONE.
       - ~~MacOS text to speech - The next step is to use a desktop text to speech to see if everything is read correctly.~~ DONE. Nothing to change.
       - ~~Mobile screen reader - Next is to use the TalkBack android screen reader on my phone to see if everything is read correctly.~~ DONE.
       - ~~Mobile text to speech - Next use text to speech to make sure everything is being found and dictated correctly.~~ DONE.
-    - Address the things that need to be fixed. See the "Tasks that need to be addressed" list above.
+    - Address the things that need to be fixed. See the "Issues that need to be addressed" list above.
+    - Test the live site on iPad/tablet.
+    - Test the live site on mobile device.
+    - Test the live site on my laptop.
 
   - **All CSS/Styling**
 
@@ -436,6 +462,11 @@ This file is for keeping track of the `Status` and the tasks that need to be com
       _Create a new branch for this._
 
     - Figure out how to update the "Projects" and "Connect with Me" buttons in the "Bio" section so that they say "Proyectos" and "Conectarte Conmigo" respectively.
+
+      _Create a new branch for this._
+
+    - Address this `Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received index.html#title:1` error.
+      It is generated when I navigate to the live https://jamiebort.github.io/html/index.html website.
 
       _Create a new branch for this._
 
