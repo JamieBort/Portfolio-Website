@@ -12,9 +12,9 @@ class Navigation extends HTMLElement {
 
     <header id="mobileHeader">
       <div id="mobileHeaderDiv">
-        <button class="mobileHeaderButtons" id="headerButtonLeft" onclick="toggle()">Español</button>
+        <button class="mobileHeaderButtons" id="headerButtonLeft" onclick="toggleLanguage()" aria-pressed="false">Español</button>
         <button class="mobileHeaderButtons" id="headerButtonCenter" onclick="leftHeaderButton()">Jamie Bort</button>
-        <button class="mobileHeaderButtons" id="headerButtonRight" onclick="rightHeaderButton()">Nav</button>
+        <button class="mobileHeaderButtons" id="headerButtonRight" onclick="rightHeaderButton()" aria-pressed="false">Nav</button>
       </div>
       <nav id="menu" style="display: none">
         <button class="menu_button" onclick="jumpToSection('bio')">Bio</button>
@@ -26,7 +26,7 @@ class Navigation extends HTMLElement {
 
     <!-- TODO: Consider making all the desktop navigation buttons equal in width to the widest one. -->
     <header id="desktopHeader">
-      <button class="desktopHeaderButtons" onclick="toggle()">Español</button>
+      <button class="desktopHeaderButtons" onclick="toggleLanguage()" aria-pressed="false">Español</button>
       <button class="desktopHeaderButtons" onclick="leftHeaderButton()">Jamie Bort</button>
       <button class="desktopHeaderButtons" onclick="jumpToSection('bio')">Bio</button>
       <button class="desktopHeaderButtons" onclick="jumpToSection('projects')">Projects</button>

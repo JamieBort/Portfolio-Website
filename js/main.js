@@ -22,6 +22,11 @@ const toggleNavMenu = () => {
   console.log("fired");
   const menu = document.getElementById("menu");
   menu.style.display === "none" ? (menu.style.display = "block") : (menu.style.display = "none");
+
+  // *** For accessability ***
+  const mobileNavButton = document.getElementsByClassName("mobileHeaderButtons")[2];
+  mobileNavButton["ariaPressed"] == "false" ? mobileNavButton.setAttribute("aria-pressed", "true") : mobileNavButton.setAttribute("aria-pressed", "false");
+  // console.log("mobileNavButton:", mobileNavButton);
 };
 
 const closeNavMenu = () => (document.getElementById("menu").style.display = "none");
@@ -64,7 +69,7 @@ let language = document.getElementsByTagName("html")[0]["lang"] || languageConte
 var languageValue = language == "en" ? 0 : 1;
 
 // The toggle function to toggle between languages.
-const toggle = () => {
+const toggleLanguage = () => {
   // DEFINE VARIABLES
   // Variables for the collecting the h2 and p tags from the languageContent object.
   const h2Array = [];
@@ -166,20 +171,33 @@ const toggle = () => {
   // *** html tag ***
   document.getElementById("html").setAttribute("lang", languageContent.html[languageValue]);
 
-  // *** navigation ***
-  document.getElementsByClassName("mobileHeaderButtons")[0].innerHTML = languageContent.body.header.idioma[languageValue];
+  // *** header ***
+
+  // *** mobile header ***
+  const mobileLanguageButton = document.getElementsByClassName("mobileHeaderButtons")[0];
+  mobileLanguageButton.innerHTML = languageContent.body.header.idioma[languageValue];
+
+  // *** For accessability ***
+  mobileLanguageButton["ariaPressed"] == "false" ? mobileLanguageButton.setAttribute("aria-pressed", "true") : mobileLanguageButton.setAttribute("aria-pressed", "false");
+
   for (let index = 0; index < document.getElementsByClassName("menu_button").length; index++) {
     // console.log(document.getElementsByClassName("menu_button")[index]);
     // console.log(Object.keys(languageContent.body.header)[index]);
     document.getElementsByClassName("menu_button")[index].innerHTML = languageContent.body.header[Object.keys(languageContent.body.header)[index + 1]][languageValue];
   }
 
+  // *** desktop header ***
+  const desktopLanguageButton = document.getElementsByClassName("desktopHeaderButtons")[0];
+  desktopLanguageButton.innerHTML = languageContent.body.header.idioma[languageValue];
+
+  // *** For accessability ***
+  desktopLanguageButton["ariaPressed"] == "false" ? desktopLanguageButton.setAttribute("aria-pressed", "true") : desktopLanguageButton.setAttribute("aria-pressed", "false");
+
   for (let index = 1; index < document.getElementsByClassName("desktopHeaderButtons").length - 1; index++) {
     // console.log(document.getElementsByClassName("desktopHeaderButtons")[index]);
     // console.log(Object.keys(languageContent.body.header)[index]);
     document.getElementsByClassName("desktopHeaderButtons")[index + 1].innerHTML = languageContent.body.header[Object.keys(languageContent.body.header)[index]][languageValue];
   }
-  document.getElementsByClassName("desktopHeaderButtons")[0].innerHTML = languageContent.body.header.idioma[languageValue];
 
   // *** title tag ***
   document.getElementById("title").innerHTML = languageContent.body.content.top.h1[languageValue];

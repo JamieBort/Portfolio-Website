@@ -88,7 +88,8 @@ const pinnedProjects = {
           {
             node: {
               id: "MDEwOlJlcG9zaXRvcnk5NjcwOTAwNg==",
-              name: "jamiebort.github.io",
+              name: "jamiebort.com",
+              // name: "jamiebort.github.io", // TODO: make this a permanent change for each version of pinned projects.
               url: "https://github.com/JamieBort/jamiebort.github.io",
               stargazerCount: 0,
               description: "My Portfolio Website. This is where I share a bit about myself, showcase what I've been working on, host my blog, and more.",
@@ -284,7 +285,9 @@ returnValue.forEach((project) => {
         // span_tag.setAttribute("aria-label", "JavaScript icon"); // TODO: delete this line.
         // div2_tag.appendChild(span_tag); // TODO: delete this line.
         i_tag.setAttribute("class", "fab fa-js-square");
+        // TODO: determine whether to add "aria-label" or "alt" or both.
         i_tag.setAttribute("aria-label", "JavaScript icon");
+        i_tag.setAttribute("alt", "A JavaScript icon");
         div2_tag.appendChild(i_tag);
         break;
       case "Java":
@@ -292,7 +295,9 @@ returnValue.forEach((project) => {
         // span_tag.setAttribute("aria-label", "Java icon"); // TODO: delete this line.
         // div2_tag.appendChild(span_tag); // TODO: delete this line.
         i_tag.setAttribute("class", "fab fa-java");
+        // TODO: determine whether to add "aria-label" or "alt" or both.
         i_tag.setAttribute("aria-label", "Java icon");
+        i_tag.setAttribute("alt", "A Java icon");
         div2_tag.appendChild(i_tag);
         break;
       case "HTML":
@@ -300,7 +305,9 @@ returnValue.forEach((project) => {
         // span_tag.setAttribute("aria-label", "HTML icon"); // TODO: delete this line.
         // div2_tag.appendChild(span_tag); // TODO: delete this line.
         i_tag.setAttribute("class", "fab fa-html5");
+        // TODO: determine whether to add "aria-label" or "alt" or both.
         i_tag.setAttribute("aria-label", "HTML icon");
+        i_tag.setAttribute("alt", "An HTML icon");
         div2_tag.appendChild(i_tag);
         break;
       case "CSS":
@@ -308,7 +315,9 @@ returnValue.forEach((project) => {
         // span_tag.setAttribute("aria-label", "CSS icon"); // TODO: delete this line.
         // div2_tag.appendChild(span_tag); // TODO: delete this line.
         i_tag.setAttribute("class", "fab fa-css3-alt");
+        // TODO: determine whether to add "aria-label" or "alt" or both.
         i_tag.setAttribute("aria-label", "CSS icon");
+        i_tag.setAttribute("alt", "A CSS icon");
         div2_tag.appendChild(i_tag);
         break;
       // case "NODE":

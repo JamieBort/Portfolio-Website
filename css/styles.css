@@ -144,7 +144,6 @@ section {
 
 .section_a{text-decoration: none;}
 
-/* TODO: style the .section_button with .section_button:focus, .section_button:active, .section_button:hover, .section_button:visited, and ??? */
 .section_button {
   border-radius: 0.2em;
   border-width: thin;
@@ -156,9 +155,9 @@ section {
 } */
 
 /* TODO: style the .styled_links with .styled_links:focus, .styled_links:active, .styled_links:hover, .styled_links:visited, and ??? */
-#textLink {
+/* #textLink {
   color: #4d4c4c;
-}
+} */
 
 #card_container {
   /* border: 0.1em blue solid; */
@@ -271,6 +270,10 @@ footer {
   padding: 0.12em 0;
 }
 
+/* Breakpoint for tablets vertical */
+
+/* Breakpoint for tablets horizontal */
+
 /* Breakpoint for laptops */
 @media (min-width: 64em) {
   body {
@@ -286,6 +289,48 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: #dcdcdc;
+  }
+
+  /* for links */
+  /* :link — :visited — :hover — :active.  */
+  /* TODO: check the order of the anchor pseudo classes below. Is it correct? */
+  /* TODO: Choose colors that contrast for the anchor pseudo classes below. Are they sufficient for accessability purposes? */
+  a:link{
+    background-color: greenyellow;
+  }
+
+  a:visited{
+    background-color: lightgoldenrodyellow;
+    color: #4d4c4c;
+  }
+
+  a:focus{
+    background-color: violet;
+  }
+
+  a:hover{
+    background-color: orange;
+  }
+
+  a:active{
+    background-color: orangered;
+  }
+
+  /* for buttons */
+  /* :hover, :active, and :focus user actions and the :visited */
+  /* TODO: check the order of the button pseudo classes below. Is it correct? */
+  /* TODO: check the button pseudo classes below. Am I forgetting any? */
+  /* TODO: Choose colors that contrast for the button pseudo classes below. Are they sufficient for accessability purposes? */
+  button:focus{
+    background-color: yellow;
+  }
+
+  button:hover{
+    background-color: aqua;
+  }
+
+  button:active{
+    background-color: red;
   }
 
   /* #bio {

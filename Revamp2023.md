@@ -384,15 +384,15 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     - ~~Create an `accessibility` branch.~~
     - Modify the `<img>`, `<a>`, `<button>`, `<nav>`, and other tags for assistive screen readers.
-    - See the `TODO: style the .section_button with .section_button:focus, .section_button:active, .section_button:hover, .section_button:visited, and ???` comment in the `./css/styles.css` file.
+    - See the `TODO: style the .section_button with .section_button:focus, .section_button:active, .section_button:hover, .section_button:visited, and ???` comments in the `./css/styles.css` file.
     - With the macos VoiceOver program
       - ~~The social media icons are not dictated. It just says "link" and not "LinkedIn link nor "twitter link" etc. Make sure VoiceOver spells out which link is which.~~ Addressed.
-      - ~~The <hr> horizontal rule tag is read out loud. Do I want that to be read? Do I want to keep that but tell the reader to ignore it? Do I want to replace it with something else?~~ According to https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr and https://www.sarasoueidan.com/blog/horizontal-rules/ I can keep the <hr>s. In fact I am using them exactly how it is intended to be used; including for accessibility.
+      - ~~The `<hr>` horizontal rule tag is read out loud. Do I want that to be read? Do I want to keep that but tell the reader to ignore it? Do I want to replace it with something else?~~ According to https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr and https://www.sarasoueidan.com/blog/horizontal-rules/ I can keep the `<hr>`s. In fact I am using them exactly how it is intended to be used; including for accessibility.
       - ~~The project cards are not announced individually. The "Github repo" button is announced and then the next card title is announced. But we don't know when one card ends and the next one starts.~~ Addressed.
     - With the tabbing through the page with the tab key (moving focus):
-      - ~~I am not able to put focus on the project cards nor the titles nor text of those cards. Address this so that a screen reader can be tabbed back/forward to read those sections.~~ I don't think this is necessary./This isn't an issue when moving focus alone. Because I want to move focus to those things that need to be selected, pressed, etc.. The screen reader can still be tabbed through those text areas. Therefore it does not need to be address their either.
+      - Nothing to address.
     - With NaturalReader macos screen reader:
-      - The text in the "Projects"/"Proyectos" and "Connect with me"/"Conectarte Conmigo" buttons are glossed over. It is not read at all.
+      - **The text in the "Projects"/"Proyectos" and "Connect with me"/"Conectarte Conmigo" buttons are glossed over. It is not read at all.**
       - ~~The screen reader does not read beyond the Bio section of Spanish version of my website.~~ No longer an issue.
       - ~~The screen reader does not read the "GITHUB REPO" nor the "LIVE SITE" buttons in the cards.~~ I don't think that is purpose.
       - ~~The screen reader does not read the tech icons in the cards.~~ I don't think that is purpose.
@@ -400,6 +400,10 @@ This file is for keeping track of the `Status` and the tasks that need to be com
       - Social media anchors/links are named. It just says "link".
     - With android text to speech:
       - Social media anchors/links are not dictated.
+    - Text size issues:
+      - [text issue(s)to be added]
+    - Color issues:
+      - [color issue(s)to be added]
 
   - Testing:
 
@@ -427,14 +431,23 @@ This file is for keeping track of the `Status` and the tasks that need to be com
   - Steps:
 
     - ~~Analyze the situation. Find what needs to be fixed or improved. Add to the "Issues that need to be addressed" list above.~~ DONE.
+
       - ~~MacOS screen reader - Use VoiceOver screen reader to navigate and read my site.~~ DONE.
       - ~~MacOS navigating with only the keyboard - The first step is to "walk" through the page with just a keyboard. See if I can navigate every button by moving the focus around.~~ DONE.
       - ~~MacOS text to speech - The next step is to use a desktop text to speech to see if everything is read correctly.~~ DONE. Nothing to change.
       - ~~Mobile screen reader - Next is to use the TalkBack android screen reader on my phone to see if everything is read correctly.~~ DONE.
       - ~~Mobile text to speech - Next use text to speech to make sure everything is being found and dictated correctly.~~ DONE.
+
+    - Research about text size. What's too small for each device? What's too big for each device? Add to the "Issues that need to be addressed" list above.
+
+    - Research color considerations. Make sure my selected colors contrast sufficiently. What else do I need to know about in terms of color? Add to the "Issues that need to be addressed" list above.
+
     - Address the things that need to be fixed. See the "Issues that need to be addressed" list above.
+
     - Test the live site on iPad/tablet.
+
     - Test the live site on mobile device.
+
     - Test the live site on my laptop.
 
   - **All CSS/Styling**
