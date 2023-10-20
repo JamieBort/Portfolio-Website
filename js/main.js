@@ -76,7 +76,7 @@ const toggleLanguage = () => {
   const pArray = [];
 
   // Variables for the languageContent object.
-  const codeTheDreamAnchor = `<a id="textLink" target="_blank" href="https://codethedream.org/">Code the Dream</a>`;
+  const codeTheDreamAnchor = `<a id="unused_textLink" target="_blank" href="https://codethedream.org/">Code the Dream</a>`;
   const projectsButtonEnglish = `<button class="section_button" onclick="jumpToSection('projects')" aria-label="Projects">Projects</button>`;
   const projectsButtonSpanish = `<button class="section_button" onclick="jumpToSection('projects')" aria-label="Proyectos">Proyectos</button>`;
   const connectWithMeButtonEnglish = `<button class="section_button" onclick="jumpToSection('connectWithMe')" aria-label="Connect with Me">Connect with Me</button>`;

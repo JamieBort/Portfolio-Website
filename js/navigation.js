@@ -25,6 +25,7 @@ class Navigation extends HTMLElement {
     </header>
 
     <!-- TODO: Consider making all the desktop navigation buttons equal in width to the widest one. -->
+    <!-- TODO: For accessability purposes, have the screen reader dictate "English" when English is displayed. And "Spanish" when Spanish is displayed. It currently reads the text on the button, which is the OPPOSITE of what is displayed. -->
     <header id="desktopHeader">
       <button class="desktopHeaderButtons" onclick="toggleLanguage()" aria-pressed="false">Español</button>
       <button class="desktopHeaderButtons" onclick="leftHeaderButton()">Jamie Bort</button>

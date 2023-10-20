@@ -401,6 +401,7 @@ This file is for keeping track of the `Status` and the tasks that need to be com
     - With android text to speech:
       - Social media anchors/links are not dictated.
     - Text size issues:
+      - When I enlarge the page using Chrome to 200% (as suggested by several online sources), the @media query in the styles file kicks in and displays the mobile version of the header; not the desktop version of the header.
       - [text issue(s)to be added]
     - Color issues:
       - [color issue(s)to be added]
@@ -453,6 +454,12 @@ This file is for keeping track of the `Status` and the tasks that need to be com
   - **All CSS/Styling**
 
     - Modify files to address the todo items in the `./jamiebort.github.io/DesignChanges/DesignChanges.md` file.
+
+      _Create a new branch for this._
+
+    - Implement breakpoints in the CSS file. Specifically a mobile HORIZONTAL orientation breakpoint, a tablet horizontal orientation breakpoint, and vertical orientation breakpoint.
+
+      _Create a new branch for this._
 
     - Create an `tablet_breakpoint` branch inside of a new `breakpoint` branch.
 

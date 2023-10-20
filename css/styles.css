@@ -154,11 +154,6 @@ section {
   margin: 0 auto;
 } */
 
-/* TODO: style the .styled_links with .styled_links:focus, .styled_links:active, .styled_links:hover, .styled_links:visited, and ??? */
-/* #textLink {
-  color: #4d4c4c;
-} */
-
 #card_container {
   /* border: 0.1em blue solid; */
   display: flex;
@@ -197,7 +192,6 @@ section {
   display: flex;
 }
 
-/* TODO: style the .github_repo with .github_repo:focus, .github_repo:active, .github_repo:hover, .github_repo:visited, and ??? */
 .github_repo {
   display: flex;
   justify-content: center;
@@ -210,19 +204,6 @@ section {
   color: #4d4c4c;
   width: 50%;
 }
-
-/* .github_repo:hover { */
-/* background-color: #555; */
-/* background-color: #9f9d9d;
-}
-
-.github_repo:active {
-background-color: black;
-}
-
-.github_repo:visited {
-background-color: #ccc;
-} */
 
 .live_site {
   display: flex;
@@ -248,7 +229,6 @@ background-color: #ccc;
   flex-wrap: wrap;
 }
 
-/* TODO: style the .fontAwesome with .fontAwesome:focus, .fontAwesome:active, .fontAwesome:hover, .fontAwesome:visited, and ??? */
 .fontAwesome {
   /* background-color: lightsalmon; */
   border: thin solid black;
@@ -271,8 +251,10 @@ footer {
 }
 
 /* Breakpoint for tablets vertical */
+/* @media (min-width: ??em) {body {background-color: lightblue}} */
 
 /* Breakpoint for tablets horizontal */
+/* @media (min-width: ??em) {body {background-color: green}} */
 
 /* Breakpoint for laptops */
 @media (min-width: 64em) {
@@ -291,46 +273,63 @@ footer {
     background-color: #dcdcdc;
   }
 
-  /* for links */
+  /* Accessability for links */
   /* :link — :visited — :hover — :active.  */
   /* TODO: check the order of the anchor pseudo classes below. Is it correct? */
   /* TODO: Choose colors that contrast for the anchor pseudo classes below. Are they sufficient for accessability purposes? */
+
+  /* TODO: For accessability purposes, determine whether I should use the :link pseudo-class. I currently am choosing NOT to use it. */
   a:link{
-    background-color: greenyellow;
+    /* background-color:  #b9b4b4; */
+    /* background-color: greenyellow; */
+    /* color: #4d4c4c; */
   }
 
   a:visited{
-    background-color: lightgoldenrodyellow;
-    color: #4d4c4c;
+    background-color: #d3c3c3;
+    /* background-color: lightgoldenrodyellow; */
+    /* color: #4d4c4c; */
   }
 
   a:focus{
-    background-color: violet;
+    background-color: #817a7a;
+    /* background-color: violet; */
+    /* color: #4d4c4c; */
   }
 
   a:hover{
-    background-color: orange;
+    background-color: #7c5757;
+    /* background-color: orange; */
+    /* color: #4d4c4c; */
   }
 
   a:active{
-    background-color: orangered;
+    background-color: #eec7c7;
+    /* background-color: orangered; */
+    /* color: #4d4c4c; */
   }
 
-  /* for buttons */
+  /* Accessability for buttons */
   /* :hover, :active, and :focus user actions and the :visited */
-  /* TODO: check the order of the button pseudo classes below. Is it correct? */
-  /* TODO: check the button pseudo classes below. Am I forgetting any? */
+  /* TODO: Check the order of the button pseudo classes below. Is it correct? */
+  /* TODO: Check the button pseudo classes below. Am I forgetting any? */
   /* TODO: Choose colors that contrast for the button pseudo classes below. Are they sufficient for accessability purposes? */
   button:focus{
-    background-color: yellow;
+    background-color: #eda1a1;
+    /* background-color: yellow; */
+    /* color: #4d4c4c; */
   }
 
   button:hover{
-    background-color: aqua;
+    background-color: #963232;
+    /* background-color: aqua; */
+    /* color: #4d4c4c; */
   }
 
   button:active{
-    background-color: red;
+    background-color: #ee3737;
+    /* background-color: red; */
+    /* color: #4d4c4c; */
   }
 
   /* #bio {

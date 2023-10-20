@@ -58,9 +58,11 @@ Additionally, I will continue to make changes to this site to make it more acces
 			|
 			+-- breakpoint - For implementing breakpoints in the CSS file.
 			|	|
-			|	+-- breakpoint_tablet - Doesn't exist (yet). For implementing a tablet breakpoint in the CSS file.
+			|	+-- breakpoint_mobile - The branch doesn't exist (yet). For implementing a mobile HORIZONTAL breakpoint in the CSS file. The current default styles are for mobile in a vertical orientation.
 			|	|
-			|	+-- breakpoint_desktop - Doesn't exist (yet). For implementing desktop breakpoint in the CSS file.
+			|	+-- breakpoint_tablet - The branch doesn't exist (yet). For implementing a tablet breakpoint in the CSS file. *** Need to consider horizontal and vertical orientations. ***
+			|	|
+			|	+-- breakpoint_desktop - The branch doesn't exist (yet). For implementing desktop breakpoint in the CSS file.
 			|
 			+-- accessibility - For all accessibility implementation.
 				|
