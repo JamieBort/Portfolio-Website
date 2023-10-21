@@ -374,28 +374,38 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ### Next Steps
 
-- Other tasks to address; in a different branch.:
-
-  - **All accessibly updates**
+- **All accessibly updates**
 
   TODO: look into whether this [WebAIM certification[(https://webaim.org/services/certification/) would be worth having on my website(s).
+
+  **In the `accessibility_alt_text_focus` branch**
+
+  TODO: Check-in with people on the issues below (under the "Issues that need to be addressed:" section) - the ones created as a result of the todo's throughout this repo.
+
+  TODO: Come back to the saved "accessible color" pages to pick up where I left off on Friday. To select colors that contrast sufficiently.
 
   - Issues that need to be addressed:
 
     - ~~Create an `accessibility` branch.~~
     - Modify the `<img>`, `<a>`, `<button>`, `<nav>`, and other tags for assistive screen readers.
-    - See the `TODO: style the .section_button with .section_button:focus, .section_button:active, .section_button:hover, .section_button:visited, and ???` comments in the `./css/styles.css` file.
+    - ~~See the `TODO: style the .section_button with .section_button:focus, .section_button:active, .section_button:hover, .section_button:visited, and ???` comments in the `./css/styles.css` file.~~ Done.
     - With the macos VoiceOver program
-      - ~~The social media icons are not dictated. It just says "link" and not "LinkedIn link nor "twitter link" etc. Make sure VoiceOver spells out which link is which.~~ Addressed.
-      - ~~The `<hr>` horizontal rule tag is read out loud. Do I want that to be read? Do I want to keep that but tell the reader to ignore it? Do I want to replace it with something else?~~ According to https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr and https://www.sarasoueidan.com/blog/horizontal-rules/ I can keep the `<hr>`s. In fact I am using them exactly how it is intended to be used; including for accessibility.
-      - ~~The project cards are not announced individually. The "Github repo" button is announced and then the next card title is announced. But we don't know when one card ends and the next one starts.~~ Addressed.
+      - ~~The social media icons are not dictated. It just says "link" and not "LinkedIn link nor "twitter link" etc. Make sure VoiceOver spells out which link is which.~~
+        Addressed.
+      - ~~The `<hr>` horizontal rule tag is read out loud. Do I want that to be read? Do I want to keep that but tell the reader to ignore it? Do I want to replace it with something else?~~
+        According to https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr and https://www.sarasoueidan.com/blog/horizontal-rules/ I can keep the `<hr>`s. In fact I am using them exactly how it is intended to be used; including for accessibility.
+      - ~~The project cards are not announced individually. The "Github repo" button is announced and then the next card title is announced. But we don't know when one card ends and the next one starts.~~
+        Addressed.
     - With the tabbing through the page with the tab key (moving focus):
       - Nothing to address.
     - With NaturalReader macos screen reader:
       - **The text in the "Projects"/"Proyectos" and "Connect with me"/"Conectarte Conmigo" buttons are glossed over. It is not read at all.**
-      - ~~The screen reader does not read beyond the Bio section of Spanish version of my website.~~ No longer an issue.
-      - ~~The screen reader does not read the "GITHUB REPO" nor the "LIVE SITE" buttons in the cards.~~ I don't think that is purpose.
-      - ~~The screen reader does not read the tech icons in the cards.~~ I don't think that is purpose.
+      - ~~The screen reader does not read beyond the Bio section of Spanish version of my website.~~
+        No longer an issue.
+      - ~~The screen reader does not read the "GITHUB REPO" nor the "LIVE SITE" buttons in the cards.~~
+        I don't think that is purpose.
+      - ~~The screen reader does not read the tech icons in the cards.~~
+        I don't think that is purpose.
     - With TalkBack android screen reader:
       - Social media anchors/links are named. It just says "link".
     - With android text to speech:
@@ -404,7 +414,12 @@ This file is for keeping track of the `Status` and the tasks that need to be com
       - When I enlarge the page using Chrome to 200% (as suggested by several online sources), the @media query in the styles file kicks in and displays the mobile version of the header; not the desktop version of the header.
       - [text issue(s)to be added]
     - Color issues:
+
       - [color issue(s)to be added]
+
+    - Structure changes
+      - Change `<div id="content">` to `<main>` per https://webaim.org/techniques/semanticstructure/#regions
+      - Wrap the "Bio", "Project", and "Connect with me in a `<nav></nav>` element per https://webaim.org/techniques/semanticstructure/#regions
 
   - Testing:
 
@@ -450,6 +465,8 @@ This file is for keeping track of the `Status` and the tasks that need to be com
     - Test the live site on mobile device.
 
     - Test the live site on my laptop.
+
+- Other tasks to address; in a different branch.:
 
   - **All CSS/Styling**
 
