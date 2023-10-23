@@ -48,6 +48,7 @@ body {
   font-size: 28px;
 }
 
+/* TODO: Evaluate whether these two #headerButtonCenter rules should be deleted. */
 #headerButtonCenter {
   flex-grow: 15;
 }
@@ -56,12 +57,12 @@ body {
   flex-grow: 1;
 }
 
-#desktopHeader .desktopHeaderButtons:nth-child(1) {
+/* TODO: Delete these #desktopHeader .desktopHeaderButtons:nth-child(x) rules. */
+/* #desktopHeader .desktopHeaderButtons:nth-child(1) {
   min-width: 6em;
 }
 
 #desktopHeader .desktopHeaderButtons:nth-child(2) {
-  /* background: red; */
   flex-grow: 1;
   font-size: 1.75rem;
 }
@@ -71,20 +72,18 @@ body {
 }
 
 #desktopHeader .desktopHeaderButtons:nth-child(6) {
-  /* background-color:burlywood; */
   min-width: 10em;
 }
 
 #desktopHeader .desktopHeaderButtons:first-child,.desktopHeaderButtons:nth-last-child(-n + 4) {
-  /* background-color:lightcoral; */
-  /* width: 9.5%; */
   padding: 0 1em;
-}
+} */
 
 /* establishing font sizes below */
 .mobile_header_button,
-nav button {
-  font-size: 28px;
+#menu button {
+  /* font-size: 28px; NOTE: font-size was 28px*/
+  font-size: 22px;
 }
 
 h1 {
@@ -274,6 +273,54 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: #dcdcdc;
+  }
+
+  /* Re-establishing font sizes below */
+  /* nav button {
+    font-size: 16px; 
+  } */
+
+  #desktopHeader{
+    /* NOTE: this height is temporary. TODO: remove this height. */
+    /* height: 50px; */
+  }
+
+  .desktopHeaderChildren:nth-child(1){
+    /* background-color: goldenrod; */
+    font-size: 19px;
+    /* TODO: Assess whether this min-width can be deleted. */
+    /* min-width: 3.0em; */
+  }
+
+  .desktopHeaderChildren:nth-child(2){
+    /* background-color: blueviolet; */
+    /* TODO: Adjust this flex-grow to be as low as possible. */
+    flex-grow: 8;
+    font-size: 28px;
+  }
+
+  .desktopHeaderChildren:nth-child(3){
+    /* background-color: greenyellow; */
+    /* TODO: Assess whether this flex-grow can be deleted. */
+    /* flex-grow: 1; */
+    display: flex;
+  }
+
+  .desktop_nav_button{
+    /* background-color:orange; */
+    font-size: 19px;
+  }
+
+  .desktop_nav_button:nth-child(2){
+    /* background-color: yellow; */
+    /* TODO: Assess whether this min-width can be deleted. */
+    /* min-width: 5.00em; */
+  }
+
+  .desktop_nav_button:nth-child(4){
+    /* background-color: green; */
+    /* TODO: Assess whether this min-width can be deleted. */
+    /* min-width: 8.0em;     */
   }
 
   /* Accessability for links */
