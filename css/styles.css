@@ -13,8 +13,7 @@
       format("truetype");
 }
 
-html,
-body {
+html, body {
   height: 100%;
   font-size: 16px;
 }
@@ -31,68 +30,28 @@ body {
   height: 100%; /* needs to take the parents height, alternative: body {display: flex} */
 }
 
-#mobileHeader {
-  background-color: #dcdcdc;
-}
+#mobileHeader {background-color: #dcdcdc;}
 
-#desktopHeader {
-  display: none;
-}
+#desktopHeader {display: none;}
 
-#mobileHeaderDiv {
-  display: flex;
-}
+#mobileHeaderDiv {display: flex;}
 
 .mobileHeaderButtons {
   /* background-color:lightcoral; */
   font-size: 28px;
 }
 
-/* TODO: Evaluate whether these two #headerButtonCenter rules should be deleted. */
-#headerButtonCenter {
-  flex-grow: 15;
-}
+/* TODO: Evaluate whether these two #headerButtonCenter rules ~~should~~ can be deleted. If not, diminish the integer as much as possible. */
+#headerButtonCenter {flex-grow: 15;}
 
-#headerButtonRight {
-  flex-grow: 1;
-}
-
-/* TODO: Delete these #desktopHeader .desktopHeaderButtons:nth-child(x) rules. */
-/* #desktopHeader .desktopHeaderButtons:nth-child(1) {
-  min-width: 6em;
-}
-
-#desktopHeader .desktopHeaderButtons:nth-child(2) {
-  flex-grow: 1;
-  font-size: 1.75rem;
-}
-
-#desktopHeader .desktopHeaderButtons:nth-child(4) {
-  min-width: 7em;
-}
-
-#desktopHeader .desktopHeaderButtons:nth-child(6) {
-  min-width: 10em;
-}
-
-#desktopHeader .desktopHeaderButtons:first-child,.desktopHeaderButtons:nth-last-child(-n + 4) {
-  padding: 0 1em;
-} */
+#headerButtonRight {flex-grow: 1;}
 
 /* establishing font sizes below */
-.mobile_header_button,
-#menu button {
-  /* font-size: 28px; NOTE: font-size was 28px*/
-  font-size: 22px;
-}
+.mobile_header_button, #menu button {font-size: 28px;}
 
-h1 {
-  font-size: 28px;
-}
+h1 {font-size: 28px;}
 
-h2 {
-  font-size: 24px;
-}
+h2 {font-size: 24px;}
 
 h3 {
   font-size: 19px;
@@ -105,18 +64,10 @@ p {
 }
 /* establishing font sizes above */
 
-p,
-ul {
-  text-align: left;
-}
+p, ul {text-align: left;}
 
-hr {
-  border-top: 1px solid #dcdcdc;
-}
+hr {border-top: 1px solid #dcdcdc;}
 
-/* TODO: Delete this line. */
-/* #content { */
-  
 main {
   /* background-color: bisque; */
   width: 97%;
@@ -129,7 +80,7 @@ main {
   /* background-color: bisque; */
 }
 
-#blogButton{display: none;}
+#blogButton {display: none;}
 
 .menu_button {
   display: block;
@@ -144,7 +95,7 @@ section {
   margin: 0 auto;
 }
 
-.section_a{text-decoration: none;}
+.section_a {text-decoration: none;}
 
 .section_button {
   border-radius: 0.2em;
@@ -219,9 +170,7 @@ section {
   width: 50%;
 }
 
-#connectWithMe {
-  padding-bottom: 1.25em;
-}
+#connectWithMe {padding-bottom: 1.25em;}
 
 #connect_container {
   /* background-color: lightsalmon; */
@@ -260,13 +209,9 @@ footer {
 
 /* Breakpoint for laptops */
 @media (min-width: 64em) {
-  body {
-    /* background-color: blue */
-  }
+  /* body {background-color: blue} */
 
-  #mobileHeader {
-    display: none;
-  }
+  #mobileHeader {display: none;}
 
   #desktopHeader {
     /* background-color: aqua; */
@@ -274,54 +219,32 @@ footer {
     justify-content: space-between;
     background-color: #dcdcdc;
   }
-
-  /* Re-establishing font sizes below */
-  /* nav button {
-    font-size: 16px; 
-  } */
-
-  #desktopHeader{
-    /* NOTE: this height is temporary. TODO: remove this height. */
-    /* height: 50px; */
-  }
-
-  .desktopHeaderChildren:nth-child(1){
+  
+  .desktopHeaderChildren:nth-child(1) {
     /* background-color: goldenrod; */
     font-size: 19px;
-    /* TODO: Assess whether this min-width can be deleted. */
-    /* min-width: 3.0em; */
+    min-width: 4.45em;
   }
 
-  .desktopHeaderChildren:nth-child(2){
+  .desktopHeaderChildren:nth-child(2) {
     /* background-color: blueviolet; */
     /* TODO: Adjust this flex-grow to be as low as possible. */
     flex-grow: 8;
     font-size: 28px;
   }
 
-  .desktopHeaderChildren:nth-child(3){
+  .desktopHeaderChildren:nth-child(3) {
     /* background-color: greenyellow; */
     /* TODO: Assess whether this flex-grow can be deleted. */
     /* flex-grow: 1; */
     display: flex;
   }
 
-  .desktop_nav_button{
-    /* background-color:orange; */
-    font-size: 19px;
-  }
+  .desktop_nav_button {font-size: 19px;}
 
-  .desktop_nav_button:nth-child(2){
-    /* background-color: yellow; */
-    /* TODO: Assess whether this min-width can be deleted. */
-    /* min-width: 5.00em; */
-  }
+  .desktop_nav_button:nth-child(2) {min-width: 5.25em;}
 
-  .desktop_nav_button:nth-child(4){
-    /* background-color: green; */
-    /* TODO: Assess whether this min-width can be deleted. */
-    /* min-width: 8.0em;     */
-  }
+  .desktop_nav_button:nth-child(4) {min-width: 8.5em;}
 
   /* Accessability for links */
   /* :link — :visited — :hover — :active.  */
@@ -329,31 +252,31 @@ footer {
   /* TODO: Choose colors that contrast for the anchor pseudo classes below. Are they sufficient for accessability purposes? */
 
   /* TODO: For accessability purposes, determine whether I should use the :link pseudo-class. I currently am choosing NOT to use it. */
-  a:link{
+  a:link {
     /* background-color:  #b9b4b4; */
     /* background-color: greenyellow; */
     /* color: #4d4c4c; */
   }
 
-  a:visited{
+  a:visited {
     background-color: #d3c3c3;
     /* background-color: lightgoldenrodyellow; */
     /* color: #4d4c4c; */
   }
 
-  a:focus{
+  a:focus {
     background-color: #817a7a;
     /* background-color: violet; */
     /* color: #4d4c4c; */
   }
 
-  a:hover{
+  a:hover {
     background-color: #7c5757;
     /* background-color: orange; */
     /* color: #4d4c4c; */
   }
 
-  a:active{
+  a:active {
     background-color: #eec7c7;
     /* background-color: orangered; */
     /* color: #4d4c4c; */
@@ -364,23 +287,11 @@ footer {
   /* TODO: Check the order of the button pseudo classes below. Is it correct? */
   /* TODO: Check the button pseudo classes below. Am I forgetting any? */
   /* TODO: Choose colors that contrast for the button pseudo classes below. Are they sufficient for accessability purposes? */
-  button:focus{
-    background-color: #eda1a1;
-    /* background-color: yellow; */
-    /* color: #4d4c4c; */
-  }
+  button:focus {background-color: #eda1a1;}
 
-  button:hover{
-    background-color: #963232;
-    /* background-color: aqua; */
-    /* color: #4d4c4c; */
-  }
+  button:hover {background-color: #963232;}
 
-  button:active{
-    background-color: #ee3737;
-    /* background-color: red; */
-    /* color: #4d4c4c; */
-  }
+  button:active {background-color: #ee3737;}
 
   /* #bio {
    
@@ -402,7 +313,5 @@ footer {
     justify-content: space-between;
   }
 
-  .card {
-    margin: 2em 0;
-  }
+  .card {margin: 2em 0;}
 }

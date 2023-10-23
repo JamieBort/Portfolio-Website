@@ -382,7 +382,7 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
   TODO: Check-in with people on the issues below (under the "Issues that need to be addressed:" section) - the ones created as a result of the todo's throughout this repo.
 
-  TODO: Come back to the saved "accessible color" pages to pick up where I left off on Friday. To select colors that contrast sufficiently.
+  TODO: Come back to the "accessible color" pages (that are saved in OneTab) to pick up where I left off on Friday. To select colors that contrast sufficiently.
 
   - Issues that need to be addressed:
 
@@ -407,7 +407,9 @@ This file is for keeping track of the `Status` and the tasks that need to be com
         Addressed.
 
     - With the tabbing through the page with the tab key (moving focus):
+
       - Nothing to address.
+
     - With NaturalReader macos screen reader:
 
       - **The text in the "Projects"/"Proyectos" and "Connect with me"/"Conectarte Conmigo" buttons are glossed over. It is not read at all.**
@@ -426,10 +428,13 @@ This file is for keeping track of the `Status` and the tasks that need to be com
     - With TalkBack android screen reader:
       - Social media anchors/links are named. It just says "link".
     - With android text to speech:
+
       - Social media anchors/links are not dictated.
+
     - Text size issues:
-      - When I enlarge the page using Chrome to 200% (as suggested by several online sources), the @media query in the styles file kicks in and displays the mobile version of the header; not the desktop version of the header.
-      - [text issue(s)to be added]
+
+      - When I enlarge the page on my large monitor using Chrome to 200% and to 150% on my laptop monitor (as suggested by several online sources), the @media query in the styles file kicks in and displays the mobile version of the header; not the desktop version of the header. Create a new branch to address this issue.
+
     - Color issues:
 
       - [color issue(s)to be added]
@@ -440,7 +445,9 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
         Done.
 
-      - Wrap the "Bio", "Project", and "Connect with me in a `<nav></nav>` element per https://webaim.org/techniques/semanticstructure/#regions
+      - ~~Wrap the "Bio", "Project", and "Connect with me in a `<nav></nav>` element per https://webaim.org/techniques/semanticstructure/#regions~~
+
+        Done.
 
   - Testing:
 
