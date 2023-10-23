@@ -115,7 +115,10 @@ hr {
   border-top: 1px solid #dcdcdc;
 }
 
-#content {
+/* TODO: Delete this line. */
+/* #content { */
+  
+main {
   /* background-color: bisque; */
   width: 97%;
   margin: 0 auto;

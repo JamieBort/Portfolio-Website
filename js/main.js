@@ -34,7 +34,11 @@ const closeNavMenu = () => (document.getElementById("menu").style.display = "non
 // Add event listener to page.
 // why false? --> "A boolean value indicating that the listener should be invoked at most once after being added.
 // If true, the listener would be automatically removed when invoked. If not specified, defaults to false."
-document.getElementById("content").addEventListener("click", closeNavMenu, false);
+// document.getElementById("content").addEventListener("click", closeNavMenu, false);
+console.log('document.getElementsByTagName("main")[0]:', document.getElementsByTagName("main")[0]); // TODO: Delete this line.
+document.getElementsByTagName("main")[0].addEventListener("click", closeNavMenu, false);
+// document.getElementById("content").addEventListener("click", closeNavMenu, false); // TODO: Delete this line.
+// console.log('document.getElementById("content"):', document.getElementById("content")); // TODO: Delete this line.
 
 // **************************************************
 //                  For the navigation
