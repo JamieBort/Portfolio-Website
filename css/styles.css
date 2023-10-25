@@ -1,5 +1,36 @@
 /* ./styles.css */
 
+/* *** Default breakpoint. For mobile vertical *** */
+
+/* Declaring colors for the entire project. */
+:root {
+  /* --base: NO BACKGROUND COLOR IS ADDED TO THE BODY */
+  --accent-background: #dcdcdc;
+  --accent-color: #3E3D3D;
+
+  --button01-background: var(--accent-background);
+  --button01-color: var(--accent-color);
+  --button02-background: var(--accent-color);
+  --button02-color: var(--accent-background);
+
+  --header: var(--accent-background);
+  --footer: var(--accent-background);
+  --github-background: var(--button01-background);
+  --github-color: var(--button01-color);
+  --live-site-background: var(--button02-background);
+  --live-site-color: var(--button02-color);
+  /* --link-background: NOT USED YET ; */
+  /* --link-color: NOT USED YET ; */
+  --visited-background: #54474771;
+  --visited-color: hotpink;
+  --focus-background: #817a7a;
+  --focus-color: #ffffff;
+  --hover-background: #B29090;
+  --hover-color: #000000;
+  --active-background: #ee3737;
+  /* --active-color: NOT USED YET ; */
+}
+
 @font-face {
   font-family: Tinos;
   font-weight: 400;
@@ -30,7 +61,10 @@ body {
   height: 100%; /* needs to take the parents height, alternative: body {display: flex} */
 }
 
-#mobileHeader {background-color: #dcdcdc;}
+#mobileHeader {
+  /* background-color: #dcdcdc; */
+  background-color: var(--header);
+}
 
 #desktopHeader {display: none;}
 
@@ -66,7 +100,10 @@ p {
 
 p, ul {text-align: left;}
 
-hr {border-top: 1px solid #dcdcdc;}
+hr {
+  /* border-top: 1px solid #dcdcdc; */
+  border-top: 1px solid var(--accent-background);
+}
 
 main {
   /* background-color: bisque; */
@@ -118,7 +155,8 @@ section {
 /* TODO: the cards are not distributed the way I'd like them to be. Specifically, there are three cards in the first row and one card in the second row.  */
 /* To address this I've added "margin: 2em 3em;" below. But I don't think this is teh correct approach. I think it needs to be addressed in the #card_container above. */
 .card {
-  border: thin solid #dcdcdc;
+  /* border: thin solid #dcdcdc; */
+  border: thin solid var(--accent-background);
   display: flex;
   flex-direction: column;
   max-height: 30em;
@@ -149,12 +187,15 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #dcdcdc;
+   /* background-color: #dcdcdc; */
+  background-color: var(--github-background);
   border-radius: 0 0 0 0.5em;
+  /* border: thin solid var(--accent-background); */
   text-decoration: none;
   text-transform: uppercase;
   height: 2em;
-  color: #4d4c4c;
+  /* color: #4d4c4c; */
+  color: var(--github-color);
   width: 50%;
 }
 
@@ -162,11 +203,14 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #4d4c4c;
+  /* background-color: #4d4c4c; */
+  background-color: var(--live-site-background);
   border-radius: 0 0 0.5em 0;
+  /* border: thin solid var(--accent-background); */
   text-decoration: none;
   text-transform: uppercase;
-  color: #dcdcdc;
+  /* color: #dcdcdc; */
+  color: var(--live-site-color);
   width: 50%;
 }
 
@@ -197,17 +241,20 @@ section {
 }
 
 footer {
-  background-color: #dcdcdc;
+   /* background-color: #dcdcdc; */
+  background-color: var(--footer);
   padding: 0.12em 0;
 }
 
-/* Breakpoint for tablets vertical */
+/* *** Breakpoint for mobile horizontal *** */
+
+/* *** Breakpoint for tablets vertical *** */
 /* @media (min-width: ??em) {body {background-color: lightblue}} */
 
-/* Breakpoint for tablets horizontal */
+/* *** Breakpoint for tablets horizontal *** */
 /* @media (min-width: ??em) {body {background-color: green}} */
 
-/* Breakpoint for laptops */
+/* *** Breakpoint for laptops *** */
 @media (min-width: 64em) {
   /* body {background-color: blue} */
 
@@ -217,7 +264,8 @@ footer {
     /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
-    background-color: #dcdcdc;
+     /* background-color: #dcdcdc; */
+    background-color: var(--header);
   }
   
   .desktopHeaderChildren:nth-child(1) {
@@ -252,34 +300,37 @@ footer {
   /* TODO: Choose colors that contrast for the anchor pseudo classes below. Are they sufficient for accessability purposes? */
 
   /* TODO: For accessability purposes, determine whether I should use the :link pseudo-class. I currently am choosing NOT to use it. */
+  /* a {
+    background-color:#ffffff;   
+   } */
+
   a:link {
-    /* background-color:  #b9b4b4; */
-    /* background-color: greenyellow; */
-    /* color: #4d4c4c; */
+    /* background-color: var(--link-background); */
+    /* color: var(--link-color); */
+    border: 1px solid white;
   }
 
   a:visited {
-    background-color: #d3c3c3;
-    /* background-color: lightgoldenrodyellow; */
-    /* color: #4d4c4c; */
+    background-color: var(--visited-background);
+    color: var(--visited-color);
+    /* border-radius:green; */
+    border-color: hotpink;
+
   }
 
   a:focus {
-    background-color: #817a7a;
-    /* background-color: violet; */
-    /* color: #4d4c4c; */
+    background-color: var(--focus-background);
+    color: var(--focus-color);
   }
 
   a:hover {
-    background-color: #7c5757;
-    /* background-color: orange; */
-    /* color: #4d4c4c; */
+    background-color: var(--hover-background);
+    color: var(--hover-color);
   }
 
   a:active {
-    background-color: #eec7c7;
-    /* background-color: orangered; */
-    /* color: #4d4c4c; */
+    background-color: var(--active-background);
+    color: var(--active-color);
   }
 
   /* Accessability for buttons */
@@ -287,11 +338,33 @@ footer {
   /* TODO: Check the order of the button pseudo classes below. Is it correct? */
   /* TODO: Check the button pseudo classes below. Am I forgetting any? */
   /* TODO: Choose colors that contrast for the button pseudo classes below. Are they sufficient for accessability purposes? */
-  button:focus {background-color: #eda1a1;}
 
-  button:hover {background-color: #963232;}
+  /* TODO: This "button:visited" rule with the border property doesn't work. 
+  However when both the live site and github repo have been visited, the two buttons appears as one.
+  A border is needed between them.
+  See "border: thin solid var(--accent-background);" in the ".github_repo" and ".live_site" rules above.
+  Or different colors.  */
+  /* button:visited {
+    border: thin solid var(--accent-background);
+  } */
+  
+  button:focus {
+    /* background-color: #7B0911; */
+    background-color: var(--focus-background);
+    color: var(--focus-color);
+  }
 
-  button:active {background-color: #ee3737;}
+  button:hover {
+    /* background-color: #8B0D17; */
+    background-color: var(--hover-background);
+    color: var(--hover-color);    
+  }
+
+  button:active {
+    /* background-color: #ee3737; */
+    background-color: var(--active-background);
+    color: var(--active-color);
+  }
 
   /* #bio {
    

@@ -437,7 +437,11 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     - Color issues:
 
-      - [color issue(s)to be added]
+      - Make the colors contrast sufficiently.
+
+    - Non-color issues for people who do not see well
+
+      - Per http://web-accessibility.carnegiemuseums.org/design/color/ "Color as indicator: Color should not be the only indicator for interactive elements. For example, underline links on hover, or mark a required field with an asterisk." Add other changes to button/links besides color changes when ':hover' or ':active' CSS pseudo classes are used/activated.
 
     - Structure changes
 
