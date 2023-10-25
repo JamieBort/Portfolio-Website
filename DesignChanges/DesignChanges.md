@@ -51,6 +51,10 @@ List of things that need to change with the website.
 
 - The `Jamie Bort` button in the header doesn't bring the page to the top but instead to my `<h1>` tag.
 
+- The two `<hr/>` elements are not vertically aligned with the content above and below them. See:
+
+  ![HR alignment](../DesignChanges/Styling/hr_element.png)
+
 ### Projects Section
 
 - This one may not be an issue. See the ~~two~~ three screenshots in the `./DesignChanges/display_of_project_cards/` directory. One looks fine while the other ~~does~~ two do not. Specifically, I'd like the two rows of cards have at most a difference of one card between them, not two or more cards.
