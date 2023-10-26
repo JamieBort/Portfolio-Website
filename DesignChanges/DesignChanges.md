@@ -80,3 +80,26 @@ List of things that need to change with the website.
   ![Contact](../DesignChanges/display_of_project_cards/connect.png)
 
   Also, it is a slightly larger card/anchor.
+
+### I am not sure where this belongs
+
+- Make the following changes:
+
+  - `class="card_hearer_tag"` to `class="card_header"`.
+
+  - `class="card_div"` to `class="card_body"`.
+
+  - `class="anchor_div"` to `class="card_footer"`.
+
+- And MAYBE make the following changes:
+
+  - `<h3 class="card_hearer_tag">....</h3>` to `<header class="card_header><h3>....</h3></header>`.
+
+  - `<div class="card_div">` to `<main class="card_body">`.
+
+  - `<div class="anchor_div">` to `<footer class="card_footer">`.
+
+  **IF** we can have more than one `<header>`, `<main>`, and `<footer>` in each html file.
+  See:
+
+  ![Screen shot of dom](../DesignChanges/card_dom.png)
