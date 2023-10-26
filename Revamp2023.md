@@ -4,6 +4,107 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ## Status
 
+**Note - all the following has been completed in the `accessibility_alt_text_focus` branch.**
+
+- Done.
+
+  > Issues that need to be addressed:
+
+  - ~~Create an `accessibility` branch.~~
+
+    Done.
+
+  - ~~See the `TODO: style the .section_button with .section_button:focus, .section_button:active, .section_button:hover, .section_button:visited, and ???` comments in the `./css/styles.css` file.~~
+
+    Done.
+
+  - With the macos VoiceOver program
+
+    - ~~The social media icons are not dictated. It just says "link" and not "LinkedIn link nor "twitter link" etc. Make sure VoiceOver spells out which link is which.~~
+
+      Addressed.
+
+    - ~~The `<hr>` horizontal rule tag is read out loud. Do I want that to be read? Do I want to keep that but tell the reader to ignore it? Do I want to replace it with something else?~~
+
+      According to https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr and https://www.sarasoueidan.com/blog/horizontal-rules/ I can keep the `<hr>`s. In fact I am using them exactly how it is intended to be used; including for accessibility.
+
+    - ~~The project cards are not announced individually. The "Github repo" button is announced and then the next card title is announced. But we don't know when one card ends and the next one starts.~~
+
+      Addressed.
+
+  - With the tabbing through the page with the tab key (moving focus):
+
+    - Nothing to address.
+
+  - With NaturalReader macos screen reader:
+
+    - **The text in the "Projects"/"Proyectos" and "Connect with me"/"Conectarte Conmigo" buttons are glossed over. It is not read at all.**
+    - ~~The screen reader does not read beyond the Bio section of Spanish version of my website.~~
+
+      No longer an issue.
+
+    - ~~The screen reader does not read the "GITHUB REPO" nor the "LIVE SITE" buttons in the cards.~~
+
+      I don't think that is purpose.
+
+    - ~~The screen reader does not read the tech icons in the cards.~~
+
+      I don't think that is purpose.
+
+  - ~~With TalkBack android screen reader:~~
+
+    - ~~Social media anchors/links are named. It just says "link".~~
+
+      Addressed.
+
+  - ~~With android text to speech:~~
+
+    - ~~Social media anchors/links are not dictated.~~
+
+      Addressed.
+
+  - Color issues:
+
+    - ~~Make the colors contrast sufficiently.~~
+
+      Started. Decent first pass.
+
+  - Structure changes
+
+    - ~~Change `<div id="content">` to `<main>` per https://webaim.org/techniques/semanticstructure/#regions~~
+
+      Done.
+
+    - ~~Wrap the "Bio", "Project", and "Connect with me in a `<nav></nav>` element per https://webaim.org/techniques/semanticstructure/#regions~~
+
+      Done.
+
+  - Steps:
+
+    - ~~Analyze the situation. Find what needs to be fixed or improved. Add to the "Issues that need to be addressed" list above.~~
+
+      DONE.
+
+      - ~~MacOS screen reader - Use VoiceOver screen reader to navigate and read my site.~~
+
+        DONE.
+
+      - ~~MacOS navigating with only the keyboard - The first step is to "walk" through the page with just a keyboard. See if I can navigate every button by moving the focus around.~~
+
+        DONE.
+
+      - ~~MacOS text to speech - The next step is to use a desktop text to speech to see if everything is read correctly.~~
+
+        DONE. Nothing to change.
+
+      - ~~Mobile screen reader - Next is to use the TalkBack android screen reader on my phone to see if everything is read correctly.~~
+
+        DONE.
+
+      - ~~Mobile text to speech - Next use text to speech to make sure everything is being found and dictated correctly.~~
+
+        DONE.
+
 **Note - all the following has been completed in the `content_20230328_README` branch.**
 
 - Done.
@@ -374,84 +475,37 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ### Next Steps
 
-- **All accessibly updates**
+- **All accessibility updates**
 
-  TODO: look into whether this [WebAIM certification[(https://webaim.org/services/certification/) would be worth having on my website(s).
+  - Todo (in order from top down):
 
-  **In the `accessibility_alt_text_focus` branch**
+    - _Create a new branch for this._
 
-  TODO: Check-in with people on the issues below (under the "Issues that need to be addressed:" section) - the ones created as a result of the todo's throughout this repo.
+    - Research about text size. What's too small for each device? What's too big for each device? Add to the "Issues that need to be addressed" list below.
 
-  TODO: Come back to the "accessible color" pages (that are saved in OneTab) to pick up where I left off on Friday. To select colors that contrast sufficiently.
+    - Non-color issues for people who do not see well. Per http://web-accessibility.carnegiemuseums.org/design/color/ "Color as indicator: Color should not be the only indicator for interactive elements. For example, underline links on hover, or mark a required field with an asterisk." Add other changes to button/links besides color changes when ':hover' or ':active' CSS pseudo classes are used/activated.
 
-  - Issues that need to be addressed:
+    - Research color considerations. Make sure my selected colors contrast sufficiently. Add to the "Issues that need to be addressed" list below.
 
-    - ~~Create an `accessibility` branch.~~
-    - Modify the `<img>`, `<a>`, `<button>`, `<nav>`, and other tags for assistive screen readers.
-    - ~~See the `TODO: style the .section_button with .section_button:focus, .section_button:active, .section_button:hover, .section_button:visited, and ???` comments in the `./css/styles.css` file.~~
+    - Address the things that need to be fixed. See the "Issues that need to be addressed" list below.
 
-      Done.
+    - Test the live site on iPad/tablet.
 
-    - With the macos VoiceOver program
+    - Test the live site on mobile device.
 
-      - ~~The social media icons are not dictated. It just says "link" and not "LinkedIn link nor "twitter link" etc. Make sure VoiceOver spells out which link is which.~~
+    - Test the live site on my laptop.
 
-        Addressed.
-
-      - ~~The `<hr>` horizontal rule tag is read out loud. Do I want that to be read? Do I want to keep that but tell the reader to ignore it? Do I want to replace it with something else?~~
-
-        According to https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr and https://www.sarasoueidan.com/blog/horizontal-rules/ I can keep the `<hr>`s. In fact I am using them exactly how it is intended to be used; including for accessibility.
-
-      - ~~The project cards are not announced individually. The "Github repo" button is announced and then the next card title is announced. But we don't know when one card ends and the next one starts.~~
-
-        Addressed.
-
-    - With the tabbing through the page with the tab key (moving focus):
-
-      - Nothing to address.
-
-    - With NaturalReader macos screen reader:
-
-      - **The text in the "Projects"/"Proyectos" and "Connect with me"/"Conectarte Conmigo" buttons are glossed over. It is not read at all.**
-      - ~~The screen reader does not read beyond the Bio section of Spanish version of my website.~~
-
-        No longer an issue.
-
-      - ~~The screen reader does not read the "GITHUB REPO" nor the "LIVE SITE" buttons in the cards.~~
-
-        I don't think that is purpose.
-
-      - ~~The screen reader does not read the tech icons in the cards.~~
-
-        I don't think that is purpose.
-
-    - With TalkBack android screen reader:
-      - Social media anchors/links are named. It just says "link".
-    - With android text to speech:
-
-      - Social media anchors/links are not dictated.
+  - Things that need to be addressed:
 
     - Text size issues:
 
       - When I enlarge the page on my large monitor using Chrome to 200% and to 150% on my laptop monitor (as suggested by several online sources), the @media query in the styles file kicks in and displays the mobile version of the header; not the desktop version of the header. Create a new branch to address this issue.
 
-    - Color issues:
+    - Assess whether the color contrasts are sufficient. If not, address this.
 
-      - Make the colors contrast sufficiently.
+    - Assess whether other non-color visual cues need to be used. And are sufficient. If not, address this.
 
-    - Non-color issues for people who do not see well
-
-      - Per http://web-accessibility.carnegiemuseums.org/design/color/ "Color as indicator: Color should not be the only indicator for interactive elements. For example, underline links on hover, or mark a required field with an asterisk." Add other changes to button/links besides color changes when ':hover' or ':active' CSS pseudo classes are used/activated.
-
-    - Structure changes
-
-      - ~~Change `<div id="content">` to `<main>` per https://webaim.org/techniques/semanticstructure/#regions~~
-
-        Done.
-
-      - ~~Wrap the "Bio", "Project", and "Connect with me in a `<nav></nav>` element per https://webaim.org/techniques/semanticstructure/#regions~~
-
-        Done.
+    - Assess whether the following testing criteria pass. See "Testing:" below. If not, address this.
 
   - Testing:
 
@@ -464,55 +518,25 @@ This file is for keeping track of the `Status` and the tasks that need to be com
         - reading all the text including the text in the buttons.
       - Focus/visual look for
         - buttons and links look differently when hovered, clicked, etc.
+        - default text size - is it legible?
+        - how does the page respond when I enlarge it 200%?
 
     - Tablet
 
       - Screen reader look for
+        - Same item(s) as laptop above.
       - Text to speech look for
+        - Same item(s) as laptop above.
       - Focus/visual look for
+        - Same item(s) as laptop above.
 
     - Cell
       - Screen reader look for
+        - Same item(s) as laptop above.
       - Text to speech look for
+        - Same item(s) as laptop above.
       - Focus/visual look for
-
-  - Steps:
-
-    - ~~Analyze the situation. Find what needs to be fixed or improved. Add to the "Issues that need to be addressed" list above.~~
-
-      DONE.
-
-      - ~~MacOS screen reader - Use VoiceOver screen reader to navigate and read my site.~~
-
-        DONE.
-
-      - ~~MacOS navigating with only the keyboard - The first step is to "walk" through the page with just a keyboard. See if I can navigate every button by moving the focus around.~~
-
-        DONE.
-
-      - ~~MacOS text to speech - The next step is to use a desktop text to speech to see if everything is read correctly.~~
-
-        DONE. Nothing to change.
-
-      - ~~Mobile screen reader - Next is to use the TalkBack android screen reader on my phone to see if everything is read correctly.~~
-
-        DONE.
-
-      - ~~Mobile text to speech - Next use text to speech to make sure everything is being found and dictated correctly.~~
-
-        DONE.
-
-    - Research about text size. What's too small for each device? What's too big for each device? Add to the "Issues that need to be addressed" list above.
-
-    - Research color considerations. Make sure my selected colors contrast sufficiently. What else do I need to know about in terms of color? Add to the "Issues that need to be addressed" list above.
-
-    - Address the things that need to be fixed. See the "Issues that need to be addressed" list above.
-
-    - Test the live site on iPad/tablet.
-
-    - Test the live site on mobile device.
-
-    - Test the live site on my laptop.
+        - Same item(s) as laptop above.
 
 - Other tasks to address; in a different branch.:
 
@@ -582,3 +606,11 @@ This file is for keeping track of the `Status` and the tasks that need to be com
     There is one or three other things that I made note of to address with these projects cards. Find them and address them.
 
     - See the `TODO: Add three Projects buttons to toggle on and off these three features:` comment**s** in the ~~`./html/index_spanish.html`~~ `./html/index.html` file.
+
+  - **All accessibility updates**
+
+    TODO: look into whether this [WebAIM certification[(https://webaim.org/services/certification/) would be worth having on my website(s).
+
+    TODO: Check-in with people on the issues below (under the "Issues that need to be addressed:" section) - the ones created as a result of the todo's throughout this repo.
+
+    - Modify the `<img>`, `<a>`, `<button>`, `<nav>`, and other tags for assistive screen readers.

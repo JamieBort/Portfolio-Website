@@ -3,32 +3,14 @@
 /* *** Default breakpoint. For mobile vertical *** */
 
 /* Declaring colors for the entire project. */
+  /* TODO: Choose colors that contrast for the button pseudo classes below. Are they sufficient for accessability purposes? */
 :root {
-  /* --base: NO BACKGROUND COLOR IS ADDED TO THE BODY */
-  --accent-background: #dcdcdc;
-  --accent-color: #3E3D3D;
-
-  --button01-background: var(--accent-background);
-  --button01-color: var(--accent-color);
-  --button02-background: var(--accent-color);
-  --button02-color: var(--accent-background);
-
-  --header: var(--accent-background);
-  --footer: var(--accent-background);
-  --github-background: var(--button01-background);
-  --github-color: var(--button01-color);
-  --live-site-background: var(--button02-background);
-  --live-site-color: var(--button02-color);
-  /* --link-background: NOT USED YET ; */
-  /* --link-color: NOT USED YET ; */
-  --visited-background: #54474771;
-  --visited-color: hotpink;
-  --focus-background: #817a7a;
-  --focus-color: #ffffff;
-  --hover-background: #B29090;
-  --hover-color: #000000;
-  --active-background: #ee3737;
-  /* --active-color: NOT USED YET ; */
+  --accent01: #dcdcdc;
+  --accent02: #3E3D3D;
+  --accent03: #a9a9a9;
+  --accent04: #ffffff;
+  --visited:#5f9ea0;
+  --active: #ff4500;
 }
 
 @font-face {
@@ -62,8 +44,8 @@ body {
 }
 
 #mobileHeader {
-  /* background-color: #dcdcdc; */
-  background-color: var(--header);
+  background-color: var(--accent01);
+  color: var(--accent02);
 }
 
 #desktopHeader {display: none;}
@@ -75,11 +57,13 @@ body {
   font-size: 28px;
 }
 
-/* TODO: Evaluate whether these two #headerButtonCenter rules ~~should~~ can be deleted. If not, diminish the integer as much as possible. */
+/* TODO:  Evaluate whether these two #headerButtonCenter rules ~~should~~ can be deleted. 
+          If not, diminish the integer as much as possible. */
 #headerButtonCenter {flex-grow: 15;}
 
 #headerButtonRight {flex-grow: 1;}
 
+/* ***************************** */
 /* establishing font sizes below */
 .mobile_header_button, #menu button {font-size: 28px;}
 
@@ -97,12 +81,13 @@ p {
   /* border: thin solid black; */
 }
 /* establishing font sizes above */
+/* ***************************** */
 
 p, ul {text-align: left;}
 
 hr {
   /* border-top: 1px solid #dcdcdc; */
-  border-top: 1px solid var(--accent-background);
+  border-top: 1px solid var(--accent01);
 }
 
 main {
@@ -156,7 +141,7 @@ section {
 /* To address this I've added "margin: 2em 3em;" below. But I don't think this is teh correct approach. I think it needs to be addressed in the #card_container above. */
 .card {
   /* border: thin solid #dcdcdc; */
-  border: thin solid var(--accent-background);
+  border: thin solid var(--accent01);
   display: flex;
   flex-direction: column;
   max-height: 30em;
@@ -188,14 +173,13 @@ section {
   justify-content: center;
   align-items: center;
    /* background-color: #dcdcdc; */
-  background-color: var(--github-background);
+  background-color:  var(--accent01);
   border-radius: 0 0 0 0.5em;
-  /* border: thin solid var(--accent-background); */
+  /* border: thin solid var(--accent01); */
   text-decoration: none;
   text-transform: uppercase;
   height: 2em;
-  /* color: #4d4c4c; */
-  color: var(--github-color);
+  color: var(--accent02);
   width: 50%;
 }
 
@@ -204,13 +188,12 @@ section {
   justify-content: center;
   align-items: center;
   /* background-color: #4d4c4c; */
-  background-color: var(--live-site-background);
+  background-color: var(--accent02);
   border-radius: 0 0 0.5em 0;
-  /* border: thin solid var(--accent-background); */
+  /* border: thin solid var(--accent01); */
   text-decoration: none;
   text-transform: uppercase;
-  /* color: #dcdcdc; */
-  color: var(--live-site-color);
+  color: var(--accent01);
   width: 50%;
 }
 
@@ -241,8 +224,8 @@ section {
 }
 
 footer {
-   /* background-color: #dcdcdc; */
-  background-color: var(--footer);
+  background-color: var(--accent01);
+  color: var(--accent02);
   padding: 0.12em 0;
 }
 
@@ -252,7 +235,7 @@ footer {
 /* @media (min-width: ??em) {body {background-color: lightblue}} */
 
 /* *** Breakpoint for tablets horizontal *** */
-/* @media (min-width: ??em) {body {background-color: green}} */
+/* @media (min-width: ??em) {body {background-color: lightgreen}} */
 
 /* *** Breakpoint for laptops *** */
 @media (min-width: 64em) {
@@ -261,11 +244,10 @@ footer {
   #mobileHeader {display: none;}
 
   #desktopHeader {
-    /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
-     /* background-color: #dcdcdc; */
-    background-color: var(--header);
+    background-color: var(--accent01);
+    color: var(--accent02);
   }
   
   .desktopHeaderChildren:nth-child(1) {
@@ -276,7 +258,7 @@ footer {
 
   .desktopHeaderChildren:nth-child(2) {
     /* background-color: blueviolet; */
-    /* TODO: Adjust this flex-grow to be as low as possible. */
+    /* TODO: Adjust this flex-grow integer to be as low as possible. */
     flex-grow: 8;
     font-size: 28px;
   }
@@ -288,83 +270,150 @@ footer {
     display: flex;
   }
 
-  .desktop_nav_button {font-size: 19px;}
+  .desktop_nav_button {font-size: 19px;
+  }
 
   .desktop_nav_button:nth-child(2) {min-width: 5.25em;}
 
   .desktop_nav_button:nth-child(4) {min-width: 8.5em;}
-
-  /* Accessability for links */
-  /* :link — :visited — :hover — :active.  */
-  /* TODO: check the order of the anchor pseudo classes below. Is it correct? */
-  /* TODO: Choose colors that contrast for the anchor pseudo classes below. Are they sufficient for accessability purposes? */
-
-  /* TODO: For accessability purposes, determine whether I should use the :link pseudo-class. I currently am choosing NOT to use it. */
-  /* a {
-    background-color:#ffffff;   
-   } */
-
-  a:link {
-    /* background-color: var(--link-background); */
-    /* color: var(--link-color); */
-    border: 1px solid white;
-  }
-
-  a:visited {
-    background-color: var(--visited-background);
-    color: var(--visited-color);
-    /* border-radius:green; */
-    border-color: hotpink;
-
-  }
-
-  a:focus {
-    background-color: var(--focus-background);
-    color: var(--focus-color);
-  }
-
-  a:hover {
-    background-color: var(--hover-background);
-    color: var(--hover-color);
-  }
-
-  a:active {
-    background-color: var(--active-background);
-    color: var(--active-color);
-  }
 
   /* Accessability for buttons */
   /* :hover, :active, and :focus user actions and the :visited */
   /* TODO: Check the order of the button pseudo classes below. Is it correct? */
   /* TODO: Check the button pseudo classes below. Am I forgetting any? */
   /* TODO: Choose colors that contrast for the button pseudo classes below. Are they sufficient for accessability purposes? */
+  /* NOTE: Opting to use "button" selector over ".section_button" AND ".desktopHeaderButtons" selectors. */
 
-  /* TODO: This "button:visited" rule with the border property doesn't work. 
-  However when both the live site and github repo have been visited, the two buttons appears as one.
-  A border is needed between them.
-  See "border: thin solid var(--accent-background);" in the ".github_repo" and ".live_site" rules above.
-  Or different colors.  */
+  /* NOTE: Not currently using the :visited pseudo class for the buttons.
   /* button:visited {
-    border: thin solid var(--accent-background);
+    background-color: NOT USED YET;
+    color:NOT USED YET;
+    border: 3px solid NOT USED YET;
   } */
-  
+
   button:focus {
-    /* background-color: #7B0911; */
-    background-color: var(--focus-background);
-    color: var(--focus-color);
+    background-color: var(--accent03);
+    color: var(--accent04);
+    /* TODO: Consider replacing the default blue border with something different. */
+    /* NOTE: when "outline:none;" is used in the ":focus" rule, for accessability purposes an alternative MUST be used. */
+    /* outline:none; 
+    border: .1em solid var(--accent02); */
   }
 
   button:hover {
-    /* background-color: #8B0D17; */
-    background-color: var(--hover-background);
-    color: var(--hover-color);    
+    background-color: var(--accent03);
+    color: var(--accent02);
   }
 
   button:active {
-    /* background-color: #ee3737; */
-    background-color: var(--active-background);
-    color: var(--active-color);
+    background-color: var(--active);
+    color: var(--accent04);
   }
+
+  /* Accessability for links */
+  /* :link — :visited — :hover — :active.  */
+  /* TODO: Check the order of the anchor pseudo classes below. Is it correct? */
+  /* TODO: Choose colors that contrast for the anchor pseudo classes below. Are they sufficient for accessability purposes? */
+
+  /* NOTE: Not currently styling the default anchor(s).
+  /* a {
+    background-color:#ffffff;   
+   } */
+
+   /* Code The Dream anchor */
+
+
+  /* TODO: For accessability purposes, determine whether I should use the :link pseudo-class. I currently am choosing NOT to use it. */
+  /* #codeTheDream_a:link {
+    background-color: NOT USED YET;
+    color:NOT USED YET;
+    border: 3px solid NOT USED YET;
+  } */
+
+  #codeTheDream_a:visited {
+    /* background-color: NOT USED YET; */
+    color:var(--visited);
+    /* border: 3px solid NOT USED YET; */
+  }
+
+  #codeTheDream_a:focus {
+    background-color:var(--accent03);
+    color: var(--accent04);
+    /* TODO: Consider replacing the default blue border with something different. */
+    /* NOTE: when "outline:none;" is used in the ":focus" rule, for accessability purposes an alternative MUST be used. */
+    /* outline:none; 
+    border: thin solid var(--accent02); */
+  }
+
+  #codeTheDream_a:hover {
+    background-color:var(--accent03);
+    color: var(--accent02);
+  }
+
+  #codeTheDream_a:active {
+    background-color: var(--active);
+    color: var(--accent04);
+  }
+
+  /* GitHub anchor */
+
+  /* TODO: For accessability purposes, determine whether I should use the :link pseudo-class. I currently am choosing NOT to use it. */
+ /* .github_repo:link {
+  background-color: NOT USED YET;
+  color:NOT USED YET;
+  border: 3px solid NOT USED YET;
+ } */
+
+ .github_repo:visited {
+  /* background-color: NOT USED YET; */
+  color:var(--visited);
+  /* border: 3px solid NOT USED YET; */
+ }
+
+ .github_repo:focus {
+  background-color: var(--accent03);
+  color: var(--accent04);
+ }
+
+ .github_repo:hover {
+  background-color: var(--accent03);
+  color: var(--accent02);
+ }
+
+ .github_repo:active {
+  background-color: var(--active);
+  color: var(--accent04);
+ }
+
+ /* Live Site anchor */
+
+  /* TODO: For accessability purposes, determine whether I should use the :link pseudo-class. I currently am choosing NOT to use it. */
+ /* .live_site:link {
+  background-color: NOT USED YET;
+  color:NOT USED YET;
+  border: 3px solid NOT USED YET;
+} */
+
+.live_site:visited {
+  /* background-color: NOT USED YET; */
+  color:var(--visited);
+  /* border: 3px solid NOT USED YET; */
+}
+
+.live_site:focus {
+    background-color: var(--accent03);
+    color: var(--accent04);
+}
+
+.live_site:hover {
+    background-color: var(--accent03);
+    color: var(--accent02);
+}
+
+.live_site:active {
+    background-color: var(--active);
+    color: var(--accent04);
+}
 
   /* #bio {
    

@@ -73,7 +73,7 @@ const toggleLanguage = () => {
   const pArray = [];
 
   // Variables for the languageContent object.
-  const codeTheDreamAnchor = `<a id="unused_textLink" target="_blank" href="https://codethedream.org/">Code the Dream</a>`;
+  const codeTheDream_a = `<a id="codeTheDream_a" target="_blank" href="https://codethedream.org/">Code the Dream</a>`;
   const projectsButtonEnglish = `<button class="section_button" onclick="jumpToSection('projects')" aria-label="Projects">Projects</button>`;
   const projectsButtonSpanish = `<button class="section_button" onclick="jumpToSection('projects')" aria-label="Proyectos">Proyectos</button>`;
   const connectWithMeButtonEnglish = `<button class="section_button" onclick="jumpToSection('connectWithMe')" aria-label="Connect with Me">Connect with Me</button>`;
@@ -100,11 +100,11 @@ const toggleLanguage = () => {
           // h2: {0: function () {return languageContent.body.header.bio[0];},1: function () {return languageContent.body.header.bio[1];},},
           h2: ["A little bit about myself", "Un poco sobre mi"],
           // p1: [
-          //   `I write code and teach at ${codeTheDreamAnchor}, a software boot camp for underrepresented people.`,`Escribo código y enseno en ${codeTheDreamAnchor}, un campo de entrenamiento de software para personas subrepresentadas.`,],
+          //   `I write code and teach at ${codeTheDream_a}, a software boot camp for underrepresented people.`,`Escribo código y enseno en ${codeTheDream_a}, un campo de entrenamiento de software para personas subrepresentadas.`,],
           // Danni's translation.
           p1: [
-            `I write code and teach at ${codeTheDreamAnchor}, a software boot camp for underrepresented people.`,
-            `Escribo código y enseno en ${codeTheDreamAnchor}, un campo de entrenamiento de software para personas con escasa representación.`,
+            `I write code and teach at ${codeTheDream_a}, a software boot camp for underrepresented people.`,
+            `Escribo código y enseno en ${codeTheDream_a}, un campo de entrenamiento de software para personas con escasa representación.`,
           ],
           // p2: [`Below you will find some of my ${projectsButtonEnglish}.`, `En la parte de abajo encontrarás algunos de mis ${projectsButtonSpanish}.`],
           // Danni's translation.
