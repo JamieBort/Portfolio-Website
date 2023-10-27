@@ -477,6 +477,12 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 - **All accessibility updates**
 
+  - See the "Accessibility Links and Buttons" pinned items in the OneTab Chrome plugin.
+
+    Continue to keep them there? Delete them?
+
+  - Delete the `accessibility_alt_text_focus` branch.
+
   - Todo (in order from top down):
 
     - _Create a new branch for this._
@@ -494,6 +500,8 @@ This file is for keeping track of the `Status` and the tasks that need to be com
     - Test the live site on mobile device.
 
     - Test the live site on my laptop.
+
+    - When the above have been done/addressed, the last thing that needs to be taken care of is to solicit feedback. For that I have created this `Accessibility Issue Questions.md` document.
 
   - Things that need to be addressed:
 
