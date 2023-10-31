@@ -4,6 +4,16 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ## Status
 
+**Note - all the following has been completed in the `accessibility` branch.**
+
+- Done.
+
+  > Delete the `accessibility_alt_text_focus` branch.
+
+  > See the "Accessibility Links and Buttons" pinned items in the OneTab Chrome plugin.
+
+  Continue to keep them there? Delete them?
+
 **Note - all the following has been completed in the `accessibility_alt_text_focus` branch.**
 
 - Done.
@@ -477,12 +487,6 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 - **All accessibility updates**
 
-  - See the "Accessibility Links and Buttons" pinned items in the OneTab Chrome plugin.
-
-    Continue to keep them there? Delete them?
-
-  - Delete the `accessibility_alt_text_focus` branch.
-
   - Todo (in order from top down):
 
     - _Create a new branch for this._
@@ -501,7 +505,15 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
     - Test the live site on my laptop.
 
-    - When the above have been done/addressed, the last thing that needs to be taken care of is to solicit feedback. For that I have created this `Accessibility Issue Questions.md` document.
+    - When the above have been done/addressed, the last thing that needs to be taken care of is to solicit feedback.
+
+      For that I have created this `Accessibility Issue Questions.md` document.
+
+      Two people to contact:
+
+      - https://trello.com/c/53VtZ4o9/ (see #comment-65400e100c632c7fda83a67f)
+
+      - and https://trello.com/c/PeariN22/
 
   - Things that need to be addressed:
 
@@ -545,6 +557,10 @@ This file is for keeping track of the `Status` and the tasks that need to be com
         - Same item(s) as laptop above.
       - Focus/visual look for
         - Same item(s) as laptop above.
+
+  - Each time an accessibility change is made, not just during this iteration in this branch, solicit feedback from an accessibility expert.
+
+  - The next time I address (read: improve the accessibility) of my website, incorporate the changes found in this [5 Accessibility Quick Wins You Can Implement Today](https://css-tricks.com/5-accessibility-quick-wins-you-can-implement-today/) css-tricks\.com article by Daniel Yuschick on Feb 23, 2022.
 
 - Other tasks to address; in a different branch.:
 
