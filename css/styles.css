@@ -306,8 +306,16 @@ footer {
   }
 
   button:active {
-    background-color: var(--active);
-    color: var(--accent04);
+    /* background-color: var(--active);
+    color: var(--accent04); */
+    
+    /* NOTE: Consider this second option for active clicks. */
+    /* background-color: var(--accent04);
+    color: var(--accent02); */
+
+    /* NOTE: Consider this third option for active clicks. */
+    /* background-color: var(--accent02);
+    color: var(--accent03); */
   }
 
   /* Accessability for links */
@@ -353,6 +361,10 @@ footer {
   #codeTheDream_a:active {
     background-color: var(--active);
     color: var(--accent04);
+    
+    /* NOTE: Consider this second option for active clicks. */
+    /* background-color: var(--accent04);
+    color: var(--accent02); */
   }
 
   /* GitHub anchor */
@@ -383,6 +395,10 @@ footer {
  .github_repo:active {
   background-color: var(--active);
   color: var(--accent04);
+    
+  /* NOTE: Consider this second option for active clicks. */
+  /* background-color: var(--accent04);
+  color: var(--accent02); */
  }
 
  /* Live Site anchor */
@@ -413,6 +429,10 @@ footer {
 .live_site:active {
     background-color: var(--active);
     color: var(--accent04);
+    
+    /* NOTE: Consider this second option for active clicks. */
+    /* background-color: var(--accent04);
+    color: var(--accent02); */
 }
 
   /* #bio {

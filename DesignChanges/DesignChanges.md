@@ -103,3 +103,7 @@ List of things that need to change with the website.
   See:
 
   ![Screen shot of dom](../DesignChanges/card_dom.png)
+
+### Mobile Nav Menu
+
+- If/when I change it, the options in this [Responsive Menu Concepts](https://css-tricks.com/responsive-menu-concepts/) article by Tim Pietrusky on Nov 19, 2012 (Updated on Apr 13, 2017) is a good place to start.
