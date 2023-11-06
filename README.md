@@ -68,11 +68,11 @@ Lastly, I will continue to add content to the `Resources` and `Fun Things` pages
 			|
 			+-- accessibility - For all accessibility implementation.
 				|
-				+-- accessibility_v2 - For reviewing and possibly changing
-										- Appropriate text size.
-										- Button text in terms of assistive technology.
-										- Color contrast.
-										- Non-color visual cues.
+				+-- accessibility_v3 - For reviewing and possibly changing
+							- Appropriate text size.
+							- Button text in terms of assistive technology.
+							- Color contrast.
+							- Non-color visual cues.
 ```
 
 ### Directories and Files
