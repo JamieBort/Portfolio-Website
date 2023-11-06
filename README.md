@@ -21,13 +21,15 @@ This site
 
 - will link to my blog,
 - and have
-  - a Contact Me form,
-  - a Resources page
-  - and a page of Fun Things to explore
+  - a `Contact Me` form,
+  - a `Resources` page
+  - and a page of `Fun Things` to explore
 
-On each relevant page you will be able to filter the content by a text field or by selecting key phrases (css, debugging, back end, etc.) and attributes (title, date, etc.).
+Additionally, on each relevant page you will be able to filter the content by a text field or by selecting key phrases (css, debugging, back end, etc.) and attributes (title, date, etc.).
 
-Additionally, I will continue to make changes to this site to make it more accessible.
+I will continue to make changes to this site to make it more accessible.
+
+Lastly, I will continue to add content to the `Resources` and `Fun Things` pages as well as my blog.
 
 ### Branch Structure
 
@@ -78,6 +80,8 @@ Additionally, I will continue to make changes to this site to make it more acces
 #### Directories
 
 - .vscode/ - See the [Workspace settings](https://code.visualstudio.com/docs/getstarted/settings#:~:text=Note%3A%20A%20VS%20Code%20%22workspace,feature%20called%20Multi%2Droot%20workspaces) in the VS Code documentation.
+
+- AccessibilityIssues/ - Contains accessibility issues raised by other people. And accessibility issues/questions that I need answered.
 
 - assets/ - The directory for the static resources.
 

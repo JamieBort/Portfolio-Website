@@ -4,6 +4,16 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
 ## Status
 
+**Note - all the following has been completed in the `accessibility_v2` branch.**
+
+- Done.
+
+  > Non-color issues for people who do not see well. Per http://web-accessibility.carnegiemuseums.org/design/color/ "Color as indicator: Color should not be the only indicator for interactive elements. For example, underline links on hover, or mark a required field with an asterisk." Add other changes to button/links besides color changes when ':hover' or ':active' CSS pseudo classes are used/activated.
+
+  Completed using https://www.w3.org/TR/WCAG20-TECHS/G182.html
+
+  > Research about text size. What's too small for each device? What's too big for each device? Add to the "Issues that need to be addressed" list below.
+
 **Note - all the following has been completed in the `accessibility` branch.**
 
 - Done.
@@ -489,12 +499,6 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
   - Todo (in order from top down):
 
-    - _Create a new branch for this._
-
-    - Research about text size. What's too small for each device? What's too big for each device? Add to the "Issues that need to be addressed" list below.
-
-    - Non-color issues for people who do not see well. Per http://web-accessibility.carnegiemuseums.org/design/color/ "Color as indicator: Color should not be the only indicator for interactive elements. For example, underline links on hover, or mark a required field with an asterisk." Add other changes to button/links besides color changes when ':hover' or ':active' CSS pseudo classes are used/activated.
-
     - Research color considerations. Make sure my selected colors contrast sufficiently. Add to the "Issues that need to be addressed" list below.
 
     - Address the things that need to be fixed. See the "Issues that need to be addressed" list below.
@@ -515,7 +519,7 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
       - and https://trello.com/c/PeariN22/
 
-  - Things that need to be addressed:
+  - Issues that need to be addressed:
 
     - Text size issues:
 
@@ -560,7 +564,15 @@ This file is for keeping track of the `Status` and the tasks that need to be com
 
   - Each time an accessibility change is made, not just during this iteration in this branch, solicit feedback from an accessibility expert.
 
-  - The next time I address (read: improve the accessibility) of my website, incorporate the changes found in this [5 Accessibility Quick Wins You Can Implement Today](https://css-tricks.com/5-accessibility-quick-wins-you-can-implement-today/) css-tricks\.com article by Daniel Yuschick on Feb 23, 2022.
+  - The next time I address (read: improve the accessibility) of my website,
+
+    - incorporate the changes found in this [5 Accessibility Quick Wins You Can Implement Today](https://css-tricks.com/5-accessibility-quick-wins-you-can-implement-today/) css-tricks\.com article by Daniel Yuschick on Feb 23, 2022.
+
+    - Make it so pinch zoom on the mobile keeps the header within the width of the window (so you don't have to nor cant pan left/right).
+
+      Simply make it so the text gets bigger and pushes down further.
+
+      Search for something to the effect of "trigger media query with pinch zoom".
 
 - Other tasks to address; in a different branch.:
 

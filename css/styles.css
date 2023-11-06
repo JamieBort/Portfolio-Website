@@ -7,9 +7,12 @@
 :root {
   --accent01: #dcdcdc;
   --accent02: #3E3D3D;
+  /* --accent02_alternative: #; */
   --accent03: #a9a9a9;
   --accent04: #ffffff;
-  --visited:#5f9ea0;
+  --visited: #5f9ea0; /* D2E5E5 works with 3e3d3d but not dcdcdc */ /*294747 works with dcdcdc but not 3e3d3d */
+  --visited01: #D2E5E5;
+  --visited02: #2A4646;
   --active: #ff4500;
 }
 
@@ -117,7 +120,10 @@ section {
   margin: 0 auto;
 }
 
-.section_a {text-decoration: none;}
+.section_a {
+  text-decoration: none; 
+  /* min-width: 64px; TODO: Include a min-width for the anchor tags in the "Connect with me" section. this is not necessary. but while tabbing through the page I noticed that the Stack Overflow icon was noticeably more narrow than the rest. 64 px is the widest of the four icons. NOTE: Consider using EM instead of PX. And make sure it doesn't break the mobile version. */
+}
 
 .section_button {
   border-radius: 0.2em;
@@ -306,8 +312,8 @@ footer {
   }
 
   button:active {
-    /* background-color: var(--active);
-    color: var(--accent04); */
+    background-color: var(--active);
+    color: var(--accent04);
     
     /* NOTE: Consider this second option for active clicks. */
     /* background-color: var(--accent04);
