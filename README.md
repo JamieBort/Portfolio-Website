@@ -66,7 +66,11 @@ Additionally, I will continue to make changes to this site to make it more acces
 			|
 			+-- accessibility - For all accessibility implementation.
 				|
-				+-- accessibility_alt_text_focus - For adding alt text and maintaining focus.
+				+-- accessibility_v2 - For reviewing and possibly changing
+										- Appropriate text size.
+										- Button text in terms of assistive technology.
+										- Color contrast.
+										- Non-color visual cues.
 ```
 
 ### Directories and Files

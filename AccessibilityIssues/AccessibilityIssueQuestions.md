@@ -2,7 +2,13 @@
 
 Questions that need to be addressed to resolve my Accessibility Issues.
 
-Things to address with Crystal Scott (see the https://trello.com/c/PeariN22/ Trello card.)
+Things to address with
+
+- https://trello.com/c/PeariN22/
+
+- and anyone else who might have insight
+
+Questions:
 
 - The order of Anchor Pseudo Classes. What should it be?
 
