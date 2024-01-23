@@ -46,6 +46,8 @@ Lastly, I will continue to add content to the `Resources` and `Fun Things` pages
 		|	|
 		|	+-- content_projects - For adjusting number of projects displayed and adding their status (completed, ongoing, working on, etc.).
 		|
+		+-- script - For all script related logic.
+		|
 		+-- Revamp2023 - The branch created to update the website in 2023.
 			|
 			+-- appearance - For modifying the appearance.
@@ -65,10 +67,8 @@ Lastly, I will continue to add content to the `Resources` and `Fun Things` pages
 			|		+-- host_routed_react_gh-pages_with_graphql_api_call - To see if I can make API calls using the a React app while hosted by gh-pages. **Tabled for now**
 			|
 			+-- api - For all api related logic.
-			|	|
-			|	+-- api_github - For implementing api calls to GitHub.
-			|
-			+-- script - For all script related logic.
+				|
+				+-- api_github - For implementing api calls to GitHub.
 ```
 
 ### Directories and Files

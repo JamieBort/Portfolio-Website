@@ -86,7 +86,14 @@ p {
 /* establishing font sizes above */
 /* ***************************** */
 
-p, ul {text-align: left;}
+p, ul {
+  text-align: left;
+}
+
+.card_status{
+  text-align: center;
+  margin: 0;
+}
 
 hr {
   /* border-top: 1px solid #dcdcdc; */

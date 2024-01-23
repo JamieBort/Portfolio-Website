@@ -2,10 +2,11 @@
 
 // Content to the const pinnedProjects is obtained from .js/PinnedProjects
 const pinnedProjects = {
+  status: ["Ongoing", "Ongoing", "Ongoing", "In progress", "In progress"],
   data: {
     user: {
       pinnedItems: {
-        totalCount: 6,
+        totalCount: 5,
         edges: [
           {
             node: {
@@ -52,6 +53,7 @@ const pinnedProjects = {
               },
               homepageUrl: null,
               forkCount: 0,
+              status: "Ongoing",
             },
           },
           {
@@ -83,13 +85,13 @@ const pinnedProjects = {
               },
               homepageUrl: "https://jamiebort.github.io/PersonalDashboard/",
               forkCount: 0,
+              status: "Ongoing",
             },
           },
           {
             node: {
               id: "MDEwOlJlcG9zaXRvcnk5NjcwOTAwNg==",
-              name: "jamiebort.com",
-              // name: "jamiebort.github.io", // TODO: make this a permanent change for each version of pinned projects.
+              name: "jamiebort.com", // TODO: make this a permanent change for each version of pinned projects.
               url: "https://github.com/JamieBort/jamiebort.github.io",
               stargazerCount: 0,
               description: "My Portfolio Website. This is where I share a bit about myself, showcase what I've been working on, host my blog, and more.",
@@ -123,20 +125,20 @@ const pinnedProjects = {
                   },
                 ],
               },
-              // TODO: figure out why I can't use jamiebort.com nor https://jamiebort.com nor https://www.jamiebort.com here.
-              homepageUrl: "https://jamiebort.github.io",
+              homepageUrl: "https://jamiebort.com",
               forkCount: 0,
+              status: "Ongoing",
             },
           },
           {
             node: {
-              id: "MDEwOlJlcG9zaXRvcnkxMDg4MDk5NzM=",
-              name: "iPhysicist-CSSLayoutFlexbox",
-              url: "https://github.com/JamieBort/iPhysicist-CSSLayoutFlexbox",
+              id: "R_kgDOJXaC6A",
+              name: "Data-Logging-App",
+              url: "https://github.com/JamieBort/Data-Logging-App",
               stargazerCount: 0,
-              description: "Website for demonstrating HTML, CSS, AND GitHub skills.",
+              description: "An app to log data points from my phone.",
               languages: {
-                totalCount: 2,
+                totalCount: 5,
                 edges: [
                   {
                     node: {
@@ -145,33 +147,17 @@ const pinnedProjects = {
                   },
                   {
                     node: {
-                      name: "CSS",
-                    },
-                  },
-                ],
-              },
-              homepageUrl: "https://jamiebort.github.io/iPhysicist-CSSLayoutFlexbox/",
-              forkCount: 0,
-            },
-          },
-          {
-            node: {
-              id: "MDEwOlJlcG9zaXRvcnkxMDg3NzA5MDQ=",
-              name: "PuppyLove",
-              url: "https://github.com/JamieBort/PuppyLove",
-              stargazerCount: 0,
-              description: "An exercise in styling with CSS.",
-              languages: {
-                totalCount: 3,
-                edges: [
-                  {
-                    node: {
-                      name: "HTML",
+                      name: "TypeScript",
                     },
                   },
                   {
                     node: {
                       name: "CSS",
+                    },
+                  },
+                  {
+                    node: {
+                      name: "Svelte",
                     },
                   },
                   {
@@ -181,39 +167,25 @@ const pinnedProjects = {
                   },
                 ],
               },
-              homepageUrl: "",
+              homepageUrl: null,
               forkCount: 0,
+              status: "In progress",
             },
           },
           {
             node: {
-              id: "MDEwOlJlcG9zaXRvcnk5OTU3Mzc4MQ==",
-              name: "Create-A-User-Directory",
-              url: "https://github.com/JamieBort/Create-A-User-Directory",
+              id: "R_kgDOKqJOGw",
+              name: "To-Do-App",
+              url: "https://github.com/JamieBort/To-Do-App",
               stargazerCount: 0,
-              description: "A directory using the Express framework and the Mustache-Express templating engine to implement MVC.",
+              description: "A to-do app created using the React library.",
               languages: {
-                totalCount: 3,
-                edges: [
-                  {
-                    node: {
-                      name: "CSS",
-                    },
-                  },
-                  {
-                    node: {
-                      name: "JavaScript",
-                    },
-                  },
-                  {
-                    node: {
-                      name: "Mustache",
-                    },
-                  },
-                ],
+                totalCount: 0,
+                edges: [],
               },
-              homepageUrl: "",
+              homepageUrl: null,
               forkCount: 0,
+              status: "In progress",
             },
           },
         ],
@@ -231,6 +203,7 @@ const returnValue = pinnedProjects.data.user.pinnedItems.edges.map((value) => {
     homepageUrl: value.node.homepageUrl,
     name: value.node.name,
     languages: languages,
+    status: value.node.status,
   };
 });
 
@@ -254,9 +227,14 @@ returnValue.forEach((project) => {
   div1_tag.appendChild(div3_tag);
 
   const p1_tag = document.createElement("p");
-  // p1_tag.setAttribute("class", "card_p");
-  p1_tag.innerHTML = project.description;
+  p1_tag.setAttribute("class", "card_status");
+  p1_tag.innerHTML = project.status;
   div3_tag.appendChild(p1_tag);
+
+  const p2_tag = document.createElement("p");
+  p2_tag.setAttribute("class", "card_description");
+  p2_tag.innerHTML = project.description;
+  div3_tag.appendChild(p2_tag);
 
   const div2_tag = document.createElement("div");
   div2_tag.setAttribute("class", "icon_div");

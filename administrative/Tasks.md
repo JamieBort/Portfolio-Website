@@ -121,6 +121,14 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
 
 ## Content
 
+Work done in the `content_projects` branch.
+
+- adjust the number of projects displayed
+
+- add a status for each project (completed, ongoing, working on, etc.).
+
+- remove the `./js/pinned_projects_backup.js` file.
+
 ## CSS/Styling
 
 - Modify files to address the todo items in the `./jamiebort.github.io/DesignChanges/DesignChanges.md` file.
