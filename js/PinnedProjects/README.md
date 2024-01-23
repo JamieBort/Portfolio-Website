@@ -33,16 +33,8 @@ This directory houses the objects that are created from this GraphQL object:
 }
 ```
 
-It was used by navigating to https://docs.github.com/en/graphql/overview/explorer and making an API call with it. The results can be found in
+It was used by navigating to https://docs.github.com/en/graphql/overview/explorer and making an API call with it.
 
-`./js/PinnedProjects/PinnedProjects_v1.js`
-
-and
-
-`./js/PinnedProjects/PinnedProjects_v2.js`.
+The saved results can be found in the files with the format `pinnedProjects_vXX.json`.
 
 These files will be used until I have a working GraphQL api call.
-
-`./js/PinnedProjects/PinnedProjects_v1.js` is the first version.
-
-`./js/PinnedProjects/PinnedProjects_v2.js` is a more current version. It was created because I updated info in one of the repos.

@@ -2,7 +2,6 @@
 
 // Content to the const pinnedProjects is obtained from .js/PinnedProjects
 const pinnedProjects = {
-  status: ["Ongoing", "Ongoing", "Ongoing", "In progress", "In progress"],
   data: {
     user: {
       pinnedItems: {
@@ -91,7 +90,8 @@ const pinnedProjects = {
           {
             node: {
               id: "MDEwOlJlcG9zaXRvcnk5NjcwOTAwNg==",
-              name: "jamiebort.com", // TODO: make this a permanent change for each version of pinned projects.
+              name: "jamiebort.com",
+              // name: "jamiebort.github.io",  // TODO: make this a permanent change for each version of pinned projects.
               url: "https://github.com/JamieBort/jamiebort.github.io",
               stargazerCount: 0,
               description: "My Portfolio Website. This is where I share a bit about myself, showcase what I've been working on, host my blog, and more.",
@@ -125,7 +125,9 @@ const pinnedProjects = {
                   },
                 ],
               },
-              homepageUrl: "https://jamiebort.com",
+              //  TODO: figure out why I can't use jamiebort.com nor https://jamiebort.com nor https://www.jamiebort.com here.
+              homepageUrl: "https://jamiebort.github.io",
+              // homepageUrl: "https://jamiebort.com",
               forkCount: 0,
               status: "Ongoing",
             },
