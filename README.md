@@ -38,9 +38,13 @@ Lastly, I will continue to add content to the `Resources` and `Fun Things` pages
 	|
 	+-- dev - The development branch
 		|
+		+-- administrative - For cleaning up the files and reorganizing the file structure.
+		|
 		+-- accessibility - For all accessibility implementation.
 		|
 		+-- content - For modifying content.
+		|	|
+		|	+-- content_projects - For adjusting number of projects displayed and adding their status (completed, ongoing, working on, etc.).
 		|
 		+-- Revamp2023 - The branch created to update the website in 2023.
 			|
@@ -65,8 +69,6 @@ Lastly, I will continue to add content to the `Resources` and `Fun Things` pages
 			|	+-- api_github - For implementing api calls to GitHub.
 			|
 			+-- script - For all script related logic.
-			|	|
-			|	+-- script_other-feature-branches -
 ```
 
 ### Directories and Files
