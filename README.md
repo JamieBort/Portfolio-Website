@@ -75,15 +75,19 @@ Lastly, I will continue to add content to the `Resources` and `Fun Things` pages
 
 #### Directories
 
-- .vscode/ - See the [Workspace settings](https://code.visualstudio.com/docs/getstarted/settings#:~:text=Note%3A%20A%20VS%20Code%20%22workspace,feature%20called%20Multi%2Droot%20workspaces) in the VS Code documentation.
+- administrative/
 
-- AccessibilityIssues/ - Contains accessibility issues raised by other people. And accessibility issues/questions that I need answered.
+  - Files for organizational purposes.
+
+  - Notes on how to change/improve the site.
+
+  - All documentation not needed to be seen.
+
+- .vscode/ - See the [Workspace settings](https://code.visualstudio.com/docs/getstarted/settings#:~:text=Note%3A%20A%20VS%20Code%20%22workspace,feature%20called%20Multi%2Droot%20workspaces) in the VS Code documentation.
 
 - assets/ - The directory for the static resources.
 
 - css/ - Contains all CSS files.
-
-- DesignChanges/ - A directory for the list of things that need to change with the website.
 
 - html/ - With the exception of `./index.html`, this directory contains all of the html files. And it contains only html files.
 
@@ -93,10 +97,6 @@ Lastly, I will continue to add content to the `Resources` and `Fun Things` pages
 
 - .gitignore - Specifies intentionally untracked files. See https://git-scm.com/docs/gitignore
 
-- FutureFeatures.md - Future features section of the repo. Here is listed the things I plan on adding to the repo.
-
 - index.html - The landing page. This links to `./html/index.html`.
 
 - README.md - This readme file.
-
-- Revamp2023.md - This file is for keeping track of the status and the tasks that need to be completed while I rebuild my portfolio website.
