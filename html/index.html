@@ -1,5 +1,3 @@
-<!-- index containing functionality to toggle between English Version and Spanish version of the website. -->
-
 <!DOCTYPE html>
 <html id="html" lang="en">
   <head>
@@ -20,22 +18,24 @@
   <body>
     <navigation-element></navigation-element>
 
-    <div id="content">
+    <main id="content">
       <h1 id="title">Software Engineer</h1>
 
-      <section id="bio">
+      <section id="bio" aria-label="Bio section">
         <h2>A little bit about myself</h2>
         <p class="section_p">
-          I write code and teach at <a id="textLink" target="_blank" href="https://codethedream.org/">Code the Dream</a>, a software boot camp for underrepresented people.
+          I write code and teach at <a id="codeTheDream_a" target="_blank" href="https://codethedream.org/">Code the Dream</a>, a software boot camp for underrepresented people.
         </p>
-        <p class="section_p">Below you will find some of my <button class="section_button" onclick="jumpToSection('projects')">Projects</button>.</p>
+        <p class="section_p">Below you will find some of my <button class="section_button" onclick="jumpToSection('projects')" aria-label="Projects">Projects</button>.</p>
         <p class="section_p">When I am not coding I am working on my next presentation or mentoring; both of which push me to learn and grow.</p>
-        <p class="section_p">I invite you to <button class="section_button" onclick="jumpToSection('connectWithMe')">Connect with Me</button> on social media below.</p>
+        <p class="section_p">
+          I invite you to <button class="section_button" onclick="jumpToSection('connectWithMe')" aria-label="Connect with Me">Connect with Me</button> on social media below.
+        </p>
       </section>
 
       <hr />
 
-      <section id="projects">
+      <section id="projects" aria-label="Projects section">
         <!-- TODO: Add three Projects buttons to toggle on and off these three features: -->
         <!-- "Completed" vs "In Progress" toggle button plus a third button that enables both.-->
         <!-- "My Own Projects" vs "Projects I'm Contributing On" toggle button plus a third button that enables both.-->
@@ -47,7 +47,7 @@
 
       <hr hidden />
 
-      <section hidden id="blog">
+      <section hidden id="blog" aria-label="Blog section">
         <h2>Blog</h2>
         <p class="section_p">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, voluptatibus nobis repudiandae nam, facilis officia quidem iste quis esse soluta aliquid laborum, quam in
@@ -61,18 +61,42 @@
 
       <hr />
 
-      <section id="connectWithMe">
+      <section id="connectWithMe" aria-label="Connect With Me section">
         <h2>Connect With Me</h2>
         <div id="connect_container">
-          <a class="section_a fontAwesome fa-brands fa-linkedin" style="color: #02010e" href="https://www.linkedin.com/in/jamie-bort/" target="_blank"></a>
-          <a class="section_a fontAwesome fa-brands fa-twitter" style="color: #02010e" href="https://twitter.com/jamiebort" target="_blank"></a>
-          <a class="section_a fontAwesome fa-brands fa-stack-overflow" style="color: #02010e" href="https://stackoverflow.com/users/8210460/jamie-bort" target="_blank"></a>
-          <a class="section_a fontAwesome fa-brands fa-square-github" style="color: #02010e" href="https://github.com/JamieBort" target="_blank"></a>
+          <a
+            class="section_a fontAwesome fa-brands fa-linkedin"
+            style="color: #02010e"
+            target="_blank"
+            href="https://www.linkedin.com/in/jamie-bort/"
+            aria-label="Jamie Bort LinkedIn account"
+          ></a>
+          <a
+            class="section_a fontAwesome fa-brands fa-twitter"
+            style="color: #02010e"
+            target="_blank"
+            href="https://twitter.com/jamiebort"
+            aria-label="Jamie Bort Twitter account"
+          ></a>
+          <a
+            class="section_a fontAwesome fa-brands fa-stack-overflow"
+            style="color: #02010e"
+            target="_blank"
+            href="https://stackoverflow.com/users/8210460/jamie-bort"
+            aria-label="Jamie Bort Stack Overflow account"
+          ></a>
+          <a
+            class="section_a fontAwesome fa-brands fa-square-github"
+            style="color: #02010e"
+            target="_blank"
+            href="https://github.com/JamieBort"
+            aria-label="Jamie Bort GitHub account"
+          ></a>
           <!-- TODO: Add anchor for the contact form. -->
           <!-- TODO: Add anchor for the coding challenge website. -->
         </div>
       </section>
-    </div>
+    </main>
     <footer>&copy<span id="copyright"></span></footer>
     <script src="../js/navigation.js"></script>
     <script type="text/javascript" src="./../js/main.js"></script>

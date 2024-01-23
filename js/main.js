@@ -5,7 +5,6 @@
 // **************************************************
 
 const leftHeaderButton = () => {
-  console.log("top fired");
   // window.location = "#top";
   window.location = "#title";
   closeNavMenu();
@@ -19,17 +18,17 @@ const jumpToSection = (param) => {
 };
 
 const toggleNavMenu = () => {
-  console.log("fired");
   const menu = document.getElementById("menu");
   menu.style.display === "none" ? (menu.style.display = "block") : (menu.style.display = "none");
+
+  // *** For accessability ***
+  const mobileNavButton = document.getElementsByClassName("mobileHeaderButtons")[2];
+  mobileNavButton["ariaPressed"] == "false" ? mobileNavButton.setAttribute("aria-pressed", "true") : mobileNavButton.setAttribute("aria-pressed", "false");
 };
 
 const closeNavMenu = () => (document.getElementById("menu").style.display = "none");
 
-// Add event listener to page.
-// why false? --> "A boolean value indicating that the listener should be invoked at most once after being added.
-// If true, the listener would be automatically removed when invoked. If not specified, defaults to false."
-document.getElementById("content").addEventListener("click", closeNavMenu, false);
+document.getElementsByTagName("main")[0].addEventListener("click", closeNavMenu, false);
 
 // **************************************************
 //                  For the navigation
@@ -64,18 +63,18 @@ let language = document.getElementsByTagName("html")[0]["lang"] || languageConte
 var languageValue = language == "en" ? 0 : 1;
 
 // The toggle function to toggle between languages.
-const toggle = () => {
+const toggleLanguage = () => {
   // DEFINE VARIABLES
   // Variables for the collecting the h2 and p tags from the languageContent object.
   const h2Array = [];
   const pArray = [];
 
   // Variables for the languageContent object.
-  const codeTheDreamAnchor = `<a id="textLink" target="_blank" href="https://codethedream.org/">Code the Dream</a>`;
-  const projectsButtonEnglish = `<button class="section_button" onclick="jumpToSection('projects')">Projects</button>`;
-  const projectsButtonSpanish = `<button class="section_button" onclick="jumpToSection('projects')">Proyectos</button>`;
-  const connectWithMeButtonEnglish = `<button class="section_button" onclick="jumpToSection('connectWithMe')">Connect with Me</button>`;
-  const connectWithMeButtonSpanish = `<button class="section_button" onclick="jumpToSection('connectWithMe')">Conectarte Conmigo</button>`;
+  const codeTheDream_a = `<a id="codeTheDream_a" target="_blank" href="https://codethedream.org/">Code the Dream</a>`;
+  const projectsButtonEnglish = `<button class="section_button" onclick="jumpToSection('projects')" aria-label="Projects">Projects</button>`;
+  const projectsButtonSpanish = `<button class="section_button" onclick="jumpToSection('projects')" aria-label="Proyectos">Proyectos</button>`;
+  const connectWithMeButtonEnglish = `<button class="section_button" onclick="jumpToSection('connectWithMe')" aria-label="Connect with Me">Connect with Me</button>`;
+  const connectWithMeButtonSpanish = `<button class="section_button" onclick="jumpToSection('connectWithMe')" aria-label="Conectarte Conmigo">Conectarte Conmigo</button>`;
 
   const languageContent = {
     html: ["en", "es"],
@@ -98,11 +97,11 @@ const toggle = () => {
           // h2: {0: function () {return languageContent.body.header.bio[0];},1: function () {return languageContent.body.header.bio[1];},},
           h2: ["A little bit about myself", "Un poco sobre mi"],
           // p1: [
-          //   `I write code and teach at ${codeTheDreamAnchor}, a software boot camp for underrepresented people.`,`Escribo código y enseno en ${codeTheDreamAnchor}, un campo de entrenamiento de software para personas subrepresentadas.`,],
+          //   `I write code and teach at ${codeTheDream_a}, a software boot camp for underrepresented people.`,`Escribo código y enseno en ${codeTheDream_a}, un campo de entrenamiento de software para personas subrepresentadas.`,],
           // Danni's translation.
           p1: [
-            `I write code and teach at ${codeTheDreamAnchor}, a software boot camp for underrepresented people.`,
-            `Escribo código y enseno en ${codeTheDreamAnchor}, un campo de entrenamiento de software para personas con escasa representación.`,
+            `I write code and teach at ${codeTheDream_a}, a software boot camp for underrepresented people.`,
+            `Escribo código y enseno en ${codeTheDream_a}, un campo de entrenamiento de software para personas con escasa representación.`,
           ],
           // p2: [`Below you will find some of my ${projectsButtonEnglish}.`, `En la parte de abajo encontrarás algunos de mis ${projectsButtonSpanish}.`],
           // Danni's translation.
@@ -166,20 +165,29 @@ const toggle = () => {
   // *** html tag ***
   document.getElementById("html").setAttribute("lang", languageContent.html[languageValue]);
 
-  // *** navigation ***
-  document.getElementsByClassName("mobileHeaderButtons")[0].innerHTML = languageContent.body.header.idioma[languageValue];
+  // *** header ***
+
+  // *** mobile header ***
+  const mobileLanguageButton = document.getElementsByClassName("mobileHeaderButtons")[0];
+  mobileLanguageButton.innerHTML = languageContent.body.header.idioma[languageValue];
+
+  // *** For accessability ***
+  mobileLanguageButton["ariaPressed"] == "false" ? mobileLanguageButton.setAttribute("aria-pressed", "true") : mobileLanguageButton.setAttribute("aria-pressed", "false");
+
   for (let index = 0; index < document.getElementsByClassName("menu_button").length; index++) {
-    // console.log(document.getElementsByClassName("menu_button")[index]);
-    // console.log(Object.keys(languageContent.body.header)[index]);
     document.getElementsByClassName("menu_button")[index].innerHTML = languageContent.body.header[Object.keys(languageContent.body.header)[index + 1]][languageValue];
   }
 
+  // *** desktop header ***
+  const desktopLanguageButton = document.getElementsByClassName("desktopHeaderButtons")[0];
+  desktopLanguageButton.innerHTML = languageContent.body.header.idioma[languageValue];
+
+  // *** For accessability ***
+  desktopLanguageButton["ariaPressed"] == "false" ? desktopLanguageButton.setAttribute("aria-pressed", "true") : desktopLanguageButton.setAttribute("aria-pressed", "false");
+
   for (let index = 1; index < document.getElementsByClassName("desktopHeaderButtons").length - 1; index++) {
-    // console.log(document.getElementsByClassName("desktopHeaderButtons")[index]);
-    // console.log(Object.keys(languageContent.body.header)[index]);
     document.getElementsByClassName("desktopHeaderButtons")[index + 1].innerHTML = languageContent.body.header[Object.keys(languageContent.body.header)[index]][languageValue];
   }
-  document.getElementsByClassName("desktopHeaderButtons")[0].innerHTML = languageContent.body.header.idioma[languageValue];
 
   // *** title tag ***
   document.getElementById("title").innerHTML = languageContent.body.content.top.h1[languageValue];
@@ -189,29 +197,23 @@ const toggle = () => {
 
   // Iterating through the "content" object:
   for (const key1 in content) {
-    // console.log("key1:", key1);
-
     // Iterating through the properties of the "content" object:
     for (const key2 in content[key1]) {
-      // console.log("key2:", key2);
-
       // Generating the h2 array
       if (key2 === "h2" && key1 != "top") {
-        //   console.log("content[key1][key2]/h2:", content[key1][key2]);
         h2Array.push(content[key1][key2]);
       }
 
       // Generating the paragraph array
       if (key2 != "h2" && key2 != "h1") {
-        // console.log("content[key1][key2]/paragraphs:", content[key1][key2]);
         pArray.push(content[key1][key2]);
       }
     }
   }
   // console.log("h2Array:", h2Array);
-  // // // console.log("h2Array[0]:", h2Array[0]);
-  // // console.log("h2Array[1]['english']():", h2Array[1]["english"]());
-  // // console.log("h2Array[1]['spanish']():", h2Array[1]["spanish"]());
+  // console.log("h2Array[0]:", h2Array[0]);
+  // console.log("h2Array[1]['english']():", h2Array[1]["english"]());
+  // console.log("h2Array[1]['spanish']():", h2Array[1]["spanish"]());
   // console.log("pArray:", pArray);
 
   // *** h2 tag ***
