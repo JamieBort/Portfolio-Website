@@ -5,7 +5,6 @@
 // **************************************************
 
 const leftHeaderButton = () => {
-  // console.log("leftHeaderButton");
   // window.location = "#top";
   window.location = "#title";
   closeNavMenu();
@@ -19,14 +18,12 @@ const jumpToSection = (param) => {
 };
 
 const toggleNavMenu = () => {
-  // console.log("toggleNavMenu");
   const menu = document.getElementById("menu");
   menu.style.display === "none" ? (menu.style.display = "block") : (menu.style.display = "none");
 
   // *** For accessability ***
   const mobileNavButton = document.getElementsByClassName("mobileHeaderButtons")[2];
   mobileNavButton["ariaPressed"] == "false" ? mobileNavButton.setAttribute("aria-pressed", "true") : mobileNavButton.setAttribute("aria-pressed", "false");
-  // console.log("mobileNavButton:", mobileNavButton);
 };
 
 const closeNavMenu = () => (document.getElementById("menu").style.display = "none");
@@ -178,8 +175,6 @@ const toggleLanguage = () => {
   mobileLanguageButton["ariaPressed"] == "false" ? mobileLanguageButton.setAttribute("aria-pressed", "true") : mobileLanguageButton.setAttribute("aria-pressed", "false");
 
   for (let index = 0; index < document.getElementsByClassName("menu_button").length; index++) {
-    // console.log(document.getElementsByClassName("menu_button")[index]);
-    // console.log(Object.keys(languageContent.body.header)[index]);
     document.getElementsByClassName("menu_button")[index].innerHTML = languageContent.body.header[Object.keys(languageContent.body.header)[index + 1]][languageValue];
   }
 
@@ -191,8 +186,6 @@ const toggleLanguage = () => {
   desktopLanguageButton["ariaPressed"] == "false" ? desktopLanguageButton.setAttribute("aria-pressed", "true") : desktopLanguageButton.setAttribute("aria-pressed", "false");
 
   for (let index = 1; index < document.getElementsByClassName("desktopHeaderButtons").length - 1; index++) {
-    // console.log(document.getElementsByClassName("desktopHeaderButtons")[index]);
-    // console.log(Object.keys(languageContent.body.header)[index]);
     document.getElementsByClassName("desktopHeaderButtons")[index + 1].innerHTML = languageContent.body.header[Object.keys(languageContent.body.header)[index]][languageValue];
   }
 
@@ -204,29 +197,23 @@ const toggleLanguage = () => {
 
   // Iterating through the "content" object:
   for (const key1 in content) {
-    // console.log("key1:", key1);
-
     // Iterating through the properties of the "content" object:
     for (const key2 in content[key1]) {
-      // console.log("key2:", key2);
-
       // Generating the h2 array
       if (key2 === "h2" && key1 != "top") {
-        //   console.log("content[key1][key2]/h2:", content[key1][key2]);
         h2Array.push(content[key1][key2]);
       }
 
       // Generating the paragraph array
       if (key2 != "h2" && key2 != "h1") {
-        // console.log("content[key1][key2]/paragraphs:", content[key1][key2]);
         pArray.push(content[key1][key2]);
       }
     }
   }
   // console.log("h2Array:", h2Array);
-  // // // console.log("h2Array[0]:", h2Array[0]);
-  // // console.log("h2Array[1]['english']():", h2Array[1]["english"]());
-  // // console.log("h2Array[1]['spanish']():", h2Array[1]["spanish"]());
+  // console.log("h2Array[0]:", h2Array[0]);
+  // console.log("h2Array[1]['english']():", h2Array[1]["english"]());
+  // console.log("h2Array[1]['spanish']():", h2Array[1]["spanish"]());
   // console.log("pArray:", pArray);
 
   // *** h2 tag ***

@@ -40,9 +40,17 @@ Lastly, I will continue to add content to the `Resources` and `Fun Things` pages
 		|
 		+-- Revamp2023 - The branch created to update the website in 2023.
 			|
-			+-- content - For adding content.
+			+-- appearance - For modifying the appearance.
 			|	|
-			|	+-- content_other-feature-branches -
+			|	+-- breakpoint - For implementing breakpoints in the CSS file.
+			|		|
+			|		+-- breakpoint_mobile - The branch doesn't exist (yet). For implementing a mobile HORIZONTAL breakpoint in the CSS file. The current default styles are for mobile in a vertical orientation.
+			|		|
+			|		+-- breakpoint_tablet - The branch doesn't exist (yet). For implementing a tablet breakpoint in the CSS file. *** Need to consider horizontal and vertical orientations. ***
+			|		|
+			|		+-- breakpoint_desktop - The branch doesn't exist (yet). For implementing desktop breakpoint in the CSS file.
+			|
+			+-- content - For modifying content.
 			|
 			+-- host - For all things host related.
 			|	|
@@ -58,21 +66,7 @@ Lastly, I will continue to add content to the `Resources` and `Fun Things` pages
 			|	|
 			|	+-- script_other-feature-branches -
 			|
-			+-- breakpoint - For implementing breakpoints in the CSS file.
-			|	|
-			|	+-- breakpoint_mobile - The branch doesn't exist (yet). For implementing a mobile HORIZONTAL breakpoint in the CSS file. The current default styles are for mobile in a vertical orientation.
-			|	|
-			|	+-- breakpoint_tablet - The branch doesn't exist (yet). For implementing a tablet breakpoint in the CSS file. *** Need to consider horizontal and vertical orientations. ***
-			|	|
-			|	+-- breakpoint_desktop - The branch doesn't exist (yet). For implementing desktop breakpoint in the CSS file.
-			|
 			+-- accessibility - For all accessibility implementation.
-				|
-				+-- accessibility_v3 - For reviewing and possibly changing
-							- Appropriate text size.
-							- Button text in terms of assistive technology.
-							- Color contrast.
-							- Non-color visual cues.
 ```
 
 ### Directories and Files

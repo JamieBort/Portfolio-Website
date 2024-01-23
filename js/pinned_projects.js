@@ -236,10 +236,6 @@ const returnValue = pinnedProjects.data.user.pinnedItems.edges.map((value) => {
 
 // Creating each project card from the returnValue array above.
 returnValue.forEach((project) => {
-  // console.log("project.description:",project.description);
-  // console.log("project.url:",project.url);
-  // console.log("project.languages:",project.languages);
-
   const card_container = document.getElementById("card_container");
 
   const div1_tag = document.createElement("div");
@@ -269,21 +265,15 @@ returnValue.forEach((project) => {
 
   // Listing the languages each repo uses.
   project.languages.forEach((language) => {
-    // console.log("language:",language);
-
     // TODO: investigate this more.
     // According to https://fontawesome.com/docs/web/add-icons/how-to, "Accessibility-minded folks may want to opt for the <span> element instead of <i>.".
     // Also, I attempted to use <img> instead of <span> but it didn't work.
     // NOTE: <svg>, <span>, and <i> work.
 
-    // const span_tag = document.createElement("span"); // TODO: delete this line.
     const i_tag = document.createElement("i");
 
     switch (language) {
       case "JavaScript":
-        // span_tag.setAttribute("class", "fab fa-js-square"); // TODO: delete this line.
-        // span_tag.setAttribute("aria-label", "JavaScript icon"); // TODO: delete this line.
-        // div2_tag.appendChild(span_tag); // TODO: delete this line.
         i_tag.setAttribute("class", "fab fa-js-square");
         // TODO: determine whether to add "aria-label" or "alt" or both below.
         i_tag.setAttribute("aria-label", "JavaScript icon");
@@ -291,9 +281,6 @@ returnValue.forEach((project) => {
         div2_tag.appendChild(i_tag);
         break;
       case "Java":
-        // span_tag.setAttribute("class", "fab fa-java"); // TODO: delete this line.
-        // span_tag.setAttribute("aria-label", "Java icon"); // TODO: delete this line.
-        // div2_tag.appendChild(span_tag); // TODO: delete this line.
         i_tag.setAttribute("class", "fab fa-java");
         // TODO: determine whether to add "aria-label" or "alt" or both below.
         i_tag.setAttribute("aria-label", "Java icon");
@@ -301,9 +288,6 @@ returnValue.forEach((project) => {
         div2_tag.appendChild(i_tag);
         break;
       case "HTML":
-        // span_tag.setAttribute("class", "fab fa-html5"); // TODO: delete this line.
-        // span_tag.setAttribute("aria-label", "HTML icon"); // TODO: delete this line.
-        // div2_tag.appendChild(span_tag); // TODO: delete this line.
         i_tag.setAttribute("class", "fab fa-html5");
         // TODO: determine whether to add "aria-label" or "alt" or both below.
         i_tag.setAttribute("aria-label", "HTML icon");
@@ -311,27 +295,14 @@ returnValue.forEach((project) => {
         div2_tag.appendChild(i_tag);
         break;
       case "CSS":
-        // span_tag.setAttribute("class", "fab fa-css3-alt"); // TODO: delete this line.
-        // span_tag.setAttribute("aria-label", "CSS icon"); // TODO: delete this line.
-        // div2_tag.appendChild(span_tag); // TODO: delete this line.
         i_tag.setAttribute("class", "fab fa-css3-alt");
         // TODO: determine whether to add "aria-label" or "alt" or both below.
         i_tag.setAttribute("aria-label", "CSS icon");
         i_tag.setAttribute("alt", "A CSS icon");
         div2_tag.appendChild(i_tag);
         break;
-      // case "NODE":
-      //   // console.log("language: NODE");
-      //   span1_tag.innerHTML = language;
-      //   div2_tag.appendChild(span1_tag);
-      //   break;
-      // case "Mustache":
-      //   // console.log("language: Mustache");
-      //   span1_tag.innerHTML = language;
-      //   div2_tag.appendChild(span1_tag);
-      //   break;
       default:
-        // console.log("other language:", language);
+        console.log("other language:", language);
         // span_tag.innerHTML = language;
         // div2_tag.appendChild(span_tag);
         break;
