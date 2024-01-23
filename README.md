@@ -43,8 +43,6 @@ Lastly, I will continue to add content to the `Resources` and `Fun Things` pages
 		+-- accessibility - For all accessibility implementation.
 		|
 		+-- content - For modifying content.
-		|	|
-		|	+-- content_projects - For adjusting number of projects displayed and adding their status (completed, ongoing, working on, etc.).
 		|
 		+-- script - For all script related logic.
 		|
