@@ -38,6 +38,10 @@ Lastly, I will continue to add content to the `Resources` and `Fun Things` pages
 	|
 	+-- dev - The development branch
 		|
+		+-- accessibility - For all accessibility implementation.
+		|
+		+-- content - For modifying content.
+		|
 		+-- Revamp2023 - The branch created to update the website in 2023.
 			|
 			+-- appearance - For modifying the appearance.
@@ -49,8 +53,6 @@ Lastly, I will continue to add content to the `Resources` and `Fun Things` pages
 			|		+-- breakpoint_tablet - The branch doesn't exist (yet). For implementing a tablet breakpoint in the CSS file. *** Need to consider horizontal and vertical orientations. ***
 			|		|
 			|		+-- breakpoint_desktop - The branch doesn't exist (yet). For implementing desktop breakpoint in the CSS file.
-			|
-			+-- content - For modifying content.
 			|
 			+-- host - For all things host related.
 			|	|
@@ -65,8 +67,6 @@ Lastly, I will continue to add content to the `Resources` and `Fun Things` pages
 			+-- script - For all script related logic.
 			|	|
 			|	+-- script_other-feature-branches -
-			|
-			+-- accessibility - For all accessibility implementation.
 ```
 
 ### Directories and Files
