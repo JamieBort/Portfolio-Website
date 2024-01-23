@@ -83,20 +83,35 @@ Lastly, I will continue to add content to the `Resources` and `Fun Things` pages
 
   - All documentation not needed to be seen.
 
-- .vscode/ - See the [Workspace settings](https://code.visualstudio.com/docs/getstarted/settings#:~:text=Note%3A%20A%20VS%20Code%20%22workspace,feature%20called%20Multi%2Droot%20workspaces) in the VS Code documentation.
+- .vscode/
 
-- assets/ - The directory for the static resources.
+  - See the [Workspace settings](https://code.visualstudio.com/docs/getstarted/settings#:~:text=Note%3A%20A%20VS%20Code%20%22workspace,feature%20called%20Multi%2Droot%20workspaces) in the VS Code documentation.
 
-- css/ - Contains all CSS files.
+- assets/
 
-- html/ - With the exception of `./index.html`, this directory contains all of the html files. And it contains only html files.
+  - The directory for the static resources.
 
-- js/ - Contains all JavaScript files.
+- css/
+
+  - Contains all CSS files.
+
+- html/
+
+  - With the exception of `./index.html`, this directory contains all of the html files. And it contains only html files.
+
+- js/
+  - Contains all JavaScript files.
 
 #### Files
 
-- .gitignore - Specifies intentionally untracked files. See https://git-scm.com/docs/gitignore
+- .gitignore
 
-- index.html - The landing page. This links to `./html/index.html`.
+  - Specifies intentionally untracked files. See https://git-scm.com/docs/gitignore
 
-- README.md - This readme file.
+- index.html
+
+  - The landing page. This links to `./html/index.html`.
+
+- README.md
+
+  - This readme file.
