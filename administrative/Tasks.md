@@ -4,6 +4,28 @@ To-Do items that need to be addressed.
 
 ## Administrative
 
+- Clean up the ./README.md file.
+
+- Remove the following files and directories from the master branch
+
+  - AccessibilityIssues/
+
+  - DesignChanges/
+
+  - FutureFeatures.md
+
+  - Revamp2023.md
+
+  - SpanishVersion.md
+
+  - html/copy_index.html
+
+  - js/PinnedProjects/data.json
+
+  - js/pinned_projects_backup.js
+
+  - old/
+
 ## API
 
 - Consolidate and organize ALL Trello cards with
