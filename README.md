@@ -1,121 +1,48 @@
 # Welcome to the repo for my [Portfolio Website](https://jamiebort.github.io/)
 
-### Notable Features
+## Here you will be able to
 
-Notable features of this site (that I have created/written) using
+- read a bit about me,
+- see a few projects that I am highlighting,
+- and lastly, find out how to contact me and follow me on social media.
 
-- vanilla JavaScript:
-- and using these libraries:
-- contact me form
-- web components
+## Notable Features
 
-### Aspirations
+Notable features of this site are:
 
-This site will have a blog, a resources page, and a fun stuff page. All of which will have content that can be filtered.
-By a text field and by drop-down menus. One for title. One for date. One for keep subjects (css, debugging, back end, etc.)
+- It is written in vanilla JavaScript.
+- I wrote web components for navigation.
+- I am continually trying to make this (and all my projects) more accessible by following Web Content Accessibility Guidelines (WCAG).
+- It is fully responsive.
 
-This README file will serve as the documentation for future employers. It will be linked to from my portfolio website.
+## Aspirations
 
-I'll fill this out more as the website progresses.
+This site
 
-### Business Requirements
+- will link to my blog,
+- and have
+  - a `Contact Me` form,
+  - a `Resources` page
+  - and a page of `Fun Things` to explore
 
-The site shall:
+Additionally, on each relevant page you will be able to filter the content by a text field or by selecting key phrases (css, debugging, back end, etc.) and attributes (title, date, etc.).
 
-- share information about me.
+I will continue to make changes to this site to make it more accessible.
 
-  - on the website itself
-    - display my involvement with Devs@rtp and other similar organizations,
-    - provide the user with a way to easily find, look at, and download my resume
-    - display to the user all of the projects that I wish them to see.
-    - show my interests as they pertain to my career and technical abilities.
-    - show off my skills to the user without them having to navigate to my projects.
-    - display in a graph, chart, or other visual representation my level of skills for each technology.
-  - via links to other sites that I use such as
-    - social media and
-    - github
+Lastly, I will continue to add content to the `Resources` and `Fun Things` pages as well as my blog.
 
-- have way(s) to contact me
-  - bare minimum by email
+## Contribute
 
-### Functional Requirements
+If you see anything that needs to be corrected, please create a pull request! Thank you.
 
-- allow the user to send me a message via a form that goes into my email inbox, (and maybe texts me?)
-- follow accessibility standards.
-- be responsive (works on screens of varying sizes.)
+## License
 
-### Branch Structure
+Per [choosealicense.com](https://choosealicense.com/):
 
-    +-- master - The live branch.
-    	|
-    	+-- dev - The development branch
-    		|
-    		+-- Revamp2023 - The branch created to update the website in 2023.
-    			|
-    			+-- content - For adding content.
-    			|	|
-    			|	+-- content_20230328 - Content updated as of 20230328.
-    			|		|
-    			|		+-- content_20230328_Spanish_Version - 	Add Spanish translation of website.
-    										Also, use this branch to implement a toggle button to switch between languages.
-    			|	|
-    			|	+-- content_README - 	Change content of the README.md file.
-    							Update the README.md file.
-    							So that it is up to date, fun, interesting, etc.
-    			|
-    			+-- host - For all things host related.
-    			|	|
-    			|	+-- host_routed_react_gh-pages - To determine if we can run a react app in gh-pages. If so, we'll make a GraphQL call.
-    			|		|
-    			|		+-- host_routed_react_gh-pages_with_graphql_api_call - To see if I can make API calls using the a React app while hosted by gh-pages. **Tabled for now**
-    			|
-    			+-- api - For all api related logic.
-    			|	|
-    			|	+-- api_github - For implementing api calls to GitHub.
-    			|
-    			+-- script - For all script related logic.
-    			|	|
-    			|	+-- script_header - 	NOT AN ISSUE ANYMORE.
-    							(For fixing the header. It disappears when viewing the site on a mobile device.)
-    			|
-    			+-- breakpoint - For implementing breakpoints in the CSS file.
-    			|	|
-    			|	+-- breakpoint_tablet - For implementing a tablet breakpoint in the CSS file.
-    			|	|
-    			|	+-- breakpoint_desktop - For implementing desktop breakpoint in the CSS file.
-    			|
-    			+-- accessibility - For all accessibility implementation.
-    			|
-    			+-- other feature branches
+> The [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/) ... lets people do almost anything they want with your project, except distributing closed source versions.
 
-### Directories and Files
+You can find the full text in this [./COPYING.txt](https://github.com/JamieBort/jamiebort.github.io/blob/master/COPYING.txt) file.
 
-#### Directories
+(It can be found in the [dev](https://github.com/JamieBort/jamiebort.github.io/blob/dev/COPYING.txt) branch or [administrative_cleanup](https://github.com/JamieBort/jamiebort.github.io/blob/administrative_cleanup/COPYING.txt) branch until it is merged into Master)
 
-- .vscode/ - See the [Workspace settings](https://code.visualstudio.com/docs/getstarted/settings#:~:text=Note%3A%20A%20VS%20Code%20%22workspace,feature%20called%20Multi%2Droot%20workspaces) in the VS Code documentation.
-
-- assets/ - The directory for the static resources.
-
-- css/ - Contains all CSS files.
-
-- DesignChanges/ - A directory for the list of things that need to change with the website.
-
-- html/ - With the exception of `./index.html`, this directory contains all of the html files. And it contains only html files.
-
-- js/ - Contains all JavaScript files.
-
-- old/ - Contains files and directories that are no longer used. But are not ready to be deleted.
-
-#### Files
-
-- .gitignore - Specifies intentionally untracked files. See https://git-scm.com/docs/gitignore
-
-- FutureFeatures.md - Future features section of the repo. Here is listed the things I plan on adding to the repo.
-
-- index.html - The landing page. This links to `./html/index.html`.
-
-- README.md - This readme file.
-
-- Revamp2023.md - This file is for keeping track of the status and the tasks that need to be completed while I rebuild my portfolio website.
-
-- SpanishVersion.md - Thoughts and notes about implementing a Spanish translation of my website using a single toggle button.
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
