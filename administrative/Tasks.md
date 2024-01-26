@@ -10,21 +10,21 @@ To-Do items that need to be addressed.
 
 - Remove the following files and directories from the master branch
 
-  - AccessibilityIssues/
+  - AccessibilityIssues/ - copied into dev branch.
 
-  - DesignChanges/
+  - DesignChanges/ - copied into dev branch.
 
-  - FutureFeatures.md - copied into dev branch.
+  - FutureFeatures.md - copied into dev branch. Deleted.
 
-  - Revamp2023.md - copied into dev branch.
+  - Revamp2023.md - copied into dev branch. Deleted.
 
-  - SpanishVersion.md - copied into dev branch.
+  - SpanishVersion.md - copied into dev branch. Deleted.
 
-  - html/copy_index.html - copied into dev branch.
+  - html/copy_index.html - copied into dev branch. Deleted.
 
-  - js/PinnedProjects/data.json
+  - js/PinnedProjects/data.json - copied into dev branch.
 
-  - js/pinned_projects_backup.js
+  - js/pinned_projects_backup.js - copied into dev branch.
 
   - old/
 
