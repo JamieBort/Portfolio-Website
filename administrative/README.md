@@ -36,16 +36,8 @@ Here is listed the things I plan on adding to the repo.
 	+-- dev - The development branch
 		|
 		+-- administrative - For cleaning up the files and reorganizing the file structure.
-		|	|
-		|	+-- administrative_cleanup - To update the ./README.md and cleanup the files/file structure.
 		|
 		+-- accessibility - For all accessibility implementation.
-		|
-		+-- backend - For all back end implementation.
-		|
-		+-- content - For modifying content.
-		|
-		+-- script - For all script related logic.
 		|
 		+-- appearance - For modifying the appearance.
 		|	|
@@ -57,11 +49,19 @@ Here is listed the things I plan on adding to the repo.
 		|		|
 		|		+-- breakpoint_desktop - For implementing desktop breakpoint in the CSS file.
 		|
-		+-- host - For all things host related.
-		|
 		+-- api - For all api related logic.
 		|	|
 		|	+-- api_github - For implementing api calls to GitHub.
+		|
+		+-- backend - For all back end implementation.
+		|
+		+-- content - For modifying content.
+		|
+		+-- frontend - For all front end implementation.
+		|
+		+-- host - For all things host related.
+		|
+		+-- script - For all script related logic.
 		|
 		+-- Revamp2023 - The branch created to update the website in 2023.
 ```
