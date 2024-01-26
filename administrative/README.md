@@ -28,7 +28,7 @@ Here is listed the things I plan on adding to the repo.
   - One button:
     - "Pinned Repos" - toggles the pinned repos ON/OFF.
 
-### Branch Structure
+## Branch Structure
 
 ```
 +-- master - The live branch.
@@ -66,9 +66,9 @@ Here is listed the things I plan on adding to the repo.
 		+-- Revamp2023 - The branch created to update the website in 2023.
 ```
 
-### Directories and Files
+## Directories and Files
 
-#### Directories
+### Directories
 
 - ./administrative/accessibilityIssues/
 
@@ -106,7 +106,7 @@ Here is listed the things I plan on adding to the repo.
 
   - Contains all JavaScript files.
 
-#### Files
+### Files
 
 - ./administrative/FutureFeatures.md
 
