@@ -6,6 +6,8 @@ To-Do items that need to be addressed.
 
 - Clean up the ./README.md file.
 
+- Add a license.
+
 - Remove the following files and directories from the master branch
 
   - AccessibilityIssues/

@@ -72,13 +72,13 @@ Here is listed the things I plan on adding to the repo.
 
 #### Directories
 
-- ./administrative/AccessibilityIssues/
+- ./administrative/accessibilityIssues/
 
   - Contains accessibility issues raised by other people. And accessibility issues/questions that I need answered.
 
-- ./administrative/DesignChanges/
+- ./administrative/aestheticDesignChanges/
 
-  - A directory for the list of things that need to change with the website.
+  - A directory for the list of aesthetic things that need to change with the website.
 
 - ./administrative/
 
