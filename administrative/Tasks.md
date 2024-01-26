@@ -32,7 +32,7 @@ To-Do items that need to be addressed.
 
 - Check the following branches and remove them if they're not being used.
 
-  - appearance
+  - appearance - couldn't find it.
 
   - host
 
