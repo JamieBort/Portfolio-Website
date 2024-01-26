@@ -4,9 +4,9 @@ To-Do items that need to be addressed.
 
 ## Administrative
 
-- Clean up the ./README.md file.
+- ~~Clean up the ./README.md file.~~ **Done.**
 
-- Add a license.
+- ~~Add a license.~~ **Done.**
 
 - Remove the following files and directories from the master branch
 
@@ -27,6 +27,16 @@ To-Do items that need to be addressed.
   - js/pinned_projects_backup.js
 
   - old/
+
+- In the ./README.md file, remove the `(It can be found in the dev branch or administrative_cleanup branch until it is merged into Master)` sentence.
+
+- Check the following branches and remove them if they're not being used.
+
+  - appearance
+
+  - host
+
+  - api
 
 ## API
 
