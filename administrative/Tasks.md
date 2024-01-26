@@ -14,13 +14,13 @@ To-Do items that need to be addressed.
 
   - DesignChanges/
 
-  - FutureFeatures.md
+  - FutureFeatures.md - copied into dev branch.
 
-  - Revamp2023.md
+  - Revamp2023.md - copied into dev branch.
 
-  - SpanishVersion.md
+  - SpanishVersion.md - copied into dev branch.
 
-  - html/copy_index.html
+  - html/copy_index.html - copied into dev branch.
 
   - js/PinnedProjects/data.json
 

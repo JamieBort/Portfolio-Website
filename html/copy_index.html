@@ -1,0 +1,194 @@
+<!-- ./jamiebort.github.io/scratch/attempt01/index.html -->
+
+<!-- English Version of the index.html file -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JamieBort.com</title>
+    <!-- <link href="./styles.css" rel="stylesheet" /> -->
+    <link href="./../css/styles.css" rel="stylesheet" />
+
+    <!-- NOTE: IF the fonts or logos are not loading fast enough when the page is live use one or both of these. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="./../assets/fonts/FontAwesome/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet" />
+    <link href="./../assets/fonts/FontAwesome/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet" />
+    <link href="./../assets/fonts/FontAwesome/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- <header id="mobileHeader">
+      <div id="mobileHeaderDiv">
+        <button
+          id="headerButtonCenter"
+          class="mobileHeaderButtons"
+          onclick="leftHeaderButton()"
+        >
+          Jamie Bort
+        </button>
+        <button
+          id="headerButtonRight"
+          class="mobileHeaderButtons"
+          onclick="rightHeaderButton()"
+        >
+          Nav
+        </button>
+      </div>
+      <nav id="menu" style="display: none">
+        <button class="menu_button" onclick="jumpToSection('bio')">Bio</button>
+        <button class="menu_button" onclick="jumpToSection('projects')">
+          Projects
+        </button>
+        <button class="menu_button" onclick="jumpToSection('blog')">
+          Blog
+        </button>
+        <button class="menu_button" onclick="jumpToSection('ConnectWithMe')">
+          Connect With Me
+        </button>
+      </nav>
+    </header> -->
+
+    <!-- TODO: Consider making all the desktop navigation buttons equal in width to the widest one. -->
+    <!-- <header id="desktopHeader">
+      <button class="desktopHeaderButtons" onclick="leftHeaderButton()">
+        Jamie Bort
+      </button>
+      <button class="desktopHeaderButtons" onclick="jumpToSection('bio')">
+        Bio
+      </button>
+      <button class="desktopHeaderButtons" onclick="jumpToSection('projects')">
+        Projects
+      </button>
+      <button class="desktopHeaderButtons" onclick="jumpToSection('blog')">
+        Blog
+      </button>
+      <button
+        class="desktopHeaderButtons"
+        onclick="jumpToSection('ConnectWithMe')"
+      >
+        Connect With Me
+      </button>
+    </header> -->
+
+    <navigation-element></navigation-element>
+
+    <div id="content">
+      <h1 id="top">Software Engineer</h1>
+
+      <section id="bio">
+        <h2>A little bit about myself</h2>
+        <p class="section_p">
+          I teach and mentor at
+          <a id="textLink" target="_blank" href="https://codethedream.org/">Code the Dream</a>, a software boot camp for underrepresented people.
+        </p>
+
+        <!-- NOTE: hidden text to consider. -->
+        <p class="section_p">
+          Below you will find some of my
+          <button class="section_button" onclick="jumpToSection('projects')">Projects</button>.<br />
+          In addition to the technologies listed in each project below, I am proficient with Git and Bash.<br />
+          <hidden hidden>Additionally, I have experience with ...</hidden>
+        </p>
+        <ul>
+          <!-- NOTE: hidden text to consider. -->
+          <li hidden>Spring Boot - It's been a minute since I last worked with it. So I am refreshing my memory by working on a side project with it.</li>
+          <li>Statistics - In addition to having a genuine interest in it I also have projects that require me to know that branch of mathematics better.</li>
+          <li>Data visualization - It's a fun and challenging way to represent the data that I enjoy crunching.</li>
+          <li>
+            Presenting - I enjoy sharing and exchanging knowledge. But talking in front of large crowds scares me. In spite of that I know it will also make me a better
+            communicator, coder, and coworker.
+          </li>
+        </ul>
+
+        <!-- NOTE: hidden text to consider. -->
+        <p class="section_p">
+          <hidden hidden
+            >What are some of my soft skills? List them here?<br />
+            In addition to the technologies listed in each project below, I am quite proficient with Git,...<br />
+            Additionally, I have experience with ...
+          </hidden>
+        </p>
+        <p class="section_p">When I am not coding I am working on my next presentation, mentoring, or teaching; all of which push me to learn and grow.</p>
+        <p class="section_p">
+          I invite you to
+          <button class="section_button" onclick="jumpToSection('ConnectWithMe')">Connect with Me</button>
+          on social media below.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="projects">
+        <!-- NOTE: Three Projects buttons to toggle on and off features: -->
+        <!-- "Completed" vs "In Progress" toggle button plus a third button that enables both.-->
+        <!-- "My Own Projects" vs "Projects I'm Contributing On" toggle button plus a third button that enables both.-->
+        <!-- "Pinned Repos" button that toggles it ON vs OFF.-->
+        <h2>Projects</h2>
+        <div id="card_container"></div>
+      </section>
+
+      <hr />
+
+      <section id="blog">
+        <h2>Blog</h2>
+        <p class="section_p">First Entry</p>
+        <p class="section_p">Second Entry</p>
+      </section>
+
+      <hr />
+
+      <section id="connectWithMe">
+        <h2>Connect with Me</h2>
+        <!-- <p class = "section_p">Ways we can connect.</p> -->
+        <div id="connect_container">
+          <!-- NOTE: hidden. -->
+          <hidden hidden> <a class="fontAwesome fa-brands fa-medium"></a></hidden>
+          <a class="fontAwesome fa-brands fa-linkedin" style="color: #02010e" href="https://www.linkedin.com/in/jamie-bort/" target="_blank"></a>
+          <a class="fontAwesome fa-brands fa-twitter" style="color: #02010e" href="https://twitter.com/jamiebort" target="_blank"></a>
+          <a class="fontAwesome fa-brands fa-stack-overflow" style="color: #02010e" href="https://stackoverflow.com/users/8210460/jamie-bort" target="_blank"></a>
+          <a class="fontAwesome fa-brands fa-square-github" style="color: #02010e" href="https://github.com/JamieBort" target="_blank"></a>
+
+          <!-- NOTE: hidden. The image doesn't look good. -->
+          <hidden hidden> <a class="fontAwesome fa-brands fa-github" style="color: #02010e" href="https://github.com/JamieBort" target="_blank"></a></hidden>
+
+          <!-- NOTE: hidden. -->
+          <hidden hidden> <a class="fontAwesome fa-solid fa-envelope" style="color: #02010e" hidden></a></hidden>
+
+          <!-- NOTE: anchor tag for the contact me form - use this to bring the user to a contact form on another page. -->
+          <!-- <a class="fontAwesome fa-thin fa-envelope" style="color: #02010e;"></a> -->
+
+          <!-- ****** Disabled contact form until it can be fixed. ****** -->
+          <!-- <a class = "connect_a" href="./contact_form.html">
+                    <img class="connect_img"
+                        src="../assets/images/Email.png">
+                </a> -->
+
+          <!-- ****** A anchor to a coding challenge website ****** -->
+          <!-- <a class = "connect_a" href="../html/contact_form.html" target="_blank">
+                    <img class="connect_img"
+                        src="../assets/Email/FAVPNG_email-box-clip-art_W0UEsKSp.png">
+                </a> -->
+
+          <!-- ****** A anchor to a coding challenge website ****** -->
+          <!-- <span class="connect_img fa fa-medium" aria-hidden="true">
+                    <a class = "connect_a" href="https://medium.com/@jamie-bort" target="_blank"></a>
+                </span> -->
+        </div>
+      </section>
+    </div>
+
+    <footer>&copy<span id="copyright"></span></footer>
+
+    <script src="../js/navigation.js"></script>
+
+    <!-- <script type="text/javascript" src="./main.js"></script> -->
+    <script type="text/javascript" src="./../js/main.js"></script>
+
+    <!-- <script type="text/javascript" src="./pinned_projects.js"></script> -->
+    <script type="text/javascript" src="./../js/pinned_projects.js"></script>
+  </body>
+</html>
