@@ -4,40 +4,6 @@ To-Do items that need to be addressed.
 
 ## Administrative
 
-- ~~Clean up the ./README.md file.~~ **Done.**
-
-- ~~Add a license.~~ **Done.**
-
-- ~~Remove the following files and directories from the master branch~~ **Done.**
-
-  - ~~AccessibilityIssues/~~ - copied into dev branch. Deleted.
-
-  - ~~DesignChanges/~~ - copied into dev branch. Deleted.
-
-  - ~~FutureFeatures.md~~ - copied into dev branch. Deleted.
-
-  - ~~Revamp2023.md~~ - copied into dev branch. Deleted.
-
-  - ~~SpanishVersion.md~~ - copied into dev branch. Deleted.
-
-  - ~~html/copy_index.html~~ - copied into dev branch. Deleted.
-
-  - ~~js/PinnedProjects/data.json~~ - copied into dev branch. Deleted.
-
-  - ~~js/pinned_projects_backup.js~~ - copied into dev branch. Deleted.
-
-  - ~~old/~~ - copied into dev branch. Deleted.
-
-- ~~In the ./README.md file, remove the `(It can be found in the dev branch or administrative_cleanup branch until it is merged into Master)` sentence.~~ **Done.**
-
-- ~~Check the following branches and remove them if they're not being used.~~ **Done.**
-
-  - ~~appearance~~ - couldn't find it.
-
-  - ~~host~~ **Done.**
-
-  - ~~api~~ **Done.**
-
 ## API
 
 - Consolidate and organize ALL Trello cards with
@@ -46,15 +12,13 @@ To-Do items that need to be addressed.
 
   - and that come up when searching for `API`
 
-## accessibility
+## Accessibility
 
 TODO: look into whether this [WebAIM certification[(https://webaim.org/services/certification/) would be worth having on my website(s).
 
 TODO: Check-in with people on the issues below (under the "Issues that need to be addressed:" section) - the ones created as a result of the todo's throughout this repo.
 
 - Modify the `<img>`, `<a>`, `<button>`, `<nav>`, and other tags for assistive screen readers.
-
-- **All accessibility updates**
 
 - Todo (in order from top down):
 
@@ -150,6 +114,12 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
       Simply make it so the text gets bigger and pushes down further.
 
       Search for something to the effect of "trigger media query with pinch zoom".
+
+## Back End
+
+- Create a backend.
+
+- Make GraphQL Api calls to GitHub
 
 ## Content
 
