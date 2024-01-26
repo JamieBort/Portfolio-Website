@@ -28,7 +28,7 @@ To-Do items that need to be addressed.
 
   - old/
 
-- In the ./README.md file, remove the `(It can be found in the dev branch or administrative_cleanup branch until it is merged into Master)` sentence.
+- ~~In the ./README.md file, remove the `(It can be found in the dev branch or administrative_cleanup branch until it is merged into Master)` sentence.~~ **Done.**
 
 - Check the following branches and remove them if they're not being used.
 
