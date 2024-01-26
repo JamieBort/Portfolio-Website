@@ -30,13 +30,13 @@ To-Do items that need to be addressed.
 
 - ~~In the ./README.md file, remove the `(It can be found in the dev branch or administrative_cleanup branch until it is merged into Master)` sentence.~~ **Done.**
 
-- Check the following branches and remove them if they're not being used.
+- ~~Check the following branches and remove them if they're not being used.~~ **Done.**
 
-  - appearance - couldn't find it.
+  - ~~appearance~~ - couldn't find it.
 
-  - host
+  - ~~host~~ **Done.**
 
-  - api
+  - ~~api~~ **Done.**
 
 ## API
 

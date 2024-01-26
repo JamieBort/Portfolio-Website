@@ -47,27 +47,23 @@ Here is listed the things I plan on adding to the repo.
 		|
 		+-- script - For all script related logic.
 		|
+		+-- appearance - For modifying the appearance.
+		|	|
+		|	+-- breakpoint - For implementing breakpoints in the CSS file.
+		|		|
+		|		+-- breakpoint_mobile - For implementing a mobile HORIZONTAL breakpoint in the CSS file. The current default styles are for mobile in a vertical orientation.
+		|		|
+		|		+-- breakpoint_tablet - For implementing a tablet breakpoint in the CSS file. *** Need to consider horizontal and vertical orientations. ***
+		|		|
+		|		+-- breakpoint_desktop - For implementing desktop breakpoint in the CSS file.
+		|
+		+-- host - For all things host related.
+		|
+		+-- api - For all api related logic.
+		|	|
+		|	+-- api_github - For implementing api calls to GitHub.
+		|
 		+-- Revamp2023 - The branch created to update the website in 2023.
-			|
-			+-- appearance - For modifying the appearance.
-			|	|
-			|	+-- breakpoint - For implementing breakpoints in the CSS file.
-			|		|
-			|		+-- breakpoint_mobile - The branch doesn't exist (yet). For implementing a mobile HORIZONTAL breakpoint in the CSS file. The current default styles are for mobile in a vertical orientation.
-			|		|
-			|		+-- breakpoint_tablet - The branch doesn't exist (yet). For implementing a tablet breakpoint in the CSS file. *** Need to consider horizontal and vertical orientations. ***
-			|		|
-			|		+-- breakpoint_desktop - The branch doesn't exist (yet). For implementing desktop breakpoint in the CSS file.
-			|
-			+-- host - For all things host related.
-			|	|
-			|	+-- host_routed_react_gh-pages - To determine if we can run a react app in gh-pages. If so, we'll make a GraphQL call.
-			|		|
-			|		+-- host_routed_react_gh-pages_with_graphql_api_call - To see if I can make API calls using the a React app while hosted by gh-pages. **Tabled for now**
-			|
-			+-- api - For all api related logic.
-				|
-				+-- api_github - For implementing api calls to GitHub.
 ```
 
 ### Directories and Files
