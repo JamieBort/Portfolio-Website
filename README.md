@@ -43,6 +43,4 @@ Per [choosealicense.com](https://choosealicense.com/):
 
 You can find the full text in this [./COPYING.txt](https://github.com/JamieBort/jamiebort.github.io/blob/master/COPYING.txt) file.
 
-(It can be found in the [dev](https://github.com/JamieBort/jamiebort.github.io/blob/dev/COPYING.txt) branch or [administrative_cleanup](https://github.com/JamieBort/jamiebort.github.io/blob/administrative_cleanup/COPYING.txt) branch until it is merged into Master)
-
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
