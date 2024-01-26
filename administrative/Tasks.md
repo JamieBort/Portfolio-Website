@@ -4,6 +4,40 @@ To-Do items that need to be addressed.
 
 ## Administrative
 
+- ~~Clean up the ./README.md file.~~ **Done.**
+
+- ~~Add a license.~~ **Done.**
+
+- ~~Remove the following files and directories from the master branch~~ **Done.**
+
+  - ~~AccessibilityIssues/~~ - copied into dev branch. Deleted.
+
+  - ~~DesignChanges/~~ - copied into dev branch. Deleted.
+
+  - ~~FutureFeatures.md~~ - copied into dev branch. Deleted.
+
+  - ~~Revamp2023.md~~ - copied into dev branch. Deleted.
+
+  - ~~SpanishVersion.md~~ - copied into dev branch. Deleted.
+
+  - ~~html/copy_index.html~~ - copied into dev branch. Deleted.
+
+  - ~~js/PinnedProjects/data.json~~ - copied into dev branch. Deleted.
+
+  - ~~js/pinned_projects_backup.js~~ - copied into dev branch. Deleted.
+
+  - ~~old/~~ - copied into dev branch. Deleted.
+
+- ~~In the ./README.md file, remove the `(It can be found in the dev branch or administrative_cleanup branch until it is merged into Master)` sentence.~~ **Done.**
+
+- Check the following branches and remove them if they're not being used.
+
+  - appearance
+
+  - host
+
+  - api
+
 ## API
 
 - Consolidate and organize ALL Trello cards with

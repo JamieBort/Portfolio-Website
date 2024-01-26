@@ -1,4 +1,4 @@
-# AccessibilityIssues
+# accessibilityIssues
 
 Contains accessibility issues raised by other people.
 
@@ -10,8 +10,14 @@ And accessibility issues/questions that I need answered.
 
 #### Files
 
-- AccessibilityIssueQuestions.md - Questions that I have that need to be addressed to resolve my Accessibility Issues.
+- AccessibilityIssueQuestions.md
 
-- IssuesRaisedByOtherPeople.md - Accessibility issues raised by other people.
+  - Questions that I have that need to be addressed to resolve my Accessibility Issues.
 
-- README.md - This readme file.
+- IssuesRaisedByOtherPeople.md
+
+  - Accessibility issues raised by other people.
+
+- README.md
+
+  - This readme file.
