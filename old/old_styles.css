@@ -1,0 +1,108 @@
+/* html {
+    border: medium dashed black;
+}
+
+body {
+    min-height: 100vh;
+    border: medium dashed green;
+    width: 90%;
+    margin: 0 auto;
+} */
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    /* can also use viewport units (height: 100vh) */
+}
+
+body {
+    display: flex;
+    /* displays flex-items (children) inline */
+    flex-direction: column;
+    /* stacks them vertically */
+    height: 100%;
+    /* needs to take the parents height, alternative: body {display: flex} */
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background: yellow;
+    display: flex;
+    justify-content: space-around;
+    min-height: 3em;
+    font-size: 20px
+}
+
+#jamie_bort {
+    background: orange;
+    flex: 5;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* Align horizontal */
+    align-items: center;
+    /* Align vertical */
+}
+
+button {
+    background: burlywood;
+    flex: 1;
+    height: 100%;
+}
+
+main {
+    flex: 1;
+    /* takes the remaining height of the "container" div */
+    overflow: auto;
+    /* to scroll just the "main" div */
+
+    position: relative;
+}
+
+#menu {
+    background: aqua;
+    z-index: 9;
+
+
+    position: absolute;
+    /* <-- added declarations */
+    left: 0;
+    top: 0;
+    /*     here               */
+    width: 100%;
+    /*     and here...        */
+}
+
+.menu_anchor {
+    background: olive;
+    display: block;
+}
+
+section {
+    height: 100%;
+    /* takes the visible area of the "main" div */
+    overflow: auto;
+    /* recommended */
+    border-bottom: 1px solid;
+    background: lightgreen;
+}
+
+footer {
+    background: yellow;
+    min-height: 1.5em;
+    /* text-align: center; */
+
+    display: flex;
+    justify-content: center;
+    /* Align horizontal */
+    align-items: center;
+    /* Align vertical */
+}
+
+@media (min-width: 35rem) {
+    body {
+        background: green;
+    }
+}
