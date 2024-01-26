@@ -8,7 +8,7 @@ To-Do items that need to be addressed.
 
 - ~~Add a license.~~ **Done.**
 
-- Remove the following files and directories from the master branch
+- ~~Remove the following files and directories from the master branch~~ **Done.**
 
   - ~~AccessibilityIssues/~~ - copied into dev branch. Deleted.
 
@@ -26,7 +26,7 @@ To-Do items that need to be addressed.
 
   - ~~js/pinned_projects_backup.js~~ - copied into dev branch. Deleted.
 
-  - old/
+  - ~~old/~~ - copied into dev branch. Deleted.
 
 - ~~In the ./README.md file, remove the `(It can be found in the dev branch or administrative_cleanup branch until it is merged into Master)` sentence.~~ **Done.**
 
