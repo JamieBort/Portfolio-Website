@@ -1,26 +1,10 @@
 // ./backend/app.js
 
-// const fetch = require("node-fetch");
-import fetch from "node-fetch";
-// require("dotenv").config();
-// var express = require("express");
-// var app = express();
-// app.get("/", function (req, res) {
-//   res.send("Hello World!");
-// });
-// app.listen(3000, function () {
-//   console.log("Example app listening on port 3000!");
-// });
-
-// const response = await fetch("https://github.com/");
-// const body = await response.text();
-
-// console.log(body);
-
+// require("dotenv").config(); // Don't need this.
+import express from "express";
+// var express = require("express"); // Received errors for this.
+// import fetch from "node-fetch";
 const accessToken = process.env.GITHUB_ACCESS_TOKEN;
-
-// console.log(accessToken);
-
 const query = `
   query {
     user(login: "jamiebort") {
@@ -51,13 +35,55 @@ const query = `
     }
 }`;
 
-fetch("https://api.github.com/graphql", {
+// // const request = require("request");
+// request("http://www.google.com", function (error, response, body) {
+//   if (!error && response.statusCode == 200) {
+//     console.log(body); // Print the google web page.
+//   }
+// });
+
+// // NOTE: GraphQL call without a function call.
+const response = await fetch(`https://api.github.com/graphql`, {
   method: "POST",
   body: JSON.stringify({ query }),
   headers: {
     Authorization: `Bearer ${accessToken}`,
   },
 })
-  .then((res) => res.text())
-  .then((body) => console.log(body)) // {"data":{"repository":{"issues":{"totalCount":247}}}}
-  .catch((error) => console.error(error));
+  // .then(() => console.log("response received."))
+  .then((res) => res.json())
+  // .then((body) => {
+  //   const edges = body.data.user.pinnedItems.edges;
+  //   console.log(edges);
+  // })
+  .catch((error) => console.error("error:", error));
+
+// NOTE: GraphQL call with a function call.
+// function myFetchFunction() {
+//   console.log("myFetchFunction fired.");
+//   setTimeout(() => {
+//     fetch(`https://api.github.com/graphql`, {
+//       method: "POST",
+//       body: JSON.stringify({ query }),
+//       headers: {
+//         Authorization: `Bearer ${accessToken}`,
+//       },
+//     })
+//       .then((res) => res.json())
+//       .then((body) => console.log(body))
+//       .catch((error) => console.error("error:", error));
+//   }, 5000);
+// }
+// myFetchFunction();
+
+var app = express();
+app.get("/", function (req, res) {
+  //   const edges = body.data.user.pinnedItems.edges;
+  // console.log(response.data);
+  console.log("response receivedJ:", response.data.user);
+  res.json(response.data.user);
+  // res.send("Hello World!");
+});
+app.listen(3000, function () {
+  console.log("Example app listening on port 3000!");
+});
