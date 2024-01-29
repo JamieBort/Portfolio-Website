@@ -2,6 +2,7 @@
 
 // require("dotenv").config(); // Don't need this.
 import express from "express";
+import cors from "cors";
 // var express = require("express"); // Received errors for this.
 // import fetch from "node-fetch";
 const accessToken = process.env.GITHUB_ACCESS_TOKEN;
@@ -34,13 +35,6 @@ const query = `
         }
     }
 }`;
-
-// // const request = require("request");
-// request("http://www.google.com", function (error, response, body) {
-//   if (!error && response.statusCode == 200) {
-//     console.log(body); // Print the google web page.
-//   }
-// });
 
 // // NOTE: GraphQL call without a function call.
 const response = await fetch(`https://api.github.com/graphql`, {
@@ -76,12 +70,47 @@ const response = await fetch(`https://api.github.com/graphql`, {
 // }
 // myFetchFunction();
 
+const allowedOrigins = [
+  "http://127.0.0.1:3000",
+  "http://127.0.0.1:5500",
+  "http://127.0.0.1:5500/frontend/index.html",
+  "http://localhost:3000",
+  "file:///Users/jamiebort/Documents/DevFiles/Personal_Projects/jamiebort.github.io/frontend/index.html",
+  "http://127.0.0.1:5500/frontend/index.html",
+];
+
+// const corsOptions = {
+//   origin: "http://127.0.0.1:5500",
+
+//   optionsSuccessStatus: 200,
+// };
+
+// const corsOptions = {
+//   origin: "http://127.0.0.1:5500/frontend/index.html",
+//   optionsSuccessStatus: 200,
+// };
+
+const corsOptions = {
+  origin: (origin, callback) => {
+    // console.log("allowedOrigins.indexOf(origin) :", allowedOrigins.indexOf(origin));
+    // console.log("origin:", origin);
+    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  optionsSuccessStatus: 200,
+};
+
 var app = express();
-app.get("/", function (req, res) {
+app.use(cors(corsOptions));
+app.get("/", cors(corsOptions), function (req, res) {
   //   const edges = body.data.user.pinnedItems.edges;
-  // console.log(response.data);
-  console.log("response receivedJ:", response.data.user);
-  res.json(response.data.user);
+  console.log(response);
+  // console.log("response receivedJ:", response.data.user);
+  res.json(response);
+  // res.json(response.data.user);
   // res.send("Hello World!");
 });
 app.listen(3000, function () {
