@@ -62,6 +62,8 @@ Here is listed the things I plan on adding to the repo.
 		|	+-- front_end_React - Front end built with React.
 		|	|
 		|	+-- front_end_VanillaJS - Front end built with vanilla JavaScript.
+		|		|
+		|		+-- front_end_VanillaJS_CORS - Address the CORS issue.
 		|
 		+-- host - For all things host related.
 		|
