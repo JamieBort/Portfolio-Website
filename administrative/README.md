@@ -53,15 +53,15 @@ Here is listed the things I plan on adding to the repo.
 		|	|
 		|	+-- api_github - For implementing api calls to GitHub.
 		|
-		+-- backend - For all back end implementation.
+		+-- back_end - For all back end implementation.
 		|
 		+-- content - For modifying content.
 		|
-		+-- frontend - For all front end implementation.
+		+-- front_end - For all front end implementation.
 		|	|
-		|	+-- frontend_React - Front end built with React.
+		|	+-- front_end_React - Front end built with React.
 		|	|
-		|	+-- frontend_VanillaJS - Front end built with vanilla JavaScript.
+		|	+-- front_end_VanillaJS - Front end built with vanilla JavaScript.
 		|
 		+-- host - For all things host related.
 		|
