@@ -58,6 +58,10 @@ Here is listed the things I plan on adding to the repo.
 		+-- content - For modifying content.
 		|
 		+-- frontend - For all front end implementation.
+		|	|
+		|	+-- frontend_React - Front end built with React.
+		|	|
+		|	+-- frontend_VanillaJS - Front end built with vanilla JavaScript.
 		|
 		+-- host - For all things host related.
 		|
