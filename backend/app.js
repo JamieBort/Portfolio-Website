@@ -82,12 +82,17 @@ const response = await fetch(`https://api.github.com/graphql`, {
 // }
 // myFetchFunction();
 
+// NOTE: Local files do not work. They have to be served.
+// Following the instructions above "http://127.0.0.1:5500" works. Because I am hosting the `./jamiebort.github.io/frontend/index.html` file with VS Code.
 const allowedOrigins = [
   "http://127.0.0.1:3000",
   "http://127.0.0.1:5500",
   "http://127.0.0.1:5500/frontend/index.html",
   "http://localhost:3000",
   "file:///Users/jamiebort/Documents/DevFiles/Personal_Projects/jamiebort.github.io/frontend/index.html",
+  "Users/jamiebort/Documents/DevFiles/Personal_Projects/jamiebort.github.io/frontend/index.html",
+  "./Users/jamiebort/Documents/DevFiles/Personal_Projects/jamiebort.github.io/frontend/index.html",
+  "/Users/jamiebort/Documents/DevFiles/Personal_Projects/jamiebort.github.io/frontend/index.html",
   "http://127.0.0.1:5500/frontend/index.html",
 ];
 
