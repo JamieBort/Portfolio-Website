@@ -1,10 +1,15 @@
 # administrative
 
 // NOTE: Successfully pulling data from the backend.
+
 // To do this:
+
 // 1. Using VSCode open a live server on the `./jamiebort.github.io/frontend/index.html` file.
+
 // 2. Make sure the "http://127.0.0.1:5500" is listed in the "allowedOrigins" array in the "./jamiebort.github.io/backend/app.js" file.
+
 // 3. Run the `nodemon --env-file=.env app.js` command in the "./jamiebort.github.io/backend/" directory.
+
 // 4. Lastly, load the http://127.0.0.1:5500/frontend/index.html page in a browser.
 
 ## Future Features
@@ -60,17 +65,19 @@ Here is listed the things I plan on adding to the repo.
 		|	|
 		|	+-- api_github - For implementing api calls to GitHub.
 		|
-		+-- back_end - For all back end implementation.
-		|
 		+-- content - For modifying content.
 		|
-		+-- front_end - For all front end implementation.
+		+-- fullstack - For implementing a front end and back end.
 		|	|
-		|	+-- front_end_React - Front end built with React.
+		|	+-- back_end - For all back end implementation.
 		|	|
-		|	+-- front_end_VanillaJS - Front end built with vanilla JavaScript.
+		|	+-- front_end - For all front end implementation.
 		|		|
-		|		+-- front_end_VanillaJS_CORS - Address the CORS issue.
+		|		+-- front_end_React - Front end built with React.
+		|		|
+		|		+-- front_end_VanillaJS - Front end built with vanilla JavaScript.
+		|			|
+		|			+-- front_end_VanillaJS_CORS - Address the CORS issue.
 		|
 		+-- host - For all things host related.
 		|
