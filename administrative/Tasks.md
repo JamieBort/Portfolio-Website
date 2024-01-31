@@ -135,6 +135,40 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
 
 ## Front End
 
+### To Do
+
+1.  In the `front_end_React_api_call` branch
+
+    a. First set up React so that it can make calls to an open api
+
+    b. Then make calls to that open api so that the response gets rendered in the DOM.
+
+2.  In the `front_end_React_GraphQL_call_to_repo` branch
+
+    a. First make a GraphQL call to my GitHub account.
+
+    b. Then populate the DOM with the response.
+
+3.  In the `front_end_React_GraphQL_call_to_local_backend` branch
+
+    a. Send api calls to the local backend from the local frontend so that
+
+    1. the backend successfully makes GraphQL calls to my GitHub account
+
+    2. and the response response gets rendered in the DOM.
+
+4.  In the `front_end_React_GraphQL_call_to_repo_from_hosted_frontend` branch
+
+    a. First get the `./frontend` directory hosted on Render.com.
+
+    b. Then, from the hosted frontend site make a GraphQL call directly to my GitHub account so that the response gets rendered in the DOM.
+
+5.  In the `front_end_React_GraphQL_call_to_hosted_backend_from_hosted_frontend` branch
+
+    a. make an api call from the frontend to the backend (both hosted on Render), which in turn makes a GraphQL call my repo so that the response gets rendered in the DOM.
+
+### Status
+
 ## Hosting
 
 ### To Do
