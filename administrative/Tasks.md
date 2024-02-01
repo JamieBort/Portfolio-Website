@@ -119,9 +119,13 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
 
 ## Back End
 
+### To Do
+
 - Create a backend.
 
 - Make GraphQL Api calls to GitHub
+
+### Status
 
 ## Content
 
@@ -136,6 +140,12 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
   _Create a new branch for this._
 
 - Create an `tablet_breakpoint` branch inside of a new `breakpoint` branch.
+
+## Front End
+
+### To Do
+
+### Status
 
 ## JavaScript
 
