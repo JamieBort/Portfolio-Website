@@ -81,17 +81,29 @@ Here is listed the things I plan on adding to the repo.
 		|	|
 		|	+-- front_end - For all front end implementation.
 		|		|
+		|		+-- front_end_NextJS - Front end built with NextJS.
+		|		|	|
+		|		|	+-- front_end_NextJS_api_call - To make an api call with NextJS to an open api.
+		|		|	|
+		|		|	+-- front_end_NextJS_GraphQL_call_to_repo - To make a GraphQL call with NextJS to my repo.
+		|		|	|
+		|		|	+-- front_end_NextJS_GraphQL_call_to_local_backend - To make a GraphQL call with NextJS to my repo from my local backend. (Local front end sends api call to backend.)
+		|		|	|
+		|		|	+-- front_end_NextJS_GraphQL_call_to_repo_from_hosted_frontend - To make a GraphQL call with NextJS from the frontend (hosted on Render) directly to an my repo.
+		|		|	|
+		|		|	+-- front_end_NextJS_GraphQL_call_to_hosted_backend_from_hosted_frontend - To make an api call with NextJS from the frontend to the backend (both hosted on Render), which in turn makes a GraphQL call my repo.
+		|		|
 		|		+-- front_end_React - Front end built with React.
 		|		|	|
-		|		|	+-- front_end_React_api_call - To make an api call to an open api.
-		|		|		|
-		|		|		+-- front_end_React_GraphQL_call_to_repo - To make a GraphQL call to my repo.
-		|		|			|
-		|		|			+-- front_end_React_GraphQL_call_to_local_backend - To make a GraphQL call to my repo from my local backend. (Local front end sends api call to backend.)
-		|		|				|
-		|		|				+-- front_end_React_GraphQL_call_to_repo_from_hosted_frontend - To make a GraphQL call from the frontend (hosted on Render) directly to an my repo.
-		|		|					|
-		|		|					+-- front_end_React_GraphQL_call_to_hosted_backend_from_hosted_frontend - To make an api call from the frontend to the backend (both hosted on Render), which in turn makes a GraphQL call my repo.
+		|		|	+-- front_end_React_api_call - To make an api call with React to an open api.
+		|		|	|
+		|		|	+-- front_end_React_GraphQL_call_to_repo - To make a GraphQL call with React to my repo.
+		|		|	|
+		|		|	+-- front_end_React_GraphQL_call_to_local_backend - To make a GraphQL call with React to my repo from my local backend. (Local front end sends api call to backend.)
+		|		|	|
+		|		|	+-- front_end_React_GraphQL_call_to_repo_from_hosted_frontend - To make a GraphQL call with React from the frontend (hosted on Render) directly to an my repo.
+		|		|	|
+		|		|	+-- front_end_React_GraphQL_call_to_hosted_backend_from_hosted_frontend - To make an api call with React from the frontend to the backend (both hosted on Render), which in turn makes a GraphQL call my repo.
 		|		|
 		|		+-- front_end_VanillaJS - Front end built with vanilla JavaScript.
 		|

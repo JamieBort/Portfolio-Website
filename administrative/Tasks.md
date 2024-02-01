@@ -169,6 +169,8 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
 
 ### Status
 
+Successfully deployed a React app to Render.
+
 ## Hosting
 
 ### To Do
