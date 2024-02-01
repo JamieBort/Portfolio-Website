@@ -171,6 +171,10 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
 
 Successfully deployed a React app to Render.
 
+See the https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Render#react-static-site documentation.
+
+Still need to make an api call in step 1 above.
+
 ## Hosting
 
 ### To Do
