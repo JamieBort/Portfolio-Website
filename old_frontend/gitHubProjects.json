@@ -1,0 +1,185 @@
+{
+    "data": {
+        "user": {
+            "pinnedItems": {
+                "totalCount": 5,
+                "edges": [
+                    {
+                        "node": {
+                            "id": "MDEwOlJlcG9zaXRvcnkxNjI0Njg1MjA=",
+                            "name": "LearningDirectory",
+                            "url": "https://github.com/JamieBort/LearningDirectory",
+                            "stargazerCount": 3,
+                            "description": "The purpose of this directory is to house all the code I write as I learn new technologies and hone my skills. This is to help keep my GitHub account organized.",
+                            "languages": {
+                                "totalCount": 20,
+                                "edges": [
+                                    {
+                                        "node": {
+                                            "name": "HTML"
+                                        }
+                                    },
+                                    {
+                                        "node": {
+                                            "name": "JavaScript"
+                                        }
+                                    },
+                                    {
+                                        "node": {
+                                            "name": "CSS"
+                                        }
+                                    },
+                                    {
+                                        "node": {
+                                            "name": "PHP"
+                                        }
+                                    },
+                                    {
+                                        "node": {
+                                            "name": "Java"
+                                        }
+                                    },
+                                    {
+                                        "node": {
+                                            "name": "Groovy"
+                                        }
+                                    }
+                                ]
+                            },
+                            "homepageUrl": null,
+                            "forkCount": 0
+                        }
+                    },
+                    {
+                        "node": {
+                            "id": "MDEwOlJlcG9zaXRvcnkxNjI2NTg4ODM=",
+                            "name": "PersonalDashboard",
+                            "url": "https://github.com/JamieBort/PersonalDashboard",
+                            "stargazerCount": 0,
+                            "description": "A website for displaying important daily data. Such as blood glucose numbers and upcoming events. By using API calls, databases, authentication, etc.",
+                            "languages": {
+                                "totalCount": 3,
+                                "edges": [
+                                    {
+                                        "node": {
+                                            "name": "CSS"
+                                        }
+                                    },
+                                    {
+                                        "node": {
+                                            "name": "HTML"
+                                        }
+                                    },
+                                    {
+                                        "node": {
+                                            "name": "JavaScript"
+                                        }
+                                    }
+                                ]
+                            },
+                            "homepageUrl": "https://jamiebort.github.io/PersonalDashboard/",
+                            "forkCount": 0
+                        }
+                    },
+                    {
+                        "node": {
+                            "id": "MDEwOlJlcG9zaXRvcnk5NjcwOTAwNg==",
+                            "name": "jamiebort.github.io",
+                            "url": "https://github.com/JamieBort/jamiebort.github.io",
+                            "stargazerCount": 0,
+                            "description": "My Portfolio Website. This is where I share a bit about myself, showcase what I've been working on, host my blog, and more.",
+                            "languages": {
+                                "totalCount": 5,
+                                "edges": [
+                                    {
+                                        "node": {
+                                            "name": "CSS"
+                                        }
+                                    },
+                                    {
+                                        "node": {
+                                            "name": "HTML"
+                                        }
+                                    },
+                                    {
+                                        "node": {
+                                            "name": "JavaScript"
+                                        }
+                                    },
+                                    {
+                                        "node": {
+                                            "name": "Less"
+                                        }
+                                    },
+                                    {
+                                        "node": {
+                                            "name": "SCSS"
+                                        }
+                                    }
+                                ]
+                            },
+                            "homepageUrl": "https://jamiebort.github.io/",
+                            "forkCount": 0
+                        }
+                    },
+                    {
+                        "node": {
+                            "id": "R_kgDOJXaC6A",
+                            "name": "Data-Logging-App",
+                            "url": "https://github.com/JamieBort/Data-Logging-App",
+                            "stargazerCount": 0,
+                            "description": "An app to log data points from my phone.",
+                            "languages": {
+                                "totalCount": 5,
+                                "edges": [
+                                    {
+                                        "node": {
+                                            "name": "HTML"
+                                        }
+                                    },
+                                    {
+                                        "node": {
+                                            "name": "TypeScript"
+                                        }
+                                    },
+                                    {
+                                        "node": {
+                                            "name": "CSS"
+                                        }
+                                    },
+                                    {
+                                        "node": {
+                                            "name": "Svelte"
+                                        }
+                                    },
+                                    {
+                                        "node": {
+                                            "name": "JavaScript"
+                                        }
+                                    }
+                                ]
+                            },
+                            "homepageUrl": null,
+                            "forkCount": 0
+                        }
+                    },
+                    {
+                        "node": {
+                            "id": "R_kgDOKqJOGw",
+                            "name": "To-Do-App",
+                            "url": "https://github.com/JamieBort/To-Do-App",
+                            "stargazerCount": 0,
+                            "description": "A to-do app created using the React library.",
+                            "languages": {
+                                "totalCount": 0,
+                                "edges": []
+                            },
+                            "homepageUrl": null,
+                            "forkCount": 0
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
