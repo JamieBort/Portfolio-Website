@@ -137,43 +137,53 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
 
 ### Front End To Do
 
-1.  In the `front_end_React_api_call` branch
+1. In the `front_end_React` branch, create a frontend that deploys to Render.com.
 
-    a. First set up React so that it can make calls to an open api
+   a. Create a React app locally.
 
-    b. Then make calls to that open api so that the response gets rendered in the DOM.
+   b. Deploy it to Render.com.
 
-2.  In the `front_end_React_GraphQL_call_to_repo` branch
+2. In the `front_end_React_api_call` branch, create a front end that makes a Rest or GraphQL api call to an open api. Have the response get rendered in the DOM. Successfully redeploy it to Render.
 
-    a. First make a GraphQL call to my GitHub account.
+   a. First set up React so that it can make calls to an open api
 
-    b. Then populate the DOM with the response.
+   b. Then make calls to that open api so that the response gets rendered in the DOM.
 
-3.  In the `front_end_React_GraphQL_call_to_local_backend` branch
+3. In the `front_end_React_GraphQL_call_to_repo` branch, make a GraphQL call to my GitHub account. Have the response get rendered in the DOM. Successfully redeploy it to Render.
 
-    a. Send api calls to the local backend from the local frontend so that
+   a. First make a GraphQL call to my GitHub account.
 
-    1. the backend successfully makes GraphQL calls to my GitHub account
+   b. Then populate the DOM with the response.
 
-    2. and the response response gets rendered in the DOM.
+4. In the `front_end_React_GraphQL_call_to_local_backend` branch, send GraphQL calls to the local backend. Have the response get rendered in the DOM. Successfully redeploy it to Render.
 
-4.  In the `front_end_React_GraphQL_call_to_repo_from_hosted_frontend` branch
+   a. Send api calls to the local backend from the local frontend so that
 
-    a. First get the `./frontend` directory hosted on Render.com.
+   1. the backend successfully makes GraphQL calls to my GitHub account
 
-    b. Then, from the hosted frontend site make a GraphQL call directly to my GitHub account so that the response gets rendered in the DOM.
+   2. and the response response gets rendered in the DOM.
 
-5.  In the `front_end_React_GraphQL_call_to_hosted_backend_from_hosted_frontend` branch
+5. In the `front_end_React_GraphQL_call_to_repo_from_hosted_frontend` branch, from the hosted frontend site make a GraphQL call directly to my GitHub account so that the response gets rendered in the DOM. Successfully redeploy it to Render.
 
-    a. make an api call from the frontend to the backend (both hosted on Render), which in turn makes a GraphQL call my repo so that the response gets rendered in the DOM.
+   ~~a. From the hosted frontend site make a GraphQL call directly to my GitHub account so that the response gets rendered in the DOM.~~
+
+   a. First get the `./frontend` directory hosted on Render.com.
+
+   b. Then, from the hosted frontend site make a GraphQL call directly to my GitHub account so that the response gets rendered in the DOM.
+
+6. In the `front_end_React_GraphQL_call_to_hosted_backend_from_hosted_frontend` branch, from the hosted frontend site make an api call from the frontend to the backend (both hosted on Render), which in turn makes a GraphQL call my repo so that the response gets rendered in the DOM. Successfully redeploy it to Render.
+
+   a. make an api call from the frontend to the backend (both hosted on Render), which in turn makes a GraphQL call my repo so that the response gets rendered in the DOM.
 
 ### Front End Status
 
 #### Front End Status NextJS
 
-Did work with NextJS while in the wrong branch (while in the `front_end_React_api_call` branch.)
+~~Did work with NextJS while in the wrong branch (while in the `front_end_React_api_call` branch.)~~
 
-**Need to fix this.** By restoring the `front_end_React_api_call` branch. And by going to the `front_end_NextJS` branch to make sure it's as it should be.
+~~**Need to fix this.** By restoring the `front_end_React_api_call` branch. And by going to the `front_end_NextJS` branch to make sure it's as it should be.~~
+
+Fixed this.
 
 #### Front End Status React
 
