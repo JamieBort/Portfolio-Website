@@ -135,7 +135,7 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
 
 ## Front End
 
-### To Do
+### Front End To Do
 
 1.  In the `front_end_React_api_call` branch
 
@@ -167,7 +167,15 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
 
     a. make an api call from the frontend to the backend (both hosted on Render), which in turn makes a GraphQL call my repo so that the response gets rendered in the DOM.
 
-### Status
+### Front End Status
+
+#### Front End Status NextJS
+
+Did work with NextJS while in the wrong branch (while in the `front_end_React_api_call` branch.)
+
+**Need to fix this.** By restoring the `front_end_React_api_call` branch. And by going to the `front_end_NextJS` branch to make sure it's as it should be.
+
+#### Front End Status React
 
 Successfully deployed a React app to Render.
 
@@ -175,9 +183,13 @@ See the https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Rende
 
 Still need to make an api call in step 1 above.
 
+The `./frontend/` directory contains the **React** front end.
+
+Whereas the `./frontend_NextJS/` directory contains the **NextJS** front end.
+
 ## Hosting
 
-### To Do
+### Hosting To Do
 
 - Research where to host it.
 
@@ -187,7 +199,7 @@ Still need to make an api call in step 1 above.
 
 - Set up hosting.
 
-### Status
+### Hosting Status
 
 Chose Render.com to host the project. See the [Render](https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Render) directory in my LearningDirectory repo.
 
