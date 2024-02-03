@@ -6,9 +6,9 @@ Created this `front_end_React` branch off of the `front_end` branch.
 
 ### Locally
 
-In the `./jamiebort.github.io/frontend/` directory,
+To install the `./frontend/node_modules/` directory, run `yarn` in the `./jamiebort.github.io/frontend/` directory.
 
-run `yarn start`.
+To start the frontend server, run `yarn start` in the `./jamiebort.github.io/frontend/` directory,
 
 ### Hosted
 

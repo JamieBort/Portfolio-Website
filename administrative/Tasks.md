@@ -191,8 +191,6 @@ Successfully deployed a React app to Render.
 
 See the https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Render#react-static-site documentation.
 
-~~The `./frontend/` directory contains the **React** front end. Whereas the `./frontend_NextJS/` directory contains the **NextJS** front end.~~ The `./frontend_NextJS/` directory has been moved to the `front_end_NextJS` branch.
-
 ##### Front End Status Next Steps React
 
 Still need to make an api call in step 1 above in the `Front End To Do` section.
