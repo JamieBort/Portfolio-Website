@@ -179,11 +179,9 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
 
 #### Front End Status NextJS
 
-~~Did work with NextJS while in the wrong branch (while in the `front_end_React_api_call` branch.)~~
+Cease work on this branch.
 
-~~**Need to fix this.** By restoring the `front_end_React_api_call` branch. And by going to the `front_end_NextJS` branch to make sure it's as it should be.~~
-
-Fixed this.
+See the [Front End Status Next Steps React](https://github.com/JamieBort/jamiebort.github.io/blob/front_end_NextJS/administrative/Tasks.md#front-end-status-next-steps-nextjs) section in the `./administrative/Tasks.md` file of the `front_end_NextJS` branch.
 
 #### Front End Status React
 
