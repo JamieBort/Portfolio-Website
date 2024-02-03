@@ -179,9 +179,11 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
 
 #### Front End Status NextJS
 
-Cease work on this branch.
-
 See the [Front End Status Next Steps React](https://github.com/JamieBort/jamiebort.github.io/blob/front_end_NextJS/administrative/Tasks.md#front-end-status-next-steps-nextjs) section in the `./administrative/Tasks.md` file of the `front_end_NextJS` branch.
+
+##### Front End Status Next Steps NextJS
+
+Cease work on this branch.
 
 #### Front End Status React
 
@@ -189,11 +191,11 @@ Successfully deployed a React app to Render.
 
 See the https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Render#react-static-site documentation.
 
-Still need to make an api call in step 1 above.
+~~The `./frontend/` directory contains the **React** front end. Whereas the `./frontend_NextJS/` directory contains the **NextJS** front end.~~ The `./frontend_NextJS/` directory has been moved to the `front_end_NextJS` branch.
 
-The `./frontend/` directory contains the **React** front end.
+##### Front End Status Next Steps React
 
-Whereas the `./frontend_NextJS/` directory contains the **NextJS** front end.
+Still need to make an api call in step 1 above in the `Front End To Do` section.
 
 ## Hosting
 
