@@ -137,11 +137,11 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
 
 ### Front End To Do
 
-1. In the `front_end_React` branch, create a frontend that deploys to Render.com.
+1. In the `front_end_React` branch, create a frontend that deploys to Render.com. **DONE.**
 
-   a. Create a React app locally.
+   a. ~~Create a React app locally.~~
 
-   b. Deploy it to Render.com.
+   b. ~~Deploy it to Render.com.~~
 
 2. In the `front_end_React_api_call` branch, create a front end that makes a Rest or GraphQL api call to an open api. Have the response get rendered in the DOM. Successfully redeploy it to Render.
 
