@@ -164,7 +164,7 @@ Here is listed the things I plan on adding to the repo.
 
   - Future features section of the repo. Here is listed the things I plan on adding to the repo.
 
-- ./administrative/old_gitignore
+- ./administrative/old_frontend_gitignore
 
   - Moved this file from the `./jamiebort.github.io/frontend` directory.
 

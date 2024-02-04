@@ -143,7 +143,7 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
 
    b. ~~Deploy it to Render.com.~~
 
-2. In the `front_end_React_api_call` branch, create a front end that makes a Rest or GraphQL api call to an open api. Have the response get rendered in the DOM. Successfully redeploy it to Render.
+2. ~~In the `front_end_React_api_call` branch, create a front end that makes a Rest or GraphQL api call to an open api. Have the response get rendered in the DOM. Successfully redeploy it to Render.~~ **DONE.**
 
    a. First set up React so that it can make calls to an open api
 
@@ -193,15 +193,11 @@ Then created `./jamiebort.github.io/frontend/` by following these instructions: 
 
 Then made a GraphQL api call following the instructions here: https://www.apollographql.com/docs/react/get-started
 
-~~Successfully deployed a React app to Render.~~
-
-~~See the https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Render#react-static-site documentation.~~
-
 ##### Front End Status Next Steps React + Vite
 
 Push changes to the `Main` branch so that it will trigger a deploy to see if this still works on Render.com
 
-Still need to make an api call in step 1 above in the `Front End To Do` section.
+Still need to make an api call in step 3 above in the `Front End To Do` section.
 
 ## Hosting
 
