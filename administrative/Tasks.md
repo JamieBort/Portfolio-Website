@@ -185,13 +185,21 @@ See the [Front End Status Next Steps React](https://github.com/JamieBort/jamiebo
 
 Cease work on this branch.
 
-#### Front End Status React
+#### Front End Status React + Vite
 
-Successfully deployed a React app to Render.
+Renamed `./jamiebort.github.io/frontend/` as `./jamiebort.github.io/frontend_React/`.
 
-See the https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Render#react-static-site documentation.
+Then created `./jamiebort.github.io/frontend/` by following these instructions: https://vitejs.dev/guide/ (per the instructions here: https://www.apollographql.com/docs/react/get-started)
 
-##### Front End Status Next Steps React
+Then made a GraphQL api call following the instructions here: https://www.apollographql.com/docs/react/get-started
+
+~~Successfully deployed a React app to Render.~~
+
+~~See the https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Render#react-static-site documentation.~~
+
+##### Front End Status Next Steps React + Vite
+
+Push changes to the `Main` branch so that it will trigger a deploy to see if this still works on Render.com
 
 Still need to make an api call in step 1 above in the `Front End To Do` section.
 
