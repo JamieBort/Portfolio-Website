@@ -160,13 +160,27 @@ Here is listed the things I plan on adding to the repo.
 
 - ./administrative/FutureFeatures.md
 
+  - **This file is no longer in this directory.**
+
   - Future features section of the repo. Here is listed the things I plan on adding to the repo.
+
+- ./administrative/old_gitignore
+
+  - Moved this file from the `./jamiebort.github.io/frontend` directory.
+
+  - It was removed to clean up the codebase.
+
+  - `./.gitignore` was first updated.
+
+  - It is saved here in case I need to restore it. **It is possible that Render.com will need it when the frontend is deployed there.**
 
 - ./administrative/README.md
 
   - This readme file.
 
 - ./administrative/Revamp2023.md
+
+  - **This file is no longer in this directory.**
 
   - This file is for keeping track of the status and the tasks that need to be completed while I rebuild my portfolio website.
 
