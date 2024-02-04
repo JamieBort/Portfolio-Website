@@ -12,7 +12,7 @@
 
 2. Start front end server.
 
-   a. Using VSCode open a live server on the `./jamiebort.github.io/frontend/index.html` file. NOTE: file name and/or path due to change.
+   See `Start front end server locally` in the `./jamiebort.github.io/frontend/README.md` file.
 
 3. Lastly, load the http://127.0.0.1:5500/frontend/index.html page in a browser.
 
