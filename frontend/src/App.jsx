@@ -1,6 +1,7 @@
 // https://www.apollographql.com/docs/react/get-started#step-5-fetch-data-with-usequery
 // NOTE: Import everything needed to use the `useQuery` hook
 import { useQuery, gql } from "@apollo/client";
+import BackendDataFetch from "./BackendDataFetch";
 
 // NOTE: Define the query we want to execute by wrapping it in the gql template literal:
 const GET_PINNED_PROJECTS = gql`
@@ -60,8 +61,10 @@ function DisplayRepos() {
 export default function App() {
   return (
     <div>
-      <h2>My first Apollo app 🚀</h2>
-      <DisplayRepos />
+      <h2>App.jsx file</h2>
+      <BackendDataFetch />
+      <p>display component with back end info here</p>
+      {/* <DisplayRepos /> */}
     </div>
   );
 }

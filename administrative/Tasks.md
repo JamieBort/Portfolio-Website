@@ -155,7 +155,7 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
 
    b. Then populate the DOM with the response.
 
-4. In the `front_end_React_GraphQL_call_to_local_backend` branch, send GraphQL calls to the local backend. Have the response get rendered in the DOM. Successfully redeploy it to Render.
+4. ~~In the `front_end_React_GraphQL_call_to_local_backend` branch, send GraphQL calls to the local backend. Have the response get rendered in the DOM. Successfully redeploy it to Render.~~ **DONE.**
 
    a. Send api calls to the local backend from the local frontend so that
 
@@ -197,9 +197,19 @@ Pushed changes to the `Main` branch so that it will trigger a deploy to see if t
 
 Made a GraphQL call to my GitHub account per step 3 above in the `Front End To Do` section.
 
+Sent api calls to the local backend from the local frontend so that the backend successfully makes GraphQL calls to my GitHub account and the response response gets rendered in the DOM.
+
 ##### Front End Status Next Steps React + Vite
 
-Send api calls to the local backend from the local frontend so that the backend successfully makes GraphQL calls to my GitHub account and the response response gets rendered in the DOM.
+Skip step 5. above. Step 5a. has already been done.
+
+The `./backend` directory in the `back_end` branch needs to be brought up to date with the `./backend` directory in the `front_end_React_GraphQL_call_to_local_backend` branch.
+
+Then the `./backend` directory needs to be pushed to Render.
+
+Then the `./frontend` directory needs to be pushed to Render.
+
+Then I need to troubleshoot any issues in order to make an api call from the front end to the back end.
 
 ## Hosting
 
