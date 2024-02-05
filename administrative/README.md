@@ -14,7 +14,7 @@
 
    See `Start front end server locally` in the `./jamiebort.github.io/frontend/README.md` file.
 
-3. Lastly, load the http://127.0.0.1:5500/frontend/index.html page in a browser.
+3. ~~Lastly, load the http://127.0.0.1:5500/frontend/index.html page in a browser.~~
 
 ### Hosted
 
