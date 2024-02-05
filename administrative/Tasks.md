@@ -149,7 +149,7 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
 
    b. Then make calls to that open api so that the response gets rendered in the DOM.
 
-3. In the `front_end_React_GraphQL_call_to_repo` branch, make a GraphQL call to my GitHub account. Have the response get rendered in the DOM. Successfully redeploy it to Render.
+3. ~~In the `front_end_React_GraphQL_call_to_repo` branch, make a GraphQL call to my GitHub account. Have the response get rendered in the DOM. Successfully redeploy it to Render.~~ **DONE.**
 
    a. First make a GraphQL call to my GitHub account. Follow this [Add GitHub Pinned Repositories to React & Next.js with the GitHub GraphQL API](https://www.youtube.com/watch?v=JUEw1yHJ8Ao) tutorial.
 
@@ -195,11 +195,11 @@ Then made a GraphQL api call following the instructions here: https://www.apollo
 
 Pushed changes to the `Main` branch so that it will trigger a deploy to see if this still works on Render.com
 
+Made a GraphQL call to my GitHub account per step 3 above in the `Front End To Do` section.
+
 ##### Front End Status Next Steps React + Vite
 
-Still need to make an api call in step 3 above in the `Front End To Do` section.
-
-Make a GraphQL call to my GitHub account.
+Send api calls to the local backend from the local frontend so that the backend successfully makes GraphQL calls to my GitHub account and the response response gets rendered in the DOM.
 
 ## Hosting
 

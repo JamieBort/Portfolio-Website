@@ -3,41 +3,65 @@
 import { useQuery, gql } from "@apollo/client";
 
 // NOTE: Define the query we want to execute by wrapping it in the gql template literal:
-const GET_LOCATIONS = gql`
-  query GetLocations {
-    locations {
-      id
-      name
-      description
-      photo
+const GET_PINNED_PROJECTS = gql`
+  {
+    user(login: "jamiebort") {
+      pinnedItems(first: 6) {
+        totalCount
+        edges {
+          node {
+            ... on Repository {
+              id
+              name
+              url
+              stargazerCount
+              description
+              languages(first: 6) {
+                totalCount
+                edges {
+                  node {
+                    name
+                  }
+                }
+              }
+              homepageUrl
+              forkCount
+            }
+          }
+        }
+      }
     }
   }
 `;
 
-// NOTE: Define a component named DisplayLocations that executes our GET_LOCATIONS query with the useQuery hook:
-function DisplayLocations() {
-  const { loading, error, data } = useQuery(GET_LOCATIONS);
+// NOTE: Define a component named DisplayRepos that executes our GET_LOCATIONS query with the useQuery hook:
+function DisplayRepos() {
+  const { loading, error, data } = useQuery(GET_PINNED_PROJECTS);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error : {error.message}</p>;
 
-  return data.locations.map(({ id, name, description, photo }) => (
-    <div key={id}>
-      <h3>{name}</h3>
-      <img width="400" height="250" alt="location-reference" src={`${photo}`} />
-      <br />
-      <b>About this location:</b>
-      <p>{description}</p>
-      <br />
-    </div>
-  ));
+  const list = data.user.pinnedItems.edges.map((element) => {
+    const { description, forkCount, id, homepageUrl, name, stargazerCount, url } = element.node;
+    return (
+      <li key={id}>
+        <h3>Title: {name}</h3>
+        <p>Description: {description}</p>
+        <p>Fork Count: {forkCount}</p>
+        <p>Home Page URL: {homepageUrl}</p>
+        <p>Stargaze Count: {stargazerCount}</p>
+        <p>URL: {url}</p>
+      </li>
+    );
+  });
+  return <ul>{list}</ul>;
 }
 
 export default function App() {
   return (
     <div>
       <h2>My first Apollo app 🚀</h2>
-      <DisplayLocations />
+      <DisplayRepos />
     </div>
   );
 }
