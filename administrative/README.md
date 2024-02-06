@@ -78,6 +78,10 @@ Here is listed the things I plan on adding to the repo.
 		+-- fullstack - For implementing a front end and back end.
 		|	|
 		|	+-- back_end - For all back end implementation.
+		|		|
+		|		+-- back_end_express - For deploying the forked express repo to Render.
+		|		|
+		|		+-- back_end_deploy - For deploying to Render.
 		|	|
 		|	+-- front_end - For all front end implementation.
 		|		|
@@ -120,6 +124,10 @@ Here is listed the things I plan on adding to the repo.
 
 ### Directories
 
+- ./.vscode/
+
+  - See the [Workspace settings](https://code.visualstudio.com/docs/getstarted/settings#:~:text=Note%3A%20A%20VS%20Code%20%22workspace,feature%20called%20Multi%2Droot%20workspaces) in the VS Code documentation.
+
 - ./administrative/accessibilityIssues/
 
   - Contains accessibility issues raised by other people. And accessibility issues/questions that I need answered.
@@ -136,13 +144,17 @@ Here is listed the things I plan on adding to the repo.
 
   - All documentation not needed to be seen.
 
-- ./.vscode/
-
-  - See the [Workspace settings](https://code.visualstudio.com/docs/getstarted/settings#:~:text=Note%3A%20A%20VS%20Code%20%22workspace,feature%20called%20Multi%2Droot%20workspaces) in the VS Code documentation.
-
 - ./assets/
 
   - The directory for the static resources.
+
+- ./backend/
+
+  - Directory containing the back end of this app.
+
+- ./frontend/
+
+  - Directory containing the front end of this app.
 
 - ./css/
 
@@ -158,11 +170,13 @@ Here is listed the things I plan on adding to the repo.
 
 ### Files
 
-- ./administrative/FutureFeatures.md
+- ./administrative/old_frontend_gitignore
 
-  - **This file is no longer in this directory.**
+  - Moved and renamed from `./frontend/.gitignore` to `./administrative/old_frontend_gitignore`
 
-  - Future features section of the repo. Here is listed the things I plan on adding to the repo.
+  - Added the contents to `./.gitignore`.
+
+  - Keeping it in `./administrative/` in case it is needed in the future. For example in case Render.com needs it to deploy correctly.
 
 - ./administrative/old_frontend_gitignore
 

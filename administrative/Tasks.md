@@ -6,6 +6,8 @@ To-Do items that need to be addressed.
 
 - Update the remote backend branch name from `backend` to `back_end`.
 
+- Research whether Render.com needs `./frontend/.gitignore` and `./backend/.gitignore` files. Or if I can use just `./.gitignore`.
+
 ## API
 
 - Consolidate and organize ALL Trello cards with
@@ -118,6 +120,48 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
       Search for something to the effect of "trigger media query with pinch zoom".
 
 ## Back End
+
+### Back End To Do
+
+1. ~~Deploy `back_end` branch on Render again.~~ **DONE - FAILED**
+
+2. ~~Fork node express app.~~ **DONE**
+
+3. ~~Deploy node express app.~~ **DONE**
+
+4. create `back_end_express` branch.
+
+5. deploy the `back_end_express` branch.
+
+6. rename the `backend_jamiebort.github.io` webservice on Render.com to `jamiebort.github.io_backend`
+
+7. replace the logic in the `back_end_express` branch with the logic in the `front_end_React_GraphQL_call_to_local_backend` branch.
+
+8. deploy the `back_end_express` branch again. Call it `backend_jamiebort.github.io`.
+
+9. merge the `front_end_React_GraphQL_call_to_local_backend` branch into the `back_end_express` branch. **DO NOT** merge the `./backend/` directory, however.
+
+10. Update the remote backend branch name from `backend` to `back_end`.
+
+11. Remove the `jamiebort.github.io_backend` webservice from Render.com
+
+### Back End Status
+
+Created a backend. But it is not deploying as expected. While I am not getting any errors, it is taking too long to deploy.
+
+Made GraphQL Api calls to GitHub.
+
+Deployed `back_end` branch on Render again.
+
+Forked node express app.
+
+Deploy node express app.
+
+#### Back End Status Next Steps
+
+~~While hosted on Render.com, receive api call from front end. See `6.` in the `Front End To Do` section below.~~ Not yet.
+
+Create `back_end_express` branch.
 
 ## Content
 
@@ -260,6 +304,8 @@ This [Render Quickstarts](https://docs.render.com/) documentation is [full of Qu
 Under the `STATIC SITES` section lists various JavaScript libraries and no options for vanilla JavaScript.
 
 So I am pausing here to create a React front end to make the GraphQL api call.
+
+### Hosting Next Steps
 
 ## JavaScript
 
