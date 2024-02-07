@@ -1,10 +1,137 @@
 const express = require("express");
 const app = express();
+// const port = process.env.PORT || 3000; // NOTE: My code.
 const port = process.env.PORT || 3001;
+// import cors from "cors";
+var cors = require("cors"); // NOTE: My code.
+const accessToken = process.env.GITHUB_ACCESS_TOKEN; // NOTE: My code.
+// const dummyToken = process.env.DUMMY_ACCESS_TOKEN; // NOTE: My code.
+// console.log("My accessToken:", dummyToken); // NOTE: My code.
+const query = `
+  query {
+    user(login: "jamiebort") {
+        pinnedItems(first: 6) {
+        totalCount
+        edges {
+            node {
+            ... on Repository {
+                id
+                name
+                url
+                stargazerCount
+                description
+                languages(first: 6) {
+                totalCount
+                edges {
+                    node {
+                    name
+                    }
+                }
+                }
+                homepageUrl
+                forkCount
+            }
+            }
+        }
+        }
+    }
+}`;
 
-app.get("/", (req, res) => res.type('html').send(html));
+// // NOTE: GraphQL call without a function call.
+// // NOTE: "await" has been removed.
+// const response = fetch(`https://api.github.com/graphql`, {
+//   method: "POST",
+//   body: JSON.stringify({ query }),
+//   headers: {
+//     Authorization: `Bearer ${accessToken}`,
+//   },
+// })
+//   // .then(() => console.log("response received."))
+//   .then((res) => res.json())
+//   .then((body) => {
+//     const data = body.data;
+//     console.log(data);
+//     // const pinnedItems = body.data.user.pinnedItems;
+//     // console.log(pinnedItems);
+//     const edges = body.data.user.pinnedItems.edges;
+//     // console.log(edges);
+//     return edges;
+//   })
+//   .catch((error) => console.error("error:", error));
+
+// NOTE: Local files do not work. They have to be served.
+// NOTE: http://127.0.0.1:5500 is sufficient for ./jamiebort.github.io/frontend/index.html in VS Code.
+const allowedOrigins = ["http://localhost:5173", "http://127.0.0.1:3000", "http://127.0.0.1:5500", "http://localhost:3000"];
+
+const corsOptions = {
+  origin: (origin, callback) => {
+    // console.log("allowedOrigins.indexOf(origin) :", allowedOrigins.indexOf(origin));
+    // console.log("origin:", origin);
+    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  optionsSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
+
+app.get("/", cors(corsOptions), async function (req, res) {
+  // app.get("/", async function (req, res) {
+  const response = await fetch(`https://api.github.com/graphql`, {
+    method: "POST",
+    body: JSON.stringify({ query }),
+    headers: {
+      Authorization: `Bearer ${accessToken}`,
+    },
+  })
+    // .then(() => console.log("response received."))
+    .then((res) => res.json())
+    .then((body) => {
+      // Handling the data before sending it back.
+      try {
+        // console.log("body:", body);
+        if (body.message) {
+          console.log("body.message:", body.message);
+          return body.message;
+        }
+        const data = body.data;
+        console.log(data);
+        // const pinnedItems = body.data.user.pinnedItems;
+        // console.log(pinnedItems);
+        const edges = body.data.user.pinnedItems.edges;
+        // console.log(edges);
+        return edges;
+      } catch (error) {
+        console.log("error.message:", error.message);
+        return ["there was an error:", error.message];
+      }
+    })
+    .catch((error) => {
+      console.error("error:", error);
+      // return error;
+      // return console.error;
+    });
+
+  // console.log("response:", response);
+  // Sending the data back.
+  res.json(response);
+
+  // Use one of these two to send back a String response. Or an html response.
+  // res.send("Hello World!");
+  // res.type("html").send(html);
+});
+
+// app.get("/", (req, res) => res.type("html").send(html));
 
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+
+// // NOTE: My code. Redundant.
+// app.listen(port, function () {
+//   console.log(`Example app listening on port ${port}!`);
+// });
 
 server.keepAliveTimeout = 120 * 1000;
 server.headersTimeout = 120 * 1000;
@@ -58,4 +185,4 @@ const html = `
     </section>
   </body>
 </html>
-`
+`;
