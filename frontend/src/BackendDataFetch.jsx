@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 
 export default function BackendDataFetch() {
-  const URL = `http://localhost:3000/`;
+  // const URL = `http://localhost:3000/`;
+  const URL = `https://backend-jamiebort-github-io.onrender.com/`;
   const [repos, setRepos] = useState();
 
   try {
@@ -14,6 +15,7 @@ export default function BackendDataFetch() {
           throw new Error("Something went wrong.");
         })
         .then((responseJson) => {
+          console.log(responseJson);
           setRepos(responseJson);
         })
         .catch((error) => {
@@ -23,7 +25,8 @@ export default function BackendDataFetch() {
   } catch (error) {
     console.log(error);
   }
-  const repo = repos.edges.map((item) => {
+  // const repo = repos.edges.map((item) => {
+  const repo = repos.map((item) => {
     const { description, forkCount, id, homepageUrl, name, stargazerCount, url } = item.node;
     return (
       <li key={id}>
@@ -36,5 +39,6 @@ export default function BackendDataFetch() {
       </li>
     );
   });
+  // return <h3>temp hold</h3>;
   return <ul>{repo}</ul>;
 }
