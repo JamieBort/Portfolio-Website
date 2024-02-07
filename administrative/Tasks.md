@@ -137,13 +137,17 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
 
 7. replace the logic in the `back_end_express` branch with the logic in the `front_end_React_GraphQL_call_to_local_backend` branch.
 
-8. deploy the `back_end_express` branch again. Call it `backend_jamiebort.github.io`.
+8. while in the `back_end_express` branch, test locally a call from the front end to the back end.
 
-9. merge the `front_end_React_GraphQL_call_to_local_backend` branch into the `back_end_express` branch. **DO NOT** merge the `./backend/` directory, however.
+9. deploy the `back_end_express` branch again. Call it `backend_jamiebort.github.io`.
 
-10. Update the remote backend branch name from `backend` to `back_end`.
+10. merge the `front_end_React_GraphQL_call_to_local_backend` branch into the `back_end_express` branch. **DO NOT** merge the `./backend/` directory, however.
 
-11. Remove the `jamiebort.github.io_backend` webservice from Render.com
+11. Update the remote backend branch name from `backend` to `back_end`.
+
+12. Remove the `jamiebort.github.io_backend` webservice from Render.com
+
+13. Research whether Render.com needs `./frontend/.gitignore` and `./backend/.gitignore` files. Or if I can use just `./.gitignore`.
 
 ### Back End Status
 
@@ -156,6 +160,8 @@ Deployed `back_end` branch on Render again.
 Forked node express app.
 
 Deploy node express app.
+
+https://docs.render.com/deploy-node-express-app
 
 #### Back End Status Next Steps
 
