@@ -10,35 +10,33 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
 - Do these three things together and in sequence
 
-  - First research whether I can install cores with yarn alone, rather than have a package-lock.json file.
+  - ~~First research whether I can install cores with yarn alone, rather than have a package-lock.json file.~~ **DONE.**
 
   - Then
 
-    - remove the `./backend/node_modules/` directory.
+    - ~~remove the `./backend/node_modules/` directory.~~ **DONE.**
 
     - ~~rename the `./backend/package-lock.json` file as `./backend/temp_package-lock.json`.~~ Copied them to the `./jamiebort.github.io/backend/npm_yarn_config_files/` directory.
 
-    - remove the `./backend/package-lock.json` file.
+    - ~~remove the `./backend/package-lock.json` file.~~ **DONE.**
 
-    - reinstall the `./backend/node_modules/` directory with just the `yarn` command.
+    - ~~reinstall the `./backend/node_modules/` directory with just the `yarn` command.~~ **DONE.**
 
-    - ~~attempt to run the app locally.~~
+    - ~~redeploy the app on Render.com~~ **DONE.**
 
-    - redeploy the app on Render.com
-
-  - Lastly, remove the `backup_package.json` and the `backup_yarn.lock` files.
+  - ~~Lastly, remove the `backup_package.json` and the `backup_yarn.lock` files.~~ **DONE.**
 
 - Do these two things together and in sequence
 
-  - re-deploy the front end with the name`frontend_jamiebort.github.io`
+  - ~~re-deploy the front end with the name`frontend_jamiebort.github.io`~~ **DONE.**
 
   - remove the old front end service
 
-- Do these two things together and in sequence
+- ~~Do these two things together and in sequence~~ **This was already completed.**
 
   - re-deploy the back end with the name `backend_jamiebort.github.io`
 
-  - remove the old back end service
+  - ~~remove the old back end service~~ Nothing to remove.
 
 - Address the gitignore situation:
 
@@ -65,6 +63,8 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
       - ~~https://express-hello-world-9pqq.onrender.com and~~ **DONE.**
 
       - ~~https://jamiebort-github-io-backend.onrender.com~~ **DONE.**
+
+    - the `./jamiebort.github.io/backend/npm_yarn_config_files/` directory.
 
     - Remove all the old branches. Including the `back_end` branches and the `front_end` branches and the `*_backup` branches. But there be more.
 
