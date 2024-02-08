@@ -44,7 +44,7 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
     ~~Or if I can use just `./.gitignore`.~~
 
-  - ~~Possibly restore the `./jamiebort.github.io/old_frontend_gitignore` frontend gitignore file as `./jamiebort.github.io/.gitignore`.~~
+  - **Deleted the old_frontend_gitignore file.** ~~Possibly restore the `./jamiebort.github.io/old_frontend_gitignore` frontend gitignore file as `./jamiebort.github.io/.gitignore`.~~
 
 - Cleanup
 
@@ -68,7 +68,7 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
     - Remove all the old branches. Including the `back_end` branches and the `front_end` branches and the `*_backup` branches. But there be more.
 
-    - The `./old_backend/` directory.
+    - **DONE.** ~~The `./old_backend/` directory.~~
 
   - **DONE.** ~~exclude the ./.vscode/ directory from the repo.~~
 
