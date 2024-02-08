@@ -80,10 +80,10 @@ Here is listed the things I plan on adding to the repo.
 		|	+-- fullstack_cleanup - For adding comments to code, researching "keepAliveTimeout", and addressing the other tasks in the ./scratch.md file.
 		|	|
 		|	+-- back_end - For all back end implementation.
-		|		|
-		|		+-- back_end_express - For deploying the forked express repo to Render.
-		|		|
-		|		+-- back_end_deploy - For deploying to Render.
+		|	|	|
+		|	|	+-- back_end_express - For deploying the forked express repo to Render.
+		|	|	|
+		|	|	+-- back_end_deploy - For deploying to Render.
 		|	|
 		|	+-- front_end - For all front end implementation.
 		|		|

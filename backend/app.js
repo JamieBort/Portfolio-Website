@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 3001;
-var cors = require("cors"); // NOTE: My code. // TODO: change `var` to `const`.
+const cors = require("cors");
 const accessToken = process.env.GITHUB_ACCESS_TOKEN;
 
 const query = `

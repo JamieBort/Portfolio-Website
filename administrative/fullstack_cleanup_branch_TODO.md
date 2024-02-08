@@ -6,63 +6,63 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
 ---
 
-- ~~redeploy the frontend AND the backend.~~ **DONE.**
+- **DONE.** ~~redeploy the frontend AND the backend.~~
 
 - Do these three things together and in sequence
 
-  - ~~First research whether I can install cores with yarn alone, rather than have a package-lock.json file.~~ **DONE.**
+  - **DONE.** ~~First research whether I can install cores with yarn alone, rather than have a package-lock.json file.~~
 
   - Then
 
-    - ~~remove the `./backend/node_modules/` directory.~~ **DONE.**
+    - **DONE.** ~~remove the `./backend/node_modules/` directory.~~
 
-    - ~~rename the `./backend/package-lock.json` file as `./backend/temp_package-lock.json`.~~ Copied them to the `./jamiebort.github.io/backend/npm_yarn_config_files/` directory.
+    - **DONE.** ~~rename the `./backend/package-lock.json` file as `./backend/temp_package-lock.json`.~~ Copied them to the `./jamiebort.github.io/backend/npm_yarn_config_files/` directory.
 
-    - ~~remove the `./backend/package-lock.json` file.~~ **DONE.**
+    - **DONE.** ~~remove the `./backend/package-lock.json` file.~~
 
-    - ~~reinstall the `./backend/node_modules/` directory with just the `yarn` command.~~ **DONE.**
+    - **DONE.** ~~reinstall the `./backend/node_modules/` directory with just the `yarn` command.~~
 
-    - ~~redeploy the app on Render.com~~ **DONE.**
+    - **DONE.** ~~redeploy the app on Render.com~~
 
-  - ~~Lastly, remove the `backup_package.json` and the `backup_yarn.lock` files.~~ **DONE.**
+  - **DONE.** ~~Lastly, remove the `backup_package.json` and the `backup_yarn.lock` files.~~
 
 - Do these two things together and in sequence
 
-  - ~~re-deploy the front end with the name`frontend_jamiebort.github.io`~~ **DONE.**
+  - **DONE.** ~~re-deploy the front end with the name`frontend_jamiebort.github.io`~~
 
   - remove the old front end service
 
-- ~~Do these two things together and in sequence~~ **This was already completed.**
+- **This was already completed.** ~~Do these two things together and in sequence~~
 
   - re-deploy the back end with the name `backend_jamiebort.github.io`
 
   - ~~remove the old back end service~~ Nothing to remove.
 
-- Address the gitignore situation:
+- **DONE.** ~~Address the gitignore situation:~~
 
-  - Research whether Render.com needs `./frontend/.gitignore` and `./backend/.gitignore` files.
+  - ~~Research whether Render.com needs `./frontend/.gitignore` and `./backend/.gitignore` files.~~
 
-    Or if I can use just `./.gitignore`.
+    ~~Or if I can use just `./.gitignore`.~~
 
-  - Possibly restore the `./jamiebort.github.io/old_frontend_gitignore` frontend gitignore file as `./jamiebort.github.io/.gitignore`.
+  - ~~Possibly restore the `./jamiebort.github.io/old_frontend_gitignore` frontend gitignore file as `./jamiebort.github.io/.gitignore`.~~
 
 - Cleanup
 
   - remove/delete
 
-    - ~~close unused browser windows.~~ **DONE.**
+    - **DONE.** ~~close unused browser windows.~~
 
-    - ~~the `scratch_old.md` and the `scratch.README.md` files.~~ **DONE.**
+    - **DONE.** ~~the `scratch_old.md` and the `scratch.README.md` files.~~
 
-    - ~~Delete the ./fontend/.env.local file.~~ Updated info in the file.
+    - **DONE.** ~~Delete the ./fontend/.env.local file.~~ Updated info in the file.
 
-    - ~~Delete the "JamieBort/express-hello-world" repo.~~ **DONE.**
+    - **DONE.** ~~Delete the "JamieBort/express-hello-world" repo.~~
 
-    - ~~remove the webservices associated with~~ **DONE.**
+    - **DONE.** ~~remove the webservices associated with~~
 
-      - ~~https://express-hello-world-9pqq.onrender.com and~~ **DONE.**
+      - **DONE.** ~~https://express-hello-world-9pqq.onrender.com and~~
 
-      - ~~https://jamiebort-github-io-backend.onrender.com~~ **DONE.**
+      - **DONE.** ~~https://jamiebort-github-io-backend.onrender.com~~
 
     - the `./jamiebort.github.io/backend/npm_yarn_config_files/` directory.
 
@@ -70,7 +70,7 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
   - exclude the ./.vscode/ directory from the repo.
 
-  - change "var" to "const" in the ./backend/app.js file.
+  - **DONE.** ~~change "var" to "const" in the ./backend/app.js file.~~
 
   - Clean up the ./fontend/App.jsx file.
 
@@ -86,24 +86,36 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
 - redeploy the frontend AND the backend. from the `fullstack` branch.
 
-- redeploy the frontend AND the backend. from the `dev` branch.
+- Do these two things together and in sequence:
+
+  - decide
+
+    - whether to rebuild the front end with Svelt and Typescript
+
+    - or
+
+      - move the following `./assets/`, `./css/`, `./html/`, and `./js/` directories into `./fontend/`,
+
+      - remove the `./index.html` file,
+
+      - and rebuild the front end with Svelt and Typescript at a later date **a goal for a later date**
+
+  - Act on that decision.
+
+  Svelt Typescript resources: https://github.com/JamieBort/jamiebort.github.io/blob/fullstack_cleanup/administrative/browser_tab_notes.md#typescript-svelt
 
 - merge the `fullstack` branch into the `dev` branch.
 
+- redeploy the frontend AND the backend. from the `dev` branch.
+
 - **figure out and fix why the frontend api call doesn't load until it the page is reloaded (opened) twice.**
 
-- Then merge the `dev` branch into the `master` branch. from the `master` branch.
+- Then merge the `dev` branch into the `master` branch.
+
+- redeploy the frontend AND the backend. from the `master` branch.
 
 - redirect jamiebort.com to https://jamiebort-github-io-frontend-react.onrender.com/
 
-- either
-
-  - replace the frontend directory with typescript and Svelt
-
-  - or rebuild the site (move the front end files and directories into the frontend directory)
-
-    and replace the frontend directory with typescript and Svelt **goal for a later date**
-
-- find a library to translate my repo descriptions into Spanish.**goal for a later date**
+- find a library to translate my repo descriptions into Spanish. **a goal for a later date**
 
 - Feature for my Personal dashboard: a search feature that allows me to search the LearningDirectory by phrases.
