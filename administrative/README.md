@@ -132,14 +132,6 @@ Here is listed the things I plan on adding to the repo.
 
   - For information, see the [.vscode](https://github.com/JamieBort/LearningDirectory/tree/master/Git/configFiles#vscode) section of the `configFiles` directory of the `LearningDirectory` repo.
 
-- ./administrative/accessibilityIssues/
-
-  - Contains accessibility issues raised by other people. And accessibility issues/questions that I need answered.
-
-- ./administrative/aestheticDesignChanges/
-
-  - A directory for the list of aesthetic things that need to change with the website.
-
 - ./administrative/
 
   - Files for organizational purposes.
@@ -147,6 +139,14 @@ Here is listed the things I plan on adding to the repo.
   - Notes on how to change/improve the site.
 
   - All documentation not needed to be seen.
+
+  - ./administrative/accessibilityIssues/
+
+    - Contains accessibility issues raised by other people. And accessibility issues/questions that I need answered.
+
+  - ./administrative/aestheticDesignChanges/
+
+    - A directory for the list of aesthetic things that need to change with the website.
 
 - ./assets/
 
@@ -159,6 +159,12 @@ Here is listed the things I plan on adding to the repo.
 - ./frontend/
 
   - Directory containing the front end of this app.
+
+  - ./frontend/npm_yarn_config_files/
+
+    - Temporary directory while I work on cleaning up the dual package config files.
+
+    - See the `fullstack_cleanup_branch_TODO.md` file.
 
 - ./css/
 

@@ -14,13 +14,15 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
   - Then
 
-    - remove the `node_modules/` directory.
+    - remove the `./backend/node_modules/` directory.
 
-    - rename the `package-lock.json` file as `temp_package-lock.json`.
+    - ~~rename the `./backend/package-lock.json` file as `./backend/temp_package-lock.json`.~~ Copied them to the `./jamiebort.github.io/backend/npm_yarn_config_files/` directory.
 
-    - reinstall the `node_modules/` directory with just the `yarn` command.
+    - remove the `./backend/package-lock.json` file.
 
-    - attempt to run the app locally.
+    - reinstall the `./backend/node_modules/` directory with just the `yarn` command.
+
+    - ~~attempt to run the app locally.~~
 
     - redeploy the app on Render.com
 
