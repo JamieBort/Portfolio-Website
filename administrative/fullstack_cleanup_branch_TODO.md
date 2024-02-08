@@ -8,7 +8,7 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
 - **DONE.** ~~redeploy the frontend AND the backend.~~
 
-- Do these three things together and in sequence
+- **DONE.** ~~Do these three things together and in sequence~~
 
   - **DONE.** ~~First research whether I can install cores with yarn alone, rather than have a package-lock.json file.~~
 
@@ -26,15 +26,15 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
   - **DONE.** ~~Lastly, remove the `backup_package.json` and the `backup_yarn.lock` files.~~
 
-- Do these two things together and in sequence
+- **DONE.** ~~Do these two things together and in sequence~~
 
   - **DONE.** ~~re-deploy the front end with the name`frontend_jamiebort.github.io`~~
 
-  - remove the old front end service
+  - **DONE.** ~~the `old_frontend_react_jamiebort.github.io` static service.~~
 
 - **This was already completed.** ~~Do these two things together and in sequence~~
 
-  - re-deploy the back end with the name `backend_jamiebort.github.io`
+  - ~~re-deploy the back end with the name `backend_jamiebort.github.io`~~
 
   - ~~remove the old back end service~~ Nothing to remove.
 
@@ -46,9 +46,9 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
   - **Deleted the old_frontend_gitignore file.** ~~Possibly restore the `./jamiebort.github.io/old_frontend_gitignore` frontend gitignore file as `./jamiebort.github.io/.gitignore`.~~
 
-- Cleanup
+- **DONE.** ~~Cleanup~~
 
-  - remove/delete
+  - **DONE.** ~~remove/delete~~
 
     - **DONE.** ~~close unused browser windows.~~
 
@@ -64,17 +64,13 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
       - **DONE.** ~~https://jamiebort-github-io-backend.onrender.com~~
 
-    - the `./jamiebort.github.io/backend/npm_yarn_config_files/` directory.
-
-    - Remove all the old branches. Including the `back_end` branches and the `front_end` branches and the `*_backup` branches. But there be more.
-
     - **DONE.** ~~The `./old_backend/` directory.~~
 
   - **DONE.** ~~exclude the ./.vscode/ directory from the repo.~~
 
   - **DONE.** ~~change "var" to "const" in the ./backend/app.js file.~~
 
-  - Clean up the ./fontend/App.jsx file.
+  - **DONE.** ~~Clean up the ./frontend/src/App.jsx file.~~
 
 - comment the code - add comments so that
 
@@ -84,9 +80,15 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
 - redeploy the frontend AND the backend.
 
-- merge the `back_end_express` branch into the `fullstack` branch.
+- Do these four things together and in sequence:
 
-- redeploy the frontend AND the backend. from the `fullstack` branch.
+  - merge the `back_end_express` branch into the `fullstack` branch.
+
+  - Remove the `./jamiebort.github.io/backend/npm_yarn_config_files/` directory.
+
+  - Remove all the old branches. Including the `back_end` branches and the `front_end` branches and the `*_backup` branches. But there be more.
+
+  - redeploy the frontend AND the backend. from the `fullstack` branch.
 
 - Do these two things together and in sequence:
 

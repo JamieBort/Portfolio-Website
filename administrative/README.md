@@ -178,6 +178,16 @@ Here is listed the things I plan on adding to the repo.
 
   - Contains all JavaScript files.
 
+- scratch/
+
+  - A directory to keep files and directories temporarily.
+
+  - Contains files and directories that are not needed for the deployment.
+
+  - Examples: lists of things that I need to complete.
+
+  - It is not tracked by Git.
+
 ### Files
 
 - ./administrative/browser_tab_notes.md
