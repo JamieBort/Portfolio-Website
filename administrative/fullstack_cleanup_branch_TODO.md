@@ -6,39 +6,77 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
 ---
 
-- redeploy the frontend AND the backend.
+- ~~redeploy the frontend AND the backend.~~ **DONE.**
 
-- Research whether I can install cores with yarn alone, rather than have a package-lock.json file.
+- Do these three things together and in sequence
 
-- re-deploy the front end with the name ~~frontend_react_jamiebort.github.io~~ `frontend_jamiebort.github.io`
+  - First research whether I can install cores with yarn alone, rather than have a package-lock.json file.
 
-- re-deploy the back end with the name `backend_jamiebort.github.io`
+  - Then
 
-- Research whether Render.com needs `./frontend/.gitignore` and `./backend/.gitignore` files. Or if I can use just `./.gitignore`.
+    - remove the `node_modules/` directory.
+
+    - rename the `package-lock.json` file as `temp_package-lock.json`.
+
+    - reinstall the `node_modules/` directory with just the `yarn` command.
+
+    - attempt to run the app locally.
+
+    - redeploy the app on Render.com
+
+  - Lastly, remove the `backup_package.json` and the `backup_yarn.lock` files.
+
+- Do these two things together and in sequence
+
+  - re-deploy the front end with the name`frontend_jamiebort.github.io`
+
+  - remove the old front end service
+
+- Do these two things together and in sequence
+
+  - re-deploy the back end with the name `backend_jamiebort.github.io`
+
+  - remove the old back end service
+
+- Address the gitignore situation:
+
+  - Research whether Render.com needs `./frontend/.gitignore` and `./backend/.gitignore` files.
+
+    Or if I can use just `./.gitignore`.
+
+  - Possibly restore the `./jamiebort.github.io/old_frontend_gitignore` frontend gitignore file as `./jamiebort.github.io/.gitignore`.
 
 - Cleanup
 
+  - remove/delete
+
+    - ~~close unused browser windows.~~ **DONE.**
+
+    - ~~the `scratch_old.md` and the `scratch.README.md` files.~~ **DONE.**
+
+    - ~~Delete the ./fontend/.env.local file.~~ Updated info in the file.
+
+    - ~~Delete the "JamieBort/express-hello-world" repo.~~ **DONE.**
+
+    - ~~remove the webservices associated with~~ **DONE.**
+
+      - ~~https://express-hello-world-9pqq.onrender.com and~~ **DONE.**
+
+      - ~~https://jamiebort-github-io-backend.onrender.com~~ **DONE.**
+
+    - Remove all the old branches. Including the `back_end` branches and the `front_end` branches and the `*_backup` branches. But there be more.
+
+  - exclude the ./.vscode/ directory from the repo.
+
   - change "var" to "const" in the ./backend/app.js file.
-
-  - Remove all the old branches. Including the `back_end` branches and the `front_end` branches and the `*_backup` branches. But there be more.
-
-  - close unused browser windows.
 
   - Clean up the ./fontend/App.jsx file.
 
-  - Delete the ./fontend/.env.local file.
+- comment the code - add comments so that
 
-  - Delete the "JamieBort/express-hello-world" repo.
+  - **I understand what is happening**.
 
-  - remove the webservices associated with
-
-    - https://express-hello-world-9pqq.onrender.com,
-
-    - https://jamiebort-github-io-backend.onrender.com,
-
-    - and https://jamiebort-github-io-frontend-react.onrender.com **IF the replacement is working correctly.**
-
-  - restore the frontend gitignore file.
+  - And so that other people understand what is happening.
 
 - redeploy the frontend AND the backend.
 
@@ -65,3 +103,5 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
     and replace the frontend directory with typescript and Svelt **goal for a later date**
 
 - find a library to translate my repo descriptions into Spanish.**goal for a later date**
+
+- Feature for my Personal dashboard: a search feature that allows me to search the LearningDirectory by phrases.

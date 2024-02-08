@@ -128,7 +128,9 @@ Here is listed the things I plan on adding to the repo.
 
 - ./.vscode/
 
-  - See the [Workspace settings](https://code.visualstudio.com/docs/getstarted/settings#:~:text=Note%3A%20A%20VS%20Code%20%22workspace,feature%20called%20Multi%2Droot%20workspaces) in the VS Code documentation.
+  - Directory for config file for VS Code.
+
+  - For information, see the [.vscode](https://github.com/JamieBort/LearningDirectory/tree/master/Git/configFiles#vscode) section of the `configFiles` directory of the `LearningDirectory` repo.
 
 - ./administrative/accessibilityIssues/
 
@@ -172,33 +174,33 @@ Here is listed the things I plan on adding to the repo.
 
 ### Files
 
+- ./administrative/browser_tab_notes.md
+
+  - Temporary notes for anything I found regarding issues I had while working on the previous branch.
+
+  - Or to address issues I am about to address.
+
+- ./administrative/fullstack_cleanup_branch_TODO.md
+
+  - Items to be addressed in the `fullstack_cleanup` branch.
+
+  - Or to be moved to the `./administrative/Tasks.md` file to be addressed at a later date.
+
 - ./administrative/old_frontend_gitignore
 
   - Moved and renamed from `./frontend/.gitignore` to `./administrative/old_frontend_gitignore`
 
-  - Added the contents to `./.gitignore`.
+  - Added the contents to the `./.gitignore` file.
+
+  - It was removed to clean up the repo.
 
   - Keeping it in `./administrative/` in case it is needed in the future. For example in case Render.com needs it to deploy correctly.
-
-- ./administrative/old_frontend_gitignore
-
-  - Moved this file from the `./jamiebort.github.io/frontend` directory.
-
-  - It was removed to clean up the codebase.
-
-  - `./.gitignore` was first updated.
 
   - It is saved here in case I need to restore it. **It is possible that Render.com will need it when the frontend is deployed there.**
 
 - ./administrative/README.md
 
   - This readme file.
-
-- ./administrative/Revamp2023.md
-
-  - **This file is no longer in this directory.**
-
-  - This file is for keeping track of the status and the tasks that need to be completed while I rebuild my portfolio website.
 
 - ./administrative/Tasks.md
 

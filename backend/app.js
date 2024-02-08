@@ -57,6 +57,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+// TODO: comment about async and await
 app.get("/", cors(corsOptions), async function (req, res) {
   // app.get("/", async function (req, res) { // NOTE: this apparently works too.
   const response = await fetch(`https://api.github.com/graphql`, {
