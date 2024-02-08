@@ -1,12 +1,9 @@
 const express = require("express");
 const app = express();
-// const port = process.env.PORT || 3000; // NOTE: My code.
 const port = process.env.PORT || 3001;
-// import cors from "cors";
-var cors = require("cors"); // NOTE: My code.
-const accessToken = process.env.GITHUB_ACCESS_TOKEN; // NOTE: My code.
-// const dummyToken = process.env.DUMMY_ACCESS_TOKEN; // NOTE: My code.
-// console.log("My accessToken:", dummyToken); // NOTE: My code.
+var cors = require("cors"); // NOTE: My code. // TODO: change `var` to `const`.
+const accessToken = process.env.GITHUB_ACCESS_TOKEN;
+
 const query = `
   query {
     user(login: "jamiebort") {
@@ -37,28 +34,6 @@ const query = `
     }
 }`;
 
-// // NOTE: GraphQL call without a function call.
-// // NOTE: "await" has been removed.
-// const response = fetch(`https://api.github.com/graphql`, {
-//   method: "POST",
-//   body: JSON.stringify({ query }),
-//   headers: {
-//     Authorization: `Bearer ${accessToken}`,
-//   },
-// })
-//   // .then(() => console.log("response received."))
-//   .then((res) => res.json())
-//   .then((body) => {
-//     const data = body.data;
-//     console.log(data);
-//     // const pinnedItems = body.data.user.pinnedItems;
-//     // console.log(pinnedItems);
-//     const edges = body.data.user.pinnedItems.edges;
-//     // console.log(edges);
-//     return edges;
-//   })
-//   .catch((error) => console.error("error:", error));
-
 // NOTE: Local files do not work. They have to be served.
 // NOTE: http://127.0.0.1:5500 is sufficient for ./jamiebort.github.io/frontend/index.html in VS Code.
 const allowedOrigins = [
@@ -66,13 +41,11 @@ const allowedOrigins = [
   "http://127.0.0.1:3000",
   "http://127.0.0.1:5500",
   "http://localhost:3000",
-  "https://jamiebort-github-io-frontend-react.onrender.com",
+  "https://jamiebort-github-io-frontend-react.onrender.com", // NOTE: this will be updated to "frontend_jamiebort.github.io".
 ];
 
 const corsOptions = {
   origin: (origin, callback) => {
-    // console.log("allowedOrigins.indexOf(origin) :", allowedOrigins.indexOf(origin));
-    // console.log("origin:", origin);
     if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
       callback(null, true);
     } else {
@@ -85,7 +58,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 app.get("/", cors(corsOptions), async function (req, res) {
-  // app.get("/", async function (req, res) {
+  // app.get("/", async function (req, res) { // NOTE: this apparently works too.
   const response = await fetch(`https://api.github.com/graphql`, {
     method: "POST",
     body: JSON.stringify({ query }),
@@ -93,12 +66,10 @@ app.get("/", cors(corsOptions), async function (req, res) {
       Authorization: `Bearer ${accessToken}`,
     },
   })
-    // .then(() => console.log("response received."))
     .then((res) => res.json())
     .then((body) => {
       // Handling the data before sending it back.
       try {
-        // console.log("body:", body);
         if (body.message) {
           console.log("body.message:", body.message);
           return body.message;
@@ -134,11 +105,7 @@ app.get("/", cors(corsOptions), async function (req, res) {
 
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
-// // NOTE: My code. Redundant.
-// app.listen(port, function () {
-//   console.log(`Example app listening on port ${port}!`);
-// });
-
+// TODO: read up on keepAliveTimeout AND headersTimeout.
 // NOTE: commented out.
 // server.keepAliveTimeout = 120 * 1000;
 // server.headersTimeout = 120 * 1000;

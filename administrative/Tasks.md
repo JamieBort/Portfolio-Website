@@ -8,6 +8,8 @@ To-Do items that need to be addressed.
 
 - Research whether Render.com needs `./frontend/.gitignore` and `./backend/.gitignore` files. Or if I can use just `./.gitignore`.
 
+- See the list found in this `./administrative/fullstack_cleanup_branch_TODO.md` file.
+
 ## API
 
 - Consolidate and organize ALL Trello cards with
@@ -123,51 +125,15 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
 
 ### Back End To Do
 
-1. ~~Deploy `back_end` branch on Render again.~~ **DONE - FAILED**
-
-2. ~~Fork node express app.~~ **DONE**
-
-3. ~~Deploy node express app.~~ **DONE**
-
-4. create `back_end_express` branch.
-
-5. deploy the `back_end_express` branch.
-
-6. rename the `backend_jamiebort.github.io` webservice on Render.com to `jamiebort.github.io_backend`
-
-7. replace the logic in the `back_end_express` branch with the logic in the `front_end_React_GraphQL_call_to_local_backend` branch.
-
-8. while in the `back_end_express` branch, test locally a call from the front end to the back end.
-
-9. deploy the `back_end_express` branch again. Call it `backend_jamiebort.github.io`.
-
-10. merge the `front_end_React_GraphQL_call_to_local_backend` branch into the `back_end_express` branch. **DO NOT** merge the `./backend/` directory, however.
-
-11. Update the remote backend branch name from `backend` to `back_end`.
-
-12. Remove the `jamiebort.github.io_backend` webservice from Render.com
-
-13. Research whether Render.com needs `./frontend/.gitignore` and `./backend/.gitignore` files. Or if I can use just `./.gitignore`.
+None.
 
 ### Back End Status
 
-Created a backend. But it is not deploying as expected. While I am not getting any errors, it is taking too long to deploy.
-
-Made GraphQL Api calls to GitHub.
-
-Deployed `back_end` branch on Render again.
-
-Forked node express app.
-
-Deploy node express app.
-
-https://docs.render.com/deploy-node-express-app
+Successfully deployed backend via the `back_end_express` branch.
 
 #### Back End Status Next Steps
 
-~~While hosted on Render.com, receive api call from front end. See `6.` in the `Front End To Do` section below.~~ Not yet.
-
-Create `back_end_express` branch.
+None.
 
 ## Content
 
@@ -187,79 +153,15 @@ Create `back_end_express` branch.
 
 ### Front End To Do
 
-1. In the `front_end_React` branch, create a frontend that deploys to Render.com. **DONE.**
-
-   a. ~~Create a React app locally.~~
-
-   b. ~~Deploy it to Render.com.~~
-
-2. ~~In the `front_end_React_api_call` branch, create a front end that makes a Rest or GraphQL api call to an open api. Have the response get rendered in the DOM. Successfully redeploy it to Render.~~ **DONE.**
-
-   a. First set up React so that it can make calls to an open api
-
-   b. Then make calls to that open api so that the response gets rendered in the DOM.
-
-3. ~~In the `front_end_React_GraphQL_call_to_repo` branch, make a GraphQL call to my GitHub account. Have the response get rendered in the DOM. Successfully redeploy it to Render.~~ **DONE.**
-
-   a. First make a GraphQL call to my GitHub account. Follow this [Add GitHub Pinned Repositories to React & Next.js with the GitHub GraphQL API](https://www.youtube.com/watch?v=JUEw1yHJ8Ao) tutorial.
-
-   b. Then populate the DOM with the response.
-
-4. ~~In the `front_end_React_GraphQL_call_to_local_backend` branch, send GraphQL calls to the local backend. Have the response get rendered in the DOM. Successfully redeploy it to Render.~~ **DONE.**
-
-   a. Send api calls to the local backend from the local frontend so that
-
-   1. the backend successfully makes GraphQL calls to my GitHub account
-
-   2. and the response response gets rendered in the DOM.
-
-5. In the `front_end_React_GraphQL_call_to_repo_from_hosted_frontend` branch, from the hosted frontend site make a GraphQL call directly to my GitHub account so that the response gets rendered in the DOM. Successfully redeploy it to Render.
-
-   ~~a. From the hosted frontend site make a GraphQL call directly to my GitHub account so that the response gets rendered in the DOM.~~
-
-   a. First get the `./frontend` directory hosted on Render.com.
-
-   b. Then, from the hosted frontend site make a GraphQL call directly to my GitHub account so that the response gets rendered in the DOM.
-
-6. In the `front_end_React_GraphQL_call_to_hosted_backend_from_hosted_frontend` branch, from the hosted frontend site make an api call from the frontend to the backend (both hosted on Render), which in turn makes a GraphQL call my repo so that the response gets rendered in the DOM. Successfully redeploy it to Render.
-
-   a. make an api call from the frontend to the backend (both hosted on Render), which in turn makes a GraphQL call my repo so that the response gets rendered in the DOM.
+None.
 
 ### Front End Status
 
-#### Front End Status NextJS
+Successfully deployed backend via the `back_end_express` branch.
 
-See the [Front End Status Next Steps React](https://github.com/JamieBort/jamiebort.github.io/blob/front_end_NextJS/administrative/Tasks.md#front-end-status-next-steps-nextjs) section in the `./administrative/Tasks.md` file of the `front_end_NextJS` branch.
+### Front End Status Next Steps React + Vite
 
-##### Front End Status Next Steps NextJS
-
-Cease work on this branch.
-
-#### Front End Status React + Vite
-
-Renamed `./jamiebort.github.io/frontend/` as `./jamiebort.github.io/frontend_React/`.
-
-Then created `./jamiebort.github.io/frontend/` by following these instructions: https://vitejs.dev/guide/ (per the instructions here: https://www.apollographql.com/docs/react/get-started)
-
-Then made a GraphQL api call following the instructions here: https://www.apollographql.com/docs/react/get-started
-
-Pushed changes to the `Main` branch so that it will trigger a deploy to see if this still works on Render.com
-
-Made a GraphQL call to my GitHub account per step 3 above in the `Front End To Do` section.
-
-Sent api calls to the local backend from the local frontend so that the backend successfully makes GraphQL calls to my GitHub account and the response response gets rendered in the DOM.
-
-##### Front End Status Next Steps React + Vite
-
-Skip step 5. above. Step 5a. has already been done.
-
-The `./backend` directory in the `back_end` branch needs to be brought up to date with the `./backend` directory in the `front_end_React_GraphQL_call_to_local_backend` branch.
-
-Then the `./backend` directory needs to be pushed to Render.
-
-Then the `./frontend` directory needs to be pushed to Render.
-
-Then I need to troubleshoot any issues in order to make an api call from the front end to the back end.
+None.
 
 ## Hosting
 

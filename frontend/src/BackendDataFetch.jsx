@@ -16,19 +16,6 @@ export default function BackendDataFetch() {
           throw new Error("Something went wrong.");
         })
         .then((responseJson) => {
-          // // console.log(responseJson);
-          // // console.log(responseJson[0]);
-          // responseJson.map((item) => {
-          //   const { description, forkCount, id, homepageUrl, name, stargazerCount, url } = item.node;
-          //   console.log("description:", description);
-          //   console.log("forkCount:", forkCount);
-          //   console.log("id:", id);
-          //   console.log("homepageUrl:", homepageUrl);
-          //   console.log("name:", name);
-          //   console.log("stargazerCount:", stargazerCount);
-          //   console.log("url:", url);
-          //   console.log("==========================================");
-          // });
           setRepos(responseJson);
           setLoading(false);
         })
@@ -41,9 +28,7 @@ export default function BackendDataFetch() {
   }
 
   if (!loading) {
-    // // const repo = repos.edges.map((item) => {
     var repo = repos.map((item) => {
-      // console.log("item:", item);
       const { description, forkCount, id, homepageUrl, name, stargazerCount, url } = item.node;
       return (
         <li key={id}>
@@ -58,9 +43,5 @@ export default function BackendDataFetch() {
     });
   }
 
-  // return loading ? <p>loading...</p> : <p>not loading</p>;
   return loading ? <p>loading...</p> : <ul>{repo}</ul>;
-  // return <h3>temp hold</h3>;
-  // if (repo) return <ul>{repo}</ul>;
-  // else return <p>does not exist</p>;
 }

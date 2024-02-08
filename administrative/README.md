@@ -6,19 +6,19 @@
 
 1. Start back end server.
 
-   a. Make sure the "http://127.0.0.1:5500" is listed in the "allowedOrigins" array in the "./jamiebort.github.io/backend/app.js" file.
-
-   b. Run the `nodemon --env-file=.env app.js` command in the "./jamiebort.github.io/backend/" directory.
+   See `Start back end server locally` in the `./jamiebort.github.io/backend/README.md` file.
 
 2. Start front end server.
 
    See `Start front end server locally` in the `./jamiebort.github.io/frontend/README.md` file.
 
-3. ~~Lastly, load the http://127.0.0.1:5500/frontend/index.html page in a browser.~~
-
 ### Hosted
 
-Not yet hosted.
+See
+
+- `Start front end server remotely` in the `./jamiebort.github.io/frontend/README.md` file.
+
+- and see `Start back end server remotely` in the `./jamiebort.github.io/backend/README.md` file.
 
 ## Future Features
 
@@ -76,6 +76,8 @@ Here is listed the things I plan on adding to the repo.
 		+-- content - For modifying content.
 		|
 		+-- fullstack - For implementing a front end and back end.
+		|	|
+		|	+-- fullstack_cleanup - For adding comments to code, researching "keepAliveTimeout", and addressing the other tasks in the ./scratch.md file.
 		|	|
 		|	+-- back_end - For all back end implementation.
 		|		|

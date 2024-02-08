@@ -1,10 +1,20 @@
 # README
 
-Below is the original app.
+## Start back end server locally
 
-Created this forked repo to get the backend deployed for my app.
+1. Make sure the `GITHUB_ACCESS_TOKEN` is in the ./backend/.env file.
 
-TODO: Delete this repo when I am done.
+2. Make sure "http://localhost:5173" (or whichever url that the front end will be sending a get api call from) is listed in the "allowedOrigins" array in the "./jamiebort.github.io/backend/app.js" file.
+
+3. Navigate to `jamiebort.github.io/backend`.
+
+4. run `nodemon --env-file=.env app.js`
+
+## Start back end server remotely
+
+[Not setup yet.]
+
+Below is the readme for the original app.
 
 ---
 
