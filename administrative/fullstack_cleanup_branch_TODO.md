@@ -68,7 +68,9 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
     - Remove all the old branches. Including the `back_end` branches and the `front_end` branches and the `*_backup` branches. But there be more.
 
-  - exclude the ./.vscode/ directory from the repo.
+    - The `./old_backend/` directory.
+
+  - **DONE.** ~~exclude the ./.vscode/ directory from the repo.~~
 
   - **DONE.** ~~change "var" to "const" in the ./backend/app.js file.~~
 
