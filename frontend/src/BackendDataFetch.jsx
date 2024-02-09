@@ -9,34 +9,65 @@ export default function BackendDataFetch() {
   // By default the status of "loading" is true, implying that we're not getting any data from the back end.
   const [loading, setLoading] = useState(true);
 
+  // The api call.
+  const myAPICall = () => {
+    console.log("*** interval ***");
+    fetch(URL)
+      .then((response) => {
+        if (response.ok) {
+          // Yay! We have data back from the back end.
+          return response.json();
+        }
+        // We have a problem.
+        throw new Error("Something went wrong.");
+      })
+      .then((responseJson) => {
+        // console.log("responseJson:", responseJson); // Let's see the response in the console.
+        // Updating the "repos" state.
+        setRepos(responseJson);
+        // Only after the "repos" data is updated will we change the "loading" status to false.
+        setLoading(false);
+      })
+      .catch((error) => {
+        // Uh oh
+        console.log(error);
+      });
+  };
+
   // Attempt to fetch data from the back end.
   try {
     useEffect(() => {
-      fetch(URL)
-        .then((response) => {
-          if (response.ok) {
-            // Yay! We have data back from the back end.
-            return response.json();
-          }
-          // We have a problem.
-          throw new Error("Something went wrong.");
-        })
-        .then((responseJson) => {
-          // console.log("responseJson:", responseJson); // Let's see the response in the console.
-          // Updating the "repos" state.
-          setRepos(responseJson);
-          // Only after the "repos" data is updated will we change the "loading" status to false.
-          setLoading(false);
-        })
-        .catch((error) => {
-          // Uh oh
-          console.log(error);
-        });
+      myAPICall();
+      // fetch(URL)
+      //   .then((response) => {
+      //     if (response.ok) {
+      //       // Yay! We have data back from the back end.
+      //       return response.json();
+      //     }
+      //     // We have a problem.
+      //     throw new Error("Something went wrong.");
+      //   })
+      //   .then((responseJson) => {
+      //     // console.log("responseJson:", responseJson); // Let's see the response in the console.
+      //     // Updating the "repos" state.
+      //     setRepos(responseJson);
+      //     // Only after the "repos" data is updated will we change the "loading" status to false.
+      //     setLoading(false);
+      //   })
+      //   .catch((error) => {
+      //     // Uh oh
+      //     console.log(error);
+      //   });
     }, []);
   } catch (error) {
     // More errors....
     console.log(error);
   }
+
+  // Attempt to keep the backend from going to sleep.
+  setInterval(() => {
+    myAPICall();
+  }, 1000 * 60 * 10);
 
   if (!loading) {
     // Mapping through the data from the api call.
