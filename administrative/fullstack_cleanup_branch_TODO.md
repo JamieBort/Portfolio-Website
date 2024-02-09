@@ -20,9 +20,13 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
 - **DONE.** ~~Delete the `browser_tab_notes.md` file.~~
 
-- Do these four things together and in sequence:
+- Do these six things together and in sequence:
 
-  - merge the `back_end_express` branch into the `fullstack` branch.
+  - Create backups of the `fullstack_cleanup` branch and the `fullstack` branches.
+
+  - merge the `fullstack_cleanup` branch into the `fullstack` branch.
+
+  - redeploy the frontend AND the backend. from the `fullstack` branch.
 
   - Remove the `./jamiebort.github.io/backend/npm_yarn_config_files/` directory.
 
@@ -67,6 +71,8 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
   - https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_TypeScript,
 
   - and https://svelte.dev/docs/typescript
+
+- This `./backend/LICENSE` exists. What to do about it? Address this.
 
 - merge the `fullstack` branch into the `dev` branch.
 
