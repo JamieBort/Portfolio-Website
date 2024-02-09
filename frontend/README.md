@@ -16,7 +16,47 @@
 
 ### Directories
 
+- node_modules/
+
+  -
+
+- public/
+
+  -
+
+- src/
+
+  -
+
 ### Files
+
+- .env.local
+
+  - Excluded from Git.
+
+- .eslintrc.cjs
+
+  -
+
+- index.html
+
+  -
+
+- package.json
+
+  -
+
+- README.md
+
+  - This readme file.
+
+- vite.config.js
+
+  -
+
+- yarn.lock
+
+---
 
 Below is the original README.md file.
 
