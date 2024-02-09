@@ -2,13 +2,19 @@
 
 // This ./backend/app.js file is the entry point for the back end.
 
+// Spin up an Express server.
 const express = require("express");
+// Create an Express application. express() is "a top-level function exported by the express module"
 const app = express();
-// If PORT is not assigned a value in the .env file(s), 3001 will be used.
+// If PORT is not assigned a value in the .env file(s), port 3001 will be used.
 const port = process.env.PORT || 3001;
+// Addressing Cross-Origin Resource Sharing (CORS).
 const cors = require("cors");
 // The access token for GitHub. It's sensitive
 const accessToken = process.env.GITHUB_ACCESS_TOKEN;
+
+// The endpoint we're making a GraphQL api call against.
+const URL = `https://api.github.com/graphql`;
 
 // The GraphQL query used to obtain the list of Repos that are pinned in my GitHub account.
 const query = `
@@ -41,9 +47,17 @@ const query = `
     }
 }`;
 
+// An object containing the type of fetch (a POST), the body (my GraphQL query), and the headers (my GitHub authorization).
+const fetchOptions = {
+  method: "POST",
+  body: JSON.stringify({ query }),
+  headers: {
+    Authorization: `Bearer ${accessToken}`,
+  },
+};
+
 // The various URLs that are allowed to make api calls against this backend.
 // http://127.0.0.1:5500 is sufficient for ./jamiebort.github.io/frontend/index.html in VS Code.
-// NOTE: Local files do not work. They have to be served.
 const allowedOrigins = ["http://localhost:5173", "http://127.0.0.1:3000", "http://127.0.0.1:5500", "http://localhost:3000", "https://frontend-jamiebort-github-io.onrender.com"];
 
 // Checking the allowedOrigins array above to see if the URL is in fact in the list of allowed URLs.
@@ -59,29 +73,22 @@ const corsOptions = {
   optionsSuccessStatus: 200,
 };
 
-// The middleware to use cors.
-app.use(cors(corsOptions));
-
-// TODO: comment about async and await
-// For requests to the root URL (/) or route, the app responds with the object that is received from the fetch.
-// For every other path, it will respond with a 404 Not Found.
-app.get("/", cors(corsOptions), async function (req, res) {
-  // app.get("/", async function (req, res) { // NOTE: this apparently works too.
-  const response = await fetch(`https://api.github.com/graphql`, {
-    method: "POST",
-    body: JSON.stringify({ query }),
-    headers: {
-      Authorization: `Bearer ${accessToken}`,
-    },
-  })
+// Asynchronous function. Because there is a delay in getting a response back from the server(s).
+const postFetch = async function (req, res) {
+  // An await method. Because we're returning a promise.
+  const response = await fetch(URL, fetchOptions)
+    // The json() method returns a promise which resolves by parsing the body text as JSON.
     .then((res) => res.json())
     .then((body) => {
+      console.log("body:", body);
       // Handling the data before sending it back.
       try {
+        // In the case that we get a message rather than data, we'll pass that back to the front end.
         if (body.message) {
           console.log("body.message:", body.message);
           return body.message;
         }
+        // Here we return the data to be passed back to the front end.
         console.log("body.data:", body.data);
         return body.data.user.pinnedItems.edges;
       } catch (error) {
@@ -99,69 +106,23 @@ app.get("/", cors(corsOptions), async function (req, res) {
   // Sending the object that is received from the fetch.
   res.json(response);
   // console.log("response:", response);
+};
 
-  // NOTE: Use one of these two to send back a String response. Or an html response.
-  // res.send("Hello World!");
-  // res.type("html").send(html);
-});
+// The middleware to use cors.
+// NOTE: Using "app.use(cors(corsOptions));" with  enables All CORS Requests)
+//       For specific routes, forego "app.use(cors(corsOptions));" and use this "app.get("/", cors(corsOptions), postFetch);"
+app.use(cors(corsOptions));
 
-// app.get("/", (req, res) => res.type("html").send(html));
+// For requests to the root URL (/) or route, the app responds with the object that is received from the fetch.
+// For every other path, it will respond with a 404 Not Found.
+// app.get for GET requests.
+app.get("/", postFetch);
 
 // This app starts a server and listens on port "port" for connections.
+// Receives incoming TCP connections.
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 // TODO: read up on keepAliveTimeout AND headersTimeout.
 // NOTE: commented out.
 // server.keepAliveTimeout = 120 * 1000;
 // server.headersTimeout = 120 * 1000;
-
-const html = `
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello from Render!</title>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-    <script>
-      setTimeout(() => {
-        confetti({
-          particleCount: 100,
-          spread: 70,
-          origin: { y: 0.6 },
-          disableForReducedMotion: true
-        });
-      }, 500);
-    </script>
-    <style>
-      @import url("https://p.typekit.net/p.css?s=1&k=vnd5zic&ht=tk&f=39475.39476.39477.39478.39479.39480.39481.39482&a=18673890&app=typekit&e=css");
-      @font-face {
-        font-family: "neo-sans";
-        src: url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
-        font-style: normal;
-        font-weight: 700;
-      }
-      html {
-        font-family: neo-sans;
-        font-weight: 700;
-        font-size: calc(62rem / 16);
-      }
-      body {
-        background: white;
-      }
-      section {
-        border-radius: 1em;
-        padding: 1em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-      }
-    </style>
-  </head>
-  <body>
-    <section>
-      Hello from Render!
-    </section>
-  </body>
-</html>
-`;
