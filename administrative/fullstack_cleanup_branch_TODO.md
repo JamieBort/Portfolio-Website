@@ -6,13 +6,17 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
 ---
 
-- comment the code - add comments so that
+- Do these two things together and in sequence:
 
-  - **I understand what is happening**.
+  - comment the code - add comments so that
 
-  - And so that other people understand what is happening.
+    - **I understand what is happening**.
 
-- redeploy the frontend AND the backend.
+    - And so that other people understand what is happening.
+
+  - redeploy the frontend AND the backend.
+
+- Update `name`, `description`, `repository`, `author`, and possibly the `private` properties in the `./backend/package.json` file.
 
 - Do these four things together and in sequence:
 
@@ -46,7 +50,7 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
 - redeploy the frontend AND the backend. from the `dev` branch.
 
-- **figure out and fix why the frontend api call doesn't load until it the page is reloaded (opened) twice.**
+- **figure out and fix why the frontend api lags.** It appears as though the backend "goes to sleep.The api call doesn't load until the page is reloaded (opened) twice. Or until the backend is loaded twice.
 
 - Then merge the `dev` branch into the `master` branch.
 
