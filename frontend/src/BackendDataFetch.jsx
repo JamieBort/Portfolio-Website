@@ -11,9 +11,10 @@ export default function BackendDataFetch() {
 
   // The api call.
   const myAPICall = () => {
-    console.log("*** interval ***", Date());
+    console.log("myAPICall:", Date());
     fetch(URL)
       .then((response) => {
+        console.log("response:", response);
         if (response.ok) {
           // Yay! We have data back from the back end.
           return response.json();
@@ -37,6 +38,7 @@ export default function BackendDataFetch() {
   // Attempt to fetch data from the back end.
   try {
     useEffect(() => {
+      console.log("initial fetch via useEffect in front end");
       myAPICall();
       // fetch(URL)
       //   .then((response) => {
@@ -66,8 +68,9 @@ export default function BackendDataFetch() {
 
   // Attempt to keep the backend from going to sleep.
   setInterval(() => {
+    console.log("attempting to fetch via setInterval in front end");
     myAPICall();
-  }, 1000 * 60 * 10);
+  }, 1000 * 60 * 3);
 
   if (!loading) {
     // Mapping through the data from the api call.
