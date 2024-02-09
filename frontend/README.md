@@ -1,31 +1,74 @@
 # frontend
 
-// NOTE: Successfully pulling data from the backend.
+Bootstrapped this frontend app with React + Vite document: https://vitejs.dev/guide/
 
-// To do this:
+And followed this document to make GraphQL calls: https://www.apollographql.com/docs/react/get-started/
 
-// 1. Using VSCode open a live server on the `./jamiebort.github.io/frontend/index.html` file.
+## Start front end server locally
 
-// 2. Make sure the "http://127.0.0.1:5500" is listed in the "allowedOrigins" array in the "./jamiebort.github.io/backend/app.js" file.
+1. In `Terminal`, navigate to `./jamiebort.github.io/frontend/`.
 
-// 3. Run the `nodemon --env-file=.env app.js` command in the "./jamiebort.github.io/backend/" directory.
+2. Run the `yarn dev` command.
 
-// 4. Lastly, load the http://127.0.0.1:5500/frontend/index.html page in a browser.
+3. Navigate to `http://localhost:5173/` in your browser.
+
+## Start front end server remotely
+
+[Not setup yet.]
 
 ## Directories and Files
 
 ### Directories
 
+- node_modules/
+
+  -
+
+- public/
+
+  -
+
+- src/
+
+  -
+
 ### Files
 
-- .gitignore
+- .env.local
 
-  - Leftover from the `front_end_React` branch when I cleaned up the `front_end` branch.
+  - Excluded from Git.
 
-- gitHubProjects.json
+- .eslintrc.cjs
 
-  - A json of my starred projects in my GitHub account.
+  -
 
-- ./README.md
+- index.html
+
+  -
+
+- package.json
+
+  -
+
+- README.md
 
   - This readme file.
+
+- vite.config.js
+
+  -
+
+- yarn.lock
+
+---
+
+Below is the original README.md file.
+
+---
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

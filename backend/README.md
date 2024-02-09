@@ -1,27 +1,38 @@
 # backend
 
-To start the back end run:
+Created from this [Node Express](https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Render#node-expess) Render document.
 
-`nodemon --env-file=.env app.js`
+And by following this document to make GraphQL calls: https://www.apollographql.com/docs/react/get-started/
 
-// NOTE: Successfully pulling data from the backend.
+## Start back end server locally
 
-// To do this:
+1. Make sure the `GITHUB_ACCESS_TOKEN` is in the ./backend/.env file.
 
-// 1. Using VSCode open a live server on the `./jamiebort.github.io/frontend/index.html` file.
+2. Make sure "http://localhost:5173" (or whichever url that the front end will be sending a get api call from) is listed in the "allowedOrigins" array in the "./jamiebort.github.io/backend/app.js" file.
 
-// 2. Make sure the "http://127.0.0.1:5500" is listed in the "allowedOrigins" array in the "./jamiebort.github.io/backend/app.js" file.
+3. Navigate to `jamiebort.github.io/backend`.
 
-// 3. Run the `nodemon --env-file=.env app.js` command in the "./jamiebort.github.io/backend/" directory.
+4. run `nodemon --env-file=.env app.js`
 
-// 4. Lastly, load the http://127.0.0.1:5500/frontend/index.html page in a browser.
+## Start back end server remotely
 
-## Directories and Files
+[Not setup yet.]
 
-### Directories
+Below is the readme for the original app.
 
-### Files
+---
 
-- ./README.md
+This is the [Express](https://expressjs.com) [Hello world](https://expressjs.com/en/starter/hello-world.html) example on [Render](https://render.com).
 
-  - This readme file.
+The app in this repo is deployed at [https://express.onrender.com](https://express.onrender.com).
+
+## Deployment
+
+See https://render.com/docs/deploy-node-express-app or follow the steps below:
+
+Create a new web service with the following values:
+
+- Build Command: `yarn`
+- Start Command: `node app.js`
+
+That's it! Your web service will be live on your Render URL as soon as the build finishes.

@@ -6,6 +6,14 @@ To-Do items that need to be addressed.
 
 - Update the remote backend branch name from `backend` to `back_end`.
 
+# <<<<<<< HEAD
+
+- Research whether Render.com needs `./frontend/.gitignore` and `./backend/.gitignore` files. Or if I can use just `./.gitignore`.
+
+- See the list found in this `./administrative/fullstack_cleanup_branch_TODO.md` file.
+
+> > > > > > > fullstack_cleanup
+
 ## API
 
 - Consolidate and organize ALL Trello cards with
@@ -119,11 +127,25 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
 
 ## Back End
 
+<<<<<<< HEAD
+
 ### To Do
 
-- Create a backend.
+- # Create a backend.
 
-- Make GraphQL Api calls to GitHub
+### Back End To Do
+
+> > > > > > > fullstack_cleanup
+
+None.
+
+### Back End Status
+
+Successfully deployed backend via the `back_end_express` branch.
+
+#### Back End Status Next Steps
+
+None.
 
 ### Status
 
@@ -143,9 +165,69 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
 
 ## Front End
 
-### To Do
+### Front End To Do
 
-### Status
+None.
+
+### Front End Status
+
+Successfully deployed backend via the `back_end_express` branch.
+
+### Front End Status Next Steps React + Vite
+
+None.
+
+## Hosting
+
+### Hosting To Do
+
+- Research where to host it.
+
+  - See https://github.com/JamieBort/LearningDirectory/tree/master/Hosting
+
+    Particularly this https://github.com/JamieBort/LearningDirectory/blob/master/Hosting/hosting_research/notes.md#valuable-info section.
+
+- Set up hosting.
+
+### Hosting Status
+
+Chose Render.com to host the project. See the [Render](https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Render) directory in my LearningDirectory repo.
+
+Researched the file structure needed and other aspects.
+
+- Side: Among other sources I found this [How to deploy frontend and backend on Render?](https://community.render.com/t/how-to-deploy-frontend-and-backend-on-render/7449/2) post which says:
+
+  > Every project is different, so you will know what commands are required to get your app up and running. If you have a frontend and backend in the same repo, that’s a “monorepo” and Render has support for that: [Monorepo Support](https://docs.render.com/monorepo-support)
+
+  > In general terms - and this may not be specific to your projects - a common pattern for what you’ve described would be to have the frontend app as a [Static Site](https://docs.render.com/static-sites) and the backend as a [Web Service](https://docs.render.com/web-services), using the Node [Native Environment](https://docs.render.com/native-runtimes). So two services, both linked to the same repo with settings like (but amended to your required values):
+
+  > - A Web Service for the backend
+  >   - Root Directory: “your_backend_dir”
+  >   - Build Command: “npm install; npm run build;” (some backends don’t need to be built - will depend on what you’ve built)
+  >   - Start Command: “node server.js” (or whatever file within “your_backend_dir” that starts your backend app)
+
+  > - A Static Site for the frontend
+  >   - Root Directory: “your_frontend_dir”
+  >   - Build Command: “npm run build” (static sites auto-install dependencies)
+  >   - Publish Directory: “public” (this is Create React Apps default build directory, amend as required for your own project/framework)
+
+- Furthermore, this `How to organise file structure of backend and frontend in MERN` Stack overflow post from the [Valuable Info](https://github.com/JamieBort/LearningDirectory/blob/master/Hosting/hosting_research/notes.md#valuable-info) section of my hosting_research notes of my Learning Directory repo mentions using `concurrently`, which allows you to
+
+  > ...start both your frontend and backend at the same time.
+
+  **It goes on in detail how to use it.**
+
+Deployed the backend with little issue.
+
+Ready to deploy front end.
+
+This [Render Quickstarts](https://docs.render.com/) documentation is [full of Quickstart guides for various languages/frameworks](https://community.render.com/t/how-to-deploy-frontend-and-backend-on-render/7449/3).
+
+Under the `STATIC SITES` section lists various JavaScript libraries and no options for vanilla JavaScript.
+
+So I am pausing here to create a React front end to make the GraphQL api call.
+
+### Hosting Next Steps
 
 ## JavaScript
 

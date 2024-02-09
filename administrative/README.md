@@ -1,16 +1,24 @@
 # administrative
 
-// NOTE: Successfully pulling data from the backend.
+## How to use
 
-// To do this:
+### Locally
 
-// 1. Using VSCode open a live server on the `./jamiebort.github.io/frontend/index.html` file.
+1. Start back end server.
 
-// 2. Make sure the "http://127.0.0.1:5500" is listed in the "allowedOrigins" array in the "./jamiebort.github.io/backend/app.js" file.
+   See `Start back end server locally` in the `./jamiebort.github.io/backend/README.md` file.
 
-// 3. Run the `nodemon --env-file=.env app.js` command in the "./jamiebort.github.io/backend/" directory.
+2. Start front end server.
 
-// 4. Lastly, load the http://127.0.0.1:5500/frontend/index.html page in a browser.
+   See `Start front end server locally` in the `./jamiebort.github.io/frontend/README.md` file.
+
+### Hosted
+
+See
+
+- `Start front end server remotely` in the `./jamiebort.github.io/frontend/README.md` file.
+
+- and see `Start back end server remotely` in the `./jamiebort.github.io/backend/README.md` file.
 
 ## Future Features
 
@@ -69,17 +77,45 @@ Here is listed the things I plan on adding to the repo.
 		|
 		+-- fullstack - For implementing a front end and back end.
 		|	|
+		|	+-- fullstack_cleanup - For adding comments to code, researching "keepAliveTimeout", and addressing the other tasks in the ./scratch.md file.
+		|	|
 		|	+-- back_end - For all back end implementation.
+		|	|	|
+		|	|	+-- back_end_express - For deploying the forked express repo to Render.
+		|	|	|
+		|	|	+-- back_end_deploy - For deploying to Render.
 		|	|
 		|	+-- front_end - For all front end implementation.
 		|		|
+		|		+-- front_end_NextJS - Front end built with NextJS.
+		|		|	|
+		|		|	+-- front_end_NextJS_api_call - To make an api call with NextJS to an open api.
+		|		|	|
+		|		|	+-- front_end_NextJS_GraphQL_call_to_repo - To make a GraphQL call with NextJS to my repo.
+		|		|	|
+		|		|	+-- front_end_NextJS_GraphQL_call_to_local_backend - To make a GraphQL call with NextJS to my repo from my local backend. (Local front end sends api call to backend.)
+		|		|	|
+		|		|	+-- front_end_NextJS_GraphQL_call_to_repo_from_hosted_frontend - To make a GraphQL call with NextJS from the frontend (hosted on Render) directly to an my repo.
+		|		|	|
+		|		|	+-- front_end_NextJS_GraphQL_call_to_hosted_backend_from_hosted_frontend - To make an api call with NextJS from the frontend to the backend (both hosted on Render), which in turn makes a GraphQL call my repo.
+		|		|
 		|		+-- front_end_React - Front end built with React.
+		|		|	|
+		|		|	+-- front_end_React_api_call - To make an api call with React to an open api.
+		|		|	|
+		|		|	+-- front_end_React_GraphQL_call_to_repo - To make a GraphQL call with React to my repo.
+		|		|	|
+		|		|	+-- front_end_React_GraphQL_call_to_local_backend - To make a GraphQL call with React to my repo from my local backend. (Local front end sends api call to backend.)
+		|		|	|
+		|		|	+-- front_end_React_GraphQL_call_to_repo_from_hosted_frontend - To make a GraphQL call with React from the frontend (hosted on Render) directly to an my repo.
+		|		|	|
+		|		|	+-- front_end_React_GraphQL_call_to_hosted_backend_from_hosted_frontend - To make an api call with React from the frontend to the backend (both hosted on Render), which in turn makes a GraphQL call my repo.
 		|		|
 		|		+-- front_end_VanillaJS - Front end built with vanilla JavaScript.
-		|			|
-		|			+-- front_end_VanillaJS_CORS - Address the CORS issue.
 		|
 		+-- host - For all things host related.
+		|	|
+		|	+-- host_render - For all things host related using Render.com.
 		|
 		+-- script - For all script related logic.
 		|
@@ -90,13 +126,11 @@ Here is listed the things I plan on adding to the repo.
 
 ### Directories
 
-- ./administrative/accessibilityIssues/
+- ./.vscode/
 
-  - Contains accessibility issues raised by other people. And accessibility issues/questions that I need answered.
+  - Directory for config file for VS Code.
 
-- ./administrative/aestheticDesignChanges/
-
-  - A directory for the list of aesthetic things that need to change with the website.
+  - For information, see the [.vscode](https://github.com/JamieBort/LearningDirectory/tree/master/Git/configFiles#vscode) section of the `configFiles` directory of the `LearningDirectory` repo.
 
 - ./administrative/
 
@@ -106,13 +140,31 @@ Here is listed the things I plan on adding to the repo.
 
   - All documentation not needed to be seen.
 
-- ./.vscode/
+  - ./administrative/accessibilityIssues/
 
-  - See the [Workspace settings](https://code.visualstudio.com/docs/getstarted/settings#:~:text=Note%3A%20A%20VS%20Code%20%22workspace,feature%20called%20Multi%2Droot%20workspaces) in the VS Code documentation.
+    - Contains accessibility issues raised by other people. And accessibility issues/questions that I need answered.
+
+  - ./administrative/aestheticDesignChanges/
+
+    - A directory for the list of aesthetic things that need to change with the website.
 
 - ./assets/
 
   - The directory for the static resources.
+
+- ./backend/
+
+  - Directory containing the back end of this app.
+
+- ./frontend/
+
+  - Directory containing the front end of this app.
+
+  - ./frontend/npm_yarn_config_files/
+
+    - Temporary directory while I work on cleaning up the dual package config files.
+
+    - See the `fullstack_cleanup_branch_TODO.md` file.
 
 - ./css/
 
@@ -126,19 +178,39 @@ Here is listed the things I plan on adding to the repo.
 
   - Contains all JavaScript files.
 
+- scratch/
+
+  - A directory to keep files and directories temporarily.
+
+  - Contains files and directories that are not needed for the deployment.
+
+  - Examples: lists of things that I need to complete.
+
+  - It is not tracked by Git.
+
 ### Files
 
-- ./administrative/FutureFeatures.md
+- ./administrative/fullstack_cleanup_branch_TODO.md
 
-  - Future features section of the repo. Here is listed the things I plan on adding to the repo.
+  - Items to be addressed in the `fullstack_cleanup` branch.
+
+  - Or to be moved to the `./administrative/Tasks.md` file to be addressed at a later date.
+
+- ./administrative/old_frontend_gitignore
+
+  - Moved and renamed from `./frontend/.gitignore` to `./administrative/old_frontend_gitignore`
+
+  - Added the contents to the `./.gitignore` file.
+
+  - It was removed to clean up the repo.
+
+  - Keeping it in `./administrative/` in case it is needed in the future. For example in case Render.com needs it to deploy correctly.
+
+  - It is saved here in case I need to restore it. **It is possible that Render.com will need it when the frontend is deployed there.**
 
 - ./administrative/README.md
 
   - This readme file.
-
-- ./administrative/Revamp2023.md
-
-  - This file is for keeping track of the status and the tasks that need to be completed while I rebuild my portfolio website.
 
 - ./administrative/Tasks.md
 
