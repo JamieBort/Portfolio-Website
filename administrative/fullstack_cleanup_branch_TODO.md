@@ -18,6 +18,8 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
 - **DONE.** ~~Update `name`, `description`, `repository`, `author`, and possibly the `private` properties in the `./backend/package.json` file.~~
 
+- Delete the `browser_tab_notes.md` file.
+
 - Do these four things together and in sequence:
 
   - merge the `back_end_express` branch into the `fullstack` branch.
@@ -27,6 +29,20 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
   - Remove all the old branches. Including the `back_end` branches and the `front_end` branches and the `*_backup` branches. But there be more.
 
   - redeploy the frontend AND the backend. from the `fullstack` branch.
+
+- Clean up the .gitignore files. See
+
+  - https://github.com/JamieBort/LearningDirectory/tree/master/Git/gitignore#pattern-format,
+
+  - https://github.com/JamieBort/LearningDirectory/tree/master/Git/gitignore#associated-links,
+
+  - https://www.google.com/search?q=gitignore+for+render.com&oq=gitignore+for+render.com&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDM1MTFqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8,
+
+  - https://docs.render.com/monorepo-support
+
+  - https://community.render.com/t/env-and-gitignore-with-render/12237,
+
+  - and https://www.google.com/search?q=does+Render.com+need+.gitignore&oq=does+Render.com+need+.gitignore&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDUxODBqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8
 
 - Do these two things together and in sequence:
 
@@ -44,7 +60,13 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
   - Act on that decision.
 
-  Svelt Typescript resources: https://github.com/JamieBort/jamiebort.github.io/blob/fullstack_cleanup/administrative/browser_tab_notes.md#typescript-svelt
+  Svelt Typescript resources:
+
+  - https://www.google.com/search?q=typescript+svelt&oq=typescript+svelt&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDc0NTBqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8,
+
+  - https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_TypeScript,
+
+  - and https://svelte.dev/docs/typescript
 
 - merge the `fullstack` branch into the `dev` branch.
 
