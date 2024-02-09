@@ -16,7 +16,7 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
   - redeploy the frontend AND the backend.
 
-- Update `name`, `description`, `repository`, `author`, and possibly the `private` properties in the `./backend/package.json` file.
+- **DONE.** ~~Update `name`, `description`, `repository`, `author`, and possibly the `private` properties in the `./backend/package.json` file.~~
 
 - Do these four things together and in sequence:
 
@@ -50,7 +50,7 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
 - redeploy the frontend AND the backend. from the `dev` branch.
 
-- **figure out and fix why the frontend api lags.** It appears as though the backend "goes to sleep.The api call doesn't load until the page is reloaded (opened) twice. Or until the backend is loaded twice.
+- **figure out and fix why the frontend api lags.** It appears as though the backend "goes to sleep.The api call doesn't load until the page is reloaded (opened) twice. Or until the backend is loaded twice. How to keep the server from going down. From sleeping. Ping it every 25 minutes?
 
 - Then merge the `dev` branch into the `master` branch.
 
