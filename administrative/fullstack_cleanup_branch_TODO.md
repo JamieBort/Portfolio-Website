@@ -6,7 +6,7 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
 ---
 
-- Do these two things together and in sequence:
+- **DONE.** ~~Do these two things together and in sequence:~~
 
   - comment the code - add comments so that
 
@@ -18,7 +18,7 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
 - **DONE.** ~~Update `name`, `description`, `repository`, `author`, and possibly the `private` properties in the `./backend/package.json` file.~~
 
-- Delete the `browser_tab_notes.md` file.
+- **DONE.** ~~Delete the `browser_tab_notes.md` file.~~
 
 - Do these four things together and in sequence:
 

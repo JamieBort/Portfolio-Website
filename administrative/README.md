@@ -190,12 +190,6 @@ Here is listed the things I plan on adding to the repo.
 
 ### Files
 
-- ./administrative/browser_tab_notes.md
-
-  - Temporary notes for anything I found regarding issues I had while working on the previous branch.
-
-  - Or to address issues I am about to address.
-
 - ./administrative/fullstack_cleanup_branch_TODO.md
 
   - Items to be addressed in the `fullstack_cleanup` branch.
