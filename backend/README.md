@@ -2,6 +2,8 @@
 
 Created from this [Node Express](https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Render#node-expess) Render document.
 
+And by following this document to make GraphQL calls: https://www.apollographql.com/docs/react/get-started/
+
 ## Start back end server locally
 
 1. Make sure the `GITHUB_ACCESS_TOKEN` is in the ./backend/.env file.

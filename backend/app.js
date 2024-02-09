@@ -111,6 +111,8 @@ const postFetch = async function (req, res) {
 // The middleware to use cors.
 // NOTE: Using "app.use(cors(corsOptions));" with  enables All CORS Requests)
 //       For specific routes, forego "app.use(cors(corsOptions));" and use this "app.get("/", cors(corsOptions), postFetch);"
+// Bind application-level middleware (in this case cors) to an instance of the app object by using the app.use().
+// The app.use() function is used to mount the specified middleware function(s) at the path that is being specified.
 app.use(cors(corsOptions));
 
 // For requests to the root URL (/) or route, the app responds with the object that is received from the fetch.
@@ -120,7 +122,7 @@ app.get("/", postFetch);
 
 // This app starts a server and listens on port "port" for connections.
 // Receives incoming TCP connections.
-const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+const server = app.listen(port, () => console.log(`Back end listening on port ${port}!`));
 
 // TODO: read up on keepAliveTimeout AND headersTimeout.
 // NOTE: commented out.
