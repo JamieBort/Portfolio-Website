@@ -1,9 +1,16 @@
+// ./backend/app.js
+
+// This ./backend/app.js file is the entry point for the back end.
+
 const express = require("express");
 const app = express();
+// If PORT is not assigned a value in the .env file(s), 3001 will be used.
 const port = process.env.PORT || 3001;
 const cors = require("cors");
+// The access token for GitHub. It's sensitive
 const accessToken = process.env.GITHUB_ACCESS_TOKEN;
 
+// The GraphQL query used to obtain the list of Repos that are pinned in my GitHub account.
 const query = `
   query {
     user(login: "jamiebort") {
@@ -34,17 +41,13 @@ const query = `
     }
 }`;
 
+// The various URLs that are allowed to make api calls against this backend.
+// http://127.0.0.1:5500 is sufficient for ./jamiebort.github.io/frontend/index.html in VS Code.
 // NOTE: Local files do not work. They have to be served.
-// NOTE: http://127.0.0.1:5500 is sufficient for ./jamiebort.github.io/frontend/index.html in VS Code.
-const allowedOrigins = [
-  "http://localhost:5173",
-  "http://127.0.0.1:3000",
-  "http://127.0.0.1:5500",
-  "http://localhost:3000",
-  "https://jamiebort-github-io-frontend-react.onrender.com", // NOTE: this will be updated to "frontend_jamiebort.github.io". TODO: remove this line.
-  "https://frontend-jamiebort-github-io.onrender.com",
-];
+const allowedOrigins = ["http://localhost:5173", "http://127.0.0.1:3000", "http://127.0.0.1:5500", "http://localhost:3000", "https://frontend-jamiebort-github-io.onrender.com"];
 
+// Checking the allowedOrigins array above to see if the URL is in fact in the list of allowed URLs.
+// If Not, an error is thrown.
 const corsOptions = {
   origin: (origin, callback) => {
     if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
@@ -56,9 +59,12 @@ const corsOptions = {
   optionsSuccessStatus: 200,
 };
 
+// The middleware to use cors.
 app.use(cors(corsOptions));
 
 // TODO: comment about async and await
+// For requests to the root URL (/) or route, the app responds with the object that is received from the fetch.
+// For every other path, it will respond with a 404 Not Found.
 app.get("/", cors(corsOptions), async function (req, res) {
   // app.get("/", async function (req, res) { // NOTE: this apparently works too.
   const response = await fetch(`https://api.github.com/graphql`, {
@@ -76,35 +82,32 @@ app.get("/", cors(corsOptions), async function (req, res) {
           console.log("body.message:", body.message);
           return body.message;
         }
-        const data = body.data;
-        console.log(data);
-        // const pinnedItems = body.data.user.pinnedItems;
-        // console.log(pinnedItems);
-        const edges = body.data.user.pinnedItems.edges;
-        // console.log(edges);
-        return edges;
+        console.log("body.data:", body.data);
+        return body.data.user.pinnedItems.edges;
       } catch (error) {
+        // Catching any errors.
         console.log("error.message:", error.message);
         return ["there was an error:", error.message];
       }
     })
     .catch((error) => {
+      // Catching other errors.
       console.error("error:", error);
-      // return error;
-      // return console.error;
     });
 
-  // console.log("response:", response);
-  // Sending the data back.
+  // Sending the data back to the front end.
+  // Sending the object that is received from the fetch.
   res.json(response);
+  // console.log("response:", response);
 
-  // Use one of these two to send back a String response. Or an html response.
+  // NOTE: Use one of these two to send back a String response. Or an html response.
   // res.send("Hello World!");
   // res.type("html").send(html);
 });
 
 // app.get("/", (req, res) => res.type("html").send(html));
 
+// This app starts a server and listens on port "port" for connections.
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 // TODO: read up on keepAliveTimeout AND headersTimeout.
