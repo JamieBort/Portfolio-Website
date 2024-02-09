@@ -5,8 +5,10 @@ export default function BackendDataFetch() {
   // const URL = `http://localhost:3001/`;
   // URL of hosted backend.
   const URL = `https://backend-jamiebort-github-io.onrender.com/`;
+
+  // Saving the api call data in the "repos" variable.
   const [repos, setRepos] = useState();
-  // By default the status of "loading" is true, implying that we're not getting any data from the back end.
+  // By default the status of "loading" is true, implying that we're not getting/do not have any data from the back end.
   const [loading, setLoading] = useState(true);
 
   // The api call.

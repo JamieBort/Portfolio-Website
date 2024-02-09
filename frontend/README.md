@@ -1,4 +1,8 @@
-# React + Vite
+# frontend
+
+Bootstrapped this frontend app with React + Vite document: https://vitejs.dev/guide/
+
+And followed this document to make GraphQL calls: https://www.apollographql.com/docs/react/get-started/
 
 ## Start front end server locally
 
