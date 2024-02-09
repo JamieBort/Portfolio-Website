@@ -11,7 +11,7 @@ export default function BackendDataFetch() {
 
   // The api call.
   const myAPICall = () => {
-    console.log("*** interval ***");
+    console.log("*** interval ***", Date());
     fetch(URL)
       .then((response) => {
         if (response.ok) {
