@@ -10,8 +10,8 @@ export default function BackendDataFetch() {
   const [loading, setLoading] = useState(true);
 
   // The api call.
-  const myAPICall = () => {
-    console.log("myAPICall:", Date());
+  const apiCall = () => {
+    console.log("apiCall:", Date());
     fetch(URL)
       .then((response) => {
         console.log("response:", response);
@@ -31,46 +31,27 @@ export default function BackendDataFetch() {
       })
       .catch((error) => {
         // Uh oh
-        console.log(error);
+        console.log("api call error:", error);
       });
   };
 
   // Attempt to fetch data from the back end.
   try {
+    // TODO: Add dependency to the useEffect.
     useEffect(() => {
-      console.log("initial fetch via useEffect in front end");
-      myAPICall();
-      // fetch(URL)
-      //   .then((response) => {
-      //     if (response.ok) {
-      //       // Yay! We have data back from the back end.
-      //       return response.json();
-      //     }
-      //     // We have a problem.
-      //     throw new Error("Something went wrong.");
-      //   })
-      //   .then((responseJson) => {
-      //     // console.log("responseJson:", responseJson); // Let's see the response in the console.
-      //     // Updating the "repos" state.
-      //     setRepos(responseJson);
-      //     // Only after the "repos" data is updated will we change the "loading" status to false.
-      //     setLoading(false);
-      //   })
-      //   .catch((error) => {
-      //     // Uh oh
-      //     console.log(error);
-      //   });
+      console.log("INITIAL FETCH via useEffect in front end");
+      apiCall();
     }, []);
   } catch (error) {
     // More errors....
-    console.log(error);
+    console.log("Try/Catch error:", error);
   }
 
   // Attempt to keep the backend from going to sleep.
   setInterval(() => {
     console.log("attempting to fetch via setInterval in front end");
-    myAPICall();
-  }, 1000 * 60 * 3);
+    apiCall();
+  }, 1000 * 60 * 6);
 
   if (!loading) {
     // Mapping through the data from the api call.
