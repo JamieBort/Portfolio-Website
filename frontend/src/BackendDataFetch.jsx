@@ -51,7 +51,7 @@ export default function BackendDataFetch() {
   setInterval(() => {
     console.log("attempting to fetch via setInterval in front end");
     apiCall();
-  }, 1000 * 60 * 6);
+  }, 1000 * 60 * 10);
 
   if (!loading) {
     // Mapping through the data from the api call.
