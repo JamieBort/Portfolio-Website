@@ -74,6 +74,8 @@ Here is listed the things I plan on adding to the repo.
 		+-- content - For modifying content.
 		|
 		+-- fullstack - For implementing a front end and back end.
+		|   |
+		    +-- fullstack_rebuild - For migrating frontend files and directories that are currently in the root directory into the ./frontend/ directory.
 		|
 		+-- host - For all things host related.
 		|
@@ -116,16 +118,6 @@ Here is listed the things I plan on adding to the repo.
 
   - Directory containing the back end of this app.
 
-- ./frontend/
-
-  - Directory containing the front end of this app.
-
-  - ./frontend/npm_yarn_config_files/
-
-    - Temporary directory while I work on cleaning up the dual package config files.
-
-    - See the `fullstack_cleanup_branch_TODO.md` file.
-
 - ./css/
 
   - Contains all CSS files.
@@ -150,23 +142,11 @@ Here is listed the things I plan on adding to the repo.
 
 ### Files
 
-- ./administrative/fullstack_cleanup_branch_TODO.md
+- ./administrative/fullstack_rebuild_branch_TODO.md
 
-  - Items to be addressed in the `fullstack_cleanup` branch.
+  - Items to be addressed in the `fullstack_rebuild` branch.
 
   - Or to be moved to the `./administrative/Tasks.md` file to be addressed at a later date.
-
-- ./administrative/old_frontend_gitignore
-
-  - Moved and renamed from `./frontend/.gitignore` to `./administrative/old_frontend_gitignore`
-
-  - Added the contents to the `./.gitignore` file.
-
-  - It was removed to clean up the repo.
-
-  - Keeping it in `./administrative/` in case it is needed in the future. For example in case Render.com needs it to deploy correctly.
-
-  - It is saved here in case I need to restore it. **It is possible that Render.com will need it when the frontend is deployed there.**
 
 - ./administrative/README.md
 

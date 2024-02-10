@@ -1,4 +1,0 @@
-# ./backend/.gitignore
-
-# Because ./jamiebort.github.io/backend/ is deployed without access to the ./.gitignore file.
-.env*

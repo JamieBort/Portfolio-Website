@@ -24,7 +24,7 @@ coverage
 *.sw?
 
 # production
-/dist
+dist
 
 # misc
 .env*

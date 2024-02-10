@@ -6,13 +6,9 @@ To-Do items that need to be addressed.
 
 - Update the remote backend branch name from `backend` to `back_end`.
 
-# <<<<<<< HEAD
-
 - Research whether Render.com needs `./frontend/.gitignore` and `./backend/.gitignore` files. Or if I can use just `./.gitignore`.
 
 - See the list found in this `./administrative/fullstack_cleanup_branch_TODO.md` file.
-
-> > > > > > > fullstack_cleanup
 
 ## API
 
@@ -127,21 +123,13 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
 
 ## Back End
 
-<<<<<<< HEAD
-
 ### To Do
 
-- # Create a backend.
-
 ### Back End To Do
-
-> > > > > > > fullstack_cleanup
 
 None.
 
 ### Back End Status
-
-Successfully deployed backend via the `back_end_express` branch.
 
 #### Back End Status Next Steps
 
@@ -167,7 +155,11 @@ None.
 
 ### Front End To Do
 
-None.
+Rebuild front end with Svelt Vite using TypeScript.
+
+**Maybe** when I build the blog or when I roll out another feature such as the contact me form.
+
+See the two files in this https://github.com/JamieBort/LearningDirectory/tree/master/Languages/JavaScript/Frameworks/Svelte directory.
 
 ### Front End Status
 
