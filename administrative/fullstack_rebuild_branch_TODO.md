@@ -10,15 +10,25 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
   - Do these 3 things together and in sequence in the `fullstack_rebuild` branch:
 
-    - This `./backend/LICENSE` exists. What to do about it? Address this. **Likely remove this file.**
+    - **DONE.** ~~This `./backend/LICENSE` exists. What to do about it? Address this. **Likely remove this file.**~~
 
-    - Rebuild the front end by:
+    - Rebuild the front end.
 
-      - moving the following `./assets/`, `./css/`, `./html/`, and `./js/` directories into `./fontend/` and
+      By:
 
-      - removing the `./index.html` file.
+          - moving the following `./assets/`, `./css/`, `./html/`, and `./js/` directories into `./fontend/` and
+
+          - removing the `./index.html` file.
+
+      - Look up the typical file structure for Vite front ends.
+
+      - Then move those directories.
+
+      - Then remove the `./index.html` file.
 
     - Account for the time(s) when the api call doesn't work. Or when the server id down. Or when github is down. Etc.
+
+      By creating a default list to load.
 
   - Do these 5 things together and in sequence:
 
