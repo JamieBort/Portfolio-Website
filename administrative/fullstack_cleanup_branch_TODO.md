@@ -10,7 +10,7 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
   - Clean up the .gitignore files.
 
-    - Address this `./frontend/.vite/` directory. Where did it come from? Was it in the previous branch? **Removed from the git cache and added to the gitignore file.**
+    - **Deleted it.** ~~Address this `./frontend/.vite/` directory. Where did it come from? Was it in the previous branch? Removed from the git cache and added to the gitignore file.~~
 
     - See
 
