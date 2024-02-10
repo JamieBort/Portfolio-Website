@@ -25,6 +25,8 @@ coverage
 
 # production
 /dist
+# Render might need this directory.
+.vite 
 
 # misc
 .env*
