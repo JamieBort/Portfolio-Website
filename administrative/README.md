@@ -110,6 +110,10 @@ Here is listed the things I plan on adding to the repo.
 
     - A directory for the list of aesthetic things that need to change with the website.
 
+  - ./administrative/vite_directory_structure.md
+
+    - Temporary file for preparing to move files and directories.
+
 - ./assets/
 
   - The directory for the static resources.
