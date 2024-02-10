@@ -20,7 +20,7 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
 - **DONE.** ~~Delete the `browser_tab_notes.md` file.~~
 
-- Do these six things together and in sequence:
+- **DONE.** ~~Do these six things together and in sequence:~~
 
   - Create backups of the `fullstack_cleanup` branch and the `fullstack` branches.
 
@@ -33,6 +33,16 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
   - Remove all the old branches. Including the `back_end` branches and the `front_end` branches and the `*_backup` branches. But there be more.
 
   - redeploy the frontend AND the backend. from the `fullstack` branch.
+
+- Determine the fate of these four files:
+
+  - Where did the frontend/.vite/ directory come from? Was it in the previous branch? **Removed from the git cache and added to the gitignore file.**
+
+  - **DELETED** ~~./frontend/main.js~~
+
+  - **It is.** ~~./frontend/gitHubProjects.json should be deleted,~~
+
+  - **It is.** ~~and .vscode/ should not be visible in the repo.~~
 
 - Clean up the .gitignore files. See
 
