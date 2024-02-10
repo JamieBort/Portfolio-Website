@@ -6,87 +6,57 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
 ---
 
-- **DONE.** ~~Do these two things together and in sequence:~~
+- Do these 3 things in consecutively:
 
-  - comment the code - add comments so that
+  - Clean up the .gitignore files.
 
-    - **I understand what is happening**.
+    - Address this `./frontend/.vite/` directory. Where did it come from? Was it in the previous branch? **Removed from the git cache and added to the gitignore file.**
 
-    - And so that other people understand what is happening.
+    - See
 
-  - redeploy the frontend AND the backend.
+      - https://github.com/JamieBort/LearningDirectory/tree/master/Git/gitignore#pattern-format,
 
-- **DONE.** ~~Update `name`, `description`, `repository`, `author`, and possibly the `private` properties in the `./backend/package.json` file.~~
+      - https://github.com/JamieBort/LearningDirectory/tree/master/Git/gitignore#associated-links,
 
-- **DONE.** ~~Delete the `browser_tab_notes.md` file.~~
+      - https://www.google.com/search?q=gitignore+for+render.com&oq=gitignore+for+render.com&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDM1MTFqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8,
 
-- **DONE.** ~~Do these six things together and in sequence:~~
+      - https://docs.render.com/monorepo-support
 
-  - Create backups of the `fullstack_cleanup` branch and the `fullstack` branches.
+      - https://community.render.com/t/env-and-gitignore-with-render/12237,
 
-  - merge the `fullstack_cleanup` branch into the `fullstack` branch.
+      - and https://www.google.com/search?q=does+Render.com+need+.gitignore&oq=does+Render.com+need+.gitignore&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDUxODBqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8
 
-  - redeploy the frontend AND the backend. from the `fullstack` branch.
+  - Do these two things together and in sequence:
 
-  - Remove the `./jamiebort.github.io/backend/npm_yarn_config_files/` directory.
+    - decide
 
-  - Remove all the old branches. Including the `back_end` branches and the `front_end` branches and the `*_backup` branches. But there be more.
+      - whether to rebuild the front end with Svelt and Typescript
 
-  - redeploy the frontend AND the backend. from the `fullstack` branch.
+      - or
 
-- Determine the fate of these four files:
+        - move the following `./assets/`, `./css/`, `./html/`, and `./js/` directories into `./fontend/`,
 
-  - Where did the frontend/.vite/ directory come from? Was it in the previous branch? **Removed from the git cache and added to the gitignore file.**
+        - remove the `./index.html` file,
 
-  - **DELETED** ~~./frontend/main.js~~
+        - and rebuild the front end with Svelt and Typescript at a later date **a goal for a later date**
 
-  - **It is.** ~~./frontend/gitHubProjects.json should be deleted,~~
+    - Act on that decision. **Create a new branch for this.**
 
-  - **It is.** ~~and .vscode/ should not be visible in the repo.~~
+    Svelt Typescript resources:
 
-- Clean up the .gitignore files. See
+    - https://www.google.com/search?q=typescript+svelt&oq=typescript+svelt&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDc0NTBqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8,
 
-  - https://github.com/JamieBort/LearningDirectory/tree/master/Git/gitignore#pattern-format,
+    - https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_TypeScript,
 
-  - https://github.com/JamieBort/LearningDirectory/tree/master/Git/gitignore#associated-links,
+    - and https://svelte.dev/docs/typescript
 
-  - https://www.google.com/search?q=gitignore+for+render.com&oq=gitignore+for+render.com&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDM1MTFqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8,
+  - This `./backend/LICENSE` exists. What to do about it? Address this. **Likely remove this file.**
 
-  - https://docs.render.com/monorepo-support
+- Do these 2 things in consecutively:
 
-  - https://community.render.com/t/env-and-gitignore-with-render/12237,
+  - merge the `fullstack` branch into the `dev` branch.
 
-  - and https://www.google.com/search?q=does+Render.com+need+.gitignore&oq=does+Render.com+need+.gitignore&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDUxODBqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8
-
-- Do these two things together and in sequence:
-
-  - decide
-
-    - whether to rebuild the front end with Svelt and Typescript
-
-    - or
-
-      - move the following `./assets/`, `./css/`, `./html/`, and `./js/` directories into `./fontend/`,
-
-      - remove the `./index.html` file,
-
-      - and rebuild the front end with Svelt and Typescript at a later date **a goal for a later date**
-
-  - Act on that decision.
-
-  Svelt Typescript resources:
-
-  - https://www.google.com/search?q=typescript+svelt&oq=typescript+svelt&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDc0NTBqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8,
-
-  - https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_TypeScript,
-
-  - and https://svelte.dev/docs/typescript
-
-- This `./backend/LICENSE` exists. What to do about it? Address this.
-
-- merge the `fullstack` branch into the `dev` branch.
-
-- redeploy the frontend AND the backend. from the `dev` branch.
+  - redeploy the frontend AND the backend. from the `dev` branch.
 
 - **figure out and fix why the frontend api lags.** It appears as though the backend "goes to sleep.The api call doesn't load until the page is reloaded (opened) twice. Or until the backend is loaded twice. How to keep the server from going down. From sleeping. Ping it every 25 minutes?
 
