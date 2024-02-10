@@ -1,0 +1,20 @@
+import PropTypes from "prop-types";
+import Section from "./Section";
+// import BackendDataFetch from "./BackendDataFetch";
+import BackendDataFetch from "./../BackendDataFetch";
+
+export default function Project({ title }) {
+  //   console.log(props.title);
+  return (
+    <>
+      <Section title={title}>
+        <p>Just Cards</p>
+        <BackendDataFetch />
+      </Section>
+    </>
+  );
+}
+
+Project.propTypes = {
+  title: PropTypes.string,
+};

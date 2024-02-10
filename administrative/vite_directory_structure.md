@@ -21,14 +21,14 @@ Possibly add files or directories (?)
 | --------------- | -------------------------------- | ------ | --- | --- |
 | README.md       | keep as is                       |        |     |     |
 | administrative/ | keep as is                       |        |     |     |
-| assets/         | move the contents to ./frontend/ |        |     |     |
 | backend/        | keep as is                       |        |     |     |
-| css/            | move the contents to ./frontend/ |        |     |     |
 | frontend/       | keep as is                       |        |     |     |
+| scratch/        | keep as is                       |        |     |     |
+| assets/         | move the contents to ./frontend/ |        |     |     |
+| css/            | move the contents to ./frontend/ |        |     |     |
 | html/           | move the contents to ./frontend/ |        |     |     |
 | index.html      | remove                           |        |     |     |
 | js/             | move the contents to ./frontend/ |        |     |     |
-| scratch/        | keep as is                       |        |     |     |
 
 ## Ideal structure
 
