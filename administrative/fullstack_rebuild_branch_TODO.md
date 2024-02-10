@@ -6,11 +6,9 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
 ---
 
-Account for the time(s) when the api call doesn't work. Or when the server id down. Or when github is down...
-
 - Do these 2 things together and in sequence:
 
-  - Do these 2 things together in the `fullstack_rebuild` branch:
+  - Do these 3 things together and in sequence in the `fullstack_rebuild` branch:
 
     - This `./backend/LICENSE` exists. What to do about it? Address this. **Likely remove this file.**
 
@@ -19,6 +17,8 @@ Account for the time(s) when the api call doesn't work. Or when the server id do
       - moving the following `./assets/`, `./css/`, `./html/`, and `./js/` directories into `./fontend/` and
 
       - removing the `./index.html` file.
+
+    - Account for the time(s) when the api call doesn't work. Or when the server id down. Or when github is down. Etc.
 
   - Do these 5 things together and in sequence:
 
