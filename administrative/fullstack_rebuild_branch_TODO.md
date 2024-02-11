@@ -20,11 +20,19 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
 
           - removing the `./index.html` file.
 
+          - add an I18y library to translate parts of the site that are dynamically updated from GraphQL api calls. Possibly polyglot.js.
+
+          - add a media query library to facilitate building a responsive site. Possibly react-responsive.
+
       - Look up the typical file structure for Vite front ends.
 
       - Then move those directories.
 
       - Then remove the `./index.html` file.
+
+      - Then add the I18y library.
+
+      - Then add the media query library.
 
     - Account for the time(s) when the api call doesn't work. Or when the server id down. Or when github is down. Etc.
 
