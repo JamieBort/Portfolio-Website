@@ -1,10 +1,14 @@
 # Welcome to the repo for my [Portfolio Website](https://jamiebort.github.io/)
 
-## Here you will be able to
+## About
 
-- read a bit about me,
-- see a few projects that I am highlighting,
-- and lastly, find out how to contact me and follow me on social media.
+This is the repo to my static portfolio website hosted by GitHub.
+
+However I am currently in the process of hosting the Vite + React frontend and Node Express back end using Render.com.
+
+Among other new features I am looking into taking advantage of an I18y library to translate parts of my site that are dynamically updated from GraphQL api calls.
+
+I have already translated the static sections into Spanish.
 
 ## Notable Features
 
@@ -12,7 +16,7 @@ Notable features of this site are:
 
 - It is written in vanilla JavaScript.
 - I wrote web components for navigation.
-- I am continually trying to make this (and all my projects) more accessible by following Web Content Accessibility Guidelines (WCAG).
+- I am continually trying to make this (and all of my projects) more accessible by following Web Content Accessibility Guidelines (WCAG).
 - It is fully responsive.
 
 ## Aspirations
@@ -20,16 +24,16 @@ Notable features of this site are:
 This site
 
 - will link to my blog,
-- and have
+- and will have
   - a `Contact Me` form,
-  - a `Resources` page
-  - and a page of `Fun Things` to explore
+  - a `Resources` page (containing content relevant to all aspects of coding from writing bash scripts to writing accessible code to contributing to open source projects),
+  - and a `Fun Things` page to explore containing random things that I found interesting.
 
 Additionally, on each relevant page you will be able to filter the content by a text field or by selecting key phrases (css, debugging, back end, etc.) and attributes (title, date, etc.).
 
-I will continue to make changes to this site to make it more accessible.
+I'll update each section periodically as I come across new or interesting material.
 
-Lastly, I will continue to add content to the `Resources` and `Fun Things` pages as well as my blog.
+If you anything that needs a correction, please let me know! And create a pull request.
 
 ## Contribute
 
@@ -44,3 +48,5 @@ Per [choosealicense.com](https://choosealicense.com/):
 You can find the full text in this [./COPYING.txt](https://github.com/JamieBort/jamiebort.github.io/blob/master/COPYING.txt) file.
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+![Static Badge](https://img.shields.io/badge/Last_Updated-2024_Feb_11-gold)

@@ -345,19 +345,19 @@ footer {
 
 
   /* TODO: For accessability purposes, determine whether I should use the :link pseudo-class. I currently am choosing NOT to use it. */
-  /* #codeTheDream_a:link {
+  /* .bio_a:link {
     background-color: NOT USED YET;
     color:NOT USED YET;
     border: 3px solid NOT USED YET;
   } */
 
-  #codeTheDream_a:visited {
+  .bio_a:visited {
     /* background-color: NOT USED YET; */
     color:var(--visited);
     /* border: 3px solid NOT USED YET; */
   }
 
-  #codeTheDream_a:focus {
+  .bio_a:focus {
     background-color:var(--accent03);
     color: var(--accent04);
     /* TODO: Consider replacing the default blue border with something different. */
@@ -366,12 +366,12 @@ footer {
     border: thin solid var(--accent02); */
   }
 
-  #codeTheDream_a:hover {
+  .bio_a:hover {
     background-color:var(--accent03);
     color: var(--accent02);
   }
 
-  #codeTheDream_a:active {
+  .bio_a:active {
     background-color: var(--active);
     color: var(--accent04);
     
