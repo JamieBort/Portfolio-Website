@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import CoreUICustomCard from "./cards/CoreUICustomCard";
+import { CCardGroup } from "@coreui/react";
 
 export default function BackendDataFetch() {
   // URL of local backend.
@@ -58,35 +60,20 @@ export default function BackendDataFetch() {
   if (!loading) {
     // Mapping through the data from the api call.
     var repo = repos.map((item) => {
-      // Destructuring the item.node object.
+      // console.log("item:", item);
+      // console.log("item.node.id:", item.node.id);
 
-      const { description, forkCount, id, homepageUrl, name, stargazerCount, url } = item.node;
+      // Destructuring the item.node object.
+      // const { description, forkCount, id, homepageUrl, name, stargazerCount, url } = item.node;
       // Returning each repo detail.
       return (
-        <li key={id}>
-          <h3>{name} Repo</h3>
-          <p>{description}</p>
-          {forkCount === 0 ? null : <p>Fork Count: {forkCount}</p>}
-          {homepageUrl == null ? null : (
-            <p>
-              {name}{" "}
-              <a href={homepageUrl} target="_blank" rel="noopener noreferrer">
-                Live Site URL
-              </a>
-            </p>
-          )}
-          {stargazerCount === 0 ? null : <p>Stargaze Count: {stargazerCount}</p>}
-          <p>
-            {name}{" "}
-            <a href={url} target="_blank" rel="noopener noreferrer">
-              Repository URL
-            </a>
-          </p>
-        </li>
+        <CCardGroup key={item.node.id}>
+          <CoreUICustomCard item={item.node} />
+        </CCardGroup>
       );
     });
   }
 
   // When the value of "loading" is true, "<p>loading...</p>" will display. Otherwise "<ul>{repo}</ul>" will list the data from the api call.
-  return loading ? <p>loading...</p> : <ul>{repo}</ul>;
+  return loading ? <p>loading...</p> : <>{repo}</>;
 }

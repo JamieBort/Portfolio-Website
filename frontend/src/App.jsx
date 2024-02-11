@@ -1,24 +1,18 @@
-// import BackendDataFetch from "./BackendDataFetch";
+// ./frontend/src/App.jsx
+
 import Bio from "./components/Bio";
 import Project from "./components/Project";
 import ConnectWithMe from "./components/ConnectWithMe";
-// import NextUIcard from "./components/cards/NextUIcard";
-// import CoreUIcard from "./components/cards/CoreUIcard";
-import MultiActionAreaCard from "./components/cards/MUIcard";
+// import BackendDataFetch from "./components/BackendDataFetch";
 
 export default function App() {
   return (
     <>
       <h1>Jamie Bort Software Engineer</h1>
-      <div>
-        <MultiActionAreaCard />
-        {/* <NextUIcard /> */}
-        {/* <CoreUIcard /> */}
-      </div>
+      {/* <BackendDataFetch /> */}
       <Bio title="Bio" />
       <Project title="Projects" />
       <ConnectWithMe title="Connect With Me" />
-      {/* <BackendDataFetch /> */}
     </>
   );
 }

@@ -13,6 +13,7 @@ import "./index.css";
 // See https://www.apollographql.com/docs/react/get-started#step-3-initialize-apolloclient
 import { ApolloClient, createHttpLink, InMemoryCache, ApolloProvider } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
+import "@coreui/coreui/dist/css/coreui.min.css";
 
 const httpLink = createHttpLink({
   // `uri` specifies the URL of our GraphQL server.
