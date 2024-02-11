@@ -6,7 +6,7 @@ This is the repo to my static portfolio website hosted by GitHub.
 
 However I am currently in the process of hosting the Vite + React frontend and Node Express back end using Render.com.
 
-Among other new features I am looking into taking advantage of an I18y library to translate parts of my site that are dynamically updated from GraphQL api calls.
+Among other new features I will take advantage of using an I18y library to translate parts of my site that are dynamically updated from GraphQL api calls.
 
 I have already translated the static sections into Spanish.
 
@@ -31,7 +31,7 @@ This site
 
 Additionally, on each relevant page you will be able to filter the content by a text field or by selecting key phrases (css, debugging, back end, etc.) and attributes (title, date, etc.).
 
-I'll update each section periodically as I come across new or interesting material.
+I will update each section periodically as I come across new or interesting material.
 
 If you anything that needs a correction, please let me know! And create a pull request.
 

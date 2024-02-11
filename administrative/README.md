@@ -110,9 +110,11 @@ Here is listed the things I plan on adding to the repo.
 
     - A directory for the list of aesthetic things that need to change with the website.
 
-  - ./administrative/vite_directory_structure.md
+  - ./administrative/cards/
 
-    - Temporary file for preparing to move files and directories.
+    - A directory to keep all of my Card component research.
+
+    - To be deleted when the `fullstack_rebuild` branch is deleted.
 
 - ./assets/
 
@@ -159,6 +161,12 @@ Here is listed the things I plan on adding to the repo.
 - ./administrative/Tasks.md
 
   - To-Do items that need to be addressed.
+
+- ./administrative/vite_directory_structure.md
+
+  - Temporary file for preparing to move files and directories.
+
+  - To be deleted when the `fullstack_rebuild` branch is deleted.
 
 - ./gitignore
 
