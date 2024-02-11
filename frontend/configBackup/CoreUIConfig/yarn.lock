@@ -233,6 +233,11 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
+"@coreui/react@^4.11.1":
+  version "4.11.1"
+  resolved "https://registry.yarnpkg.com/@coreui/react/-/react-4.11.1.tgz#90b7213d9e36c722625f2192ffc6c265af2a6718"
+  integrity sha512-2EYnV6kpyH8/648+iffRy/I/xCEnD2MnEOuo1LPiUSX7EqoHn5M3fI+sf4vM9Wrqz4Gv2gxCl8DNRpk2xcLANQ==
+
 "@esbuild/aix-ppc64@0.19.12":
   version "0.19.12"
   resolved "https://registry.yarnpkg.com/@esbuild/aix-ppc64/-/aix-ppc64-0.19.12.tgz#d1bc06aedb6936b3b6d313bf809a5a40387d2b7f"
