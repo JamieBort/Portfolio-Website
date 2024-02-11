@@ -70,7 +70,8 @@ const toggleLanguage = () => {
   const pArray = [];
 
   // Variables for the languageContent object.
-  const codeTheDream_a = `<a id="codeTheDream_a" target="_blank" href="https://codethedream.org/">Code the Dream</a>`;
+  const codeTheDream_a = `<a id="codeTheDream_a" class="bio_a" target="_blank" href="https://codethedream.org/">Code the Dream</a>`;
+  const about_a = `<a id="about_a" target="_blank" class="bio_a" href="https://github.com/JamieBort/jamiebort.github.io?tab=readme-ov-file#about">About</a>`;
   const projectsButtonEnglish = `<button class="section_button" onclick="jumpToSection('projects')" aria-label="Projects">Projects</button>`;
   const projectsButtonSpanish = `<button class="section_button" onclick="jumpToSection('projects')" aria-label="Proyectos">Proyectos</button>`;
   const connectWithMeButtonEnglish = `<button class="section_button" onclick="jumpToSection('connectWithMe')" aria-label="Connect with Me">Connect with Me</button>`;
@@ -105,7 +106,11 @@ const toggleLanguage = () => {
           ],
           // p2: [`Below you will find some of my ${projectsButtonEnglish}.`, `En la parte de abajo encontrarás algunos de mis ${projectsButtonSpanish}.`],
           // Danni's translation.
-          p2: [`Below you will find some of my ${projectsButtonEnglish}.`, `Aquí encontrarás algunos de mis ${projectsButtonSpanish}.`],
+          p2: [
+            `Below you will find some of my ${projectsButtonEnglish}. I am currently in the process
+          of changing this static portfolio website so that it is hosted with a Vite + React front end and Node Express back end. More info can be found in the ${about_a} section of the README file.`,
+            `Aquí encontrarás algunos de mis ${projectsButtonSpanish}. Actualmente estoy en el proceso de cambiar este sitio web de cartera estático para que esté alojado con una interfaz Vite + React y un back-end de Node Express. Puede encontrar más información en la sección ${about_a} de del archivo README.`,
+          ],
           // p3: ["When I am not coding I am working on my next presentation or mentoring; both of which push me to learn and grow.","Cuando no estoy codificando, estoy trabajando en mi próxima presentación o soy mentor; lo cual me empuja a aprender y a crecer.",],
           // Danni's translation.
           p3: [
