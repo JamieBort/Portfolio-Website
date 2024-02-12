@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-// import { ProductAPI } from "src/apis/ProductAPI"
-import { BackendDataFetch } from "./BackendDataFetch";
+import { BackendAPI } from "./../api/BackendAPI";
 import CoreUICustomCard from "./cards/CoreUICustomCard";
 import { CCardGroup } from "@coreui/react";
 
@@ -12,7 +11,7 @@ export default function Projects() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    BackendDataFetch.getPinned.then((stuff) => {
+    BackendAPI.getPinned.then((stuff) => {
       setRepos(stuff);
       setLoading(false);
     });

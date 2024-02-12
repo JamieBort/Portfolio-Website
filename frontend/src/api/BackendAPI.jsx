@@ -1,5 +1,7 @@
+// ./frontend/src/api/BackendAPI.jsx
+
 const URL = `https://backend-jamiebort-github-io.onrender.com/`;
-export const BackendDataFetch = {
+export const BackendAPI = {
   getPinned: fetch(URL)
     .then((response) => {
       // console.log("response:", response); // Let's see the response in the console.
@@ -12,4 +14,5 @@ export const BackendDataFetch = {
     })
     // Uh oh
     .catch((error) => console.log("apiCall catch error:", error)),
+  // getOtherCalls: <to be set up>
 };
