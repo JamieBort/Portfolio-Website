@@ -63,3 +63,5 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
   - find a library to translate my repo descriptions into Spanish. **a goal for a later date**
 
 - Feature for my Personal dashboard: a search feature that allows me to search the LearningDirectory by phrases.
+
+- Read up on this https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prop-types.md
