@@ -1,3 +1,5 @@
+// TODO: remove this file from the project. Delete it.
+
 import PropTypes from "prop-types";
 import { Children } from "react";
 

@@ -4,7 +4,8 @@ import { BackendAPI } from "./../api/BackendAPI";
 // import CoreUICustomCard from "./cards/CoreUICustomCard";
 // import { CCardGroup } from "@coreui/react";
 import MUICustomCard from "./cards/MUICustomCard";
-import { Container, Grid } from "@mui/material";
+// import { Container, Grid } from "@mui/material";
+import Container from "@mui/material/Container";
 
 export default function Projects() {
   // Saving the api call data in the "repos" variable.
@@ -74,17 +75,19 @@ export default function Projects() {
   // When the value of "loading" is true, "<p>loading...</p>" will display. Otherwise "<ul>{repo}</ul>" will list the data from the api call.
   return (
     <>
-      <div style={divStyle.divUIType}>
+      {/* <div style={divStyle.divUIType}>
         <p style={divStyle.p}>MUI Cards:</p>
         <div style={divStyle.divComponentType}>
-          <p style={divStyle.p}>Container</p>
-          <Container maxWidth="sm">{loading ? <p>loading...</p> : <>{repoMUI}</>}</Container>
-        </div>
-        <div style={divStyle.divComponentType}>
+          <p style={divStyle.p}>Container</p> */}
+      <Container maxWidth="sm">{loading ? <p>loading...</p> : <>{repoMUI}</>}</Container>
+      {/* </div> */}
+      {/* NOTE: Leaning towards Container and not Grid */}
+      {/* <div style={divStyle.divComponentType}>
           <p style={divStyle.p}>Grid</p>
           <Grid maxWidth="sm">{loading ? <p>loading...</p> : <>{repoMUI}</>}</Grid>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
+      {/* NOTE: Not a fan of CoreUI */}
       {/* <div style={divStyle.divUIType}>
         <p style={divStyle.p}>CoreUI Cards:</p>
         <CCardGroup>{loading ? <p>loading...</p> : <>{repo}</>}</CCardGroup>
@@ -93,22 +96,22 @@ export default function Projects() {
   );
 }
 
-const divStyle = {
-  divUIType: {
-    border: "1px solid DodgerBlue",
-    marginTop: "5px",
-    marginBottom: "5px",
-  },
-  divComponentType: {
-    border: "1px solid red",
-    marginTop: "5px",
-    marginBottom: "5px",
-  },
-  p: {
-    color: "green",
-    textAlign: "center",
-  },
-};
+// const divStyle = {
+//   divUIType: {
+//     border: "1px solid DodgerBlue",
+//     marginTop: "5px",
+//     marginBottom: "5px",
+//   },
+//   divComponentType: {
+//     border: "1px solid red",
+//     marginTop: "5px",
+//     marginBottom: "5px",
+//   },
+//   p: {
+//     color: "green",
+//     textAlign: "center",
+//   },
+// };
 
 Projects.propTypes = {
   title: PropTypes.string,

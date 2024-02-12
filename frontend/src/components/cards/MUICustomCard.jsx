@@ -1,8 +1,14 @@
 // ./frontend/src/components/cards/MUICustomCard.jsx
 
 import PropTypes from "prop-types";
-import { Box, Card, CardActions, CardContent, Typography, AvatarGroup, Avatar, Stack, Paper, Link } from "@mui/material";
+import { Box, Card, CardActions, CardContent, Typography, AvatarGroup, Avatar, Stack, Paper, Link, Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
+
+import * as React from "react";
+// import { styled } from '@mui/material/styles';
+// import Box from '@mui/material/Box';
+// import Paper from '@mui/material/Paper';
+// import Grid from '@mui/material/Unstable_Grid2';
 
 export default function MUICustomCard({ item }) {
   const { description, forkCount, homepageUrl, name, stargazerCount, url, languages, id } = item;
@@ -19,18 +25,44 @@ export default function MUICustomCard({ item }) {
 
   //   Listing tech/languages using Stack
   const TechStack = () => {
-    const Item = styled(Paper)(({ theme }) => ({
+    const ItemStack = styled(Paper)(({ theme }) => ({
       backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
       ...theme.typography.body2,
       padding: theme.spacing(1),
       textAlign: "center",
       color: theme.palette.text.secondary,
     }));
-    const idiomas = languages.edges.map((element) => <Item key={id + element.node.name}>{element.node.name}</Item>);
+    const idiomas = languages.edges.map((element) => <ItemStack key={id + element.node.name}>{element.node.name}</ItemStack>);
     return (
       <Stack direction="row" spacing={2}>
         {idiomas}
       </Stack>
+    );
+  };
+
+  const BasicGrid = () => {
+    const ItemBasicGrid = styled(Paper)(({ theme }) => ({
+      backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+      ...theme.typography.body2,
+      padding: theme.spacing(1),
+      textAlign: "center",
+      color: theme.palette.text.secondary,
+    }));
+
+    const idiomas = languages.edges.map((element) => {
+      return (
+        <Grid key={id + element.node.name} item xs={12} sm={6}>
+          <ItemBasicGrid>{element.node.name}</ItemBasicGrid>
+        </Grid>
+      );
+    });
+
+    return (
+      <Box sx={{ flexGrow: 1 }}>
+        <Grid container spacing={2}>
+          {idiomas}
+        </Grid>
+      </Box>
     );
   };
 
@@ -68,10 +100,13 @@ export default function MUICustomCard({ item }) {
 
         {/* Tech options. TODO: choose among these: */}
         {/* <TechGrid /> https://mui.com/material-ui/react-grid/ */}
+        <BasicGrid />
         {/* <TechIcons /> https://mui.com/material-ui/icons/ */}
         {/* <TechMaterialIcons /> https://mui.com/material-ui/material-icons/ */}
-        <TechAvatar />
-        <TechStack />
+        {/* NOTE: Not a fan of TechAvatar. */}
+        {/* <TechAvatar /> */}
+        {/* NOTE: TBD TechStack. */}
+        {/* <TechStack /> */}
       </CardContent>
 
       {/* TODO: Read up on CardActions. */}
