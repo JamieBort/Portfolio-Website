@@ -66,6 +66,8 @@ export default function ConnectWithMeSection({ title, sectionStyle }) {
         <Typography variant="h2" gutterBottom style={sectionStyle.typography.h2}>
           {title}
         </Typography>
+        {/* TODO: style the icons */}
+        {/* TODO: consider not using icons */}
         <Stack direction="row" spacing={3}>
           <Link href="http://www.github.com" target="_blank">
             <GitHubIcon sx={{ color: "red" }} />

@@ -59,7 +59,7 @@ export default function MUICustomCard({ item }) {
 
     return (
       <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={2}>
+        <Grid container spacing={2} justifyContent="center">
           {idiomas}
         </Grid>
       </Box>
@@ -79,7 +79,7 @@ export default function MUICustomCard({ item }) {
         {/* <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           Word of the Day
         </Typography> */}
-        <Typography variant="h5" component="div">
+        <Typography variant="h5" component="div" style={{ textAlign: "center" }}>
           {name}
         </Typography>
         <Typography variant="body2">{description}</Typography>
@@ -90,13 +90,7 @@ export default function MUICustomCard({ item }) {
           </Typography>
         )}
 
-        {stargazerCount === 0 ? null : (
-          <Typography variant="body2" color="text.secondary">
-            Stargazer Count:
-            <br />
-            {stargazerCount}
-          </Typography>
-        )}
+        {/* TODO: consider icons for the tech items, rather than words. */}
 
         {/* Tech options. TODO: choose among these: */}
         {/* <TechGrid /> https://mui.com/material-ui/react-grid/ */}
@@ -110,6 +104,7 @@ export default function MUICustomCard({ item }) {
       </CardContent>
 
       {/* TODO: Read up on CardActions. */}
+      {/* TODO: style this link/stargazer section */}
       <CardActions>
         {homepageUrl == null ? null : (
           <Link href={homepageUrl} underline="hover">
@@ -119,6 +114,12 @@ export default function MUICustomCard({ item }) {
         <Link href={url} underline="hover">
           GitHub Repository URL
         </Link>
+
+        {stargazerCount === 0 ? null : (
+          <Typography variant="body2" color="text.secondary">
+            Stargazer Count: {stargazerCount}
+          </Typography>
+        )}
       </CardActions>
     </>
   );

@@ -4,17 +4,26 @@ import BioSection from "./components/BioSection";
 import ProjectSection from "./components/ProjectSection";
 import ConnectWithMeSection from "./components/ConnectWithMeSection";
 // import { Box, Container, Grid, Stack, Typography, Icon, Link } from "@mui/material";
-import Typography from "@mui/material/Typography";
+// import Typography from "@mui/material/Typography";
+import Header from "./components/Header";
+
+// TODO: add navigation.
 
 export default function App() {
   return (
     <>
-      <Typography variant="h1" gutterBottom>
-        Jamie Bort Software Engineer
+      {/* <Typography variant="h1" gutterBottom style={{ textAlign: "center" }}>
+        Jamie Bort
       </Typography>
+      <Typography variant="h2" gutterBottom style={{ textAlign: "center" }}>
+        Software Engineer
+      </Typography> */}
+
+      <Header />
 
       <BioSection title="Bio" sectionStyle={sectionStyle} />
 
+      {/* TODO: make this ProjectSection a min. height while the projects are loading. */}
       <ProjectSection title="Projects" sectionStyle={sectionStyle} />
 
       <ConnectWithMeSection title="Connect With Me" sectionStyle={sectionStyle} />
