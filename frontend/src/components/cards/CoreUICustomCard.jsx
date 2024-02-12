@@ -24,9 +24,9 @@ export default function CoreUICustomCard({ item }) {
   return (
     <>
       <CCard
-        // textColor={"text-success"}
-        style={{ width: "36rem" }}
-        // className={`mb-3 border-success`}
+        // textColor={"success"}
+        // style={{ width: "30rem" }}
+        className={`mb-3 border-success`}
       >
         <CCardHeader>
           <CCardTitle>{name}</CCardTitle>

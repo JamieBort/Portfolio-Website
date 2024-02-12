@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import Section from "./Section";
 
-export default function ConnectWithMe({ title }) {
+export default function ConnectWithMeSection({ title }) {
   //   console.log(props.title);
   return (
     <>
@@ -15,6 +15,6 @@ export default function ConnectWithMe({ title }) {
   );
 }
 
-ConnectWithMe.propTypes = {
+ConnectWithMeSection.propTypes = {
   title: PropTypes.string,
 };

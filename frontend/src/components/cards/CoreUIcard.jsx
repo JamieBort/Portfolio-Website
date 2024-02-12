@@ -20,6 +20,6 @@ export default function CoreUIcard() {
   );
 }
 
-// Bio.propTypes = {
+// BioSection.propTypes = {
 //   title: PropTypes.string,
 // };
