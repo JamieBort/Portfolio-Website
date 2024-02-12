@@ -68,6 +68,8 @@ export default function MUICustomCard({ item }) {
 
         {/* Tech options. TODO: choose among these: */}
         {/* <TechGrid /> https://mui.com/material-ui/react-grid/ */}
+        {/* <TechIcons /> https://mui.com/material-ui/icons/ */}
+        {/* <TechMaterialIcons /> https://mui.com/material-ui/material-icons/ */}
         <TechAvatar />
         <TechStack />
       </CardContent>

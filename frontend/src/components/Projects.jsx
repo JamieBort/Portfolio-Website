@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { BackendAPI } from "./../api/BackendAPI";
-import CoreUICustomCard from "./cards/CoreUICustomCard";
-import { CCardGroup } from "@coreui/react";
+// import CoreUICustomCard from "./cards/CoreUICustomCard";
+// import { CCardGroup } from "@coreui/react";
 import MUICustomCard from "./cards/MUICustomCard";
-import { Container } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 
 export default function Projects() {
   // Saving the api call data in the "repos" variable.
@@ -41,20 +41,20 @@ export default function Projects() {
   //   }
   // }, 1000 * 60 * 25);
 
-  // Creating each CoreUI card.
-  if (!loading) {
-    // Mapping through the data from the api call.
-    var repo = repos.map((item) => {
-      // Returning each repo detail.
-      return (
-        <CoreUICustomCard
-          // className={`mb-3 border-${"success"}`}
-          key={item.node.id}
-          item={item.node}
-        />
-      );
-    });
-  }
+  // // Creating each CoreUI card.
+  // if (!loading) {
+  //   // Mapping through the data from the api call.
+  //   var repo = repos.map((item) => {
+  //     // Returning each repo detail.
+  //     return (
+  //       <CoreUICustomCard
+  //         // className={`mb-3 border-${"success"}`}
+  //         key={item.node.id}
+  //         item={item.node}
+  //       />
+  //     );
+  //   });
+  // }
 
   // Creating each MUI card.
   if (!loading) {
@@ -74,21 +74,33 @@ export default function Projects() {
   // When the value of "loading" is true, "<p>loading...</p>" will display. Otherwise "<ul>{repo}</ul>" will list the data from the api call.
   return (
     <>
-      <div style={divStyle.div}>
+      <div style={divStyle.divUIType}>
         <p style={divStyle.p}>MUI Cards:</p>
-        <Container maxWidth="sm">{loading ? <p>loading...</p> : <>{repoMUI}</>}</Container>
+        <div style={divStyle.divComponentType}>
+          <p style={divStyle.p}>Container</p>
+          <Container maxWidth="sm">{loading ? <p>loading...</p> : <>{repoMUI}</>}</Container>
+        </div>
+        <div style={divStyle.divComponentType}>
+          <p style={divStyle.p}>Grid</p>
+          <Grid maxWidth="sm">{loading ? <p>loading...</p> : <>{repoMUI}</>}</Grid>
+        </div>
       </div>
-      <div style={divStyle.div}>
+      {/* <div style={divStyle.divUIType}>
         <p style={divStyle.p}>CoreUI Cards:</p>
         <CCardGroup>{loading ? <p>loading...</p> : <>{repo}</>}</CCardGroup>
-      </div>
+      </div> */}
     </>
   );
 }
 
 const divStyle = {
-  div: {
+  divUIType: {
     border: "1px solid DodgerBlue",
+    marginTop: "5px",
+    marginBottom: "5px",
+  },
+  divComponentType: {
+    border: "1px solid red",
     marginTop: "5px",
     marginBottom: "5px",
   },
