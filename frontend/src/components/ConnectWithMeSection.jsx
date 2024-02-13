@@ -63,7 +63,11 @@ export default function ConnectWithMeSection({ title, sectionStyle }) {
   return (
     <div id="connectWithMe_section">
       <Container style={sectionStyle.container}>
-        <Typography variant="h2" gutterBottom style={sectionStyle.typography.h2}>
+        <Typography
+          variant="h5"
+          gutterBottom
+          // style={sectionStyle.typography.h3}
+        >
           {title}
         </Typography>
         {/* TODO: style the icons */}

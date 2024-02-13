@@ -7,7 +7,11 @@ export default function ProjectSection({ title, sectionStyle }) {
   return (
     <div id="projects_section">
       <Container style={sectionStyle.container}>
-        <Typography variant="h2" gutterBottom style={sectionStyle.typography.h2}>
+        <Typography
+          variant="h5"
+          gutterBottom
+          // style={sectionStyle.typography.h5}
+        >
           {title}
         </Typography>
         <Projects />

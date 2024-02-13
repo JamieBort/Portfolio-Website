@@ -47,11 +47,18 @@ export default function MUICustomCard({ item }) {
       padding: theme.spacing(1),
       textAlign: "center",
       color: theme.palette.text.secondary,
+      //   minWidth: "15em", // NOTE: These two styles are together.
     }));
 
     const idiomas = languages.edges.map((element) => {
       return (
-        <Grid key={id + element.node.name} item xs={12} sm={6}>
+        <Grid
+          key={id + element.node.name}
+          item
+          xs={12}
+          sm={6}
+          // style={{ display: "flex", justifyContent: "center" }} // NOTE: These two styles are together.
+        >
           <ItemBasicGrid>{element.node.name}</ItemBasicGrid>
         </Grid>
       );
@@ -79,16 +86,14 @@ export default function MUICustomCard({ item }) {
         {/* <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           Word of the Day
         </Typography> */}
-        <Typography variant="h5" component="div" style={{ textAlign: "center" }}>
+        <Typography
+          variant="h5"
+          component="div"
+          // style={{ textAlign: "center" }}
+        >
           {name}
         </Typography>
         <Typography variant="body2">{description}</Typography>
-
-        {forkCount === 0 ? null : (
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
-            Fork Count: {forkCount}
-          </Typography>
-        )}
 
         {/* TODO: consider icons for the tech items, rather than words. */}
 
@@ -118,6 +123,12 @@ export default function MUICustomCard({ item }) {
         {stargazerCount === 0 ? null : (
           <Typography variant="body2" color="text.secondary">
             Stargazer Count: {stargazerCount}
+          </Typography>
+        )}
+
+        {forkCount === 0 ? null : (
+          <Typography sx={{ mb: 1.5 }} color="text.secondary">
+            Fork Count: {forkCount}
           </Typography>
         )}
       </CardActions>
