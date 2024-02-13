@@ -75,14 +75,14 @@ export default function MUICustomCard({ item, selection }) {
 
   const card = (
     <CardContent>
-      <Stack direction="row" justifyContent="flex-start" alignItems="center" spacing={10}>
+      <Stack direction="row" justifyContent="flex-start" alignItems="center" spacing={5}>
         <Typography variant="h5" component="div">
           {name}
         </Typography>
         <Stack
           direction="column"
           // justifyContent="center"
-          // alignItems="stretch"
+          //   alignItems="flex-start"
         >
           {stargazerCount === 0 ? null : (
             <Typography variant="subtitle1" color="text.secondary">
