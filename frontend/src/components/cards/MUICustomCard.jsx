@@ -75,12 +75,7 @@ export default function MUICustomCard({ item, selection }) {
 
   const card = (
     <CardContent>
-      <Stack
-        direction="row"
-        //   justifyContent="space-between"
-        alignItems="center"
-        spacing={10}
-      >
+      <Stack direction="row" justifyContent="flex-start" alignItems="center" spacing={10}>
         <Typography variant="h5" component="div">
           {name}
         </Typography>
@@ -114,11 +109,11 @@ export default function MUICustomCard({ item, selection }) {
       <Stack direction="row" justifyContent="space-around" alignItems="center">
         {homepageUrl == null ? null : (
           <Link href={homepageUrl} underline="hover">
-            Live Site URL
+            Live Site
           </Link>
         )}
         <Link href={url} underline="hover">
-          GitHub Repository URL
+          GitHub Repository
         </Link>
       </Stack>
     </CardContent>
