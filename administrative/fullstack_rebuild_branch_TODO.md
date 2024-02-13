@@ -4,6 +4,14 @@ Items to be addressed in the `fullstack_rebuild` branch.
 
 Or to be moved to the `./administrative/Tasks.md` file to be addressed at a later date.
 
+Today added navigation:
+https://reactrouter.com/en/main/router-components/browser-router
+and
+https://reactrouter.com/en/main/router-components/hash-router
+
+And added components mui components such as:
+import { Box, Container, Grid, Stack, Typography, Icon, Link } from "@mui/material";
+
 ---
 
 - Do these 2 things together and in sequence:
@@ -29,6 +37,8 @@ Or to be moved to the `./administrative/Tasks.md` file to be addressed at a late
       - Then move those directories.
 
       - Then remove the `./index.html` file.
+
+      - Then change the name of this repo from `jamiebort.github.io` to `Portfolio Website`.
 
       - Then add the I18y library.
 
