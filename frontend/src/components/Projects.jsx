@@ -6,7 +6,9 @@ import { BackendAPI } from "./../api/BackendAPI";
 import MUICustomCard from "./cards/MUICustomCard";
 import Container from "@mui/material/Container";
 
-export default function Projects() {
+import Typography from "@mui/material/Typography";
+
+export default function Projects({ selection }) {
   // TODO: Account for the time(s) when the api call doesn't work. Or when the server is down. Or when github is down. Etc. By pulling the saved data from local memory. And/or setting a default data object in the repo useState
   const standbyData = [
     {
@@ -27,7 +29,7 @@ export default function Projects() {
     {
       node: {
         description: "My Portfolio Website. This is where I share a bit about myself, showcase what I've been working on, host my blog, and more.",
-        forkCount: 2,
+        forkCount: 0,
         homepageUrl: "https://jamiebort.github.io/",
         id: "222",
         languages: {
@@ -89,6 +91,7 @@ export default function Projects() {
           // className={`mb-3 border-${"success"}`}
           key={item.node.id}
           item={item.node}
+          selection={selection}
         />
       );
     });
@@ -96,9 +99,9 @@ export default function Projects() {
 
   // When the value of "loading" is true, "<p>loading...</p>" will display. Otherwise "<ul>{repo}</ul>" will list the data from the api call.
   // TODO: make this loading text the same size as the other text. Or bigger.
-  return <Container maxWidth="sm">{loading ? <p>loading...</p> : <>{repoMUI}</>}</Container>;
+  return <Container maxWidth="sm">{loading ? <Typography variant="body2">loading...</Typography> : <>{repoMUI}</>}</Container>;
 }
 
 Projects.propTypes = {
-  title: PropTypes.string,
+  selection: PropTypes.string,
 };
