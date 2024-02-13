@@ -1,10 +1,15 @@
 // ./frontend/src/App.jsx
 
-// import Typography from "@mui/material/Typography";
+import { Typography } from "@mui/material";
 import PropTypes from "prop-types";
 
 export default function Footer({ sectionStyle }) {
-  return <div style={sectionStyle.footer}>{Date()}</div>;
+  return (
+    <Typography variant="body2" sx={sectionStyle.footer}>
+      {`\u00A9`}
+      {new Date().getFullYear()}
+    </Typography>
+  );
 }
 
 Footer.propTypes = {

@@ -3,34 +3,37 @@
 import Header from "./components/body/Header";
 import Content from "./components/body/Content";
 import Footer from "./components/body/Footer";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import Container from "@mui/material/Container";
 
-const theme = createTheme({
-  // palette: {
-  //   primary: {
-  //     main: red[500],
-  //   },
-  // },
-});
-
+// TODO: Decide among OPTION 1 and OPTION 2 and OPTION 3.
+// TODO: Replace <Header/>, <Content/>, and <Footer/> each with a MUI component such as Container. NOTE: If the new component is a <Container/>, the existing <Container/> may need to change to a <Box/>
 export default function App() {
-  // TODO: determine of I can remain with option 1 below.
+  // // NOTE: OPTION 1
+  // return (
+  //   <>
+  //     <Header sectionStyle={sectionStyle} />
+  //     <Content sectionStyle={sectionStyle} />
+  //     <Footer sectionStyle={sectionStyle} />
+  //   </>
+  // );
+
+  // // NOTE: OPTION 2
   return (
-    // NOTE: option 1:
-    <>
-      <ThemeProvider theme={theme}>
-        <Header sectionStyle={sectionStyle} />
-        <Content sectionStyle={sectionStyle} />
-        <Footer id="footer" sectionStyle={sectionStyle} />
-      </ThemeProvider>
-    </>
-    // NOTE: option 2:
-    // <div style={{ height: "100%", width: "100%" }}>
-    //   <Header sectionStyle={sectionStyle} />
-    //   <Content sectionStyle={sectionStyle} />
-    //   <Footer id="footer" sectionStyle={sectionStyle} />
-    // </div>
+    <Container sx={sectionStyle.body}>
+      <Header sectionStyle={sectionStyle} />
+      <Content sectionStyle={sectionStyle} />
+      <Footer sectionStyle={sectionStyle} />
+    </Container>
   );
+
+  // // NOTE: OPTION 3
+  // return (
+  //   <Box sx={sectionStyle.body}>
+  //     <Header sectionStyle={sectionStyle} />
+  //     <Content sectionStyle={sectionStyle} />
+  //     <Footer sectionStyle={sectionStyle} />
+  //   </Box>
+  // );
 }
 
 const headerHeight_contentTop = "130px";
@@ -38,7 +41,7 @@ const contentBottom_footerHeight = "20px";
 // const backgroundColor = "lightgreen";
 
 const sectionStyle = {
-  // body: { height: "100%", width: "100%" }, // NOTE: option 2 above.
+  body: { height: "100%", width: "100%" }, // NOTE: for container of Header, Content, and Footer in case the css functionality needs it.
   header: {
     position: "absolute",
     height: headerHeight_contentTop,
@@ -67,7 +70,7 @@ const sectionStyle = {
     right: "0px",
   },
   container: {},
-  // typography: { h3: { textAlign: "center" }, h4: { textAlign: "center" }, body1: { textAlign: "" } },
+  // typography: { h3: { textAlign: "center" }, h4: { textAlign: "center" }, body1: { textAlign: "" } }, // NOTE: first attempt to use the default mui Typography variant styles.
   stack: {},
   link: {},
 };

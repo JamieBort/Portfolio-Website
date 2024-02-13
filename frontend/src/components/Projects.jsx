@@ -1,23 +1,71 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+// import { BackendAPI } from "./../api/BackendAPI";
 import { BackendAPI } from "./../api/BackendAPI";
-// import CoreUICustomCard from "./cards/CoreUICustomCard";
-// import { CCardGroup } from "@coreui/react";
+
 import MUICustomCard from "./cards/MUICustomCard";
-// import { Container, Grid } from "@mui/material";
 import Container from "@mui/material/Container";
 
 export default function Projects() {
+  // TODO: Account for the time(s) when the api call doesn't work. Or when the server is down. Or when github is down. Etc. By pulling the saved data from local memory. And/or setting a default data object in the repo useState
+  const standbyData = [
+    {
+      node: {
+        description: "My Portfolio Website. This is where I share a bit about myself, showcase what I've been working on, host my blog, and more.",
+        forkCount: 2,
+        homepageUrl: "https://jamiebort.github.io/",
+        id: "111",
+        languages: {
+          totalCount: 4,
+          edges: [{ node: { name: "CSS" } }, { node: { name: "JavaScript" } }, { node: { name: "Less" } }, { node: { name: "SCSS" } }],
+        },
+        name: "jamiebort.github.io",
+        stargazerCount: 4,
+        url: "https://github.com/JamieBort/jamiebort.github.io",
+      },
+    },
+    {
+      node: {
+        description: "My Portfolio Website. This is where I share a bit about myself, showcase what I've been working on, host my blog, and more.",
+        forkCount: 2,
+        homepageUrl: "https://jamiebort.github.io/",
+        id: "222",
+        languages: {
+          totalCount: 5,
+          edges: [{ node: { name: "CSS" } }, { node: { name: "HTML" } }, { node: { name: "JavaScript" } }, { node: { name: "Less" } }, { node: { name: "SCSS" } }],
+        },
+        name: "jamiebort.github.io",
+        stargazerCount: 3,
+        url: "https://github.com/JamieBort/jamiebort.github.io",
+      },
+    },
+    {
+      node: {
+        description: "My Portfolio Website. This is where I share a bit about myself, showcase what I've been working on, host my blog, and more.",
+        forkCount: 5,
+        homepageUrl: "https://jamiebort.github.io/",
+        id: "333",
+        languages: {
+          totalCount: 3,
+          edges: [{ node: { name: "CSS" } }, { node: { name: "Less" } }, { node: { name: "SCSS" } }],
+        },
+        name: "jamiebort.github.io",
+        stargazerCount: 0,
+        url: "https://github.com/JamieBort/jamiebort.github.io",
+      },
+    },
+  ];
+
   // Saving the api call data in the "repos" variable.
-  const [repos, setRepos] = useState();
+  const [repos, setRepos] = useState(standbyData);
   // By default the status of "loading" is true, implying that we're not getting/do not have any data from the back end.
   const [loading, setLoading] = useState(true);
 
-  // Make an api call to the back end to obtain the pinned repos.
   useEffect(() => {
     try {
-      BackendAPI.getPinned.then((stuff) => {
-        setRepos(stuff);
+      BackendAPI.getPinned.then((data) => {
+        // console.log("data:", data);
+        setRepos(data);
         setLoading(false);
       });
     } catch (error) {
@@ -26,36 +74,10 @@ export default function Projects() {
     }
   }, []);
 
-  // // NOTE: This isn't working.
-  // // Attempt to keep the backend from going to sleep.
-  // // This setInterval() is called every x minutes/(1000*60).
-  // setInterval(() => {
-  //   console.log("attempting to fetch via setInterval in front end");
-  //   try {
-  //     BackendAPI.getPinned.then((stuff) => {
-  //       setRepos(stuff);
-  //       // setLoading(false);
-  //     });
-  //   } catch (error) {
-  //     // More errors....
-  //     console.log("Try/Catch setInterval() error:", error);
-  //   }
-  // }, 1000 * 60 * 25);
-
-  // // Creating each CoreUI card.
-  // if (!loading) {
-  //   // Mapping through the data from the api call.
-  //   var repo = repos.map((item) => {
-  //     // Returning each repo detail.
-  //     return (
-  //       <CoreUICustomCard
-  //         // className={`mb-3 border-${"success"}`}
-  //         key={item.node.id}
-  //         item={item.node}
-  //       />
-  //     );
-  //   });
-  // }
+  // useEffect(() => {
+  //   // setRepos(standbyData);
+  //   setLoading(false);
+  // }, []);
 
   // Creating each MUI card.
   if (!loading) {
@@ -73,46 +95,9 @@ export default function Projects() {
   }
 
   // When the value of "loading" is true, "<p>loading...</p>" will display. Otherwise "<ul>{repo}</ul>" will list the data from the api call.
-  return (
-    <>
-      {/* <div style={divStyle.divUIType}>
-        <p style={divStyle.p}>MUI Cards:</p>
-        <div style={divStyle.divComponentType}>
-          <p style={divStyle.p}>Container</p> */}
-      {/* TODO: make this loading text the same size as the other text. Or bigger. */}
-      <Container maxWidth="sm">{loading ? <p>loading...</p> : <>{repoMUI}</>}</Container>
-      {/* </div> */}
-      {/* NOTE: Leaning towards Container and not Grid */}
-      {/* <div style={divStyle.divComponentType}>
-          <p style={divStyle.p}>Grid</p>
-          <Grid maxWidth="sm">{loading ? <p>loading...</p> : <>{repoMUI}</>}</Grid>
-        </div> */}
-      {/* </div> */}
-      {/* NOTE: Not a fan of CoreUI */}
-      {/* <div style={divStyle.divUIType}>
-        <p style={divStyle.p}>CoreUI Cards:</p>
-        <CCardGroup>{loading ? <p>loading...</p> : <>{repo}</>}</CCardGroup>
-      </div> */}
-    </>
-  );
+  // TODO: make this loading text the same size as the other text. Or bigger.
+  return <Container maxWidth="sm">{loading ? <p>loading...</p> : <>{repoMUI}</>}</Container>;
 }
-
-// const divStyle = {
-//   divUIType: {
-//     border: "1px solid DodgerBlue",
-//     marginTop: "5px",
-//     marginBottom: "5px",
-//   },
-//   divComponentType: {
-//     border: "1px solid red",
-//     marginTop: "5px",
-//     marginBottom: "5px",
-//   },
-//   p: {
-//     color: "green",
-//     textAlign: "center",
-//   },
-// };
 
 Projects.propTypes = {
   title: PropTypes.string,

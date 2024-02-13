@@ -1,44 +1,38 @@
 // ./frontend/src/components/cards/MUICustomCard.jsx
 
 import PropTypes from "prop-types";
-import { Box, Card, CardActions, CardContent, Typography, AvatarGroup, Avatar, Stack, Paper, Link, Grid } from "@mui/material";
+import { Box, Card, CardContent, Typography, Paper, Link, Grid, CardHeader, Stack } from "@mui/material";
 import { styled } from "@mui/material/styles";
-
-import * as React from "react";
-// import { styled } from '@mui/material/styles';
-// import Box from '@mui/material/Box';
-// import Paper from '@mui/material/Paper';
-// import Grid from '@mui/material/Unstable_Grid2';
 
 export default function MUICustomCard({ item }) {
   const { description, forkCount, homepageUrl, name, stargazerCount, url, languages, id } = item;
 
-  //   Listing tech/languages using Avatar
-  const TechAvatar = () => {
-    const idiomas = languages.edges.map((element) => (
-      <Avatar alt="" src="" key={id + element.node.name}>
-        {element.node.name}
-      </Avatar>
-    ));
-    return <AvatarGroup max={6}>{idiomas}</AvatarGroup>;
-  };
+  //   //   Listing tech/languages using Avatar
+  //   const TechAvatar = () => {
+  //     const idiomas = languages.edges.map((element) => (
+  //       <Avatar alt="" src="" key={id + element.node.name}>
+  //         {element.node.name}
+  //       </Avatar>
+  //     ));
+  //     return <AvatarGroup max={6}>{idiomas}</AvatarGroup>;
+  //   };
 
-  //   Listing tech/languages using Stack
-  const TechStack = () => {
-    const ItemStack = styled(Paper)(({ theme }) => ({
-      backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-      ...theme.typography.body2,
-      padding: theme.spacing(1),
-      textAlign: "center",
-      color: theme.palette.text.secondary,
-    }));
-    const idiomas = languages.edges.map((element) => <ItemStack key={id + element.node.name}>{element.node.name}</ItemStack>);
-    return (
-      <Stack direction="row" spacing={2}>
-        {idiomas}
-      </Stack>
-    );
-  };
+  //   //   Listing tech/languages using Stack
+  //   const TechStack = () => {
+  //     const ItemStack = styled(Paper)(({ theme }) => ({
+  //       backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+  //       ...theme.typography.body2,
+  //       padding: theme.spacing(1),
+  //       textAlign: "center",
+  //       color: theme.palette.text.secondary,
+  //     }));
+  //     const idiomas = languages.edges.map((element) => <ItemStack key={id + element.node.name}>{element.node.name}</ItemStack>);
+  //     return (
+  //       <Stack direction="row" spacing={2}>
+  //         {idiomas}
+  //       </Stack>
+  //     );
+  //   };
 
   const BasicGrid = () => {
     const ItemBasicGrid = styled(Paper)(({ theme }) => ({
@@ -51,6 +45,9 @@ export default function MUICustomCard({ item }) {
     }));
 
     const idiomas = languages.edges.map((element) => {
+      //   console.log("id:", id);
+      //   console.log("element.node.name:", element.node.name);
+      //   console.log("===============");
       return (
         <Grid
           key={id + element.node.name}
@@ -63,6 +60,9 @@ export default function MUICustomCard({ item }) {
         </Grid>
       );
     });
+    // console.log("===============");
+    // console.log("name:", name);
+    // console.log("===============");
 
     return (
       <Box sx={{ flexGrow: 1 }}>
@@ -73,26 +73,20 @@ export default function MUICustomCard({ item }) {
     );
   };
 
-  //   //   TODO: figure out what this is.
-  //   const bull = (
-  //     <Box component="span" sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}>
-  //       •
-  //     </Box>
-  //   );
-
   const card = (
     <>
+      <CardHeader
+        title={
+          <Typography variant="h5" component="div">
+            {name}
+          </Typography>
+        }
+      />
       <CardContent>
-        {/* <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Word of the Day
-        </Typography> */}
-        <Typography
-          variant="h5"
-          component="div"
-          // style={{ textAlign: "center" }}
-        >
+        {/* <Typography variant="h5" component="div">
           {name}
-        </Typography>
+        </Typography> */}
+
         <Typography variant="body2">{description}</Typography>
 
         {/* TODO: consider icons for the tech items, rather than words. */}
@@ -106,32 +100,33 @@ export default function MUICustomCard({ item }) {
         {/* <TechAvatar /> */}
         {/* NOTE: TBD TechStack. */}
         {/* <TechStack /> */}
-      </CardContent>
 
-      {/* TODO: Read up on CardActions. */}
-      {/* TODO: style this link/stargazer section */}
-      <CardActions>
-        {homepageUrl == null ? null : (
-          <Link href={homepageUrl} underline="hover">
-            Live Site URL
+        {/* TODO: Read up on CardActions. */}
+        {/* TODO: style this link/stargazer section */}
+        <Stack direction="row" justifyContent="space-around" alignItems="center" spacing={2}>
+          {homepageUrl == null ? null : (
+            <Link href={homepageUrl} underline="hover">
+              Live Site URL
+            </Link>
+          )}
+          <Link href={url} underline="hover">
+            GitHub Repository URL
           </Link>
-        )}
-        <Link href={url} underline="hover">
-          GitHub Repository URL
-        </Link>
+        </Stack>
+        <Stack direction="row" justifyContent="space-around" alignItems="center" spacing={2}>
+          {stargazerCount === 0 ? null : (
+            <Typography variant="body1" color="text.secondary">
+              Stargazer Count: {stargazerCount}
+            </Typography>
+          )}
 
-        {stargazerCount === 0 ? null : (
-          <Typography variant="body2" color="text.secondary">
-            Stargazer Count: {stargazerCount}
-          </Typography>
-        )}
-
-        {forkCount === 0 ? null : (
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
-            Fork Count: {forkCount}
-          </Typography>
-        )}
-      </CardActions>
+          {forkCount === 0 ? null : (
+            <Typography variant="body1" color="text.secondary">
+              Fork Count: {forkCount}
+            </Typography>
+          )}
+        </Stack>
+      </CardContent>
     </>
   );
 
