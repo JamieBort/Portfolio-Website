@@ -79,6 +79,7 @@ export default function Projects() {
         <p style={divStyle.p}>MUI Cards:</p>
         <div style={divStyle.divComponentType}>
           <p style={divStyle.p}>Container</p> */}
+      {/* TODO: make this loading text the same size as the other text. Or bigger. */}
       <Container maxWidth="sm">{loading ? <p>loading...</p> : <>{repoMUI}</>}</Container>
       {/* </div> */}
       {/* NOTE: Leaning towards Container and not Grid */}

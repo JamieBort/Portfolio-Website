@@ -1,63 +1,44 @@
 // ./frontend/src/App.jsx
 
-import Typography from "@mui/material/Typography";
-import BioSection from "./components/BioSection";
-import ProjectSection from "./components/ProjectSection";
-import ConnectWithMeSection from "./components/ConnectWithMeSection";
-import Header from "./components/Header";
-// import { BrowserRouter } from "react-router-dom";
-// import { HashLink } from "react-router-hash-link";
+import Header from "./components/body/Header";
+import Content from "./components/body/Content";
+import Footer from "./components/body/Footer";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-const Footer = () => <div style={sectionStyle.footer}>Footer</div>;
-const Content = () => {
-  return (
-    <div style={sectionStyle.content}>
-      <BioSection title="Bio" sectionStyle={sectionStyle} />
-
-      {/* TODO: make this ProjectSection a min. height while the projects are loading. */}
-      <ProjectSection title="Projects" sectionStyle={sectionStyle} />
-
-      <ConnectWithMeSection title="Connect With Me" sectionStyle={sectionStyle} />
-    </div>
-  );
-};
-
-// TODO: add navigation.
+const theme = createTheme({
+  // palette: {
+  //   primary: {
+  //     main: red[500],
+  //   },
+  // },
+});
 
 export default function App() {
+  // TODO: determine of I can remain with option 1 below.
   return (
-    <div style={{ height: "100%", width: "100%" }}>
-      <Header sectionStyle={sectionStyle} />
-      {/* <div>
-        <Typography variant="h1" gutterBottom style={sectionStyle.typography.h1}>
-          Jamie Bort
-        </Typography>
-        <Typography variant="h2" gutterBottom style={sectionStyle.typography.h2}>
-          Software Engineer
-        </Typography>
-        <BrowserRouter>
-          <HashLink to="#bio_section" color="inherit">
-            Bio
-          </HashLink>
-          <HashLink to="#projects_section" color="inherit">
-            Projects
-          </HashLink>
-          <HashLink to="#connectWithMe_section" color="inherit">
-            Connect With Me
-          </HashLink>
-        </BrowserRouter>
-      </div> */}
-      <Content />
-      <Footer id="footer" />
-    </div>
+    // NOTE: option 1:
+    <>
+      <ThemeProvider theme={theme}>
+        <Header sectionStyle={sectionStyle} />
+        <Content sectionStyle={sectionStyle} />
+        <Footer id="footer" sectionStyle={sectionStyle} />
+      </ThemeProvider>
+    </>
+    // NOTE: option 2:
+    // <div style={{ height: "100%", width: "100%" }}>
+    //   <Header sectionStyle={sectionStyle} />
+    //   <Content sectionStyle={sectionStyle} />
+    //   <Footer id="footer" sectionStyle={sectionStyle} />
+    // </div>
   );
 }
 
-const headerHeight_contentTop = "260px";
+const headerHeight_contentTop = "130px";
 const contentBottom_footerHeight = "20px";
 // const backgroundColor = "lightgreen";
 
 const sectionStyle = {
+  // body: { height: "100%", width: "100%" }, // NOTE: option 2 above.
   header: {
     position: "absolute",
     height: headerHeight_contentTop,
@@ -86,7 +67,7 @@ const sectionStyle = {
     right: "0px",
   },
   container: {},
-  typography: { h1: { textAlign: "center" }, h2: { textAlign: "center" }, body1: { textAlign: "" } },
+  // typography: { h3: { textAlign: "center" }, h4: { textAlign: "center" }, body1: { textAlign: "" } },
   stack: {},
   link: {},
 };
