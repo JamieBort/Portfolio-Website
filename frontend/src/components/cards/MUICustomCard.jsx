@@ -8,18 +8,21 @@ export default function MUICustomCard({ item, selection }) {
   const { description, forkCount, homepageUrl, name, stargazerCount, url, languages, id } = item;
 
   //   Listing tech/languages using Stack
-  const TechStack = () => {
+  const HorizontalList = () => {
     const ItemStack = styled(Paper)(({ theme }) => ({
       backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
       ...theme.typography.body2,
       padding: theme.spacing(1),
+      marginTop: ".5em", // NOTE: my added style.
+      marginBottom: ".5em", // NOTE: my added style.
+      //   margin: "0,2em, 0 , 2em, ",
 
       textAlign: "center",
       color: theme.palette.text.secondary,
     }));
     const idiomas = languages.edges.map((element) => <ItemStack key={id + element.node.name}>{element.node.name}</ItemStack>);
     return (
-      <Stack direction="row" spacing={2}>
+      <Stack direction="row" justifyContent="space-around">
         {idiomas}
       </Stack>
     );
@@ -65,9 +68,11 @@ export default function MUICustomCard({ item, selection }) {
     );
   };
 
-  const Choice = () => {
-    if (selection === "techStack") {
-      return <TechStack />;
+  // NOTE: This is here until I choose between these two options.
+  // TODO: choose among these:
+  const ListChoice = () => {
+    if (selection === "horizontalList") {
+      return <HorizontalList />;
     } else if (selection === "basicGrid") {
       return <BasicGrid />;
     }
@@ -75,10 +80,12 @@ export default function MUICustomCard({ item, selection }) {
 
   const card = (
     <CardContent>
+      {/* NOTE: Note #1 trying to left justify the <Typography/> and <Stack/> inside this stack. */}
       <Stack direction="row" justifyContent="flex-start" alignItems="center" spacing={5}>
         <Typography variant="h5" component="div">
           {name}
         </Typography>
+        {/* NOTE: Note #2 While also trying to put some space between this Stack and the parent one. */}
         <Stack
           direction="column"
           // justifyContent="center"
@@ -99,10 +106,7 @@ export default function MUICustomCard({ item, selection }) {
 
       <Typography variant="body2">{description}</Typography>
 
-      {/* Tech options. TODO: choose among these: */}
-      {/* <TechStack />
-      <BasicGrid /> */}
-      <Choice />
+      <ListChoice />
 
       {/* TODO: Read up on CardActions. */}
       {/* TODO: style this link/stargazer section */}
@@ -119,11 +123,44 @@ export default function MUICustomCard({ item, selection }) {
     </CardContent>
   );
 
+  //   sx={{
+  //     minWidth: 275,
+  //     // backgroundColor: "blue",
+  //     marginTop: ".5em", // NOTE: my added style.
+  //     marginBottom: ".5em", // NOTE: my added style.
+  //   }}
+
+  //   return (
+  //     <Box
+  //       sx={{
+  //         minWidth: 275,
+  //         marginTop: ".5em", // NOTE: my added style.
+  //         marginBottom: ".5em", // NOTE: my added style.
+  //       }}
+  //     >
+  //       <Card variant="outlined">{card}</Card>
+  //     </Box>
+  //   );
+
   return (
-    <Box sx={{ minWidth: 275 }}>
-      <Card variant="outlined">{card}</Card>
-    </Box>
+    <Card
+      variant="outlined"
+      sx={{
+        minWidth: 275,
+        marginTop: ".5em", // NOTE: my added style.
+        marginBottom: ".5em", // NOTE: my added style.
+      }}
+    >
+      {card}
+    </Card>
   );
+
+  //   Original
+  //   return (
+  //     <Box sx={{ minWidth: 275 }}>
+  //       <Card variant="outlined">{card}</Card>
+  //     </Box>
+  //   );
 }
 
 MUICustomCard.propTypes = {

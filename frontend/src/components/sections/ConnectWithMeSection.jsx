@@ -61,25 +61,21 @@ export default function ConnectWithMeSection({ title, sectionStyle }) {
   // );
 
   return (
-    <Container id="connectWithMe_section" style={sectionStyle.container}>
-      <Typography
-        variant="h5"
-        gutterBottom
-        // style={sectionStyle.typography.h3}
-      >
+    <Container id="connectWithMe_section" sx={sectionStyle.container}>
+      <Typography variant="h5" gutterBottom>
         {title}
       </Typography>
       {/* TODO: style the icons */}
       {/* TODO: consider not using icons */}
-      <Stack direction="row" spacing={3}>
+      <Stack direction="row" justifyContent="space-around">
         <Link href="http://www.github.com" target="_blank">
-          <GitHubIcon sx={{ color: "red" }} />
+          <GitHubIcon fontSize="large" />
         </Link>
         <Link href="http://www.github.com" target="_blank">
-          <TwitterIcon sx={{ color: "orange" }} fontSize="large" />
+          <TwitterIcon fontSize="large" />
         </Link>
-        <Link href="http://www.github.com" target="_blank" sx={{ color: "red" }}>
-          <LinkedInIcon />
+        <Link href="http://www.github.com" target="_blank">
+          <LinkedInIcon fontSize="large" />
         </Link>
         {/* <BottomNavigation width="auto" style={{ background: "#222" }}>
           <BottomNavigationAction className={classes.root} style={{ padding: 0, color: "white" }} icon={StackOverflowIcon}></BottomNavigationAction>

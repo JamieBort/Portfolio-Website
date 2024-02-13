@@ -5,18 +5,13 @@ import { Container, Typography } from "@mui/material";
 export default function ProjectSection({ title, sectionStyle, selection }) {
   return (
     <Container id="projects_section" sx={sectionStyle.container}>
-      <Typography
-        variant="h5"
-        gutterBottom
-        // sx={sectionStyle.typography.h5}
-      >
+      <Typography variant="h5" gutterBottom>
         {title}
       </Typography>
-      <Typography variant="body1">{selection}</Typography>
       {/* <Projects /> */}
+
+      <Typography variant="body1">{selection}</Typography>
       <Projects selection={selection} />
-      {/* <Projects selection="techStack" />
-      <Projects selection="basicGrid" /> */}
     </Container>
   );
 }

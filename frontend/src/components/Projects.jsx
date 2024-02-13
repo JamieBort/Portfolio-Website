@@ -21,7 +21,7 @@ export default function Projects({ selection }) {
           totalCount: 4,
           edges: [{ node: { name: "CSS" } }, { node: { name: "JavaScript" } }, { node: { name: "Less" } }, { node: { name: "SCSS" } }],
         },
-        name: "jamiebort.github.io",
+        name: "Dummy Data 1",
         stargazerCount: 4,
         url: "https://github.com/JamieBort/jamiebort.github.io",
       },
@@ -36,7 +36,7 @@ export default function Projects({ selection }) {
           totalCount: 5,
           edges: [{ node: { name: "CSS" } }, { node: { name: "HTML" } }, { node: { name: "JavaScript" } }, { node: { name: "Less" } }, { node: { name: "SCSS" } }],
         },
-        name: "jamiebort.github.io",
+        name: "Dummy Data 2",
         stargazerCount: 3,
         url: "https://github.com/JamieBort/jamiebort.github.io",
       },
@@ -51,7 +51,7 @@ export default function Projects({ selection }) {
           totalCount: 3,
           edges: [{ node: { name: "CSS" } }, { node: { name: "Less" } }, { node: { name: "SCSS" } }],
         },
-        name: "jamiebort.github.io",
+        name: "Dummy Data 3",
         stargazerCount: 0,
         url: "https://github.com/JamieBort/jamiebort.github.io",
       },
@@ -66,7 +66,7 @@ export default function Projects({ selection }) {
   useEffect(() => {
     try {
       BackendAPI.getPinned.then((data) => {
-        // console.log("data:", data);
+        console.log("data:", data);
         setRepos(data);
         setLoading(false);
       });
@@ -76,16 +76,23 @@ export default function Projects({ selection }) {
     }
   }, []);
 
-  // useEffect(() => {
-  //   // setRepos(standbyData);
-  //   setLoading(false);
-  // }, []);
+  useEffect(() => {
+    // Function to load the saved standbyData if the database is down.
+    setTimeout(() => {
+      if (loading) {
+        console.log("repos:", repos);
+        setRepos(standbyData);
+        setLoading(false);
+      }
+    }, 5000);
+  }, []);
 
   // Creating each MUI card.
   if (!loading) {
     // Mapping through the data from the api call.
-    var repoMUI = repos.map((item) => {
+    var repo = repos.map((item) => {
       // Returning each repo detail.
+      // TODO: Rename this component.
       return (
         <MUICustomCard
           // className={`mb-3 border-${"success"}`}
@@ -97,9 +104,9 @@ export default function Projects({ selection }) {
     });
   }
 
-  // When the value of "loading" is true, "<p>loading...</p>" will display. Otherwise "<ul>{repo}</ul>" will list the data from the api call.
+  // When the value of "loading" is true, "<p>loading...</p>" will display. Otherwise "<>{repo}</>" will list the data from the api call.
   // TODO: make this loading text the same size as the other text. Or bigger.
-  return <Container maxWidth="sm">{loading ? <Typography variant="body2">loading...</Typography> : <>{repoMUI}</>}</Container>;
+  return <Container maxWidth="sm">{loading ? <Typography variant="body2">loading...</Typography> : <>{repo}</>}</Container>;
 }
 
 Projects.propTypes = {
