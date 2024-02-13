@@ -6,7 +6,7 @@ import { Box, Container, Grid, Stack, Typography, Icon, Link } from "@mui/materi
 export default function BioSection({ title, sectionStyle }) {
   //   console.log(props.title);
   return (
-    <>
+    <div id="bio_section">
       <Container style={sectionStyle.container}>
         <Typography variant="h2" gutterBottom style={sectionStyle.typography.h2}>
           {title}
@@ -33,7 +33,7 @@ export default function BioSection({ title, sectionStyle }) {
           I invite you to Connect with Me on social media below.
         </Typography>
       </Container>
-    </>
+    </div>
   );
 }
 

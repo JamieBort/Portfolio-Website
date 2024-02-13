@@ -61,7 +61,7 @@ export default function ConnectWithMeSection({ title, sectionStyle }) {
   // );
 
   return (
-    <>
+    <div id="connectWithMe_section">
       <Container style={sectionStyle.container}>
         <Typography variant="h2" gutterBottom style={sectionStyle.typography.h2}>
           {title}
@@ -103,7 +103,7 @@ export default function ConnectWithMeSection({ title, sectionStyle }) {
         <span>Stack Overflow</span>
         <span>GitHub</span>
       </Section> */}
-    </>
+    </div>
   );
 }
 
