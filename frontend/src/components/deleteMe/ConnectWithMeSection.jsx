@@ -61,53 +61,51 @@ export default function ConnectWithMeSection({ title, sectionStyle }) {
   // );
 
   return (
-    <div id="connectWithMe_section">
-      <Container style={sectionStyle.container}>
-        <Typography
-          variant="h5"
-          gutterBottom
-          // style={sectionStyle.typography.h3}
-        >
-          {title}
-        </Typography>
-        {/* TODO: style the icons */}
-        {/* TODO: consider not using icons */}
-        <Stack direction="row" spacing={3}>
-          <Link href="http://www.github.com" target="_blank">
-            <GitHubIcon sx={{ color: "red" }} />
-          </Link>
-          <Link href="http://www.github.com" target="_blank">
-            <TwitterIcon sx={{ color: "orange" }} fontSize="large" />
-          </Link>
-          <Link href="http://www.github.com" target="_blank" sx={{ color: "red" }}>
-            <LinkedInIcon />
-          </Link>
-          {/* <BottomNavigation width="auto" style={{ background: "#222" }}>
+    <Container id="connectWithMe_section" style={sectionStyle.container}>
+      <Typography
+        variant="h5"
+        gutterBottom
+        // style={sectionStyle.typography.h3}
+      >
+        {title}
+      </Typography>
+      {/* TODO: style the icons */}
+      {/* TODO: consider not using icons */}
+      <Stack direction="row" spacing={3}>
+        <Link href="http://www.github.com" target="_blank">
+          <GitHubIcon sx={{ color: "red" }} />
+        </Link>
+        <Link href="http://www.github.com" target="_blank">
+          <TwitterIcon sx={{ color: "orange" }} fontSize="large" />
+        </Link>
+        <Link href="http://www.github.com" target="_blank" sx={{ color: "red" }}>
+          <LinkedInIcon />
+        </Link>
+        {/* <BottomNavigation width="auto" style={{ background: "#222" }}>
           <BottomNavigationAction className={classes.root} style={{ padding: 0, color: "white" }} icon={StackOverflowIcon}></BottomNavigationAction>
         </BottomNavigation> */}
 
-          {/* <MdiStackOverflow />
+        {/* <MdiStackOverflow />
         <FontAwesomeIcon icon="fa-brands fa-stack-overflow" />
         <FontAwesomeIcon icon={faStackOverflow} /> */}
-          {/* <Icon icon={StackOverflowIcon} /> */}
+        {/* <Icon icon={StackOverflowIcon} /> */}
 
-          {/* <Icon>add_circle</Icon>
+        {/* <Icon>add_circle</Icon>
       <Icon color="primary">add_circle</Icon>
       <Icon sx={{ color: green[500] }}>add_circle</Icon>
       <Icon fontSize="small">add_circle</Icon>
       <Icon sx={{ fontSize: 30 }}>add_circle</Icon> */}
-          {/* <Icon fontSize="medium"> */}
-          {/* <LinkedInIcon sx={{ color: green[500] }} fontSize="large" /> */}
-          {/* </Icon> */}
-        </Stack>
-      </Container>
+        {/* <Icon fontSize="medium"> */}
+        {/* <LinkedInIcon sx={{ color: green[500] }} fontSize="large" /> */}
+        {/* </Icon> */}
+      </Stack>
       {/* <Section title={title}>
         <span>LinkedIn</span>
         <span>Twitter</span>
         <span>Stack Overflow</span>
         <span>GitHub</span>
       </Section> */}
-    </div>
+    </Container>
   );
 }
 
