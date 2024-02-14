@@ -7,6 +7,9 @@ import { styled } from "@mui/material/styles";
 export default function MUICustomCard({ item, selection }) {
   const { description, forkCount, homepageUrl, name, stargazerCount, url, languages, id } = item;
 
+  // TODO: Sanitize data. Specifically, change name from "Personal-Dashboard" to "Personal Dashboard".
+  console.log("Sanitizing data:", name);
+
   //   Listing tech/languages using Stack
   const HorizontalList = () => {
     const ItemStack = styled(Paper)(({ theme }) => ({

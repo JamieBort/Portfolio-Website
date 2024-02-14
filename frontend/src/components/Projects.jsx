@@ -2,70 +2,72 @@ import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 // import { BackendAPI } from "./../api/BackendAPI";
 import { BackendAPI } from "./../api/BackendAPI";
-
+import { SpareData } from "../assets/SpareData";
+// SpareData.getPinned;
+SpareData.sendIt;
 import MUICustomCard from "./cards/MUICustomCard";
 import Container from "@mui/material/Container";
 
 import Typography from "@mui/material/Typography";
 
 export default function Projects({ selection }) {
-  // TODO: Account for the time(s) when the api call doesn't work. Or when the server is down. Or when github is down. Etc. By pulling the saved data from local memory. And/or setting a default data object in the repo useState
-  const standbyData = [
-    {
-      node: {
-        id: "MDEwOlJlcG9zaXRvcnk5NjcwOTAwNg==",
-        name: "Portfolio-Website",
-        url: "https://github.com/JamieBort/Portfolio-Website",
-        stargazerCount: 0,
-        description:
-          "This is where I share a bit about myself, showcase what I've been working on, and share where you can find me online. It is build with a React + Vite front end and a Node Express backend. And styled with MUI.",
-        languages: {
-          totalCount: 5,
-          edges: [{ node: { name: "CSS" } }, { node: { name: "HTML" } }, { node: { name: "JavaScript" } }, { node: { name: "Less" } }, { node: { name: "SCSS" } }],
-        },
-        homepageUrl: "https://jamiebort.com",
-        forkCount: 0,
-      },
-    },
-    {
-      node: {
-        id: "MDEwOlJlcG9zaXRvcnkxNjI2NTg4ODM=",
-        name: "Personal-Dashboard",
-        url: "https://github.com/JamieBort/Personal-Dashboard",
-        stargazerCount: 0,
-        description:
-          "A website for displaying important daily data. Such as blood glucose numbers and upcoming events. Using  Svelt TypeScript front end and Java backend. Which database is yet to be seen. It will use authentication.",
-        languages: { totalCount: 3, edges: [{ node: { name: "CSS" } }, { node: { name: "HTML" } }, { node: { name: "JavaScript" } }] },
-        homepageUrl: "https://jamiebort.github.io/Personal-Dashboard/",
-        forkCount: 0,
-      },
-    },
-    {
-      node: {
-        id: "MDEwOlJlcG9zaXRvcnkxNjI0Njg1MjA=",
-        name: "LearningDirectory",
-        url: "https://github.com/JamieBort/LearningDirectory",
-        stargazerCount: 3,
-        description: "This repo is my knowledge base as I hone my skills by exploring software concepts and new technologies. It contains my notes and resources.",
-        languages: {
-          totalCount: 20,
-          edges: [
-            { node: { name: "HTML" } },
-            { node: { name: "JavaScript" } },
-            { node: { name: "CSS" } },
-            { node: { name: "PHP" } },
-            { node: { name: "Java" } },
-            { node: { name: "Groovy" } },
-          ],
-        },
-        homepageUrl: "",
-        forkCount: 0,
-      },
-    },
-  ];
+  // // ~~TODO:~~ Account for the time(s) when the api call doesn't work. Or when the server is down. Or when github is down. Etc. By pulling the saved data from local memory. And/or setting a default data object in the repo useState
+  // const standbyData = [
+  //   {
+  //     node: {
+  //       id: "MDEwOlJlcG9zaXRvcnk5NjcwOTAwNg==",
+  //       name: "Portfolio-Website",
+  //       url: "https://github.com/JamieBort/Portfolio-Website",
+  //       stargazerCount: 0,
+  //       description:
+  //         "This is where I share a bit about myself, showcase what I've been working on, and share where you can find me online. It is build with a React + Vite front end and a Node Express backend. And styled with MUI.",
+  //       languages: {
+  //         totalCount: 5,
+  //         edges: [{ node: { name: "CSS" } }, { node: { name: "HTML" } }, { node: { name: "JavaScript" } }, { node: { name: "Less" } }, { node: { name: "SCSS" } }],
+  //       },
+  //       homepageUrl: "https://jamiebort.com",
+  //       forkCount: 0,
+  //     },
+  //   },
+  //   {
+  //     node: {
+  //       id: "MDEwOlJlcG9zaXRvcnkxNjI2NTg4ODM=",
+  //       name: "Personal-Dashboard",
+  //       url: "https://github.com/JamieBort/Personal-Dashboard",
+  //       stargazerCount: 0,
+  //       description:
+  //         "A website for displaying important daily data. Such as blood glucose numbers and upcoming events. Using  Svelt TypeScript front end and Java backend. Which database is yet to be seen. It will use authentication.",
+  //       languages: { totalCount: 3, edges: [{ node: { name: "CSS" } }, { node: { name: "HTML" } }, { node: { name: "JavaScript" } }] },
+  //       homepageUrl: "https://jamiebort.github.io/Personal-Dashboard/",
+  //       forkCount: 0,
+  //     },
+  //   },
+  //   {
+  //     node: {
+  //       id: "MDEwOlJlcG9zaXRvcnkxNjI0Njg1MjA=",
+  //       name: "LearningDirectory",
+  //       url: "https://github.com/JamieBort/LearningDirectory",
+  //       stargazerCount: 3,
+  //       description: "This repo is my knowledge base as I hone my skills by exploring software concepts and new technologies. It contains my notes and resources.",
+  //       languages: {
+  //         totalCount: 20,
+  //         edges: [
+  //           { node: { name: "HTML" } },
+  //           { node: { name: "JavaScript" } },
+  //           { node: { name: "CSS" } },
+  //           { node: { name: "PHP" } },
+  //           { node: { name: "Java" } },
+  //           { node: { name: "Groovy" } },
+  //         ],
+  //       },
+  //       homepageUrl: "",
+  //       forkCount: 0,
+  //     },
+  //   },
+  // ];
 
   // Saving the api call data in the "repos" variable.
-  const [repos, setRepos] = useState(standbyData);
+  const [repos, setRepos] = useState();
   // By default the status of "loading" is true, implying that we're not getting/do not have any data from the back end.
   const [loading, setLoading] = useState(true);
 
@@ -79,7 +81,7 @@ export default function Projects({ selection }) {
         setLoading(false);
       });
 
-      // // NOTE: used to simulate a server that is down.
+      // // NOTE: used to simulate the server that is down.
       // setTimeout(() => {
       //   BackendAPI.getPinned.then((data) => {
       //     console.log("We have original data. But there was a delay");
@@ -94,19 +96,49 @@ export default function Projects({ selection }) {
     }
   }, []);
 
-  // NOTE: Function to load the saved standbyData if the database is down.
+  // useEffect()  to load the saved standbyData if the database is down.
   useEffect(() => {
-    setTimeout(() => {
-      if (loading) {
-        // console.log("We have dummy data.");
-        // console.log("repos:", repos);
-        // setRepos(repos);
-        setLoading(false);
-      }
-    }, 5000);
-  }, [loading]);
+    try {
+      const myPromise = new Promise((resolve, reject) => {
+        // return SpareData.sendIt;
+        resolve(SpareData.sendIt);
+        // setTimeout(() => {
+        //   resolve("foo");
+        // }, 300);
+      });
 
-  // TODO: Sanitize data. Specifically, change name from "Personal-Dashboard" to "Personal Dashboard".
+      myPromise.then((data) => {
+        SpareData.printIt;
+        // console.log("We have original data.");
+        // console.log("data:", data);
+        setRepos(data);
+        setLoading(false);
+      });
+
+      // SpareData.sendIt.then((data) => {
+      //   SpareData.printIt;
+      //   // console.log("We have original data.");
+      //   // console.log("data:", data);
+      //   setRepos(data);
+      //   setLoading(false);
+      // });
+    } catch (error) {
+      // More errors....
+      console.log("Try/Catch useEffect() error:", error);
+    }
+  }, []);
+
+  // // NOTE: Function to load the saved standbyData if the database is down.
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     if (loading) {
+  //       // console.log("We have dummy data.");
+  //       // console.log("repos:", repos);
+  //       // setRepos(repos);
+  //       setLoading(false);
+  //     }
+  //   }, 5000);
+  // }, [loading]);
 
   // Creating each MUI card.
   if (!loading) {
