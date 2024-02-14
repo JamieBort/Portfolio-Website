@@ -43,7 +43,7 @@ I have created a standbyData variable for when the backend server is not availab
 
         - Card Breakpoints https://mui.com/material-ui/customization/breakpoints/
 
-        - for ~~loading symbol~~ and icons https://mui.com/material-ui/all-components/
+        - **DONE.** ~~for loading symbol and icons https://mui.com/material-ui/all-components/~~
 
         - Create space between header text and left side
 
@@ -61,7 +61,11 @@ I have created a standbyData variable for when the backend server is not availab
 
       - Then add the I18y library.
 
-      - Then add the media query library.
+      - Then do these 2 things together:
+
+        - Add the media query library.
+
+        - Add a `English/Español` translate button.
 
     - Account for the time(s) when the api call doesn't work. Or when the server id down. Or when github is down. Etc.
 
