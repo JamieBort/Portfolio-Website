@@ -12,6 +12,11 @@ https://reactrouter.com/en/main/router-components/hash-router
 And added components mui components such as:
 import { Box, Container, Grid, Stack, Typography, Icon, Link } from "@mui/material";
 
+Today I styled the cards more.
+I switched out the cards more.
+I cleaned up the files.
+I have created a standbyData variable for when the backend server is not available. This will be called in the event that the backend does not work.
+
 ---
 
 - Do these 2 things together and in sequence:
@@ -30,7 +35,21 @@ import { Box, Container, Grid, Stack, Typography, Icon, Link } from "@mui/materi
 
           - add an I18y library to translate parts of the site that are dynamically updated from GraphQL api calls. Possibly polyglot.js.
 
-          - add a media query library to facilitate building a responsive site. Possibly react-responsive.
+          - add a media query library to facilitate building a responsive site. Possibly react-responsive. This might not be necessary. MUI might address this nicely. But maybe not.
+
+      - Aestetic Changes:
+
+        - Minimize space between "Jamie Bort" and "Software Engineer"
+
+        - Card Breakpoints https://mui.com/material-ui/customization/breakpoints/
+
+        - for loading symbol and icons https://mui.com/material-ui/all-components/
+
+        - Create space between header text and left side
+
+        - min height for projects section while projects are loading
+
+        -
 
       - Look up the typical file structure for Vite front ends.
 
@@ -48,17 +67,41 @@ import { Box, Container, Grid, Stack, Typography, Icon, Link } from "@mui/materi
 
       By creating a default list to load.
 
-  - Do these 5 things together and in sequence:
+  - Do these 2 things together and in sequence:
 
-    - merge the `fullstack` branch into the `dev` branch.
+    - Create a legacy branch or directory of the `master` branch.
 
-    - redeploy the frontend AND the backend. from the `dev` branch.
+      Either
 
-    - Then merge the `dev` branch into the `master` branch.
+      - choose branches:
 
-    - redeploy the frontend AND the backend. from the `master` branch.
+        - create a `legacy` branch.
 
-    - Point the new frontend url to jamiebort.com
+        - create a `legacy_2023` branch by copying the master branch.
+
+        - clean up the file directory so that it doesn't contain anything but the `./assets/`, `./css/`, `./html/`, and `./js/` directories and the `./index.html` file. **do a dry run of this to ensure directories and files are not accidentally removed**
+
+      - or choose directory
+
+        - create a `legacy` directory.
+
+        - create a `legacy_2023` directory inside of the `legacy` directory.
+
+        - move working files (`./assets/`, `./css/`, `./html/`, and `./js/` directories and the `./index.html` file.) into the `legacy_2023` directory.
+
+    - merge the `fullstack_rebuild` branch into the `fullstack` branch.
+
+- Do these 5 things together and in sequence:
+
+  - merge the `fullstack` branch into the `dev` branch.
+
+  - redeploy the frontend AND the backend. from the `dev` branch.
+
+  - Then merge the `dev` branch into the `master` branch.
+
+  - redeploy the frontend AND the backend. from the `master` branch.
+
+  - Point the new frontend url to jamiebort.com
 
 - Other feature and changes to implement:
 
