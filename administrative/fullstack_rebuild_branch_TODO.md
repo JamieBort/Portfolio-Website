@@ -49,7 +49,7 @@ I have created a standbyData variable for when the backend server is not availab
 
         - min height for projects section while projects are loading
 
-        -
+        - Update the favicon (browser icon) from the Vite one to my `JB` one.
 
       - Look up the typical file structure for Vite front ends.
 
