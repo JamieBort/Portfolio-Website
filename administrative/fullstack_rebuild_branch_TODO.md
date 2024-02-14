@@ -39,13 +39,13 @@ I have created a standbyData variable for when the backend server is not availab
 
       - Aesthetic Changes:
 
-        - Minimize space between "Jamie Bort" and "Software Engineer"
+        - **DONE.** ~~Minimize space between "Jamie Bort" and "Software Engineer"~~
 
         - Card Breakpoints https://mui.com/material-ui/customization/breakpoints/
 
         - **DONE.** ~~for loading symbol and icons https://mui.com/material-ui/all-components/~~
 
-        - Create space between header text and left side
+        - **DONE.** ~~Create space between header text and left side~~
 
         - min height for projects section while projects are loading
 

@@ -13,7 +13,6 @@ export default function ConnectWithMeSection({ title }) {
       <Typography variant="h5" gutterBottom>
         {title}
       </Typography>
-      {/* TODO: Style the icons. Make all four uniform dimensions. */}
       <Stack direction="row" justifyContent="space-around">
         <Link href="http://www.github.com" target="_blank">
           <GitHubIcon fontSize="large" sx={{ width: "1.5em", height: "1.5em" }} />

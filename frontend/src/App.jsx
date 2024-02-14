@@ -50,6 +50,7 @@ const sectionStyle = {
     top: "0px",
     left: "0px",
     right: "0px",
+    paddingLeft: "48px",
   },
   content: {
     position: "absolute",

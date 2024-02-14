@@ -16,13 +16,24 @@ export default function Header({ sectionStyle }) {
         variant="h3"
         gutterBottom
         // sx={sectionStyle.typography.h3}
+
+        sx={
+          {
+            // padding: 0,
+            // textAlign: "center" ,
+          }
+        }
       >
         Jamie Bort
       </Typography>
       <Typography
         variant="h4"
         gutterBottom
+        // TODO: Determine the relationship between "sx" and "style". "sx" didn't work here while "style" did.
         // sx={sectionStyle.typography.h3}
+        style={{
+          marginTop: "0",
+        }}
       >
         Software Engineer
       </Typography>
