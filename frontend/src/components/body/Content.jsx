@@ -16,7 +16,7 @@ export default function Content({ sectionStyle }) {
       {/* TODO: make this ProjectSection a min. height while the projects are loading. */}
       {/* <ProjectSection title="Projects" sectionStyle={sectionStyle} /> */}
       <ProjectSection title="Projects" sectionStyle={sectionStyle} selection="horizontalList" />
-      <ProjectSection title="Projects" sectionStyle={sectionStyle} selection="basicGrid" />
+      {/* <ProjectSection title="Projects" sectionStyle={sectionStyle} selection="basicGrid" /> */}
 
       <ConnectWithMeSection title="Connect With Me" sectionStyle={sectionStyle} />
     </Container>

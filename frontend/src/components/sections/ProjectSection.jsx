@@ -10,7 +10,7 @@ export default function ProjectSection({ title, sectionStyle, selection }) {
       </Typography>
       {/* <Projects /> */}
 
-      <Typography variant="body1">{selection}</Typography>
+      {/* <Typography variant="body1">{selection}</Typography> */}
       <Projects selection={selection} />
     </Container>
   );
