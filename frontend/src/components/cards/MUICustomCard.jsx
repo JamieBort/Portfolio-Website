@@ -7,8 +7,8 @@ import { styled } from "@mui/material/styles";
 export default function MUICustomCard({ item, selection }) {
   const { description, forkCount, homepageUrl, name, stargazerCount, url, languages, id } = item;
 
-  // TODO: Sanitize data. Specifically, change name from "Personal-Dashboard" to "Personal Dashboard".
-  console.log("Sanitizing data:", name);
+  // Modify data. If name has a hyphen in it, replace it with a space.
+  const cleanName = name.split("-").join(" ");
 
   //   Listing tech/languages using Stack
   const HorizontalList = () => {
@@ -86,7 +86,7 @@ export default function MUICustomCard({ item, selection }) {
       {/* NOTE: Note #1 trying to left justify the <Typography/> and <Stack/> inside this stack. */}
       <Stack direction="row" justifyContent="flex-start" alignItems="center" spacing={5}>
         <Typography variant="h5" component="div">
-          {name}
+          {cleanName}
         </Typography>
         {/* NOTE: Note #2 While also trying to put some space between this Stack and the parent one. */}
         <Stack

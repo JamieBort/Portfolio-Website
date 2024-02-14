@@ -37,7 +37,7 @@ I have created a standbyData variable for when the backend server is not availab
 
           - add a media query library to facilitate building a responsive site. Possibly react-responsive. This might not be necessary. MUI might address this nicely. But maybe not.
 
-      - Aestetic Changes:
+      - Aesthetic Changes:
 
         - Minimize space between "Jamie Bort" and "Software Engineer"
 
