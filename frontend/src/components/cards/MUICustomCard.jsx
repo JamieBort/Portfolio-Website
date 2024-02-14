@@ -111,7 +111,6 @@ export default function MUICustomCard({ item, selection }) {
 
       <ListChoice />
 
-      {/* TODO: Read up on CardActions. */}
       {/* TODO: style this link/stargazer section */}
       <Stack
         direction="row"
@@ -134,13 +133,7 @@ export default function MUICustomCard({ item, selection }) {
     </CardContent>
   );
 
-  //   sx={{
-  //     minWidth: 275,
-  //     // backgroundColor: "blue",
-  //     marginTop: ".5em", // NOTE: my added style.
-  //     marginBottom: ".5em", // NOTE: my added style.
-  //   }}
-
+  // TODO: decided whether to keep the <Box/> component as a wrapper for the <Card/> component. Or to delete the commented out code.
   //   return (
   //     <Box
   //       sx={{

@@ -16,13 +16,13 @@ export default function ConnectWithMeSection({ title }) {
       {/* TODO: Style the icons. Make all four uniform dimensions. */}
       <Stack direction="row" justifyContent="space-around">
         <Link href="http://www.github.com" target="_blank">
-          <GitHubIcon fontSize="large" />
+          <GitHubIcon fontSize="large" sx={{ width: "1.5em", height: "1.5em" }} />
         </Link>
         <Link href="http://www.github.com" target="_blank">
-          <TwitterIcon fontSize="large" />
+          <TwitterIcon fontSize="large" sx={{ width: "1.5em", height: "1.5em" }} />
         </Link>
         <Link href="http://www.github.com" target="_blank">
-          <LinkedInIcon fontSize="large" />
+          <LinkedInIcon fontSize="large" sx={{ width: "1.5em", height: "1.5em" }} />
         </Link>
         <Link href="http://www.github.com" target="_blank">
           {/* NOTE: "width" and "height" here (below) adjusts the dimensions. */}

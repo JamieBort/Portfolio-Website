@@ -43,7 +43,7 @@ I have created a standbyData variable for when the backend server is not availab
 
         - Card Breakpoints https://mui.com/material-ui/customization/breakpoints/
 
-        - for loading symbol and icons https://mui.com/material-ui/all-components/
+        - for ~~loading symbol~~ and icons https://mui.com/material-ui/all-components/
 
         - Create space between header text and left side
 
