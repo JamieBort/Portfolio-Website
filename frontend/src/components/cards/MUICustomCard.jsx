@@ -110,7 +110,15 @@ export default function MUICustomCard({ item, selection }) {
 
       {/* TODO: Read up on CardActions. */}
       {/* TODO: style this link/stargazer section */}
-      <Stack direction="row" justifyContent="space-around" alignItems="center">
+      <Stack
+        direction="row"
+        justifyContent="space-around"
+        alignItems="center"
+        sx={{
+          marginTop: ".25em", // NOTE: my added style.
+          //   marginBottom: ".25em", // NOTE: my added style.
+        }}
+      >
         {homepageUrl == null ? null : (
           <Link href={homepageUrl} underline="hover">
             Live Site

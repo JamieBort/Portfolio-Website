@@ -63,29 +63,52 @@ export default function Projects({ selection }) {
   // By default the status of "loading" is true, implying that we're not getting/do not have any data from the back end.
   const [loading, setLoading] = useState(true);
 
+  // useEffect() for making a REST API call to the backend.
   useEffect(() => {
     try {
       BackendAPI.getPinned.then((data) => {
-        console.log("data:", data);
+        console.log("We have original data.");
+        // console.log("data:", data);
         setRepos(data);
         setLoading(false);
       });
+
+      // // NOTE: used to simulate a server that is down.
+      // setTimeout(() => {
+      //   BackendAPI.getPinned.then((data) => {
+      //     console.log("We have original data. But there was a delay");
+      //     // console.log("data:", data);
+      //     setRepos(data);
+      //     setLoading(false);
+      //   });
+      // }, 10000);
     } catch (error) {
       // More errors....
       console.log("Try/Catch useEffect() error:", error);
     }
   }, []);
 
+  // // NOTE: Function to load the saved standbyData if the database is down.
+  // setTimeout(() => {
+  //   if (loading) {
+  //     console.log("Backup fired.");
+  //     // console.log("repos:", repos);
+  //     setRepos(standbyData);
+  //     setLoading(false);
+  //   }
+  // }, 5000);
+
+  // NOTE: Function to load the saved standbyData if the database is down.
   useEffect(() => {
-    // Function to load the saved standbyData if the database is down.
     setTimeout(() => {
       if (loading) {
-        console.log("repos:", repos);
-        setRepos(standbyData);
+        console.log("We have dummy data.");
+        // console.log("repos:", repos);
+        // setRepos(repos);
         setLoading(false);
       }
     }, 5000);
-  }, []);
+  }, [loading]);
 
   // Creating each MUI card.
   if (!loading) {
