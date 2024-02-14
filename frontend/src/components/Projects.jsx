@@ -1,3 +1,5 @@
+// ./frontend/src/components/Projects.jsx
+
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { BackendAPI } from "./../api/BackendAPI";
@@ -12,79 +14,80 @@ export default function Projects({ selection }) {
   // By default the status of "loading" is true, implying that we're not getting/do not have any data from the back end.
   const [loading, setLoading] = useState(true);
 
-  // // useEffect() for making a REST API call to the backend.
-  // useEffect(() => {
-  //   try {
-  //     // NOTE: use either this (Option 1)
-  //     BackendAPI.getPinned.then((data) => {
-  //       // console.log("We have original data.");
-  //       // console.log("data:", data);
-  //       setRepos(data);
-  //       setLoading(false);
-  //     });
-
-  //     // // NOTE: used to simulate the server that is down.
-  //     // // NOTE: or this (Option 2)
-  //     // setTimeout(() => {
-  //     //   BackendAPI.getPinned.then((data) => {
-  //     //     console.log("We have original data. But there was a delay");
-  //     //     // console.log("data:", data);
-  //     //     setRepos(data);
-  //     //     setLoading(false);
-  //     //   });
-  //     // }, 10000);
-  //   } catch (error) {
-  //     // More errors....
-  //     console.log("Try/Catch useEffect() error:", error);
-  //   }
-  // }, []);
-
-  // // TODO: Clean this promise up. And use reject.
-  // // useEffect()  to load the saved standbyData if the database is down.
-  // useEffect(() => {
-  //   try {
-  //     // NOTE: use either this (Option 3)
-  //     // A promise for obtaining standbyData using SpareData.sendIt
-  //     const myPromise = new Promise((resolve, reject) => {
-  //       // TODO: Use reject. Or remove it.
-  //       console.log("reject:", reject);
-  //       // Returning a resolved promise with standbyData.
-  //       resolve(SpareData.sendIt);
-  //     });
-  //     myPromise.then((data) => {
-  //       // SpareData.printIt;
-  //       // console.log("We have spare data.");
-  //       // console.log("data:", data);
-  //       setRepos(data);
-  //       setLoading(false);
-  //     });
-
-  //     // // NOTE: used to simulate the a delay in getting the data locally.
-  //     // // NOTE: or this (Option 4)
-  //     // setTimeout(() => {
-  //     //   // A promise for obtaining standbyData using SpareData.sendIt
-  //     //   const myPromise = new Promise((resolve, reject) => {
-  //     //     console.log("reject:", reject);
-  //     //     // Returning a resolved promise with standbyData.
-  //     //     resolve(SpareData.sendIt);
-  //     //   });
-  //     //   myPromise.then((data) => {
-  //     //     // SpareData.printIt;
-  //     //     // console.log("We have spare data.");
-  //     //     // console.log("data:", data);
-  //     //     setRepos(data);
-  //     //     setLoading(false);
-  //     //   });
-  //     // }, 5000);
-  //   } catch (error) {
-  //     // More errors....
-  //     console.log("Try/Catch useEffect() error:", error);
-  //   }
-  // }, []);
-
+  // useEffect() for making a REST API call to the backend.
   useEffect(() => {
-    setLoading(true);
+    try {
+      // NOTE: use either this (Option 1)
+      BackendAPI.getPinned.then((data) => {
+        // console.log("We have original data.");
+        // console.log("data:", data);
+        setRepos(data);
+        setLoading(false);
+      });
+
+      // // NOTE: used to simulate the server that is down.
+      // // NOTE: or this (Option 2)
+      // setTimeout(() => {
+      //   BackendAPI.getPinned.then((data) => {
+      //     console.log("We have original data. But there was a delay");
+      //     // console.log("data:", data);
+      //     setRepos(data);
+      //     setLoading(false);
+      //   });
+      // }, 10000);
+    } catch (error) {
+      // More errors....
+      console.log("Try/Catch useEffect() error:", error);
+    }
   }, []);
+
+  // TODO: Clean this promise up. And use reject.
+  // useEffect()  to load the saved standbyData if the database is down.
+  useEffect(() => {
+    try {
+      // NOTE: use either this (Option 3)
+      // A promise for obtaining standbyData using SpareData.sendIt
+      const myPromise = new Promise((resolve, reject) => {
+        // TODO: Use reject. Or remove it.
+        console.log("reject:", reject);
+        // Returning a resolved promise with standbyData.
+        resolve(SpareData.sendIt);
+      });
+      myPromise.then((data) => {
+        // SpareData.printIt;
+        // console.log("We have spare data.");
+        // console.log("data:", data);
+        setRepos(data);
+        setLoading(false);
+      });
+
+      // // NOTE: used to simulate the a delay in getting the data locally.
+      // // NOTE: or this (Option 4)
+      // setTimeout(() => {
+      //   // A promise for obtaining standbyData using SpareData.sendIt
+      //   const myPromise = new Promise((resolve, reject) => {
+      //     console.log("reject:", reject);
+      //     // Returning a resolved promise with standbyData.
+      //     resolve(SpareData.sendIt);
+      //   });
+      //   myPromise.then((data) => {
+      //     // SpareData.printIt;
+      //     // console.log("We have spare data.");
+      //     // console.log("data:", data);
+      //     setRepos(data);
+      //     setLoading(false);
+      //   });
+      // }, 5000);
+    } catch (error) {
+      // More errors....
+      console.log("Try/Catch useEffect() error:", error);
+    }
+  }, []);
+
+  // For when I need to deal with the <CircularProgress/> component below.
+  // useEffect(() => {
+  //   setLoading(true);
+  // }, []);
 
   // Creating each MUI card.
   if (!loading) {

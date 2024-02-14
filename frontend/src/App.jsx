@@ -50,7 +50,8 @@ const sectionStyle = {
     top: "0px",
     left: "0px",
     right: "0px",
-    paddingLeft: "48px",
+    paddingLeft: "48px", // NOTE: My change. I added this paddingLeft.
+    flexDirection: { xs: "column", md: "row" }, // NOTE: My change. I added this flexDirection.
   },
   content: {
     position: "absolute",

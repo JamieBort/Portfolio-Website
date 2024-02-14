@@ -1,3 +1,5 @@
+// ./frontend/src/components/sections/ConnectWithMe.jsx
+
 import PropTypes from "prop-types";
 import { Container, Stack, Typography, Link } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";

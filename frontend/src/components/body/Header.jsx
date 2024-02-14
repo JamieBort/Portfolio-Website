@@ -11,7 +11,8 @@ import PropTypes from "prop-types";
 export default function Header({ sectionStyle }) {
   // NOTE: OPTION 1
   return (
-    <Stack direction="column" spacing={2} sx={sectionStyle.header}>
+    // <Stack direction="column" spacing={2} sx={sectionStyle.header}>
+    <Stack spacing={2} sx={sectionStyle.header}>
       <Typography
         variant="h3"
         gutterBottom

@@ -1,3 +1,5 @@
+// ./frontend/src/components/sections/ProjectSection.jsx
+
 import PropTypes from "prop-types";
 import Projects from "./../Projects";
 import { Container, Typography } from "@mui/material";

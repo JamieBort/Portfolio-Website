@@ -33,7 +33,7 @@ I have created a standbyData variable for when the backend server is not availab
 
           - removing the `./index.html` file.
 
-          - add an I18y library to translate parts of the site that are dynamically updated from GraphQL api calls. Possibly polyglot.js.
+          - **For a later date.** ~~add an I18y library to translate parts of the site that are dynamically updated from GraphQL api calls. Possibly polyglot.js.~~
 
           - add a media query library to facilitate building a responsive site. Possibly react-responsive. This might not be necessary. MUI might address this nicely. But maybe not.
 
@@ -47,7 +47,7 @@ I have created a standbyData variable for when the backend server is not availab
 
         - **DONE.** ~~Create space between header text and left side~~
 
-        - min height for projects section while projects are loading
+        - **DONE. For now** ~~min height for projects section while projects are loading~~
 
         - **DONE.** ~~Update the favicon (browser icon) from the Vite one to my `JB` one.~~
 
@@ -117,8 +117,26 @@ I have created a standbyData variable for when the backend server is not availab
 
   - redeploy the frontend AND the backend. from the `master` branch.
 
-  - find a library to translate my repo descriptions into Spanish. **a goal for a later date**
+  - In this repo, change references from
+
+    - ...`github.com/JamieBort/jamiebort.github.io`...
+
+    - and ...`jamiebort.github.io`...
+
+    to
+
+    - ...`github.com/JamieBort/Portfolio-Website`...
+
+    - and ...`jamiebort.github.io/Portfolio-Website`...
+
+    For example in `https://raw.githubusercontent.com/JamieBort/Portfolio-Website/master/README.md` change `You can find the full text in this [./COPYING.txt](https://github.com/JamieBort/jamiebort.github.io/blob/master/COPYING.txt) file.` to `You can find the full text in this [./COPYING.txt](https://github.com/JamieBort/Portfolio-Website/blob/master/COPYING.txt) file.`.
+
+  - Add an I18y library to translate parts of the site that are dynamically updated from GraphQL api calls. See the `./jamiebort.github.io/administrative/translation/` directory. Possibly to translate the entire site.
 
 - Feature for my Personal dashboard: a search feature that allows me to search the LearningDirectory by phrases.
 
 - Read up on this https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prop-types.md
+
+- Aesthetic Changes for the future:
+
+  - Adjust the min height for projects section while projects are loading. Currently the <Container/> for the <CircularProgress/> component in the `./frontend/src/components/Projects.jsx` file has `minHeight: "15em",`. This is a fixed dimension. Rather I would like the <ConnectWithMe/> component to be resting on the footer and the height of the <Container/> to fill the space between the `<Typography>Projects</Typography>` in the `./frontend/src/components/sections/ProjectSection.jsx` file and the `<Typography>Connect With Me</Typography>` in the `./frontend/src/components/sections/ConnectWithMe.jsx` file.
