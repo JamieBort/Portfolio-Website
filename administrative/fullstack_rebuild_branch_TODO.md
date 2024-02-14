@@ -49,7 +49,7 @@ I have created a standbyData variable for when the backend server is not availab
 
         - min height for projects section while projects are loading
 
-        - Update the favicon (browser icon) from the Vite one to my `JB` one.
+        - **DONE.** ~~Update the favicon (browser icon) from the Vite one to my `JB` one.~~
 
       - Look up the typical file structure for Vite front ends.
 
@@ -57,13 +57,13 @@ I have created a standbyData variable for when the backend server is not availab
 
       - Then remove the `./index.html` file.
 
-      - Then change the name of this repo from `jamiebort.github.io` to `Portfolio Website`.
+      - **DONE.** ~~Then change the name of this repo from `jamiebort.github.io` to `Portfolio Website`.~~
 
-      - Then add the I18y library.
+      - Add the media query library.
 
       - Then do these 2 things together:
 
-        - Add the media query library.
+        - Then add the I18y library.
 
         - Add a `English/Español` translate button.
 

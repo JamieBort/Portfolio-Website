@@ -116,6 +116,12 @@ Here is listed the things I plan on adding to the repo.
 
     - To be deleted when the `fullstack_rebuild` branch is deleted.
 
+  - ./administrative/translation/
+
+    - This directory is used to keep note for the translation task.
+
+    - To be deleted when the `fullstack_rebuild` branch is deleted.
+
 - ./assets/
 
   - The directory for the static resources.
