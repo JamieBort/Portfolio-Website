@@ -13,47 +13,53 @@ export default function Projects({ selection }) {
   const standbyData = [
     {
       node: {
-        description: "My Portfolio Website. This is where I share a bit about myself, showcase what I've been working on, host my blog, and more.",
-        forkCount: 2,
-        homepageUrl: "https://jamiebort.github.io/",
-        id: "111",
-        languages: {
-          totalCount: 4,
-          edges: [{ node: { name: "CSS" } }, { node: { name: "JavaScript" } }, { node: { name: "Less" } }, { node: { name: "SCSS" } }],
-        },
-        name: "Dummy Data 1",
-        stargazerCount: 4,
-        url: "https://github.com/JamieBort/jamiebort.github.io",
-      },
-    },
-    {
-      node: {
-        description: "My Portfolio Website. This is where I share a bit about myself, showcase what I've been working on, host my blog, and more.",
-        forkCount: 0,
-        homepageUrl: "https://jamiebort.github.io/",
-        id: "222",
+        id: "MDEwOlJlcG9zaXRvcnk5NjcwOTAwNg==",
+        name: "Portfolio-Website",
+        url: "https://github.com/JamieBort/Portfolio-Website",
+        stargazerCount: 0,
+        description:
+          "This is where I share a bit about myself, showcase what I've been working on, and share where you can find me online. It is build with a React + Vite front end and a Node Express backend. And styled with MUI.",
         languages: {
           totalCount: 5,
           edges: [{ node: { name: "CSS" } }, { node: { name: "HTML" } }, { node: { name: "JavaScript" } }, { node: { name: "Less" } }, { node: { name: "SCSS" } }],
         },
-        name: "Dummy Data 2",
-        stargazerCount: 3,
-        url: "https://github.com/JamieBort/jamiebort.github.io",
+        homepageUrl: "https://jamiebort.com",
+        forkCount: 0,
       },
     },
     {
       node: {
-        description: "My Portfolio Website. This is where I share a bit about myself, showcase what I've been working on, host my blog, and more.",
-        forkCount: 5,
-        homepageUrl: "",
-        id: "333",
-        languages: {
-          totalCount: 3,
-          edges: [{ node: { name: "CSS" } }, { node: { name: "Less" } }, { node: { name: "SCSS" } }],
-        },
-        name: "Dummy Data 3",
+        id: "MDEwOlJlcG9zaXRvcnkxNjI2NTg4ODM=",
+        name: "Personal-Dashboard",
+        url: "https://github.com/JamieBort/Personal-Dashboard",
         stargazerCount: 0,
-        url: "https://github.com/JamieBort/jamiebort.github.io",
+        description:
+          "A website for displaying important daily data. Such as blood glucose numbers and upcoming events. Using  Svelt TypeScript front end and Java backend. Which database is yet to be seen. It will use authentication.",
+        languages: { totalCount: 3, edges: [{ node: { name: "CSS" } }, { node: { name: "HTML" } }, { node: { name: "JavaScript" } }] },
+        homepageUrl: "https://jamiebort.github.io/Personal-Dashboard/",
+        forkCount: 0,
+      },
+    },
+    {
+      node: {
+        id: "MDEwOlJlcG9zaXRvcnkxNjI0Njg1MjA=",
+        name: "LearningDirectory",
+        url: "https://github.com/JamieBort/LearningDirectory",
+        stargazerCount: 3,
+        description: "This repo is my knowledge base as I hone my skills by exploring software concepts and new technologies. It contains my notes and resources.",
+        languages: {
+          totalCount: 20,
+          edges: [
+            { node: { name: "HTML" } },
+            { node: { name: "JavaScript" } },
+            { node: { name: "CSS" } },
+            { node: { name: "PHP" } },
+            { node: { name: "Java" } },
+            { node: { name: "Groovy" } },
+          ],
+        },
+        homepageUrl: "",
+        forkCount: 0,
       },
     },
   ];
