@@ -71,45 +71,41 @@ export default function Projects({ selection }) {
   // By default the status of "loading" is true, implying that we're not getting/do not have any data from the back end.
   const [loading, setLoading] = useState(true);
 
-  // useEffect() for making a REST API call to the backend.
-  useEffect(() => {
-    try {
-      BackendAPI.getPinned.then((data) => {
-        // console.log("We have original data.");
-        // console.log("data:", data);
-        setRepos(data);
-        setLoading(false);
-      });
+  // // useEffect() for making a REST API call to the backend.
+  // useEffect(() => {
+  //   try {
+  //     BackendAPI.getPinned.then((data) => {
+  //       // console.log("We have original data.");
+  //       // console.log("data:", data);
+  //       setRepos(data);
+  //       setLoading(false);
+  //     });
 
-      // // NOTE: used to simulate the server that is down.
-      // setTimeout(() => {
-      //   BackendAPI.getPinned.then((data) => {
-      //     console.log("We have original data. But there was a delay");
-      //     // console.log("data:", data);
-      //     setRepos(data);
-      //     setLoading(false);
-      //   });
-      // }, 10000);
-    } catch (error) {
-      // More errors....
-      console.log("Try/Catch useEffect() error:", error);
-    }
-  }, []);
+  //     // // NOTE: used to simulate the server that is down.
+  //     // setTimeout(() => {
+  //     //   BackendAPI.getPinned.then((data) => {
+  //     //     console.log("We have original data. But there was a delay");
+  //     //     // console.log("data:", data);
+  //     //     setRepos(data);
+  //     //     setLoading(false);
+  //     //   });
+  //     // }, 10000);
+  //   } catch (error) {
+  //     // More errors....
+  //     console.log("Try/Catch useEffect() error:", error);
+  //   }
+  // }, []);
 
   // useEffect()  to load the saved standbyData if the database is down.
   useEffect(() => {
     try {
       const myPromise = new Promise((resolve, reject) => {
-        // return SpareData.sendIt;
         resolve(SpareData.sendIt);
-        // setTimeout(() => {
-        //   resolve("foo");
-        // }, 300);
       });
 
       myPromise.then((data) => {
         SpareData.printIt;
-        // console.log("We have original data.");
+        console.log("We have spare data.");
         // console.log("data:", data);
         setRepos(data);
         setLoading(false);
@@ -117,7 +113,7 @@ export default function Projects({ selection }) {
 
       // SpareData.sendIt.then((data) => {
       //   SpareData.printIt;
-      //   // console.log("We have original data.");
+      //   // console.log("We have spare data.");
       //   // console.log("data:", data);
       //   setRepos(data);
       //   setLoading(false);
@@ -133,6 +129,7 @@ export default function Projects({ selection }) {
   //   setTimeout(() => {
   //     if (loading) {
   //       // console.log("We have dummy data.");
+  //   // console.log("We have spare data.");
   //       // console.log("repos:", repos);
   //       // setRepos(repos);
   //       setLoading(false);
