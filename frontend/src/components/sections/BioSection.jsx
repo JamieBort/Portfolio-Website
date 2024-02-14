@@ -14,9 +14,13 @@ export default function BioSection({ title, sectionStyle }) {
         </Link>
         , a software boot camp for underrepresented people.
       </Typography>
+
       <Typography variant="body1" gutterBottom>
-        Below you will find some of my Projects. I am currently in the process of changing this static portfolio website so that it is hosted with a Vite + React front end and Node
-        Express back end. More info can be found in the{" "}
+        Below you will find some of my Projects.
+      </Typography>
+      <Typography variant="body1" gutterBottom>
+        I am currently in the process of changing this static portfolio website so that it is hosted with a Vite + React front end and Node Express back end. More info can be found
+        in the{" "}
         <Link href="https://github.com/JamieBort/jamiebort.github.io?tab=readme-ov-file#about" underline="hover">
           About section of the README
         </Link>{" "}

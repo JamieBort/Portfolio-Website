@@ -45,7 +45,7 @@ export default function Projects({ selection }) {
       node: {
         description: "My Portfolio Website. This is where I share a bit about myself, showcase what I've been working on, host my blog, and more.",
         forkCount: 5,
-        homepageUrl: "https://jamiebort.github.io/",
+        homepageUrl: "",
         id: "333",
         languages: {
           totalCount: 3,
@@ -67,7 +67,7 @@ export default function Projects({ selection }) {
   useEffect(() => {
     try {
       BackendAPI.getPinned.then((data) => {
-        console.log("We have original data.");
+        // console.log("We have original data.");
         // console.log("data:", data);
         setRepos(data);
         setLoading(false);
@@ -88,27 +88,19 @@ export default function Projects({ selection }) {
     }
   }, []);
 
-  // // NOTE: Function to load the saved standbyData if the database is down.
-  // setTimeout(() => {
-  //   if (loading) {
-  //     console.log("Backup fired.");
-  //     // console.log("repos:", repos);
-  //     setRepos(standbyData);
-  //     setLoading(false);
-  //   }
-  // }, 5000);
-
   // NOTE: Function to load the saved standbyData if the database is down.
   useEffect(() => {
     setTimeout(() => {
       if (loading) {
-        console.log("We have dummy data.");
+        // console.log("We have dummy data.");
         // console.log("repos:", repos);
         // setRepos(repos);
         setLoading(false);
       }
     }, 5000);
   }, [loading]);
+
+  // TODO: Sanitize data. Specifically, change name from "Personal-Dashboard" to "Personal Dashboard".
 
   // Creating each MUI card.
   if (!loading) {

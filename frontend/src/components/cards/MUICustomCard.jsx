@@ -119,12 +119,12 @@ export default function MUICustomCard({ item, selection }) {
           //   marginBottom: ".25em", // NOTE: my added style.
         }}
       >
-        {homepageUrl == null ? null : (
-          <Link href={homepageUrl} underline="hover">
+        {homepageUrl == "" ? null : (
+          <Link href={homepageUrl} underline="hover" target="_blank" rel="noreferrer">
             Live Site
           </Link>
         )}
-        <Link href={url} underline="hover">
+        <Link href={url} underline="hover" target="_blank" rel="noreferrer">
           GitHub Repository
         </Link>
       </Stack>

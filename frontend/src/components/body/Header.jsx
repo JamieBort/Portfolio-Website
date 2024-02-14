@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 // import { HashLink } from "react-router-hash-link";
 
 // TODO: choose between Stack direction row or column below.
-// TODO: style mobile landscape so that "Jamie Bort" and "Software Engineer" are side-by-side.
+// TODO: style mobile landscape so that "Jamie Bort" and "Software Engineer" are side-by-side and the same font size.
 // NOTE: for landscape (mobile or every landscape device) it should be direction="row".
 export default function Header({ sectionStyle }) {
   // NOTE: OPTION 1
