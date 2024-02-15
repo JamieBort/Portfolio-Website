@@ -2,7 +2,7 @@
 
 This directory is used to keep note for the translation task.
 
-This is a temporary directory and will be deleted when the `fullstack_rebuild` branch is deleted.
+This is a temporary directory and will be deleted when the `fullstack` branch is deleted.
 
 ## Notes
 

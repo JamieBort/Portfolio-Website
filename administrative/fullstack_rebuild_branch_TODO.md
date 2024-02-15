@@ -59,17 +59,9 @@ I have created a standbyData variable for when the backend server is not availab
 
       - **DONE.** ~~Then change the name of this repo from `jamiebort.github.io` to `Portfolio Website`.~~
 
-      - Add the media query library.
+      - **DONE.** ~~Account for the time(s) when the api call doesn't work. Or when the server id down. Or when github is down. Etc.~~
 
-      - Then do these 2 things together:
-
-        - Then add the I18y library.
-
-        - Add a `English/Español` translate button.
-
-    - Account for the time(s) when the api call doesn't work. Or when the server id down. Or when github is down. Etc.
-
-      By creating a default list to load.
+        ~~By creating a default list to load.~~
 
   - Do these 2 things together and in sequence:
 
@@ -133,10 +125,18 @@ I have created a standbyData variable for when the backend server is not availab
 
   - Add an I18y library to translate parts of the site that are dynamically updated from GraphQL api calls. See the `./jamiebort.github.io/administrative/translation/` directory. Possibly to translate the entire site.
 
-- Feature for my Personal dashboard: a search feature that allows me to search the LearningDirectory by phrases.
+  - Add the media query library.
 
-- Read up on this https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prop-types.md
+  - Do these 2 things together:
+
+    - Then add the I18y library.
+
+    - Add a `English/Español` translate button.
 
 - Aesthetic Changes for the future:
 
   - Adjust the min height for projects section while projects are loading. Currently the <Container/> for the <CircularProgress/> component in the `./frontend/src/components/Projects.jsx` file has `minHeight: "15em",`. This is a fixed dimension. Rather I would like the <ConnectWithMe/> component to be resting on the footer and the height of the <Container/> to fill the space between the `<Typography>Projects</Typography>` in the `./frontend/src/components/sections/ProjectSection.jsx` file and the `<Typography>Connect With Me</Typography>` in the `./frontend/src/components/sections/ConnectWithMe.jsx` file.
+
+- Feature for my Personal dashboard: a search feature that allows me to search the LearningDirectory by phrases.
+
+- Read up on this https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prop-types.md
