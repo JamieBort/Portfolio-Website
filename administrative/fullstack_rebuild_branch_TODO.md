@@ -51,6 +51,16 @@ I have created a standbyData variable for when the backend server is not availab
 
         - **DONE.** ~~Update the favicon (browser icon) from the Vite one to my `JB` one.~~
 
+        - For mobile horizontal and vertical, when scroll down the header and font shorten.
+
+        - For mobile vertical, shorten the header and make the font smaller.
+
+        - For horizontal mobile, make the two <Typography/> have same size font.
+
+        - For horizontal mobile, make the header shorter.
+
+        - For horizontal mobile, maybe make header and font shrink when scroll down.
+
       - Look up the typical file structure for Vite front ends.
 
       - Then move those directories.

@@ -46,6 +46,8 @@ const sectionStyle = {
     position: "absolute",
     height: headerHeight_contentTop,
     overflow: "hidden",
+    // backgroundColor: "yellow",
+    backgroundColor: { xs: "yellow", md: "red" },
     // backgroundColor: backgroundColor ,
     top: "0px",
     left: "0px",
