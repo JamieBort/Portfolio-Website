@@ -38,7 +38,6 @@ export default function App() {
 
 const headerHeight_contentTop = "130px";
 const contentBottom_footerHeight = "20px";
-// const backgroundColor = "lightgreen";
 
 const sectionStyle = {
   body: { height: "100%", width: "100%" }, // NOTE: for container of Header, Content, and Footer in case the css functionality needs it.
@@ -46,9 +45,7 @@ const sectionStyle = {
     position: "absolute",
     height: headerHeight_contentTop,
     overflow: "hidden",
-    // backgroundColor: "yellow",
-    backgroundColor: { xs: "yellow", md: "red" },
-    // backgroundColor: backgroundColor ,
+    // backgroundColor: { xs: "yellow", md: "red" },
     top: "0px",
     left: "0px",
     right: "0px",
@@ -68,7 +65,6 @@ const sectionStyle = {
     position: "absolute",
     height: contentBottom_footerHeight,
     overflow: "hidden",
-    // backgroundColor: backgroundColor,
     bottom: "0px",
     left: "0px",
     right: "0px",

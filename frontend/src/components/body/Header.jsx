@@ -17,7 +17,9 @@ export default function Header({ sectionStyle }) {
         variant="h3"
         gutterBottom
         // sx={sectionStyle.typography.h3}
-
+        style={{
+          backgroundColor: { xs: "yellow", md: "red" },
+        }}
         sx={
           {
             // padding: 0,
@@ -34,6 +36,7 @@ export default function Header({ sectionStyle }) {
         // sx={sectionStyle.typography.h3}
         style={{
           marginTop: "0",
+          backgroundColor: { xs: "red", md: "yellow" },
         }}
       >
         Software Engineer
