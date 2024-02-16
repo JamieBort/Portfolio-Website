@@ -48,7 +48,7 @@ const sectionSX = {
     position: "absolute",
     height: headerHeight_contentTop,
     overflow: "hidden",
-    backgroundColor: { xs: "yellow", md: "red" },
+    // backgroundColor: { xs: "yellow", md: "red" },
     top: "0px",
     left: "0px",
     right: "0px",
@@ -61,7 +61,7 @@ const sectionSX = {
     justifyContent: { xs: "center", md: "space-around" },
     alignItems: { xs: "flex-start", md: "center" },
     Typography: {
-      backgroundColor: { xs: "brown", md: "orange" },
+      // backgroundColor: { xs: "brown", md: "orange" },
       my: "0px",
     },
   },

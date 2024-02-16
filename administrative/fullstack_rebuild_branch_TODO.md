@@ -37,11 +37,9 @@ I have created a standbyData variable for when the backend server is not availab
 
           - add a media query library to facilitate building a responsive site. Possibly react-responsive. This might not be necessary. MUI might address this nicely. But maybe not.
 
-      - Aesthetic Changes:
+      - **DONE.** ~~Aesthetic Changes:~~
 
         - **DONE.** ~~Minimize space between "Jamie Bort" and "Software Engineer"~~
-
-        - Card Breakpoints https://mui.com/material-ui/customization/breakpoints/
 
         - **DONE.** ~~for loading symbol and icons https://mui.com/material-ui/all-components/~~
 
@@ -51,21 +49,19 @@ I have created a standbyData variable for when the backend server is not availab
 
         - **DONE.** ~~Update the favicon (browser icon) from the Vite one to my `JB` one.~~
 
-        - For mobile horizontal and vertical, when scroll down the header and font shorten.
+        - **DONE.** ~~For mobile vertical, shorten the header and make the font smaller.~~
 
-        - For mobile vertical, shorten the header and make the font smaller.
+        - **DONE.** ~~For horizontal mobile, make the header shorter.~~
 
-        - For horizontal mobile, make the two <Typography/> have same size font.
+      - Do these 4 things together and in sequence:
 
-        - For horizontal mobile, make the header shorter.
+        - Create and checkout the `fullstack_rebuild_restructure` branch
 
-        - For horizontal mobile, maybe make header and font shrink when scroll down.
+        - Look up the typical file structure for Vite front ends.
 
-      - Look up the typical file structure for Vite front ends.
+        - Then move those directories.
 
-      - Then move those directories.
-
-      - Then remove the `./index.html` file.
+        - Then remove the `./index.html` file.
 
       - **DONE.** ~~Then change the name of this repo from `jamiebort.github.io` to `Portfolio Website`.~~
 
@@ -110,6 +106,16 @@ I have created a standbyData variable for when the backend server is not availab
   - Point the new frontend url to jamiebort.com
 
 - Other feature and changes to implement:
+
+  - Aesthetic Changes:
+
+    - Card Breakpoints https://mui.com/material-ui/customization/breakpoints/
+
+    - For horizontal mobile, make the two <Typography/> have same size font.
+
+    - For horizontal mobile, maybe make header and font shrink when scroll down.
+
+    - For mobile horizontal and vertical, when scroll down the header shortens and font gets smaller.
 
   - **figure out and fix why the frontend api lags.** It appears as though the backend "goes to sleep.The api call doesn't load until the page is reloaded (opened) twice. Or until the backend is loaded twice. How to keep the server from going down. From sleeping. Ping it every 25 minutes? This setInterval(() => {apiCall()}, 1000 _ 60 _ 25); didn't work.
 

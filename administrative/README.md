@@ -75,7 +75,9 @@ Here is listed the things I plan on adding to the repo.
 		|
 		+-- fullstack - For implementing a front end and back end.
 		|   |
-		    +-- fullstack_rebuild - For migrating frontend files and directories that are currently in the root directory into the ./frontend/ directory.
+		|   +-- fullstack_rebuild - For preparing to migrate frontend files and directories that are currently in the root directory into the ./frontend/ directory.
+		|     |
+		|     +-- fullstack_rebuild_restructure - For migrating frontend files and directories that are currently in the root directory into the ./frontend/ directory.
 		|
 		+-- host - For all things host related.
 		|
