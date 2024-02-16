@@ -82,6 +82,8 @@ Here is listed the things I plan on adding to the repo.
 
   - For information, see the [.vscode](https://github.com/JamieBort/LearningDirectory/tree/master/Git/configFiles#vscode) section of the `configFiles` directory of the `LearningDirectory` repo.
 
+  - Omitted from this repo.
+
 - ./administrative/
 
   - Files for organizational purposes.
