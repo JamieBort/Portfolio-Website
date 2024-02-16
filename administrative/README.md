@@ -138,12 +138,6 @@ Here is listed the things I plan on adding to the repo.
 
   - To-Do items that need to be addressed.
 
-- ./administrative/vite_directory_structure.md
-
-  - Temporary file for preparing to move files and directories.
-
-  - To be deleted when the `fullstack_rebuild` branch is deleted.
-
 - ./gitignore
 
   - Specifies intentionally untracked files. See https://git-scm.com/docs/gitignore
