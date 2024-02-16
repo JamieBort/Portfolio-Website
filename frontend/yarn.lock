@@ -240,18 +240,6 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
-"@coreui/coreui@^4.3.2":
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/@coreui/coreui/-/coreui-4.3.2.tgz#3c1d7eae4a740d2b473e862580ee863c40dcde18"
-  integrity sha512-SKGY6E6v7QGq0P3YTnZQRSrU8t0euLQ3UV/FH5j0JmHYBBu7Mv0Hd9g8AESnj8xrCelKZ5bdZKZhmKaIdG5clw==
-  dependencies:
-    postcss-combine-duplicated-selectors "^10.0.3"
-
-"@coreui/react@^4.11.1":
-  version "4.11.1"
-  resolved "https://registry.yarnpkg.com/@coreui/react/-/react-4.11.1.tgz#90b7213d9e36c722625f2192ffc6c265af2a6718"
-  integrity sha512-2EYnV6kpyH8/648+iffRy/I/xCEnD2MnEOuo1LPiUSX7EqoHn5M3fI+sf4vM9Wrqz4Gv2gxCl8DNRpk2xcLANQ==
-
 "@emotion/babel-plugin@^11.11.0":
   version "11.11.0"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.11.0.tgz#c2d872b6a7767a9d176d007f5b31f7d504bb5d6c"
@@ -1235,11 +1223,6 @@ css-vendor@^2.0.8:
   dependencies:
     "@babel/runtime" "^7.8.3"
     is-in-browser "^1.0.2"
-
-cssesc@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/cssesc/-/cssesc-3.0.0.tgz#37741919903b868565e1c09ea747445cd18983ee"
-  integrity sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==
 
 csstype@^2.5.2:
   version "2.6.21"
@@ -2392,21 +2375,6 @@ popper.js@1.16.1-lts:
   resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1-lts.tgz#cf6847b807da3799d80ee3d6d2f90df8a3f50b05"
   integrity sha512-Kjw8nKRl1m+VrSFCoVGPph93W/qrSO7ZkqPpTf7F4bk/sqcfWK019dWBUpE/fBOsOQY1dks/Bmcbfn1heM/IsA==
 
-postcss-combine-duplicated-selectors@^10.0.3:
-  version "10.0.3"
-  resolved "https://registry.yarnpkg.com/postcss-combine-duplicated-selectors/-/postcss-combine-duplicated-selectors-10.0.3.tgz#71e8b6783e99cd560cf08ba7b896ad0db318c11c"
-  integrity sha512-IP0BmwFloCskv7DV7xqvzDXqMHpwdczJa6ZvIW8abgHdcIHs9mCJX2ltFhu3EwA51ozp13DByng30+Ke+eIExA==
-  dependencies:
-    postcss-selector-parser "^6.0.4"
-
-postcss-selector-parser@^6.0.4:
-  version "6.0.15"
-  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-6.0.15.tgz#11cc2b21eebc0b99ea374ffb9887174855a01535"
-  integrity sha512-rEYkQOMUCEMhsKbK66tbEU9QVIxbhN18YiniAwA7XQYTVBqrBy+P2p5JcdqsHgKM2zWylp8d7J6eszocfds5Sw==
-  dependencies:
-    cssesc "^3.0.0"
-    util-deprecate "^1.0.2"
-
 postcss@^8.4.32:
   version "8.4.33"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.33.tgz#1378e859c9f69bf6f638b990a0212f43e2aaa742"
@@ -2874,11 +2842,6 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
-
-util-deprecate@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
-  integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
 
 vite@^5.0.8:
   version "5.0.12"
