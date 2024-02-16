@@ -17,24 +17,24 @@ export default function Projects({ selection }) {
   // useEffect() for making a REST API call to the backend.
   useEffect(() => {
     try {
-      // NOTE: use either this (Option 1)
-      BackendAPI.getPinned.then((data) => {
-        // console.log("We have original data.");
-        // console.log("data:", data);
-        setRepos(data);
-        setLoading(false);
-      });
+      // // NOTE: use either this (Option 1)
+      // BackendAPI.getPinned.then((data) => {
+      //   // console.log("We have original data.");
+      //   // console.log("data:", data);
+      //   setRepos(data);
+      //   setLoading(false);
+      // });
 
-      // // NOTE: used to simulate the server that is down.
-      // // NOTE: or this (Option 2)
-      // setTimeout(() => {
-      //   BackendAPI.getPinned.then((data) => {
-      //     console.log("We have original data. But there was a delay");
-      //     // console.log("data:", data);
-      //     setRepos(data);
-      //     setLoading(false);
-      //   });
-      // }, 10000);
+      // NOTE: used to simulate the server that is down.
+      // NOTE: or this (Option 2)
+      setTimeout(() => {
+        BackendAPI.getPinned.then((data) => {
+          console.log("We have original data. But there was a delay");
+          // console.log("data:", data);
+          setRepos(data);
+          setLoading(false);
+        });
+      }, 1000 * 1 * 60); // 1000 milliseconds * 1 * 60 seconds = 1 minute.(1000 millionths of a second * 1 = 1 second.)
     } catch (error) {
       // More errors....
       console.log("Try/Catch useEffect() error:", error);
