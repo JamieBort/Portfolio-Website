@@ -122,12 +122,6 @@ Here is listed the things I plan on adding to the repo.
 
 ### Files
 
-- ./administrative/fullstack_rebuild_branch_TODO.md
-
-  - Items to be addressed in the `fullstack_rebuild` branch.
-
-  - Or to be moved to the `./administrative/Tasks.md` file to be addressed at a later date.
-
 - ./administrative/README.md
 
   - This readme file.
