@@ -60,14 +60,6 @@ Here is listed the things I plan on adding to the repo.
 		+-- accessibility - For all accessibility implementation.
 		|
 		+-- appearance - For modifying the appearance.
-		|	|
-		|	+-- breakpoint - For implementing breakpoints in the CSS file.
-		|		|
-		|		+-- breakpoint_mobile - For implementing a mobile HORIZONTAL breakpoint in the CSS file. The current default styles are for mobile in a vertical orientation.
-		|		|
-		|		+-- breakpoint_tablet - For implementing a tablet breakpoint in the CSS file. *** Need to consider horizontal and vertical orientations. ***
-		|		|
-		|		+-- breakpoint_desktop - For implementing desktop breakpoint in the CSS file.
 		|
 		+-- api - For all api related logic.
 		|
@@ -76,12 +68,6 @@ Here is listed the things I plan on adding to the repo.
 		+-- fullstack - For implementing a front end and back end.
 		|   |
 		|   +-- fullstack_rebuild - For preparing to migrate frontend files and directories that are currently in the root directory into the ./frontend/ directory.
-		|     |
-		|     +-- fullstack_rebuild_restructure - For migrating frontend files and directories that are currently in the root directory into the ./frontend/ directory.
-		|
-		+-- host - For all things host related.
-		|
-		+-- script - For all script related logic.
 		|
 		+-- Revamp2023 - The branch created to update the website in 2023.
 ```
@@ -128,25 +114,13 @@ Here is listed the things I plan on adding to the repo.
 
     - To be deleted when the `fullstack` branch is deleted.
 
-- ./assets/
-
-  - The directory for the static resources.
-
 - ./backend/
 
   - Directory containing the back end of this app.
 
-- ./css/
+- ./frontend/
 
-  - Contains all CSS files.
-
-- ./html/
-
-  - With the exception of `./index.html`, this directory contains all of the html files. And it contains only html files.
-
-- ./js/
-
-  - Contains all JavaScript files.
+  - Directory containing the front end of this app.
 
 - scratch/
 
@@ -184,9 +158,9 @@ Here is listed the things I plan on adding to the repo.
 
   - Specifies intentionally untracked files. See https://git-scm.com/docs/gitignore
 
-- ./index.html
+- COPYING.txt
 
-  - The landing page. This links to `./html/index.html`.
+  - The license.
 
 - ./README.md
 

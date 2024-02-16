@@ -19,55 +19,29 @@ I have created a standbyData variable for when the backend server is not availab
 
 ---
 
-- Do these 2 things together and in sequence:
+- Do these 5 things together and in sequence:
 
-  - Do these 3 things together and in sequence in the `fullstack_rebuild` branch:
+  - merge the `fullstack` branch into the `dev` branch.
 
-    - **DONE.** ~~This `./backend/LICENSE` exists. What to do about it? Address this. **Likely remove this file.**~~
+  - redeploy the frontend AND the backend. from the `dev` branch.
 
-    - Rebuild the front end.
+  - Then merge the `dev` branch into the `master` branch.
 
-      By:
+  - redeploy the frontend AND the backend. from the `master` branch.
 
-          - moving the following `./assets/`, `./css/`, `./html/`, and `./js/` directories into `./fontend/` and
+  - Point the new frontend url to jamiebort.com
 
-          - removing the `./index.html` file.
+- Other feature and changes to implement:
 
-          - **For a later date.** ~~add an I18y library to translate parts of the site that are dynamically updated from GraphQL api calls. Possibly polyglot.js.~~
+  - Aesthetic Changes:
 
-          - add a media query library to facilitate building a responsive site. Possibly react-responsive. This might not be necessary. MUI might address this nicely. But maybe not.
+    - Card Breakpoints https://mui.com/material-ui/customization/breakpoints/
 
-      - **DONE.** ~~Aesthetic Changes:~~
+    - For horizontal mobile, make the two <Typography/> have same size font.
 
-        - **DONE.** ~~Minimize space between "Jamie Bort" and "Software Engineer"~~
+    - For horizontal mobile, maybe make header and font shrink when scroll down.
 
-        - **DONE.** ~~for loading symbol and icons https://mui.com/material-ui/all-components/~~
-
-        - **DONE.** ~~Create space between header text and left side~~
-
-        - **DONE. For now** ~~min height for projects section while projects are loading~~
-
-        - **DONE.** ~~Update the favicon (browser icon) from the Vite one to my `JB` one.~~
-
-        - **DONE.** ~~For mobile vertical, shorten the header and make the font smaller.~~
-
-        - **DONE.** ~~For horizontal mobile, make the header shorter.~~
-
-      - **DONE.** ~~Do these 4 things together and in sequence:~~
-
-        - **DONE.** ~~`fullstack_rebuild_restructure` branch~~
-
-        - **DONE.** ~~Look up the typical file structure for Vite front ends.~~
-
-        - **DONE.** ~~Then move those directories.~~
-
-        - **Moved this file, did not delete it.** ~~Then remove the `./index.html` file.~~
-
-      - **DONE.** ~~Then change the name of this repo from `jamiebort.github.io` to `Portfolio Website`.~~
-
-      - **DONE.** ~~Account for the time(s) when the api call doesn't work. Or when the server id down. Or when github is down. Etc.~~
-
-        ~~By creating a default list to load.~~
+    - For mobile horizontal and vertical, when scroll down the header shortens and font gets smaller.
 
   - Do these 2 things together and in sequence:
 
@@ -92,30 +66,6 @@ I have created a standbyData variable for when the backend server is not availab
         - move working files (`./assets/`, `./css/`, `./html/`, and `./js/` directories and the `./index.html` file.) into the `legacy_2023` directory.
 
     - merge the `fullstack_rebuild` branch into the `fullstack` branch.
-
-- Do these 5 things together and in sequence:
-
-  - merge the `fullstack` branch into the `dev` branch.
-
-  - redeploy the frontend AND the backend. from the `dev` branch.
-
-  - Then merge the `dev` branch into the `master` branch.
-
-  - redeploy the frontend AND the backend. from the `master` branch.
-
-  - Point the new frontend url to jamiebort.com
-
-- Other feature and changes to implement:
-
-  - Aesthetic Changes:
-
-    - Card Breakpoints https://mui.com/material-ui/customization/breakpoints/
-
-    - For horizontal mobile, make the two <Typography/> have same size font.
-
-    - For horizontal mobile, maybe make header and font shrink when scroll down.
-
-    - For mobile horizontal and vertical, when scroll down the header shortens and font gets smaller.
 
   - **figure out and fix why the frontend api lags.** It appears as though the backend "goes to sleep.The api call doesn't load until the page is reloaded (opened) twice. Or until the backend is loaded twice. How to keep the server from going down. From sleeping. Ping it every 25 minutes? This setInterval(() => {apiCall()}, 1000 _ 60 _ 25); didn't work.
 
