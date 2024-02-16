@@ -118,6 +118,10 @@ Here is listed the things I plan on adding to the repo.
 
     - To be deleted when the `fullstack_rebuild` branch is deleted.
 
+  - ./administrative/legacy/
+
+    - This directory contains the legacy files and directories used to create my website from previous versions.
+
   - ./administrative/translation/
 
     - This directory is used to keep note for the translation task.
