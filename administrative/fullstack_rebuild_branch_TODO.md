@@ -53,15 +53,15 @@ I have created a standbyData variable for when the backend server is not availab
 
         - **DONE.** ~~For horizontal mobile, make the header shorter.~~
 
-      - Do these 4 things together and in sequence:
+      - **DONE.** ~~Do these 4 things together and in sequence:~~
 
-        - Create and checkout the `fullstack_rebuild_restructure` branch
+        - **DONE.** ~~`fullstack_rebuild_restructure` branch~~
 
-        - Look up the typical file structure for Vite front ends.
+        - **DONE.** ~~Look up the typical file structure for Vite front ends.~~
 
-        - Then move those directories.
+        - **DONE.** ~~Then move those directories.~~
 
-        - Then remove the `./index.html` file.
+        - **Moved this file, did not delete it.** ~~Then remove the `./index.html` file.~~
 
       - **DONE.** ~~Then change the name of this repo from `jamiebort.github.io` to `Portfolio Website`.~~
 
