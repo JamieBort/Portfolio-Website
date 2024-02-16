@@ -102,7 +102,7 @@ Here is listed the things I plan on adding to the repo.
 
     - This directory is used to keep note for the translation task.
 
-    - To be deleted when the `fullstack` branch is deleted.
+    - To be deleted when ~~the `fullstack` branch is deleted~~ it is implemented.
 
 - ./backend/
 
