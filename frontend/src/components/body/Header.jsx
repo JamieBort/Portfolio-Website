@@ -8,24 +8,19 @@ import PropTypes from "prop-types";
 // TODO: choose between Stack direction row or column below.
 // TODO: style mobile landscape so that "Jamie Bort" and "Software Engineer" are side-by-side and the same font size.
 // NOTE: for landscape (mobile or every landscape device) it should be direction="row".
-export default function Header({ sectionStyle }) {
+export default function Header({ sectionSX }) {
+  // console.log("sectionSX.header.Typography:", sectionSX.header.typography);
   // NOTE: OPTION 1
   return (
     // <Stack direction="column" spacing={2} sx={sectionStyle.header}>
-    <Stack spacing={2} sx={sectionStyle.header}>
+    <Stack spacing={0} sx={sectionSX.header}>
       <Typography
         variant="h3"
         gutterBottom
-        // sx={sectionStyle.typography.h3}
-        style={{
-          backgroundColor: { xs: "yellow", md: "red" },
-        }}
-        sx={
-          {
-            // padding: 0,
-            // textAlign: "center" ,
-          }
-        }
+        // Static styles.
+        sx={sectionSX.header.Typography}
+        // Dynamic styles.
+        // style={sectionStyle.header}
       >
         Jamie Bort
       </Typography>
@@ -33,11 +28,10 @@ export default function Header({ sectionStyle }) {
         variant="h4"
         gutterBottom
         // TODO: Determine the relationship between "sx" and "style". "sx" didn't work here while "style" did.
-        // sx={sectionStyle.typography.h3}
-        style={{
-          marginTop: "0",
-          backgroundColor: { xs: "red", md: "yellow" },
-        }}
+        // Static styles.
+        sx={sectionSX.header.Typography}
+        // Dynamic styles.
+        // style={}
       >
         Software Engineer
       </Typography>
@@ -80,5 +74,5 @@ export default function Header({ sectionStyle }) {
 }
 
 Header.propTypes = {
-  sectionStyle: PropTypes.object,
+  sectionSX: PropTypes.object,
 };

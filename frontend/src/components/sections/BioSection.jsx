@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import { Container, Typography, Link } from "@mui/material";
 
-export default function BioSection({ title, sectionStyle }) {
+export default function BioSection({ title, sectionSX }) {
   return (
-    <Container id="bio_section" sx={sectionStyle.container}>
+    <Container id="bio_section" sx={sectionSX.container}>
       <Typography variant="h5" gutterBottom>
         {title}
       </Typography>
@@ -39,5 +39,5 @@ export default function BioSection({ title, sectionStyle }) {
 
 BioSection.propTypes = {
   title: PropTypes.string,
-  sectionStyle: PropTypes.object,
+  sectionSX: PropTypes.object,
 };
