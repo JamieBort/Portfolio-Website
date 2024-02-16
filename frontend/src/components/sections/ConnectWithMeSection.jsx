@@ -16,16 +16,16 @@ export default function ConnectWithMeSection({ title }) {
         {title}
       </Typography>
       <Stack direction="row" justifyContent="space-around">
-        <Link href="http://www.github.com" target="_blank">
+        <Link href="https://github.com/jamiebort" target="_blank">
           <GitHubIcon fontSize="large" sx={{ width: "1.5em", height: "1.5em" }} />
         </Link>
-        <Link href="http://www.github.com" target="_blank">
+        <Link href="https://twitter.com/jamiebort" target="_blank">
           <TwitterIcon fontSize="large" sx={{ width: "1.5em", height: "1.5em" }} />
         </Link>
-        <Link href="http://www.github.com" target="_blank">
+        <Link href="https://www.linkedin.com/in/jamie-bort/" target="_blank">
           <LinkedInIcon fontSize="large" sx={{ width: "1.5em", height: "1.5em" }} />
         </Link>
-        <Link href="http://www.github.com" target="_blank">
+        <Link href="https://stackoverflow.com/users/8210460/jamie-bort" target="_blank">
           {/* NOTE: "width" and "height" here (below) adjusts the dimensions. */}
           <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
             <path
