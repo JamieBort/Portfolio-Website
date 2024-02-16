@@ -4,11 +4,65 @@ To-Do items that need to be addressed.
 
 ## Administrative
 
-- Update the remote backend branch name from `backend` to `back_end`.
+### Administrative To Do
 
-- Research whether Render.com needs `./frontend/.gitignore` and `./backend/.gitignore` files. Or if I can use just `./.gitignore`.
+- In this repo, change references from
 
-- See the list found in this `./administrative/fullstack_cleanup_branch_TODO.md` file.
+  - ...`github.com/JamieBort/jamiebort.github.io`...
+
+  - and ...`jamiebort.github.io`...
+
+  to
+
+  - ...`github.com/JamieBort/Portfolio-Website`...
+
+  - and ...`jamiebort.github.io/Portfolio-Website`...
+
+  For example in `https://raw.githubusercontent.com/JamieBort/Portfolio-Website/master/README.md` change `You can find the full text in this [./COPYING.txt](https://github.com/JamieBort/jamiebort.github.io/blob/master/COPYING.txt) file.` to `You can find the full text in this [./COPYING.txt](https://github.com/JamieBort/Portfolio-Website/blob/master/COPYING.txt) file.`.
+
+- Do these 2 things together and in sequence:
+
+  - Create a legacy branch or directory of the `master` branch.
+
+    Either
+
+    - choose branches:
+
+      - create a `legacy` branch.
+
+      - create a `legacy_2023` branch by copying the master branch.
+
+      - clean up the file directory so that it doesn't contain anything but the `./assets/`, `./css/`, `./html/`, and `./js/` directories and the `./index.html` file. **do a dry run of this to ensure directories and files are not accidentally removed**
+
+    - or choose directory
+
+      - create a `legacy` directory.
+
+      - create a `legacy_2023` directory inside of the `legacy` directory.
+
+      - move working files (`./assets/`, `./css/`, `./html/`, and `./js/` directories and the `./index.html` file.) into the `legacy_2023` directory.
+
+  - merge the `fullstack_rebuild` branch into the `fullstack` branch.
+
+- Do these 3 things together and in sequence:
+
+  - Rebuild the front end with Svelt and Typescript at a later date. A goal for a later date. See the [Front End To Do](https://github.com/JamieBort/jamiebort.github.io/blob/fullstack/administrative/Tasks.md#front-end-to-do) section.
+
+  - Then merge the `dev` branch into the `master` branch.
+
+  - redeploy the frontend AND the backend. from the `master` branch.
+
+- Add the media query library.
+
+- Do these 2 things together:
+
+  - Add an I18y library to translate parts of the site that are dynamically updated from GraphQL api calls. See the `./jamiebort.github.io/administrative/translation/` directory. Possibly to translate the entire site.
+
+  - Add a `English/Español` translate button.
+
+### Administrative Status
+
+### Administrative Next Steps
 
 ## API
 
@@ -131,25 +185,25 @@ None.
 
 ### Back End Status
 
-#### Back End Status Next Steps
-
-None.
-
-### Status
+### Back End Next Steps
 
 ## Content
 
+- Aesthetic Changes:
+
+  - Card Breakpoints https://mui.com/material-ui/customization/breakpoints/
+
+  - For horizontal mobile, make the two <Typography/> have same size font.
+
+  - For horizontal mobile, maybe make header and font shrink when scroll down.
+
+  - For mobile horizontal and vertical, when scroll down the header shortens and font gets smaller.
+
+- Aesthetic Changes for the future:
+
+  - Adjust the min height for projects section while projects are loading. Currently the <Container/> for the <CircularProgress/> component in the `./frontend/src/components/Projects.jsx` file has `minHeight: "15em",`. This is a fixed dimension. Rather I would like the <ConnectWithMe/> component to be resting on the footer and the height of the <Container/> to fill the space between the `<Typography>Projects</Typography>` in the `./frontend/src/components/sections/ProjectSection.jsx` file and the `<Typography>Connect With Me</Typography>` in the `./frontend/src/components/sections/ConnectWithMe.jsx` file.
+
 ## CSS/Styling
-
-- Modify files to address the todo items in the `./jamiebort.github.io/DesignChanges/DesignChanges.md` file.
-
-  _Create a new branch for this._
-
-- Implement breakpoints in the CSS file. Specifically a mobile HORIZONTAL orientation breakpoint, a tablet horizontal orientation breakpoint, and vertical orientation breakpoint.
-
-  _Create a new branch for this._
-
-- Create an `tablet_breakpoint` branch inside of a new `breakpoint` branch.
 
 ## Front End
 
@@ -163,23 +217,9 @@ See the two files in this https://github.com/JamieBort/LearningDirectory/tree/ma
 
 ### Front End Status
 
-Successfully deployed backend via the `back_end_express` branch.
-
-### Front End Status Next Steps React + Vite
-
-None.
-
 ## Hosting
 
 ### Hosting To Do
-
-- Research where to host it.
-
-  - See https://github.com/JamieBort/LearningDirectory/tree/master/Hosting
-
-    Particularly this https://github.com/JamieBort/LearningDirectory/blob/master/Hosting/hosting_research/notes.md#valuable-info section.
-
-- Set up hosting.
 
 ### Hosting Status
 
@@ -223,12 +263,6 @@ So I am pausing here to create a React front end to make the GraphQL api call.
 
 ## JavaScript
 
-- **All JavaScript**
-
-- Address the `ToDo` item in the `<script>` tag in the index.html file.
-
-  _Create a new branch for this._
-
 - Fix the functionality of the contact me form.
 
   _Create a new branch for this._
@@ -241,6 +275,10 @@ So I am pausing here to create a React front end to make the GraphQL api call.
   It is generated when I navigate to the live https://jamiebort.github.io/html/index.html website.
 
   _Create a new branch for this._
+
+- **figure out and fix why the frontend api lags.** It appears as though the backend "goes to sleep.The api call doesn't load until the page is reloaded (opened) twice. Or until the backend is loaded twice. How to keep the server from going down. From sleeping. Ping it every 25 minutes? This setInterval(() => {apiCall()}, 1000 _ 60 _ 25); didn't work.
+
+## Miscellaneous
 
 - **Do NOT** delete the `Revamp2020` branch until I delete the `Revamp2023` branch
 

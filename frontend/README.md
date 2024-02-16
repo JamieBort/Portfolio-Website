@@ -20,6 +20,22 @@ And followed this document to make GraphQL calls: https://www.apollographql.com/
 
 ### Directories
 
+- ./configBackup/
+
+  - Temporary directory containing copies of
+
+    - ./package.json,
+
+    - ./vite.config.js, and
+
+    - ./yarn.lock
+
+    in the event that I need to refer back to them.
+
+  - I am in the process of importing libraries for the project cards.
+
+  - To be deleted when the `fullstack_rebuild` branch is deleted.
+
 - node_modules/
 
   -
