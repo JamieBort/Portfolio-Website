@@ -25,8 +25,8 @@ I have created a standbyData variable for when the backend server is not availab
 
   - **DONE.** ~~redeploy the frontend AND the backend. from the `dev` branch.~~
 
-  - Then merge the `dev` branch into the `master` branch.
+  - **DONE.** ~~Then merge the `dev` branch into the `master` branch.~~
 
-  - redeploy the frontend AND the backend. from the `master` branch.
+  - **DONE.** ~~redeploy the frontend AND the backend. from the `master` branch.~~
 
-  - Point the new frontend url to jamiebort.com
+  - **DONE.** ~~Point the new frontend url to jamiebort.com~~

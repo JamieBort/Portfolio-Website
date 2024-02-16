@@ -65,10 +65,6 @@ Here is listed the things I plan on adding to the repo.
 		|
 		+-- content - For modifying content.
 		|
-		+-- fullstack - For implementing a front end and back end.
-		|   |
-		|   +-- fullstack_rebuild - For preparing to migrate frontend files and directories that are currently in the root directory into the ./frontend/ directory.
-		|
 		+-- Revamp2023 - The branch created to update the website in 2023.
 ```
 

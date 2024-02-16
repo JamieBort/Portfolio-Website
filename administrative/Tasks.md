@@ -6,6 +6,12 @@ To-Do items that need to be addressed.
 
 ### Administrative To Do
 
+- **Address this "Website not secure" issue.**
+
+  - See https://ae.godaddy.com/blog/why-is-my-website-displaying-a-not-secure-warning/
+
+  - And obtain ssl certificate.
+
 - In this repo, change references from
 
   - ...`github.com/JamieBort/jamiebort.github.io`...
