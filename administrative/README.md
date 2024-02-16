@@ -94,16 +94,6 @@ Here is listed the things I plan on adding to the repo.
 
     - Contains accessibility issues raised by other people. And accessibility issues/questions that I need answered.
 
-  - ./administrative/aestheticDesignChanges/
-
-    - A directory for the list of aesthetic things that need to change with the website.
-
-  - ./administrative/cards/
-
-    - A directory to keep all of my Card component research.
-
-    - To be deleted when the `fullstack_rebuild` branch is deleted.
-
   - ./administrative/legacy/
 
     - This directory contains the legacy files and directories used to create my website from previous versions.
