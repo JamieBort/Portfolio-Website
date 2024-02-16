@@ -27,14 +27,18 @@ export default function Projects({ selection }) {
 
       // NOTE: used to simulate the server that is down.
       // NOTE: or this (Option 2)
-      setTimeout(() => {
-        BackendAPI.getPinned.then((data) => {
-          console.log("We have original data. But there was a delay");
-          // console.log("data:", data);
-          setRepos(data);
-          setLoading(false);
-        });
-      }, 1000 * 1 * 60); // 1000 milliseconds * 1 * 60 seconds = 1 minute.(1000 millionths of a second * 1 = 1 second.)
+      setTimeout(
+        () => {
+          BackendAPI.getPinned.then((data) => {
+            console.log("We have original data. But there was a delay");
+            // console.log("data:", data);
+            setRepos(data);
+            setLoading(false);
+          });
+        },
+        // NOTE: Set for a minute while using the free backend version of Render.com
+        1000 * 1 * 60, // 1000 milliseconds * 1 * 60 seconds = 1 minute.(1000 millionths of a second * 1 = 1 second.)
+      );
     } catch (error) {
       // More errors....
       console.log("Try/Catch useEffect() error:", error);
