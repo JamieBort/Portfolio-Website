@@ -1,5 +1,25 @@
 # administrative
 
+## How to use
+
+### Locally
+
+1. Start back end server.
+
+   See `Start back end server locally` in the `./jamiebort.github.io/backend/README.md` file.
+
+2. Start front end server.
+
+   See `Start front end server locally` in the `./jamiebort.github.io/frontend/README.md` file.
+
+### Hosted
+
+See
+
+- `Start front end server remotely` in the `./jamiebort.github.io/frontend/README.md` file.
+
+- and see `Start back end server remotely` in the `./jamiebort.github.io/backend/README.md` file.
+
 ## Future Features
 
 Here is listed the things I plan on adding to the repo.
@@ -28,7 +48,7 @@ Here is listed the things I plan on adding to the repo.
   - One button:
     - "Pinned Repos" - toggles the pinned repos ON/OFF.
 
-### Branch Structure
+## Branch Structure
 
 ```
 +-- master - The live branch.
@@ -36,51 +56,33 @@ Here is listed the things I plan on adding to the repo.
 	+-- dev - The development branch
 		|
 		+-- administrative - For cleaning up the files and reorganizing the file structure.
-		|	|
-		|	+-- administrative_cleanup - To update the ./README.md and cleanup the files/file structure.
 		|
 		+-- accessibility - For all accessibility implementation.
 		|
-		+-- backend - For all back end implementation.
+		+-- appearance - For modifying the appearance.
+		|
+		+-- api - For all api related logic.
 		|
 		+-- content - For modifying content.
 		|
-		+-- script - For all script related logic.
+		+-- fullstack - For implementing a front end and back end.
+		|   |
+		|   +-- fullstack_rebuild - For preparing to migrate frontend files and directories that are currently in the root directory into the ./frontend/ directory.
 		|
 		+-- Revamp2023 - The branch created to update the website in 2023.
-			|
-			+-- appearance - For modifying the appearance.
-			|	|
-			|	+-- breakpoint - For implementing breakpoints in the CSS file.
-			|		|
-			|		+-- breakpoint_mobile - The branch doesn't exist (yet). For implementing a mobile HORIZONTAL breakpoint in the CSS file. The current default styles are for mobile in a vertical orientation.
-			|		|
-			|		+-- breakpoint_tablet - The branch doesn't exist (yet). For implementing a tablet breakpoint in the CSS file. *** Need to consider horizontal and vertical orientations. ***
-			|		|
-			|		+-- breakpoint_desktop - The branch doesn't exist (yet). For implementing desktop breakpoint in the CSS file.
-			|
-			+-- host - For all things host related.
-			|	|
-			|	+-- host_routed_react_gh-pages - To determine if we can run a react app in gh-pages. If so, we'll make a GraphQL call.
-			|		|
-			|		+-- host_routed_react_gh-pages_with_graphql_api_call - To see if I can make API calls using the a React app while hosted by gh-pages. **Tabled for now**
-			|
-			+-- api - For all api related logic.
-				|
-				+-- api_github - For implementing api calls to GitHub.
 ```
 
-### Directories and Files
+## Directories and Files
 
-#### Directories
+### Directories
 
-- ./administrative/accessibilityIssues/
+- ./.vscode/
 
-  - Contains accessibility issues raised by other people. And accessibility issues/questions that I need answered.
+  - Directory for config file for VS Code.
 
-- ./administrative/aestheticDesignChanges/
+  - For information, see the [.vscode](https://github.com/JamieBort/LearningDirectory/tree/master/Git/configFiles#vscode) section of the `configFiles` directory of the `LearningDirectory` repo.
 
-  - A directory for the list of aesthetic things that need to change with the website.
+  - Omitted from this repo.
 
 - ./administrative/
 
@@ -90,39 +92,49 @@ Here is listed the things I plan on adding to the repo.
 
   - All documentation not needed to be seen.
 
-- ./.vscode/
+  - ./administrative/accessibilityIssues/
 
-  - See the [Workspace settings](https://code.visualstudio.com/docs/getstarted/settings#:~:text=Note%3A%20A%20VS%20Code%20%22workspace,feature%20called%20Multi%2Droot%20workspaces) in the VS Code documentation.
+    - Contains accessibility issues raised by other people. And accessibility issues/questions that I need answered.
 
-- ./assets/
+  - ./administrative/legacy/
 
-  - The directory for the static resources.
+    - This directory contains the legacy files and directories used to create my website from previous versions.
 
-- ./css/
+  - ./administrative/translation/
 
-  - Contains all CSS files.
+    - This directory is used to keep note for the translation task.
 
-- ./html/
+    - To be deleted when ~~the `fullstack` branch is deleted~~ it is implemented.
 
-  - With the exception of `./index.html`, this directory contains all of the html files. And it contains only html files.
+- ./backend/
 
-- ./js/
+  - Directory containing the back end of this app.
 
-  - Contains all JavaScript files.
+- ./frontend/
 
-#### Files
+  - Directory containing the front end of this app.
 
-- ./administrative/FutureFeatures.md
+- scratch/
 
-  - Future features section of the repo. Here is listed the things I plan on adding to the repo.
+  - A directory to keep files and directories temporarily.
+
+  - Contains files and directories that are not needed for the deployment.
+
+  - Examples: lists of things that I need to complete.
+
+  - It is not tracked by Git.
+
+### Files
+
+- ./administrative/fullstack_rebuild_branch_TODO.md
+
+  - Items to be addressed in the `fullstack_rebuild` branch.
+
+  - Or to be moved to the `./administrative/Tasks.md` file to be addressed at a later date.
 
 - ./administrative/README.md
 
   - This readme file.
-
-- ./administrative/Revamp2023.md
-
-  - This file is for keeping track of the status and the tasks that need to be completed while I rebuild my portfolio website.
 
 - ./administrative/Tasks.md
 
@@ -132,9 +144,9 @@ Here is listed the things I plan on adding to the repo.
 
   - Specifies intentionally untracked files. See https://git-scm.com/docs/gitignore
 
-- ./index.html
+- COPYING.txt
 
-  - The landing page. This links to `./html/index.html`.
+  - The license.
 
 - ./README.md
 
