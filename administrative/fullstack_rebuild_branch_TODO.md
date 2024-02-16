@@ -21,9 +21,9 @@ I have created a standbyData variable for when the backend server is not availab
 
 - Do these 5 things together and in sequence:
 
-  - merge the `fullstack` branch into the `dev` branch.
+  - **DONE.** ~~merge the `fullstack` branch into the `dev` branch.~~
 
-  - redeploy the frontend AND the backend. from the `dev` branch.
+  - **DONE.** ~~redeploy the frontend AND the backend. from the `dev` branch.~~
 
   - Then merge the `dev` branch into the `master` branch.
 
