@@ -8,49 +8,21 @@ To-Do items that need to be addressed.
 
 - **Address this "Website not secure" issue.**
 
-  - See https://ae.godaddy.com/blog/why-is-my-website-displaying-a-not-secure-warning/
+  https://github.com/JamieBort/Portfolio-Website/issues/3
 
-  - And obtain ssl certificate.
+- Change references
 
-- In this repo, change references from
+  https://github.com/JamieBort/Portfolio-Website/issues/8
 
-  - ...`github.com/JamieBort/jamiebort.github.io`...
+- Create Legacy branch or directory
 
-  - and ...`jamiebort.github.io`...
+  https://github.com/JamieBort/Portfolio-Website/issues/9
 
-  to
+- Rebuild the front end with Svelt and Typescript
 
-  - ...`github.com/JamieBort/Portfolio-Website`...
+  https://github.com/JamieBort/Portfolio-Website/milestone/5
 
-  - and ...`jamiebort.github.io/Portfolio-Website`...
-
-  For example in `https://raw.githubusercontent.com/JamieBort/Portfolio-Website/master/README.md` change `You can find the full text in this [./COPYING.txt](https://github.com/JamieBort/jamiebort.github.io/blob/master/COPYING.txt) file.` to `You can find the full text in this [./COPYING.txt](https://github.com/JamieBort/Portfolio-Website/blob/master/COPYING.txt) file.`.
-
-- Do these 2 things together and in sequence:
-
-  - Create a legacy branch or directory of the `master` branch.
-
-    Either
-
-    - choose branches:
-
-      - create a `legacy` branch.
-
-      - create a `legacy_2023` branch by copying the master branch.
-
-      - clean up the file directory so that it doesn't contain anything but the `./assets/`, `./css/`, `./html/`, and `./js/` directories and the `./index.html` file. **do a dry run of this to ensure directories and files are not accidentally removed**
-
-    - or choose directory
-
-      - create a `legacy` directory.
-
-      - create a `legacy_2023` directory inside of the `legacy` directory.
-
-      - move working files (`./assets/`, `./css/`, `./html/`, and `./js/` directories and the `./index.html` file.) into the `legacy_2023` directory.
-
-  - merge the `fullstack_rebuild` branch into the `fullstack` branch.
-
-- Do these 3 things together and in sequence:
+  Do these 3 things together and in sequence:
 
   - Rebuild the front end with Svelt and Typescript at a later date. A goal for a later date. See the [Front End To Do](https://github.com/JamieBort/jamiebort.github.io/blob/fullstack/administrative/Tasks.md#front-end-to-do) section.
 
@@ -60,11 +32,11 @@ To-Do items that need to be addressed.
 
 - Add the media query library.
 
-- Do these 2 things together:
+  https://github.com/JamieBort/Portfolio-Website/issues/11
 
-  - Add an I18y library to translate parts of the site that are dynamically updated from GraphQL api calls. See the `./jamiebort.github.io/administrative/translation/` directory. Possibly to translate the entire site.
+- Add an I18y library to translate
 
-  - Add a `English/Español` translate button.
+  https://github.com/JamieBort/Portfolio-Website/issues/10
 
 ### Administrative Status
 
