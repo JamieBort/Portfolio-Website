@@ -65,10 +65,6 @@ Here is listed the things I plan on adding to the repo.
 		|
 		+-- content - For modifying content.
 		|
-		+-- fullstack - For implementing a front end and back end.
-		|   |
-		|   +-- fullstack_rebuild - For preparing to migrate frontend files and directories that are currently in the root directory into the ./frontend/ directory.
-		|
 		+-- Revamp2023 - The branch created to update the website in 2023.
 ```
 
@@ -125,12 +121,6 @@ Here is listed the things I plan on adding to the repo.
   - It is not tracked by Git.
 
 ### Files
-
-- ./administrative/fullstack_rebuild_branch_TODO.md
-
-  - Items to be addressed in the `fullstack_rebuild` branch.
-
-  - Or to be moved to the `./administrative/Tasks.md` file to be addressed at a later date.
 
 - ./administrative/README.md
 
