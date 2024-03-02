@@ -37,7 +37,11 @@ If you anything that needs a correction, please let me know! And create a pull r
 
 ## Contribute
 
-If you see anything that needs to be corrected, please create a pull request! Thank you.
+If you find an issue with the code or have a suggestions on how to improve this site, please see the [CONTRIBUTING](./CONTRIBUTING.md) file. Thank you.
+
+## Code Of Conduct
+
+[Code of Conduct] file
 
 ## License
 
