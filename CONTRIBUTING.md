@@ -4,8 +4,6 @@
 
 Thank you for investing your time in contributing to this project!
 
-<!-- TODO: FOR THIS TEMPLATE: Link to the proper file here. -->
-
 Read our [Contributor Covenant Code Of Conduct](./Contributor_Covenant_Code_of_Conduct.md) to keep our community approachable and respectable.
 
 In this guide you will get an overview of the contribution workflow from opening an issue, creating a PR, reviewing, and merging the PR.
