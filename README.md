@@ -37,11 +37,15 @@ If you anything that needs a correction, please let me know! And create a pull r
 
 ## Contribute
 
-If you find an issue with the code or have a suggestions on how to improve this site, please see the [CONTRIBUTING](./CONTRIBUTING.md) file. Thank you.
+If you find an issue with the code or have a suggestions on how to improve this site, please see the [CONTRIBUTING](./CONTRIBUTING.md) guide. Thank you.
+
+But also please take a moment to review the [Code Of Conduct](https://github.com/JamieBort/Personal-Dashboard/?tab=readme-ov-file#code-of-conduct) section below. Thank you.
 
 ## Code Of Conduct
 
-[Code of Conduct] file
+Please see the [Contributor Covenant Code Of Conduct](./Contributor_Covenant_Code_of_Conduct.md) file.
+
+I take these matters seriously. Please be a good person.
 
 ## License
 
