@@ -20,45 +20,37 @@ And followed this document to make GraphQL calls: https://www.apollographql.com/
 
 ### Directories
 
-- node_modules/
+#### .vite/
 
-  -
+Per https://vitejs.dev/config/#configuring-vite, `...the config file is auto pre-processed before load.` See:
 
-- public/
+> ...Vite supports using ES modules syntax in the config file even if the project is not using native Node ESM, e.g. type: "module" in package.json. In this case, the config file is auto pre-processed before load.
 
-  -
+#### node_modules/
 
-- src/
+#### public/
 
-  -
+#### src/
 
 ### Files
 
-- .env.local
+#### .env.local
 
-  - Excluded from Git.
+Excluded from Git.
 
-- .eslintrc.cjs
+#### .eslintrc.cjs
 
-  -
+#### index.html
 
-- index.html
+#### package.json
 
-  -
+#### README.md
 
-- package.json
+This readme file.
 
-  -
+#### vite.config.js
 
-- README.md
-
-  - This readme file.
-
-- vite.config.js
-
-  -
-
-- yarn.lock
+#### yarn.lock
 
 ---
 
