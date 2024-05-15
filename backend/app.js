@@ -58,7 +58,7 @@ const fetchOptions = {
 
 // The various URLs that are allowed to make api calls against this backend.
 // http://127.0.0.1:5500 is sufficient for ./jamiebort.github.io/frontend/index.html in VS Code.
-const allowedOrigins = ["http://localhost:5173", "http://127.0.0.1:3000", "http://127.0.0.1:5500", "http://localhost:3000", "https://frontend-jamiebort-github-io.onrender.com"];
+const allowedOrigins = ["http://localhost:5173", "http://localhost:3001", "https://frontend-jamiebort-github-io.onrender.com"];
 
 // Checking the allowedOrigins array above to see if the URL is in fact in the list of allowed URLs.
 // If Not, an error is thrown.

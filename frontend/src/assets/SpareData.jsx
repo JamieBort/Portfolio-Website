@@ -55,6 +55,6 @@ const standbyData = [
 ];
 
 export const SpareData = {
-  printIt: console.log("printing:", standbyData),
+  printIt: console.log("printing standbyData:", standbyData),
   sendIt: standbyData,
 };

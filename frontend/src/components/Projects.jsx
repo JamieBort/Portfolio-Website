@@ -17,73 +17,17 @@ export default function Projects({ selection }) {
   // useEffect() for making a REST API call to the backend.
   useEffect(() => {
     try {
-      // // NOTE: use either this (Option 1)
-      // BackendAPI.getPinned.then((data) => {
-      //   // console.log("We have original data.");
-      //   // console.log("data:", data);
-      //   setRepos(data);
-      //   setLoading(false);
-      // });
-
-      // NOTE: used to simulate the server that is down.
-      // NOTE: or this (Option 2)
-      setTimeout(
-        () => {
-          BackendAPI.getPinned.then((data) => {
-            console.log("We have original data. But there was a delay");
-            // console.log("data:", data);
-            setRepos(data);
-            setLoading(false);
-          });
-        },
-        // NOTE: Set for a minute while using the free backend version of Render.com
-        1000 * 1 * 60, // 1000 milliseconds * 1 * 60 seconds = 1 minute.(1000 millionths of a second * 1 = 1 second.)
-      );
-    } catch (error) {
-      // More errors....
-      console.log("Try/Catch useEffect() error:", error);
-    }
-  }, []);
-
-  // TODO: Clean this promise up. And use reject.
-  // useEffect()  to load the saved standbyData if the database is down.
-  useEffect(() => {
-    try {
-      // NOTE: use either this (Option 3)
-      // A promise for obtaining standbyData using SpareData.sendIt
-      const myPromise = new Promise((resolve, reject) => {
-        // TODO: Use reject. Or remove it.
-        console.log("reject:", reject);
-        // Returning a resolved promise with standbyData.
-        resolve(SpareData.sendIt);
-      });
-      myPromise.then((data) => {
-        // SpareData.printIt;
-        // console.log("We have spare data.");
-        // console.log("data:", data);
+      BackendAPI.getPinned.then((data) => {
+        if (data !== "Bad credentials") console.log("Original data:", data);
+        else {
+          data = SpareData.sendIt;
+          console.log("Spare data:", data);
+        }
         setRepos(data);
         setLoading(false);
       });
-
-      // // NOTE: used to simulate the a delay in getting the data locally.
-      // // NOTE: or this (Option 4)
-      // setTimeout(() => {
-      //   // A promise for obtaining standbyData using SpareData.sendIt
-      //   const myPromise = new Promise((resolve, reject) => {
-      //     console.log("reject:", reject);
-      //     // Returning a resolved promise with standbyData.
-      //     resolve(SpareData.sendIt);
-      //   });
-      //   myPromise.then((data) => {
-      //     // SpareData.printIt;
-      //     // console.log("We have spare data.");
-      //     // console.log("data:", data);
-      //     setRepos(data);
-      //     setLoading(false);
-      //   });
-      // }, 5000);
     } catch (error) {
-      // More errors....
+      // Catching the useEffect() error.
       console.log("Try/Catch useEffect() error:", error);
     }
   }, []);

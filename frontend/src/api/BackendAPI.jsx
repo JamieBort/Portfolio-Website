@@ -1,23 +1,26 @@
 // ./frontend/src/api/BackendAPI.jsx
 
-// URL to the back end.
+// URL to the hosted back end.
 const URL = `https://backend-jamiebort-github-io.onrender.com/`;
 
+// URL to the local back end.
+// const URL = `http://localhost:3001/`;
+
 export const BackendAPI = {
-  // method to obtain the pinned repos from the back end.
+  // Method to obtain the pinned repos from the back end.
   getPinned: fetch(URL)
     .then((response) => {
-      // console.log("response:", response); // Let's see the response in the console.
+      // console.log("response:", response);
       if (response.ok) {
-        // Yay! We have data back from the back end.
+        // console.log("response.json():", response.json());
         return response.json();
       }
       // We have a problem.
       throw new Error("apiCall thrown error.");
     })
-    // Uh oh
+    // Catching this error.
     .catch((error) => console.log("apiCall catch error:", error)),
 
-  //   // Method to make other api calls. Not yet set up.
+  // Method to make other api calls. Not yet set up.
   // getOtherCalls: <to be set up>
 };

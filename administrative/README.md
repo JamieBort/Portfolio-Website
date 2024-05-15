@@ -6,13 +6,15 @@
 
 1. Start back end server.
 
-   See `Start back end server locally` in the `./jamiebort.github.io/backend/README.md` file.
+   See [Start back end server locally](../backend/README.md#start-back-end-server-locally) in the `backend/` [README.md](../backend/README.md) file.
 
 2. Start front end server.
 
-   See `Start front end server locally` in the `./jamiebort.github.io/frontend/README.md` file.
+   See [Start front end server locally](../frontend/README.md#start-front-end-server-locally) in the `frontend/` [README.md](../frontend/README.md) file.
 
 ### Hosted
+
+<!-- TODO: clean up this section just to look like `Locally` above. -->
 
 See
 
