@@ -142,7 +142,19 @@ This is where the Pull Request template lives. See [Pull Request Templates](http
 
   - Specifies intentionally untracked files. See https://git-scm.com/docs/gitignore
 
+- CONTRIBUTING.md
+
+  - The contribution guide for this repo.
+
+- Contributor_Covenant_Code_of_Conduct.md
+
+  - The code of conduct for this repo.
+
 - COPYING.txt
+
+  - The license for this repo.
+
+  - The text can be found [here](../COPYING.txt).
 
 - ./README.md
 
