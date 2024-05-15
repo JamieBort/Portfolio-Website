@@ -74,6 +74,12 @@ Here is listed the things I plan on adding to the repo.
 
 ### Directories
 
+### [./.github/](../.github)
+
+This is where the Pull Request template lives. See [Pull Request Templates](https://github.com/JamieBort/LearningDirectory/tree/master/Git/pull_request_templates).
+
+<!-- This is also where the Dependabot yaml file is. Right now it is used just for `Dependabot version updates`. See [Dependabot](https://github.com/JamieBort/LearningDirectory/tree/master/Git/security#dependabot). -->
+
 - ./.vscode/
 
   - Directory for config file for VS Code.
