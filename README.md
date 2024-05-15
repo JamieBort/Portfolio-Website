@@ -37,7 +37,15 @@ If you anything that needs a correction, please let me know! And create a pull r
 
 ## Contribute
 
-If you see anything that needs to be corrected, please create a pull request! Thank you.
+If you find an issue with the code or have a suggestions on how to improve this site, please see the [CONTRIBUTING](./CONTRIBUTING.md) guide. Thank you.
+
+But also please take a moment to review the [Code Of Conduct](#code-of-conduct) section below. Thank you.
+
+## Code Of Conduct
+
+Please see the [Contributor Covenant Code Of Conduct](./Contributor_Covenant_Code_of_Conduct.md) file.
+
+I take these matters seriously. Please be a good person.
 
 ## License
 
@@ -49,4 +57,4 @@ You can find the full text in this [./COPYING.txt](https://github.com/JamieBort/
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-![Static Badge](https://img.shields.io/badge/Last_Updated-2024_Feb_11-gold)
+![Static Badge](https://img.shields.io/badge/Last_Updated-2024_Feb_19-gold)
