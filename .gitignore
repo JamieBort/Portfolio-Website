@@ -1,8 +1,5 @@
 # ./.gitignore
 
-# This directory is generated when I merge branches.
-.vite
-
 # dependencies
 node_modules
 .pnp
