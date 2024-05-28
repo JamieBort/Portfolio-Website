@@ -18,9 +18,9 @@
 
 See
 
-- `Start front end server remotely` in the `./jamiebort.github.io/frontend/README.md` file.
+- See the [Start front end server remotely](../frontend/README.md#start-front-end-server-remotely) section in the frontend/ README.md file.
 
-- and see `Start back end server remotely` in the `./jamiebort.github.io/backend/README.md` file.
+- and see the [Start back end server remotely](../backend/README.md#start-back-end-server-locally) section in the backend/ README.md file.
 
 ## Future Features
 

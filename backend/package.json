@@ -1,9 +1,9 @@
 {
   "name": "backend",
   "version": "0.0.0",
-  "description": "The back end to jamiebort.github.io.",
+  "description": "The back end to Portfolio Website.",
   "main": "app.js",
-  "repository": "https://github.com/JamieBort/jamiebort.github.io",
+  "repository": "https://github.com/JamieBort/Portfolio-Website",
   "author": "Jamie Bort",
   "license": "GNU GPLv3",
   "private": true,

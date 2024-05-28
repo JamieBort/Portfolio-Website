@@ -1,4 +1,4 @@
-# Welcome to the repo for my [Portfolio Website](https://jamiebort.github.io/)
+# Welcome to the repo for my [Portfolio Website](http://www.jamiebort.com/)
 
 ## About
 
@@ -53,7 +53,7 @@ Per [choosealicense.com](https://choosealicense.com/):
 
 > The [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/) ... lets people do almost anything they want with your project, except distributing closed source versions.
 
-You can find the full text in this [./COPYING.txt](https://github.com/JamieBort/jamiebort.github.io/blob/master/COPYING.txt) file.
+You can find the full text in this [COPYING.txt](COPYING.txt) file.
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 

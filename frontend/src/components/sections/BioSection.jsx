@@ -20,9 +20,9 @@ export default function BioSection({ title, sectionSX }) {
       </Typography>
       <Typography variant="body1" gutterBottom>
         I am currently in the process of changing this static portfolio website so that it is hosted with a Vite + React front end and Node Express back end. More info can be found
-        in the{" "}
-        <Link href="https://github.com/JamieBort/jamiebort.github.io?tab=readme-ov-file#about" underline="hover">
-          About section of the README
+        in the `About` section of the{" "}
+        <Link href="https://github.com/JamieBort/Portfolio-Website?tab=readme-ov-file#about" underline="hover">
+          README
         </Link>{" "}
         file.
       </Typography>

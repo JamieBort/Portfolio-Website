@@ -270,7 +270,7 @@ So I am pausing here to create a React front end to make the GraphQL api call.
 
   Go through them each to make sure I will not be losing anything valuable.
 
-  Each one should (now) be in the `./jamiebort.github.io/old/` directory.
+  Each one should (now) be in the `./old/` directory.
 
   _Create a new branch for this._
 

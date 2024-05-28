@@ -6,7 +6,7 @@ And followed this document to make GraphQL calls: https://www.apollographql.com/
 
 ## Start front end server locally
 
-1. In `Terminal`, navigate to `./jamiebort.github.io/frontend/`.
+1. In `Terminal`, navigate to `frontend/`.
 
 2. Run the `yarn dev` command.
 

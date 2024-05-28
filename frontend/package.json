@@ -1,8 +1,8 @@
 {
   "name": "frontend",
   "version": "0.0.0",
-  "description": "The front end to jamiebort.github.io.",
-  "repository": "https://github.com/JamieBort/jamiebort.github.io",
+  "description": "The front end to Portfolio Website.",
+  "repository": "https://github.com/JamieBort/Portfolio-Website",
   "author": "Jamie Bort",
   "license": "GNU GPLv3",
   "type": "module",
