@@ -1,4 +1,4 @@
-# Welcome to the repo for my [Portfolio Website](http://www.jamiebort.com/)
+# Welcome to the repo for my [Portfolio Website](http://jamiebort.com/)
 
 ## About
 
