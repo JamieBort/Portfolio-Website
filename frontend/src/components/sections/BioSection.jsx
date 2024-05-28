@@ -9,7 +9,7 @@ export default function BioSection({ title, sectionSX }) {
       </Typography>
       <Typography variant="body1" gutterBottom>
         I write code and teach at{" "}
-        <Link href="https://codethedream.org/" underline="hover">
+        <Link href="https://codethedream.org/" underline="hover" target="_blank" rel="noopener noreferrer">
           Code the Dream
         </Link>
         , a software boot camp for underrepresented people.
@@ -21,7 +21,7 @@ export default function BioSection({ title, sectionSX }) {
       <Typography variant="body1" gutterBottom>
         I am currently in the process of changing this static portfolio website so that it is hosted with a Vite + React front end and Node Express back end. More info can be found
         in the `About` section of the{" "}
-        <Link href="https://github.com/JamieBort/Portfolio-Website?tab=readme-ov-file#about" underline="hover">
+        <Link href="https://github.com/JamieBort/Portfolio-Website?tab=readme-ov-file#about" underline="hover" target="_blank" rel="noopener noreferrer">
           README
         </Link>{" "}
         file.
