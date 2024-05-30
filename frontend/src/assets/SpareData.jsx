@@ -4,9 +4,10 @@ const standbyData = [
   {
     node: {
       id: "MDEwOlJlcG9zaXRvcnk5NjcwOTAwNg==",
+      // name: "Portfolio-Website SPARE",
       name: "Portfolio-Website",
       url: "https://github.com/JamieBort/Portfolio-Website",
-      stargazerCount: 0,
+      stargazerCount: 5,
       description:
         "This is where I share a bit about myself, showcase what I've been working on, and share where you can find me online. It is build with a React + Vite front end and a Node Express backend. And styled with MUI.",
       languages: {
@@ -20,9 +21,10 @@ const standbyData = [
   {
     node: {
       id: "MDEwOlJlcG9zaXRvcnkxNjI2NTg4ODM=",
+      // name: "Personal-Dashboard SPARE",
       name: "Personal-Dashboard",
       url: "https://github.com/JamieBort/Personal-Dashboard",
-      stargazerCount: 0,
+      stargazerCount: 3,
       description:
         "A website for displaying important daily data. Such as blood glucose numbers and upcoming events. Using  Svelt TypeScript front end and Java backend. Which database is yet to be seen. It will use authentication.",
       languages: { totalCount: 3, edges: [{ node: { name: "CSS" } }, { node: { name: "HTML" } }, { node: { name: "JavaScript" } }] },
@@ -33,6 +35,7 @@ const standbyData = [
   {
     node: {
       id: "MDEwOlJlcG9zaXRvcnkxNjI0Njg1MjA=",
+      // name: "LearningDirectory SPARE",
       name: "LearningDirectory",
       url: "https://github.com/JamieBort/LearningDirectory",
       stargazerCount: 3,

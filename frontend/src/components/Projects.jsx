@@ -14,28 +14,29 @@ export default function Projects({ selection }) {
   // By default the status of "loading" is true, implying that we're not getting/do not have any data from the back end.
   const [loading, setLoading] = useState(true);
 
-  // useEffect() for making a REST API call to the backend.
-  useEffect(() => {
-    try {
-      BackendAPI.getPinned.then((data) => {
-        if (data !== "Bad credentials") console.log("Original data:", data);
-        else {
-          data = SpareData.sendIt;
-          console.log("Spare data:", data);
-        }
+  function backendCall() {
+    BackendAPI.getPinned.then((data) => {
+      // console.log("backendCall data:", data);
+      if (data !== "Bad credentials" && !(data instanceof TypeError) && !(data instanceof SyntaxError)) {
+        console.log("Original data:", data);
         setRepos(data);
-        setLoading(false);
-      });
+      }
+    });
+  }
+
+  useEffect(() => {
+    // Load local data while waiting for the backend server to wake up.
+    setRepos(SpareData.sendIt);
+    console.log("Spare data:", SpareData.sendIt);
+    setLoading(false);
+    // setTimeout(backendCall, 5000);
+    try {
+      backendCall();
     } catch (error) {
-      // Catching the useEffect() error.
+      // Catching the error.
       console.log("Try/Catch useEffect() error:", error);
     }
   }, []);
-
-  // For when I need to deal with the <CircularProgress/> component below.
-  // useEffect(() => {
-  //   setLoading(true);
-  // }, []);
 
   // Creating each MUI card.
   if (!loading) {
