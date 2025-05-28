@@ -2,54 +2,6 @@
 
 To-Do items that need to be addressed.
 
-## Administrative
-
-### Administrative To Do
-
-- **Address this "Website not secure" issue.**
-
-  https://github.com/JamieBort/Portfolio-Website/issues/3
-
-- Change references
-
-  https://github.com/JamieBort/Portfolio-Website/issues/8
-
-- Create Legacy branch or directory
-
-  https://github.com/JamieBort/Portfolio-Website/issues/9
-
-- Rebuild the front end with Svelt and Typescript
-
-  https://github.com/JamieBort/Portfolio-Website/milestone/5
-
-  Do these 3 things together and in sequence:
-
-  - Rebuild the front end with Svelt and Typescript at a later date. A goal for a later date. See the [Front End To Do](https://github.com/JamieBort/jamiebort.github.io/blob/fullstack/administrative/Tasks.md#front-end-to-do) section.
-
-  - Then merge the `dev` branch into the `master` branch.
-
-  - redeploy the frontend AND the backend. from the `master` branch.
-
-- Add the media query library.
-
-  https://github.com/JamieBort/Portfolio-Website/issues/11
-
-- Add an I18y library to translate
-
-  https://github.com/JamieBort/Portfolio-Website/issues/10
-
-### Administrative Status
-
-### Administrative Next Steps
-
-## API
-
-- Consolidate and organize ALL Trello cards with
-
-  - `API` in the Title.
-
-  - and that come up when searching for `API`
-
 ## Accessibility
 
 TODO: look into whether this [WebAIM certification[(https://webaim.org/services/certification/) would be worth having on my website(s).
@@ -153,18 +105,6 @@ TODO: Check-in with people on the issues below (under the "Issues that need to b
 
       Search for something to the effect of "trigger media query with pinch zoom".
 
-## Back End
-
-### To Do
-
-### Back End To Do
-
-None.
-
-### Back End Status
-
-### Back End Next Steps
-
 ## Content
 
 - Aesthetic Changes:
@@ -181,23 +121,7 @@ None.
 
   - Adjust the min height for projects section while projects are loading. Currently the <Container/> for the <CircularProgress/> component in the `./frontend/src/components/Projects.jsx` file has `minHeight: "15em",`. This is a fixed dimension. Rather I would like the <ConnectWithMe/> component to be resting on the footer and the height of the <Container/> to fill the space between the `<Typography>Projects</Typography>` in the `./frontend/src/components/sections/ProjectSection.jsx` file and the `<Typography>Connect With Me</Typography>` in the `./frontend/src/components/sections/ConnectWithMe.jsx` file.
 
-## CSS/Styling
-
-## Front End
-
-### Front End To Do
-
-Rebuild front end with Svelt Vite using TypeScript.
-
-**Maybe** when I build the blog or when I roll out another feature such as the contact me form.
-
-See the two files in this https://github.com/JamieBort/LearningDirectory/tree/master/Languages/JavaScript/Frameworks/Svelte directory.
-
-### Front End Status
-
 ## Hosting
-
-### Hosting To Do
 
 ### Hosting Status
 
@@ -236,8 +160,6 @@ This [Render Quickstarts](https://docs.render.com/) documentation is [full of Qu
 Under the `STATIC SITES` section lists various JavaScript libraries and no options for vanilla JavaScript.
 
 So I am pausing here to create a React front end to make the GraphQL api call.
-
-### Hosting Next Steps
 
 ## JavaScript
 
