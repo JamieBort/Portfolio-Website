@@ -163,10 +163,6 @@ So I am pausing here to create a React front end to make the GraphQL api call.
 
 ## JavaScript
 
-- Fix the functionality of the contact me form.
-
-  _Create a new branch for this._
-
 - Figure out how to update the "Projects" and "Connect with Me" buttons in the "Bio" section so that they say "Proyectos" and "Conectarte Conmigo" respectively.
 
   _Create a new branch for this._
