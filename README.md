@@ -55,6 +55,15 @@ Per [choosealicense.com](https://choosealicense.com/):
 
 You can find the full text in this [COPYING.txt](COPYING.txt) file.
 
+| Permissions       | Conditions                      | Limitations  |
+| ----------------- | ------------------------------- | ------------ |
+| 🟢 Commercial use | 🔵 Disclose source              | 🔴 Liability |
+| 🟢 Distribution   | 🔵 License and copyright notice | 🔴 Warranty  |
+| 🟢 Modification   | 🔵 Same license                 |              |
+| 🟢 Warranty       | 🔵 State changes                |              |
+| 🟢 Patent use     |                                 |              |
+| 🟢 Private use    |                                 |              |
+
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ![Static Badge](https://img.shields.io/badge/Last_Updated-2024_May_28-gold)
