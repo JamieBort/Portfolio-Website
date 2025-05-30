@@ -1,66 +1,138 @@
-# frontend
 
-Bootstrapped this frontend app with React + Vite document: https://vitejs.dev/guide/
+# Demo 
+https://simplec0de.github.io/portfolio-01/
 
-And followed this document to make GraphQL calls: https://www.apollographql.com/docs/react/get-started/
+# Modern Portfolio Template
 
-## Start front end server locally
+A modern, responsive portfolio template built with React, TypeScript, and Vite. Features smooth animations, optimized performance, and accessibility-first design.
 
-1. In `Terminal`, navigate to `frontend/`.
+## 🚀 Features
 
-2. Run the `yarn dev` command.
+- **Modern Tech Stack**: React 19, TypeScript, Vite 6
+- **Styled with Emotion**: Utilizes `@emotion/styled` for component-based styling
+- **Smooth Animations**: Powered by Framer Motion
+- **Optimized Performance**:
+  - Automatic code splitting
+  - Brotli & Gzip compression
+  - Lazy-loaded components
+  - Bundle size visualization
+- **Fully Responsive**: Works seamlessly on all devices
+- **Accessibility**: ARIA labels and semantic HTML
+- **Dark Mode Ready**: Built-in theming support
 
-3. Navigate to `http://localhost:5173/` in your browser.
+## 🛠️ Installation
 
-## Start front end server remotely
+1. Clone the repository:
+```bash
+git clone https://github.com/simpleC0de/portfolio-01.git
+cd portfolio-01
+```
 
-[Not setup yet.]
+2. Install dependencies:
+```bash
+npm install
+```
 
-## Directories and Files
+3. Start the development server:
+```bash
+npm run dev
+```
 
-### Directories
+## 📝 Customization
 
-#### .vite/
+### Personal Information
+Edit the following files to customize your portfolio:
 
-Per https://vitejs.dev/config/#configuring-vite, `...the config file is auto pre-processed before load.` See:
+1. `src/components/sections/Hero.tsx`:
+   - Update your name, title, and description
+   - Modify social media links
 
-> ...Vite supports using ES modules syntax in the config file even if the project is not using native Node ESM, e.g. type: "module" in package.json. In this case, the config file is auto pre-processed before load.
+2. `src/components/sections/Projects.tsx`:
+   - Add your projects and their details
 
-#### node_modules/
+3. `src/components/sections/Skills.tsx`:
+   - Update your skills and expertise
 
-#### public/
+4. `src/components/sections/Contact.tsx`:
+   - Customize contact information
 
-#### src/
+### Styling
+- Theme customization: `src/styles/theme.ts`
+- Global styles: `src/styles/GlobalStyles.tsx`
 
-### Files
+## 🚀 Deployment
 
-#### .env.local
+This template is configured for GitHub Pages deployment by default. The `vite.config.ts` is set up with:
+```typescript
+base: '/portfolio-01/'  // Change this to your repo name
+```
 
-Excluded from Git.
+To deploy:
 
-#### .eslintrc.cjs
+1. Update the `base` in `vite.config.ts` to match your repository name:
+```typescript
+base: '/your-repo-name/'
+```
 
-#### index.html
+2. Build the project:
+```bash
+npm run build
+```
 
-#### package.json
+3. Deploy to GitHub Pages:
+   - Push to your GitHub repository
+   - Enable GitHub Pages in repository settings
+   - Select the `gh-pages` branch as source
 
-#### README.md
+### Alternative Deployment
 
-This readme file.
+For other platforms (Vercel, Netlify, etc.):
+1. Remove or update the `base` property in `vite.config.ts`
+2. Follow the platform-specific deployment instructions
 
-#### vite.config.js
+## ⚙️ Development Features
 
-#### yarn.lock
+### Build Optimization
 
----
+The project includes several optimization features:
 
-Below is the original README.md file.
+- **Code Splitting**: Vendor chunks are automatically separated
+```typescript
+manualChunks: {
+  vendor: ['react', 'react-dom', 'framer-motion', '@emotion/react', '@emotion/styled'],
+  icons: ['react-icons']
+}
+```
 
----
+- **Compression**: Both Brotli and Gzip compression are enabled
+  - Brotli: Level 11 compression
+  - Gzip: Level 9 compression
+  - Threshold: 512 bytes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- **Bundle Analysis**: Visualize your bundle size
+```bash
+npm run build
+# Opens bundle analysis in browser automatically
+```
 
-Currently, two official plugins are available:
+### Performance Monitoring
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Bundle size visualization with `rollup-plugin-visualizer`
+- Compressed size reporting
+- Chunk size warnings (limit: 1000kb)
+
+## 📦 Available Scripts
+
+- `npm run dev`: Start development server
+- `npm run build`: Build for production
+- `npm run preview`: Preview production build
+- `npm run lint`: Lint code
+
+## 🔧 System Requirements
+
+- Node.js 18+
+- npm 7+
+
+## 📄 License
+
+MIT License - feel free to use this template for your portfolio!
