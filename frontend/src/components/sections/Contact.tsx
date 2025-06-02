@@ -199,18 +199,32 @@ const Contact = () => {
               aria-label="Send me an email at your.email@example.com"
             >
               <FaEnvelope aria-hidden="true" />
-              <span>your.email@example.com</span>
+              <span>jamiebort@gmail.com</span>
             </ContactEmail>
             <SocialLinks variants={itemVariants} role="list" aria-label="Social media links">
-              <SocialLink href="https://github.com" target="_blank" rel="noopener noreferrer" whileHover={{ y: -5 }} role="listitem" aria-label="Visit my GitHub profile">
+              <SocialLink
+                href="https://github.com/jamiebort/"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ y: -5 }}
+                role="listitem"
+                aria-label="Visit my GitHub profile"
+              >
                 <FaGithub aria-hidden="true" />
                 <span className="sr-only">GitHub</span>
               </SocialLink>
-              <SocialLink href="https://linkedin.com" target="_blank" rel="noopener noreferrer" whileHover={{ y: -5 }} role="listitem" aria-label="Connect with me on LinkedIn">
+              <SocialLink
+                href="https://www.linkedin.com/in/jamie-bort"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ y: -5 }}
+                role="listitem"
+                aria-label="Connect with me on LinkedIn"
+              >
                 <FaLinkedin aria-hidden="true" />
                 <span className="sr-only">LinkedIn</span>
               </SocialLink>
-              <SocialLink href="https://twitter.com" target="_blank" rel="noopener noreferrer" whileHover={{ y: -5 }} role="listitem" aria-label="Follow me on Twitter">
+              <SocialLink href="http://twitter.com/jamiebort" target="_blank" rel="noopener noreferrer" whileHover={{ y: -5 }} role="listitem" aria-label="Follow me on Twitter">
                 <FaTwitter aria-hidden="true" />
                 <span className="sr-only">Twitter</span>
               </SocialLink>
