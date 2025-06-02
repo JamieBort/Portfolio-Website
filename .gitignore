@@ -25,7 +25,7 @@ coverage
 
 # production
 dist
-frontend/build/
+# frontend/build/
 
 # misc
 .env*
