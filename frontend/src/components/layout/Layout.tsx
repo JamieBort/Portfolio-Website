@@ -4,6 +4,7 @@ import { ReactNode, useEffect } from "react";
 import { theme } from "../../styles/theme";
 import { FloatingNav } from "../navigation/FloatingNav";
 import { useKeyboardNavigation } from "../../hooks/useKeyboardNavigation";
+// import logo from "../../assets/gpl-v3-logo.svg";
 
 interface LayoutProps {
   children: ReactNode;
@@ -197,7 +198,11 @@ export const Layout = ({ children }: LayoutProps) => {
       <FloatingNav />
       <Footer role="contentinfo">
         <div className="container">
-          <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          {/* <p>© {new Date().getFullYear()}</p> */}
+          <p>
+            <img src={"https://www.gnu.org/graphics/gplv3-or-later.svg"} alt="User Avatar" />
+            {/* <img src={logo} alt="User Avatar" /> */}
+          </p>
         </div>
       </Footer>
     </LayoutWrapper>

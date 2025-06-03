@@ -1,7 +1,11 @@
-import styled from '@emotion/styled';
-import { motion } from 'framer-motion';
-import { theme } from '../../styles/theme';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import styled from "@emotion/styled";
+import { motion } from "framer-motion";
+import { theme } from "../../styles/theme";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+// import assets  from "../../assets";
+import myImage01 from "../../assets/portfolio_website.png";
+// import myImage02 from "../../assets/portfolio_website.png";
+import myImage03 from "../../assets/portfolio_website03.png";
 
 const ProjectsSection = styled.section`
   min-height: 100vh;
@@ -22,9 +26,9 @@ const SectionTitle = styled(motion.h2)`
   margin-bottom: calc(${theme.spacing.xl} * 1.5);
   color: ${theme.colors.textLight};
   position: relative;
-  
+
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -${theme.spacing.md};
     left: 50%;
@@ -73,7 +77,7 @@ const ProjectCard = styled(motion.div)`
 const ProjectImage = styled.div<{ imageUrl: string }>`
   width: 100%;
   height: 180px;
-  background-image: url(${props => props.imageUrl});
+  background-image: url(${(props) => props.imageUrl});
   background-size: cover;
   background-position: center;
   position: relative;
@@ -83,7 +87,7 @@ const ProjectImage = styled.div<{ imageUrl: string }>`
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -159,14 +163,14 @@ const ProjectLinks = styled.div`
   margin-top: auto;
   padding-top: ${theme.spacing.md};
   border-top: 1px solid rgba(255, 255, 255, 0.05);
-  
+
   a {
     color: ${theme.colors.accent};
     font-size: clamp(1rem, 2vw, 1.2rem);
     transition: all ${theme.transitions.default};
     padding: ${theme.spacing.xs};
     border-radius: 4px;
-    
+
     &:hover {
       color: ${theme.colors.light};
       background: ${theme.colors.glass.card};
@@ -178,21 +182,23 @@ const ProjectLinks = styled.div`
 const projects = [
   {
     id: 1,
-    title: "Project One",
-    description: "A full-stack web application with real-time features and modern UI/UX design.",
-    image: "https://via.placeholder.com/400x200",
-    techStack: ["React", "Node.js", "MongoDB", "Socket.IO"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
+    title: "Portfolio Website",
+    description:
+      "This is where I share a bit about myself, showcase what I've been working on, and share where you can find me online. It is build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend.",
+    image: myImage01,
+    techStack: ["React", "Node.js"],
+    githubUrl: "https://github.com/JamieBort/Portfolio-Website",
+    liveUrl: "https://jamiebort.com/",
   },
   {
     id: 2,
-    title: "Project Two",
-    description: "Mobile-first e-commerce platform with seamless payment integration.",
-    image: "https://via.placeholder.com/400x200",
+    title: "Personal Dashboard",
+    description:
+      "A website for displaying and analyzing important daily data. Such as blood glucose numbers and upcoming events. Using Svelt TypeScript front end and Java backend. Which database is yet to be seen. It will use authentication.",
+    image: myImage03,
     techStack: ["Next.js", "TypeScript", "Stripe", "Tailwind"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
+    githubUrl: "https://github.com/JamieBort/Personal-Dashboard",
+    liveUrl: "https://jamiebort.github.io/Personal-Dashboard/",
   },
 ];
 
@@ -221,66 +227,37 @@ const Projects = () => {
   return (
     <ProjectsSection id="projects" role="region" aria-label="Featured Projects">
       <div className="container">
-        <SectionTitle
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          role="heading"
-          aria-level={2}
-        >
+        <SectionTitle initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} role="heading" aria-level={2}>
           Featured Projects
         </SectionTitle>
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
+        <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <ProjectGrid role="list">
-          {projects.map((project) => (
-            <ProjectCard 
-              key={project.id} 
-              variants={itemVariants}
-              role="listitem"
-              aria-labelledby={`project-title-${project.id}`}
-            >
-              <ProjectImage 
-                imageUrl={project.image} 
-                role="img" 
-                aria-label={`Screenshot of ${project.title}`} 
-              />
-              <ProjectContent>
-                <ProjectTitle id={`project-title-${project.id}`}>{project.title}</ProjectTitle>
-                <ProjectDescription>{project.description}</ProjectDescription>
-                <TechStack role="list" aria-label={`Technologies used in ${project.title}`}>
-                  {project.techStack.map((tech) => (
-                    <TechTag key={tech} role="listitem">{tech}</TechTag>
-                  ))}
-                </TechStack>
-                <ProjectLinks>
-                  <a 
-                    href={project.githubUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    aria-label={`View ${project.title} source code on GitHub`}
-                  >
-                    <FaGithub aria-hidden="true" />
-                    <span className="sr-only">GitHub repository</span>
-                  </a>
-                  <a 
-                    href={project.liveUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    aria-label={`Visit ${project.title} live site`}
-                  >
-                    <FaExternalLinkAlt aria-hidden="true" />
-                    <span className="sr-only">Live site</span>
-                  </a>
-                </ProjectLinks>
-              </ProjectContent>
-            </ProjectCard>
-          ))}
+            {projects.map((project) => (
+              <ProjectCard key={project.id} variants={itemVariants} role="listitem" aria-labelledby={`project-title-${project.id}`}>
+                <ProjectImage imageUrl={project.image} role="img" aria-label={`Screenshot of ${project.title}`} />
+                <ProjectContent>
+                  <ProjectTitle id={`project-title-${project.id}`}>{project.title}</ProjectTitle>
+                  <ProjectDescription>{project.description}</ProjectDescription>
+                  <TechStack role="list" aria-label={`Technologies used in ${project.title}`}>
+                    {project.techStack.map((tech) => (
+                      <TechTag key={tech} role="listitem">
+                        {tech}
+                      </TechTag>
+                    ))}
+                  </TechStack>
+                  <ProjectLinks>
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} source code on GitHub`}>
+                      <FaGithub aria-hidden="true" />
+                      <span className="sr-only">GitHub repository</span>
+                    </a>
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${project.title} live site`}>
+                      <FaExternalLinkAlt aria-hidden="true" />
+                      <span className="sr-only">Live site</span>
+                    </a>
+                  </ProjectLinks>
+                </ProjectContent>
+              </ProjectCard>
+            ))}
           </ProjectGrid>
         </motion.div>
       </div>

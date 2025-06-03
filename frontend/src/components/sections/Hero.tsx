@@ -135,6 +135,10 @@ export const Hero = () => {
             <Description role="paragraph">
               I create elegant solutions to complex problems, specializing in modern web development with a focus on user experience and clean code.
             </Description>
+            <Description role="paragraph">
+              I write code and teach at [Code the Dream](https://codethedream.org/), a software boot camp for underrepresented people. Below you will find some of my Projects.
+            </Description>
+            <Description role="paragraph">When I am not coding I am working on my next presentation or mentoring; both of which push me to learn and grow.</Description>
             <SocialLinks role="list" aria-label="Social media links">
               <a href="https://github.com/jamiebort/" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile" role="listitem">
                 <Suspense fallback={<div style={{ width: "1.5rem", height: "1.5rem" }} />}>
