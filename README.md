@@ -66,4 +66,4 @@ You can find the full text in this [COPYING.txt](COPYING.txt) file.
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-![Static Badge](https://img.shields.io/badge/Last_Updated-2024_May_28-gold)
+![Static Badge](https://img.shields.io/badge/Last_Updated-2025_June_02-gold)
