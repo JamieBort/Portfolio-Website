@@ -4,8 +4,7 @@ import { theme } from "../../styles/theme";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 // import assets  from "../../assets";
 import myImage01 from "../../assets/portfolio_website.png";
-// import myImage02 from "../../assets/portfolio_website.png";
-import myImage03 from "../../assets/portfolio_website03.png";
+import myImage02 from "../../assets/personal_dashboard.png";
 
 const ProjectsSection = styled.section`
   min-height: 100vh;
@@ -195,7 +194,7 @@ const projects = [
     title: "Personal Dashboard",
     description:
       "A website for displaying and analyzing important daily data. Such as blood glucose numbers and upcoming events. Using Svelt TypeScript front end and Java backend. Which database is yet to be seen. It will use authentication.",
-    image: myImage03,
+    image: myImage02,
     techStack: ["Next.js", "TypeScript", "Tailwind"],
     githubUrl: "https://github.com/JamieBort/Personal-Dashboard",
     liveUrl: "https://jamiebort.github.io/Personal-Dashboard/",

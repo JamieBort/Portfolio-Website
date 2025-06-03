@@ -127,19 +127,19 @@ export const About = () => {
         <AboutContent>
           <div>
             <Title role="heading" aria-level={2}>
-              Hi, I am Jamie Bort
+              Hi. I am Jamie Bort.
             </Title>
             <Subtitle role="heading" aria-level={3}>
               Full Stack Developer
             </Subtitle>
             <Description role="paragraph">
-              I create elegant solutions to complex problems, specializing in modern web development with a focus on user experience and clean code.
+              <p>I create elegant solutions to complex problems, specializing in modern web development with a focus on user experience and clean code.</p>
+              <p>
+                I write code and teach at <a href="https://codethedream.org/">Code the Dream</a>, a software boot camp for underrepresented people. Below you will find some of my
+                Projects.
+              </p>
+              <p>When I am not coding I am working on my next presentation or mentoring; both of which push me to learn and grow.</p>
             </Description>
-            <Description role="paragraph">
-              I write code and teach at <a href="https://codethedream.org/">Code the Dream</a>, a software boot camp for underrepresented people. Below you will find some of my
-              Projects.
-            </Description>
-            <Description role="paragraph">When I am not coding I am working on my next presentation or mentoring; both of which push me to learn and grow.</Description>
             <SocialLinks role="list" aria-label="Social media links">
               <a href="https://github.com/jamiebort/" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile" role="listitem">
                 <Suspense fallback={<div style={{ width: "1.5rem", height: "1.5rem" }} />}>
@@ -153,7 +153,7 @@ export const About = () => {
                 </Suspense>
                 <span className="sr-only">LinkedIn</span>
               </a>
-              <a href="mailto:jamiebort@gmail.com" aria-label="Send me an email" role="listitem">
+              <a href="mailto:jamiebort@gmail.com" aria-label="Send me an email at jamiebort@gmail.com" role="listitem">
                 <Suspense fallback={<div style={{ width: "1.5rem", height: "1.5rem" }} />}>
                   <FaEnvelope aria-hidden="true" />
                 </Suspense>

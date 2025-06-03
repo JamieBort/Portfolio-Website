@@ -191,14 +191,14 @@ const Contact = () => {
               I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!
             </ContactText>
             <ContactEmail
-              href="mailto:your.email@example.com"
+              href="mailto:jamiebort@gmail.com"
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              aria-label="Send me an email at your.email@example.com"
+              aria-label="Send me an email at jamiebort@gmail.com"
             >
               <FaEnvelope aria-hidden="true" />
-              <span>your.email@example.com</span>
+              <span>jamiebort@gmail.com</span>
             </ContactEmail>
             <SocialLinks variants={itemVariants} role="list" aria-label="Social media links">
               <SocialLink

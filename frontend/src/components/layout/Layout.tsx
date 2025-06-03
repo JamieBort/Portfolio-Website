@@ -200,11 +200,18 @@ export const Layout = ({ children }: LayoutProps) => {
       <FloatingNav />
       <Footer role="contentinfo">
         <div className="container">
+          {/* Original */}
           {/* <p>© {new Date().getFullYear()}</p> */}
-          <p>
-            <img src={"https://www.gnu.org/graphics/gplv3-or-later.svg"} alt="User Avatar" />
-            {/* <img src={logo} alt="User Avatar" /> */}
-          </p>
+          {/* <img
+            src={"https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/License_icon-gpl-3.svg/256px-License_icon-gpl-3.svg.png"}
+            style={{ margin: "auto", width: `5%`, height: `auto` }}
+          /> */}
+
+          <img
+            src={"https://user-images.githubusercontent.com/1911063/27259538-8770ecaa-5415-11e7-8788-87c1ef9b2c21.png"}
+            style={{ margin: "auto", width: `5%`, height: `auto` }}
+          />
+          {/* <img src={"https://www.gnu.org/graphics/gplv3-or-later.svg"} style={{ margin: "auto", width: `5%`, height: `auto` }} /> */}
         </div>
       </Footer>
     </LayoutWrapper>
