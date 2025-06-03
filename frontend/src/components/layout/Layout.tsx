@@ -4,7 +4,6 @@ import { ReactNode, useEffect } from "react";
 import { theme } from "../../styles/theme";
 import { FloatingNav } from "../navigation/FloatingNav";
 import { useKeyboardNavigation } from "../../hooks/useKeyboardNavigation";
-// import logo from "../../assets/gpl-v3-logo.svg";
 
 interface LayoutProps {
   children: ReactNode;
