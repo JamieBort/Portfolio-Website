@@ -1,10 +1,10 @@
-import styled from '@emotion/styled';
-import { theme } from '../../styles/theme';
-import { keyframes } from '@emotion/react';
-import { lazy, Suspense } from 'react';
-const FaGithub = lazy(() => import('react-icons/fa').then(mod => ({ default: mod.FaGithub })));
-const FaLinkedin = lazy(() => import('react-icons/fa').then(mod => ({ default: mod.FaLinkedin })));
-const FaEnvelope = lazy(() => import('react-icons/fa').then(mod => ({ default: mod.FaEnvelope })));
+import styled from "@emotion/styled";
+import { theme } from "../../styles/theme";
+import { keyframes } from "@emotion/react";
+import { lazy, Suspense } from "react";
+const FaGithub = lazy(() => import("react-icons/fa").then((mod) => ({ default: mod.FaGithub })));
+const FaLinkedin = lazy(() => import("react-icons/fa").then((mod) => ({ default: mod.FaLinkedin })));
+const FaEnvelope = lazy(() => import("react-icons/fa").then((mod) => ({ default: mod.FaEnvelope })));
 
 const HeroSection = styled.section`
   min-height: calc(100vh - 4.5rem);
@@ -23,7 +23,7 @@ const HeroSection = styled.section`
     max-width: 1200px;
     margin: 0 auto;
     width: 95%;
-    
+
     @media (min-width: ${theme.breakpoints.sm}) {
       width: 90%;
     }
@@ -91,7 +91,7 @@ const SocialLinks = styled.div`
   opacity: 0;
   display: flex;
   gap: ${theme.spacing.md};
-  
+
   a {
     color: ${theme.colors.textLight};
     font-size: 1.5rem;
@@ -102,7 +102,7 @@ const SocialLinks = styled.div`
     align-items: center;
     justify-content: center;
     background: ${theme.colors.glass.background};
-    
+
     &:hover {
       color: ${theme.colors.light};
       transform: translateY(-3px);
@@ -113,7 +113,7 @@ const SocialLinks = styled.div`
 
   @media (min-width: ${theme.breakpoints.md}) {
     gap: ${theme.spacing.lg};
-    
+
     a {
       font-size: 1.75rem;
     }
@@ -127,46 +127,29 @@ export const Hero = () => {
         <HeroContent>
           <div>
             <Title role="heading" aria-level={2}>
-              Hi, I'm [Your Name]
+              Hi
             </Title>
             <Subtitle role="heading" aria-level={3}>
               Full Stack Developer
             </Subtitle>
             <Description role="paragraph">
-              I create elegant solutions to complex problems, specializing in modern web development
-              with a focus on user experience and clean code.
+              I create elegant solutions to complex problems, specializing in modern web development with a focus on user experience and clean code.
             </Description>
             <SocialLinks role="list" aria-label="Social media links">
-              <a 
-                href="https://github.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                aria-label="Visit my GitHub profile"
-                role="listitem"
-              >
-                <Suspense fallback={<div style={{ width: '1.5rem', height: '1.5rem' }} />}>
+              <a href="https://github.com/jamiebort/" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile" role="listitem">
+                <Suspense fallback={<div style={{ width: "1.5rem", height: "1.5rem" }} />}>
                   <FaGithub aria-hidden="true" />
                 </Suspense>
                 <span className="sr-only">GitHub</span>
               </a>
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                aria-label="Visit my LinkedIn profile"
-                role="listitem"
-              >
-                <Suspense fallback={<div style={{ width: '1.5rem', height: '1.5rem' }} />}>
+              <a href="https://www.linkedin.com/in/jamie-bort" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile" role="listitem">
+                <Suspense fallback={<div style={{ width: "1.5rem", height: "1.5rem" }} />}>
                   <FaLinkedin aria-hidden="true" />
                 </Suspense>
                 <span className="sr-only">LinkedIn</span>
               </a>
-              <a 
-                href="mailto:your.email@example.com"
-                aria-label="Send me an email"
-                role="listitem"
-              >
-                <Suspense fallback={<div style={{ width: '1.5rem', height: '1.5rem' }} />}>
+              <a href="mailto:jamiebort@gmail.com" aria-label="Send me an email" role="listitem">
+                <Suspense fallback={<div style={{ width: "1.5rem", height: "1.5rem" }} />}>
                   <FaEnvelope aria-hidden="true" />
                 </Suspense>
                 <span className="sr-only">Email</span>

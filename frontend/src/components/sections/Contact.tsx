@@ -1,7 +1,7 @@
-import styled from '@emotion/styled';
-import { motion } from 'framer-motion';
-import { theme } from '../../styles/theme';
-import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import styled from "@emotion/styled";
+import { motion } from "framer-motion";
+import { theme } from "../../styles/theme";
+import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const ContactSection = styled.section`
   position: relative;
@@ -41,7 +41,7 @@ const SectionTitle = styled(motion.h2)`
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -${theme.spacing.md};
     left: 50%;
@@ -182,28 +182,15 @@ const Contact = () => {
   return (
     <ContactSection id="contact" role="region" aria-label="Contact Information">
       <div className="container">
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          <SectionTitle 
-            variants={itemVariants}
-            role="heading"
-            aria-level={2}
-          >
+        <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+          <SectionTitle variants={itemVariants} role="heading" aria-level={2}>
             Get In Touch
           </SectionTitle>
           <ContactContent role="article">
-            <ContactText 
-              variants={itemVariants}
-              role="paragraph"
-            >
-              I'm always interested in hearing about new projects and opportunities.
-              Whether you have a question or just want to say hi, feel free to reach out!
+            <ContactText variants={itemVariants} role="paragraph">
+              I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!
             </ContactText>
-            <ContactEmail 
+            <ContactEmail
               href="mailto:your.email@example.com"
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
@@ -213,13 +200,9 @@ const Contact = () => {
               <FaEnvelope aria-hidden="true" />
               <span>your.email@example.com</span>
             </ContactEmail>
-            <SocialLinks 
-              variants={itemVariants}
-              role="list"
-              aria-label="Social media links"
-            >
-              <SocialLink 
-                href="https://github.com"
+            <SocialLinks variants={itemVariants} role="list" aria-label="Social media links">
+              <SocialLink
+                href="https://github.com/jamiebort/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -5 }}
@@ -229,8 +212,8 @@ const Contact = () => {
                 <FaGithub aria-hidden="true" />
                 <span className="sr-only">GitHub</span>
               </SocialLink>
-              <SocialLink 
-                href="https://linkedin.com"
+              <SocialLink
+                href="https://www.linkedin.com/in/jamie-bort"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -5 }}
@@ -240,14 +223,7 @@ const Contact = () => {
                 <FaLinkedin aria-hidden="true" />
                 <span className="sr-only">LinkedIn</span>
               </SocialLink>
-              <SocialLink 
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ y: -5 }}
-                role="listitem"
-                aria-label="Follow me on Twitter"
-              >
+              <SocialLink href="https://twitter.com/jamiebort/" target="_blank" rel="noopener noreferrer" whileHover={{ y: -5 }} role="listitem" aria-label="Follow me on Twitter">
                 <FaTwitter aria-hidden="true" />
                 <span className="sr-only">Twitter</span>
               </SocialLink>
