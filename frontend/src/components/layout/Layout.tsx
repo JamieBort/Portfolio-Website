@@ -169,6 +169,9 @@ export const Layout = ({ children }: LayoutProps) => {
       <SkipLink href="#main-content">Skip to main content</SkipLink>
 
       <Header role="banner">
+        {/* TODO: Address Resume button. It is getting cut off in mobile. */}
+        {/* TODO: Figure out where and how to have two resumes. */}
+        {/* TODO: Figure out where and how to have a language toggle button. */}
         <Nav role="navigation" aria-label="Main navigation">
           <div className="container">
             <Logo initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} role="heading" aria-level={1}>
