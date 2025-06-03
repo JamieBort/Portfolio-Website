@@ -1,7 +1,7 @@
-import styled from '@emotion/styled';
-import { motion, useScroll, useSpring } from 'framer-motion';
-import { theme } from '../../styles/theme';
-import { useEffect, useState } from 'react';
+import styled from "@emotion/styled";
+import { motion, useScroll, useSpring } from "framer-motion";
+import { theme } from "../../styles/theme";
+import { useEffect, useState } from "react";
 
 const NavContainer = styled(motion.nav)`
   position: fixed;
@@ -16,9 +16,7 @@ const NavContainer = styled(motion.nav)`
   display: flex;
   flex-direction: column;
   gap: ${theme.spacing.md};
-  box-shadow: 
-    0 4px 24px rgba(0, 0, 0, 0.1),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
 
   @media print {
     display: none;
@@ -41,11 +39,11 @@ const NavDot = styled(motion.button)<{ active: boolean }>`
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: ${props => props.active ? theme.colors.accent : 'rgba(255, 255, 255, 0.3)'};
-  border: 2px solid ${props => props.active ? theme.colors.accent : 'rgba(255, 255, 255, 0.5)'};
+  background: ${(props) => (props.active ? theme.colors.accent : "rgba(255, 255, 255, 0.3)")};
+  border: 2px solid ${(props) => (props.active ? theme.colors.accent : "rgba(255, 255, 255, 0.5)")};
   cursor: pointer;
   position: relative;
-  opacity: ${props => props.active ? 1 : 0.7};
+  opacity: ${(props) => (props.active ? 1 : 0.7)};
   transition: all ${theme.transitions.default};
 
   @media (max-width: ${theme.breakpoints.sm}) {
@@ -57,14 +55,12 @@ const NavDot = styled(motion.button)<{ active: boolean }>`
     opacity: 1;
     transform: scale(1.2);
     border-color: ${theme.colors.accent};
-    background: ${props => props.active ? theme.colors.accent : 'rgba(255, 255, 255, 0.5)'};
+    background: ${(props) => (props.active ? theme.colors.accent : "rgba(255, 255, 255, 0.5)")};
   }
 
   &:focus {
     outline: none;
-    box-shadow: 
-      0 0 0 2px ${theme.colors.accent}40,
-      0 0 0 4px ${theme.colors.accent}20;
+    box-shadow: 0 0 0 2px ${theme.colors.accent}40, 0 0 0 4px ${theme.colors.accent}20;
   }
 
   &::before {
@@ -81,9 +77,7 @@ const NavDot = styled(motion.button)<{ active: boolean }>`
     opacity: 0;
     pointer-events: none;
     transition: all ${theme.transitions.default};
-    box-shadow: 
-      0 4px 12px rgba(0, 0, 0, 0.1),
-      inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
     color: ${theme.colors.light};
     font-weight: 500;
     letter-spacing: 0.5px;
@@ -120,11 +114,7 @@ const ProgressBar = styled(motion.div)`
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(
-    90deg,
-    ${theme.colors.accent},
-    ${theme.colors.accent}dd
-  );
+  background: linear-gradient(90deg, ${theme.colors.accent}, ${theme.colors.accent}dd);
   transform-origin: 0%;
   z-index: 1000;
   box-shadow: 0 0 10px ${theme.colors.accent}80;
@@ -139,25 +129,25 @@ const ProgressBar = styled(motion.div)`
 `;
 
 const sections = [
-  { id: 'hero', name: 'Home' },
-  { id: 'projects', name: 'Projects' },
-  { id: 'skills', name: 'Skills' },
-  { id: 'contact', name: 'Contact' }
+  { id: "about", name: "Home" },
+  { id: "projects", name: "Projects" },
+  { id: "skills", name: "Skills" },
+  { id: "contact", name: "Contact" },
 ];
 
 export const FloatingNav = () => {
-  const [activeSection, setActiveSection] = useState('hero');
+  const [activeSection, setActiveSection] = useState("about");
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
-    restDelta: 0.001
+    restDelta: 0.001,
   });
 
   useEffect(() => {
     const handleScroll = () => {
       const windowHeight = window.innerHeight;
-      
+
       // Find which section is currently in view
       sections.forEach(({ id, name }) => {
         const element = document.getElementById(id);
@@ -166,7 +156,7 @@ export const FloatingNav = () => {
           if (top <= windowHeight / 2 && bottom >= windowHeight / 2) {
             setActiveSection(id);
             // Update aria-live region
-            const liveRegion = document.getElementById('section-announcer');
+            const liveRegion = document.getElementById("section-announcer");
             if (liveRegion) {
               liveRegion.textContent = `Current section: ${name}`;
             }
@@ -175,56 +165,46 @@ export const FloatingNav = () => {
       });
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleKeyDown = (e: React.KeyboardEvent, sectionId: string) => {
-    if (e.key === 'Enter' || e.key === ' ') {
+    if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
-      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
-    } else if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+    } else if (e.key === "ArrowUp" || e.key === "ArrowDown") {
       e.preventDefault();
       const currentIndex = sections.findIndex(({ id }) => id === sectionId);
-      const nextIndex = e.key === 'ArrowUp' 
-        ? Math.max(0, currentIndex - 1)
-        : Math.min(sections.length - 1, currentIndex + 1);
-      
+      const nextIndex = e.key === "ArrowUp" ? Math.max(0, currentIndex - 1) : Math.min(sections.length - 1, currentIndex + 1);
+
       const nextSection = sections[nextIndex];
-      document.getElementById(nextSection.id)?.scrollIntoView({ behavior: 'smooth' });
+      document.getElementById(nextSection.id)?.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
     <>
-      <ProgressBar 
-        style={{ scaleX }} 
-        role="progressbar" 
+      <ProgressBar
+        style={{ scaleX }}
+        role="progressbar"
         aria-label="Reading progress"
         aria-valuemin={0}
         aria-valuemax={100}
         aria-valuenow={Math.round(scrollYProgress.get() * 100)}
       />
-      <div 
-        id="section-announcer" 
-        className="sr-only" 
-        role="status" 
-        aria-live="polite"
-      />
-      <NavContainer
-        role="navigation"
-        aria-label="Section navigation"
-      >
+      <div id="section-announcer" className="sr-only" role="status" aria-live="polite" />
+      <NavContainer role="navigation" aria-label="Section navigation">
         {sections.map(({ id, name }) => (
           <NavDot
             key={id}
             active={activeSection === id}
-            onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })}
             onKeyDown={(e) => handleKeyDown(e, id)}
             data-tooltip={name}
             tabIndex={0}
-            aria-label={`${name} section ${activeSection === id ? '(current section)' : ''}`}
-            aria-current={activeSection === id ? 'true' : undefined}
+            aria-label={`${name} section ${activeSection === id ? "(current section)" : ""}`}
+            aria-current={activeSection === id ? "true" : undefined}
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
             role="button"

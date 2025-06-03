@@ -6,7 +6,7 @@ const FaGithub = lazy(() => import("react-icons/fa").then((mod) => ({ default: m
 const FaLinkedin = lazy(() => import("react-icons/fa").then((mod) => ({ default: mod.FaLinkedin })));
 const FaEnvelope = lazy(() => import("react-icons/fa").then((mod) => ({ default: mod.FaEnvelope })));
 
-const HeroSection = styled.section`
+const AboutSection = styled.section`
   min-height: calc(100vh - 4.5rem);
   display: flex;
   align-items: center;
@@ -30,7 +30,7 @@ const HeroSection = styled.section`
   }
 `;
 
-const HeroContent = styled.div`
+const AboutContent = styled.div`
   position: relative;
   z-index: 1;
   max-width: 1000px;
@@ -120,11 +120,11 @@ const SocialLinks = styled.div`
   }
 `;
 
-export const Hero = () => {
+export const About = () => {
   return (
-    <HeroSection id="hero" role="region" aria-label="Introduction">
+    <AboutSection id="about" role="region" aria-label="Introduction">
       <div className="container">
-        <HeroContent>
+        <AboutContent>
           <div>
             <Title role="heading" aria-level={2}>
               Hi
@@ -160,8 +160,8 @@ export const Hero = () => {
               </a>
             </SocialLinks>
           </div>
-        </HeroContent>
+        </AboutContent>
       </div>
-    </HeroSection>
+    </AboutSection>
   );
 };

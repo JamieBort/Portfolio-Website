@@ -1,15 +1,15 @@
-import { lazy, Suspense } from 'react';
-import { Layout } from './components/layout/Layout';
-import { Hero } from './components/sections/Hero';
-import { GlobalStyles } from './styles/GlobalStyles';
-import { ThemeProvider } from '@emotion/react';
-import { theme } from './styles/theme';
-import styled from '@emotion/styled';
+import { lazy, Suspense } from "react";
+import { Layout } from "./components/layout/Layout";
+import { About } from "./components/sections/About";
+import { GlobalStyles } from "./styles/GlobalStyles";
+import { ThemeProvider } from "@emotion/react";
+import { theme } from "./styles/theme";
+import styled from "@emotion/styled";
 
 // Lazy load non-critical components
-const Projects = lazy(() => import('./components/sections/Projects'));
-const Skills = lazy(() => import('./components/sections/Skills'));
-const Contact = lazy(() => import('./components/sections/Contact'));
+const Projects = lazy(() => import("./components/sections/Projects"));
+const Skills = lazy(() => import("./components/sections/Skills"));
+const Contact = lazy(() => import("./components/sections/Contact"));
 
 // Loading fallback component
 const LoadingFallback = styled.div`
@@ -21,7 +21,7 @@ const LoadingFallback = styled.div`
   backdrop-filter: blur(8px);
   color: ${theme.colors.accent};
   font-size: 1.2rem;
-  
+
   @media print {
     display: none;
   }
@@ -32,9 +32,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Layout>
-        {/* Hero section is critical for LCP, so keep it eager loaded */}
-        <Hero />
-        
+        {/* About section is critical for LCP, so keep it eager loaded */}
+        <About />
+
         {/* Wrap non-critical sections in Suspense */}
         <Suspense fallback={<LoadingFallback>Loading projects...</LoadingFallback>}>
           <Projects />

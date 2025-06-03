@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
-const sections = ['hero', 'projects', 'skills', 'contact'];
+const sections = ["about", "projects", "skills", "contact"];
 
 export const useKeyboardNavigation = () => {
   useEffect(() => {
@@ -10,7 +10,7 @@ export const useKeyboardNavigation = () => {
         return;
       }
 
-      const currentSection = sections.find(section => {
+      const currentSection = sections.find((section) => {
         const element = document.getElementById(section);
         if (!element) return false;
         const rect = element.getBoundingClientRect();
@@ -20,32 +20,32 @@ export const useKeyboardNavigation = () => {
       const currentIndex = currentSection ? sections.indexOf(currentSection) : -1;
 
       switch (e.key) {
-        case 'ArrowDown':
-        case 'PageDown':
+        case "ArrowDown":
+        case "PageDown":
           e.preventDefault();
           if (currentIndex < sections.length - 1) {
-            document.getElementById(sections[currentIndex + 1])?.scrollIntoView({ behavior: 'smooth' });
+            document.getElementById(sections[currentIndex + 1])?.scrollIntoView({ behavior: "smooth" });
           }
           break;
-        case 'ArrowUp':
-        case 'PageUp':
+        case "ArrowUp":
+        case "PageUp":
           e.preventDefault();
           if (currentIndex > 0) {
-            document.getElementById(sections[currentIndex - 1])?.scrollIntoView({ behavior: 'smooth' });
+            document.getElementById(sections[currentIndex - 1])?.scrollIntoView({ behavior: "smooth" });
           }
           break;
-        case 'Home':
+        case "Home":
           e.preventDefault();
-          document.getElementById(sections[0])?.scrollIntoView({ behavior: 'smooth' });
+          document.getElementById(sections[0])?.scrollIntoView({ behavior: "smooth" });
           break;
-        case 'End':
+        case "End":
           e.preventDefault();
-          document.getElementById(sections[sections.length - 1])?.scrollIntoView({ behavior: 'smooth' });
+          document.getElementById(sections[sections.length - 1])?.scrollIntoView({ behavior: "smooth" });
           break;
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 };
