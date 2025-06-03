@@ -127,7 +127,7 @@ export const About = () => {
         <AboutContent>
           <div>
             <Title role="heading" aria-level={2}>
-              Hi
+              Hi, I am Jamie Bort
             </Title>
             <Subtitle role="heading" aria-level={3}>
               Full Stack Developer
@@ -136,7 +136,8 @@ export const About = () => {
               I create elegant solutions to complex problems, specializing in modern web development with a focus on user experience and clean code.
             </Description>
             <Description role="paragraph">
-              I write code and teach at [Code the Dream](https://codethedream.org/), a software boot camp for underrepresented people. Below you will find some of my Projects.
+              I write code and teach at <a href="https://codethedream.org/">Code the Dream</a>, a software boot camp for underrepresented people. Below you will find some of my
+              Projects.
             </Description>
             <Description role="paragraph">When I am not coding I am working on my next presentation or mentoring; both of which push me to learn and grow.</Description>
             <SocialLinks role="list" aria-label="Social media links">

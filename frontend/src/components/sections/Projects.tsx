@@ -196,7 +196,7 @@ const projects = [
     description:
       "A website for displaying and analyzing important daily data. Such as blood glucose numbers and upcoming events. Using Svelt TypeScript front end and Java backend. Which database is yet to be seen. It will use authentication.",
     image: myImage03,
-    techStack: ["Next.js", "TypeScript", "Stripe", "Tailwind"],
+    techStack: ["Next.js", "TypeScript", "Tailwind"],
     githubUrl: "https://github.com/JamieBort/Personal-Dashboard",
     liveUrl: "https://jamiebort.github.io/Personal-Dashboard/",
   },

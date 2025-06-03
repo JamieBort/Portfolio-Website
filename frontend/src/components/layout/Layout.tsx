@@ -188,6 +188,9 @@ export const Layout = ({ children }: LayoutProps) => {
               <a href="#contact" role="listitem" aria-label="Contact section">
                 Contact
               </a>
+              <a href="https://drive.google.com/file/d/1RE8huUCm6keRpVslsrlMBZrsiEVyzG5n/view" target="_blank" role="listitem" aria-label="Resume">
+                Resume
+              </a>
             </NavLinks>
           </div>
         </Nav>
