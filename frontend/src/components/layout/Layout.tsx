@@ -84,6 +84,7 @@ const Nav = styled.nav`
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
+    flex: 1;
   }
 `;
 
@@ -97,6 +98,10 @@ const Logo = styled(motion.div)`
 const NavLinks = styled.div`
   display: flex;
   gap: ${theme.spacing.lg};
+  flex: 2;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 
   a {
     color: ${theme.colors.textLight};
