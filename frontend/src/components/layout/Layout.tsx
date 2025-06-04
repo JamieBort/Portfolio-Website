@@ -80,11 +80,11 @@ const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex: 1;
     padding: 0 ${theme.spacing.md};
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
-    flex: 1;
   }
 `;
 
@@ -97,11 +97,11 @@ const Logo = styled(motion.div)`
 
 const NavLinks = styled.div`
   display: flex;
-  gap: ${theme.spacing.lg};
   flex: 2;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  gap: ${theme.spacing.lg};
 
   a {
     color: ${theme.colors.textLight};
