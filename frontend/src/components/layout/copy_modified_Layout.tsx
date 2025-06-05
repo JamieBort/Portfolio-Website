@@ -116,10 +116,53 @@ const NavLinks = styled.div`
     }
   }
 
+  .dropbtn {
+    // background-color: #04aa6d;
+    color: white;
+    // padding: 16px;
+    // font-size: 16px;
+    border: none;
+  }
+
+  .dropdown {
+    // position: relative;
+    // display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    // min-width: 160px;
+    // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    // z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    // padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    // background-color: #3e8e41;
+  }
+
   @media (max-width: ${theme.breakpoints.sm}) {
     gap: ${theme.spacing.md};
   }
 `;
+
+// const DropDown = styled.div``;
 
 const Main = styled.main`
   flex: 1;
@@ -195,9 +238,18 @@ export const Layout = ({ children }: LayoutProps) => {
               <a href="#contact" role="listitem" aria-label="Contact section">
                 Contact
               </a>
-              <a href="https://drive.google.com/file/d/1EiuH0xMwimVTgSHMx3w2GK1g-90HTeBq/view" aria-label="Resume">
-                Versión en español
-              </a>
+
+              <div role="listitem" className="dropdown">
+                <button className="dropbtn">Resume</button>
+                <div className="dropdown-content">
+                  <a href="https://drive.google.com/file/d/1RE8huUCm6keRpVslsrlMBZrsiEVyzG5n/view" target="_blank" aria-label="Resume">
+                    English Version
+                  </a>
+                  <a href="https://drive.google.com/file/d/1EiuH0xMwimVTgSHMx3w2GK1g-90HTeBq/view" aria-label="Resume">
+                    Versión en español
+                  </a>
+                </div>
+              </div>
             </NavLinks>
           </div>
         </Nav>
