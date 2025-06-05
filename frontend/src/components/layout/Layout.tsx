@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
-// import { ReactNode, useEffect } from "react";
+import { ReactNode, useEffect, useRef, useState } from "react";
 import { theme } from "../../styles/theme";
 import { FloatingNav } from "../navigation/FloatingNav";
 import { useKeyboardNavigation } from "../../hooks/useKeyboardNavigation";
@@ -8,7 +8,6 @@ import { useKeyboardNavigation } from "../../hooks/useKeyboardNavigation";
 /* ************* */
 /* ADDED CONTENT */
 // TODO: remove these comments
-import { ReactNode, useEffect, useRef, useState } from "react";
 
 const ResumeDropdown = () => {
   const [open, setOpen] = useState(false);
@@ -39,7 +38,11 @@ const ResumeDropdown = () => {
           cursor: "pointer",
           color: theme.colors.textLight,
           fontWeight: 500,
+          // padding: "0.25rem 0.5rem", // TODO: remove this
           padding: `${theme.spacing.xs} ${theme.spacing.sm}`,
+          fontSize: "inherit",
+          lineHeight: "1",
+          height: "100%",
           borderRadius: "4px",
         }}
       >
@@ -217,6 +220,10 @@ const NavLinks = styled.div`
       background-color: rgba(255, 255, 255, 0.1);
     }
   }
+  div:hover {
+    color: ${theme.colors.light};
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 
   /* ************* */
   /* ADDED CONTENT */
@@ -313,6 +320,7 @@ export const Layout = ({ children }: LayoutProps) => {
               {/* ADDED CONTENT */}
               {/* TODO: remove these comments */}
               <ResumeDropdown />
+              // TODO: KEEP THIS
               {/* <details role="listitem" aria-label="Resume links" style={{ position: "relative" }}>
                 <summary
                   aria-haspopup="menu"
