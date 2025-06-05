@@ -5,10 +5,6 @@ import { theme } from "../../styles/theme";
 import { FloatingNav } from "../navigation/FloatingNav";
 import { useKeyboardNavigation } from "../../hooks/useKeyboardNavigation";
 
-/* ************* */
-/* ADDED CONTENT */
-// TODO: remove these comments
-
 const ResumeDropdown = () => {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -38,7 +34,6 @@ const ResumeDropdown = () => {
           cursor: "pointer",
           color: theme.colors.textLight,
           fontWeight: 500,
-          // padding: "0.25rem 0.5rem", // TODO: remove this
           padding: `${theme.spacing.xs} ${theme.spacing.sm}`,
           fontSize: "inherit",
           lineHeight: "1",
@@ -105,10 +100,6 @@ const ResumeDropdown = () => {
     </div>
   );
 };
-
-// TODO: remove these comments
-/* ADDED CONTENT */
-/* ************* */
 
 interface LayoutProps {
   children: ReactNode;
@@ -225,12 +216,6 @@ const NavLinks = styled.div`
     background-color: rgba(255, 255, 255, 0.1);
   }
 
-  /* ************* */
-  /* ADDED CONTENT */
-  // TODO: remove these comments
-  /* ADDED CONTENT */
-  /* ************* */
-
   @media (max-width: ${theme.breakpoints.sm}) {
     gap: ${theme.spacing.md};
   }
@@ -284,19 +269,11 @@ export const Layout = ({ children }: LayoutProps) => {
     console.info("Keyboard Navigation:\n", "- Arrow Up/Down or PageUp/PageDown: Navigate between sections\n", "- Home: Go to top\n", "- End: Go to bottom");
   }, []);
 
-  // *************
-  // ADDED CONTENT
-  // TODO: remove these comments
-  // ADDED CONTENT
-  // *************
-
   return (
     <LayoutWrapper>
       <SkipLink href="#main-content">Skip to main content</SkipLink>
 
       <Header role="banner">
-        {/* TODO: Address Resume button. It is getting cut off in mobile. */}
-        {/* TODO: Figure out where and how to have two resumes. */}
         {/* TODO: Figure out where and how to have a language toggle button. */}
         <Nav role="navigation" aria-label="Main navigation">
           <div className="container">
@@ -316,73 +293,7 @@ export const Layout = ({ children }: LayoutProps) => {
               <a href="#contact" role="listitem" aria-label="Contact section">
                 Contact
               </a>
-              {/* ************* */}
-              {/* ADDED CONTENT */}
-              {/* TODO: remove these comments */}
               <ResumeDropdown />
-              // TODO: KEEP THIS
-              {/* <details role="listitem" aria-label="Resume links" style={{ position: "relative" }}>
-                <summary
-                  aria-haspopup="menu"
-                  aria-expanded="false"
-                  style={{
-                    listStyle: "none",
-                    cursor: "pointer",
-                    color: theme.colors.textLight,
-                    fontWeight: 500,
-                    padding: `${theme.spacing.xs} ${theme.spacing.sm}`,
-                    borderRadius: "4px",
-                    backgroundColor: "transparent",
-                  }}
-                  onMouseEnter={(e) => e.currentTarget.setAttribute("aria-expanded", "true")}
-                  onMouseLeave={(e) => e.currentTarget.setAttribute("aria-expanded", "false")}
-                >
-                  Resume
-                </summary>
-                <ul
-                  role="menu"
-                  aria-label="Resume submenu"
-                  style={{
-                    listStyle: "none",
-                    margin: 0,
-                    padding: `${theme.spacing.xs} 0`,
-                    position: "absolute",
-                    background: theme.colors.glass.background,
-                    borderRadius: "6px",
-                    boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
-                    top: "100%",
-                    left: 0,
-                    minWidth: "10rem",
-                    zIndex: 100,
-                  }}
-                >
-                  <li role="none">
-                    <a
-                      role="menuitem"
-                      href="https://drive.google.com/file/d/1RE8huUCm6keRpVslsrlMBZrsiEVyzG5n/view"
-                      target="_blank"
-                      aria-label="View Resume in English"
-                      style={{ display: "block", padding: `${theme.spacing.xs} ${theme.spacing.sm}`, color: theme.colors.textLight }}
-                    >
-                      English Version
-                    </a>
-                  </li>
-                  <li role="none">
-                    <a
-                      role="menuitem"
-                      href="https://drive.google.com/file/d/1EiuH0xMwimVTgSHMx3w2GK1g-90HTeBq/view"
-                      target="_blank"
-                      aria-label="Ver currículum en español"
-                      style={{ display: "block", padding: `${theme.spacing.xs} ${theme.spacing.sm}`, color: theme.colors.textLight }}
-                    >
-                      Versión en español 
-                    </a>
-                  </li>
-                </ul>
-              </details> */}
-              {/* TODO: remove these comments */}
-              {/* ADDED CONTENT */}
-              {/* ************* */}
             </NavLinks>
           </div>
         </Nav>
@@ -393,6 +304,7 @@ export const Layout = ({ children }: LayoutProps) => {
       <FloatingNav />
       <Footer role="contentinfo">
         <div className="container">
+          {/* TODO: Clean this area up. */}
           {/* Original */}
           {/* <p>© {new Date().getFullYear()}</p> */}
           {/* <img
