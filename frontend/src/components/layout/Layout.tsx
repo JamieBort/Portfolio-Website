@@ -68,6 +68,7 @@ const ResumeDropdown = () => {
               role="menuitem"
               href="https://drive.google.com/file/d/1RE8huUCm6keRpVslsrlMBZrsiEVyzG5n/view"
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="View Resume in English"
               onClick={handleLinkClick}
               style={{
@@ -84,6 +85,7 @@ const ResumeDropdown = () => {
               role="menuitem"
               href="https://drive.google.com/file/d/1EiuH0xMwimVTgSHMx3w2GK1g-90HTeBq/view"
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="Ver currículum en español"
               onClick={handleLinkClick}
               style={{
@@ -184,11 +186,19 @@ const Nav = styled.nav`
   }
 `;
 
-const Logo = styled(motion.div)`
+// const Logo = styled(motion.div)`
+//   color: ${theme.colors.light};
+//   font-family: ${theme.fonts.heading};
+//   font-size: 1.5rem;
+//   font-weight: 700;
+// `;
+
+const Logo = styled(motion.a)`
   color: ${theme.colors.light};
   font-family: ${theme.fonts.heading};
   font-size: 1.5rem;
   font-weight: 700;
+  text-decoration: none;
 `;
 
 const NavLinks = styled.div`
@@ -277,9 +287,23 @@ export const Layout = ({ children }: LayoutProps) => {
         {/* TODO: Figure out where and how to have a language toggle button. */}
         <Nav role="navigation" aria-label="Main navigation">
           <div className="container">
-            <Logo initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} role="heading" aria-level={1}>
+            {/* <h1 style={{ margin: 0 }}> */}
+            <Logo
+              href="https://jamiebort.com/"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              role="heading"
+              aria-level={1}
+              aria-label="Go to jamiebort.com homepage"
+            >
               Jamie Bort
             </Logo>
+            {/* </h1> */}
+
+            {/* <Logo initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} role="heading" aria-level={1}>
+              Jamie Bort
+            </Logo> */}
             <NavLinks role="list">
               <a href="#about" role="listitem" aria-label="About section">
                 About

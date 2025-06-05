@@ -126,12 +126,19 @@ export const About = () => {
       <div className="container">
         <AboutContent>
           <div>
+            <Subtitle role="heading" aria-level={3}>
+              Hi. I am a
+            </Subtitle>
             <Title role="heading" aria-level={2}>
+              Full Stack Developer
+            </Title>
+            {/* TODO: remove the comments */}
+            {/* <Title role="heading" aria-level={2}>
               Hi. I am Jamie Bort.
             </Title>
             <Subtitle role="heading" aria-level={3}>
               Full Stack Developer
-            </Subtitle>
+            </Subtitle> */}
             <Description role="paragraph">
               <p>I create elegant solutions to complex problems, specializing in modern web development with a focus on user experience and clean code.</p>
               <p>
