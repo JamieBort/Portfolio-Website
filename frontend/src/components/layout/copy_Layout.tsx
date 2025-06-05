@@ -116,6 +116,12 @@ const NavLinks = styled.div`
     }
   }
 
+  /* ************* */
+  /* ADDED CONTENT */
+  // TODO: remove these comments
+  /* ADDED CONTENT */
+  /* ************* */
+
   @media (max-width: ${theme.breakpoints.sm}) {
     gap: ${theme.spacing.md};
   }
@@ -169,6 +175,12 @@ export const Layout = ({ children }: LayoutProps) => {
     console.info("Keyboard Navigation:\n", "- Arrow Up/Down or PageUp/PageDown: Navigate between sections\n", "- Home: Go to top\n", "- End: Go to bottom");
   }, []);
 
+  // *************
+  // ADDED CONTENT
+  // TODO: remove these comments
+  // ADDED CONTENT
+  // *************
+
   return (
     <LayoutWrapper>
       <SkipLink href="#main-content">Skip to main content</SkipLink>
@@ -195,9 +207,70 @@ export const Layout = ({ children }: LayoutProps) => {
               <a href="#contact" role="listitem" aria-label="Contact section">
                 Contact
               </a>
-              <a href="https://drive.google.com/file/d/1EiuH0xMwimVTgSHMx3w2GK1g-90HTeBq/view" aria-label="Resume">
-                Versión en español
-              </a>
+              {/* ************* */}
+              {/* ADDED CONTENT */}
+              {/* TODO: remove these comments */}
+              <details role="listitem" aria-label="Resume links" style={{ position: "relative" }}>
+                <summary
+                  aria-haspopup="menu"
+                  aria-expanded="false"
+                  style={{
+                    cursor: "pointer",
+                    color: theme.colors.textLight,
+                    fontWeight: 500,
+                    padding: `${theme.spacing.xs} ${theme.spacing.sm}`,
+                    borderRadius: "4px",
+                    backgroundColor: "transparent",
+                  }}
+                  onMouseEnter={(e) => e.currentTarget.setAttribute("aria-expanded", "true")}
+                  onMouseLeave={(e) => e.currentTarget.setAttribute("aria-expanded", "false")}
+                >
+                  Resume
+                </summary>
+                <ul
+                  role="menu"
+                  aria-label="Resume submenu"
+                  style={{
+                    listStyle: "none",
+                    margin: 0,
+                    padding: `${theme.spacing.xs} 0`,
+                    position: "absolute",
+                    background: theme.colors.glass.background,
+                    borderRadius: "6px",
+                    boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+                    top: "100%",
+                    left: 0,
+                    minWidth: "10rem",
+                    zIndex: 100,
+                  }}
+                >
+                  <li role="none">
+                    <a
+                      role="menuitem"
+                      href="https://drive.google.com/file/d/1RE8huUCm6keRpVslsrlMBZrsiEVyzG5n/view"
+                      target="_blank"
+                      aria-label="View Resume in English"
+                      style={{ display: "block", padding: `${theme.spacing.xs} ${theme.spacing.sm}`, color: theme.colors.textLight }}
+                    >
+                      English Version
+                    </a>
+                  </li>
+                  <li role="none">
+                    <a
+                      role="menuitem"
+                      href="https://drive.google.com/file/d/1EiuH0xMwimVTgSHMx3w2GK1g-90HTeBq/view"
+                      target="_blank"
+                      aria-label="Ver currículum en español"
+                      style={{ display: "block", padding: `${theme.spacing.xs} ${theme.spacing.sm}`, color: theme.colors.textLight }}
+                    >
+                      Versión en español
+                    </a>
+                  </li>
+                </ul>
+              </details>
+              {/* TODO: remove these comments */}
+              {/* ADDED CONTENT */}
+              {/* ************* */}
             </NavLinks>
           </div>
         </Nav>

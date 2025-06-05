@@ -245,7 +245,7 @@ export const Layout = ({ children }: LayoutProps) => {
                   <a href="https://drive.google.com/file/d/1RE8huUCm6keRpVslsrlMBZrsiEVyzG5n/view" target="_blank" aria-label="Resume">
                     English Version
                   </a>
-                  <a href="https://drive.google.com/file/d/1EiuH0xMwimVTgSHMx3w2GK1g-90HTeBq/view" aria-label="Resume">
+                  <a href="https://drive.google.com/file/d/1EiuH0xMwimVTgSHMx3w2GK1g-90HTeBq/view" target="_blank" aria-label="Resume">
                     Versión en español
                   </a>
                 </div>
