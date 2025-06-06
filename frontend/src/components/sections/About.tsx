@@ -64,17 +64,18 @@ const Title = styled.h1`
   color: ${theme.colors.light};
   line-height: 1.1;
   letter-spacing: -0.02em;
-  white-space: nowrap;
+  // white-space: nowrap;
 `;
 
-const Subtitle = styled.h2`
-  animation: ${fadeUpKeyframes} 0.5s ease-out 0.2s forwards;
-  opacity: 0;
-  font-size: clamp(1.5rem, 3vw, 2.25rem);
-  margin-bottom: ${theme.spacing.lg};
-  opacity: 0.9;
-  font-weight: 500;
-`;
+// // NOTE: Not currently using this.
+// const Subtitle = styled.h2`
+//   animation: ${fadeUpKeyframes} 0.5s ease-out 0.2s forwards;
+//   opacity: 0;
+//   font-size: clamp(1.5rem, 3vw, 2.25rem);
+//   margin-bottom: ${theme.spacing.lg};
+//   opacity: 0.9;
+//   font-weight: 500;
+// `;
 
 const Description = styled.p`
   animation: ${fadeUpKeyframes} 0.5s ease-out 0.4s forwards;
@@ -126,17 +127,12 @@ export const About = () => {
       <div className="container">
         <AboutContent>
           <div>
-            <Subtitle role="heading" aria-level={3}>
-              Hi. I am a
-            </Subtitle>
             <Title role="heading" aria-level={2}>
               Full Stack Developer
             </Title>
-            {/* TODO: remove the comments */}
-            {/* <Title role="heading" aria-level={2}>
-              Hi. I am Jamie Bort.
-            </Title>
-            <Subtitle role="heading" aria-level={3}>
+            {/* ~~TODO: Remove the comments~~ */}
+            {/* TODO: Keep <<Subtitle> for now, in case I want to use it again. */}
+            {/* <Subtitle role="heading" aria-level={3}>
               Full Stack Developer
             </Subtitle> */}
             <Description role="paragraph">
