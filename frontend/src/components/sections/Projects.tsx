@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 import { theme } from "../../styles/theme";
@@ -43,8 +44,27 @@ const SectionTitle = styled(motion.h2)`
   }
 `;
 
+// Modified
 const ProjectGrid = styled.div`
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* optional: center items horizontally */
+  gap: ${theme.spacing.lg}; /* for spacing between items */
+  width: 100%;
+  margin-top: ${theme.spacing.lg};
+  align-items: stretch;
+
+  @media (min-width: ${theme.breakpoints.md}) {
+    gap: ${theme.spacing.xl};
+    margin-top: ${theme.spacing.xl};
+  }
+
+  & > * {
+    flex: 1 1 280px; /* allow items to shrink/grow, with a min width of 280px */
+    max-width: 100%;
+  }
+
+  /*   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: ${theme.spacing.lg};
   width: 100%;
@@ -53,9 +73,26 @@ const ProjectGrid = styled.div`
   @media (min-width: ${theme.breakpoints.md}) {
     gap: ${theme.spacing.xl};
     margin-top: ${theme.spacing.xl};
-  }
+  } */
 `;
 
+// // Original
+// const ProjectGrid = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+//   gap: ${theme.spacing.lg};
+//   width: 100%;
+//   margin-top: ${theme.spacing.lg};
+
+//   @media (min-width: ${theme.breakpoints.md}) {
+//     gap: ${theme.spacing.xl};
+//     margin-top: ${theme.spacing.xl};
+//   }
+// `;
+
+// Modified
+// TODO: determine if I want this to be "const ProjectCard = styled(motion.div)`"
+// or if I want it to be "const ProjectCard = styled.div`"
 const ProjectCard = styled(motion.div)`
   background: ${theme.colors.glass.background};
   backdrop-filter: blur(8px);
@@ -63,15 +100,33 @@ const ProjectCard = styled(motion.div)`
   overflow: hidden;
   color: ${theme.colors.textLight};
   transition: all ${theme.transitions.default};
-  height: 100%;
   display: flex;
   flex-direction: column;
+  max-width: 350px;
 
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(246, 177, 122, 0.15);
   }
 `;
+
+// // Original
+// const ProjectCard = styled(motion.div)`
+//   background: ${theme.colors.glass.background};
+//   backdrop-filter: blur(8px);
+//   border-radius: 12px;
+//   overflow: hidden;
+//   color: ${theme.colors.textLight};
+//   transition: all ${theme.transitions.default};
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+
+//   &:hover {
+//     transform: translateY(-5px);
+//     box-shadow: 0 8px 30px rgba(246, 177, 122, 0.15);
+//   }
+// `;
 
 const ProjectImage = styled.div<{ imageUrl: string }>`
   width: 100%;
@@ -96,16 +151,41 @@ const ProjectImage = styled.div<{ imageUrl: string }>`
   }
 `;
 
+// Modified
 const ProjectContent = styled.div`
   padding: ${theme.spacing.md};
   flex: 1;
   display: flex;
   flex-direction: column;
 
+  // .project-title-wrapper {
+  //   min-height: 4em; /* adjust as needed */
+  //   display: flex;
+  //   align-items: flex-start; /* aligns titles to the top if multiline */
+  // }
+
   @media (min-width: ${theme.breakpoints.md}) {
     padding: ${theme.spacing.lg};
   }
 `;
+
+// // Original
+// const ProjectContent = styled.div`
+//   padding: ${theme.spacing.md};
+//   flex: 1;
+//   display: flex;
+//   flex-direction: column;
+
+//   @media (min-width: ${theme.breakpoints.md}) {
+//     padding: ${theme.spacing.lg};
+//   }
+// `;
+
+// const ProjectTitleWrapper = styled(motion.div)`
+//   // min-height: 4em; /* adjust as needed */
+//   display: flex;
+//   align-items: flex-start; /* aligns titles to the top if multiline */
+// `;
 
 const ProjectTitle = styled.h3`
   font-size: clamp(1.25rem, 3vw, 1.5rem);
@@ -201,7 +281,8 @@ const projects = [
   },
   {
     id: 3,
-    title: "dummy_project01 dummy_project01",
+    // title: "dummy_project01 dummy project01",
+    title: "dummy_project01 dummy project01 dummy project01 dummy",
     description:
       "This is where I share a bit about myself, showcase what I've been working on, and share where you can find me online. It is build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend. build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend",
     image: myImage01,
@@ -221,6 +302,7 @@ const projects = [
   {
     id: 5,
     title: "dummy_project03 dummy project03",
+    // title: "dummy_project03 dummy project03",
     description:
       "This is where I share a bit about myself, showcase what I've build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend.",
     image: myImage01,
@@ -231,6 +313,7 @@ const projects = [
 ];
 
 const Projects = () => {
+  const titleRefs = useRef<Array<HTMLHeadingElement | null>>([]);
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -252,6 +335,31 @@ const Projects = () => {
     },
   };
 
+  useEffect(() => {
+    if (!titleRefs.current.length) return;
+
+    // Reset heights
+    titleRefs.current.forEach((el) => {
+      if (el) el.style.height = "auto";
+    });
+
+    const rows: Record<number, HTMLHeadingElement[]> = {};
+
+    titleRefs.current.forEach((el) => {
+      if (!el) return;
+      const top = el.getBoundingClientRect().top;
+      if (!rows[top]) {
+        rows[top] = [];
+      }
+      rows[top].push(el);
+    });
+
+    Object.values(rows).forEach((rowEls) => {
+      const maxHeight = Math.max(...rowEls.map((el) => el.offsetHeight));
+      rowEls.forEach((el) => (el.style.height = `${maxHeight}px`));
+    });
+  });
+
   return (
     <ProjectsSection id="projects" role="region" aria-label="Featured Projects">
       <div className="container">
@@ -260,11 +368,22 @@ const Projects = () => {
         </SectionTitle>
         <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <ProjectGrid role="list">
-            {projects.map((project) => (
+            {/* {projects.map((project) => ( */}
+            {projects.map((project, index) => (
               <ProjectCard key={project.id} variants={itemVariants} role="listitem" aria-labelledby={`project-title-${project.id}`}>
                 <ProjectImage imageUrl={project.image} role="img" aria-label={`Screenshot of ${project.title}`} />
                 <ProjectContent>
-                  <ProjectTitle id={`project-title-${project.id}`}>{project.title}</ProjectTitle>
+                  {/* <ProjectTitleWrapper> */}
+                  <ProjectTitle
+                    id={`project-title-${project.id}`}
+                    // ref={(el) => (titleRefs.current[index] = el)}
+                    ref={(el) => {
+                      titleRefs.current[index] = el;
+                    }}
+                  >
+                    {project.title}
+                  </ProjectTitle>
+                  {/* </ProjectTitleWrapper> */}
                   <ProjectDescription>{project.description}</ProjectDescription>
                   <TechStack role="list" aria-label={`Technologies used in ${project.title}`}>
                     {project.techStack.map((tech) => (

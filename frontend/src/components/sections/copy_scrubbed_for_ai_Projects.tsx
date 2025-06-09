@@ -201,7 +201,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "dummy_project01 dummy_project01",
+    title: "dummy_project01 dummy project01",
     description:
       "This is where I share a bit about myself, showcase what I've been working on, and share where you can find me online. It is build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend. build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend",
     image: myImage01,
