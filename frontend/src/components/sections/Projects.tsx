@@ -43,12 +43,9 @@ const SectionTitle = styled(motion.h2)`
   }
 `;
 
-// Edited/added
 const ProjectGrid = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center items horizontally */
-  align-items: stretch; /* Ensures equal height in each row */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: ${theme.spacing.lg};
   width: 100%;
   margin-top: ${theme.spacing.lg};
@@ -59,57 +56,22 @@ const ProjectGrid = styled.div`
   }
 `;
 
-// // Original TODO: Keep original!!!
-// const ProjectGrid = styled.div`
-//   display: grid;
-//   grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
-//   gap: ${theme.spacing.lg};
-//   width: 100%;
-//   margin-top: ${theme.spacing.lg};
-
-//   @media (min-width: ${theme.breakpoints.md}) {
-//     gap: ${theme.spacing.xl};
-//     margin-top: ${theme.spacing.xl};
-//   }
-// `;
-
-// Edited/added
 const ProjectCard = styled(motion.div)`
-  flex: 0 0 300px; // Flex-grow, shrink, basis
-  width: 300px; /* Or whatever width fits 4 across with gaps */
-  display: flex;
-  flex-direction: column;
-  /* Don’t set fixed height; allow stretching */
   background: ${theme.colors.glass.background};
   backdrop-filter: blur(8px);
   border-radius: 12px;
   overflow: hidden;
   color: ${theme.colors.textLight};
   transition: all ${theme.transitions.default};
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(246, 177, 122, 0.15);
   }
 `;
-
-// // Original TODO: Keep original!!!
-// const ProjectCard = styled(motion.div)`
-//   background: ${theme.colors.glass.background};
-//   backdrop-filter: blur(8px);
-//   border-radius: 12px;
-//   overflow: hidden;
-//   color: ${theme.colors.textLight};
-//   transition: all ${theme.transitions.default};
-//   height: 100%;
-//   display: flex;
-//   flex-direction: column;
-
-//   &:hover {
-//     transform: translateY(-5px);
-//     box-shadow: 0 8px 30px rgba(246, 177, 122, 0.15);
-//   }
-// `;
 
 const ProjectImage = styled.div<{ imageUrl: string }>`
   width: 100%;
@@ -134,9 +96,6 @@ const ProjectImage = styled.div<{ imageUrl: string }>`
   }
 `;
 
-// Edited/added
-
-// Original TODO: Keep original!!!
 const ProjectContent = styled.div`
   padding: ${theme.spacing.md};
   flex: 1;
@@ -148,15 +107,6 @@ const ProjectContent = styled.div`
   }
 `;
 
-const TitleWrapper = styled.div`
-  display: flex;
-  align-items: flex-start;
-  min-height: 4em; /* Optional baseline */
-`;
-
-// // Edited/added
-
-// Original TODO: Keep original!!!
 const ProjectTitle = styled.h3`
   font-size: clamp(1.25rem, 3vw, 1.5rem);
   margin-bottom: ${theme.spacing.sm};
@@ -249,26 +199,6 @@ const projects = [
     githubUrl: "https://github.com/JamieBort/Personal-Dashboard",
     liveUrl: "https://jamiebort.github.io/Personal-Dashboard/",
   },
-  {
-    id: 3,
-    title: "dummy project 1",
-    description:
-      "This is where I share a bit about myself, showcase what I've been working on, and share where you can find me online. It is build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend.",
-    image: myImage01,
-    techStack: ["React", "Node.js"],
-    githubUrl: "https://github.com/JamieBort/Portfolio-Website",
-    liveUrl: "https://jamiebort.com/",
-  },
-  {
-    id: 4,
-    title: "dummy project 2",
-    description:
-      "A website for displaying and analyzing important daily data. Such as blood glucose numbers and upcoming events. Using Svelt TypeScript front end and Java backend. Which database is yet to be seen. It will use authentication.",
-    image: myImage02,
-    techStack: ["Next.js", "TypeScript", "Tailwind"],
-    githubUrl: "https://github.com/JamieBort/Personal-Dashboard",
-    liveUrl: "https://jamiebort.github.io/Personal-Dashboard/",
-  },
 ];
 
 const Projects = () => {
@@ -300,15 +230,12 @@ const Projects = () => {
           Featured Projects
         </SectionTitle>
         <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          {/* <ProjectFlex role="list"> TODO: Rename "ProjectGrid" to "ProjectFlex". */}
           <ProjectGrid role="list">
             {projects.map((project) => (
               <ProjectCard key={project.id} variants={itemVariants} role="listitem" aria-labelledby={`project-title-${project.id}`}>
                 <ProjectImage imageUrl={project.image} role="img" aria-label={`Screenshot of ${project.title}`} />
                 <ProjectContent>
-                  <TitleWrapper>
-                    <ProjectTitle id={`project-title-${project.id}`}>{project.title}</ProjectTitle>
-                  </TitleWrapper>
+                  <ProjectTitle id={`project-title-${project.id}`}>{project.title}</ProjectTitle>
                   <ProjectDescription>{project.description}</ProjectDescription>
                   <TechStack role="list" aria-label={`Technologies used in ${project.title}`}>
                     {project.techStack.map((tech) => (
@@ -330,7 +257,6 @@ const Projects = () => {
                 </ProjectContent>
               </ProjectCard>
             ))}
-            {/* </ProjectFlex> */}
           </ProjectGrid>
         </motion.div>
       </div>
