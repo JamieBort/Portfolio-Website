@@ -41,7 +41,6 @@ const AboutContent = styled.div`
   padding: ${theme.spacing.lg};
   border: none;
 
-  // background: orange; // TODO: Remove.
   @media (min-width: ${theme.breakpoints.md}) {
     padding: ${theme.spacing.xl};
   }
@@ -69,6 +68,7 @@ const Title = styled.h1`
 `;
 
 // // NOTE: Not currently using this.
+// // TODO: Keep Subtitle for now, in case I want to use it again.
 // const Subtitle = styled.h2`
 //   animation: ${fadeUpKeyframes} 0.5s ease-out 0.2s forwards;
 //   opacity: 0;
@@ -131,8 +131,7 @@ export const About = () => {
             <Title role="heading" aria-level={2}>
               Full Stack Developer
             </Title>
-            {/* ~~TODO: Remove the comments~~ */}
-            {/* TODO: Keep <<Subtitle> for now, in case I want to use it again. */}
+            {/* TODO: Keep <<Subtitle>> for now, in case I want to use it again. */}
             {/* <Subtitle role="heading" aria-level={3}>
               Full Stack Developer
             </Subtitle> */}

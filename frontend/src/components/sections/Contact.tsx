@@ -63,7 +63,6 @@ const ContactContent = styled.div`
   border-radius: 20px;
   box-shadow: 0 8px 32px rgba(246, 177, 122, 0.15);
 
-  // background: orange; // TODO: Remove.
   @media (min-width: ${theme.breakpoints.md}) {
     margin: ${theme.spacing.xl} auto;
     padding: ${theme.spacing.xl};
