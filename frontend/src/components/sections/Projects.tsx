@@ -45,15 +45,18 @@ const SectionTitle = styled(motion.h2)`
 `;
 
 // Modified
+// TODO: Change "ProjectGrid" to "ProjectFlex" or, even better, to "ProjectContainer"
 const ProjectGrid = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* optional: center items horizontally */
   gap: ${theme.spacing.lg}; /* for spacing between items */
   width: 100%;
+  // max-width: 1200px; // TODO: Remove.
   margin-top: ${theme.spacing.lg};
   align-items: stretch;
 
+  // background: yellow; // TODO: Remove.
   @media (min-width: ${theme.breakpoints.md}) {
     gap: ${theme.spacing.xl};
     margin-top: ${theme.spacing.xl};
@@ -158,6 +161,7 @@ const ProjectContent = styled.div`
   display: flex;
   flex-direction: column;
 
+  // TODO: Remove.
   // .project-title-wrapper {
   //   min-height: 4em; /* adjust as needed */
   //   display: flex;

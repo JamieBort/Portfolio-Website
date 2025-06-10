@@ -41,6 +41,7 @@ const AboutContent = styled.div`
   padding: ${theme.spacing.lg};
   border: none;
 
+  // background: orange; // TODO: Remove.
   @media (min-width: ${theme.breakpoints.md}) {
     padding: ${theme.spacing.xl};
   }
