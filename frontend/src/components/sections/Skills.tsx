@@ -45,7 +45,6 @@ const SectionTitle = styled(motion.h2)`
 const SkillsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  // justify-content: space-around;
   justify-content: center;
   gap: ${theme.spacing.lg};
   width: 100%;
@@ -87,7 +86,7 @@ const SkillCategory = styled(motion.div)`
   // max-width: 30%;
   // min-width: 370px;
   // flex: 1 1 100%;
-  // flex: 1 1 280px; /* allow items to shrink/grow, with a min width of 280px */
+  flex: 1 1 280px; /* allow items to shrink/grow, with a min width of 280px */
 
   &:hover {
     transform: translateY(-5px);
@@ -156,7 +155,7 @@ const CategoryTitle = styled.h3`
   }
 `;
 
-// Modified (working on this one)
+// Modified (WORKING ON THIS ONE)
 const SkillsList = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -177,7 +176,7 @@ const SkillsList = styled.div`
 //   width: 100%;
 // `;
 
-// Modified (working on this one)
+// Modified (WORKING ON THIS ONE)
 const SkillItem = styled(motion.div)`
   display: flex;
   align-items: center;
