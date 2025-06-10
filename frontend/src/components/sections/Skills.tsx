@@ -15,7 +15,6 @@ const SkillsSection = styled.section`
   color: ${theme.colors.textLight};
   padding: ${theme.spacing.lg} ${theme.spacing.md};
 
-  // background: orange; // TODO: Remove.
   @media (min-width: ${theme.breakpoints.md}) {
     padding: ${theme.spacing.xl} ${theme.spacing.lg};
   }
@@ -41,7 +40,6 @@ const SectionTitle = styled(motion.h2)`
   }
 `;
 
-// Modified
 const SkillsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -49,31 +47,13 @@ const SkillsContainer = styled.div`
   gap: ${theme.spacing.lg};
   width: 100%;
   max-width: 1200px;
-  // max-width: 1900px; // TODO: Remove.
   margin-top: ${theme.spacing.xl};
-  // background: red; // TODO: Remove.
 
   @media (min-width: ${theme.breakpoints.md}) {
     gap: ${theme.spacing.xl};
   }
 `;
 
-// // Original
-// const SkillsContainer = styled.div`
-//   display: grid;
-//   grid-template-columns: repeat(1, 1fr);
-//   gap: ${theme.spacing.lg};
-//   width: 100%;
-//   max-width: 1200px;
-//   margin-top: ${theme.spacing.xl};
-
-//   @media (min-width: ${theme.breakpoints.md}) {
-//     grid-template-columns: repeat(3, 1fr);
-//     gap: ${theme.spacing.xl};
-//   }
-// `;
-
-// Modified
 const SkillCategory = styled(motion.div)`
   background: ${theme.colors.glass.background};
   backdrop-filter: blur(8px);
@@ -82,10 +62,7 @@ const SkillCategory = styled(motion.div)`
   transition: all ${theme.transitions.default};
   display: flex;
   flex-direction: column;
-  // width: 100%;
-  // max-width: 30%;
-  // min-width: 370px;
-  // flex: 1 1 100%;
+  max-width: 400px; // TODO: Modify "max-width:" such that the card(s) on the last row, the same cards that do not make up a full row, are the same width as the cards in the rows that are full. Refer to "flex: 1 1 calc();" in below. FWIW, previously it was 400px.
   flex: 1 1 280px; /* allow items to shrink/grow, with a min width of 280px */
 
   &:hover {
@@ -106,26 +83,6 @@ const SkillCategory = styled(motion.div)`
     // max-width: 350px;
   }
 `;
-
-// // Original
-// const SkillCategory = styled(motion.div)`
-//   background: ${theme.colors.glass.background};
-//   backdrop-filter: blur(8px);
-//   border-radius: 20px;
-//   padding: ${theme.spacing.lg};
-//   transition: all ${theme.transitions.default};
-//   height: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   max-width: 400px;
-//   margin: 0 auto;
-//   width: 100%;
-
-//   &:hover {
-//     transform: translateY(-5px);
-//     box-shadow: 0 15px 35px rgba(246, 177, 122, 0.15);
-//   }
-// `;
 
 const CategoryTitle = styled.h3`
   font-size: clamp(1.5rem, 3vw, 1.75rem);
@@ -155,50 +112,28 @@ const CategoryTitle = styled.h3`
   }
 `;
 
-// Modified (WORKING ON THIS ONE)
+// TODO: Modify this such that (I am not sure how best to word this yet but I like HOW the project cards and the SkillCategory cards are responsive.)
 const SkillsList = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  // grid-template-columns: repeat(2, 1fr);
   gap: ${theme.spacing.md};
-  // flex: 1;
+  // flex: 1;  // From Original before it was converted to flexbox from grid. TODO: Remove after "Modify this such that ..." is addressed above.
   width: 100%;
-  // background: lightyellow; // TODO: Remove.
 `;
 
-// // Original
-// const SkillsList = styled.div`
-//   display: grid;
-//   grid-template-columns: repeat(2, 1fr);
-//   gap: ${theme.spacing.md};
-//   flex: 1;
-//   width: 100%;
-// `;
-
-// Modified (WORKING ON THIS ONE)
 const SkillItem = styled(motion.div)`
   display: flex;
   align-items: center;
   gap: ${theme.spacing.sm};
-  font-size: clamp(0.75rem, 2vw, 0.8rem);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
   padding: ${theme.spacing.md};
   border-radius: 12px;
   transition: all ${theme.transitions.default};
   background: ${theme.colors.glass.card};
-  // background: lightgreen; // TODO: Remove.
-  // max-height: 64.141px;
   max-height: 40px;
-  // max-height: 50%;
-  // max-width: auto;
-  // max-width: 90px;
-  // max-width: 40%;
-  // max-width: 50%;
-  // max-width: 80%;
-  // max-width: 100%;
 
   svg {
-    // background: blue; // TODO: Remove.
     font-size: clamp(1.1rem, 2vw, 1.5rem);
     color: ${theme.colors.accent};
     transition: all ${theme.transitions.default};
@@ -215,35 +150,6 @@ const SkillItem = styled(motion.div)`
     }
   }
 `;
-
-// // Original
-// const SkillItem = styled(motion.div)`
-//   display: flex;
-//   align-items: center;
-//   gap: ${theme.spacing.sm};
-//   font-size: clamp(0.9rem, 2vw, 1.1rem);
-//   padding: ${theme.spacing.md};
-//   border-radius: 12px;
-//   transition: all ${theme.transitions.default};
-//   background: ${theme.colors.glass.card};
-
-//   svg {
-//     font-size: clamp(1.1rem, 2vw, 1.5rem);
-//     color: ${theme.colors.accent};
-//     transition: all ${theme.transitions.default};
-//   }
-
-//   &:hover {
-//     background: ${theme.colors.gradient.glass};
-//     transform: translateX(5px);
-//     box-shadow: 0 4px 12px rgba(246, 177, 122, 0.2);
-
-//     svg {
-//       transform: scale(1.1) rotate(5deg);
-//       color: ${theme.colors.light};
-//     }
-//   }
-// `;
 
 const skillCategories = [
   {

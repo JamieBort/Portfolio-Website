@@ -3,7 +3,6 @@ import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 import { theme } from "../../styles/theme";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-// import assets  from "../../assets";
 import myImage01 from "../../assets/portfolio_website.png";
 import myImage02 from "../../assets/personal_dashboard.png";
 
@@ -44,56 +43,21 @@ const SectionTitle = styled(motion.h2)`
   }
 `;
 
-// Modified
-// TODO: Change "ProjectGrid" to "ProjectFlex" or, even better, to "ProjectContainer"
-const ProjectGrid = styled.div`
+const ProjectContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* optional: center items horizontally */
   gap: ${theme.spacing.lg}; /* for spacing between items */
   width: 100%;
-  // max-width: 1200px; // TODO: Remove.
   margin-top: ${theme.spacing.lg};
   align-items: stretch;
 
-  // background: yellow; // TODO: Remove.
   @media (min-width: ${theme.breakpoints.md}) {
     gap: ${theme.spacing.xl};
     margin-top: ${theme.spacing.xl};
   }
-
-  & > * {
-    flex: 1 1 280px; /* allow items to shrink/grow, with a min width of 280px */
-    max-width: 100%;
-  }
-
-  /*   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
-  gap: ${theme.spacing.lg};
-  width: 100%;
-  margin-top: ${theme.spacing.lg};
-
-  @media (min-width: ${theme.breakpoints.md}) {
-    gap: ${theme.spacing.xl};
-    margin-top: ${theme.spacing.xl};
-  } */
 `;
 
-// // Original
-// const ProjectGrid = styled.div`
-//   display: grid;
-//   grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
-//   gap: ${theme.spacing.lg};
-//   width: 100%;
-//   margin-top: ${theme.spacing.lg};
-
-//   @media (min-width: ${theme.breakpoints.md}) {
-//     gap: ${theme.spacing.xl};
-//     margin-top: ${theme.spacing.xl};
-//   }
-// `;
-
-// Modified
 // TODO: determine if I want this to be "const ProjectCard = styled(motion.div)`"
 // or if I want it to be "const ProjectCard = styled.div`"
 const ProjectCard = styled(motion.div)`
@@ -107,29 +71,13 @@ const ProjectCard = styled(motion.div)`
   flex-direction: column;
   max-width: 350px;
 
+  flex: 1 1 280px; /* allow items to shrink/grow, with a min width of 280px. When the width is below 280px, the number of cards in the row diminishes by one and the last card moves down to the next row. */
+
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(246, 177, 122, 0.15);
   }
 `;
-
-// // Original
-// const ProjectCard = styled(motion.div)`
-//   background: ${theme.colors.glass.background};
-//   backdrop-filter: blur(8px);
-//   border-radius: 12px;
-//   overflow: hidden;
-//   color: ${theme.colors.textLight};
-//   transition: all ${theme.transitions.default};
-//   height: 100%;
-//   display: flex;
-//   flex-direction: column;
-
-//   &:hover {
-//     transform: translateY(-5px);
-//     box-shadow: 0 8px 30px rgba(246, 177, 122, 0.15);
-//   }
-// `;
 
 const ProjectImage = styled.div<{ imageUrl: string }>`
   width: 100%;
@@ -154,42 +102,16 @@ const ProjectImage = styled.div<{ imageUrl: string }>`
   }
 `;
 
-// Modified
 const ProjectContent = styled.div`
   padding: ${theme.spacing.md};
   flex: 1;
   display: flex;
   flex-direction: column;
 
-  // TODO: Remove.
-  // .project-title-wrapper {
-  //   min-height: 4em; /* adjust as needed */
-  //   display: flex;
-  //   align-items: flex-start; /* aligns titles to the top if multiline */
-  // }
-
   @media (min-width: ${theme.breakpoints.md}) {
     padding: ${theme.spacing.lg};
   }
 `;
-
-// // Original
-// const ProjectContent = styled.div`
-//   padding: ${theme.spacing.md};
-//   flex: 1;
-//   display: flex;
-//   flex-direction: column;
-
-//   @media (min-width: ${theme.breakpoints.md}) {
-//     padding: ${theme.spacing.lg};
-//   }
-// `;
-
-// const ProjectTitleWrapper = styled(motion.div)`
-//   // min-height: 4em; /* adjust as needed */
-//   display: flex;
-//   align-items: flex-start; /* aligns titles to the top if multiline */
-// `;
 
 const ProjectTitle = styled.h3`
   font-size: clamp(1.25rem, 3vw, 1.5rem);
@@ -371,13 +293,11 @@ const Projects = () => {
           Featured Projects
         </SectionTitle>
         <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          <ProjectGrid role="list">
-            {/* {projects.map((project) => ( */}
+          <ProjectContainer role="list">
             {projects.map((project, index) => (
               <ProjectCard key={project.id} variants={itemVariants} role="listitem" aria-labelledby={`project-title-${project.id}`}>
                 <ProjectImage imageUrl={project.image} role="img" aria-label={`Screenshot of ${project.title}`} />
                 <ProjectContent>
-                  {/* <ProjectTitleWrapper> */}
                   <ProjectTitle
                     id={`project-title-${project.id}`}
                     // ref={(el) => (titleRefs.current[index] = el)}
@@ -387,7 +307,6 @@ const Projects = () => {
                   >
                     {project.title}
                   </ProjectTitle>
-                  {/* </ProjectTitleWrapper> */}
                   <ProjectDescription>{project.description}</ProjectDescription>
                   <TechStack role="list" aria-label={`Technologies used in ${project.title}`}>
                     {project.techStack.map((tech) => (
@@ -409,7 +328,7 @@ const Projects = () => {
                 </ProjectContent>
               </ProjectCard>
             ))}
-          </ProjectGrid>
+          </ProjectContainer>
         </motion.div>
       </div>
     </ProjectsSection>
