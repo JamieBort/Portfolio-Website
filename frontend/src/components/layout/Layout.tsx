@@ -284,7 +284,7 @@ export const Layout = ({ children }: LayoutProps) => {
       <SkipLink href="#main-content">Skip to main content</SkipLink>
 
       <Header role="banner">
-        {/* TODO: Figure out where and how to have a language toggle button. */}
+        {/* TODO: Figure out where and how to have a language toggle button. See the https://github.com/JamieBort/Portfolio-Website/issues/52 Issue */}
         <Nav role="navigation" aria-label="Main navigation">
           <div className="container">
             {/* <h1 style={{ margin: 0 }}> */}
@@ -328,7 +328,7 @@ export const Layout = ({ children }: LayoutProps) => {
       <FloatingNav />
       <Footer role="contentinfo">
         <div className="container">
-          {/* TODO: Clean this area up. */}
+          {/* TODO: Clean this area up. Specifically remove the comments. And update the GPLv3 logo such that it fits the appearance of my website better and is linked locally. See the https://github.com/JamieBort/Portfolio-Website/issues/53 Issue. */}
           {/* Original */}
           {/* <p>© {new Date().getFullYear()}</p> */}
           {/* <img

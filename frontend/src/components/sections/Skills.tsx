@@ -62,7 +62,7 @@ const SkillCategory = styled(motion.div)`
   transition: all ${theme.transitions.default};
   display: flex;
   flex-direction: column;
-  max-width: 400px; // TODO: Modify "max-width:" such that the card(s) on the last row, the same cards that do not make up a full row, are the same width as the cards in the rows that are full. Refer to "flex: 1 1 calc();" in below. FWIW, previously it was 400px.
+  max-width: 400px; // TODO: Modify "max-width:" such that the card(s) on the last row, the same cards that do not make up a full row, are the same width as the cards in the rows that are full. Refer to "flex: 1 1 calc();" in below. FWIW, previously it was 400px. See the https://github.com/JamieBort/Portfolio-Website/issues/52 Issue.
   flex: 1 1 280px; /* allow items to shrink/grow, with a min width of 280px */
 
   &:hover {
@@ -118,7 +118,7 @@ const SkillsList = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   gap: ${theme.spacing.md};
-  // flex: 1;  // From Original before it was converted to flexbox from grid. TODO: Remove after "Modify this such that ..." is addressed above.
+  // flex: 1;  // From Original before it was converted to flexbox from grid. TODO: Remove after "Modify "max-width:" such that the card(s) on the last row, ..." is addressed above. https://github.com/JamieBort/Portfolio-Website/blob/181cc932a913881fbab7f69938921e3caa1828b5/frontend/src/components/sections/Skills.tsx#L65
   width: 100%;
 `;
 

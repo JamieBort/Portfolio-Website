@@ -58,8 +58,9 @@ const ProjectContainer = styled.div`
   }
 `;
 
-// TODO: determine if I want this to be "const ProjectCard = styled(motion.div)`"
+// TODO: Determine if I want this to be "const ProjectCard = styled(motion.div)`"
 // or if I want it to be "const ProjectCard = styled.div`"
+// See the https://github.com/JamieBort/Portfolio-Website/issues/53 Issue
 const ProjectCard = styled(motion.div)`
   background: ${theme.colors.glass.background};
   backdrop-filter: blur(8px);
