@@ -300,7 +300,6 @@ export const Layout = ({ children }: LayoutProps) => {
               Jamie Bort
             </Logo>
             {/* </h1> */}
-
             {/* <Logo initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} role="heading" aria-level={1}>
               Jamie Bort
             </Logo> */}
@@ -319,6 +318,7 @@ export const Layout = ({ children }: LayoutProps) => {
               </a>
               <ResumeDropdown />
             </NavLinks>
+            Translate Button
           </div>
         </Nav>
       </Header>
