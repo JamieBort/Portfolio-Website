@@ -139,7 +139,7 @@ export const About = ({ isEnglish }: AboutProps) => {
         <AboutContent>
           <div>
             <Title role="heading" aria-level={2}>
-              {t("bioTitle")}
+              {t("about.title")}
             </Title>
             {/* TODO: Keep <<Subtitle>> for now, in case I want to use it again. */}
             {/* <Subtitle role="heading" aria-level={3}>
