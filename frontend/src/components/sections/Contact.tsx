@@ -3,6 +3,10 @@ import { motion } from "framer-motion";
 import { theme } from "../../styles/theme";
 import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
+interface ContactProps {
+  isEnglish: boolean;
+}
+
 const ContactSection = styled.section`
   position: relative;
   overflow: hidden;
@@ -157,7 +161,8 @@ const SocialLink = styled(motion.a)`
   }
 `;
 
-const Contact = () => {
+const Contact = ({ isEnglish }: ContactProps) => {
+  console.log(isEnglish); // TODO: delete this line.
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {

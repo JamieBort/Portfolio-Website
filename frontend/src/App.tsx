@@ -1,10 +1,14 @@
-import { lazy, Suspense } from "react";
+// import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState } from "react";
+// import { lazy, Suspense, useEffect } from "react";
 import { Layout } from "./components/layout/Layout";
 import { About } from "./components/sections/About";
 import { GlobalStyles } from "./styles/GlobalStyles";
 import { ThemeProvider } from "@emotion/react";
 import { theme } from "./styles/theme";
 import styled from "@emotion/styled";
+// import { useTranslation } from "react-i18next";
+// import "./i18n";
 
 // Lazy load non-critical components
 const Projects = lazy(() => import("./components/sections/Projects"));
@@ -28,22 +32,34 @@ const LoadingFallback = styled.div`
 `;
 
 function App() {
+  const [isEnglish, setEnglish] = useState(true);
+  console.log(isEnglish); // TODO: delete this line.
+  const handleLanguage = () => {
+    // const status = isEnglish ? "en" : "es";
+    // console.log(status);
+    setEnglish(!isEnglish);
+  };
+
+  // const { t,i18n } = useTranslation();
+  // useEffect(() => {
+  //   i18n.changeLanguage(navigator.language);
+  // });
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Layout>
+      <Layout handleLanguage={handleLanguage} isEnglish={isEnglish}>
         {/* About section is critical for LCP, so keep it eager loaded */}
-        <About />
+        <About isEnglish={isEnglish} />
 
         {/* Wrap non-critical sections in Suspense */}
         <Suspense fallback={<LoadingFallback>Loading projects...</LoadingFallback>}>
-          <Projects />
+          <Projects isEnglish={isEnglish} />
         </Suspense>
         <Suspense fallback={<LoadingFallback>Loading skills...</LoadingFallback>}>
-          <Skills />
+          <Skills isEnglish={isEnglish} />
         </Suspense>
         <Suspense fallback={<LoadingFallback>Loading contact...</LoadingFallback>}>
-          <Contact />
+          <Contact isEnglish={isEnglish} />
         </Suspense>
       </Layout>
     </ThemeProvider>

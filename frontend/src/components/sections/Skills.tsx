@@ -4,6 +4,10 @@ import { theme } from "../../styles/theme";
 import { FaReact, FaNodeJs, FaDatabase, FaDocker, FaGitAlt, FaAws } from "react-icons/fa";
 import { SiTypescript, SiJavascript, SiPython, SiMongodb, SiPostgresql, SiRedux } from "react-icons/si";
 
+interface SkillsProps {
+  isEnglish: boolean;
+}
+
 const SkillsSection = styled.section`
   min-height: 100vh;
   display: flex;
@@ -204,7 +208,8 @@ const skillCategories = [
   },
 ];
 
-const Skills = () => {
+const Skills = ({ isEnglish }: SkillsProps) => {
+  console.log(isEnglish); // TODO: delete this line.
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {

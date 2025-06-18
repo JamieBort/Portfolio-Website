@@ -5,6 +5,16 @@ import { theme } from "../../styles/theme";
 import { FloatingNav } from "../navigation/FloatingNav";
 import { useKeyboardNavigation } from "../../hooks/useKeyboardNavigation";
 
+interface LayoutProps {
+  children: ReactNode;
+  handleLanguage: () => void;
+  isEnglish: boolean;
+}
+
+const ToggleButton = ({ handleLanguage, isEnglish }: { handleLanguage: () => void; isEnglish: boolean }) => {
+  return <button onClick={handleLanguage}>{isEnglish ? "ENGLISH" : "ESPAÑOL"}</button>;
+};
+
 const ResumeDropdown = () => {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -103,10 +113,6 @@ const ResumeDropdown = () => {
   );
 };
 
-interface LayoutProps {
-  children: ReactNode;
-}
-
 const LayoutWrapper = styled.div`
   @media print {
     background: white !important;
@@ -186,6 +192,7 @@ const Nav = styled.nav`
   }
 `;
 
+// TODO: Remove this as soon as it is not needed.
 // const Logo = styled(motion.div)`
 //   color: ${theme.colors.light};
 //   font-family: ${theme.fonts.heading};
@@ -271,7 +278,7 @@ const Footer = styled.footer`
   }
 `;
 
-export const Layout = ({ children }: LayoutProps) => {
+export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => {
   useKeyboardNavigation();
 
   useEffect(() => {
@@ -318,7 +325,7 @@ export const Layout = ({ children }: LayoutProps) => {
               </a>
               <ResumeDropdown />
             </NavLinks>
-            Translate Button
+            <ToggleButton handleLanguage={handleLanguage} isEnglish={isEnglish} />
           </div>
         </Nav>
       </Header>

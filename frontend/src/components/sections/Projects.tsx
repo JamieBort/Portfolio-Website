@@ -6,6 +6,10 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import myImage01 from "../../assets/portfolio_website.png";
 import myImage02 from "../../assets/personal_dashboard.png";
 
+interface ProjectsProps {
+  isEnglish: boolean;
+}
+
 const ProjectsSection = styled.section`
   min-height: 100vh;
   display: flex;
@@ -239,7 +243,8 @@ const projects = [
   },
 ];
 
-const Projects = () => {
+const Projects = ({ isEnglish }: ProjectsProps) => {
+  console.log(isEnglish); // TODO: delete this line.
   const titleRefs = useRef<Array<HTMLHeadingElement | null>>([]);
   const containerVariants = {
     hidden: { opacity: 0 },
