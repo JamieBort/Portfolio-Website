@@ -2,6 +2,8 @@ import styled from "@emotion/styled";
 import { theme } from "../../styles/theme";
 import { keyframes } from "@emotion/react";
 import { lazy, Suspense } from "react";
+import { useTranslation } from "react-i18next";
+import "../../i18n";
 
 interface AboutProps {
   isEnglish: boolean;
@@ -129,13 +131,15 @@ const SocialLinks = styled.div`
 
 export const About = ({ isEnglish }: AboutProps) => {
   console.log(isEnglish); // TODO: delete this line.
+  const { t } = useTranslation();
+
   return (
     <AboutSection id="about" role="region" aria-label="Introduction">
       <div className="container">
         <AboutContent>
           <div>
             <Title role="heading" aria-level={2}>
-              Full Stack Developer
+              {t("bioTitle")}
             </Title>
             {/* TODO: Keep <<Subtitle>> for now, in case I want to use it again. */}
             {/* <Subtitle role="heading" aria-level={3}>
