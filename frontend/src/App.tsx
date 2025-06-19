@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState, useEffect } from "react";
+import { lazy, Suspense, useState } from "react";
 import { Layout } from "./components/layout/Layout";
 import { About } from "./components/sections/About";
 import { GlobalStyles } from "./styles/GlobalStyles";
@@ -41,7 +41,7 @@ function App() {
   // useEffect(() => {
   //   console.log(navigator.language);
   //   //   i18n.changeLanguage(navigator.language);
-  // });
+  // },[i18n]);
 
   return (
     <ThemeProvider theme={theme}>

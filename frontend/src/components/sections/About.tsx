@@ -4,7 +4,7 @@ import { keyframes } from "@emotion/react";
 import { lazy, Suspense } from "react";
 import { Trans, useTranslation } from "react-i18next";
 // import { useTranslation } from "react-i18next";
-import "../../i18n";
+// import "../../i18n"; // NOTE: Moved this to the ./src/main.tsx file.
 
 interface AboutProps {
   isEnglish: boolean;
