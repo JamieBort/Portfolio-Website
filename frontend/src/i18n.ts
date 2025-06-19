@@ -13,10 +13,12 @@ i18n
     resources: {
       en: {
         translation: {
+          keyWithLink:
+            "I create elegant solutions to complex problems, specializing in modern web development with a focus on user experience and clean code. I write code and teach at <1>Code the Dream</1>, a software boot camp for underrepresented people. Below you will find some of my Projects. When I am not coding I am working on my next presentation or mentoring; both of which push me to learn and grow.",
           about: {
             title: "Full Stack Developer",
             description:
-              "I create elegant solutions to complex problems, specializing in modern web development with a focus on user experience and clean code. I write code and teach at Code the Dream, a software boot camp for underrepresented people. Below you will find some of my Projects. When I am not coding I am working on my next presentation or mentoring; both of which push me to learn and grow.",
+              "I create elegant solutions to complex problems, specializing in modern web development with a focus on user experience and clean code. I write code and teach at <1>Code the Dream</1>, a software boot camp for underrepresented people. Below you will find some of my Projects. When I am not coding I am working on my next presentation or mentoring; both of which push me to learn and grow.",
           },
           projects: {
             first: {
@@ -37,9 +39,8 @@ i18n
       es: {
         translation: {
           about: {
-            title: "SPANISH",
-            description:
-              "I create elegant solutions to complex problems, specializing in modern web development with a focus on user experience and clean code. I write code and teach at Code the Dream, a software boot camp for underrepresented people. Below you will find some of my Projects. When I am not coding I am working on my next presentation or mentoring; both of which push me to learn and grow.",
+            title: "SPANISH title",
+            description: "SPANISH description",
           },
         },
       },

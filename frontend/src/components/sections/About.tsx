@@ -2,7 +2,8 @@ import styled from "@emotion/styled";
 import { theme } from "../../styles/theme";
 import { keyframes } from "@emotion/react";
 import { lazy, Suspense } from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import "../../i18n";
 
 interface AboutProps {
@@ -146,12 +147,16 @@ export const About = ({ isEnglish }: AboutProps) => {
               Full Stack Developer
             </Subtitle> */}
             <Description role="paragraph">
-              <p>I create elegant solutions to complex problems, specializing in modern web development with a focus on user experience and clean code.</p>
+              {/* {t("about.description")} */}
+              <Trans i18nKey="keyWithLink">
+                This should be a <a href="https://codethedream.org/">some link</a>
+              </Trans>
+              {/* <p>I create elegant solutions to complex problems, specializing in modern web development with a focus on user experience and clean code.</p>
               <p>
                 I write code and teach at <a href="https://codethedream.org/">Code the Dream</a>, a software boot camp for underrepresented people. Below you will find some of my
                 Projects.
               </p>
-              <p>When I am not coding I am working on my next presentation or mentoring; both of which push me to learn and grow.</p>
+              <p>When I am not coding I am working on my next presentation or mentoring; both of which push me to learn and grow.</p> */}
             </Description>
             <SocialLinks role="list" aria-label="Social media links">
               <a href="https://github.com/jamiebort/" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile" role="listitem">
