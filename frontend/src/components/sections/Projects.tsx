@@ -5,6 +5,7 @@ import { theme } from "../../styles/theme";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import myImage01 from "../../assets/portfolio_website.png";
 import myImage02 from "../../assets/personal_dashboard.png";
+import { useTranslation } from "react-i18next";
 
 interface ProjectsProps {
   isEnglish: boolean;
@@ -245,6 +246,7 @@ const projects = [
 
 const Projects = ({ isEnglish }: ProjectsProps) => {
   console.log(isEnglish); // TODO: delete this line.
+  const { t } = useTranslation();
   const titleRefs = useRef<Array<HTMLHeadingElement | null>>([]);
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -296,7 +298,8 @@ const Projects = ({ isEnglish }: ProjectsProps) => {
     <ProjectsSection id="projects" role="region" aria-label="Featured Projects">
       <div className="container">
         <SectionTitle initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} role="heading" aria-level={2}>
-          Featured Projects
+          {/* Featured Projects */}
+          {t("projects.title")}
         </SectionTitle>
         <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <ProjectContainer role="list">

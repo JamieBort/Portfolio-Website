@@ -4,6 +4,7 @@ import { ReactNode, useEffect, useRef, useState } from "react";
 import { theme } from "../../styles/theme";
 import { FloatingNav } from "../navigation/FloatingNav";
 import { useKeyboardNavigation } from "../../hooks/useKeyboardNavigation";
+import { useTranslation } from "react-i18next";
 
 interface LayoutProps {
   children: ReactNode;
@@ -12,12 +13,15 @@ interface LayoutProps {
 }
 
 const ToggleButton = ({ handleLanguage, isEnglish }: { handleLanguage: () => void; isEnglish: boolean }) => {
+  // const { t } = useTranslation();
+  // return <button onClick={handleLanguage}>{t("layout.eight")}</button>;
   return <button onClick={handleLanguage}>{isEnglish ? "ENGLISH" : "ESPAÑOL"}</button>;
 };
 
 const ResumeDropdown = () => {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const { t } = useTranslation();
 
   // Close on outside click
   useEffect(() => {
@@ -51,7 +55,8 @@ const ResumeDropdown = () => {
           borderRadius: "4px",
         }}
       >
-        Resume
+        {/* Resume */}
+        {t("layout.five")}
       </button>
 
       {open && (
@@ -87,7 +92,8 @@ const ResumeDropdown = () => {
                 color: theme.colors.textLight,
               }}
             >
-              English Version
+              {/* English Version */}
+              {t("layout.six")}
             </a>
           </li>
           <li role="none">
@@ -104,7 +110,8 @@ const ResumeDropdown = () => {
                 color: theme.colors.textLight,
               }}
             >
-              Versión en español
+              {/* Versión en español */}
+              {t("layout.seven")}
             </a>
           </li>
         </ul>
@@ -279,6 +286,7 @@ const Footer = styled.footer`
 `;
 
 export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => {
+  const { t } = useTranslation();
   useKeyboardNavigation();
 
   useEffect(() => {
@@ -312,16 +320,20 @@ export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => 
             </Logo> */}
             <NavLinks role="list">
               <a href="#about" role="listitem" aria-label="About section">
-                About
+                {/* About */}
+                {t("layout.one")}
               </a>
               <a href="#projects" role="listitem" aria-label="Projects section">
-                Projects
+                {/* Projects */}
+                {t("layout.two")}
               </a>
               <a href="#skills" role="listitem" aria-label="Skills section">
-                Skills
+                {/* Skills */}
+                {t("layout.three")}
               </a>
               <a href="#contact" role="listitem" aria-label="Contact section">
-                Contact
+                {/* Contact */}
+                {t("layout.four")}
               </a>
               <ResumeDropdown />
             </NavLinks>
@@ -332,7 +344,7 @@ export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => 
       <Main id="main-content" role="main" tabIndex={-1}>
         {children}
       </Main>
-      <FloatingNav />
+      <FloatingNav isEnglish={isEnglish} />
       <Footer role="contentinfo">
         <div className="container">
           {/* TODO: Clean this area up. Specifically remove the comments. And update the GPLv3 logo such that it fits the appearance of my website better and is linked locally. See the https://github.com/JamieBort/Portfolio-Website/issues/53 Issue. */}

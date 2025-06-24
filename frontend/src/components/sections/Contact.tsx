@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 import { theme } from "../../styles/theme";
 import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 interface ContactProps {
   isEnglish: boolean;
@@ -163,6 +164,7 @@ const SocialLink = styled(motion.a)`
 
 const Contact = ({ isEnglish }: ContactProps) => {
   console.log(isEnglish); // TODO: delete this line.
+  const { t } = useTranslation();
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -189,11 +191,13 @@ const Contact = ({ isEnglish }: ContactProps) => {
       <div className="container">
         <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <SectionTitle variants={itemVariants} role="heading" aria-level={2}>
-            Get In Touch
+            {/* Get In Touch */}
+            {t("contact.title")}
           </SectionTitle>
           <ContactContent role="article">
             <ContactText variants={itemVariants} role="paragraph">
-              I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!
+              {/* I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out! */}
+              {t("contact.description")}
             </ContactText>
             <ContactEmail
               href="mailto:jamiebort@gmail.com"

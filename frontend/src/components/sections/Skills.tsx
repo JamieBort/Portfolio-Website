@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { theme } from "../../styles/theme";
 import { FaReact, FaNodeJs, FaDatabase, FaDocker, FaGitAlt, FaAws } from "react-icons/fa";
 import { SiTypescript, SiJavascript, SiPython, SiMongodb, SiPostgresql, SiRedux } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 
 interface SkillsProps {
   isEnglish: boolean;
@@ -210,6 +211,7 @@ const skillCategories = [
 
 const Skills = ({ isEnglish }: SkillsProps) => {
   console.log(isEnglish); // TODO: delete this line.
+  const { t } = useTranslation();
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -234,7 +236,8 @@ const Skills = ({ isEnglish }: SkillsProps) => {
   return (
     <SkillsSection id="skills" role="region" aria-label="Skills and Expertise">
       <SectionTitle initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} role="heading" aria-level={2}>
-        Skills & Expertise
+        {/* Skills & Expertise */}
+        {t("skills.title")}
       </SectionTitle>
       <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
         <SkillsContainer role="list">

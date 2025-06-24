@@ -1,0 +1,36 @@
+{
+    "layout": {
+        "one": "Cerca",
+        "two": "Proyectos",
+        "three": "Habilidades",
+        "four": "Contacto",
+        "five": "CV",
+        "six": "Versión en inglés",
+        "seven": "Versión en español"
+    },
+    "about": {
+        "title": "Full Stack Developer",
+        "description": "spanishI create elegant solutions to complex problems, specializing in modern web development with a focus on user experience and clean code. I write code and teach at <1>{{name}}</1>, a software boot camp for underrepresented people. Below you will find some of my Projects. When I am not coding I am working on my next presentation or mentoring; both of which push me to learn and grow."
+    },
+    "projects": {
+        "title": "Proyectos destacados",
+        "first": {
+            "title": "spanish Portfolio Website",
+            "description": "spanish This is where I share a bit about myself, showcase what I've been working on, and share where you can find me online. It is build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend."
+        },
+        "second": {
+            "title": "spanish Personal Dashboard",
+            "description": "spanish A website for displaying and analyzing important daily data. Such as blood glucose numbers and upcoming events. Using Svelt TypeScript front end and Java backend. Which database is yet to be seen. It will use authentication."
+        }
+    },
+    "skills": {
+        "title": "Habilidades y experiencia"
+    },
+    "contact": {
+        "title": "Ponte en contacto",
+        "description": "spanish I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!"
+    },
+    "test": {
+        "title": "Casa"
+    }
+}

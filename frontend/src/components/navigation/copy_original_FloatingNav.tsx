@@ -2,12 +2,6 @@ import styled from "@emotion/styled";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { theme } from "../../styles/theme";
 import { useEffect, useState } from "react";
-// import {  useTranslation } from "react-i18next";
-// const { t } = useTranslation();
-
-interface FloatingNavProps {
-  isEnglish: boolean;
-}
 
 const NavContainer = styled(motion.nav)`
   position: fixed;
@@ -134,23 +128,14 @@ const ProgressBar = styled(motion.div)`
   }
 `;
 
-// // NOTE: Original
-// const sections = [
-//   { id: "about", name: "Home" },
-//   { id: "projects", name: "Projects" },
-//   { id: "skills", name: "Skills" },
-//   { id: "contact", name: "Contact" },
-// ];
-
-// NOTE: Updated
-const sectionsComplete = [
-  { id: "about", name: "Home", nombre: "Casa" },
-  { id: "projects", name: "Projects", nombre: "Proyectos" },
-  { id: "skills", name: "Skills", nombre: "Habilidades" },
-  { id: "contact", name: "Contact", nombre: "Contacto" },
+const sections = [
+  { id: "about", name: "Home" },
+  { id: "projects", name: "Projects" },
+  { id: "skills", name: "Skills" },
+  { id: "contact", name: "Contact" },
 ];
 
-export const FloatingNav = ({ isEnglish }: FloatingNavProps) => {
+export const FloatingNav = () => {
   const [activeSection, setActiveSection] = useState("about");
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -163,16 +148,8 @@ export const FloatingNav = ({ isEnglish }: FloatingNavProps) => {
     const handleScroll = () => {
       const windowHeight = window.innerHeight;
 
-      const result = sectionsComplete.map(({ id, name, nombre }) => ({
-        id,
-        param: isEnglish ? name : nombre,
-      }));
-      // console.log(result);
-
       // Find which section is currently in view
-      // sections.forEach(({ id, name }) => { // NOTE: Original
-      // NOTE: Updated
-      result.forEach(({ id, param }) => {
+      sections.forEach(({ id, name }) => {
         const element = document.getElementById(id);
         if (element) {
           const { top, bottom } = element.getBoundingClientRect();
@@ -181,7 +158,7 @@ export const FloatingNav = ({ isEnglish }: FloatingNavProps) => {
             // Update aria-live region
             const liveRegion = document.getElementById("section-announcer");
             if (liveRegion) {
-              liveRegion.textContent = `Current section: ${param}`;
+              liveRegion.textContent = `Current section: ${name}`;
             }
           }
         }
@@ -190,7 +167,7 @@ export const FloatingNav = ({ isEnglish }: FloatingNavProps) => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isEnglish]);
+  }, []);
 
   const handleKeyDown = (e: React.KeyboardEvent, sectionId: string) => {
     if (e.key === "Enter" || e.key === " ") {
@@ -198,13 +175,10 @@ export const FloatingNav = ({ isEnglish }: FloatingNavProps) => {
       document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
     } else if (e.key === "ArrowUp" || e.key === "ArrowDown") {
       e.preventDefault();
-      // const currentIndex = sections.findIndex(({ id }) => id === sectionId); // NOTE: Original
-      // const nextIndex = e.key === "ArrowUp" ? Math.max(0, currentIndex - 1) : Math.min(sections.length - 1, currentIndex + 1); // NOTE: Original
-      const currentIndex = sectionsComplete.findIndex(({ id }) => id === sectionId); // NOTE: Updated
-      const nextIndex = e.key === "ArrowUp" ? Math.max(0, currentIndex - 1) : Math.min(sectionsComplete.length - 1, currentIndex + 1); // NOTE: Updated
+      const currentIndex = sections.findIndex(({ id }) => id === sectionId);
+      const nextIndex = e.key === "ArrowUp" ? Math.max(0, currentIndex - 1) : Math.min(sections.length - 1, currentIndex + 1);
 
-      // const nextSection = sections[nextIndex]; // NOTE: Original
-      const nextSection = sectionsComplete[nextIndex]; // NOTE: Updated
+      const nextSection = sections[nextIndex];
       document.getElementById(nextSection.id)?.scrollIntoView({ behavior: "smooth" });
     }
   };
@@ -221,16 +195,15 @@ export const FloatingNav = ({ isEnglish }: FloatingNavProps) => {
       />
       <div id="section-announcer" className="sr-only" role="status" aria-live="polite" />
       <NavContainer role="navigation" aria-label="Section navigation">
-        {/* {sections.map(({ id, name }) => ( */}
-        {sectionsComplete.map(({ id, name, nombre }) => (
+        {sections.map(({ id, name }) => (
           <NavDot
             key={id}
             active={activeSection === id}
             onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })}
             onKeyDown={(e) => handleKeyDown(e, id)}
-            data-tooltip={isEnglish ? name : nombre}
+            data-tooltip={name}
             tabIndex={0}
-            aria-label={`${isEnglish ? name : nombre} section ${activeSection === id ? "(current section)" : ""}`}
+            aria-label={`${name} section ${activeSection === id ? "(current section)" : ""}`}
             aria-current={activeSection === id ? "true" : undefined}
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}

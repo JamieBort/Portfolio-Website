@@ -3,8 +3,6 @@ import { theme } from "../../styles/theme";
 import { keyframes } from "@emotion/react";
 import { lazy, Suspense } from "react";
 import { Trans, useTranslation } from "react-i18next";
-// import { useTranslation } from "react-i18next";
-// import "../../i18n"; // NOTE: Moved this to the ./src/main.tsx file.
 
 interface AboutProps {
   isEnglish: boolean;
@@ -142,21 +140,13 @@ export const About = ({ isEnglish }: AboutProps) => {
             <Title role="heading" aria-level={2}>
               {t("about.title")}
             </Title>
+            {/* NOTE: <<Subtitle>> used for ...  */}
             {/* TODO: Keep <<Subtitle>> for now, in case I want to use it again. */}
             {/* <Subtitle role="heading" aria-level={3}>
               Full Stack Developer
             </Subtitle> */}
             <Description role="paragraph">
-              {/* {t("about.description")} */}
-              <Trans i18nKey="keyWithLink">
-                This should be a <a href="https://codethedream.org/">some link</a>
-              </Trans>
-              {/* <p>I create elegant solutions to complex problems, specializing in modern web development with a focus on user experience and clean code.</p>
-              <p>
-                I write code and teach at <a href="https://codethedream.org/">Code the Dream</a>, a software boot camp for underrepresented people. Below you will find some of my
-                Projects.
-              </p>
-              <p>When I am not coding I am working on my next presentation or mentoring; both of which push me to learn and grow.</p> */}
+              <Trans i18nKey="about.description" values={{ name: "Code the Dream" }} components={{ 1: <a href="https://codethedream.org/" target="_blank" /> }}></Trans>
             </Description>
             <SocialLinks role="list" aria-label="Social media links">
               <a href="https://github.com/jamiebort/" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile" role="listitem">
