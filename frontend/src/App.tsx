@@ -29,11 +29,11 @@ const LoadingFallback = styled.div`
 `;
 
 function App() {
-  const [isEnglish, setEnglish] = useState(true);
+  const [isEnglish, setEnglish] = useState(false);
   const handleLanguage = () => {
     // const status = isEnglish ? "en" : "es-ES";
     const status = isEnglish ? "en" : "es";
-    console.log(status);
+    console.log("isEnglish:", status); // TODO: delete this line.
     i18n.changeLanguage(status);
     setEnglish(!isEnglish);
   };

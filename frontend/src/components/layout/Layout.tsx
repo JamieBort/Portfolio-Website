@@ -13,9 +13,10 @@ interface LayoutProps {
 }
 
 const ToggleButton = ({ handleLanguage, isEnglish }: { handleLanguage: () => void; isEnglish: boolean }) => {
-  // const { t } = useTranslation();
-  // return <button onClick={handleLanguage}>{t("layout.eight")}</button>;
-  return <button onClick={handleLanguage}>{isEnglish ? "ENGLISH" : "ESPAÑOL"}</button>;
+  // TODO: choose between these two return statements.
+  const { t } = useTranslation();
+  return <button onClick={handleLanguage}>{t("layout.eight")}</button>;
+  return <button onClick={handleLanguage}>{isEnglish ? "ESPAÑOL" : "ENGLISH"}</button>;
 };
 
 const ResumeDropdown = () => {
@@ -286,6 +287,7 @@ const Footer = styled.footer`
 `;
 
 export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => {
+  console.log(isEnglish); // TODO: delete this line
   const { t } = useTranslation();
   useKeyboardNavigation();
 
@@ -345,9 +347,9 @@ export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => 
         {children}
       </Main>
       {/* NOTE: Original */}
-      <FloatingNav />
+      {/* <FloatingNav /> */}
       {/* NOTE: Updated */}
-      {/* <FloatingNav isEnglish={isEnglish} /> */}
+      <FloatingNav isEnglish={isEnglish} />
       <Footer role="contentinfo">
         <div className="container">
           {/* TODO: Clean this area up. Specifically remove the comments. And update the GPLv3 logo such that it fits the appearance of my website better and is linked locally. See the https://github.com/JamieBort/Portfolio-Website/issues/53 Issue. */}
