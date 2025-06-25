@@ -344,7 +344,10 @@ export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => 
       <Main id="main-content" role="main" tabIndex={-1}>
         {children}
       </Main>
-      <FloatingNav isEnglish={isEnglish} />
+      {/* NOTE: Original */}
+      <FloatingNav />
+      {/* NOTE: Updated */}
+      {/* <FloatingNav isEnglish={isEnglish} /> */}
       <Footer role="contentinfo">
         <div className="container">
           {/* TODO: Clean this area up. Specifically remove the comments. And update the GPLv3 logo such that it fits the appearance of my website better and is linked locally. See the https://github.com/JamieBort/Portfolio-Website/issues/53 Issue. */}
