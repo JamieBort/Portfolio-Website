@@ -6,19 +6,137 @@ import { FloatingNav } from "../navigation/FloatingNav";
 import { useKeyboardNavigation } from "../../hooks/useKeyboardNavigation";
 import { useTranslation } from "react-i18next";
 
+// NOTE: regarding the various components in the `Nav` component;
+// specifically the `Logo` component, the `<a/>`/`NavLinks` components, the `ResumeDropdown` component, and the `ToggleButton` component,
+// the button:focus styling does not match
+
 interface LayoutProps {
   children: ReactNode;
   handleLanguage: () => void;
   isEnglish: boolean;
 }
 
-const ToggleButton = ({ handleLanguage, isEnglish }: { handleLanguage: () => void; isEnglish: boolean }) => {
-  // TODO: choose between these two return statements.
+// // NOTE: OLD
+// const ToggleButton = ({ handleLanguage, isEnglish }: { handleLanguage: () => void; isEnglish: boolean }) => {
+//   // TODO: choose between these two return statements.
+//   const { t } = useTranslation();
+//   return <button onClick={handleLanguage}>{t("layout.eight")}</button>;
+//   return <button onClick={handleLanguage}>{isEnglish ? "ESPAÑOL" : "ENGLISH"}</button>;
+// };
+
+// NOTE: NEW
+// NOTE: `isEnglish` was included in the function signature but I removed it.
+// NOTE: Regarding the todo above to chose between the two return statements, there is now just one return statement.
+const ToggleButton = ({ handleLanguage }: { handleLanguage: () => void; isEnglish: boolean }) => {
   const { t } = useTranslation();
-  return <button onClick={handleLanguage}>{t("layout.eight")}</button>;
-  return <button onClick={handleLanguage}>{isEnglish ? "ESPAÑOL" : "ENGLISH"}</button>;
+
+  return <NavLinkButton onClick={handleLanguage}>{t("layout.eight")}</NavLinkButton>;
 };
 
+// // NOTE: OLD
+// const ResumeDropdown = () => {
+//   const [open, setOpen] = useState(false);
+//   const dropdownRef = useRef<HTMLDivElement>(null);
+//   const { t } = useTranslation();
+
+//   // Close on outside click
+//   useEffect(() => {
+//     const handleClickOutside = (event: MouseEvent) => {
+//       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+//         setOpen(false);
+//       }
+//     };
+//     document.addEventListener("mousedown", handleClickOutside);
+//     return () => document.removeEventListener("mousedown", handleClickOutside);
+//   }, []);
+
+//   const handleLinkClick = () => setOpen(false);
+
+//   return (
+//     <div ref={dropdownRef} role="listitem" aria-haspopup="true" aria-expanded={open} style={{ position: "relative" }}>
+//       <button
+//         onClick={() => setOpen(!open)}
+//         aria-label="Toggle Resume submenu"
+//         aria-controls="resume-submenu"
+//         style={{
+//           background: "transparent",
+//           border: "none",
+//           cursor: "pointer",
+//           color: theme.colors.textLight,
+//           fontWeight: 500,
+//           padding: `${theme.spacing.xs} ${theme.spacing.sm}`,
+//           fontSize: "inherit",
+//           lineHeight: "1",
+//           height: "100%",
+//           borderRadius: "4px",
+//         }}
+//       >
+//         {/* Resume */}
+//         {t("layout.five")}
+//       </button>
+
+//       {open && (
+//         <ul
+//           id="resume-submenu"
+//           role="menu"
+//           aria-label="Resume submenu"
+//           style={{
+//             listStyle: "none",
+//             margin: 0,
+//             padding: `${theme.spacing.xs} 0`,
+//             position: "absolute",
+//             top: "100%",
+//             left: 0,
+//             background: theme.colors.glass.background,
+//             borderRadius: "6px",
+//             boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+//             minWidth: "10rem",
+//             zIndex: 100,
+//           }}
+//         >
+//           <li role="none">
+//             <a
+//               role="menuitem"
+//               href="https://drive.google.com/file/d/1RE8huUCm6keRpVslsrlMBZrsiEVyzG5n/view"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//               aria-label="View Resume in English"
+//               onClick={handleLinkClick}
+//               style={{
+//                 display: "block",
+//                 padding: `${theme.spacing.xs} ${theme.spacing.sm}`,
+//                 color: theme.colors.textLight,
+//               }}
+//             >
+//               {/* English Version */}
+//               {t("layout.six")}
+//             </a>
+//           </li>
+//           <li role="none">
+//             <a
+//               role="menuitem"
+//               href="https://drive.google.com/file/d/1EiuH0xMwimVTgSHMx3w2GK1g-90HTeBq/view"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//               aria-label="Ver currículum en español"
+//               onClick={handleLinkClick}
+//               style={{
+//                 display: "block",
+//                 padding: `${theme.spacing.xs} ${theme.spacing.sm}`,
+//                 color: theme.colors.textLight,
+//               }}
+//             >
+//               {/* Versión en español */}
+//               {t("layout.seven")}
+//             </a>
+//           </li>
+//         </ul>
+//       )}
+//     </div>
+//   );
+// };
+
+// NOTE: NEW
 const ResumeDropdown = () => {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -37,28 +155,18 @@ const ResumeDropdown = () => {
 
   const handleLinkClick = () => setOpen(false);
 
+  const DropdownWrapper = styled.div`
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  `;
+
   return (
-    <div ref={dropdownRef} role="listitem" aria-haspopup="true" aria-expanded={open} style={{ position: "relative" }}>
-      <button
-        onClick={() => setOpen(!open)}
-        aria-label="Toggle Resume submenu"
-        aria-controls="resume-submenu"
-        style={{
-          background: "transparent",
-          border: "none",
-          cursor: "pointer",
-          color: theme.colors.textLight,
-          fontWeight: 500,
-          padding: `${theme.spacing.xs} ${theme.spacing.sm}`,
-          fontSize: "inherit",
-          lineHeight: "1",
-          height: "100%",
-          borderRadius: "4px",
-        }}
-      >
-        {/* Resume */}
+    // <div ref={dropdownRef} role="listitem" aria-haspopup="true" aria-expanded={open} style={{ position: "relative" }}>
+    <DropdownWrapper ref={dropdownRef} role="listitem" aria-haspopup="true" aria-expanded={open}>
+      <NavLinkButton onClick={() => setOpen(!open)} aria-label="Toggle Resume submenu" aria-controls="resume-submenu">
         {t("layout.five")}
-      </button>
+      </NavLinkButton>
 
       {open && (
         <ul
@@ -80,46 +188,36 @@ const ResumeDropdown = () => {
           }}
         >
           <li role="none">
-            <a
-              role="menuitem"
-              href="https://drive.google.com/file/d/1RE8huUCm6keRpVslsrlMBZrsiEVyzG5n/view"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="View Resume in English"
-              onClick={handleLinkClick}
-              style={{
-                display: "block",
-                padding: `${theme.spacing.xs} ${theme.spacing.sm}`,
-                color: theme.colors.textLight,
-              }}
-            >
-              {/* English Version */}
+            <DropdownLink role="menuitem" href="..." target="_blank" rel="noopener noreferrer" aria-label="..." onClick={handleLinkClick}>
               {t("layout.six")}
-            </a>
+            </DropdownLink>
           </li>
           <li role="none">
-            <a
-              role="menuitem"
-              href="https://drive.google.com/file/d/1EiuH0xMwimVTgSHMx3w2GK1g-90HTeBq/view"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Ver currículum en español"
-              onClick={handleLinkClick}
-              style={{
-                display: "block",
-                padding: `${theme.spacing.xs} ${theme.spacing.sm}`,
-                color: theme.colors.textLight,
-              }}
-            >
-              {/* Versión en español */}
+            <DropdownLink role="menuitem" href="..." target="_blank" rel="noopener noreferrer" aria-label="..." onClick={handleLinkClick}>
               {t("layout.seven")}
-            </a>
+            </DropdownLink>
           </li>
         </ul>
       )}
-    </div>
+    </DropdownWrapper>
   );
 };
+
+// NOTE: NEW - This does not replace anything.
+const DropdownLink = styled.a`
+  display: block;
+  padding: ${theme.spacing.xs} ${theme.spacing.sm};
+  color: ${theme.colors.textLight};
+  border-radius: 4px;
+  transition: all ${theme.transitions.default};
+
+  &:hover,
+  &:focus-visible {
+    color: ${theme.colors.light};
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+  }
+`;
 
 const LayoutWrapper = styled.div`
   @media print {
@@ -243,6 +341,28 @@ const NavLinks = styled.div`
 
   @media (max-width: ${theme.breakpoints.sm}) {
     gap: ${theme.spacing.md};
+  }
+`;
+
+// NOTE: New
+// This replicates the anchor link styles inside NavLinks, including hover and border-radius.
+const NavLinkButton = styled.button`
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: ${theme.colors.textLight};
+  font-weight: 500;
+  padding: ${theme.spacing.xs} ${theme.spacing.sm};
+  font-size: inherit;
+  line-height: 1;
+  border-radius: 4px;
+  transition: all ${theme.transitions.default};
+
+  &:hover,
+  &:focus-visible {
+    color: ${theme.colors.light};
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
   }
 `;
 

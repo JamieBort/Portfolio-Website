@@ -12,13 +12,16 @@ interface LayoutProps {
   isEnglish: boolean;
 }
 
-const ToggleButton = ({ handleLanguage, isEnglish }: { handleLanguage: () => void; isEnglish: boolean }) => {
-  // TODO: choose between these two return statements.
+// NOTE: NEW
+// NOTE: `isEnglish` was included in the function signature but I removed it.
+// NOTE: Regarding the todo above to chose between the two return statements, there is now just one return statement.
+const ToggleButton = ({ handleLanguage }: { handleLanguage: () => void; isEnglish: boolean }) => {
   const { t } = useTranslation();
-  return <button onClick={handleLanguage}>{t("layout.eight")}</button>;
-  return <button onClick={handleLanguage}>{isEnglish ? "ESPAÑOL" : "ENGLISH"}</button>;
+
+  return <NavLinkButton onClick={handleLanguage}>{t("layout.eight")}</NavLinkButton>;
 };
 
+// NOTE: NEW
 const ResumeDropdown = () => {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -39,26 +42,9 @@ const ResumeDropdown = () => {
 
   return (
     <div ref={dropdownRef} role="listitem" aria-haspopup="true" aria-expanded={open} style={{ position: "relative" }}>
-      <button
-        onClick={() => setOpen(!open)}
-        aria-label="Toggle Resume submenu"
-        aria-controls="resume-submenu"
-        style={{
-          background: "transparent",
-          border: "none",
-          cursor: "pointer",
-          color: theme.colors.textLight,
-          fontWeight: 500,
-          padding: `${theme.spacing.xs} ${theme.spacing.sm}`,
-          fontSize: "inherit",
-          lineHeight: "1",
-          height: "100%",
-          borderRadius: "4px",
-        }}
-      >
-        {/* Resume */}
+      <NavLinkButton onClick={() => setOpen(!open)} aria-label="Toggle Resume submenu" aria-controls="resume-submenu">
         {t("layout.five")}
-      </button>
+      </NavLinkButton>
 
       {open && (
         <ul
@@ -80,46 +66,36 @@ const ResumeDropdown = () => {
           }}
         >
           <li role="none">
-            <a
-              role="menuitem"
-              href="https://drive.google.com/file/d/1RE8huUCm6keRpVslsrlMBZrsiEVyzG5n/view"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="View Resume in English"
-              onClick={handleLinkClick}
-              style={{
-                display: "block",
-                padding: `${theme.spacing.xs} ${theme.spacing.sm}`,
-                color: theme.colors.textLight,
-              }}
-            >
-              {/* English Version */}
+            <DropdownLink role="menuitem" href="..." target="_blank" rel="noopener noreferrer" aria-label="..." onClick={handleLinkClick}>
               {t("layout.six")}
-            </a>
+            </DropdownLink>
           </li>
           <li role="none">
-            <a
-              role="menuitem"
-              href="https://drive.google.com/file/d/1EiuH0xMwimVTgSHMx3w2GK1g-90HTeBq/view"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Ver currículum en español"
-              onClick={handleLinkClick}
-              style={{
-                display: "block",
-                padding: `${theme.spacing.xs} ${theme.spacing.sm}`,
-                color: theme.colors.textLight,
-              }}
-            >
-              {/* Versión en español */}
+            <DropdownLink role="menuitem" href="..." target="_blank" rel="noopener noreferrer" aria-label="..." onClick={handleLinkClick}>
               {t("layout.seven")}
-            </a>
+            </DropdownLink>
           </li>
         </ul>
       )}
     </div>
   );
 };
+
+// NOTE: NEW - This does not replace anything.
+const DropdownLink = styled.a`
+  display: block;
+  padding: ${theme.spacing.xs} ${theme.spacing.sm};
+  color: ${theme.colors.textLight};
+  border-radius: 4px;
+  transition: all ${theme.transitions.default};
+
+  &:hover,
+  &:focus-visible {
+    color: ${theme.colors.light};
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+  }
+`;
 
 const LayoutWrapper = styled.div`
   @media print {
@@ -200,14 +176,6 @@ const Nav = styled.nav`
   }
 `;
 
-// TODO: Remove this as soon as it is not needed.
-// const Logo = styled(motion.div)`
-//   color: ${theme.colors.light};
-//   font-family: ${theme.fonts.heading};
-//   font-size: 1.5rem;
-//   font-weight: 700;
-// `;
-
 const Logo = styled(motion.a)`
   color: ${theme.colors.light};
   font-family: ${theme.fonts.heading};
@@ -243,6 +211,28 @@ const NavLinks = styled.div`
 
   @media (max-width: ${theme.breakpoints.sm}) {
     gap: ${theme.spacing.md};
+  }
+`;
+
+// NOTE: New
+// This replicates the anchor link styles inside NavLinks, including hover and border-radius.
+const NavLinkButton = styled.button`
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: ${theme.colors.textLight};
+  font-weight: 500;
+  padding: ${theme.spacing.xs} ${theme.spacing.sm};
+  font-size: inherit;
+  line-height: 1;
+  border-radius: 4px;
+  transition: all ${theme.transitions.default};
+
+  &:hover,
+  &:focus-visible {
+    color: ${theme.colors.light};
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
   }
 `;
 
@@ -314,11 +304,11 @@ export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => 
               aria-level={1}
               aria-label="Go to jimsmith.com homepage"
             >
-              jimsmith
+              jim smith
             </Logo>
             {/* </h1> */}
             {/* <Logo initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} role="heading" aria-level={1}>
-              jimsmith
+              jim smith
             </Logo> */}
             <NavLinks role="list">
               <a href="#about" role="listitem" aria-label="About section">
