@@ -190,6 +190,7 @@ const ProjectLinks = styled.div`
   }
 `;
 
+// TODO: Populate the project descriptions from the repo, rather than hardcoded below or hardcoded in the .json files in the `/frontend/public/locales/` directory.
 const projects = [
   {
     id: 1,
