@@ -7,8 +7,8 @@ import { useKeyboardNavigation } from "../../hooks/useKeyboardNavigation";
 import { useTranslation } from "react-i18next";
 
 // NOTE: regarding the various components in the `Nav` component;
-// specifically the `Logo` component, the `<a/>`/`NavLinks` components, the `ResumeDropdown` component, and the `ToggleButton` component,
-// the button:focus styling does not match
+// specifically the `Logo` component, the `<a/>`/`NavLinks` components, the `ResumeDropdown` component, and the `LanguageToggle` component,
+// the button:focus styling does not match.
 
 interface LayoutProps {
   children: ReactNode;
@@ -16,125 +16,10 @@ interface LayoutProps {
   isEnglish: boolean;
 }
 
-// // NOTE: OLD
-// const ToggleButton = ({ handleLanguage, isEnglish }: { handleLanguage: () => void; isEnglish: boolean }) => {
-//   // TODO: choose between these two return statements.
-//   const { t } = useTranslation();
-//   return <button onClick={handleLanguage}>{t("layout.eight")}</button>;
-//   return <button onClick={handleLanguage}>{isEnglish ? "ESPAÑOL" : "ENGLISH"}</button>;
-// };
-
-// NOTE: NEW
-// NOTE: `isEnglish` was included in the function signature but I removed it.
-// NOTE: Regarding the todo above to chose between the two return statements, there is now just one return statement.
-const ToggleButton = ({ handleLanguage }: { handleLanguage: () => void; isEnglish: boolean }) => {
+const LanguageToggle = ({ handleLanguage }: { handleLanguage: () => void }) => {
   const { t } = useTranslation();
-
   return <NavLinkButton onClick={handleLanguage}>{t("layout.eight")}</NavLinkButton>;
 };
-
-// // NOTE: OLD
-// const ResumeDropdown = () => {
-//   const [open, setOpen] = useState(false);
-//   const dropdownRef = useRef<HTMLDivElement>(null);
-//   const { t } = useTranslation();
-
-//   // Close on outside click
-//   useEffect(() => {
-//     const handleClickOutside = (event: MouseEvent) => {
-//       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-//         setOpen(false);
-//       }
-//     };
-//     document.addEventListener("mousedown", handleClickOutside);
-//     return () => document.removeEventListener("mousedown", handleClickOutside);
-//   }, []);
-
-//   const handleLinkClick = () => setOpen(false);
-
-//   return (
-//     <div ref={dropdownRef} role="listitem" aria-haspopup="true" aria-expanded={open} style={{ position: "relative" }}>
-//       <button
-//         onClick={() => setOpen(!open)}
-//         aria-label="Toggle Resume submenu"
-//         aria-controls="resume-submenu"
-//         style={{
-//           background: "transparent",
-//           border: "none",
-//           cursor: "pointer",
-//           color: theme.colors.textLight,
-//           fontWeight: 500,
-//           padding: `${theme.spacing.xs} ${theme.spacing.sm}`,
-//           fontSize: "inherit",
-//           lineHeight: "1",
-//           height: "100%",
-//           borderRadius: "4px",
-//         }}
-//       >
-//         {/* Resume */}
-//         {t("layout.five")}
-//       </button>
-
-//       {open && (
-//         <ul
-//           id="resume-submenu"
-//           role="menu"
-//           aria-label="Resume submenu"
-//           style={{
-//             listStyle: "none",
-//             margin: 0,
-//             padding: `${theme.spacing.xs} 0`,
-//             position: "absolute",
-//             top: "100%",
-//             left: 0,
-//             background: theme.colors.glass.background,
-//             borderRadius: "6px",
-//             boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
-//             minWidth: "10rem",
-//             zIndex: 100,
-//           }}
-//         >
-//           <li role="none">
-//             <a
-//               role="menuitem"
-//               href="https://drive.google.com/file/d/1RE8huUCm6keRpVslsrlMBZrsiEVyzG5n/view"
-//               target="_blank"
-//               rel="noopener noreferrer"
-//               aria-label="View Resume in English"
-//               onClick={handleLinkClick}
-//               style={{
-//                 display: "block",
-//                 padding: `${theme.spacing.xs} ${theme.spacing.sm}`,
-//                 color: theme.colors.textLight,
-//               }}
-//             >
-//               {/* English Version */}
-//               {t("layout.six")}
-//             </a>
-//           </li>
-//           <li role="none">
-//             <a
-//               role="menuitem"
-//               href="https://drive.google.com/file/d/1EiuH0xMwimVTgSHMx3w2GK1g-90HTeBq/view"
-//               target="_blank"
-//               rel="noopener noreferrer"
-//               aria-label="Ver currículum en español"
-//               onClick={handleLinkClick}
-//               style={{
-//                 display: "block",
-//                 padding: `${theme.spacing.xs} ${theme.spacing.sm}`,
-//                 color: theme.colors.textLight,
-//               }}
-//             >
-//               {/* Versión en español */}
-//               {t("layout.seven")}
-//             </a>
-//           </li>
-//         </ul>
-//       )}
-//     </div>
-//   );
-// };
 
 // NOTE: NEW
 const ResumeDropdown = () => {
@@ -162,7 +47,6 @@ const ResumeDropdown = () => {
   `;
 
   return (
-    // <div ref={dropdownRef} role="listitem" aria-haspopup="true" aria-expanded={open} style={{ position: "relative" }}>
     <DropdownWrapper ref={dropdownRef} role="listitem" aria-haspopup="true" aria-expanded={open}>
       <NavLinkButton onClick={() => setOpen(!open)} aria-label="Toggle Resume submenu" aria-controls="resume-submenu">
         {t("layout.five")}
@@ -407,7 +291,7 @@ const Footer = styled.footer`
 `;
 
 export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => {
-  console.log(isEnglish); // TODO: delete this line
+  // console.log(isEnglish); // TODO: delete this line
   const { t } = useTranslation();
   useKeyboardNavigation();
 
@@ -442,33 +326,26 @@ export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => 
             </Logo> */}
             <NavLinks role="list">
               <a href="#about" role="listitem" aria-label="About section">
-                {/* About */}
                 {t("layout.one")}
               </a>
               <a href="#projects" role="listitem" aria-label="Projects section">
-                {/* Projects */}
                 {t("layout.two")}
               </a>
               <a href="#skills" role="listitem" aria-label="Skills section">
-                {/* Skills */}
                 {t("layout.three")}
               </a>
               <a href="#contact" role="listitem" aria-label="Contact section">
-                {/* Contact */}
                 {t("layout.four")}
               </a>
               <ResumeDropdown />
             </NavLinks>
-            <ToggleButton handleLanguage={handleLanguage} isEnglish={isEnglish} />
+            <LanguageToggle handleLanguage={handleLanguage} />
           </div>
         </Nav>
       </Header>
       <Main id="main-content" role="main" tabIndex={-1}>
         {children}
       </Main>
-      {/* NOTE: Original */}
-      {/* <FloatingNav /> */}
-      {/* NOTE: Updated */}
       <FloatingNav isEnglish={isEnglish} />
       <Footer role="contentinfo">
         <div className="container">
