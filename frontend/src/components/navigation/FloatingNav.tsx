@@ -135,20 +135,20 @@ const ProgressBar = styled(motion.div)`
 `;
 
 // // NOTE: Original
-// const sections = [
-//   { id: "about", name: "Home" },
-//   { id: "projects", name: "Projects" },
-//   { id: "skills", name: "Skills" },
-//   { id: "contact", name: "Contact" },
-// ];
-
-// NOTE: Updated
-const sectionsComplete = [
-  { id: "about", name: "Home", nombre: "Casa" },
-  { id: "projects", name: "Projects", nombre: "Proyectos" },
-  { id: "skills", name: "Skills", nombre: "Habilidades" },
-  { id: "contact", name: "Contact", nombre: "Contacto" },
+const sections = [
+  { id: "about", name: "Home" },
+  { id: "projects", name: "Projects" },
+  { id: "skills", name: "Skills" },
+  { id: "contact", name: "Contact" },
 ];
+
+// // NOTE: Updated
+// const sectionsComplete = [
+//   { id: "about", name: "Home", nombre: "Casa" },
+//   { id: "projects", name: "Projects", nombre: "Proyectos" },
+//   { id: "skills", name: "Skills", nombre: "Habilidades" },
+//   { id: "contact", name: "Contact", nombre: "Contacto" },
+// ];
 
 export const FloatingNav = ({ isEnglish }: FloatingNavProps) => {
   const [activeSection, setActiveSection] = useState("about");
@@ -159,20 +159,24 @@ export const FloatingNav = ({ isEnglish }: FloatingNavProps) => {
     restDelta: 0.001,
   });
 
+  console.log(isEnglish); // TODO: delete this line.
+
   useEffect(() => {
     const handleScroll = () => {
       const windowHeight = window.innerHeight;
 
-      const result = sectionsComplete.map(({ id, name, nombre }) => ({
-        id,
-        param: isEnglish ? name : nombre,
-      }));
-      // console.log(result);
+      // // NOTE: Updated (new - not replacing anything)
+      // const result = sectionsComplete.map(({ id, name, nombre }) => ({
+      //   id,
+      //   param: isEnglish ? name : nombre,
+      // }));
+      // // console.log(result);
 
       // Find which section is currently in view
-      // sections.forEach(({ id, name }) => { // NOTE: Original
-      // NOTE: Updated
-      result.forEach(({ id, param }) => {
+      // NOTE: Original
+      sections.forEach(({ id, name }) => {
+        // // NOTE: Updated
+        // result.forEach(({ id, param }) => {
         const element = document.getElementById(id);
         if (element) {
           const { top, bottom } = element.getBoundingClientRect();
@@ -181,7 +185,10 @@ export const FloatingNav = ({ isEnglish }: FloatingNavProps) => {
             // Update aria-live region
             const liveRegion = document.getElementById("section-announcer");
             if (liveRegion) {
-              liveRegion.textContent = `Current section: ${param}`;
+              // NOTE: Original
+              liveRegion.textContent = `Current section: ${name}`;
+              // // NOTE: Updated
+              // liveRegion.textContent = `Current section: ${param}`;
             }
           }
         }
@@ -190,7 +197,10 @@ export const FloatingNav = ({ isEnglish }: FloatingNavProps) => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isEnglish]);
+    // NOTE: Original
+  }, []);
+  // // NOTE: Updated
+  // }, [isEnglish]);
 
   const handleKeyDown = (e: React.KeyboardEvent, sectionId: string) => {
     if (e.key === "Enter" || e.key === " ") {
@@ -198,13 +208,13 @@ export const FloatingNav = ({ isEnglish }: FloatingNavProps) => {
       document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
     } else if (e.key === "ArrowUp" || e.key === "ArrowDown") {
       e.preventDefault();
-      // const currentIndex = sections.findIndex(({ id }) => id === sectionId); // NOTE: Original
-      // const nextIndex = e.key === "ArrowUp" ? Math.max(0, currentIndex - 1) : Math.min(sections.length - 1, currentIndex + 1); // NOTE: Original
-      const currentIndex = sectionsComplete.findIndex(({ id }) => id === sectionId); // NOTE: Updated
-      const nextIndex = e.key === "ArrowUp" ? Math.max(0, currentIndex - 1) : Math.min(sectionsComplete.length - 1, currentIndex + 1); // NOTE: Updated
+      const currentIndex = sections.findIndex(({ id }) => id === sectionId); // NOTE: Original
+      const nextIndex = e.key === "ArrowUp" ? Math.max(0, currentIndex - 1) : Math.min(sections.length - 1, currentIndex + 1); // NOTE: Original
+      // const currentIndex = sectionsComplete.findIndex(({ id }) => id === sectionId); // NOTE: Updated
+      // const nextIndex = e.key === "ArrowUp" ? Math.max(0, currentIndex - 1) : Math.min(sectionsComplete.length - 1, currentIndex + 1); // NOTE: Updated
 
-      // const nextSection = sections[nextIndex]; // NOTE: Original
-      const nextSection = sectionsComplete[nextIndex]; // NOTE: Updated
+      const nextSection = sections[nextIndex]; // NOTE: Original
+      // const nextSection = sectionsComplete[nextIndex]; // NOTE: Updated
       document.getElementById(nextSection.id)?.scrollIntoView({ behavior: "smooth" });
     }
   };
@@ -221,16 +231,24 @@ export const FloatingNav = ({ isEnglish }: FloatingNavProps) => {
       />
       <div id="section-announcer" className="sr-only" role="status" aria-live="polite" />
       <NavContainer role="navigation" aria-label="Section navigation">
-        {/* {sections.map(({ id, name }) => ( */}
-        {sectionsComplete.map(({ id, name, nombre }) => (
+        {/* NOTE: Original */}
+        {sections.map(({ id, name }) => (
+          // NOTE: Updated
+          // {sectionsComplete.map(({ id, name, nombre }) => (
           <NavDot
             key={id}
             active={activeSection === id}
             onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })}
             onKeyDown={(e) => handleKeyDown(e, id)}
-            data-tooltip={isEnglish ? name : nombre}
+            // NOTE: Original
+            data-tooltip={name}
+            // NOTE: Updated
+            // data-tooltip={isEnglish ? name : nombre}
             tabIndex={0}
-            aria-label={`${isEnglish ? name : nombre} section ${activeSection === id ? "(current section)" : ""}`}
+            // NOTE: Original
+            aria-label={`${name} section ${activeSection === id ? "(current section)" : ""}`}
+            // NOTE: Updated
+            // aria-label={`${isEnglish ? name : nombre} section ${activeSection === id ? "(current section)" : ""}`}
             aria-current={activeSection === id ? "true" : undefined}
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
