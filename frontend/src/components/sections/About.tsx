@@ -146,7 +146,11 @@ export const About = ({ isEnglish }: AboutProps) => {
               Full Stack Developer
             </Subtitle> */}
             <Description role="paragraph">
-              <Trans i18nKey="about.description" values={{ name: "Code the Dream" }} components={{ 1: <a href="https://codethedream.org/" target="_blank" /> }}></Trans>
+              <Trans
+                i18nKey="about.description"
+                values={{ name: "Code the Dream" }}
+                components={{ CustomComponent01: <a href="https://codethedream.org/" target="_blank" /> }}
+              ></Trans>
             </Description>
             <SocialLinks role="list" aria-label="Social media links">
               <a href="https://github.com/jamiebort/" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile" role="listitem">
