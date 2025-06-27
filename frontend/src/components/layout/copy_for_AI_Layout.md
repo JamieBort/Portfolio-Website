@@ -3,8 +3,15 @@ import { motion } from "framer-motion";
 import { ReactNode, useEffect, useRef, useState } from "react";
 import { theme } from "../../styles/theme";
 import { FloatingNav } from "../navigation/FloatingNav";
+// import { NavLinkButton } from "../buttons/NavLinkButton";
+// import { FloatingLanguageToggle } from "../FloatingLanguageToggle";
 import { useKeyboardNavigation } from "../../hooks/useKeyboardNavigation";
 import { useTranslation } from "react-i18next";
+import { FloatingLanguageToggle } from "../buttons/FloatingLanguageToggle";
+
+// NOTE: regarding the various components in the `Nav` component;
+// specifically the `Logo` component, the `<a/>`/`NavLinks` components, the `ResumeDropdown` component, and the `LanguageToggle` component,
+// the button:focus styling does not match.
 
 interface LayoutProps {
   children: ReactNode;
@@ -12,12 +19,9 @@ interface LayoutProps {
   isEnglish: boolean;
 }
 
-// NOTE: NEW
-// NOTE: `isEnglish` was included in the function signature but I removed it.
-// NOTE: Regarding the todo above to chose between the two return statements, there is now just one return statement.
-const ToggleButton = ({ handleLanguage }: { handleLanguage: () => void; isEnglish: boolean }) => {
+// NOTE: temporary
+const LanguageToggle = ({ handleLanguage }: { handleLanguage: () => void }) => {
   const { t } = useTranslation();
-
   return <NavLinkButton onClick={handleLanguage}>{t("layout.eight")}</NavLinkButton>;
 };
 
@@ -40,8 +44,14 @@ const ResumeDropdown = () => {
 
   const handleLinkClick = () => setOpen(false);
 
+  const DropdownWrapper = styled.div`
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  `;
+
   return (
-    <div ref={dropdownRef} role="listitem" aria-haspopup="true" aria-expanded={open} style={{ position: "relative" }}>
+    <DropdownWrapper ref={dropdownRef} role="listitem" aria-haspopup="true" aria-expanded={open}>
       <NavLinkButton onClick={() => setOpen(!open)} aria-label="Toggle Resume submenu" aria-controls="resume-submenu">
         {t("layout.five")}
       </NavLinkButton>
@@ -66,7 +76,7 @@ const ResumeDropdown = () => {
           }}
         >
           <li role="none">
-            <DropdownLink role="menuitem" href="..." target="_blank" rel="noopener noreferrer" aria-label="..." onClick={handleLinkClick}>
+            <DropdownLink role="menuitem" href="https://www.google.com" target="_blank" rel="noopener noreferrer" aria-label="..." onClick={handleLinkClick}>
               {t("layout.six")}
             </DropdownLink>
           </li>
@@ -77,7 +87,7 @@ const ResumeDropdown = () => {
           </li>
         </ul>
       )}
-    </div>
+    </DropdownWrapper>
   );
 };
 
@@ -176,6 +186,14 @@ const Nav = styled.nav`
   }
 `;
 
+// TODO: Remove this as soon as it is not needed.
+// const Logo = styled(motion.div)`
+//   color: ${theme.colors.light};
+//   font-family: ${theme.fonts.heading};
+//   font-size: 1.5rem;
+//   font-weight: 700;
+// `;
+
 const Logo = styled(motion.a)`
   color: ${theme.colors.light};
   font-family: ${theme.fonts.heading};
@@ -234,6 +252,11 @@ const NavLinkButton = styled.button`
     background-color: rgba(255, 255, 255, 0.1);
     outline: none;
   }
+
+  // // NOTE: temporary
+  // // NEW: Responsive styling
+  // @media (max-width: ${theme.breakpoints.sm}) {
+  //   display: none;
 `;
 
 const Main = styled.main`
@@ -276,8 +299,11 @@ const Footer = styled.footer`
   }
 `;
 
+// // NOTE: temporary
+// export const Layout = ({ children, isEnglish }: LayoutProps) => {
+// NOTE: original
 export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => {
-  console.log(isEnglish); // TODO: delete this line
+  // console.log(isEnglish); // TODO: delete this line
   const { t } = useTranslation();
   useKeyboardNavigation();
 
@@ -312,33 +338,31 @@ export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => 
             </Logo> */}
             <NavLinks role="list">
               <a href="#about" role="listitem" aria-label="About section">
-                {/* About */}
                 {t("layout.one")}
               </a>
               <a href="#projects" role="listitem" aria-label="Projects section">
-                {/* Projects */}
                 {t("layout.two")}
               </a>
               <a href="#skills" role="listitem" aria-label="Skills section">
-                {/* Skills */}
                 {t("layout.three")}
               </a>
               <a href="#contact" role="listitem" aria-label="Contact section">
-                {/* Contact */}
                 {t("layout.four")}
               </a>
               <ResumeDropdown />
             </NavLinks>
-            <ToggleButton handleLanguage={handleLanguage} isEnglish={isEnglish} />
+            {/* NOTE: temporary */}
+            <LanguageToggle handleLanguage={handleLanguage} />
+            {/* NOTE: temporary */}
+            {/* <FloatingLanguageToggle handleLanguage={handleLanguage} /> */}
           </div>
         </Nav>
       </Header>
       <Main id="main-content" role="main" tabIndex={-1}>
         {children}
       </Main>
-      {/* NOTE: Original */}
-      {/* <FloatingNav /> */}
-      {/* NOTE: Updated */}
+      {/* NOTE: Add FloatingLanguageToggle here?  */}
+      <FloatingLanguageToggle handleLanguage={handleLanguage} />
       <FloatingNav isEnglish={isEnglish} />
       <Footer role="contentinfo">
         <div className="container">

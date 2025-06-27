@@ -3,8 +3,11 @@ import { motion } from "framer-motion";
 import { ReactNode, useEffect, useRef, useState } from "react";
 import { theme } from "../../styles/theme";
 import { FloatingNav } from "../navigation/FloatingNav";
+// import { NavLinkButton } from "../buttons/NavLinkButton";
+// import { FloatingLanguageToggle } from "../FloatingLanguageToggle";
 import { useKeyboardNavigation } from "../../hooks/useKeyboardNavigation";
 import { useTranslation } from "react-i18next";
+import { FloatingLanguageToggle } from "../buttons/FloatingLanguageToggle";
 
 // NOTE: regarding the various components in the `Nav` component;
 // specifically the `Logo` component, the `<a/>`/`NavLinks` components, the `ResumeDropdown` component, and the `LanguageToggle` component,
@@ -16,11 +19,19 @@ interface LayoutProps {
   isEnglish: boolean;
 }
 
-// // NOTE: temporary
-// const LanguageToggle = ({ handleLanguage }: { handleLanguage: () => void }) => {
-//   const { t } = useTranslation();
-//   return <NavLinkButton onClick={handleLanguage}>{t("layout.eight")}</NavLinkButton>;
-// };
+const DesktopLanguageWrapper = styled.div`
+  display: block;
+
+  @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
+    display: none;
+  }
+`;
+
+// NOTE: temporary
+const LanguageToggle = ({ handleLanguage }: { handleLanguage: () => void }) => {
+  const { t } = useTranslation();
+  return <NavLinkButton onClick={handleLanguage}>{t("layout.eight")}</NavLinkButton>;
+};
 
 // NOTE: NEW
 const ResumeDropdown = () => {
@@ -73,7 +84,7 @@ const ResumeDropdown = () => {
           }}
         >
           <li role="none">
-            <DropdownLink role="menuitem" href="..." target="_blank" rel="noopener noreferrer" aria-label="..." onClick={handleLinkClick}>
+            <DropdownLink role="menuitem" href="https://www.google.com" target="_blank" rel="noopener noreferrer" aria-label="..." onClick={handleLinkClick}>
               {t("layout.six")}
             </DropdownLink>
           </li>
@@ -296,10 +307,10 @@ const Footer = styled.footer`
   }
 `;
 
-// NOTE: temporary
-export const Layout = ({ children, isEnglish }: LayoutProps) => {
-  // NOTE: original
-  // export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => {
+// // NOTE: temporary
+// export const Layout = ({ children, isEnglish }: LayoutProps) => {
+// NOTE: original
+export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => {
   // console.log(isEnglish); // TODO: delete this line
   const { t } = useTranslation();
   useKeyboardNavigation();
@@ -350,12 +361,21 @@ export const Layout = ({ children, isEnglish }: LayoutProps) => {
             </NavLinks>
             {/* NOTE: temporary */}
             {/* <LanguageToggle handleLanguage={handleLanguage} /> */}
+            {/* NOTE: temporary */}
+            {/* <FloatingLanguageToggle handleLanguage={handleLanguage} /> */}
+            <DesktopLanguageWrapper>
+              <LanguageToggle handleLanguage={handleLanguage} />
+            </DesktopLanguageWrapper>
           </div>
         </Nav>
+        {/* Below Nav: always render — only shown on mobile portrait */}
+        {/* <FloatingLanguageToggle handleLanguage={handleLanguage} /> */}
       </Header>
       <Main id="main-content" role="main" tabIndex={-1}>
         {children}
       </Main>
+      {/* NOTE: Add FloatingLanguageToggle here?  */}
+      <FloatingLanguageToggle handleLanguage={handleLanguage} />
       <FloatingNav isEnglish={isEnglish} />
       <Footer role="contentinfo">
         <div className="container">

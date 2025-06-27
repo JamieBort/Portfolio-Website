@@ -33,7 +33,7 @@ function App() {
   const handleLanguage = () => {
     // const status = isEnglish ? "en" : "es-ES";
     const status = isEnglish ? "en" : "es";
-    console.log("isEnglish:", status); // TODO: delete this line.
+    // console.log("isEnglish:", status); // TODO: delete this line.
     i18n.changeLanguage(status);
     setEnglish(!isEnglish);
   };
