@@ -16,11 +16,10 @@ interface LayoutProps {
   isEnglish: boolean;
 }
 
-// // NOTE: temporary
-// const LanguageToggle = ({ handleLanguage }: { handleLanguage: () => void }) => {
-//   const { t } = useTranslation();
-//   return <NavLinkButton onClick={handleLanguage}>{t("layout.eight")}</NavLinkButton>;
-// };
+const LanguageToggle = ({ handleLanguage }: { handleLanguage: () => void }) => {
+  const { t } = useTranslation();
+  return <NavLinkButton onClick={handleLanguage}>{t("layout.eight")}</NavLinkButton>;
+};
 
 // NOTE: NEW
 const ResumeDropdown = () => {
@@ -249,11 +248,6 @@ const NavLinkButton = styled.button`
     background-color: rgba(255, 255, 255, 0.1);
     outline: none;
   }
-
-  // // NOTE: temporary
-  // // NEW: Responsive styling
-  // @media (max-width: ${theme.breakpoints.sm}) {
-  //   display: none;
 `;
 
 const Main = styled.main`
@@ -296,10 +290,7 @@ const Footer = styled.footer`
   }
 `;
 
-// NOTE: temporary
-export const Layout = ({ children, isEnglish }: LayoutProps) => {
-  // NOTE: original
-  // export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => {
+export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => {
   // console.log(isEnglish); // TODO: delete this line
   const { t } = useTranslation();
   useKeyboardNavigation();
@@ -348,8 +339,7 @@ export const Layout = ({ children, isEnglish }: LayoutProps) => {
               </a>
               <ResumeDropdown />
             </NavLinks>
-            {/* NOTE: temporary */}
-            {/* <LanguageToggle handleLanguage={handleLanguage} /> */}
+            <LanguageToggle handleLanguage={handleLanguage} />
           </div>
         </Nav>
       </Header>
