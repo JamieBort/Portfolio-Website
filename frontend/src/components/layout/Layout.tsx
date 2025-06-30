@@ -29,14 +29,15 @@ const DesktopLanguageWrapper = styled.div`
   right: ${theme.spacing.xl};
   z-index: 1001; // Higher than header backdrop but lower than modals
 
-  // NOTE: New
-  @media (max-width: ${theme.breakpoints.sm}) and (orientation: portrait) {
-    display: none;
-  }
-  // // NOTE: Original
-  // @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
+  // // NOTE: New
+  // @media (max-width: ${theme.breakpoints.sm}) and (orientation: portrait) {
   //   display: none;
   // }
+
+  // NOTE: Original
+  @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
+    display: none;
+  }
 `;
 
 // // NOTE: Original
