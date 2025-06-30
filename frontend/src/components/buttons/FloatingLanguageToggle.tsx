@@ -8,9 +8,11 @@ const FloatingLanguageWrapper = styled.div`
   @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
     display: block;
     position: fixed;
-    right: ${theme.spacing.xl};
+    right: ${theme.spacing.md};
+    // right: ${theme.spacing.xl};
+    top: 15%; 
     // top: 25%; /* Place between header and FloatingNav (50%) */
-    top: calc(
+    // top: calc(
       25% - 100px
     ); /* You can further tweak the top value (25%) in FloatingLanguageWrapper if the button doesn't appear visually centered between the header and the FloatingNav. You could also use calc(): */
     transform: translateY(-50%);
