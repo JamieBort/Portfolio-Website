@@ -29,9 +29,14 @@ const DesktopLanguageWrapper = styled.div`
   right: ${theme.spacing.xl};
   z-index: 1001; // Higher than header backdrop but lower than modals
 
-  @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
+  // NOTE: New
+  @media (max-width: ${theme.breakpoints.sm}) and (orientation: portrait) {
     display: none;
   }
+  // // NOTE: Original
+  // @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
+  //   display: none;
+  // }
 `;
 
 // // NOTE: Original
@@ -200,13 +205,20 @@ const Header = styled.header`
 const Nav = styled.nav`
   .container {
     display: flex;
+    flex-wrap: wrap; /* ✅ allow wrapping */
     justify-content: space-between;
     align-items: center;
     flex: 1;
     padding: 0 ${theme.spacing.md};
+    padding-right: calc(${theme.spacing.xl} + 80px); /* ✅ Add space for the fixed button */
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
+
+    // @media (max-width: 900px) {
+    //   flex-direction: column;
+    //   align-items: flex-start;
+    // }
   }
 `;
 
@@ -234,6 +246,8 @@ const NavLinks = styled.div`
   justify-content: center;
   gap: ${theme.spacing.lg};
 
+  // min-width: 600px; /* ✅ force it to wrap sooner on narrower screens */
+
   a {
     color: ${theme.colors.textLight};
     transition: all ${theme.transitions.default};
@@ -250,6 +264,11 @@ const NavLinks = styled.div`
     color: ${theme.colors.light};
     background-color: rgba(255, 255, 255, 0.1);
   }
+
+  // @media (max-width: 900px) {
+  //   // flex-direction: column;
+  //   // align-items: flex-start;
+  // }
 
   @media (max-width: ${theme.breakpoints.sm}) {
     gap: ${theme.spacing.md};
