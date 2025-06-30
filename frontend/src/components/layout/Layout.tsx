@@ -19,13 +19,29 @@ interface LayoutProps {
   isEnglish: boolean;
 }
 
+// NOTE: New
 const DesktopLanguageWrapper = styled.div`
-  display: block;
+  position: fixed;
+  top: calc(
+    ${theme.spacing.md} + 6.5px
+  ); // To make the text in the LanguageToggle component horizontally aligned with the text in the anchor tags (<a>) inside the NavLinks component, in spite of the LanguageToggle is outside the .container, manually tweak this value as needed offset the DesktopLanguageWrapper so that it aligns visually with the nav links' text baseline.
+  // top: ${theme.spacing.md};
+  right: ${theme.spacing.xl};
+  z-index: 1001; // Higher than header backdrop but lower than modals
 
   @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
     display: none;
   }
 `;
+
+// // NOTE: Original
+// const DesktopLanguageWrapper = styled.div`
+//   display: block;
+
+//   @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
+//     display: none;
+//   }
+// `;
 
 // NOTE: temporary
 const LanguageToggle = ({ handleLanguage }: { handleLanguage: () => void }) => {
@@ -359,14 +375,14 @@ export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => 
               </a>
               <ResumeDropdown />
             </NavLinks>
-            {/* NOTE: temporary */}
-            {/* <LanguageToggle handleLanguage={handleLanguage} /> */}
-            {/* NOTE: temporary */}
-            {/* <FloatingLanguageToggle handleLanguage={handleLanguage} /> */}
-            <DesktopLanguageWrapper>
-              <LanguageToggle handleLanguage={handleLanguage} />
-            </DesktopLanguageWrapper>
           </div>
+          {/* NOTE: temporary */}
+          {/* <LanguageToggle handleLanguage={handleLanguage} /> */}
+          {/* NOTE: temporary */}
+          {/* <FloatingLanguageToggle handleLanguage={handleLanguage} /> */}
+          <DesktopLanguageWrapper>
+            <LanguageToggle handleLanguage={handleLanguage} />
+          </DesktopLanguageWrapper>
         </Nav>
         {/* Below Nav: always render — only shown on mobile portrait */}
         {/* <FloatingLanguageToggle handleLanguage={handleLanguage} /> */}
