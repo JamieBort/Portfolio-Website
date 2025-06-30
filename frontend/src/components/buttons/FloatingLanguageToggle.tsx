@@ -9,8 +9,10 @@ const FloatingLanguageWrapper = styled.div`
     display: block;
     position: fixed;
     right: ${theme.spacing.xl};
-    top: 25%; /* Place between header and FloatingNav (50%) */
-    // top: calc(50% - 120px); /* You can further tweak the top value (25%) in FloatingLanguageWrapper if the button doesn't appear visually centered between the header and the FloatingNav. You could also use calc(): */
+    // top: 25%; /* Place between header and FloatingNav (50%) */
+    top: calc(
+      25% - 100px
+    ); /* You can further tweak the top value (25%) in FloatingLanguageWrapper if the button doesn't appear visually centered between the header and the FloatingNav. You could also use calc(): */
     transform: translateY(-50%);
     z-index: 1000;
     background: ${theme.colors.glass.background}80;
