@@ -19,33 +19,45 @@ interface LayoutProps {
   isEnglish: boolean;
 }
 
-// NOTE: New
+// // NOTE: New
+// const DesktopLanguageWrapper = styled.div`
+//   position: fixed; // NOTE: ORIGINAL
+
+//   // position: absolute; // NOTE: Option 2
+
+//   // top: calc(
+//   ${theme.spacing.md} + 6.5px
+//   ); // To make the text in the LanguageToggle component horizontally aligned with the text in the anchor tags (<a>) inside the NavLinks component, in spite of the LanguageToggle is outside the .container, manually tweak this value as needed offset the DesktopLanguageWrapper so that it aligns visually with the nav links' text baseline.
+
+//   // top: ${theme.spacing.md};
+
+//   right: ${theme.spacing.xl};
+//   // z-index: 1001; // Higher than header backdrop but lower than modals
+
+//   // background: blue; // TODO: DElete this line.
+//   border: 1px solid salmon; // TODO: DElete this line.
+
+//   @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
+//     // display: none;
+//     z-index: 0;
+//     position: absolute;
+//   }
+// `;
+
+// NOTE: Original
 const DesktopLanguageWrapper = styled.div`
-  position: fixed; // NOTE: ORIGINAL
-  // position: absolute; // NOTE: Option 2
-  top: calc(
-    ${theme.spacing.md} + 6.5px
-  ); // To make the text in the LanguageToggle component horizontally aligned with the text in the anchor tags (<a>) inside the NavLinks component, in spite of the LanguageToggle is outside the .container, manually tweak this value as needed offset the DesktopLanguageWrapper so that it aligns visually with the nav links' text baseline.
-  // top: ${theme.spacing.md};
-  right: ${theme.spacing.xl};
-  // z-index: 1001; // Higher than header backdrop but lower than modals
-  // background: blue; // TODO: DElete this line.
-  // border: 1px solid white; // TODO: DElete this line.
+  // display: block;
+  // border: 1px solid salmon; // TODO: DElete this line.
+  // flex: 2;
+  // flex-basis: auto;
+  flex: 1;
+  max-width: 170px;
+  min-width: 170px;
 
   @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
     display: none;
   }
 `;
-
-// // NOTE: Original
-// const DesktopLanguageWrapper = styled.div`
-//   display: block;
-//   background: blue; // TODO: DElete this line.
-
-//   @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
-//     display: none;
-//   }
-// `;
 
 // NOTE: temporary
 const LanguageToggle = ({ handleLanguage }: { handleLanguage: () => void }) => {
@@ -179,14 +191,19 @@ const LayoutWrapper = styled.div`
 `;
 
 const Header = styled.header`
+  display: flex; // NOTE: New
+  justify-content: space-between; // NOTE: New
+  align-items: center; // NOTE: New
+
   background: ${theme.colors.glass.background};
   backdrop-filter: blur(8px);
   padding: ${theme.spacing.md} 0;
   position: fixed; // NOTE: Original
-  // position: relative; // NOTE: Option 2
+  // position: relative; // NOTE: Option 2. TODO: DElete this line. Because fixed is needed.
   width: 100%;
   top: 0;
   z-index: 1000;
+  // border: 1px solid yellow; // TODO: DElete this line.
 
   @media print {
     display: none;
@@ -205,20 +222,27 @@ const Header = styled.header`
 const Nav = styled.nav`
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; // NOTE: original
+    // justify-content: flex-end;
     align-items: center;
     flex: 1;
     padding: 0 ${theme.spacing.md};
 
     padding-right: calc(${theme.spacing.xl} + 70px); // NOTE: Option 1
+
     // padding-right: calc(${theme.spacing.xl} + 100px); // 100px = width of LanguageToggle + buffer // NOTE: Option 1
     // padding-right: ${theme.spacing.xl}; /* NOTE: New. Add space for the fixed button */
     // padding-right: calc(${theme.spacing.xl} + 80px); /* NOTE: New. Add space for the fixed button */
+
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
-    // background: yellow; // TODO: DElete this line.
-    // border: 4px dotted blue; // TODO: DElete this line.
+
+    border: 4px dotted blue; // TODO: DElete this line.
+
+    // @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
+    // z-index: 1001;
+    // }
   }
 `;
 
@@ -236,18 +260,24 @@ const Logo = styled(motion.a)`
   font-size: 1.5rem;
   font-weight: 700;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  // border: 1px solid orange; // TODO: DElete this line.
+  flex-basis: auto;
+  flex: 2;
 `;
 
 const NavLinks = styled.div`
   display: flex;
-  flex: 2;
+
+  flex-basis: auto;
+  flex: 6;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: ${theme.spacing.lg};
 
-  // background: lightyellow; // TODO: DElete this line.
-  // border: 1px solid white; // TODO: DElete this line.
+  // border: 1px solid green; // TODO: DElete this line.
 
   a {
     color: ${theme.colors.textLight};
@@ -357,41 +387,43 @@ export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => 
 
       <Header role="banner">
         {/* TODO: Figure out where and how to have a language toggle button. See the https://github.com/JamieBort/Portfolio-Website/issues/52 Issue */}
-        <Nav role="navigation" aria-label="Main navigation">
-          <div className="container">
-            {/* <h1 style={{ margin: 0 }}> */}
-            <Logo
-              href="https://jamiebort.com/"
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              role="heading"
-              aria-level={1}
-              aria-label="Go to jamiebort.com homepage"
-            >
-              Jamie Bort
-            </Logo>
-            {/* </h1> */}
-            {/* <Logo initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} role="heading" aria-level={1}>
+        {/* <h1 style={{ margin: 0 }}> */}
+        <Logo
+          href="https://jamiebort.com/"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          role="heading"
+          aria-level={1}
+          aria-label="Go to jamiebort.com homepage"
+        >
+          Jamie Bort
+        </Logo>
+        {/* </h1> */}
+        {/* <Logo initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} role="heading" aria-level={1}>
               Jamie Bort
             </Logo> */}
-            <NavLinks role="list">
-              <a href="#about" role="listitem" aria-label="About section">
-                {t("layout.one")}
-              </a>
-              <a href="#projects" role="listitem" aria-label="Projects section">
-                {t("layout.two")}
-              </a>
-              <a href="#skills" role="listitem" aria-label="Skills section">
-                {t("layout.three")}
-              </a>
-              <a href="#contact" role="listitem" aria-label="Contact section">
-                {t("layout.four")}
-              </a>
-              <ResumeDropdown />
-            </NavLinks>
-          </div>
+
+        <Nav role="navigation" aria-label="Main navigation" className="container">
+          {/* <div className="container"> */}
+          <NavLinks role="list">
+            <a href="#about" role="listitem" aria-label="About section">
+              {t("layout.one")}
+            </a>
+            <a href="#projects" role="listitem" aria-label="Projects section">
+              {t("layout.two")}
+            </a>
+            <a href="#skills" role="listitem" aria-label="Skills section">
+              {t("layout.three")}
+            </a>
+            <a href="#contact" role="listitem" aria-label="Contact section">
+              {t("layout.four")}
+            </a>
+            <ResumeDropdown />
+          </NavLinks>
+          {/* </div> */}
         </Nav>
+
         {/* NOTE: temporary */}
         {/* <LanguageToggle handleLanguage={handleLanguage} /> */}
         {/* NOTE: temporary */}
@@ -399,9 +431,11 @@ export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => 
         <DesktopLanguageWrapper>
           <LanguageToggle handleLanguage={handleLanguage} />
         </DesktopLanguageWrapper>
+
         {/* Below Nav: always render — only shown on mobile portrait */}
         {/* <FloatingLanguageToggle handleLanguage={handleLanguage} /> */}
       </Header>
+
       <Main id="main-content" role="main" tabIndex={-1}>
         {children}
       </Main>
