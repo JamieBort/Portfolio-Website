@@ -5,7 +5,7 @@ import { GlobalStyles } from "./styles/GlobalStyles";
 import { ThemeProvider } from "@emotion/react";
 import { theme } from "./styles/theme";
 import styled from "@emotion/styled";
-import i18n from "i18next"; // NOTE: Using to change the language.
+import i18n from "i18next"; // NOTE: Right now using just to change the language.
 
 // Lazy load non-critical components
 const Projects = lazy(() => import("./components/sections/Projects"));

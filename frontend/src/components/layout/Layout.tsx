@@ -19,40 +19,13 @@ interface LayoutProps {
   isEnglish: boolean;
 }
 
-// NOTE: New
 const DesktopLanguageWrapper = styled.div`
-  position: fixed;
-  top: calc(
-    ${theme.spacing.md} + 6.5px
-  ); // To make the text in the LanguageToggle component horizontally aligned with the text in the anchor tags (<a>) inside the NavLinks component, in spite of the LanguageToggle is outside the .container, manually tweak this value as needed offset the DesktopLanguageWrapper so that it aligns visually with the nav links' text baseline.
-  // top: ${theme.spacing.md};
+  display: block;
 
-  right: calc(${theme.spacing.xl} + 18px); // This 15px aligns the component up over the FloatingNav component.
-  // right: ${theme.spacing.xl};
-
-  z-index: 1001; // Higher than header backdrop but lower than modals
-  // padding: 0 0 0 10px;
-  // background: lightgray; // TODO: delete this line.
-
-  // // NOTE: New
-  // @media (max-width: ${theme.breakpoints.sm}) and (orientation: portrait) {
-  //   display: none;
-  // }
-
-  // NOTE: Original
   @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
     display: none;
   }
 `;
-
-// // NOTE: Original
-// const DesktopLanguageWrapper = styled.div`
-//   display: block;
-
-//   @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
-//     display: none;
-//   }
-// `;
 
 // NOTE: temporary
 const LanguageToggle = ({ handleLanguage }: { handleLanguage: () => void }) => {
@@ -244,8 +217,6 @@ const NavLinks = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: ${theme.spacing.lg};
-  // background: lightblue; // TODO: delete this line.
-  margin: 0 90px 0 0; // NOTE: This is preventing the Resume button from sliding underneath the Toggle button. TODO: consider using other units. Consider using something global/universal such as "theme.spacing....".
 
   a {
     color: ${theme.colors.textLight};
@@ -263,11 +234,6 @@ const NavLinks = styled.div`
     color: ${theme.colors.light};
     background-color: rgba(255, 255, 255, 0.1);
   }
-
-  // @media (max-width: 900px) {
-  //   // flex-direction: column;
-  //   // align-items: flex-start;
-  // }
 
   @media (max-width: ${theme.breakpoints.sm}) {
     gap: ${theme.spacing.md};
@@ -393,14 +359,14 @@ export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => 
               </a>
               <ResumeDropdown />
             </NavLinks>
+            {/* NOTE: temporary */}
+            {/* <LanguageToggle handleLanguage={handleLanguage} /> */}
+            {/* NOTE: temporary */}
+            {/* <FloatingLanguageToggle handleLanguage={handleLanguage} /> */}
+            <DesktopLanguageWrapper>
+              <LanguageToggle handleLanguage={handleLanguage} />
+            </DesktopLanguageWrapper>
           </div>
-          {/* NOTE: temporary */}
-          {/* <LanguageToggle handleLanguage={handleLanguage} /> */}
-          {/* NOTE: temporary */}
-          {/* <FloatingLanguageToggle handleLanguage={handleLanguage} /> */}
-          <DesktopLanguageWrapper>
-            <LanguageToggle handleLanguage={handleLanguage} />
-          </DesktopLanguageWrapper>
         </Nav>
         {/* Below Nav: always render — only shown on mobile portrait */}
         {/* <FloatingLanguageToggle handleLanguage={handleLanguage} /> */}
