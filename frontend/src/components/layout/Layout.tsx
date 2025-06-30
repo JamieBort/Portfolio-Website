@@ -19,13 +19,33 @@ interface LayoutProps {
   isEnglish: boolean;
 }
 
+// NOTE: New
 const DesktopLanguageWrapper = styled.div`
-  display: block;
+  position: fixed; // NOTE: ORIGINAL
+  // position: absolute; // NOTE: Option 2
+  top: calc(
+    ${theme.spacing.md} + 6.5px
+  ); // To make the text in the LanguageToggle component horizontally aligned with the text in the anchor tags (<a>) inside the NavLinks component, in spite of the LanguageToggle is outside the .container, manually tweak this value as needed offset the DesktopLanguageWrapper so that it aligns visually with the nav links' text baseline.
+  // top: ${theme.spacing.md};
+  right: ${theme.spacing.xl};
+  // z-index: 1001; // Higher than header backdrop but lower than modals
+  // background: blue; // TODO: DElete this line.
+  // border: 1px solid white; // TODO: DElete this line.
 
   @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
     display: none;
   }
 `;
+
+// // NOTE: Original
+// const DesktopLanguageWrapper = styled.div`
+//   display: block;
+//   background: blue; // TODO: DElete this line.
+
+//   @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
+//     display: none;
+//   }
+// `;
 
 // NOTE: temporary
 const LanguageToggle = ({ handleLanguage }: { handleLanguage: () => void }) => {
@@ -162,7 +182,8 @@ const Header = styled.header`
   background: ${theme.colors.glass.background};
   backdrop-filter: blur(8px);
   padding: ${theme.spacing.md} 0;
-  position: fixed;
+  position: fixed; // NOTE: Original
+  // position: relative; // NOTE: Option 2
   width: 100%;
   top: 0;
   z-index: 1000;
@@ -188,9 +209,16 @@ const Nav = styled.nav`
     align-items: center;
     flex: 1;
     padding: 0 ${theme.spacing.md};
+
+    padding-right: calc(${theme.spacing.xl} + 70px); // NOTE: Option 1
+    // padding-right: calc(${theme.spacing.xl} + 100px); // 100px = width of LanguageToggle + buffer // NOTE: Option 1
+    // padding-right: ${theme.spacing.xl}; /* NOTE: New. Add space for the fixed button */
+    // padding-right: calc(${theme.spacing.xl} + 80px); /* NOTE: New. Add space for the fixed button */
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
+    // background: yellow; // TODO: DElete this line.
+    // border: 4px dotted blue; // TODO: DElete this line.
   }
 `;
 
@@ -217,6 +245,9 @@ const NavLinks = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: ${theme.spacing.lg};
+
+  // background: lightyellow; // TODO: DElete this line.
+  // border: 1px solid white; // TODO: DElete this line.
 
   a {
     color: ${theme.colors.textLight};
@@ -359,15 +390,15 @@ export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => 
               </a>
               <ResumeDropdown />
             </NavLinks>
-            {/* NOTE: temporary */}
-            {/* <LanguageToggle handleLanguage={handleLanguage} /> */}
-            {/* NOTE: temporary */}
-            {/* <FloatingLanguageToggle handleLanguage={handleLanguage} /> */}
-            <DesktopLanguageWrapper>
-              <LanguageToggle handleLanguage={handleLanguage} />
-            </DesktopLanguageWrapper>
           </div>
         </Nav>
+        {/* NOTE: temporary */}
+        {/* <LanguageToggle handleLanguage={handleLanguage} /> */}
+        {/* NOTE: temporary */}
+        {/* <FloatingLanguageToggle handleLanguage={handleLanguage} /> */}
+        <DesktopLanguageWrapper>
+          <LanguageToggle handleLanguage={handleLanguage} />
+        </DesktopLanguageWrapper>
         {/* Below Nav: always render — only shown on mobile portrait */}
         {/* <FloatingLanguageToggle handleLanguage={handleLanguage} /> */}
       </Header>
