@@ -9,17 +9,9 @@ const FloatingLanguageWrapper = styled.div`
     display: block;
     position: fixed;
     right: ${theme.spacing.md};
-    // right: ${theme.spacing.xl};
-    
-    // top: calc(var(--header-height) + ${theme.spacing.md} + 4.5rem);
-    
-    top: calc(${theme.spacing.md} * 2 + 6.5rem); // or a fixed value like '4.5rem'. "{theme.spacing.md} * 2" accounts for header padding top + bottom. "3rem" estimates your header’s content height (Logo, NavLinks, etc.)
-    
-    // top: 25%; /* Place between header and FloatingNav (50%) */
-    // top: calc(
-      25% - 100px
-    ); /* You can further tweak the top value (25%) in FloatingLanguageWrapper if the button doesn't appear visually centered between the header and the FloatingNav. You could also use calc(): */
-    // transform: translateY(-50%); // NOTE: this might be a problem. If so, remove it.
+    top: calc(
+      ${theme.spacing.md} * 2 + 6.5rem
+    ); // or a fixed value like '4.5rem'. "{theme.spacing.md} * 2" accounts for header padding top + bottom. "3rem" estimates your header’s content height (Logo, NavLinks, etc.)
     z-index: 1000;
     background: ${theme.colors.glass.background}80;
     backdrop-filter: blur(10px);
