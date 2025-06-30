@@ -26,8 +26,13 @@ const DesktopLanguageWrapper = styled.div`
     ${theme.spacing.md} + 6.5px
   ); // To make the text in the LanguageToggle component horizontally aligned with the text in the anchor tags (<a>) inside the NavLinks component, in spite of the LanguageToggle is outside the .container, manually tweak this value as needed offset the DesktopLanguageWrapper so that it aligns visually with the nav links' text baseline.
   // top: ${theme.spacing.md};
-  right: ${theme.spacing.xl};
+
+  right: calc(${theme.spacing.xl} + 18px); // This 15px aligns the component up over the FloatingNav component.
+  // right: ${theme.spacing.xl};
+
   z-index: 1001; // Higher than header backdrop but lower than modals
+  // padding: 0 0 0 10px;
+  // background: lightgray; // TODO: delete this line.
 
   // // NOTE: New
   // @media (max-width: ${theme.breakpoints.sm}) and (orientation: portrait) {
@@ -206,20 +211,13 @@ const Header = styled.header`
 const Nav = styled.nav`
   .container {
     display: flex;
-    flex-wrap: wrap; /* ✅ allow wrapping */
     justify-content: space-between;
     align-items: center;
     flex: 1;
     padding: 0 ${theme.spacing.md};
-    padding-right: calc(${theme.spacing.xl} + 80px); /* ✅ Add space for the fixed button */
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
-
-    // @media (max-width: 900px) {
-    //   flex-direction: column;
-    //   align-items: flex-start;
-    // }
   }
 `;
 
@@ -246,8 +244,8 @@ const NavLinks = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: ${theme.spacing.lg};
-
-  // min-width: 600px; /* ✅ force it to wrap sooner on narrower screens */
+  // background: lightblue; // TODO: delete this line.
+  margin: 0 90px 0 0; // NOTE: This is preventing the Resume button from sliding underneath the Toggle button. TODO: consider using other units. Consider using something global/universal such as "theme.spacing....".
 
   a {
     color: ${theme.colors.textLight};
