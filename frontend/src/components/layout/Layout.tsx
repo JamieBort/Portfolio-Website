@@ -3,15 +3,9 @@ import { motion } from "framer-motion";
 import { ReactNode, useEffect, useRef, useState } from "react";
 import { theme } from "../../styles/theme";
 import { FloatingNav } from "../navigation/FloatingNav";
-// import { NavLinkButton } from "../buttons/NavLinkButton";
-// import { FloatingLanguageToggle } from "../FloatingLanguageToggle";
 import { useKeyboardNavigation } from "../../hooks/useKeyboardNavigation";
 import { useTranslation } from "react-i18next";
 import { FloatingLanguageToggle } from "../buttons/FloatingLanguageToggle";
-
-// NOTE: regarding the various components in the `Nav` component;
-// specifically the `Logo` component, the `<a/>`/`NavLinks` components, the `ResumeDropdown` component, and the `LanguageToggle` component,
-// the button:focus styling does not match.
 
 interface LayoutProps {
   children: ReactNode;
@@ -20,12 +14,7 @@ interface LayoutProps {
 }
 
 const DesktopLanguageWrapper = styled.div`
-  // display: block;
-  // border: 1px solid salmon; // TODO: Delete this line. border
-
-  // flex-basis: auto;
-  // flex: 1;
-  // width: 170px;
+  // TODO: Replace "max-width: 170px;" and  "min-width: 170px;" with just "width: 170px;" instead.
   max-width: 170px;
   min-width: 170px;
 
@@ -60,13 +49,7 @@ const ResumeDropdown = () => {
   const DropdownWrapper = styled.div`
     position: relative;
     display: inline-flex;
-    // display: flex;
-    // justify-content: center;
     align-items: center;
-    // border: 1px solid red; // TODO: Delete this line. border
-    // flex: 4;
-    // max-width: 300px;
-    min-width: 79.41px;
   `;
 
   return (
@@ -95,12 +78,26 @@ const ResumeDropdown = () => {
           }}
         >
           <li role="none">
-            <DropdownLink role="menuitem" href="https://www.google.com" target="_blank" rel="noopener noreferrer" aria-label="..." onClick={handleLinkClick}>
+            <DropdownLink
+              role="menuitem"
+              href="https://drive.google.com/file/d/1RE8huUCm6keRpVslsrlMBZrsiEVyzG5n/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Resume in English"
+              onClick={handleLinkClick}
+            >
               {t("layout.six")}
             </DropdownLink>
           </li>
           <li role="none">
-            <DropdownLink role="menuitem" href="..." target="_blank" rel="noopener noreferrer" aria-label="..." onClick={handleLinkClick}>
+            <DropdownLink
+              role="menuitem"
+              href="https://drive.google.com/file/d/1EiuH0xMwimVTgSHMx3w2GK1g-90HTeBq/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Ver currículum en español"
+              onClick={handleLinkClick}
+            >
               {t("layout.seven")}
             </DropdownLink>
           </li>
@@ -181,7 +178,6 @@ const Header = styled.header`
 
   top: 0; // TODO: Determine if this is needed. If not, remove it.
   z-index: 1000; // TODO: Determine if this is needed. If not, remove it.
-  // border: 1px solid yellow; // TODO: DElete this line.
 
   width: 100%;
 
@@ -205,27 +201,10 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between; // NOTE: Original.
 
-  // justify-content: space-around;
-  // align-items: center;
-  // flex: 6;
-
-  // padding: 0 ${theme.spacing.md}; // NOTE: Original.
-  // padding-right: calc(${theme.spacing.xl} + 100px); // 100px = width of LanguageToggle + buffer // NOTE: Option 1
-  // padding-right: ${theme.spacing.xl}; /* NOTE: New. Add space for the fixed button */
-  // padding-right: calc(${theme.spacing.xl} + 80px); /* NOTE: New. Add space for the fixed button */
-
-  // margin: 0 auto;
-
   // max-width: 1200px;
   // max-width: 67%; // NOTE: keep this
   // width: 100%;
   width: 80%;
-
-  // border: 1px solid purple; // TODO: Delete this line. border
-
-  // @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
-  // z-index: 1001;
-  // }
 
   // } // TODO: Delete this line.
 `;
@@ -238,30 +217,19 @@ const Nav = styled.nav`
 //   font-weight: 700;
 // `;
 
-//  // NOTE: Old.
-// const Logo = styled(motion.a)`
-//   color: ${theme.colors.light}; // NOTE: Original.
-//   font-family: ${theme.fonts.heading}; // NOTE: Original.
-//   font-size: 1.5rem; // NOTE: Original.
-//   font-weight: 700; // NOTE: Original.
-
-//   text-decoration: none; // NOTE: Not original.
-//   display: flex; // NOTE: Not original.
-//   justify-content: right; // NOTE: Not original.
-
-//   // flex-basis: auto;
-//   // flex: 1.5;
-//   min-width: 180px;
-//   // max-width: 500px;
-//   // width: clamp(380px)
-
-//   border: 1px solid orange; // TODO: Delete this line. border
-// `;
-
 // NOTE: New.
 const Logo = styled(motion.a)`
-  // min-width: 136px;
+  color: ${theme.colors.light};
+  font-family: ${theme.fonts.heading};
+  font-size: 1.5rem;
+  font-weight: 700;
+
   width: clamp(136px, 100%, 500px);
+  display: flex;
+  justify-content: right;
+
+  // min-width: 136px;
+  // max-width: 180px;
   // width: clamp(
     136px,
     calc(5vw + 20px),
@@ -274,45 +242,26 @@ const Logo = styled(motion.a)`
     calc(5vw + 20px),
     calc((100% - 1200px) / 2 + 20px)
   );
-  // max-width: 180px;
-  color: ${theme.colors.light};
-  font-family: ${theme.fonts.heading};
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-decoration: none;
-  display: flex;
-  justify-content: right;
-  // border: 1px solid orange; // TODO: Delete this line. border
-
+  
   @media (max-width: ${theme.breakpoints.sm}) {
-    // width:auto;
-    max-width: 120px;
-    // border: 1px solid darkviolet; // TODO: Delete this line. border
+    max-width: 120px;    
   }
 `;
 
 const NavLinks = styled.div`
   display: flex;
-
-  // flex-basis: auto;
-  // flex: 3;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: ${theme.spacing.lg};
   width: 100%;
-  // border: 4px solid green; // TODO: Delete this line. border
 
   a {
-    // display: flex;
-    // justify-content: center;
     color: ${theme.colors.textLight};
     transition: all ${theme.transitions.default};
     font-weight: 500;
     padding: ${theme.spacing.xs} ${theme.spacing.sm};
     border-radius: 4px;
-    // width: 90%;
-    // border: 1px solid lightgreen; // TODO: Delete this line. border
 
     &:hover {
       color: ${theme.colors.light};
@@ -326,7 +275,6 @@ const NavLinks = styled.div`
 
   @media (max-width: ${theme.breakpoints.sm}) {
     gap: ${theme.spacing.md};
-    // border: 1px solid red; // TODO: Delete this line. border
   }
 `;
 
@@ -350,12 +298,6 @@ const NavLinkButton = styled.button`
     background-color: rgba(255, 255, 255, 0.1);
     outline: none;
   }
-
-  // // NOTE: temporary
-  // // NEW: Responsive styling
-  // @media (max-width: ${theme.breakpoints.sm}) {
-  //   display: none;
-  // }
 `;
 
 const Main = styled.main`
@@ -398,11 +340,8 @@ const Footer = styled.footer`
   }
 `;
 
-// // NOTE: temporary
-// export const Layout = ({ children, isEnglish }: LayoutProps) => {
-// NOTE: original
+// NOTE: Original
 export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => {
-  // console.log(isEnglish); // TODO: Delete this line. console
   const { t } = useTranslation();
   useKeyboardNavigation();
 
@@ -416,8 +355,6 @@ export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => 
       <SkipLink href="#main-content">Skip to main content</SkipLink>
 
       <Header role="banner">
-        {/* TODO: Figure out where and how to have a language toggle button. See the https://github.com/JamieBort/Portfolio-Website/issues/52 Issue */}
-        {/* <h1 style={{ margin: 0 }}> */}
         <Logo
           href="https://jamiebort.com/"
           initial={{ opacity: 0, x: -20 }}
@@ -429,11 +366,6 @@ export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => 
         >
           Jamie Bort
         </Logo>
-        {/* </h1> */}
-        {/* <Logo initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} role="heading" aria-level={1}>
-              Jamie Bort
-            </Logo> */}
-
         <Nav role="navigation" aria-label="Main navigation">
           {/* <div className="container"> */}
           <NavLinks role="list">

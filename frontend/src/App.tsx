@@ -5,9 +5,9 @@ import { GlobalStyles } from "./styles/GlobalStyles";
 import { ThemeProvider } from "@emotion/react";
 import { theme } from "./styles/theme";
 import styled from "@emotion/styled";
-import i18n from "i18next"; // NOTE: Right now using just to change the language.
+import i18n from "i18next"; // NOTE: Using just to change the language.
 
-// Lazy load non-critical components
+// Lazy load non-critical components. lazy lets you defer loading component’s code until it is rendered for the first time.
 const Projects = lazy(() => import("./components/sections/Projects"));
 const Skills = lazy(() => import("./components/sections/Skills"));
 const Contact = lazy(() => import("./components/sections/Contact"));
@@ -23,6 +23,8 @@ const LoadingFallback = styled.div`
   color: ${theme.colors.accent};
   font-size: 1.2rem;
 
+  // Per https://developer.mozilla.org/en-US/docs/Web/CSS/@media#media_types,
+  // "Intended for paged material and documents viewed on a screen in print preview mode."
   @media print {
     display: none;
   }
@@ -33,11 +35,11 @@ function App() {
   const handleLanguage = () => {
     // const status = isEnglish ? "en" : "es-ES";
     const status = isEnglish ? "en" : "es";
-    // console.log("isEnglish:", status); // TODO: delete this line.
     i18n.changeLanguage(status);
     setEnglish(!isEnglish);
   };
 
+  // NOTE: Possibly to be used with the https://github.com/JamieBort/Portfolio-Website/issues/58 Issue.
   // useEffect(() => {
   //   console.log(navigator.language);
   //   //   i18n.changeLanguage(navigator.language);
