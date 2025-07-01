@@ -236,7 +236,6 @@ const Skills = ({ isEnglish }: SkillsProps) => {
   return (
     <SkillsSection id="skills" role="region" aria-label="Skills and Expertise">
       <SectionTitle initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} role="heading" aria-level={2}>
-        {/* Skills & Expertise */}
         {t("skills.title")}
       </SectionTitle>
       <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>

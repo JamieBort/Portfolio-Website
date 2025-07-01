@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { theme } from "../../styles/theme";
 import { keyframes } from "@emotion/react";
 import { lazy, Suspense } from "react";
-import { Trans, useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next"; // Trans allows us to create and use custom components.
 
 interface AboutProps {
   isEnglish: boolean;

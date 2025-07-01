@@ -5,7 +5,7 @@ import { GlobalStyles } from "./styles/GlobalStyles";
 import { ThemeProvider } from "@emotion/react";
 import { theme } from "./styles/theme";
 import styled from "@emotion/styled";
-import i18n from "i18next"; // NOTE: Using just to change the language.
+import i18n from "i18next"; // Using to change the language.
 
 // Lazy load non-critical components. lazy lets you defer loading component’s code until it is rendered for the first time.
 const Projects = lazy(() => import("./components/sections/Projects"));
@@ -31,6 +31,7 @@ const LoadingFallback = styled.div`
 `;
 
 function App() {
+  // Keeping track of which language.
   const [isEnglish, setEnglish] = useState(false);
   const handleLanguage = () => {
     // const status = isEnglish ? "en" : "es-ES";

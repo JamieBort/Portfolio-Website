@@ -191,12 +191,10 @@ const Contact = ({ isEnglish }: ContactProps) => {
       <div className="container">
         <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <SectionTitle variants={itemVariants} role="heading" aria-level={2}>
-            {/* Get In Touch */}
             {t("contact.title")}
           </SectionTitle>
           <ContactContent role="article">
             <ContactText variants={itemVariants} role="paragraph">
-              {/* I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out! */}
               {t("contact.description")}
             </ContactText>
             <ContactEmail

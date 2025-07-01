@@ -299,7 +299,6 @@ const Projects = ({ isEnglish }: ProjectsProps) => {
     <ProjectsSection id="projects" role="region" aria-label="Featured Projects">
       <div className="container">
         <SectionTitle initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} role="heading" aria-level={2}>
-          {/* Featured Projects */}
           {t("projects.title")}
         </SectionTitle>
         <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>

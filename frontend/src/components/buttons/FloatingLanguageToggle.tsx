@@ -40,6 +40,7 @@ const LanguageToggleButton = styled.button`
   }
 `;
 
+// Used to toggle between languages when viewing the app via mobile.
 export const FloatingLanguageToggle = ({ handleLanguage }: { handleLanguage: () => void }) => {
   const { t } = useTranslation();
   return (

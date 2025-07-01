@@ -28,6 +28,7 @@ const LanguageToggle = ({ handleLanguage }: { handleLanguage: () => void }) => {
   return <NavLinkButton onClick={handleLanguage}>{t("layout.eight")}</NavLinkButton>;
 };
 
+// Toggle dropdown providing access to both resume versions.
 const ResumeDropdown = () => {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -107,7 +108,6 @@ const ResumeDropdown = () => {
   );
 };
 
-// NOTE: NEW - This does not replace anything.
 const DropdownLink = styled.a`
   display: block;
   padding: ${theme.spacing.xs} ${theme.spacing.sm};
@@ -209,7 +209,8 @@ const Nav = styled.nav`
   // } // TODO: Delete this line.
 `;
 
-// TODO: Remove this as soon as it is not needed.
+// // Updated
+// // TODO: Remove this as soon as it is not needed.
 // const Logo = styled(motion.div)`
 //   color: ${theme.colors.light};
 //   font-family: ${theme.fonts.heading};
@@ -217,17 +218,17 @@ const Nav = styled.nav`
 //   font-weight: 700;
 // `;
 
-// NOTE: New.
+// Updated
 const Logo = styled(motion.a)`
   color: ${theme.colors.light};
   font-family: ${theme.fonts.heading};
   font-size: 1.5rem;
   font-weight: 700;
 
-  width: clamp(136px, 100%, 500px);
   display: flex;
   justify-content: right;
 
+  width: clamp(136px, 100%, 500px);
   // min-width: 136px;
   // max-width: 180px;
   // width: clamp(
@@ -278,7 +279,7 @@ const NavLinks = styled.div`
   }
 `;
 
-// NOTE: New
+// New. (Does not replace an older version.)
 // This replicates the anchor link styles inside NavLinks, including hover and border-radius.
 const NavLinkButton = styled.button`
   background: transparent;
@@ -340,7 +341,7 @@ const Footer = styled.footer`
   }
 `;
 
-// NOTE: Original
+// Updated.
 export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => {
   const { t } = useTranslation();
   useKeyboardNavigation();
