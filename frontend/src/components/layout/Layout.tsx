@@ -19,38 +19,13 @@ interface LayoutProps {
   isEnglish: boolean;
 }
 
-// // NOTE: New
-// const DesktopLanguageWrapper = styled.div`
-//   position: fixed; // NOTE: ORIGINAL
-
-//   // position: absolute; // NOTE: Option 2
-
-//   // top: calc(
-//   ${theme.spacing.md} + 6.5px
-//   ); // To make the text in the LanguageToggle component horizontally aligned with the text in the anchor tags (<a>) inside the NavLinks component, in spite of the LanguageToggle is outside the .container, manually tweak this value as needed offset the DesktopLanguageWrapper so that it aligns visually with the nav links' text baseline.
-
-//   // top: ${theme.spacing.md};
-
-//   right: ${theme.spacing.xl};
-//   // z-index: 1001; // Higher than header backdrop but lower than modals
-
-//   // background: blue; // TODO: DElete this line.
-//   border: 1px solid salmon; // TODO: DElete this line.
-
-//   @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
-//     // display: none;
-//     z-index: 0;
-//     position: absolute;
-//   }
-// `;
-
-// NOTE: Original
 const DesktopLanguageWrapper = styled.div`
   // display: block;
-  // border: 1px solid salmon; // TODO: DElete this line.
-  // flex: 2;
+  // border: 1px solid salmon; // TODO: Delete this line. border
+
   // flex-basis: auto;
-  flex: 1;
+  // flex: 1;
+  // width: 170px;
   max-width: 170px;
   min-width: 170px;
 
@@ -59,13 +34,11 @@ const DesktopLanguageWrapper = styled.div`
   }
 `;
 
-// NOTE: temporary
 const LanguageToggle = ({ handleLanguage }: { handleLanguage: () => void }) => {
   const { t } = useTranslation();
   return <NavLinkButton onClick={handleLanguage}>{t("layout.eight")}</NavLinkButton>;
 };
 
-// NOTE: NEW
 const ResumeDropdown = () => {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -87,7 +60,13 @@ const ResumeDropdown = () => {
   const DropdownWrapper = styled.div`
     position: relative;
     display: inline-flex;
+    // display: flex;
+    // justify-content: center;
     align-items: center;
+    // border: 1px solid red; // TODO: Delete this line. border
+    // flex: 4;
+    // max-width: 300px;
+    min-width: 79.41px;
   `;
 
   return (
@@ -191,19 +170,20 @@ const LayoutWrapper = styled.div`
 `;
 
 const Header = styled.header`
-  display: flex; // NOTE: New
-  justify-content: space-between; // NOTE: New
-  align-items: center; // NOTE: New
+  display: flex; // NOTE: New.
+  justify-content: space-between; // NOTE: New.
+  align-items: center; // NOTE: New.
 
-  background: ${theme.colors.glass.background};
-  backdrop-filter: blur(8px);
-  padding: ${theme.spacing.md} 0;
-  position: fixed; // NOTE: Original
-  // position: relative; // NOTE: Option 2. TODO: DElete this line. Because fixed is needed.
-  width: 100%;
-  top: 0;
-  z-index: 1000;
+  background: ${theme.colors.glass.background}; // NOTE: Original // NOTE: keep this.
+  backdrop-filter: blur(8px); // NOTE: Original // NOTE: keep this.
+  padding: ${theme.spacing.md} 0; // NOTE: Original // NOTE: keep this (for now).
+  position: fixed; // NOTE: Original // NOTE: keep this.
+
+  top: 0; // TODO: Determine if this is needed. If not, remove it.
+  z-index: 1000; // TODO: Determine if this is needed. If not, remove it.
   // border: 1px solid yellow; // TODO: DElete this line.
+
+  width: 100%;
 
   @media print {
     display: none;
@@ -220,30 +200,34 @@ const Header = styled.header`
 `;
 
 const Nav = styled.nav`
-  .container {
-    display: flex;
-    justify-content: space-between; // NOTE: original
-    // justify-content: flex-end;
-    align-items: center;
-    flex: 1;
-    padding: 0 ${theme.spacing.md};
+  // .container { // TODO: Delete this line.
 
-    padding-right: calc(${theme.spacing.xl} + 70px); // NOTE: Option 1
+  display: flex;
+  justify-content: space-between; // NOTE: Original.
 
-    // padding-right: calc(${theme.spacing.xl} + 100px); // 100px = width of LanguageToggle + buffer // NOTE: Option 1
-    // padding-right: ${theme.spacing.xl}; /* NOTE: New. Add space for the fixed button */
-    // padding-right: calc(${theme.spacing.xl} + 80px); /* NOTE: New. Add space for the fixed button */
+  // justify-content: space-around;
+  // align-items: center;
+  // flex: 6;
 
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 90%;
+  // padding: 0 ${theme.spacing.md}; // NOTE: Original.
+  // padding-right: calc(${theme.spacing.xl} + 100px); // 100px = width of LanguageToggle + buffer // NOTE: Option 1
+  // padding-right: ${theme.spacing.xl}; /* NOTE: New. Add space for the fixed button */
+  // padding-right: calc(${theme.spacing.xl} + 80px); /* NOTE: New. Add space for the fixed button */
 
-    border: 4px dotted blue; // TODO: DElete this line.
+  // margin: 0 auto;
 
-    // @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
-    // z-index: 1001;
-    // }
-  }
+  // max-width: 1200px;
+  // max-width: 67%; // NOTE: keep this
+  // width: 100%;
+  width: 80%;
+
+  // border: 1px solid purple; // TODO: Delete this line. border
+
+  // @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
+  // z-index: 1001;
+  // }
+
+  // } // TODO: Delete this line.
 `;
 
 // TODO: Remove this as soon as it is not needed.
@@ -254,37 +238,81 @@ const Nav = styled.nav`
 //   font-weight: 700;
 // `;
 
+//  // NOTE: Old.
+// const Logo = styled(motion.a)`
+//   color: ${theme.colors.light}; // NOTE: Original.
+//   font-family: ${theme.fonts.heading}; // NOTE: Original.
+//   font-size: 1.5rem; // NOTE: Original.
+//   font-weight: 700; // NOTE: Original.
+
+//   text-decoration: none; // NOTE: Not original.
+//   display: flex; // NOTE: Not original.
+//   justify-content: right; // NOTE: Not original.
+
+//   // flex-basis: auto;
+//   // flex: 1.5;
+//   min-width: 180px;
+//   // max-width: 500px;
+//   // width: clamp(380px)
+
+//   border: 1px solid orange; // TODO: Delete this line. border
+// `;
+
+// NOTE: New.
 const Logo = styled(motion.a)`
+  // min-width: 136px;
+  width: clamp(136px, 100%, 500px);
+  // width: clamp(
+    136px,
+    calc(5vw + 20px),
+    calc((100% - 1200px) / 2 + 20px)
+  );
+  // margin-left: clamp(2.5vw, 5vw, calc((100% - 1200px) / 2));
+  // margin-left: clamp(calc(2.5vw + 00px), calc(5vw + 80px), calc((100% - 1200px) / 2 + 00px));
+  // margin-left: clamp(
+    calc(2.5vw + 20px),
+    calc(5vw + 20px),
+    calc((100% - 1200px) / 2 + 20px)
+  );
+  // max-width: 180px;
   color: ${theme.colors.light};
   font-family: ${theme.fonts.heading};
   font-size: 1.5rem;
   font-weight: 700;
   text-decoration: none;
   display: flex;
-  justify-content: center;
-  // border: 1px solid orange; // TODO: DElete this line.
-  flex-basis: auto;
-  flex: 2;
+  justify-content: right;
+  // border: 1px solid orange; // TODO: Delete this line. border
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    // width:auto;
+    max-width: 120px;
+    // border: 1px solid darkviolet; // TODO: Delete this line. border
+  }
 `;
 
 const NavLinks = styled.div`
   display: flex;
 
-  flex-basis: auto;
-  flex: 6;
+  // flex-basis: auto;
+  // flex: 3;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   gap: ${theme.spacing.lg};
-
-  // border: 1px solid green; // TODO: DElete this line.
+  width: 100%;
+  // border: 4px solid green; // TODO: Delete this line. border
 
   a {
+    // display: flex;
+    // justify-content: center;
     color: ${theme.colors.textLight};
     transition: all ${theme.transitions.default};
     font-weight: 500;
     padding: ${theme.spacing.xs} ${theme.spacing.sm};
     border-radius: 4px;
+    // width: 90%;
+    // border: 1px solid lightgreen; // TODO: Delete this line. border
 
     &:hover {
       color: ${theme.colors.light};
@@ -298,6 +326,7 @@ const NavLinks = styled.div`
 
   @media (max-width: ${theme.breakpoints.sm}) {
     gap: ${theme.spacing.md};
+    // border: 1px solid red; // TODO: Delete this line. border
   }
 `;
 
@@ -326,6 +355,7 @@ const NavLinkButton = styled.button`
   // // NEW: Responsive styling
   // @media (max-width: ${theme.breakpoints.sm}) {
   //   display: none;
+  // }
 `;
 
 const Main = styled.main`
@@ -372,7 +402,7 @@ const Footer = styled.footer`
 // export const Layout = ({ children, isEnglish }: LayoutProps) => {
 // NOTE: original
 export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => {
-  // console.log(isEnglish); // TODO: delete this line
+  // console.log(isEnglish); // TODO: Delete this line. console
   const { t } = useTranslation();
   useKeyboardNavigation();
 
@@ -404,7 +434,7 @@ export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => 
               Jamie Bort
             </Logo> */}
 
-        <Nav role="navigation" aria-label="Main navigation" className="container">
+        <Nav role="navigation" aria-label="Main navigation">
           {/* <div className="container"> */}
           <NavLinks role="list">
             <a href="#about" role="listitem" aria-label="About section">
@@ -424,22 +454,16 @@ export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => 
           {/* </div> */}
         </Nav>
 
-        {/* NOTE: temporary */}
-        {/* <LanguageToggle handleLanguage={handleLanguage} /> */}
-        {/* NOTE: temporary */}
-        {/* <FloatingLanguageToggle handleLanguage={handleLanguage} /> */}
         <DesktopLanguageWrapper>
           <LanguageToggle handleLanguage={handleLanguage} />
         </DesktopLanguageWrapper>
 
         {/* Below Nav: always render — only shown on mobile portrait */}
-        {/* <FloatingLanguageToggle handleLanguage={handleLanguage} /> */}
       </Header>
 
       <Main id="main-content" role="main" tabIndex={-1}>
         {children}
       </Main>
-      {/* NOTE: Add FloatingLanguageToggle here?  */}
       <FloatingLanguageToggle handleLanguage={handleLanguage} />
       <FloatingNav isEnglish={isEnglish} />
       <Footer role="contentinfo">
