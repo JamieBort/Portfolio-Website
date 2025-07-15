@@ -1,28 +1,149 @@
-// The config file.
+// The i18n.ts config file.
 // TODO: move this file into a ./utils/ directory.
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next"; // Internationalization framework for React & React Native, which is based on i18next.
 import Backend from "i18next-http-backend"; // Allows me to serve the translations from the back end. Right now they reside in `./frontend/public/locales/`.
 import LanguageDetector from "i18next-browser-languagedetector"; // Used to detect user language in the browser, with support for cookie, sessionStorage, localStorage, navigator, and more.
 
+const fallbackLanguage = "en";
+// const fallbackLanguage = "es";
+
+// TODO: move "Cache breakdown" to my notes, not in this repo.
+// Cache breakdown
+// localStorage
+//   Remembers the language even after closing and reopening the browser
+//   Use when:
+//     You want to persist user’s manual language choice (e.g., a toggle)
+//     You're building a React SPA, PWA, or static site
+//     You're not doing server-side rendering
+//   Avoid if:
+//     You want language to reset every time the browser closes
+//     You're targeting environments that aggressively block localStorage (rare)
+// cookie
+//   Useful when the server needs to know the language
+//   Allows SSR frameworks (like Next.js) to read the cookie and render in the correct language
+//   Can also persist language across subdomains (with cookie domain settings)
+//   Cookies may be blocked or auto-cleared in privacy-first mobile browsers.
+//   Use when:
+//     You’re doing server-side rendering
+//     You have auth/login systems that rely on cookies already
+//     You’re hosting the app on multiple subdomains and want consistent language
+//   Avoid if:
+//     You’re purely client-side (like most CRA/Vite React apps)
+//     You don’t need the server to know the language
+// sessionStorage
+//   Resets as soon as the browser or tab is closed
+//   Doesn’t persist across sessions
+//   Use when:
+//     You want the language to reset per session (e.g., for kiosk or shared devices)
+//     You want to be extra privacy-friendly
+//     You’re running a short-lived app (e.g., a quiz, a demo, or a form wizard)
+//   Avoid if:
+//     You want the language to be remembered across visits
+//     The user is likely to return to your site and expect it in their preferred language
+
+// Note, the first element of the order array is checked first. If it doesn't return anything, the next element is checked until something is found. If nothing is found, "fallbackLng" is used. For the time being, "querystring" is used strictly for testing purposes.
+const order = ["querystring", "localStorage", "navigator"]; // On first visit → device language (navigator). After toggle, language saved in stored preference (in localStorage). On future visits, checks stored preference (localStorage).
+// const order = ["querystring", "cookie", "localStorage", "navigator"];
+
+const caches = ["localStorage"]; // Language is persisted in only "localStorage".
+// const caches = ["localStorage", "cookie"]; // Language is persisted in "localStorage" and in "cookie".
+// const caches = ["localStorage", "cookie", "sessionStorage"]; // Language is persisted in "localStorage", in "cookie", and in "sessionStorage".
+// const caches = []; // No language is persisted anywhere.
+
+const detectionOptions = {
+  // From https://github.com/i18next/i18next-browser-languageDetector?tab=readme-ov-file#detector-options
+  //   // order and from where user language should be detected
+  //   // querystring - append ?lng=LANGUAGE to URL
+  //   // hash - append #lng=LANGUAGE or #/LANGUAGE to URL
+  //   // cookie - set key i18nextLng=LANGUAGE
+  //   // localStorage - the querystring in the URL
+  //   // sessionStorage - set key i18nextLng=LANGUAGE
+  //   // navigator - set browser language
+  //   // htmlTag - add html language tag to html file <html lang="LANGUAGE" >
+  //   // path - http://my.site.com/LANGUAGE/...
+  //   // subdomain - http://LANGUAGE.site.com/...
+  //   order: ['querystring', 'hash', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
+
+  //   // keys or params to lookup language from
+  //   lookupQuerystring: 'lng',
+  //   lookupCookie: 'i18next',
+  //   lookupLocalStorage: 'i18nextLng',
+  //   lookupSessionStorage: 'i18nextLng',
+  //   lookupFromPathIndex: 0,
+  //   lookupFromSubdomainIndex: 0,
+  //   lookupHash: 'lng', // #lng=pt or #something&lng=en
+  //   lookupFromHashIndex: 0, // #/de
+
+  //   // cache user language on
+  //   caches: ['localStorage', 'cookie'],
+  //   excludeCacheFor: ['cimode'], // languages to not persist (cookie, localStorage)
+
+  //   // optional expiry and domain for set cookie
+  //   cookieMinutes: 10,
+  //   cookieDomain: 'myDomain',
+
+  //   // optional htmlTag with lang attribute, the default is:
+  //   htmlTag: document.documentElement,
+
+  //   // optional set cookie options, reference:[MDN Set-Cookie docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie)
+  //   cookieOptions: { path: '/', sameSite: 'strict' },
+
+  //   // optional conversion function used to modify the detected language code
+  //   convertDetectedLanguage: 'Iso15897',
+  //   convertDetectedLanguage: (lng) => lng.replace('-', '_')
+
+  order: order, // The order of how the app detects the language from the device/browser settings.
+
+  lookupQuerystring: "lng", // This tells i18next to look for a language code in the URL query string like: https://yoursite.com/?lng=es. "lng" is the key name, but you could use any name you like (e.g., "lang") If present, this overrides all other detection methods
+
+  // lookupLocalStorage: "i18nextLng", // Tells i18next to check localStorage.getItem("i18nextLng"). If present, this value will override device/browser preferences. Survives page reloads and browser restarts. Great for persisting language across visits if the user manually changes it.
+
+  // lookupCookie: "i18nextLng", // Tells i18next to check in cookies. Useful if you want persistence even when localStorage is disabled (e.g., private browsing). Required if you're doing SSR with server-side cookie parsing. Optional in most modern CSR apps unless you're doing SSR or want extra persistence.
+
+  caches: caches, // Controls where i18next will store the detected or selected language. For example, if a user switches languages with i18n.changeLanguage("es"), this setting: Saves "es" to each item in the "caches" array. And ensures the language is remembered on future visits. If caches is empty or missing, the language will be forgotten on reload unless re-detected.
+
+  // lookupSessionStorage: , // Similar to localStorage but only lasts per tab session. Might be useful if you don’t want to persist language across sessions.
+
+  // excludeCacheFor: ['cimode'], // Prevents certain "languages" (like debug or fallback modes) from being stored. Not device-specific, but helpful in dev environments.
+
+  // cookieOptions: { path: '/', sameSite: 'strict' }, // Good for security and behavior control across platforms. Can be tweaked if you're supporting cross-subdomain apps or mobile/desktop versions on separate subdomains.
+};
+
+const interpolation = {
+  // escape passed in values to avoid XSS injection. React already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
+  escapeValue: false,
+};
+
+// Regarding the .use() methods, their order matters.
 i18n
-  .use(initReactI18next) // Passes i18n down to react-i18next
-  .use(Backend)
-  .use(LanguageDetector)
+  .use(Backend) // Load translations (i18next-http-backend)
+  .use(LanguageDetector) // Detect language (i18next-browser-languagedetector)
+  .use(initReactI18next) // Passes i18n down to react-i18next. Connects everything to React’s context, and MUST come after ALL other setup steps.
+
   // Regarding init: https://www.i18next.com/overview/configuration-options
   .init({
     debug: true, // Use this while debugging.
-    // lng: "en", // Language to use (overrides language detection). If set to 'cimode' the output text will be the key. Make sure you use the 'en-US' format, instead of underscores or similar.
 
-    supportedLngs: ["es", "en"], // array of allowed languages
-    // supportedLngs: ["en", "es"], // array of allowed languages
+    fallbackLng: fallbackLanguage, // language to use if translations in user language are not available. Setting it explicitly to false will not trigger to load the fallbackLng at all. See the Fallback docs: https://www.i18next.com/principles/fallback#language-fallback
 
-    fallbackLng: "en", // language to use if translations in user language are not available. Setting it explicitly to false will not trigger to load the fallbackLng at all. See the Fallback docs: https://www.i18next.com/principles/fallback#language-fallback
-    // fallbackLng: "es",
+    // lng: "en", // Language to use (overrides Language Detection). If set to 'cimode' the output text will be the key. Make sure you use the 'en-US' format, instead of underscores or similar.
+
+    detection: detectionOptions, // Regarding  Language Detection: https://www.i18next.com/overview/plugins-and-utils#language-detector
+
+    supportedLngs: [fallbackLanguage, "es"], // array of allowed languages
+
+    load: "languageOnly", // Strips region codes. "es-MX" → "es", "fr-CA" → "fr" (default)
 
     // Regarding interpolation: https://www.i18next.com/translation-function/interpolation#all-interpolation-options
-    interpolation: {
-      escapeValue: false, // escape passed in values to avoid XSS injection. React already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
-    },
+    interpolation: interpolation,
   });
 export default i18n;
+
+// TODO: move "Notes" below to my notes, not in this repo.
+// Notes for a sus-issue of https://github.com/JamieBort/Portfolio-Website/issues/58
+// Notes for changing the current/detected language.
+// WRT localStorage, cookie, and sessionStorage, all three store the selected language string as '"i18nextLng": "es"'.
+// WRT localStorage, localStorage.setItem("i18nextLng", "es") manually stores the language. And const lang = localStorage.getItem("i18nextLng"); retrieves the language.
+// Note: Manually changing localStorage won't immediately update the app language — you still need to call 'i18n.changeLanguage("en");'.
+// To clear local storage for "i18nextLng", run 'localStorage.removeItem("i18nextLng");'.
