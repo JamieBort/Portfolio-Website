@@ -8,40 +8,6 @@ import LanguageDetector from "i18next-browser-languagedetector"; // Used to dete
 const fallbackLanguage = "en";
 // const fallbackLanguage = "es";
 
-// TODO: move "Cache breakdown" to my notes, not in this repo.
-// Cache breakdown
-// localStorage
-//   Remembers the language even after closing and reopening the browser
-//   Use when:
-//     You want to persist user’s manual language choice (e.g., a toggle)
-//     You're building a React SPA, PWA, or static site
-//     You're not doing server-side rendering
-//   Avoid if:
-//     You want language to reset every time the browser closes
-//     You're targeting environments that aggressively block localStorage (rare)
-// cookie
-//   Useful when the server needs to know the language
-//   Allows SSR frameworks (like Next.js) to read the cookie and render in the correct language
-//   Can also persist language across subdomains (with cookie domain settings)
-//   Cookies may be blocked or auto-cleared in privacy-first mobile browsers.
-//   Use when:
-//     You’re doing server-side rendering
-//     You have auth/login systems that rely on cookies already
-//     You’re hosting the app on multiple subdomains and want consistent language
-//   Avoid if:
-//     You’re purely client-side (like most CRA/Vite React apps)
-//     You don’t need the server to know the language
-// sessionStorage
-//   Resets as soon as the browser or tab is closed
-//   Doesn’t persist across sessions
-//   Use when:
-//     You want the language to reset per session (e.g., for kiosk or shared devices)
-//     You want to be extra privacy-friendly
-//     You’re running a short-lived app (e.g., a quiz, a demo, or a form wizard)
-//   Avoid if:
-//     You want the language to be remembered across visits
-//     The user is likely to return to your site and expect it in their preferred language
-
 // Note, the first element of the order array is checked first. If it doesn't return anything, the next element is checked until something is found. If nothing is found, "fallbackLng" is used. For the time being, "querystring" is used strictly for testing purposes.
 const order = ["querystring", "localStorage", "navigator"]; // On first visit → device language (navigator). After toggle, language saved in stored preference (in localStorage). On future visits, checks stored preference (localStorage).
 // const order = ["querystring", "cookie", "localStorage", "navigator"];
@@ -139,11 +105,3 @@ i18n
     interpolation: interpolation,
   });
 export default i18n;
-
-// TODO: move "Notes" below to my notes, not in this repo.
-// Notes for a sus-issue of https://github.com/JamieBort/Portfolio-Website/issues/58
-// Notes for changing the current/detected language.
-// WRT localStorage, cookie, and sessionStorage, all three store the selected language string as '"i18nextLng": "es"'.
-// WRT localStorage, localStorage.setItem("i18nextLng", "es") manually stores the language. And const lang = localStorage.getItem("i18nextLng"); retrieves the language.
-// Note: Manually changing localStorage won't immediately update the app language — you still need to call 'i18n.changeLanguage("en");'.
-// To clear local storage for "i18nextLng", run 'localStorage.removeItem("i18nextLng");'.
