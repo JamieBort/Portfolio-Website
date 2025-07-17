@@ -9,8 +9,10 @@ const fallbackLanguage = "en";
 // const fallbackLanguage = "es";
 
 // Note, the first element of the order array is checked first. If it doesn't return anything, the next element is checked until something is found. If nothing is found, "fallbackLng" is used. For the time being, "querystring" is used strictly for testing purposes.
-const order = ["querystring", "localStorage", "navigator"]; // On first visit → device language (navigator). After toggle, language saved in stored preference (in localStorage). On future visits, checks stored preference (localStorage).
-// const order = ["querystring", "cookie", "localStorage", "navigator"];
+// const order = ["querystring"]; // NOTE: "querystring" is not used in the app. It is there strictly for testing purposes.
+// const order = ["querystring", "navigator"]; // On every load it always looks at the browser (navigator). NOTE: "querystring" is not used in the app. It is there strictly for testing purposes.
+const order = ["querystring", "localStorage", "navigator"]; // On first visit → device language (navigator). After toggle, language saved in stored preference (in localStorage). On future visits, checks stored preference (localStorage). NOTE: "querystring" is not used in the app. It is there strictly for testing purposes.
+// const order = ["querystring", "cookie", "localStorage", "navigator"]; NOTE: "querystring" is not used in the app. It is there strictly for testing purposes.
 
 const caches = ["localStorage"]; // Language is persisted in only "localStorage".
 // const caches = ["localStorage", "cookie"]; // Language is persisted in "localStorage" and in "cookie".
@@ -32,18 +34,26 @@ const detectionOptions = {
   //   order: ['querystring', 'hash', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
 
   //   // keys or params to lookup language from
+  order: order, // The order of how the app detects the language from the device/browser settings.
+
   //   lookupQuerystring: 'lng',
-  //   lookupCookie: 'i18next',
-  //   lookupLocalStorage: 'i18nextLng',
-  //   lookupSessionStorage: 'i18nextLng',
+  lookupQuerystring: "lng", // This tells i18next to look for a language code in the URL query string like: https://yoursite.com/?lng=es. "lng" is the key name, but you could use any name you like (e.g., "lang") If present, this overrides all other detection methods
+
+  // lookupCookie: "i18nextLng", // Tells i18next to check in cookies. Useful if you want persistence even when localStorage is disabled (e.g., private browsing). Required if you're doing SSR with server-side cookie parsing. Optional in most modern CSR apps unless you're doing SSR or want extra persistence.
+
+  // lookupLocalStorage: "i18nextLng", // Tells i18next to check localStorage.getItem("i18nextLng"). If present, this value will override device/browser preferences. Survives page reloads and browser restarts. Great for persisting language across visits if the user manually changes it.
+
+  //   lookupSessionStorage: 'i18nextLng', // Similar to localStorage but only lasts per tab session. Might be useful if you don’t want to persist language across sessions.
+
   //   lookupFromPathIndex: 0,
   //   lookupFromSubdomainIndex: 0,
   //   lookupHash: 'lng', // #lng=pt or #something&lng=en
   //   lookupFromHashIndex: 0, // #/de
 
-  //   // cache user language on
-  //   caches: ['localStorage', 'cookie'],
-  //   excludeCacheFor: ['cimode'], // languages to not persist (cookie, localStorage)
+  caches: caches, // Caches user language. Controls where i18next will store the detected or selected language. For example, if a user switches languages with i18n.changeLanguage("es"), this setting: Saves "es" to each item in the "caches" array. And ensures the language is remembered on future visits. If caches is empty or missing, the language will be forgotten on reload unless re-detected.
+
+  // excludeCacheFor: ["localStorage"],
+  excludeCacheFor: ["cimode"], // Prevents certain "languages" (like debug or fallback modes) from being stored. Not device-specific, but helpful in dev environments. // languages to not persist (cookie, localStorage)
 
   //   // optional expiry and domain for set cookie
   //   cookieMinutes: 10,
@@ -53,27 +63,11 @@ const detectionOptions = {
   //   htmlTag: document.documentElement,
 
   //   // optional set cookie options, reference:[MDN Set-Cookie docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie)
-  //   cookieOptions: { path: '/', sameSite: 'strict' },
+  // cookieOptions: { path: '/', sameSite: 'strict' }, // Good for security and behavior control across platforms. Can be tweaked if you're supporting cross-subdomain apps or mobile/desktop versions on separate subdomains.
 
   //   // optional conversion function used to modify the detected language code
   //   convertDetectedLanguage: 'Iso15897',
   //   convertDetectedLanguage: (lng) => lng.replace('-', '_')
-
-  order: order, // The order of how the app detects the language from the device/browser settings.
-
-  lookupQuerystring: "lng", // This tells i18next to look for a language code in the URL query string like: https://yoursite.com/?lng=es. "lng" is the key name, but you could use any name you like (e.g., "lang") If present, this overrides all other detection methods
-
-  // lookupLocalStorage: "i18nextLng", // Tells i18next to check localStorage.getItem("i18nextLng"). If present, this value will override device/browser preferences. Survives page reloads and browser restarts. Great for persisting language across visits if the user manually changes it.
-
-  // lookupCookie: "i18nextLng", // Tells i18next to check in cookies. Useful if you want persistence even when localStorage is disabled (e.g., private browsing). Required if you're doing SSR with server-side cookie parsing. Optional in most modern CSR apps unless you're doing SSR or want extra persistence.
-
-  caches: caches, // Controls where i18next will store the detected or selected language. For example, if a user switches languages with i18n.changeLanguage("es"), this setting: Saves "es" to each item in the "caches" array. And ensures the language is remembered on future visits. If caches is empty or missing, the language will be forgotten on reload unless re-detected.
-
-  // lookupSessionStorage: , // Similar to localStorage but only lasts per tab session. Might be useful if you don’t want to persist language across sessions.
-
-  // excludeCacheFor: ['cimode'], // Prevents certain "languages" (like debug or fallback modes) from being stored. Not device-specific, but helpful in dev environments.
-
-  // cookieOptions: { path: '/', sameSite: 'strict' }, // Good for security and behavior control across platforms. Can be tweaked if you're supporting cross-subdomain apps or mobile/desktop versions on separate subdomains.
 };
 
 const interpolation = {
