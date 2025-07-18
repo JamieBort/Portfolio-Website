@@ -1,6 +1,6 @@
 {
     "layout": {
-        "one": "Cerca",
+        "one": "Acerca",
         "two": "Proyectos",
         "three": "Habilidades",
         "four": "Contacto",
@@ -31,7 +31,18 @@
         "title": "Ponte en contacto",
         "description": "to be translated into spanish to be translated into spanish to be translated into spanish to be translated into spanish to be translated into spanish "
     },
-    "test": {
-        "title": "Casa"
+    "floatingChoicePrompt": {
+        "01": "to be translated into spanish to be translated into spanish to be translated into spanish",
+        "02": "to be translated into spanish to be translated into spanish to be translated into spanish",
+        "03": "to be translated into spanish to be translated into spanish to be translated into spanish",
+        "04": "to be translated into spanish to be translated into spanish to be translated into spanish",
+        "05": "to be translated",
+        "06": "to be translated",
+        "07": "to be translated into spanish to be translated into spanish to be translated into spanish"
+    },
+    "floatingChoicePrompt02": {
+        "01": "to be translated into spanish to be translated into spanish",
+        "02": "to be translated into spanish to be translated into spanish",
+        "03": "to be translated into spanish <CustomComponent02>yup</CustomComponent02> button."
     }
 }

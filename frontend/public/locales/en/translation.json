@@ -31,7 +31,18 @@
         "title": "Get In Touch",
         "description": "I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!"
     },
-    "test": {
-        "title": "Home"
+    "floatingChoicePrompt": {
+        "01": "The next time this page loads, it will load in If you prefer this site to be in Spanish, select this button.",
+        "02": "At any time you can use it to toggle between English and Spanish.",
+        "03": "Whichever you choose now will be what is displayed next time you visit this site.",
+        "04": "By selecting the Acknowledged button, this prompt will appear next time.",
+        "05": "Ask me again next time.",
+        "06": "Acknowledged.",
+        "07": "By selecting the Acknowledged button, it will save your decision."
+    },
+    "floatingChoicePrompt02": {
+        "01": "At any time you can use this button to toggle between English and Spanish.",
+        "02": "Whichever you choose now will be what is displayed next time you visit this site.",
+        "03": "If you want this reminder the next time you visit, select this <CustomComponent02>Remind Me</CustomComponent02> button."
     }
 }

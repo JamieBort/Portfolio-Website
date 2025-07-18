@@ -6,6 +6,7 @@ import { FloatingNav } from "../navigation/FloatingNav";
 import { useKeyboardNavigation } from "../../hooks/useKeyboardNavigation";
 import { useTranslation } from "react-i18next";
 import { FloatingLanguageToggle } from "../buttons/FloatingLanguageToggle";
+import { FloatingChoicePrompt } from "../FloatingChoicePrompt";
 
 interface LayoutProps {
   children: ReactNode;
@@ -346,6 +347,19 @@ export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => 
   const { t } = useTranslation();
   useKeyboardNavigation();
 
+  // // TODO: DELETE these lines of code.
+  // // Set local storage when the page loads.
+  // useEffect(() => {
+  //   // This code runs once after the initial render (on page load)
+  //   try {
+  //     // localStorage.setItem("myKey", JSON.stringify({ data: "myValue" }));
+  //     localStorage.setItem("myKey", "value");
+  //     console.log("localStorage item set successfully on page load.");
+  //   } catch (error) {
+  //     console.error("Error setting localStorage:", error);
+  //   }
+  // }, []);
+
   useEffect(() => {
     // Add keyboard navigation instructions to console
     console.info("Keyboard Navigation:\n", "- Arrow Up/Down or PageUp/PageDown: Navigate between sections\n", "- Home: Go to top\n", "- End: Go to bottom");
@@ -397,8 +411,15 @@ export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => 
       <Main id="main-content" role="main" tabIndex={-1}>
         {children}
       </Main>
-      <FloatingLanguageToggle handleLanguage={handleLanguage} />
+
       <FloatingNav isEnglish={isEnglish} />
+
+      {/* TODO: Clean up these lines of code. */}
+      {/* {localStorage.getItem("i18nextLng") ? <FloatingChoicePrompt /> : null} */}
+      {/* {localStorage.getItem("myKey") ? null : <FloatingChoicePrompt />} */}
+      {localStorage.getItem("myOtherKey") ? null : <FloatingChoicePrompt />}
+      <FloatingLanguageToggle handleLanguage={handleLanguage} />
+
       <Footer role="contentinfo">
         <div className="container">
           {/* TODO: Clean this area up. Specifically remove the comments. And update the GPLv3 logo such that it fits the appearance of my website better and is linked locally. See the https://github.com/JamieBort/Portfolio-Website/issues/53 Issue. */}
