@@ -6,11 +6,7 @@ import { theme } from "../styles/theme";
 import { motion } from "framer-motion";
 import { Trans, useTranslation } from "react-i18next";
 
-// Desired behavior.
-// It loads when the page loads for the first time.
-// The user selects the button to confirm that this
-
-const FloatingLanguagePromptWrapper = styled.div`
+const FloatingPromptWrapper = styled.div`
   position: fixed;
   top: calc(4.5rem + ${theme.spacing.md}); // Just below the fixed header
   right: ${theme.spacing.xl};
@@ -57,61 +53,25 @@ const FloatingLanguagePromptWrapper = styled.div`
   }
 `;
 
-// TODO: Refactor file so that the body of this function is in the handleLanguage function.
-// const removeKey=(param00: string)=>{
-//     localStorage.removeItem("myKey");
-//     console.log(`${param00} is removed`);
-// }
-
-// TODO: Refactor file so that the body of this function is in the handleLanguage function.
-const addKey = (param00: string) => {
-  try {
-    localStorage.setItem("myOtherKey", "value");
-    console.log(`${param00} is added`);
-  } catch (error) {
-    console.error("Error setting localStorage:", error);
-  }
-};
-
-// TODO: Add comment here. what does this do?
-export const FloatingChoicePrompt = () => {
-  const handleLanguage = (param01: string) => {
-    // removeKey(param01);
-    addKey(param01);
-  };
-
+// TODO: Add comment here. What does this do?
+export const FloatingChoicePrompt = ({ handlePrompt }: { handlePrompt: () => void }) => {
   const { t } = useTranslation();
 
   return (
     // This provides animation.
     // TODO: Tweak the animation.
     <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-      {/* <FloatingLanguagePromptWrapper>
-        <p>{t("floatingChoicePrompt.01")}</p>
-        <p>{t("floatingChoicePrompt.02")}</p>
-        <p>{t("floatingChoicePrompt.03")}</p>
-
-        // <p>{t("floatingChoicePrompt.04")}</p>
-        // <button onClick={() => handleLanguage("temp_param")}>
-        //   <p>{t("floatingChoicePrompt.05")}</p>
-        // </button> 
-
-        <p>{t("floatingChoicePrompt.07")}</p>
-        <button onClick={() => handleLanguage("temp_param")}>
-          <p>{t("floatingChoicePrompt.06")}</p>
-        </button>
-      </FloatingLanguagePromptWrapper> */}
-
-      <FloatingLanguagePromptWrapper>
+      <FloatingPromptWrapper>
         <p>{t("floatingChoicePrompt02.01")}</p>
         <p>{t("floatingChoicePrompt02.02")}</p>
+        {/* <button onClick={handlePrompt}>push</button> */}
         <Trans
           i18nKey="floatingChoicePrompt02.03"
           components={{
-            CustomComponent02: <button onClick={() => handleLanguage("temp_param")}></button>,
+            CustomComponent02: <button onClick={handlePrompt}></button>,
           }}
         ></Trans>
-      </FloatingLanguagePromptWrapper>
+      </FloatingPromptWrapper>
     </motion.div>
   );
 };

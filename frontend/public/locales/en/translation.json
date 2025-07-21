@@ -43,6 +43,6 @@
     "floatingChoicePrompt02": {
         "01": "At any time you can use this button to toggle between English and Spanish.",
         "02": "Whichever you choose now will be what is displayed next time you visit this site.",
-        "03": "If you want this reminder the next time you visit, select this <CustomComponent02>Remind Me</CustomComponent02> button."
+        "03": "If you want this reminder the next time you visit, select this <CustomComponent02>Do NOT Remind Me</CustomComponent02> button."
     }
 }

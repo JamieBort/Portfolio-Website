@@ -1,5 +1,5 @@
 // ./frontend/src/app.tsx file
-import { lazy, Suspense, useState } from "react";
+import { lazy, Suspense, useState, useEffect } from "react";
 import { Layout } from "./components/layout/Layout";
 import { About } from "./components/sections/About";
 import { GlobalStyles } from "./styles/GlobalStyles";
@@ -36,6 +36,12 @@ function App() {
   // TODO: If "isEnglish" is not needed after https://github.com/JamieBort/Portfolio-Website/issues/52 is addressed, remove it completely.
   const [isEnglish, setEnglish] = useState(false);
 
+  // State for whether to display the FloatingChoicePrompt component or not.
+  const [isDisplay, setDisplay] = useState(true);
+
+  const displayPromptKey = "displayPrompt";
+  const displayPromptValue = "doNotRemindMe";
+
   const handleLanguage = () => {
     // const status = isEnglish ? "en" : "es-ES";
     const status = isEnglish ? "en" : "es";
@@ -43,16 +49,28 @@ function App() {
     setEnglish(!isEnglish);
   };
 
-  // NOTE: Possibly to be used with the https://github.com/JamieBort/Portfolio-Website/issues/58 Issue.
-  // useEffect(() => {
-  //   console.log(navigator.language);
-  //   //   i18n.changeLanguage(navigator.language);
-  // },[i18n]);
+  // TODO: Write code so that the prompt disapears when tapped or clicked off of the component.
+
+  // TODO: Add comment here. what does this do?
+  const handlePrompt = () => {
+    setDisplay(false);
+    localStorage.setItem(displayPromptKey, displayPromptValue);
+  };
+
+  // Checks to see if the localStorage item, displayPromptKey is there. If so, do not to display the prompt.
+  // TODO: Determine whether to add a dependency, remove the dependency array, or to leave the dependency array as is.
+  useEffect(() => {
+    try {
+      if (localStorage.getItem(displayPromptKey) === displayPromptValue) setDisplay(false);
+    } catch (error) {
+      console.error("Error getting localStorage:", error);
+    }
+  }, []);
 
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Layout handleLanguage={handleLanguage} isEnglish={isEnglish}>
+      <Layout handleLanguage={handleLanguage} handlePrompt={handlePrompt} isEnglish={isEnglish} isDisplay={isDisplay}>
         {/* About section is critical for LCP, so keep it eager loaded */}
         <About isEnglish={isEnglish} />
 

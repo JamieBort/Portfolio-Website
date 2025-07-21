@@ -12,6 +12,8 @@ interface LayoutProps {
   children: ReactNode;
   handleLanguage: () => void;
   isEnglish: boolean;
+  handlePrompt: () => void;
+  isDisplay: boolean;
 }
 
 const DesktopLanguageWrapper = styled.div`
@@ -343,23 +345,11 @@ const Footer = styled.footer`
 `;
 
 // Updated.
-export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => {
+export const Layout = ({ children, handleLanguage, isEnglish, handlePrompt, isDisplay }: LayoutProps) => {
   const { t } = useTranslation();
   useKeyboardNavigation();
 
-  // // TODO: DELETE these lines of code.
-  // // Set local storage when the page loads.
-  // useEffect(() => {
-  //   // This code runs once after the initial render (on page load)
-  //   try {
-  //     // localStorage.setItem("myKey", JSON.stringify({ data: "myValue" }));
-  //     localStorage.setItem("myKey", "value");
-  //     console.log("localStorage item set successfully on page load.");
-  //   } catch (error) {
-  //     console.error("Error setting localStorage:", error);
-  //   }
-  // }, []);
-
+  // TODO: Add comment here. What does this do?
   useEffect(() => {
     // Add keyboard navigation instructions to console
     console.info("Keyboard Navigation:\n", "- Arrow Up/Down or PageUp/PageDown: Navigate between sections\n", "- Home: Go to top\n", "- End: Go to bottom");
@@ -414,10 +404,8 @@ export const Layout = ({ children, handleLanguage, isEnglish }: LayoutProps) => 
 
       <FloatingNav isEnglish={isEnglish} />
 
-      {/* TODO: Clean up these lines of code. */}
-      {/* {localStorage.getItem("i18nextLng") ? <FloatingChoicePrompt /> : null} */}
-      {/* {localStorage.getItem("myKey") ? null : <FloatingChoicePrompt />} */}
-      {localStorage.getItem("myOtherKey") ? null : <FloatingChoicePrompt />}
+      {isDisplay ? <FloatingChoicePrompt handlePrompt={handlePrompt} /> : null}
+
       <FloatingLanguageToggle handleLanguage={handleLanguage} />
 
       <Footer role="contentinfo">
