@@ -1,4 +1,4 @@
-// The FloatingChoicePrompt file.
+// ./frontend/src/components/original_FloatingChoicePrompt.tsx
 // TODO: Write code that shows the FloatingChoicePrompt when the page loads for the first time.
 
 import styled from "@emotion/styled";

@@ -1,4 +1,4 @@
-// ./frontend/src/app.tsx file
+// ./frontend/src/original_App.tsx file
 import { lazy, Suspense, useState, useEffect } from "react";
 import { Layout } from "./components/layout/Layout";
 import { About } from "./components/sections/About";
