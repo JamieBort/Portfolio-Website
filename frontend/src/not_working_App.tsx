@@ -37,8 +37,8 @@ function App() {
   const [isEnglish, setEnglish] = useState(false);
 
   // State for whether to display the FloatingChoicePrompt component or not.
-  // const [isDisplay, setDisplay] = useState(true);
-  const [isDisplay, setDisplay] = useState(true);
+  // const [isVisible, setVisible] = useState(true);
+  const [isVisible, setVisible] = useState(true);
 
   // const displayPromptKey = "displayPrompt";
   // const displayPromptValue = "doNotRemindMe";
@@ -56,11 +56,11 @@ function App() {
 
   // TODO: Add comment here. what does this do?
   // const handlePrompt = () => {
-  //   setDisplay(false);
+  //   setVisible(false);
   //   localStorage.setItem(displayPromptKey, displayPromptValue);
   // };
   const handlePrompt = () => {
-    setDisplay(false);
+    setVisible(false);
     localStorage.setItem(displayPromptKey, displayPromptValue);
   };
 
@@ -68,7 +68,7 @@ function App() {
   // TODO: Determine whether to add a dependency, remove the dependency array, or to leave the dependency array as is.
   // useEffect(() => {
   //   try {
-  //     if (localStorage.getItem(displayPromptKey) === displayPromptValue) setDisplay(false);
+  //     if (localStorage.getItem(displayPromptKey) === displayPromptValue) setVisible(false);
   //   } catch (error) {
   //     console.error("Error getting localStorage:", error);
   //   }
@@ -76,7 +76,7 @@ function App() {
   useEffect(() => {
     try {
       if (localStorage.getItem(displayPromptKey) === displayPromptValue) {
-        setDisplay(false);
+        setVisible(false);
       }
     } catch (error) {
       console.error("Error getting localStorage:", error);
@@ -86,8 +86,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Layout handleLanguage={handleLanguage} handlePrompt={handlePrompt} isEnglish={isEnglish} isDisplay={isDisplay}>
-        {/* <Layout                             handlePrompt={handlePrompt}                       isDisplay={isDisplay}> */}
+      <Layout handleLanguage={handleLanguage} handlePrompt={handlePrompt} isEnglish={isEnglish} isVisible={isVisible}>
+        {/* <Layout                             handlePrompt={handlePrompt}                       isVisible={isVisible}> */}
 
         {/* About section is critical for LCP, so keep it eager loaded */}
         <About isEnglish={isEnglish} />

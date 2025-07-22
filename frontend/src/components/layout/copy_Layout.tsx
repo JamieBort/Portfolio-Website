@@ -1,4 +1,5 @@
-// not_working_Layout.tsx
+// ./frontend/src/components/layout/copy_Layout.tsx
+// (copy of original_Layout.tsx/Layout.tsx)
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 import { ReactNode, useEffect, useRef, useState } from "react";
@@ -16,11 +17,6 @@ interface LayoutProps {
   handlePrompt: () => void;
   isVisible: boolean;
 }
-
-// type LayoutProps = {
-// isVisible: boolean;
-// handlePrompt: () => void;
-// };
 
 const DesktopLanguageWrapper = styled.div`
   // TODO: Replace "max-width: 170px;" and  "min-width: 170px;" with just "width: 170px;" instead.
@@ -352,7 +348,6 @@ const Footer = styled.footer`
 
 // Updated.
 export const Layout = ({ children, handleLanguage, isEnglish, handlePrompt, isVisible }: LayoutProps) => {
-  // export const Layout = ({                                 handlePrompt, isVisible }: LayoutProps) => {
   const { t } = useTranslation();
   useKeyboardNavigation();
 
@@ -368,15 +363,15 @@ export const Layout = ({ children, handleLanguage, isEnglish, handlePrompt, isVi
 
       <Header role="banner">
         <Logo
-          href="https://jamiebort.com/"
+          href="https://jimjam.com/"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
           role="heading"
           aria-level={1}
-          aria-label="Go to jamiebort.com homepage"
+          aria-label="Go to jimjam.com homepage"
         >
-          Jamie Bort
+          jim jam
         </Logo>
         <Nav role="navigation" aria-label="Main navigation">
           {/* <div className="container"> */}
@@ -412,13 +407,12 @@ export const Layout = ({ children, handleLanguage, isEnglish, handlePrompt, isVi
       <FloatingNav isEnglish={isEnglish} />
 
       {isVisible ? <FloatingChoicePrompt handlePrompt={handlePrompt} /> : null}
-      {/* {isVisible && <FloatingChoicePrompt handlePrompt={handlePrompt} />} */}
 
       <FloatingLanguageToggle handleLanguage={handleLanguage} />
 
       <Footer role="contentinfo">
         <div className="container">
-          {/* TODO: Clean this area up. Specifically remove the comments. And update the GPLv3 logo such that it fits the appearance of my website better and is linked locally. See the https://github.com/JamieBort/Portfolio-Website/issues/53 Issue. */}
+          {/* TODO: Clean this area up. Specifically remove the comments. And update the GPLv3 logo such that it fits the appearance of my website better and is linked locally. See the https://github.com/jimjam/Portfolio-Website/issues/53 Issue. */}
           {/* Original */}
           {/* <p>© {new Date().getFullYear()}</p> */}
           {/* <img

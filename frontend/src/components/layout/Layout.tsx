@@ -14,7 +14,7 @@ interface LayoutProps {
   handleLanguage: () => void;
   isEnglish: boolean;
   handlePrompt: () => void;
-  isDisplay: boolean;
+  isVisible: boolean;
 }
 
 const DesktopLanguageWrapper = styled.div`
@@ -346,7 +346,7 @@ const Footer = styled.footer`
 `;
 
 // Updated.
-export const Layout = ({ children, handleLanguage, isEnglish, handlePrompt, isDisplay }: LayoutProps) => {
+export const Layout = ({ children, handleLanguage, isEnglish, handlePrompt, isVisible }: LayoutProps) => {
   const { t } = useTranslation();
   useKeyboardNavigation();
 
@@ -405,7 +405,7 @@ export const Layout = ({ children, handleLanguage, isEnglish, handlePrompt, isDi
 
       <FloatingNav isEnglish={isEnglish} />
 
-      {isDisplay ? <FloatingChoicePrompt handlePrompt={handlePrompt} /> : null}
+      {isVisible ? <FloatingChoicePrompt handlePrompt={handlePrompt} /> : null}
 
       <FloatingLanguageToggle handleLanguage={handleLanguage} />
 

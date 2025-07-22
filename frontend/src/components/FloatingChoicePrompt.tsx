@@ -1,10 +1,17 @@
 // ./frontend/src/components/original_FloatingChoicePrompt.tsx
 // TODO: Write code that shows the FloatingChoicePrompt when the page loads for the first time.
 
+// import styled from "@emotion/styled";
+// import { theme } from "../styles/theme";
+// import { motion } from "framer-motion";
+// import { Trans, useTranslation } from "react-i18next";
+
 import styled from "@emotion/styled";
 import { theme } from "../styles/theme";
 import { motion } from "framer-motion";
 import { Trans, useTranslation } from "react-i18next";
+import { useRef } from "react";
+import { useClickOutside } from "../hooks/useClickOutside";
 
 const FloatingPromptWrapper = styled.div`
   position: fixed;
@@ -53,24 +60,55 @@ const FloatingPromptWrapper = styled.div`
   }
 `;
 
+// // TODO: Add comment here. What does this do?
+// export const FloatingChoicePrompt = ({ handlePrompt }: { handlePrompt: () => void }) => {
+//   const { t } = useTranslation();
+
+//   return (
+//     // This provides animation.
+//     // TODO: Tweak the animation.
+//     <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
+//       <FloatingPromptWrapper>
+//         <p>{t("floatingChoicePrompt02.01")}</p>
+//         <p>{t("floatingChoicePrompt02.02")}</p>
+//         {/* <button onClick={handlePrompt}>push</button> */}
+//         <Trans
+//           i18nKey="floatingChoicePrompt02.03"
+//           components={{
+//             CustomComponent02: <button onClick={handlePrompt}></button>,
+//           }}
+//         ></Trans>
+//       </FloatingPromptWrapper>
+//     </motion.div>
+//   );
+// };
+
 // TODO: Add comment here. What does this do?
 export const FloatingChoicePrompt = ({ handlePrompt }: { handlePrompt: () => void }) => {
   const { t } = useTranslation();
+  // const wrapperRef = useRef<HTMLDivElement>(null);
+  // const wrapperRef = useRef(null as null | HTMLElement);
+  // const wrapperRef = useRef<HTMLElement | null>(null);
+  // const wrapperRef = useRef<HTMLDivElement>(null);
+  const wrapperRef = useRef<HTMLDivElement>(null);
+
+  // Hide prompt when clicked/tapped outside
+  // useClickOutside(wrapperRef, handlePrompt);
+  // useClickOutside(wrapperRef, handlePrompt);
+  // useClickOutside(wrapperRef as React.RefObject<HTMLElement>, handlePrompt);
+  useClickOutside(wrapperRef as React.RefObject<HTMLElement>, handlePrompt);
 
   return (
-    // This provides animation.
-    // TODO: Tweak the animation.
-    <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
+    <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} ref={wrapperRef} aria-live="polite" role="dialog">
       <FloatingPromptWrapper>
         <p>{t("floatingChoicePrompt02.01")}</p>
         <p>{t("floatingChoicePrompt02.02")}</p>
-        {/* <button onClick={handlePrompt}>push</button> */}
         <Trans
           i18nKey="floatingChoicePrompt02.03"
           components={{
-            CustomComponent02: <button onClick={handlePrompt}></button>,
+            CustomComponent02: <button onClick={handlePrompt} />,
           }}
-        ></Trans>
+        />
       </FloatingPromptWrapper>
     </motion.div>
   );

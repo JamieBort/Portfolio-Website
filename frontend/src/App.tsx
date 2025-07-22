@@ -37,10 +37,29 @@ function App() {
   const [isEnglish, setEnglish] = useState(false);
 
   // State for whether to display the FloatingChoicePrompt component or not.
-  const [isDisplay, setDisplay] = useState(true);
+  const [isVisible, setVisible] = useState(true);
 
   const displayPromptKey = "displayPrompt";
   const displayPromptValue = "doNotRemindMe";
+
+  // TODO: Write code so that the prompt disappears when tapped or clicked off of the component.
+
+  // TODO: Add comment here. what does this do?
+  // That works perfectly once handlePrompt gets called by the useClickOutside hook.
+  const handlePrompt = () => {
+    setVisible(false);
+    localStorage.setItem(displayPromptKey, displayPromptValue);
+  };
+
+  // Checks to see if the localStorage item, displayPromptKey is there. If so, do not to display the prompt.
+  // TODO: Determine whether to add a dependency, remove the dependency array, or to leave the dependency array as is.
+  useEffect(() => {
+    try {
+      if (localStorage.getItem(displayPromptKey) === displayPromptValue) setVisible(false);
+    } catch (error) {
+      console.error("Error getting localStorage:", error);
+    }
+  }, []);
 
   const handleLanguage = () => {
     // const status = isEnglish ? "en" : "es-ES";
@@ -49,28 +68,10 @@ function App() {
     setEnglish(!isEnglish);
   };
 
-  // TODO: Write code so that the prompt disapears when tapped or clicked off of the component.
-
-  // TODO: Add comment here. what does this do?
-  const handlePrompt = () => {
-    setDisplay(false);
-    localStorage.setItem(displayPromptKey, displayPromptValue);
-  };
-
-  // Checks to see if the localStorage item, displayPromptKey is there. If so, do not to display the prompt.
-  // TODO: Determine whether to add a dependency, remove the dependency array, or to leave the dependency array as is.
-  useEffect(() => {
-    try {
-      if (localStorage.getItem(displayPromptKey) === displayPromptValue) setDisplay(false);
-    } catch (error) {
-      console.error("Error getting localStorage:", error);
-    }
-  }, []);
-
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Layout handleLanguage={handleLanguage} handlePrompt={handlePrompt} isEnglish={isEnglish} isDisplay={isDisplay}>
+      <Layout handleLanguage={handleLanguage} handlePrompt={handlePrompt} isEnglish={isEnglish} isVisible={isVisible}>
         {/* About section is critical for LCP, so keep it eager loaded */}
         <About isEnglish={isEnglish} />
 
