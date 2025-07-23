@@ -55,7 +55,7 @@ const FloatingPromptWrapper = styled.div`
 `;
 
 // TODO: Add comment here. What does this do?
-export const FloatingChoicePrompt = ({ handlePrompt }: { handlePrompt: () => void }) => {
+export const FloatingChoicePrompt = ({ handlePromptButton }: { handlePromptButton: () => void }) => {
   const { t } = useTranslation();
 
   return (
@@ -65,11 +65,11 @@ export const FloatingChoicePrompt = ({ handlePrompt }: { handlePrompt: () => voi
       <FloatingPromptWrapper>
         <p>{t("floatingChoicePrompt02.01")}</p>
         <p>{t("floatingChoicePrompt02.02")}</p>
-        {/* <button onClick={handlePrompt}>push</button> */}
+        {/* <button onClick={handlePromptButton}>push</button> */}
         <Trans
           i18nKey="floatingChoicePrompt02.03"
           components={{
-            CustomComponent02: <button onClick={handlePrompt}></button>,
+            CustomComponent02: <button onClick={handlePromptButton}></button>,
           }}
         ></Trans>
       </FloatingPromptWrapper>

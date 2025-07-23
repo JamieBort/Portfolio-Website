@@ -13,7 +13,7 @@ interface LayoutProps {
   children: ReactNode;
   handleLanguage: () => void;
   isEnglish: boolean;
-  handlePrompt: () => void;
+  handlePromptButton: () => void;
   isVisible: boolean;
 }
 
@@ -346,7 +346,7 @@ const Footer = styled.footer`
 `;
 
 // Updated.
-export const Layout = ({ children, handleLanguage, isEnglish, handlePrompt, isVisible }: LayoutProps) => {
+export const Layout = ({ children, handleLanguage, isEnglish, handlePromptButton, isVisible }: LayoutProps) => {
   const { t } = useTranslation();
   useKeyboardNavigation();
 
@@ -405,7 +405,7 @@ export const Layout = ({ children, handleLanguage, isEnglish, handlePrompt, isVi
 
       <FloatingNav isEnglish={isEnglish} />
 
-      {isVisible ? <FloatingChoicePrompt handlePrompt={handlePrompt} /> : null}
+      {isVisible ? <FloatingChoicePrompt handlePromptButton={handlePromptButton} /> : null}
 
       <FloatingLanguageToggle handleLanguage={handleLanguage} />
 

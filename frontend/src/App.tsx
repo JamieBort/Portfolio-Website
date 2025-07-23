@@ -42,13 +42,17 @@ function App() {
   const displayPromptKey = "displayPrompt";
   const displayPromptValue = "doNotRemindMe";
 
-  // TODO: Write code so that the prompt disappears when tapped or clicked off of the component.
-
   // TODO: Add comment here. what does this do?
-  // That works perfectly once handlePrompt gets called by the useClickOutside hook.
-  const handlePrompt = () => {
+  const handlePromptButton = () => {
     setVisible(false);
     localStorage.setItem(displayPromptKey, displayPromptValue);
+  };
+
+  // TODO: Write code so that the prompt disappears when tapped or clicked off of the component.
+  // TODO: Add comment here. what does this do?
+  // That works perfectly once handlePromptButton gets called by the useClickOutside hook.
+  const handleClickOutside = () => {
+    setVisible(false);
   };
 
   // Checks to see if the localStorage item, displayPromptKey is there. If so, do not to display the prompt.
@@ -71,7 +75,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Layout handleLanguage={handleLanguage} handlePrompt={handlePrompt} isEnglish={isEnglish} isVisible={isVisible}>
+      <Layout handleLanguage={handleLanguage} handlePromptButton={handlePromptButton} handleClickOutside={handleClickOutside} isEnglish={isEnglish} isVisible={isVisible}>
         {/* About section is critical for LCP, so keep it eager loaded */}
         <About isEnglish={isEnglish} />
 

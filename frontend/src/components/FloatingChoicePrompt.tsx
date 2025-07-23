@@ -13,6 +13,15 @@ import { Trans, useTranslation } from "react-i18next";
 import { useRef } from "react";
 import { useClickOutside } from "../hooks/useClickOutside";
 
+interface FloatingChoicePromptProps {
+  // children: ReactNode;
+  // handleLanguage: () => void;
+  // isEnglish: boolean;
+  handlePromptButton: () => void;
+  // isVisible: boolean;
+  handleClickOutside: () => void;
+}
+
 const FloatingPromptWrapper = styled.div`
   position: fixed;
   top: calc(4.5rem + ${theme.spacing.md}); // Just below the fixed header
@@ -61,7 +70,7 @@ const FloatingPromptWrapper = styled.div`
 `;
 
 // // TODO: Add comment here. What does this do?
-// export const FloatingChoicePrompt = ({ handlePrompt }: { handlePrompt: () => void }) => {
+// export const FloatingChoicePrompt = ({ handlePromptButton }: { handlePromptButton: () => void }) => {
 //   const { t } = useTranslation();
 
 //   return (
@@ -71,11 +80,11 @@ const FloatingPromptWrapper = styled.div`
 //       <FloatingPromptWrapper>
 //         <p>{t("floatingChoicePrompt02.01")}</p>
 //         <p>{t("floatingChoicePrompt02.02")}</p>
-//         {/* <button onClick={handlePrompt}>push</button> */}
+//         {/* <button onClick={handlePromptButton}>push</button> */}
 //         <Trans
 //           i18nKey="floatingChoicePrompt02.03"
 //           components={{
-//             CustomComponent02: <button onClick={handlePrompt}></button>,
+//             CustomComponent02: <button onClick={handlePromptButton}></button>,
 //           }}
 //         ></Trans>
 //       </FloatingPromptWrapper>
@@ -84,7 +93,8 @@ const FloatingPromptWrapper = styled.div`
 // };
 
 // TODO: Add comment here. What does this do?
-export const FloatingChoicePrompt = ({ handlePrompt }: { handlePrompt: () => void }) => {
+// export const FloatingChoicePrompt = ({ handlePromptButton }: { handlePromptButton: () => void }) => {
+export const FloatingChoicePrompt = ({ handlePromptButton, handleClickOutside }: FloatingChoicePromptProps) => {
   const { t } = useTranslation();
   // const wrapperRef = useRef<HTMLDivElement>(null);
   // const wrapperRef = useRef(null as null | HTMLElement);
@@ -93,10 +103,10 @@ export const FloatingChoicePrompt = ({ handlePrompt }: { handlePrompt: () => voi
   const wrapperRef = useRef<HTMLDivElement>(null);
 
   // Hide prompt when clicked/tapped outside
-  // useClickOutside(wrapperRef, handlePrompt);
-  // useClickOutside(wrapperRef, handlePrompt);
-  // useClickOutside(wrapperRef as React.RefObject<HTMLElement>, handlePrompt);
-  useClickOutside(wrapperRef as React.RefObject<HTMLElement>, handlePrompt);
+  // useClickOutside(wrapperRef, handlePromptButton);
+  // useClickOutside(wrapperRef, handlePromptButton);
+  // useClickOutside(wrapperRef as React.RefObject<HTMLElement>, handlePromptButton);
+  useClickOutside(wrapperRef as React.RefObject<HTMLElement>, handleClickOutside);
 
   return (
     <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} ref={wrapperRef} aria-live="polite" role="dialog">
@@ -106,7 +116,7 @@ export const FloatingChoicePrompt = ({ handlePrompt }: { handlePrompt: () => voi
         <Trans
           i18nKey="floatingChoicePrompt02.03"
           components={{
-            CustomComponent02: <button onClick={handlePrompt} />,
+            CustomComponent02: <button onClick={handlePromptButton} />,
           }}
         />
       </FloatingPromptWrapper>

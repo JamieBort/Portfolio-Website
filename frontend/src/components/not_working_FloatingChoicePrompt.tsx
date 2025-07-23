@@ -71,11 +71,11 @@ const FloatingPromptWrapper = styled.div`
 // `;
 
 type Props = {
-  handlePrompt: () => void; // Call this to hide the component
+  handlePromptButton: () => void; // Call this to hide the component
 };
 
 // // TODO: Add comment here. What does this do?
-// export const FloatingChoicePrompt = ({ handlePrompt }: { handlePrompt: () => void }) => {
+// export const FloatingChoicePrompt = ({ handlePromptButton }: { handlePromptButton: () => void }) => {
 //   const { t } = useTranslation();
 
 //   return (
@@ -85,11 +85,11 @@ type Props = {
 //       <FloatingPromptWrapper>
 //         <p>{t("floatingChoicePrompt02.01")}</p>
 //         <p>{t("floatingChoicePrompt02.02")}</p>
-//         {/* <button onClick={handlePrompt}>push</button> */}
+//         {/* <button onClick={handlePromptButton}>push</button> */}
 //         <Trans
 //           i18nKey="floatingChoicePrompt02.03"
 //           components={{
-//             CustomComponent02: <button onClick={handlePrompt}></button>,
+//             CustomComponent02: <button onClick={handlePromptButton}></button>,
 //           }}
 //         ></Trans>
 //       </FloatingPromptWrapper>
@@ -97,7 +97,7 @@ type Props = {
 //   );
 // };
 
-export const FloatingChoicePrompt = ({ handlePrompt }: Props) => {
+export const FloatingChoicePrompt = ({ handlePromptButton }: Props) => {
   const { t } = useTranslation();
   const ref = useRef<HTMLDivElement>(null);
 
@@ -109,13 +109,13 @@ export const FloatingChoicePrompt = ({ handlePrompt }: Props) => {
 
     const handleClickOrTouchOutside = (event: MouseEvent | TouchEvent) => {
       if (ref.current && !ref.current.contains(event.target as Node)) {
-        handlePrompt();
+        handlePromptButton();
       }
     };
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        handlePrompt();
+        handlePromptButton();
       }
     };
 
@@ -128,7 +128,7 @@ export const FloatingChoicePrompt = ({ handlePrompt }: Props) => {
       document.removeEventListener("touchstart", handleClickOrTouchOutside);
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [handlePrompt]);
+  }, [handlePromptButton]);
 
   return (
     <motion.div ref={ref} role="dialog" aria-modal="true" tabIndex={-1} initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
@@ -138,7 +138,7 @@ export const FloatingChoicePrompt = ({ handlePrompt }: Props) => {
         <Trans
           i18nKey="floatingChoicePrompt02.03"
           components={{
-            CustomComponent02: <button onClick={handlePrompt} />,
+            CustomComponent02: <button onClick={handlePromptButton} />,
           }}
         />
       </FloatingPromptWrapper>

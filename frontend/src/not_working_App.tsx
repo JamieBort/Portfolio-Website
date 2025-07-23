@@ -55,11 +55,11 @@ function App() {
   // TODO: Write code so that the prompt disapears when tapped or clicked off of the component.
 
   // TODO: Add comment here. what does this do?
-  // const handlePrompt = () => {
+  // const handlePromptButton = () => {
   //   setVisible(false);
   //   localStorage.setItem(displayPromptKey, displayPromptValue);
   // };
-  const handlePrompt = () => {
+  const handlePromptButton = () => {
     setVisible(false);
     localStorage.setItem(displayPromptKey, displayPromptValue);
   };
@@ -86,8 +86,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Layout handleLanguage={handleLanguage} handlePrompt={handlePrompt} isEnglish={isEnglish} isVisible={isVisible}>
-        {/* <Layout                             handlePrompt={handlePrompt}                       isVisible={isVisible}> */}
+      <Layout handleLanguage={handleLanguage} handlePromptButton={handlePromptButton} isEnglish={isEnglish} isVisible={isVisible}>
+        {/* <Layout                             handlePromptButton={handlePromptButton}                       isVisible={isVisible}> */}
 
         {/* About section is critical for LCP, so keep it eager loaded */}
         <About isEnglish={isEnglish} />
