@@ -10,9 +10,15 @@ import { useClickOutside } from "../hooks/useClickOutside";
 interface FloatingChoicePromptProps {
   handlePromptButton: () => void;
   handleClickOutside: () => void;
+  isPromptVisible: boolean;
 }
 
-const FloatingPromptWrapper = styled.div`
+// TODO: remove these temporary lines of code.
+// const testColor = theme.colors.highlight;
+const testColor = theme.colors.light;
+
+// const FloatingPromptWrapper = styled.div` // Original
+const FloatingPromptWrapper = motion(styled.div`
   position: fixed;
   top: calc(4.5rem + ${theme.spacing.md}); // Just below the fixed header
   right: ${theme.spacing.xl};
@@ -62,10 +68,10 @@ const FloatingPromptWrapper = styled.div`
   @media (max-width: ${theme.breakpoints.sm}) and (orientation: portrait) {
     right: calc(${theme.spacing.sm} + 8rem); // shift left more to uncover the toggle
   }
-`;
+`);
 
 // This component informs the end user about the language options. And asks if they'd like to see this prompt/component again next time.
-export const FloatingChoicePrompt = ({ handlePromptButton, handleClickOutside }: FloatingChoicePromptProps) => {
+export const FloatingChoicePrompt = ({ handlePromptButton, handleClickOutside, isPromptVisible }: FloatingChoicePromptProps) => {
   const { t } = useTranslation();
 
   // This "wrapperRef" returned object will persist for the full lifetime of the component.
@@ -79,7 +85,15 @@ export const FloatingChoicePrompt = ({ handlePromptButton, handleClickOutside }:
   return (
     // TODO: Tweak the animation.
     <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} ref={wrapperRef} aria-live="polite" role="dialog">
-      <FloatingPromptWrapper>
+      <FloatingPromptWrapper
+        initial={false}
+        animate={{
+          backgroundColor: isPromptVisible ? testColor + "40" : theme.colors.glass.background + "80",
+          boxShadow: isPromptVisible ? `0 0 0 2px ${testColor}60` : `0 4px 12px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.1)`,
+          border: isPromptVisible ? `1px solid ${testColor}` : `none`,
+        }}
+        transition={{ duration: 0.5 }}
+      >
         <p>{t("floatingChoicePrompt02.01")}</p>
         <p>{t("floatingChoicePrompt02.02")}</p>
         <Trans

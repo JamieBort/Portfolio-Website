@@ -18,7 +18,12 @@ interface LayoutProps {
   handleClickOutside: () => void;
 }
 
-const DesktopLanguageWrapper = styled.div`
+// TODO: remove these temporary lines of code.
+// const testColor = theme.colors.highlight;
+const testColor = theme.colors.light;
+
+// const DesktopLanguageWrapper = styled.div` // Original
+const DesktopLanguageWrapper = motion(styled.div`
   // TODO: Replace "max-width: 170px;" and  "min-width: 170px;" with just "width: 170px;" instead.
   max-width: 170px;
   min-width: 170px;
@@ -26,7 +31,7 @@ const DesktopLanguageWrapper = styled.div`
   @media (max-width: ${theme.breakpoints.md}) and (orientation: portrait) {
     display: none;
   }
-`;
+`);
 
 const LanguageToggle = ({ handleLanguage }: { handleLanguage: () => void }) => {
   const { t } = useTranslation();
@@ -393,7 +398,21 @@ export const Layout = ({ children, handleLanguage, isEnglish, handlePromptButton
           {/* </div> */}
         </Nav>
 
-        <DesktopLanguageWrapper>
+        {/* NOTE: Original */}
+        {/* <DesktopLanguageWrapper>
+          <LanguageToggle handleLanguage={handleLanguage} />
+        </DesktopLanguageWrapper> */}
+        {/* NOTE: Animated to emphasize the language toggle buttons. */}
+        <DesktopLanguageWrapper
+          initial={false}
+          animate={{
+            backgroundColor: isVisible ? testColor + "20" : "transparent",
+            boxShadow: isVisible ? `0 0 0 2px ${testColor}60` : "none",
+            borderRadius: "8px",
+            padding: isVisible ? theme.spacing.sm : "0",
+          }}
+          transition={{ duration: 0.5 }}
+        >
           <LanguageToggle handleLanguage={handleLanguage} />
         </DesktopLanguageWrapper>
 
@@ -406,9 +425,10 @@ export const Layout = ({ children, handleLanguage, isEnglish, handlePromptButton
 
       <FloatingNav isEnglish={isEnglish} />
 
-      {isVisible ? <FloatingChoicePrompt handlePromptButton={handlePromptButton} handleClickOutside={handleClickOutside} /> : null}
+      {isVisible ? <FloatingChoicePrompt handlePromptButton={handlePromptButton} handleClickOutside={handleClickOutside} isPromptVisible={isVisible} /> : null}
 
-      <FloatingLanguageToggle handleLanguage={handleLanguage} />
+      {/* <FloatingLanguageToggle handleLanguage={handleLanguage} /> */}
+      <FloatingLanguageToggle handleLanguage={handleLanguage} isPromptVisible={isVisible} />
 
       <Footer role="contentinfo">
         <div className="container">
