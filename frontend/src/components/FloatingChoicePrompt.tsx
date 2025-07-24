@@ -1,10 +1,4 @@
-// ./frontend/src/components/original_FloatingChoicePrompt.tsx
-// TODO: Write code that shows the FloatingChoicePrompt when the page loads for the first time.
-
-// import styled from "@emotion/styled";
-// import { theme } from "../styles/theme";
-// import { motion } from "framer-motion";
-// import { Trans, useTranslation } from "react-i18next";
+// ./frontend/src/components/FloatingChoicePrompt.tsx
 
 import styled from "@emotion/styled";
 import { theme } from "../styles/theme";
@@ -14,11 +8,7 @@ import { useRef } from "react";
 import { useClickOutside } from "../hooks/useClickOutside";
 
 interface FloatingChoicePromptProps {
-  // children: ReactNode;
-  // handleLanguage: () => void;
-  // isEnglish: boolean;
   handlePromptButton: () => void;
-  // isVisible: boolean;
   handleClickOutside: () => void;
 }
 
@@ -69,46 +59,21 @@ const FloatingPromptWrapper = styled.div`
   }
 `;
 
-// // TODO: Add comment here. What does this do?
-// export const FloatingChoicePrompt = ({ handlePromptButton }: { handlePromptButton: () => void }) => {
-//   const { t } = useTranslation();
-
-//   return (
-//     // This provides animation.
-//     // TODO: Tweak the animation.
-//     <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-//       <FloatingPromptWrapper>
-//         <p>{t("floatingChoicePrompt02.01")}</p>
-//         <p>{t("floatingChoicePrompt02.02")}</p>
-//         {/* <button onClick={handlePromptButton}>push</button> */}
-//         <Trans
-//           i18nKey="floatingChoicePrompt02.03"
-//           components={{
-//             CustomComponent02: <button onClick={handlePromptButton}></button>,
-//           }}
-//         ></Trans>
-//       </FloatingPromptWrapper>
-//     </motion.div>
-//   );
-// };
-
-// TODO: Add comment here. What does this do?
-// export const FloatingChoicePrompt = ({ handlePromptButton }: { handlePromptButton: () => void }) => {
+// This component informs the end user about the language options. And asks if they'd like to see this prompt/component again next time.
+// export const FloatingChoicePrompt = ({ handlePromptButton }: { handlePromptButton: () => void }) => { // TODO: Delete this line.
 export const FloatingChoicePrompt = ({ handlePromptButton, handleClickOutside }: FloatingChoicePromptProps) => {
   const { t } = useTranslation();
-  // const wrapperRef = useRef<HTMLDivElement>(null);
-  // const wrapperRef = useRef(null as null | HTMLElement);
-  // const wrapperRef = useRef<HTMLElement | null>(null);
-  // const wrapperRef = useRef<HTMLDivElement>(null);
+
+  // This "wrapperRef" returned object will persist for the full lifetime of the component.
+  // We're passing a "null" object as the initial value.
+  // We're using a type argument to cast the "wrapperRef" to the type of HTMLInputElement.
   const wrapperRef = useRef<HTMLDivElement>(null);
 
-  // Hide prompt when clicked/tapped outside
-  // useClickOutside(wrapperRef, handlePromptButton);
-  // useClickOutside(wrapperRef, handlePromptButton);
-  // useClickOutside(wrapperRef as React.RefObject<HTMLElement>, handlePromptButton);
+  // Hook to hide prompt when clicked or tapped outside of the prompt.
   useClickOutside(wrapperRef as React.RefObject<HTMLElement>, handleClickOutside);
 
   return (
+    // TODO: Tweak the animation.
     <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} ref={wrapperRef} aria-live="polite" role="dialog">
       <FloatingPromptWrapper>
         <p>{t("floatingChoicePrompt02.01")}</p>

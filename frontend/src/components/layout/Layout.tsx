@@ -1,4 +1,4 @@
-// ./frontend/src/components/layout/original_Layout.tsx
+// ./frontend/src/components/layout/Layout.tsx
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 import { ReactNode, useEffect, useRef, useState } from "react";

@@ -1,4 +1,4 @@
-// ./frontend/src/original_App.tsx file
+// ./frontend/src/App.tsx file
 import { lazy, Suspense, useState, useEffect } from "react";
 import { Layout } from "./components/layout/Layout";
 import { About } from "./components/sections/About";
@@ -39,18 +39,17 @@ function App() {
   // State for whether to display the FloatingChoicePrompt component or not.
   const [isVisible, setVisible] = useState(true);
 
+  // Constants. NOTE: Possibly to be pulled out into a "constants" utility file.
   const displayPromptKey = "displayPrompt";
   const displayPromptValue = "doNotRemindMe";
 
-  // TODO: Add comment here. what does this do?
+  // Dismisses the prompt and saves setting in local storage when handlePromptButton is called in the FloatingPromptWrapper.
   const handlePromptButton = () => {
     setVisible(false);
     localStorage.setItem(displayPromptKey, displayPromptValue);
   };
 
-  // TODO: Write code so that the prompt disappears when tapped or clicked off of the component.
-  // TODO: Add comment here. what does this do?
-  // That works perfectly once handlePromptButton gets called by the useClickOutside hook.
+  // Dismisses the prompt when handleClickOutside gets called by the useClickOutside hook.
   const handleClickOutside = () => {
     setVisible(false);
   };
@@ -65,9 +64,11 @@ function App() {
     }
   }, []);
 
+  // Toggles the language.
   const handleLanguage = () => {
     // const status = isEnglish ? "en" : "es-ES";
     const status = isEnglish ? "en" : "es";
+    // Besides updating the language it also saves in local storage as "i18nextLng" as the key.
     i18n.changeLanguage(status);
     setEnglish(!isEnglish);
   };
