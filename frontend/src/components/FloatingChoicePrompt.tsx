@@ -60,7 +60,6 @@ const FloatingPromptWrapper = styled.div`
 `;
 
 // This component informs the end user about the language options. And asks if they'd like to see this prompt/component again next time.
-// export const FloatingChoicePrompt = ({ handlePromptButton }: { handlePromptButton: () => void }) => { // TODO: Delete this line.
 export const FloatingChoicePrompt = ({ handlePromptButton, handleClickOutside }: FloatingChoicePromptProps) => {
   const { t } = useTranslation();
 
