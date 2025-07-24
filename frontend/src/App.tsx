@@ -33,7 +33,7 @@ const LoadingFallback = styled.div`
 
 function App() {
   // Keeping track of which language.
-  // TODO: If "isEnglish" is not needed after https://github.com/JamieBort/Portfolio-Website/issues/52 is addressed, remove it completely.
+  // TODO: If "isEnglish" is not needed after https://github.com/jimjam/Portfolio-Website/issues/52 is addressed, remove it completely.
   const [isEnglish, setEnglish] = useState(false);
 
   // State for whether to display the FloatingChoicePrompt component or not.
