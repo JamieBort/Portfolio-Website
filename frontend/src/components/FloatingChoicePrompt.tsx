@@ -55,7 +55,12 @@ const FloatingPromptWrapper = styled.div`
   @media (max-width: ${theme.breakpoints.sm}) {
     right: ${theme.spacing.sm};
     top: 5.5rem;
-    max-width: 90%;
+    max-width: 65%;
+  }
+
+  /* This is the new rule for portrait mobile */
+  @media (max-width: ${theme.breakpoints.sm}) and (orientation: portrait) {
+    right: calc(${theme.spacing.sm} + 8rem); // shift left more to uncover the toggle
   }
 `;
 
