@@ -8,7 +8,7 @@ import { theme } from "./styles/theme";
 import styled from "@emotion/styled";
 import i18n from "i18next"; // Using to change the language.
 
-// Lazy load non-critical components. lazy lets you defer loading component’s code until it is rendered for the first time.
+// Lazy load non-critical components. lazy() lets you defer loading component’s code until it is rendered for the first time.
 const Projects = lazy(() => import("./components/sections/Projects"));
 const Skills = lazy(() => import("./components/sections/Skills"));
 const Contact = lazy(() => import("./components/sections/Contact"));
