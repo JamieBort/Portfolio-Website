@@ -18,7 +18,7 @@ interface LayoutProps {
   handleClickOutside: () => void;
 }
 
-// Matching color for the prompt and the two language toggles.
+// Matching color for the prompt component and the two language toggle components.
 const DesktopLanguageWrapperColor = theme.colors.light;
 
 // Using "motion" to style the toggle such that it matches the color of the prompt.
@@ -398,7 +398,7 @@ export const Layout = ({ children, handleLanguage, isEnglish, handlePromptButton
           {/* </div> */}
         </Nav>
 
-        {/* NOTE: Original */}
+        {/* NOTE: Original TODO: Remove these lines. */}
         {/* <DesktopLanguageWrapper>
           <LanguageToggle handleLanguage={handleLanguage} />
         </DesktopLanguageWrapper> */}
@@ -423,11 +423,14 @@ export const Layout = ({ children, handleLanguage, isEnglish, handlePromptButton
         {children}
       </Main>
 
+      {/* NOTE: Original TODO: Remove these lines. */}
+      {/* <FloatingLanguageToggle handleLanguage={handleLanguage} /> */}
+
       <FloatingNav isEnglish={isEnglish} />
 
+      {/* NOTE: For the purposes of refactoring and simplifying the code, can "isPromptVisible" be removed? Is "isPromptVisible={isVisible}" redundant?  */}
       {isVisible ? <FloatingChoicePrompt handlePromptButton={handlePromptButton} handleClickOutside={handleClickOutside} isPromptVisible={isVisible} /> : null}
 
-      {/* <FloatingLanguageToggle handleLanguage={handleLanguage} /> */}
       <FloatingLanguageToggle handleLanguage={handleLanguage} isPromptVisible={isVisible} />
 
       <Footer role="contentinfo">

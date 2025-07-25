@@ -12,7 +12,7 @@ interface FloatingChoicePromptProps {
   isPromptVisible: boolean;
 }
 
-// Matching color for the prompt and the two language toggles.
+// Matching color for the prompt component and the two language toggle components.
 const FloatingPromptWrapperColor = theme.colors.light;
 
 // Using "motion" to style the prompt such that it matches the color of the two language toggles.
@@ -69,7 +69,7 @@ const FloatingPromptWrapper = motion(styled.div`
   }
 `);
 
-// Component to notify the end user that they have two languages to choose from. And that they can elect to see this prompt next time. Or not.
+// The component notifies the end user that they have two languages to choose from. And that they can elect to see this prompt next time. Or not.
 // This component informs the end user about the language options. And asks if they'd like to see this prompt/component again next time.
 export const FloatingChoicePrompt = ({ handlePromptButton, handleClickOutside, isPromptVisible }: FloatingChoicePromptProps) => {
   const { t } = useTranslation();

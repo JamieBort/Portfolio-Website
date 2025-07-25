@@ -8,12 +8,13 @@ import LanguageDetector from "i18next-browser-languagedetector"; // Used to dete
 const fallbackLanguage: string = "en";
 // const fallbackLanguage: string = "es";
 
-// // Note, the first element of the order array is checked first. If it doesn't return anything, the next element is checked until something is found. If nothing is found, "fallbackLng" is used. For the time being, "querystring" is used strictly for testing purposes.
-// //   order: ['querystring', 'hash', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
-// const order: string[] = ["querystring"]; // NOTE: "querystring" is not used in the app. It is there strictly for testing purposes.
-// const order: string[] = ["querystring", "navigator"]; // On every load it always looks at the browser (navigator). NOTE: "querystring" is not used in the app. It is there strictly for testing purposes.
+// Note, the first element of the order array is checked first. If it doesn't return anything, the next element is checked until something is found.
+// If nothing is found, "fallbackLng" is used. For the time being, "querystring" is used strictly for testing purposes.
+// Complete list of Order Array Options  order: ['querystring', 'hash', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag', 'path', 'subdomain']
+// const orderOptions: string[] = ["querystring"]; // NOTE: "querystring" is not used in the app. It is there strictly for testing purposes.
+// cons orderOptions: string[] = ["querystring", "navigator"]; // On every load it always looks at the browser (navigator). NOTE: "querystring" is not used in the app. It is there strictly for testing purposes.
 const orderOptions: string[] = ["querystring", "localStorage", "navigator"]; // On first visit → device language (navigator). After toggle, language saved in stored preference (in localStorage). On future visits, checks stored preference (localStorage). NOTE: "querystring" is not used in the app. It is there strictly for testing purposes.
-// const order = ["querystring", "cookie", "localStorage", "navigator"]; NOTE: "querystring" is not used in the app. It is there strictly for testing purposes.
+// const orderOptions: string[] = ["querystring", "cookie", "localStorage", "navigator"]; NOTE: "querystring" is not used in the app. It is there strictly for testing purposes.
 
 // const cachesOptions: string[] = ["localStorage"]; // Language is persisted in only "localStorage".
 // const cachesOptions: string[] = ["localStorage", "cookie"]; // Language is persisted in "localStorage" and in "cookie".

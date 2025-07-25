@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 import { theme } from "../../styles/theme";
 import { motion } from "framer-motion";
 
-// Matching color for the prompt and the two language toggles.
+// Matching color for the prompt component and the two language toggle components.
 const FloatingLanguageToggleColor = theme.colors.light;
 
 // Added "framer-motion" and using "motion" to style the toggle such that it matches the color of the prompt.

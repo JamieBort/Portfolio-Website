@@ -68,7 +68,7 @@ function App() {
   const handleLanguage = () => {
     // const status = isEnglish ? "en" : "es-ES";
     const status = isEnglish ? "en" : "es";
-    // Besides updating the language it also saves in local storage as "i18nextLng" as the key.
+    // Besides updating the language, "changeLanguage()" also saves in local storage as "i18nextLng" as the key.
     i18n.changeLanguage(status);
     setEnglish(!isEnglish);
   };
