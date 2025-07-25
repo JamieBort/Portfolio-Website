@@ -18,11 +18,11 @@ interface LayoutProps {
   handleClickOutside: () => void;
 }
 
-// TODO: remove these temporary lines of code.
-// const testColor = theme.colors.highlight;
-const testColor = theme.colors.light;
+// Matching color for the prompt and the two language toggles.
+const DesktopLanguageWrapperColor = theme.colors.light;
 
-// const DesktopLanguageWrapper = styled.div` // Original
+// Using "motion" to style the toggle such that it matches the color of the prompt.
+// As a result added the "initial", "animate", and "transition" properties.
 const DesktopLanguageWrapper = motion(styled.div`
   // TODO: Replace "max-width: 170px;" and  "min-width: 170px;" with just "width: 170px;" instead.
   max-width: 170px;
@@ -368,15 +368,15 @@ export const Layout = ({ children, handleLanguage, isEnglish, handlePromptButton
 
       <Header role="banner">
         <Logo
-          href="https://jimjam.com/"
+          href="https://jamiebort.com/"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
           role="heading"
           aria-level={1}
-          aria-label="Go to jimjam.com homepage"
+          aria-label="Go to jamiebort.com homepage"
         >
-          jim jam
+          Jamie Bort
         </Logo>
         <Nav role="navigation" aria-label="Main navigation">
           {/* <div className="container"> */}
@@ -406,8 +406,8 @@ export const Layout = ({ children, handleLanguage, isEnglish, handlePromptButton
         <DesktopLanguageWrapper
           initial={false}
           animate={{
-            backgroundColor: isVisible ? testColor + "20" : "transparent",
-            boxShadow: isVisible ? `0 0 0 2px ${testColor}60` : "none",
+            backgroundColor: isVisible ? DesktopLanguageWrapperColor + "20" : "transparent",
+            boxShadow: isVisible ? `0 0 0 2px ${DesktopLanguageWrapperColor}60` : "none",
             borderRadius: "8px",
             padding: isVisible ? theme.spacing.sm : "0",
           }}
@@ -432,7 +432,7 @@ export const Layout = ({ children, handleLanguage, isEnglish, handlePromptButton
 
       <Footer role="contentinfo">
         <div className="container">
-          {/* TODO: Clean this area up. Specifically remove the comments. And update the GPLv3 logo such that it fits the appearance of my website better and is linked locally. See the https://github.com/jimjam/Portfolio-Website/issues/53 Issue. */}
+          {/* TODO: Clean this area up. Specifically remove the comments. And update the GPLv3 logo such that it fits the appearance of my website better and is linked locally. See the https://github.com/jamiebort/Portfolio-Website/issues/53 Issue. */}
           {/* Original */}
           {/* <p>© {new Date().getFullYear()}</p> */}
           {/* <img

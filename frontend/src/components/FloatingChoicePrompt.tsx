@@ -1,5 +1,4 @@
 // ./frontend/src/components/FloatingChoicePrompt.tsx
-
 import styled from "@emotion/styled";
 import { theme } from "../styles/theme";
 import { motion } from "framer-motion";
@@ -13,11 +12,11 @@ interface FloatingChoicePromptProps {
   isPromptVisible: boolean;
 }
 
-// TODO: remove these temporary lines of code.
-// const testColor = theme.colors.highlight;
-const testColor = theme.colors.light;
+// Matching color for the prompt and the two language toggles.
+const FloatingPromptWrapperColor = theme.colors.light;
 
-// const FloatingPromptWrapper = styled.div` // Original
+// Using "motion" to style the prompt such that it matches the color of the two language toggles.
+// As a result added the "initial", "animate", and "transition" properties.
 const FloatingPromptWrapper = motion(styled.div`
   position: fixed;
   top: calc(4.5rem + ${theme.spacing.md}); // Just below the fixed header
@@ -70,6 +69,7 @@ const FloatingPromptWrapper = motion(styled.div`
   }
 `);
 
+// Component to notify the end user that they have two languages to choose from. And that they can elect to see this prompt next time. Or not.
 // This component informs the end user about the language options. And asks if they'd like to see this prompt/component again next time.
 export const FloatingChoicePrompt = ({ handlePromptButton, handleClickOutside, isPromptVisible }: FloatingChoicePromptProps) => {
   const { t } = useTranslation();
@@ -88,9 +88,9 @@ export const FloatingChoicePrompt = ({ handlePromptButton, handleClickOutside, i
       <FloatingPromptWrapper
         initial={false}
         animate={{
-          backgroundColor: isPromptVisible ? testColor + "40" : theme.colors.glass.background + "80",
-          boxShadow: isPromptVisible ? `0 0 0 2px ${testColor}60` : `0 4px 12px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.1)`,
-          border: isPromptVisible ? `1px solid ${testColor}` : `none`,
+          backgroundColor: isPromptVisible ? FloatingPromptWrapperColor + "40" : theme.colors.glass.background + "80",
+          boxShadow: isPromptVisible ? `0 0 0 2px ${FloatingPromptWrapperColor}60` : `0 4px 12px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.1)`,
+          border: isPromptVisible ? `1px solid ${FloatingPromptWrapperColor}` : `none`,
         }}
         transition={{ duration: 0.5 }}
       >
