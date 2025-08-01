@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { theme } from "../../styles/theme";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import myImage01 from "../../assets/portfolio_website.png";
-import myImage02 from "../../assets/personal_dashboard.png";
+// import myImage02 from "../../assets/personal_dashboard.png";
 import { useTranslation } from "react-i18next";
 
 interface ProjectsProps {
@@ -202,47 +202,45 @@ const projects = [
     githubUrl: "https://github.com/JamieBort/Portfolio-Website",
     liveUrl: "https://jamiebort.com/",
   },
-  {
-    id: 2,
-    title: "Personal Dashboard",
-    description:
-      "A website for displaying and analyzing important daily data. Such as blood glucose numbers and upcoming events. Using Svelt TypeScript front end and Java backend. Which database is yet to be seen. It will use authentication.",
-    image: myImage02,
-    techStack: ["Next.js", "TypeScript", "Tailwind"],
-    githubUrl: "https://github.com/JamieBort/Personal-Dashboard",
-    liveUrl: "https://jamiebort.github.io/Personal-Dashboard/",
-  },
-  {
-    id: 3,
-    // title: "dummy_project01 dummy project01",
-    title: "dummy_project01 dummy project01 dummy project01 dummy",
-    description:
-      "This is where I share a bit about myself, showcase what I've been working on, and share where you can find me online. It is build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend. build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend",
-    image: myImage01,
-    techStack: ["React", "Node.js", "Lodash", "GitHub", "Node"],
-    githubUrl: "https://github.com/JamieBort/dummy_project01",
-    liveUrl: "https://jamiebort.github.io/dummy_project01/",
-  },
-  {
-    id: 4,
-    title: "dummy_project02",
-    description: "A website for displaying and analyzing important daily data. Such as blood glucose numbers and upcoming events. Using Svelt . It will use authentication.",
-    image: myImage02,
-    techStack: ["Next.js", "TypeScript", "Tailwind"],
-    githubUrl: "https://github.com/JamieBort/dummy_project02",
-    liveUrl: "https://jamiebort.github.io/dummy_project02/",
-  },
-  {
-    id: 5,
-    title: "dummy_project03 dummy project03",
-    // title: "dummy_project03 dummy project03",
-    description:
-      "This is where I share a bit about myself, showcase what I've build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend.",
-    image: myImage01,
-    techStack: ["React", "Node.js", " Java", "TypeScript", "SQL", "AWS", "Lodash", "GitHub", "Node"],
-    githubUrl: "https://github.com/JamieBort/dummy_project03",
-    liveUrl: "https://jamiebort.github.io/dummy_project03/",
-  },
+  // {
+  //   id: 2,
+  //   title: "Personal Dashboard",
+  //   description:
+  //     "A website for displaying and analyzing important daily data. Such as blood glucose numbers and upcoming events. Using Svelt TypeScript front end and Java backend. Which database is yet to be seen. It will use authentication.",
+  //   image: myImage02,
+  //   techStack: ["Next.js", "TypeScript", "Tailwind"],
+  //   githubUrl: "https://github.com/JamieBort/Personal-Dashboard",
+  //   liveUrl: "https://jamiebort.github.io/Personal-Dashboard/",
+  // },
+  // {
+  //   id: 3,
+  //   title: "Project Placeholder 1",
+  //   description:
+  //     "This is where I share a bit about myself, showcase what I've been working on, and share where you can find me online. It is build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend. build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend",
+  //   image: myImage01,
+  //   techStack: ["React", "Node.js", "Lodash", "GitHub", "Node"],
+  //   githubUrl: "https://github.com/JamieBort/dummy_project01",
+  //   liveUrl: "https://jamiebort.github.io/dummy_project01/",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Project Placeholder 2",
+  //   description: "A website for displaying and analyzing important daily data. Such as blood glucose numbers and upcoming events. Using Svelt . It will use authentication.",
+  //   image: myImage02,
+  //   techStack: ["Next.js", "TypeScript", "Tailwind"],
+  //   githubUrl: "https://github.com/JamieBort/dummy_project02",
+  //   liveUrl: "https://jamiebort.github.io/dummy_project02/",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Project Placeholder 3",
+  //   description:
+  //     "This is where I share a bit about myself, showcase what I've build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend.",
+  //   image: myImage01,
+  //   techStack: ["React", "Node.js", " Java", "TypeScript", "SQL", "AWS", "Lodash", "GitHub", "Node"],
+  //   githubUrl: "https://github.com/JamieBort/dummy_project03",
+  //   liveUrl: "https://jamiebort.github.io/dummy_project03/",
+  // },
 ];
 
 const Projects = ({ isEnglish }: ProjectsProps) => {

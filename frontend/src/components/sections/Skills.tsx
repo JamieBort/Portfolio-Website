@@ -1,8 +1,10 @@
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 import { theme } from "../../styles/theme";
-import { FaReact, FaNodeJs, FaDatabase, FaDocker, FaGitAlt, FaAws } from "react-icons/fa";
-import { SiTypescript, SiJavascript, SiPython, SiMongodb, SiPostgresql, SiRedux } from "react-icons/si";
+// import { FaReact, FaNodeJs, FaDatabase, FaDocker, FaGitAlt, FaAws } from "react-icons/fa";
+import { FaReact, FaNodeJs } from "react-icons/fa";
+// import { SiTypescript, SiJavascript, SiPython, SiMongodb, SiPostgresql, SiRedux } from "react-icons/si";
+import { SiTypescript, SiJavascript, SiPython, SiMongodb, SiPostgresql, SiSpringboot } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 
 interface SkillsProps {
@@ -162,9 +164,10 @@ const skillCategories = [
     icon: <FaReact />,
     skills: [
       { name: "React", icon: <FaReact /> },
+      { name: "React Native", icon: <FaReact /> },
       { name: "TypeScript", icon: <SiTypescript /> },
       { name: "JavaScript", icon: <SiJavascript /> },
-      { name: "Redux", icon: <SiRedux /> },
+      // { name: "Redux", icon: <SiRedux /> },
     ],
   },
   {
@@ -173,40 +176,41 @@ const skillCategories = [
     skills: [
       { name: "Node.js", icon: <FaNodeJs /> },
       { name: "Python", icon: <SiPython /> },
+      { name: " Springboot", icon: <SiSpringboot /> },
       { name: "MongoDB", icon: <SiMongodb /> },
       { name: "PostgreSQL", icon: <SiPostgresql /> },
     ],
   },
-  {
-    title: "DevOps",
-    icon: <FaDocker />,
-    skills: [
-      { name: "Docker", icon: <FaDocker /> },
-      { name: "Git", icon: <FaGitAlt /> },
-      { name: "AWS", icon: <FaAws /> },
-      { name: "CI/CD", icon: <FaDatabase /> },
-    ],
-  },
-  {
-    title: "dummy_skill1",
-    icon: <FaNodeJs />,
-    skills: [
-      { name: "Python", icon: <SiPython /> },
-      { name: "MongoDB", icon: <SiMongodb /> },
-      { name: "PostgreSQL", icon: <SiPostgresql /> },
-    ],
-  },
-  {
-    title: "dummy_skill2",
-    icon: <FaDocker />,
-    skills: [
-      { name: "Docker", icon: <FaDocker /> },
-      { name: "Git", icon: <FaGitAlt /> },
-      { name: "AWS", icon: <FaAws /> },
-      { name: "CI/CD", icon: <FaDatabase /> },
-      { name: "Docker", icon: <FaDocker /> },
-    ],
-  },
+  // {
+  //   title: "DevOps",
+  //   icon: <FaDocker />,
+  //   skills: [
+  //     { name: "Docker", icon: <FaDocker /> },
+  //     { name: "Git", icon: <FaGitAlt /> },
+  //     { name: "AWS", icon: <FaAws /> },
+  //     { name: "CI/CD", icon: <FaDatabase /> },
+  //   ],
+  // },
+  // {
+  //   title: "skillPlaceholder1",
+  //   icon: <FaNodeJs />,
+  //   skills: [
+  //     { name: "Python", icon: <SiPython /> },
+  //     { name: "MongoDB", icon: <SiMongodb /> },
+  //     { name: "PostgreSQL", icon: <SiPostgresql /> },
+  //   ],
+  // },
+  // {
+  //   title: "skillPlaceholder2",
+  //   icon: <FaDocker />,
+  //   skills: [
+  //     { name: "Docker", icon: <FaDocker /> },
+  //     { name: "Git", icon: <FaGitAlt /> },
+  //     { name: "AWS", icon: <FaAws /> },
+  //     { name: "CI/CD", icon: <FaDatabase /> },
+  //     { name: "Docker", icon: <FaDocker /> },
+  //   ],
+  // },
 ];
 
 const Skills = ({ isEnglish }: SkillsProps) => {
