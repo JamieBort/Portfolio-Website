@@ -191,61 +191,15 @@ const ProjectLinks = styled.div`
 `;
 
 // TODO: Populate the project descriptions from the repo, rather than hardcoded below or hardcoded in the .json files in the `/frontend/public/locales/` directory.
-// const projects = [
-const projectsList = [
+const projects_list = [
   {
     id: 1,
     title: "Portfolio Website",
-    // description:
-    //   "This is where I share a bit about myself, showcase what I've been working on, and share where you can find me online. It is build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend.",
-    // description: "this should be translated",
-    // description_temp:
-    //   "This portfolio, available in both Spanish and English, highlights a bit about myself, showcases what I’ve been working on, and shares where to engage with me online. It is built with an accessibility-first approach, following WCAG standards, the i18next translation library, and using a modern tech stack of React 19, TypeScript, and Vite 6. And it is fully responsive working seamlessly across all devices, includes smooth animations via Framer Motion, and optimized performance through code splitting, lazy loading, and compression. Future features include adding code testing, a contact form and a searchable and filterable blog and resource pages.",
-
     image: myImage01,
     techStack: ["React", "Node.js"],
     githubUrl: "https://github.com/JamieBort/Portfolio-Website",
     liveUrl: "https://jamiebort.com/",
   },
-  // {
-  //   id: 2,
-  //   title: "Personal Dashboard",
-  //   description:
-  //     "A website for displaying and analyzing important daily data. Such as blood glucose numbers and upcoming events. Using Svelt TypeScript front end and Java backend. Which database is yet to be seen. It will use authentication.",
-  //   image: myImage02,
-  //   techStack: ["Next.js", "TypeScript", "Tailwind"],
-  //   githubUrl: "https://github.com/JamieBort/Personal-Dashboard",
-  //   liveUrl: "https://jamiebort.github.io/Personal-Dashboard/",
-  // },
-  // {
-  //   id: 3,
-  //   title: "Project Placeholder 1",
-  //   description:
-  //     "This is where I share a bit about myself, showcase what I've been working on, and share where you can find me online. It is build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend. build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend",
-  //   image: myImage01,
-  //   techStack: ["React", "Node.js", "Lodash", "GitHub", "Node"],
-  //   githubUrl: "https://github.com/JamieBort/dummy_project01",
-  //   liveUrl: "https://jamiebort.github.io/dummy_project01/",
-  // },
-  // {
-  //   id: 4,
-  //   title: "Project Placeholder 2",
-  //   description: "A website for displaying and analyzing important daily data. Such as blood glucose numbers and upcoming events. Using Svelt . It will use authentication.",
-  //   image: myImage02,
-  //   techStack: ["Next.js", "TypeScript", "Tailwind"],
-  //   githubUrl: "https://github.com/JamieBort/dummy_project02",
-  //   liveUrl: "https://jamiebort.github.io/dummy_project02/",
-  // },
-  // {
-  //   id: 5,
-  //   title: "Project Placeholder 3",
-  //   description:
-  //     "This is where I share a bit about myself, showcase what I've build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend.",
-  //   image: myImage01,
-  //   techStack: ["React", "Node.js", " Java", "TypeScript", "SQL", "AWS", "Lodash", "GitHub", "Node"],
-  //   githubUrl: "https://github.com/JamieBort/dummy_project03",
-  //   liveUrl: "https://jamiebort.github.io/dummy_project03/",
-  // },
 ];
 
 const Projects = ({ isEnglish }: ProjectsProps) => {
@@ -302,12 +256,12 @@ const Projects = ({ isEnglish }: ProjectsProps) => {
     <ProjectsSection id="projects" role="region" aria-label="Featured Projects">
       <div className="container">
         <SectionTitle initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} role="heading" aria-level={2}>
-          {t("projects.sectionTitle")}
+          {t("projects.title")}
         </SectionTitle>
         <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <ProjectContainer role="list">
             {/* {projects.map((project, index) => ( */}
-            {projectsList.map((project, index) => (
+            {projects_list.map((project, index) => (
               <ProjectCard key={project.id} variants={itemVariants} role="listitem" aria-labelledby={`project-title-${project.id}`}>
                 <ProjectImage imageUrl={project.image} role="img" aria-label={`Screenshot of ${project.title}`} />
                 <ProjectContent>

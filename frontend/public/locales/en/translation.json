@@ -10,62 +10,25 @@
         "eight": "Español"
     },
     "about": {
-        "sectionTitle": "Full Stack Developer",
-        "description": "I create elegant solutions to complex problems, specializing in modern web development with a focus on user experience and clean code. I write code and teach at <CustomComponent01>{{name}}</CustomComponent01>, a software boot camp for underrepresented people. Below you will find some of my Projects. When I am not coding I am working on my next presentation or mentoring; both of which push me to learn and grow.",
-        "description00": "I am a bilingual fullstack software developer. I create elegant solutions to complex problems; specializing in modern web development with a focus on accessibility and user experience. I write code and teach at <CustomComponent01>{{name}}</CustomComponent01>, a software boot camp for underrepresented people. Below you will find some highlighted projects. Most of my repos are open to collaborators. Please consider contributing! As always, I am open to new work opportunities. When I am not working I am preparing for my next presentation, mentoring, or hosting monthly algorithmic problem solving sessions; all of which push me to learn and grow. The problem solving sessions are open to everyone. More info <CustomComponent04>{{name3}}</CustomComponent04> . <CustomComponent03>{{name2}}</CustomComponent03> with me on social media below.",
-        "description01": "I am a bilingual fullstack software developer. I create elegant solutions to complex problems; specializing in modern web development with a focus on accessibility and user experience. I write code and teach at Code the Dream, a software boot camp for underrepresented people. Below you will find some highlighted projects. Most of my repos are open to collaborators. Please consider contributing! As always, I am open to new work opportunities.",
-        "description02": "When I am not working I am preparing for my next presentation, mentoring, or hosting monthly algorithmic problem solving sessions; all of which push me to learn and grow.",
-        "description03": "The problem solving sessions are open to everyone. See ... for more info. Connect with me on social media below.",
-        "description04": "Connect with me on social media below."
+        "title": "Full Stack Developer",
+        "description": "I am a bilingual fullstack software developer. I create elegant solutions to complex problems; specializing in modern web development with a focus on accessibility and user experience. I write code and teach at <CustomComponent01>{{name01}}</CustomComponent01>, a software boot camp for underrepresented people. Below you will find some highlighted projects. Most of my repos are open to collaborators. Please consider contributing! As always, I am open to new work opportunities. When I am not working I am preparing for my next presentation, mentoring, or hosting monthly algorithmic problem solving sessions; all of which push me to learn and grow. The problem solving sessions are open to everyone. More info <CustomComponent04>{{name04}}</CustomComponent04> . <CustomComponent03>{{name03}}</CustomComponent03> with me on social media below."
     },
     "projects": {
-        "sectionTitle": "Featured Projects",
+        "title": "Featured Projects",
         "descriptions": {
             "1": "This portfolio, available in both Spanish and English, highlights a bit about myself, showcases what I’ve been working on, and shares where to engage with me online. It is built with an accessibility-first approach, following WCAG standards, the i18next translation library, and using a modern tech stack of React 19, TypeScript, and Vite 6. And it is fully responsive working seamlessly across all devices, includes smooth animations via Framer Motion, and optimized performance through code splitting, lazy loading, and compression. Future features include adding code testing, a contact form and a searchable and filterable blog and resource pages.",
-            "2": "Another translated description here...",
-            "3": "Etc."
-        },
-        "first": {
-            "title": "Portfolio Website",
-            "description": "This is where I share a bit about myself, showcase what I've been working on, and share where you can find me online. It is build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend.",
-            "description00": "This portfolio, available in both Spanish and English, highlights a bit about myself, showcases what I’ve been working on, and shares where to engage with me online. It is built with an accessibility-first approach, following WCAG standards, the i18next translation library, and using a modern tech stack of React 19, TypeScript, and Vite 6. And it is fully responsive working seamlessly across all devices, includes smooth animations via Framer Motion, and optimized performance through code splitting, lazy loading, and compression. Future features include adding code testing, a contact form and a searchable and filterable blog and resource pages.",
-            "description01": "This portfolio, available in both Spanish and English, highlights a bit about myself, showcases what I’ve been working on, and shares where to engage with me online.",
-            "description02": "It is built with an accessibility-first approach, following WCAG standards, the i18next translation library, and using a modern tech stack of React 19, TypeScript, and Vite 6.",
-            "description03": "And it is fully responsive working seamlessly across all devices, includes smooth animations via Framer Motion, and optimized performance through code splitting, lazy loading, and compression.",
-            "description04": "Future features include adding code testing, a contact form and a searchable and filterable blog and resource pages."
-        },
-        "second": {
-            "title": "Personal Dashboard",
-            "description": "A website for displaying and analyzing important daily data. Such as blood glucose numbers and upcoming events. Using Svelt TypeScript front end and Java backend. Which database is yet to be seen. It will use authentication."
+            "2": "A second translated description here...",
+            "3": "A third translated description here..."
         }
     },
     "skills": {
-        "sectionTitle": "Skills & Expertise"
+        "title": "Skills & Expertise"
     },
     "contact": {
-        "sectionTitle": "Get In Touch",
-        "description": "I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!",
-        "description01": "I’m always interested in hearing about new projects and opportunities. If you have a question or just want to say hello, please get in touch via email or social media.",
-        "description020": "I’m always interested in hearing about new projects and opportunities. Have something to share or discuss? Send an email or follow me on social media.",
-        "description021": "I’m always interested in hearing about new projects and opportunities.",
-        "description022": "Have something to share or discuss?",
-        "description023": "Send an email or follow me on social media."
+        "title": "Get In Touch",
+        "description": "I’m always interested in hearing about new projects and opportunities. Have something to share or discuss? Send an email or follow me on social media."
     },
     "floatingChoicePrompt": {
-        "01": "The next time this page loads, it will load in If you prefer this site to be in Spanish, select this button.",
-        "02": "At any time you can use it to toggle between English and Spanish.",
-        "03": "Whichever you choose now will be what is displayed next time you visit this site.",
-        "04": "By selecting the Acknowledged button, this prompt will appear next time.",
-        "05": "Ask me again next time.",
-        "06": "Acknowledged.",
-        "07": "By selecting the Acknowledged button, it will save your decision."
-    },
-    "floatingChoicePrompt02": {
-        "01": "At any time you can use this button to toggle between English and Spanish.",
-        "02": "Whichever you choose now will be what is displayed next time you visit this site.",
-        "03": "If you want this reminder the next time you visit, select this <CustomComponent02>Remind Me</CustomComponent02> button."
-    },
-    "floatingChoicePrompt03": {
         "01": "Switch between English and Spanish at any time using this button.",
         "02": "Your selection will be saved and shown the next time you visit this site.",
         "03": "Don’t want to see this reminder next time? Select the <CustomComponent02>Do NOT Remind Me</CustomComponent02> button."

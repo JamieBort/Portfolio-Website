@@ -138,7 +138,7 @@ export const About = ({ isEnglish }: AboutProps) => {
         <AboutContent>
           <div>
             <Title role="heading" aria-level={2}>
-              {t("about.sectionTitle")}
+              {t("about.title")}
             </Title>
             {/* NOTE: <<Subtitle>> used for ...  */}
             {/* TODO: Keep <<Subtitle>> for now, in case I want to use it again. */}
@@ -147,8 +147,8 @@ export const About = ({ isEnglish }: AboutProps) => {
             </Subtitle> */}
             <Description role="paragraph">
               <Trans
-                i18nKey="about.description00"
-                values={{ name: "Code the Dream", name2: "Connect", name3: "here" }}
+                i18nKey="about.description"
+                values={{ name01: "Code the Dream", name03: "Connect", name04: "here" }}
                 components={{
                   CustomComponent01: <a href="https://codethedream.org/" target="_blank" />,
                   CustomComponent03: <a href="#contact" />,

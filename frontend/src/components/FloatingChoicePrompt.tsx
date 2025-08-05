@@ -94,10 +94,10 @@ export const FloatingChoicePrompt = ({ handlePromptButton, handleClickOutside, i
         }}
         transition={{ duration: 0.5 }}
       >
-        <p>{t("floatingChoicePrompt03.01")}</p>
-        <p>{t("floatingChoicePrompt03.02")}</p>
+        <p>{t("floatingChoicePrompt.01")}</p>
+        <p>{t("floatingChoicePrompt.02")}</p>
         <Trans
-          i18nKey="floatingChoicePrompt03.03"
+          i18nKey="floatingChoicePrompt.03"
           components={{
             CustomComponent02: <button onClick={handlePromptButton} />,
           }}
