@@ -191,12 +191,17 @@ const ProjectLinks = styled.div`
 `;
 
 // TODO: Populate the project descriptions from the repo, rather than hardcoded below or hardcoded in the .json files in the `/frontend/public/locales/` directory.
-const projects = [
+// const projects = [
+const projectsList = [
   {
     id: 1,
     title: "Portfolio Website",
-    description:
-      "This is where I share a bit about myself, showcase what I've been working on, and share where you can find me online. It is build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend.",
+    // description:
+    //   "This is where I share a bit about myself, showcase what I've been working on, and share where you can find me online. It is build with a React, Vite and TypeScript front end. I am re-writing the Node Express backend.",
+    // description: "this should be translated",
+    // description_temp:
+    //   "This portfolio, available in both Spanish and English, highlights a bit about myself, showcases what I’ve been working on, and shares where to engage with me online. It is built with an accessibility-first approach, following WCAG standards, the i18next translation library, and using a modern tech stack of React 19, TypeScript, and Vite 6. And it is fully responsive working seamlessly across all devices, includes smooth animations via Framer Motion, and optimized performance through code splitting, lazy loading, and compression. Future features include adding code testing, a contact form and a searchable and filterable blog and resource pages.",
+
     image: myImage01,
     techStack: ["React", "Node.js"],
     githubUrl: "https://github.com/JamieBort/Portfolio-Website",
@@ -297,11 +302,12 @@ const Projects = ({ isEnglish }: ProjectsProps) => {
     <ProjectsSection id="projects" role="region" aria-label="Featured Projects">
       <div className="container">
         <SectionTitle initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} role="heading" aria-level={2}>
-          {t("projects.title")}
+          {t("projects.sectionTitle")}
         </SectionTitle>
         <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <ProjectContainer role="list">
-            {projects.map((project, index) => (
+            {/* {projects.map((project, index) => ( */}
+            {projectsList.map((project, index) => (
               <ProjectCard key={project.id} variants={itemVariants} role="listitem" aria-labelledby={`project-title-${project.id}`}>
                 <ProjectImage imageUrl={project.image} role="img" aria-label={`Screenshot of ${project.title}`} />
                 <ProjectContent>
@@ -314,7 +320,11 @@ const Projects = ({ isEnglish }: ProjectsProps) => {
                   >
                     {project.title}
                   </ProjectTitle>
-                  <ProjectDescription>{project.description}</ProjectDescription>
+                  <ProjectDescription>
+                    {t(`projects.descriptions.${project.id}`, {
+                      defaultValue: "Description coming soon...",
+                    })}
+                  </ProjectDescription>
                   <TechStack role="list" aria-label={`Technologies used in ${project.title}`}>
                     {project.techStack.map((tech) => (
                       <TechTag key={tech} role="listitem">

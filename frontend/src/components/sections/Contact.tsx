@@ -191,11 +191,11 @@ const Contact = ({ isEnglish }: ContactProps) => {
       <div className="container">
         <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <SectionTitle variants={itemVariants} role="heading" aria-level={2}>
-            {t("contact.title")}
+            {t("contact.sectionTitle")}
           </SectionTitle>
           <ContactContent role="article">
             <ContactText variants={itemVariants} role="paragraph">
-              {t("contact.description")}
+              {t("contact.description020")}
             </ContactText>
             <ContactEmail
               href="mailto:jamiebort@gmail.com"

@@ -4,7 +4,7 @@ import { theme } from "../../styles/theme";
 // import { FaReact, FaNodeJs, FaDatabase, FaDocker, FaGitAlt, FaAws } from "react-icons/fa";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 // import { SiTypescript, SiJavascript, SiPython, SiMongodb, SiPostgresql, SiRedux } from "react-icons/si";
-import { SiTypescript, SiJavascript, SiPython, SiMongodb, SiPostgresql, SiSpringboot } from "react-icons/si";
+import { SiTypescript, SiJavascript, SiPython, SiSpringboot } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 
 interface SkillsProps {
@@ -177,8 +177,8 @@ const skillCategories = [
       { name: "Node.js", icon: <FaNodeJs /> },
       { name: "Python", icon: <SiPython /> },
       { name: " Springboot", icon: <SiSpringboot /> },
-      { name: "MongoDB", icon: <SiMongodb /> },
-      { name: "PostgreSQL", icon: <SiPostgresql /> },
+      // { name: "MongoDB", icon: <SiMongodb /> },
+      // { name: "PostgreSQL", icon: <SiPostgresql /> },
     ],
   },
   // {
@@ -240,7 +240,7 @@ const Skills = ({ isEnglish }: SkillsProps) => {
   return (
     <SkillsSection id="skills" role="region" aria-label="Skills and Expertise">
       <SectionTitle initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} role="heading" aria-level={2}>
-        {t("skills.title")}
+        {t("skills.sectionTitle")}
       </SectionTitle>
       <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
         <SkillsContainer role="list">

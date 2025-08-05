@@ -138,7 +138,7 @@ export const About = ({ isEnglish }: AboutProps) => {
         <AboutContent>
           <div>
             <Title role="heading" aria-level={2}>
-              {t("about.title")}
+              {t("about.sectionTitle")}
             </Title>
             {/* NOTE: <<Subtitle>> used for ...  */}
             {/* TODO: Keep <<Subtitle>> for now, in case I want to use it again. */}
@@ -147,9 +147,13 @@ export const About = ({ isEnglish }: AboutProps) => {
             </Subtitle> */}
             <Description role="paragraph">
               <Trans
-                i18nKey="about.description"
-                values={{ name: "Code the Dream" }}
-                components={{ CustomComponent01: <a href="https://codethedream.org/" target="_blank" /> }}
+                i18nKey="about.description00"
+                values={{ name: "Code the Dream", name2: "Connect", name3: "here" }}
+                components={{
+                  CustomComponent01: <a href="https://codethedream.org/" target="_blank" />,
+                  CustomComponent03: <a href="#contact" />,
+                  CustomComponent04: <a href="https://www.linkedin.com/search/results/all/?keywords=%23CodeChallengeSession" target="_blank" />,
+                }}
               ></Trans>
             </Description>
             <SocialLinks role="list" aria-label="Social media links">
