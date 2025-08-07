@@ -1,22 +1,22 @@
 {
     "layout": {
-        "one": "About",
-        "two": "Projects",
-        "three": "Skills",
-        "four": "Contact",
-        "five": "Resume",
-        "six": "English Version",
-        "seven": "Spanish Version",
-        "eight": "Español"
+        "01": "About",
+        "02": "Projects",
+        "03": "Skills",
+        "04": "Contact",
+        "05": "Resume",
+        "06": "English Version",
+        "07": "Spanish Version",
+        "08": "Español"
     },
     "about": {
         "title": "Full Stack Developer",
-        "description": "I am a bilingual fullstack software developer. I create elegant solutions to complex problems; specializing in modern web development with a focus on accessibility and user experience. I write code and teach at <CustomComponent01>{{name01}}</CustomComponent01>, a software boot camp for underrepresented people. Below you will find some highlighted projects. Most of my repos are open to collaborators. Please consider contributing! As always, I am open to new work opportunities. When I am not working I am preparing for my next presentation, mentoring, or hosting monthly algorithmic problem solving sessions; all of which push me to learn and grow. The problem solving sessions are open to everyone. More info <CustomComponent04>{{name04}}</CustomComponent04> . <CustomComponent03>{{name03}}</CustomComponent03> with me on social media below."
+        "description": "I am a bilingual full stack software developer. I create elegant solutions to complex problems; specializing in modern web development with a focus on accessibility and user experience. I write code and teach at <CustomComponent01>{{name01}}</CustomComponent01>, a software boot camp for underrepresented people. Below you will find some highlighted projects. Most of my repos are open to collaborators. Please consider contributing to them! As always, I am open to new work opportunities. When I am not working I am preparing for my next presentation, mentoring, or hosting monthly algorithmic problem solving sessions; all of which push me to learn and grow. The problem solving sessions are open to everyone. More info <CustomComponent04>here</CustomComponent04>. <CustomComponent03>Connect</CustomComponent03> with me on social media below."
     },
     "projects": {
         "title": "Featured Projects",
         "descriptions": {
-            "1": "This portfolio, available in both Spanish and English, highlights a bit about myself, showcases what I’ve been working on, and shares where to engage with me online. It is built with an accessibility-first approach, following WCAG standards, the i18next translation library, and using a modern tech stack of React 19, TypeScript, and Vite 6. And it is fully responsive working seamlessly across all devices, includes smooth animations via Framer Motion, and optimized performance through code splitting, lazy loading, and compression. Future features include adding code testing, a contact form and a searchable and filterable blog and resource pages.",
+            "1": "This portfolio, available in both Spanish and English, highlights a bit about myself, showcases what I’ve been working on, and shares where to engage with me online. It is built with an accessibility-first approach, following WCAG standards, the i18next translation library, and using a modern tech stack of React 19, TypeScript, and Vite 6. It is fully responsive, working seamlessly across all devices. It includes smooth animations via Framer Motion and delivers optimized performance through code splitting, lazy loading, and compression. Future features include code testing, a contact form, and searchable and filterable blog and resource pages.",
             "2": "A second translated description here...",
             "3": "A third translated description here..."
         }

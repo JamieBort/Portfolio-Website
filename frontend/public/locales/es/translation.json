@@ -1,27 +1,41 @@
 {
     "layout": {
-        "one": "Acerca",
-        "two": "Proyectos",
-        "three": "Habilidades",
-        "four": "Contacto",
-        "five": "CV",
-        "six": "Versión en inglés",
-        "seven": "Versión en español",
-        "eight": "English"
+        "01": "Acerca de mi",
+        "02": "Proyectos",
+        "03": "Habilidades técnicas",
+        "04": "Contacto",
+        "05": "CV",
+        "06": "Versión en inglés",
+        "07": "Versión en español",
+        "08": "English"
     },
     "about": {
         "title": "Full Stack Developer",
-        "description": "to be translated into spanish to be translated into spanish to be translated into spanish to be translated into spanish to be translated into spanish to be translated into spanish  <CustomComponent01>{{name}}</CustomComponent01>, to be translated into spanish to be translated into spanish to be translated into spanish to be translated into spanish to be translated into spanish to be translated into spanish to be translated into spanish "
+        "description": "Soy un desarrollador de Full Stack bilingüe y creo soluciones elegantes para problemas complejos. Mi especialización es el desarrollo de redes modernas con un enfoque en la accesibilidad y experiencia del usuario. Soy profesor de codificación vía la organización, <CustomComponent01>{{name01}}</CustomComponent01>, un campamento de entrenamiento que ayuda a personas subrepresentadas a capacitarse en el desarrollo de software y aplicaciones. Abajo, encontrarás algunos de mis proyectos destacados. La mayoría de los repositorios de mis proyectos están abiertos a colaboradores. ¡Considera la posibilidad de contribuir! Estoy disponible para nuevas oportunidades de trabajo. Cuando no estoy trabajando, me dedico activamente a aprender y presentar temas de programación a estudiantes/colegas, dar clases de tutoría o organizar sesiones mensuales de resolución de problemas algorítmicos, todo esto me impulsa a crecer y aprender. ¿Te interesa resolver problemas algorítmicos? Las sesiones están abiertas a todos. <CustomComponent04>Aquí</CustomComponent04> hay más información. <CustomComponent03>Conéctate</CustomComponent03> conmigo en las redes sociales.",
+        "brokenUp": {
+            "01": "Soy un desarrollador de Full Stack bilingüe y creo soluciones elegantes para problemas complejos. Mi especialización es el desarrollo de redes modernas con un enfoque en la accesibilidad y experiencia del usuario.",
+            "02": "Soy profesor de codificación vía la organización, Code the Dream, un campamento de entrenamiento que ayuda a personas subrepresentadas a capacitarse en el desarrollo de software y aplicaciones.",
+            "03": "Abajo, encontrarás algunos de mis proyectos destacados. La mayoría de los repositorios de mis proyectos están abiertos a colaboradores. ¡Considera la posibilidad de contribuir!",
+            "04": "Estoy disponible para nuevas oportunidades de trabajo. ",
+            "05": "Cuando no estoy trabajando, me dedico activamente a aprender y presentar temas de programación a estudiantes/colegas, dar clases de tutoría o organizar sesiones mensuales de resolución de problemas algorítmicos, todo esto me impulsa a crecer y aprender.",
+            "06": "¿Te interesa resolver problemas algorítmicos? Las sesiones están abiertas a todos. Aquí hay más información.",
+            "07": "Conéctate conmigo en las redes sociales."
+        }
     },
     "projects": {
         "title": "Proyectos destacados",
-        "first": {
-            "title": "spanish Portfolio Website",
-            "description": "to be translated into spanish to be translated into spanish to be translated into spanish to be translated into spanish to be translated into spanish to be translated into spanish to be translated into spanish to be translated into spanish to be translated into spanish to be translated into spanish "
-        },
-        "second": {
-            "title": "spanish Personal Dashboard",
-            "description": "to be translated into spanish to be translated into spanish to be translated into spanish to be translated into spanish to be translated into spanish "
+        "descriptions": {
+            "1": "Mi portafolio está disponible en español e inglés y presenta un poco sobre mí, destaca algunos de mis proyectos recientes y comparte cómo puedes conectarte conmigo en línea. Este portafolio, disponible tanto en español e inglés, destaca un poco sobre mí, exhibe en que he estado trabajando, y comparte dónde puedes interactuar conmigo en línea. Este portafolio está diseñado con un enfoque centrado en la accesibilidad, cumpliendo con los estándares de WCAG, e integrando la biblioteca de traducción i18next junto a una stack tecnológica moderna basada en React 19, TypeScript, y Vite 6. Es totalmente adaptable funcionando de manera fluida en todo tipo de dispositivos. Incluye animaciones suaves gracias a Farmer Motion y ofrece un rendimiento optimizado mediante técnicas como el code splitting, la carga diferida y la compresión. Entre las funciones y características futuras que serán incluidas están: la capacidad de probar codificación, un formulario de contacto y páginas de blog y recursos con funciones de búsqueda y filtrado.",
+            "brokenUp": {
+                "01": "Mi portafolio está disponible en español e inglés y presenta un poco sobre mí, destaca algunos de mis proyectos recientes y comparte cómo puedes conectarte conmigo en línea.",
+                "02": "Este portafolio, disponible tanto en español e inglés, destaca un poco sobre mí, exhibe en que he estado trabajando, y comparte dónde puedes interactuar conmigo en línea.",
+                "03": "Este portafolio está diseñado con un enfoque centrado en la accesibilidad, cumpliendo con los estándares de WCAG, e integrando la biblioteca de traducción i18next junto a una stack tecnológica moderna basada en React 19, TypeScript, y Vite 6.",
+                "04": "Es totalmente adaptable funcionando de manera fluida en todo tipo de dispositivos.",
+                "05": "Incluye animaciones suaves gracias a Farmer Motion y ofrece un rendimiento optimizado mediante técnicas como el code splitting, la carga diferida y la compresión.",
+                "06": "Entre las funciones y características futuras que serán incluidas están: la capacidad de probar codificación, un formulario de contacto y páginas de blog y recursos con funciones de búsqueda y filtrado."
+            },
+            "2": "A second translated description here...",
+            "3": "A third translated description here..."
         }
     },
     "skills": {
@@ -29,20 +43,15 @@
     },
     "contact": {
         "title": "Ponte en contacto",
-        "description": "to be translated into spanish to be translated into spanish to be translated into spanish to be translated into spanish to be translated into spanish "
+        "description": "Estoy interesado en saber sobre nuevos proyectos y oportunidades. ¿Quieres compartir o discutir algo? Envíame un correo o sígueme en las redes sociales.",
+        "brokenUp": {
+            "01": "Estoy interesado en saber sobre nuevos proyectos y oportunidades.",
+            "02": "¿Quieres compartir o discutir algo? Envíame un correo o sígueme en las redes sociales."
+        }
     },
     "floatingChoicePrompt": {
-        "01": "to be translated into spanish to be translated into spanish to be translated into spanish",
-        "02": "to be translated into spanish to be translated into spanish to be translated into spanish",
-        "03": "to be translated into spanish to be translated into spanish to be translated into spanish",
-        "04": "to be translated into spanish to be translated into spanish to be translated into spanish",
-        "05": "to be translated",
-        "06": "to be translated",
-        "07": "to be translated into spanish to be translated into spanish to be translated into spanish"
-    },
-    "floatingChoicePrompt02": {
-        "01": "to be translated into spanish to be translated into spanish",
-        "02": "to be translated into spanish to be translated into spanish",
-        "03": "to be translated into spanish <CustomComponent02>yup</CustomComponent02> button."
+        "01": "Usa este botón para cambiar entre  inglés y español.",
+        "02": "Tu elección se guardará para la próxima visita.",
+        "03": "¿No quieres ver este recordatorio la próxima vez? Selecciona el botón <CustomComponent02>No Recordarme</CustomComponent02>."
     }
 }

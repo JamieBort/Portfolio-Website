@@ -62,7 +62,7 @@ export const FloatingLanguageToggle = ({ handleLanguage, isPromptVisible }: { ha
       }}
       transition={{ duration: 0.5 }}
     >
-      <LanguageToggleButton onClick={handleLanguage}>{t("layout.eight")}</LanguageToggleButton>
+      <LanguageToggleButton onClick={handleLanguage}>{t("layout.08")}</LanguageToggleButton>
     </FloatingLanguageWrapper>
   );
 };

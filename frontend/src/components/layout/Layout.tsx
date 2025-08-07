@@ -35,7 +35,7 @@ const DesktopLanguageWrapper = motion(styled.div`
 
 const LanguageToggle = ({ handleLanguage }: { handleLanguage: () => void }) => {
   const { t } = useTranslation();
-  return <NavLinkButton onClick={handleLanguage}>{t("layout.eight")}</NavLinkButton>;
+  return <NavLinkButton onClick={handleLanguage}>{t("layout.08")}</NavLinkButton>;
 };
 
 // Toggle dropdown providing access to both resume versions.
@@ -66,7 +66,7 @@ const ResumeDropdown = () => {
   return (
     <DropdownWrapper ref={dropdownRef} role="listitem" aria-haspopup="true" aria-expanded={open}>
       <NavLinkButton onClick={() => setOpen(!open)} aria-label="Toggle Resume submenu" aria-controls="resume-submenu">
-        {t("layout.five")}
+        {t("layout.05")}
       </NavLinkButton>
 
       {open && (
@@ -97,7 +97,7 @@ const ResumeDropdown = () => {
               aria-label="View Resume in English"
               onClick={handleLinkClick}
             >
-              {t("layout.six")}
+              {t("layout.06")}
             </DropdownLink>
           </li>
           <li role="none">
@@ -109,7 +109,7 @@ const ResumeDropdown = () => {
               aria-label="Ver currículum en español"
               onClick={handleLinkClick}
             >
-              {t("layout.seven")}
+              {t("layout.07")}
             </DropdownLink>
           </li>
         </ul>
@@ -382,16 +382,16 @@ export const Layout = ({ children, handleLanguage, isEnglish, handlePromptButton
           {/* <div className="container"> */}
           <NavLinks role="list">
             <a href="#about" role="listitem" aria-label="About section">
-              {t("layout.one")}
+              {t("layout.01")}
             </a>
             <a href="#projects" role="listitem" aria-label="Projects section">
-              {t("layout.two")}
+              {t("layout.02")}
             </a>
             <a href="#skills" role="listitem" aria-label="Skills section">
-              {t("layout.three")}
+              {t("layout.03")}
             </a>
             <a href="#contact" role="listitem" aria-label="Contact section">
-              {t("layout.four")}
+              {t("layout.04")}
             </a>
             <ResumeDropdown />
           </NavLinks>

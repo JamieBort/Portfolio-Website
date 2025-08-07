@@ -148,7 +148,7 @@ export const About = ({ isEnglish }: AboutProps) => {
             <Description role="paragraph">
               <Trans
                 i18nKey="about.description"
-                values={{ name01: "Code the Dream", name03: "Connect", name04: "here" }}
+                values={{ name01: "Code the Dream" }}
                 components={{
                   CustomComponent01: <a href="https://codethedream.org/" target="_blank" />,
                   CustomComponent03: <a href="#contact" />,
