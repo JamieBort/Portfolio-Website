@@ -260,7 +260,6 @@ const Projects = ({ isEnglish }: ProjectsProps) => {
         </SectionTitle>
         <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <ProjectContainer role="list">
-            {/* {projects.map((project, index) => ( */}
             {projects_list.map((project, index) => (
               <ProjectCard key={project.id} variants={itemVariants} role="listitem" aria-labelledby={`project-title-${project.id}`}>
                 <ProjectImage imageUrl={project.image} role="img" aria-label={`Screenshot of ${project.title}`} />

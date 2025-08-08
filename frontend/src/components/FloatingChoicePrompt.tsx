@@ -83,7 +83,7 @@ export const FloatingChoicePrompt = ({ handlePromptButton, handleClickOutside, i
   useClickOutside(wrapperRef as React.RefObject<HTMLElement>, handleClickOutside);
 
   return (
-    // TODO: Tweak the animation.
+    // TODO: Tweak the animation. See console output.
     <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} ref={wrapperRef} aria-live="polite" role="dialog">
       <FloatingPromptWrapper
         initial={false}

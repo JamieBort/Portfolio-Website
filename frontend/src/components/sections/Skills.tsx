@@ -191,26 +191,6 @@ const skillCategories = [
   //     { name: "CI/CD", icon: <FaDatabase /> },
   //   ],
   // },
-  // {
-  //   title: "skillPlaceholder1",
-  //   icon: <FaNodeJs />,
-  //   skills: [
-  //     { name: "Python", icon: <SiPython /> },
-  //     { name: "MongoDB", icon: <SiMongodb /> },
-  //     { name: "PostgreSQL", icon: <SiPostgresql /> },
-  //   ],
-  // },
-  // {
-  //   title: "skillPlaceholder2",
-  //   icon: <FaDocker />,
-  //   skills: [
-  //     { name: "Docker", icon: <FaDocker /> },
-  //     { name: "Git", icon: <FaGitAlt /> },
-  //     { name: "AWS", icon: <FaAws /> },
-  //     { name: "CI/CD", icon: <FaDatabase /> },
-  //     { name: "Docker", icon: <FaDocker /> },
-  //   ],
-  // },
 ];
 
 const Skills = ({ isEnglish }: SkillsProps) => {
