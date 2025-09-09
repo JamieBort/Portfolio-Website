@@ -1,6 +1,10 @@
 # backend
 
-Created from this [Node Express](https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Render#node-expess) Render document.
+There currently is not a back end. This README will be updated once one is built.
+
+<img src="../administrative/gifs/original-1a002bf2b85047f1b0990342b7fa4a7a.gif" width="200" height="200" />
+
+<!-- Created from this [Node Express](https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Render#node-expess) Render document.
 
 And by following this document to make GraphQL calls: https://www.apollographql.com/docs/react/get-started/
 
@@ -35,4 +39,4 @@ Create a new web service with the following values:
 - Build Command: `yarn`
 - Start Command: `node app.js`
 
-That's it! Your web service will be live on your Render URL as soon as the build finishes.
+That's it! Your web service will be live on your Render URL as soon as the build finishes. -->
