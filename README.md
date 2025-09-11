@@ -1,5 +1,3 @@
-<!-- TODO: Verify this URL works. -->
-
 # Welcome to the repo for my [Portfolio Website](https://jamiebort.com/)
 
 ## About

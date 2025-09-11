@@ -1,4 +1,13 @@
-<!-- TODO: For repeated strings, look into using variables. -->
+<!-- ./frontend/index.html file -->
+
+<!-- TODO: For repeated strings, look into using variables. To that end, see the https://github.com/JamieBort/Portfolio-Website/issues/67 Issue.-->
+<!-- STRING LIST
+https://jamiebort.com/
+Portfolio Website | Jamie Bort - Full Stack Developer
+Full Stack Developer specializing in modern web development. View my projects and skills, and connect with me at https://jamiebort.com/
+/public/Open_Graph_Preview.png
+A screenshot of the Portfolio Website.
+ -->
 
 <!-- NOTE: Declares the document type. Specifies that the document is an HTML5 document. -->
 <!DOCTYPE html>
@@ -8,9 +17,9 @@
   <head>
     <!-- NOTE: Specifies character encoding as UTF-8, ensuring that most characters (including symbols and emojis) are rendered correctly. -->
     <meta charset="UTF-8" />
-    <!-- TODO: Update the favicon. -->
+    <!-- DONE: Update the favicon. -->
     <!-- NOTE: The favicon. -->
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/Logo.png" />
     <!-- NOTE: Makes the site responsive by setting the viewport width to the device width and initial zoom level to 1.0. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -19,87 +28,104 @@
     <link rel="modulepreload" href="/src/main.tsx" />
     <!-- NOTE: Preloads the main stylesheet to prevent render-blocking when it’s needed. -->
     <link rel="preload" as="style" href="/src/index.css" />
-    <!-- TODO: Look into this regarding rescinding the displayPrompt/doNotRemindMe. See Issue #79. -->
-    <!-- NOTE: Instructs the browser to cache the page for 1 year (in seconds). -->
-    <meta http-equiv="Cache-Control" content="max-age=31536000" />
-    <!-- TODO: Look into whether I want this to happen or not. -->
+    <!-- DONE: Look into this regarding rescinding the displayPrompt/doNotRemindMe. See Issue #79. -->
+    <!-- NOTE: Instructs the browser to cache the page for a maximum number of seconds. -->
+    <!-- It is currently cached for 2419200 seconds, or 28 days. -->
+    <meta http-equiv="Cache-Control" content="max-age=2419200" />
+    <!-- DONE: Look into whether I want this to happen or not. -->
+    <!--Removed based on research  -->
     <!-- NOTE: Older HTTP 1.0 directive to prevent caching (often overridden by modern cache rules). -->
-    <meta http-equiv="Pragma" content="no-cache" />
-    <!-- TODO: Look into whether I want this to happen or not. -->
+    <!-- <meta http-equiv="Pragma" content="no-cache" /> -->
+    <!-- DONE: Look into whether I want this to happen or not. -->
+    <!--Removed based on research  -->
     <!-- NOTE: Another cache-control directive. Tells the browser that the content has already expired (also helps prevent caching in some cases). -->
-    <meta http-equiv="Expires" content="0" />
+    <!-- <meta http-equiv="Expires" content="0" /> -->
 
     <!-- Back-Forward Cache Optimization -->
-    <!-- TODO: Update this info. -->
+    <!-- DONE: Update this info. -->
+    <!--Removed based on https://stackoverflow.com/questions/1092329/what-are-the-important-meta-tags-i-must-put-in-my-website and other research  -->
     <!-- NOTE: Custom metadata describing the page type. Could be used by analytics, routing, or performance tooling. -->
-    <meta name="pageType" content="portfolio" />
+    <!-- <meta name="pageType" content="portfolio" /> -->
     <!-- NOTE: Indicates browser should opt-in to back-forward cache, improving performance when users navigate using browser history. -->
     <meta name="bfcache-opt-in" content="true" />
 
     <!-- Primary Meta Tags -->
-    <!-- TODO: Update this info. -->
+    <!-- DONE: Update this info. -->
     <!-- NOTE: Title shown in the browser tab and search engine results. -->
-    <title>Portfolio | Your Name - Full Stack Developer</title>
-    <!-- TODO: Update this info. -->
+    <title>Portfolio Website | Jamie Bort - Full Stack Developer</title>
+    <!-- DONE: Update this info. -->
     <!-- NOTE: Mirrors the <title>. Used by some social or SEO platforms for extra clarity. -->
-    <meta name="title" content="Portfolio | Your Name - Full Stack Developer" />
-    <!-- TODO: Update this info. -->
+    <meta name="title" content="Portfolio Website | Jamie Bort - Full Stack Developer" />
+    <!-- DONE: Update this info. -->
+    <!-- TODO: Update this info (again). This is important and should be revised to reflect the best possible version of me. Note, the same string appears twice down below and again once above. -->
     <!-- NOTE: Description used in search engines and link previews. -->
-    <meta name="description" content="Full Stack Developer specializing in modern web development. View my projects and skills in React, Node.js, and more." />
-    <!-- TODO: Update this info. -->
+    <meta name="description" content="Full Stack Developer specializing in modern web development. View my projects and skills, and connect with me at https://jamiebort.com/" />
+    <!-- DONE: Update this info. -->
     <!-- NOTE: Deprecated by most modern search engines, but still included for legacy support. -->
-    <meta name="keywords" content="full stack developer, web development, React, Node.js, portfolio" />
-    <!-- TODO: Update this info. -->
+    <!--Removed based on research  -->
+    <!-- <meta name="keywords" content="full stack developer, web development, React, Node.js, portfolio" /> -->
+    <!-- DONE: Update this info. -->
     <!-- NOTE: Indicates who created the page (yourself, the developer/designer). -->
-    <meta name="author" content="Your Name" />
+    <meta name="author" content="Jamie Bort" />
 
-    <!-- TODO: Learn more about Open Graph. -->
+    <!-- DONE: Learn more about Open Graph. -->
     <!-- NOTE: Open Graph Tags for Facebook & other social media. These tags control how the page appears when shared on social media. -->
     <!-- Open Graph / Facebook -->
-    <!-- TODO: Maybe update this info. -->
+    <!-- DONE: Maybe update this info. -->
     <!-- NOTE: Declares the type of Open Graph object. Here, it’s a standard website. -->
     <meta property="og:type" content="website" />
-    <!-- TODO: Update this info. -->
+    <!-- DONE: Update this info. -->
     <!-- NOTE: URL of the page. -->
-    <meta property="og:url" content="https://your-portfolio-url.com/" />
-    <!-- TODO: Update this info. -->
+    <meta property="og:url" content="https://jamiebort.com/" />
+    <!-- DONE: Update this info. -->
     <!-- NOTE: Title shown in the social preview. -->
-    <meta property="og:title" content="Portfolio | Your Name - Full Stack Developer" />
-    <!-- TODO: Update this info. -->
+    <meta property="og:title" content="Portfolio Website | Jamie Bort - Full Stack Developer" />
+    <!-- DONE: Update this info. -->
     <!-- NOTE: Description in the social preview. -->
-    <meta property="og:description" content="Full Stack Developer specializing in modern web development. View my projects and skills in React, Node.js, and more." />
-    <!-- TODO: Update this info. -->
+    <meta
+      property="og:description"
+      content="Full Stack Developer specializing in modern web development. View my projects and skills, and connect with me at https://jamiebort.com/"
+    />
+    <!-- TODO: First make sure that the path works. Afterwards, decide if the image should be updated. -->
     <!-- NOTE: Preview image shown when shared. -->
-    <meta property="og:image" content="/path-to-your-preview-image.jpg" />
+    <!-- <meta property="og:image" content="/path-to-your-preview-image.jpg" /> -->
+    <meta property="og:image" content="/public/Open_Graph_Preview.png" />
+    <!-- TODO: Update this info. Make it better. -->
+    <!-- NOTE: A description of what is in the image (not a caption). If the page specifies an og:image it should specify `og:image:alt`. -->
+    <meta property="og:image:alt" content="A screenshot of the Portfolio Website." />
 
     <!-- NOTE: Twitter Card Metadata Similar to Open Graph but specific to Twitter cards. -->
     <!-- Twitter -->
-    <!-- TODO: Update this info. -->
+    <!-- TODO: Update this info. Make it better. -->
     <!-- NOTE: Uses Twitter’s “large summary card” style for rich previews. -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <!-- TODO: Update this info. -->
+    <meta property="twitter:card" content="A screenshot of the Portfolio Website." />
+    <!-- DONE: Update this info. -->
     <!-- NOTE: URL shown in the card. -->
-    <meta property="twitter:url" content="https://your-portfolio-url.com/" />
-    <!-- TODO: Update this info. -->
+    <meta property="twitter:url" content="https://jamiebort.com/" />
+    <!-- DONE: Update this info. -->
     <!-- NOTE: Title in the Twitter card. -->
-    <meta property="twitter:title" content="Portfolio | Your Name - Full Stack Developer" />
-    <!-- TODO: Update this info. -->
+    <meta property="twitter:title" content="Portfolio Website | Jamie Bort - Full Stack Developer" />
+    <!-- DONE: Update this info. -->
     <!-- NOTE: Description in the Twitter card. -->
-    <meta property="twitter:description" content="Full Stack Developer specializing in modern web development. View my projects and skills in React, Node.js, and more." />
-    <!-- TODO: Update this info. -->
-    <!-- NOTE: Image shown in the Twitter card. -->
-    <meta property="twitter:image" content="/path-to-your-preview-image.jpg" />
+    <meta
+      property="twitter:description"
+      content="Full Stack Developer specializing in modern web development. View my projects and skills, and connect with me at https://jamiebort.com/"
+    />
+    <!-- TODO: First make sure that the path works. Afterwards, decide if the image should be updated. -->
+    <!-- NOTE:  A Twitter Card meta tag used to specify the image that should be displayed when a link to the webpage is shared on Twitter.  -->
+    <meta property="twitter:image" content="/public/Open_Graph_Preview.png" />
 
     <!-- Theme Color for Mobile Browsers -->
-    <!-- TODO: Maybe update this info. -->
+    <!-- DONE: Maybe update this info. -->
+    <!-- TODO: Revisit this info by seeing how the end product currently looks. It may need to be changed. -->
     <!-- NOTE: Sets the browser UI color on mobile (e.g., tab bar in Chrome on Android). -->
     <meta name="theme-color" content="#F6B17A" />
 
     <!-- NOTE: Accessibility & SEO -->
     <!-- Accessibility -->
-    <!-- TODO: Update this info. -->
+    <!-- DONE: Update this info. -->
     <!-- NOTE: Tells search engines the canonical (official) URL for this page to avoid duplicate content penalties. -->
-    <link rel="canonical" href="https://your-portfolio-url.com/" />
+    <link rel="canonical" href="https://jamiebort.com/" />
     <!-- NOTE: Allows search engines to index the page and follow links. -->
     <meta name="robots" content="index, follow" />
 
