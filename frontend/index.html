@@ -17,7 +17,6 @@ A screenshot of the Portfolio Website.
   <head>
     <!-- NOTE: Specifies character encoding as UTF-8, ensuring that most characters (including symbols and emojis) are rendered correctly. -->
     <meta charset="UTF-8" />
-    <!-- DONE: Update the favicon. -->
     <!-- NOTE: The favicon. -->
     <link rel="icon" type="image/svg+xml" href="/Logo.png" />
     <!-- NOTE: Makes the site responsive by setting the viewport width to the device width and initial zoom level to 1.0. -->
@@ -28,59 +27,30 @@ A screenshot of the Portfolio Website.
     <link rel="modulepreload" href="/src/main.tsx" />
     <!-- NOTE: Preloads the main stylesheet to prevent render-blocking when it’s needed. -->
     <link rel="preload" as="style" href="/src/index.css" />
-    <!-- DONE: Look into this regarding rescinding the displayPrompt/doNotRemindMe. See Issue #79. -->
     <!-- NOTE: Instructs the browser to cache the page for a maximum number of seconds. -->
-    <!-- It is currently cached for 2419200 seconds, or 28 days. -->
     <meta http-equiv="Cache-Control" content="max-age=2419200" />
-    <!-- DONE: Look into whether I want this to happen or not. -->
-    <!--Removed based on research  -->
-    <!-- NOTE: Older HTTP 1.0 directive to prevent caching (often overridden by modern cache rules). -->
-    <!-- <meta http-equiv="Pragma" content="no-cache" /> -->
-    <!-- DONE: Look into whether I want this to happen or not. -->
-    <!--Removed based on research  -->
-    <!-- NOTE: Another cache-control directive. Tells the browser that the content has already expired (also helps prevent caching in some cases). -->
-    <!-- <meta http-equiv="Expires" content="0" /> -->
 
     <!-- Back-Forward Cache Optimization -->
-    <!-- DONE: Update this info. -->
-    <!--Removed based on https://stackoverflow.com/questions/1092329/what-are-the-important-meta-tags-i-must-put-in-my-website and other research  -->
-    <!-- NOTE: Custom metadata describing the page type. Could be used by analytics, routing, or performance tooling. -->
-    <!-- <meta name="pageType" content="portfolio" /> -->
     <!-- NOTE: Indicates browser should opt-in to back-forward cache, improving performance when users navigate using browser history. -->
     <meta name="bfcache-opt-in" content="true" />
 
     <!-- Primary Meta Tags -->
-    <!-- DONE: Update this info. -->
     <!-- NOTE: Title shown in the browser tab and search engine results. -->
     <title>Portfolio Website | Jamie Bort - Full Stack Developer</title>
-    <!-- DONE: Update this info. -->
     <!-- NOTE: Mirrors the <title>. Used by some social or SEO platforms for extra clarity. -->
     <meta name="title" content="Portfolio Website | Jamie Bort - Full Stack Developer" />
-    <!-- DONE: Update this info. -->
     <!-- TODO: Update this info (again). This is important and should be revised to reflect the best possible version of me. Note, the same string appears twice down below and again once above. -->
     <!-- NOTE: Description used in search engines and link previews. -->
     <meta name="description" content="Full Stack Developer specializing in modern web development. View my projects and skills, and connect with me at https://jamiebort.com/" />
-    <!-- DONE: Update this info. -->
-    <!-- NOTE: Deprecated by most modern search engines, but still included for legacy support. -->
-    <!--Removed based on research  -->
-    <!-- <meta name="keywords" content="full stack developer, web development, React, Node.js, portfolio" /> -->
-    <!-- DONE: Update this info. -->
     <!-- NOTE: Indicates who created the page (yourself, the developer/designer). -->
     <meta name="author" content="Jamie Bort" />
 
-    <!-- DONE: Learn more about Open Graph. -->
-    <!-- NOTE: Open Graph Tags for Facebook & other social media. These tags control how the page appears when shared on social media. -->
-    <!-- Open Graph / Facebook -->
-    <!-- DONE: Maybe update this info. -->
     <!-- NOTE: Declares the type of Open Graph object. Here, it’s a standard website. -->
     <meta property="og:type" content="website" />
-    <!-- DONE: Update this info. -->
     <!-- NOTE: URL of the page. -->
     <meta property="og:url" content="https://jamiebort.com/" />
-    <!-- DONE: Update this info. -->
     <!-- NOTE: Title shown in the social preview. -->
     <meta property="og:title" content="Portfolio Website | Jamie Bort - Full Stack Developer" />
-    <!-- DONE: Update this info. -->
     <!-- NOTE: Description in the social preview. -->
     <meta
       property="og:description"
@@ -88,7 +58,6 @@ A screenshot of the Portfolio Website.
     />
     <!-- TODO: First make sure that the path works. Afterwards, decide if the image should be updated. -->
     <!-- NOTE: Preview image shown when shared. -->
-    <!-- <meta property="og:image" content="/path-to-your-preview-image.jpg" /> -->
     <meta property="og:image" content="/public/Open_Graph_Preview.png" />
     <!-- TODO: Update this info. Make it better. -->
     <!-- NOTE: A description of what is in the image (not a caption). If the page specifies an og:image it should specify `og:image:alt`. -->
@@ -99,13 +68,10 @@ A screenshot of the Portfolio Website.
     <!-- TODO: Update this info. Make it better. -->
     <!-- NOTE: Uses Twitter’s “large summary card” style for rich previews. -->
     <meta property="twitter:card" content="A screenshot of the Portfolio Website." />
-    <!-- DONE: Update this info. -->
     <!-- NOTE: URL shown in the card. -->
     <meta property="twitter:url" content="https://jamiebort.com/" />
-    <!-- DONE: Update this info. -->
     <!-- NOTE: Title in the Twitter card. -->
     <meta property="twitter:title" content="Portfolio Website | Jamie Bort - Full Stack Developer" />
-    <!-- DONE: Update this info. -->
     <!-- NOTE: Description in the Twitter card. -->
     <meta
       property="twitter:description"
@@ -116,14 +82,12 @@ A screenshot of the Portfolio Website.
     <meta property="twitter:image" content="/public/Open_Graph_Preview.png" />
 
     <!-- Theme Color for Mobile Browsers -->
-    <!-- DONE: Maybe update this info. -->
     <!-- TODO: Revisit this info by seeing how the end product currently looks. It may need to be changed. -->
     <!-- NOTE: Sets the browser UI color on mobile (e.g., tab bar in Chrome on Android). -->
     <meta name="theme-color" content="#F6B17A" />
 
     <!-- NOTE: Accessibility & SEO -->
     <!-- Accessibility -->
-    <!-- DONE: Update this info. -->
     <!-- NOTE: Tells search engines the canonical (official) URL for this page to avoid duplicate content penalties. -->
     <link rel="canonical" href="https://jamiebort.com/" />
     <!-- NOTE: Allows search engines to index the page and follow links. -->
