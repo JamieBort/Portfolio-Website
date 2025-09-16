@@ -20,3 +20,5 @@ Raised by https://trello.com/c/PeariN22/:
 3.  Your "Nav" button on mobile needs to lose the aria-pressed and gain a toggling aria-expanded and aria-controls.
 
     Please check out this website that I just built for the company I work for - I have a good mobile menu example you can see. https://www.zenythgroup.com/
+
+<!-- A comment about this Trello card (above) is in a block `...Trello card regarding [[Portfolio Website]] is tied to...` on journal 20250916 of my Digital Knowledge Base -->
