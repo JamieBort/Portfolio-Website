@@ -181,16 +181,6 @@ const skillCategories = [
       // { name: "PostgreSQL", icon: <SiPostgresql /> },
     ],
   },
-  // {
-  //   title: "DevOps",
-  //   icon: <FaDocker />,
-  //   skills: [
-  //     { name: "Docker", icon: <FaDocker /> },
-  //     { name: "Git", icon: <FaGitAlt /> },
-  //     { name: "AWS", icon: <FaAws /> },
-  //     { name: "CI/CD", icon: <FaDatabase /> },
-  //   ],
-  // },
 ];
 
 const Skills = ({ isEnglish }: SkillsProps) => {
