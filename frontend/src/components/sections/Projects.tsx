@@ -63,9 +63,6 @@ const ProjectContainer = styled.div`
   }
 `;
 
-// TODO: Determine if I want this to be "const ProjectCard = styled(motion.div)`"
-// or if I want it to be "const ProjectCard = styled.div`"
-// See the https://github.com/JamieBort/Portfolio-Website/issues/53 Issue
 const ProjectCard = styled(motion.div)`
   background: ${theme.colors.glass.background};
   backdrop-filter: blur(8px);
@@ -190,7 +187,6 @@ const ProjectLinks = styled.div`
   }
 `;
 
-// TODO: Populate the project descriptions from the repo, rather than hardcoded below or hardcoded in the .json files in the `/frontend/public/locales/` directory.
 const projects_list = [
   {
     id: 1,
@@ -203,7 +199,7 @@ const projects_list = [
 ];
 
 const Projects = ({ isEnglish }: ProjectsProps) => {
-  console.log(isEnglish); // TODO: delete this line.
+  console.log(isEnglish);
   const { t } = useTranslation();
   const titleRefs = useRef<Array<HTMLHeadingElement | null>>([]);
   const containerVariants = {

@@ -73,17 +73,6 @@ const Title = styled.h1`
   // white-space: nowrap;
 `;
 
-// // NOTE: Not currently using this.
-// // TODO: Keep Subtitle for now, in case I want to use it again.
-// const Subtitle = styled.h2`
-//   animation: ${fadeUpKeyframes} 0.5s ease-out 0.2s forwards;
-//   opacity: 0;
-//   font-size: clamp(1.5rem, 3vw, 2.25rem);
-//   margin-bottom: ${theme.spacing.lg};
-//   opacity: 0.9;
-//   font-weight: 500;
-// `;
-
 const Description = styled.p`
   animation: ${fadeUpKeyframes} 0.5s ease-out 0.4s forwards;
   opacity: 0;
@@ -129,7 +118,7 @@ const SocialLinks = styled.div`
 `;
 
 export const About = ({ isEnglish }: AboutProps) => {
-  console.log(isEnglish); // TODO: delete this line.
+  console.log(isEnglish);
   const { t } = useTranslation();
 
   return (
@@ -140,11 +129,6 @@ export const About = ({ isEnglish }: AboutProps) => {
             <Title role="heading" aria-level={2}>
               {t("about.title")}
             </Title>
-            {/* NOTE: <<Subtitle>> used for ...  */}
-            {/* TODO: Keep <<Subtitle>> for now, in case I want to use it again. */}
-            {/* <Subtitle role="heading" aria-level={3}>
-              Full Stack Developer
-            </Subtitle> */}
             <Description role="paragraph">
               <Trans
                 i18nKey="about.description"

@@ -163,7 +163,7 @@ const SocialLink = styled(motion.a)`
 `;
 
 const Contact = ({ isEnglish }: ContactProps) => {
-  console.log(isEnglish); // TODO: delete this line.
+  console.log(isEnglish);
   const { t } = useTranslation();
   const containerVariants = {
     hidden: { opacity: 0 },

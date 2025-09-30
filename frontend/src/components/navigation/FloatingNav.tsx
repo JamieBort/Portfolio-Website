@@ -141,8 +141,6 @@ const ProgressBar = styled(motion.div)`
 // ];
 
 // Updated
-// TODO: change the name of sectionsComplete to sectionsBilingual
-// TODO: Populate the sectionsComplete/sectionsBilingual array from the .json files in the `/frontend/public/locales/` directory.
 const sectionsComplete = [
   { id: "about", name: "Home", nombre: "Casa" },
   { id: "projects", name: "Projects", nombre: "Proyectos" },
@@ -179,7 +177,6 @@ export const FloatingNav = ({ isEnglish }: FloatingNavProps) => {
           if (top <= windowHeight / 2 && bottom >= windowHeight / 2) {
             setActiveSection(id);
             // Update aria-live region
-            // TODO: Figure out what "aria-live region"/"liveRegion" is.
             const liveRegion = document.getElementById("section-announcer");
             if (liveRegion) {
               liveRegion.textContent = `Current section: ${param}`;

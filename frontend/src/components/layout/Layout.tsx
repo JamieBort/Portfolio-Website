@@ -24,7 +24,6 @@ const DesktopLanguageWrapperColor = theme.colors.light;
 // Using "motion" to style the toggle such that it matches the color of the prompt.
 // As a result added the "initial", "animate", and "transition" properties.
 const DesktopLanguageWrapper = motion(styled.div`
-  // TODO: Replace both "max-width: 170px;" and  "min-width: 170px;" with just "width: 170px;" instead.
   max-width: 170px;
   min-width: 170px;
 
@@ -186,8 +185,8 @@ const Header = styled.header`
   padding: ${theme.spacing.md} 0; // NOTE: Original // NOTE: keep this (for now).
   position: fixed; // NOTE: Original // NOTE: keep this.
 
-  top: 0; // TODO: Determine if this is needed. If not, remove it.
-  z-index: 1000; // TODO: Determine if this is needed. If not, remove it.
+  top: 0;
+  z-index: 1000;
 
   width: 100%;
 
@@ -206,7 +205,7 @@ const Header = styled.header`
 `;
 
 const Nav = styled.nav`
-  // .container { // TODO: Delete this line.
+  // .container {
 
   display: flex;
   justify-content: space-between; // NOTE: Original.
@@ -216,11 +215,10 @@ const Nav = styled.nav`
   // width: 100%;
   width: 80%;
 
-  // } // TODO: Delete this line.
+  // }
 `;
 
 // // Updated
-// // TODO: Remove this as soon as it is not needed.
 // const Logo = styled(motion.div)`
 //   color: ${theme.colors.light};
 //   font-family: ${theme.fonts.heading};
@@ -356,9 +354,10 @@ export const Layout = ({ children, handleLanguage, isEnglish, handlePromptButton
   const { t } = useTranslation();
   useKeyboardNavigation();
 
-  // TODO: Add comment here. What does this do?
   useEffect(() => {
     // Add keyboard navigation instructions to console
+    // console.info method is used to output information to the browser's developer console. It’s very similar to console.log(), but semantically it’s meant for logging general information that isn’t necessarily a bug or an error.
+    // This is useful for debugging or providing helpful information to developers working with the app. In production, however, you'd typically use something like console.warn() or console.error() for warnings or errors, and reserve console.info() for general information.
     console.info("Keyboard Navigation:\n", "- Arrow Up/Down or PageUp/PageDown: Navigate between sections\n", "- Home: Go to top\n", "- End: Go to bottom");
   }, []);
 
@@ -398,7 +397,7 @@ export const Layout = ({ children, handleLanguage, isEnglish, handlePromptButton
           {/* </div> */}
         </Nav>
 
-        {/* NOTE: Original TODO: Remove these lines. */}
+        {/* NOTE: Original */}
         {/* <DesktopLanguageWrapper>
           <LanguageToggle handleLanguage={handleLanguage} />
         </DesktopLanguageWrapper> */}
@@ -423,7 +422,7 @@ export const Layout = ({ children, handleLanguage, isEnglish, handlePromptButton
         {children}
       </Main>
 
-      {/* NOTE: Original TODO: Remove these lines. */}
+      {/* NOTE: Original */}
       {/* <FloatingLanguageToggle handleLanguage={handleLanguage} /> */}
 
       <FloatingNav isEnglish={isEnglish} />
@@ -435,7 +434,6 @@ export const Layout = ({ children, handleLanguage, isEnglish, handlePromptButton
 
       <Footer role="contentinfo">
         <div className="container">
-          {/* TODO: Clean this area up. Specifically remove the comments. And update the GPLv3 logo such that it fits the appearance of my website better and is linked locally. See the https://github.com/jamiebort/Portfolio-Website/issues/53 Issue. */}
           {/* Original */}
           {/* <p>© {new Date().getFullYear()}</p> */}
           {/* <img

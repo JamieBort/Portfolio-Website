@@ -1,5 +1,5 @@
 // The i18n.ts config file.
-// TODO: move this file into a ./utils/ directory.
+
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next"; // Internationalization framework for React & React Native, which is based on i18next.
 import Backend from "i18next-http-backend"; // Allows me to serve the translations from the back end. Right now they reside in `./frontend/public/locales/`.
