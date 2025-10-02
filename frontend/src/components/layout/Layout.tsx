@@ -23,7 +23,7 @@ const DesktopLanguageWrapperColor = theme.colors.light;
 
 // Using "motion" to style the toggle such that it matches the color of the prompt.
 // As a result added the "initial", "animate", and "transition" properties.
-const DesktopLanguageWrapper = motion(styled.div`
+const DesktopLanguageWrapper = motion.create(styled.div`
   max-width: 170px;
   min-width: 170px;
 

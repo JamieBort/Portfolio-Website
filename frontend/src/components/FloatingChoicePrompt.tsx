@@ -17,7 +17,7 @@ const FloatingPromptWrapperColor = theme.colors.light;
 
 // Using "motion" to style the prompt such that it matches the color of the two language toggles.
 // As a result added the "initial", "animate", and "transition" properties.
-const FloatingPromptWrapper = motion(styled.div`
+const FloatingPromptWrapper = motion.create(styled.div`
   position: fixed;
   top: calc(4.5rem + ${theme.spacing.md}); // Just below the fixed header
   right: ${theme.spacing.xl};
