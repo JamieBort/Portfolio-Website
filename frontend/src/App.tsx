@@ -33,7 +33,7 @@ const LoadingFallback = styled.div`
 
 function App() {
   // Keeping track of which language.
-  // TODO: If "isEnglish" is not needed after https://github.com/jamiebort/Portfolio-Website/issues/52 is addressed, remove it completely.
+
   const [isEnglish, setEnglish] = useState(false);
 
   // State for whether to display the FloatingChoicePrompt component or not.
@@ -55,7 +55,6 @@ function App() {
   };
 
   // Checks to see if the localStorage item, displayPromptKey is there. If so, do not to display the prompt.
-  // TODO: Determine whether to add a dependency, remove the dependency array, or to leave the dependency array as is.
   useEffect(() => {
     try {
       if (localStorage.getItem(displayPromptKey) === displayPromptValue) setVisible(false);

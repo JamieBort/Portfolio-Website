@@ -1,14 +1,6 @@
 # Welcome to the Portfolio Website contributing guide <!-- omit in toc (table of contents) -->
 
-<!--
-
-NOTE: (I THINK) The following 2 are WRT another task outside of this [repo](https://github.com/JamieBort/Portfolio-Website) and this [project](https://github.com/users/JamieBort/projects/1).
-
-1. TODO: Test all of the links below to see which ones need to be modified/updated for when the template is used.
-
-2. Then make note of them with `TODO: FOR THIS TEMPLATE: <instructions here>.`
-
--->
+<!-- TODO: figure out what to do with `omit in toc (table of contents)` above. Why is it there? -->
 
 Thank you for investing your time in contributing to this project!
 
@@ -31,8 +23,6 @@ Here are some resources to help you get started with open source contributions:
 ### Types of contributions we're looking for
 
 Here are the types of contributions we are looking for:
-
-<!-- TODO: Once the https://github.com/JamieBort/Portfolio-Website/issues/81 Issue is addressed, update the `Bug` and `Enhancement` links below.  -->
 
 - Any problems (bugs) with the code. For this, see the [Bug](https://github.com/JamieBort/Portfolio-Website/issues/new?template=bug_report.md) Issue template.
 - Updates to the documentation. For example improved wording, broken links, etc. For this, see the `Enhancement` Issue template. (this one doesn't exist yet.)
@@ -81,8 +71,6 @@ And if that Issue does not already exist, please open a new GitHub Issue.
 - [This 7 minute video.](https://www.youtube.com/watch?v=TKJ4RdhyB5Y)
 </details>
 
-<!-- TODO: Add this line back in once I have Issue Templates and/or Issue forms to use here.
-To that end, I have created this https://github.com/users/JamieBort/projects/4?pane=issue&itemId=55135312 organizational-level Issue to complete that task. -->
 <!-- If a related Issue doesn't exist, you can open a new Issue using a relevant [Issue form](https://github.com/github/docs/issues/new/choose). -->
 
 #### Solve an existing Issue
